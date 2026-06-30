@@ -1,0 +1,62 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-06-30",
+  "publisher": {
+    "name": "Duru ULV Teknoloji Sistemleri",
+    "url": "https://www.duruulvteknoloji.com.tr/",
+    "contact": "info@entosis.com.tr",
+    "telephone": "+90 352 320 20 86"
+  },
+  "description": "Duru ULV Teknoloji Sistemleri — ULV ilaçlama makinesi üreticisi. AI ajanları için bilgi kaynakları ve iletişim kanalları.",
+  "resources": [
+    {
+      "id": "llms-summary",
+      "type": "documentation",
+      "format": "text/markdown",
+      "url": "https://www.duruulvteknoloji.com.tr/llms.txt",
+      "description": "Curated site summary for AI agents (llmstxt.org)"
+    },
+    {
+      "id": "llms-full",
+      "type": "documentation",
+      "format": "text/markdown",
+      "url": "https://www.duruulvteknoloji.com.tr/llms-full.txt",
+      "description": "Complete product and blog URL map"
+    },
+    {
+      "id": "brand-guide",
+      "type": "documentation",
+      "format": "text/plain",
+      "url": "https://www.duruulvteknoloji.com.tr/brand.txt",
+      "description": "Brand naming and citation rules"
+    },
+    {
+      "id": "sitemap",
+      "type": "sitemap",
+      "format": "application/xml",
+      "url": "https://www.duruulvteknoloji.com.tr/sitemap.xml",
+      "description": "XML sitemap (47 URLs)"
+    }
+  ],
+  "services": [
+    {
+      "id": "quote-request",
+      "type": "human-contact",
+      "name": "Product Quote Request",
+      "url": "https://www.duruulvteknoloji.com.tr/fiyat-teklifi/",
+      "description": "B2B price quote via web form (no public API; prices not listed on site)"
+    },
+    {
+      "id": "technical-support",
+      "type": "human-contact",
+      "name": "Technical Support & Sales",
+      "url": "https://www.duruulvteknoloji.com.tr/iletisim/",
+      "contact": {
+        "email": "info@entosis.com.tr",
+        "telephone": "+90 352 320 20 86",
+        "whatsapp": "https://wa.me/905320659117"
+      },
+      "description": "Direct contact for technical questions, tenders, and after-sales support"
+    }
+  ]
+}

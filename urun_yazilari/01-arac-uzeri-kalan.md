@@ -233,3 +233,82 @@ böylece farklı haşere türlerine göre optimize edilebilir.
 **Cihaz nasıl çalıştırılır?** Marş anahtarı ile çalıştırılır ve kumandalar yardımıyla
 aktif hale getirilir; kapatma işlemi belirli bir sıraya göre (önce ilaç formülasyonu,
 sonra ULV başlığı) yapılmalıdır.
+
+---
+
+## 4. Yüksek Kapasiteli Araç Üstü Sisleme Makinesi (Entosis Mist Blower 500L)
+
+```
+SEO Başlığı:        Yüksek Kapasiteli Araç Üstü Sisleme Makinesi | Entosis 500L
+Meta Açıklama:       500 litre tanklı Entosis Mist Blower ile büyükşehir belediyeleri ve geniş tarım arazilerinde joystick kontrollü mist blower ilaçlama. Teklif alın.
+Odak Anahtar Kelime: araç üstü sisleme makinesi
+Ek Anahtar Kelimeler: entosis mist blower, 500 litre ilaçlama makinesi, joystick sisleme cihazı, belediye mist blower, yüksek kapasiteli ilaçlama aracı
+Görsel alt metni:    Yüksek kapasiteli araç üstü sisleme makinesi - Entosis Mist Blower 500L
+```
+
+### Yüksek Kapasiteli Araç Üstü Sisleme Makinesi Nedir?
+
+Geniş bulvarlar, büyükşehir belediyelerinin sorumluluk alanları ve devasa tarım arazileri
+için tasarlanmış bu **yüksek kapasiteli araç üstü sisleme makinesi**, Duru ürün ailesinde
+**Entosis Mist Blower (500L)** model adıyla (model kodu EMB-500) satılır. 15–18 Hp Amerikan
+motor gücüyle çalışan cihaz, 500 litrelik ilaç tankı, kabin içi joystick kumanda paneli,
+6+1 nozul yapısı ve 35 mikron ULV teknolojisiyle mist blower, ULV ve pulverizatör
+modlarında çalışabilir. Dakikada 14 litre, 150 bar basınçlı pompa ve 340 derece sağa-sola,
+210 derece yukarı-aşağı hareket eden mist başlığı, operatörün aracı durdurmadan geniş bir
+açıda ilaçlama yapmasına imkân tanır.
+
+### Entosis Mist Blower Nerelerde Kullanılır?
+
+500 litrelik dev tank kapasitesi, tek dolumla çok uzun güzergahların taranmasını mümkün
+kılar; bu nedenle büyükşehir belediyeleri, il özel idareleri, geniş tarım kooperatifleri
+ve endüstriyel tesis çevrelerinde tercih edilir. Şehir merkezlerindeki geniş caddeler,
+mesire alanları, parklar ve yeşil kuşaklarda sivrisinek ve karasinek mücadelesinde yüksek
+verim sağlar. Tarım arazilerinde, meyve bahçelerinde ve büyük ölçekli sera komplekslerinin
+çevresinde vektör kontrolü amacıyla kullanılır. İsteğe bağlı 30 veya 50 metrelik holder
+hortumu ile kanalizasyon, foseptik ve çöp konteyneri gibi larva kaynaklarına noktasal
+müdahale de yapılabilir. Kabin içi joystick sistemi, operatörün araç dışına çıkmadan
+başlığı yönlendirmesini sağlayarak hem güvenliği hem de saha hızını artırır.
+
+### Teknik Üstünlükler: Neden Entosis Mist Blower 500L?
+
+500 litrelik ilaç tankı, Duru Mist Blower 15HP'nin 400 litrelik kapasitesinin ötesinde
+ekstra operasyon süresi sunar — personel sayısı sınırlı ekipler için kritik bir avantajdır.
+15 litrelik el yıkama tankı, saha koşullarında İSG standartlarına uygun hijyen imkânı
+sağlar. 12 V DC 60 Ah batarya, elektrikli kumanda ve başlık hareket sistemini güvenilir
+şekilde besler. 30 litrelik yakıt deposu ve saatte yaklaşık 4 litrelik tüketimle uzun
+vardiyalarda kesintisiz çalışma mümkündür. 400 kg ağırlığındaki cihaz (En: 105 cm, Boy:
+150 cm, Yükseklik: 170 cm), pick-up ve kamyonet kasalarına monte edilebilecek ölçülerdedir.
+Entosis markası, Duru U.L.V. Teknoloji Sistemleri'nin 36 yıllık üretim tecrübesiyle
+geliştirilmiş olup sc, ec, wp formülasyonlu ilaçlarla uyumlu çalışır; metal olmayan,
+elektrik kaçağı yapmayan özel başlıklara sahiptir. CE, TSE ve ilgili bakanlık onaylarıyla
+belgelenmiştir.
+
+### Yüksek Kapasiteli Sisleme Makinesi Fiyatı ve Teklif Süreci
+
+Entosis Mist Blower 500L'nin fiyatı, araç tipinize, kullanım yoğunluğunuza ve sipariş
+adedinize göre değişebileceğinden web sitemizde sabit bir fiyat listesi paylaşmıyoruz.
+Kurumunuza özel güncel teklif için **"Teklif Al"** formunu doldurmanız yeterlidir. Bu
+modeli [Duru Mist Blower 15HP (400L)](/urunler/arac-uzeri-ilaclama/duru-mist-blower-15hp/)
+ile karşılaştırarak kapasite ve bütçe açısından en uygun seçeneği belirleyebilirsiniz.
+
+### Sıkça Sorulan Sorular
+
+**Entosis Mist Blower 500L ile Duru Mist Blower 15HP arasındaki temel fark nedir?**
+Entosis modeli 500 litrelik tank kapasitesiyle daha uzun güzergahları tek dolumda tarar;
+Duru Mist Blower 15HP ise 400 litre tank ve 340 kg ağırlığıyla daha kompakt bir alternatif
+sunar.
+
+**500 litrelik tank ne kadar alanı kapsar?** Kullanılan ilaç formülasyonu, debi ayarı ve
+güzergah uzunluğuna göre değişmekle birlikte, büyükşehir belediyelerinin tam bir vardiya
+programını tek dolumla tamamlamasına imkân tanır.
+
+**Joystick kumanda sistemi nasıl çalışır?** Operatör araç kabininden joystick ile mist
+başlığını 340° yatay ve 210° dikey eksende yönlendirir; aracı sık sık durdurup yön
+değiştirme ihtiyacını azaltır.
+
+**Entosis modelinin el yıkama tankı ne işe yarar?** 15 litrelik el yıkama tankı, ilaçlama
+sonrası operatörün saha koşullarında ellerini temizlemesine olanak tanır ve iş güvenliği
+standartlarını destekler.
+
+**Entosis Mist Blower 500L'nin garanti süresi nedir?** Duru ürünleri gibi 2 yıl cihaz
+garantisi ve 10 yıl yedek parça garantisi kapsamındadır.

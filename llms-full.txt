@@ -1,0 +1,72 @@
+# Duru ULV Teknoloji Sistemleri — Tam İçerik Haritası
+
+Bu dosya, AI ajanlarının sitedeki tüm önemli sayfaları bulması için genişletilmiş URL listesidir.
+
+Site kökü: https://www.duruulvteknoloji.com.tr/
+
+## Statik Sayfalar
+
+- [Ana Sayfa](https://www.duruulvteknoloji.com.tr/)
+- [Ürünler](https://www.duruulvteknoloji.com.tr/urunler/)
+- [Blog](https://www.duruulvteknoloji.com.tr/blog/)
+- [Hakkımızda](https://www.duruulvteknoloji.com.tr/hakkimizda/)
+- [İletişim](https://www.duruulvteknoloji.com.tr/iletisim/)
+- [Fiyat Teklifi](https://www.duruulvteknoloji.com.tr/fiyat-teklifi/)
+- [Kalite Politikası](https://www.duruulvteknoloji.com.tr/kalite-politikamiz/)
+- [KVKK](https://www.duruulvteknoloji.com.tr/kvkk/)
+- [Gizlilik](https://www.duruulvteknoloji.com.tr/gizlilik-politikasi/)
+- [Kullanım Koşulları](https://www.duruulvteknoloji.com.tr/kullanim-kosullari/)
+
+## Araç Üzeri ULV İlaçlama Makineleri
+
+Kategori: https://www.duruulvteknoloji.com.tr/urunler/arac-uzeri-ilaclama/
+
+- [Duru Mist Blower 15HP (400L)](https://www.duruulvteknoloji.com.tr/urunler/arac-uzeri-ilaclama/duru-mist-blower-15hp/) (DMB-15HP-400): 400 litre tanklı araç üstü sisleme makinesi ile belediye ve tarım alanlarında etkili haşere mücadelesi. Hemen teklif alın. | Anahtar: araç üstü sisleme makinesi
+- [Entosis Mist Blower (500L)](https://www.duruulvteknoloji.com.tr/urunler/arac-uzeri-ilaclama/entosis-mist-blower-500l/) (EMB-500): 500 litre tanklı Entosis Mist Blower ile büyükşehir belediyeleri ve geniş tarım arazilerinde joystick kontrollü mist blower ilaçlama. Teklif alın. | Anahtar: araç üstü sisleme makinesi
+- [Duru HD1800](https://www.duruulvteknoloji.com.tr/urunler/arac-uzeri-ilaclama/duru-hd1800/) (HD-1800): 18 Hp motorlu araç üstü ULV ilaçlama makinesi Duru HD1800 ile geniş alanlarda hızlı sivrisinek mücadelesi. Şimdi teklif isteyin. | Anahtar: araç üstü ulv makinesi
+- [Duru HD75](https://www.duruulvteknoloji.com.tr/urunler/arac-uzeri-ilaclama/duru-hd75/) (HD-75): 10 kW jeneratörlü araç üstü ilaçlama makinesi Duru HD75 ile sivrisinek ve karasinek mücadelesinde güçlü performans. Teklif alın. | Anahtar: araç üstü ilaçlama makinesi
+- [Duru HD50](https://www.duruulvteknoloji.com.tr/urunler/arac-uzeri-ilaclama/duru-hd50/) (HD-50): Araç üstü sivrisinek ilaçlama makinesi Duru HD50 ile belediye ve açık alanlarda etkili ULV mücadelesi. 50 L tank, ayarlanabilir mikron. Teklif alın. | Anahtar: araç üstü ilaçlama makinesi
+
+## Sera Tipi ULV İlaçlama Makineleri
+
+Kategori: https://www.duruulvteknoloji.com.tr/urunler/sera-tipi-ulv-ilaclama/
+
+- [Entosis 50](https://www.duruulvteknoloji.com.tr/urunler/sera-tipi-ulv-ilaclama/entosis-50/) (ENT-50): Sera ilaçlama makinesi Entosis 50 ile seraya girmeden, 7 dönüme kadar homojen ilaçlama yapın. Sağlığınızı koruyun, teklif alın. | Anahtar: sera ilaçlama makinesi
+- [Sera Max 50](https://www.duruulvteknoloji.com.tr/urunler/sera-tipi-ulv-ilaclama/sera-max-50/) (SMX-50): 4 motorlu, 80 litre tanklı yüksek kapasiteli sera ilaçlama makinesi Sera Max 50 ile büyük seralarda etkin mücadele. Teklif alın. | Anahtar: sera ilaçlama makinesi
+- [Sera Ultra 20](https://www.duruulvteknoloji.com.tr/urunler/sera-tipi-ulv-ilaclama/sera-ultra-20/) (SULTRA-20): 40 litre tanklı sera dezenfeksiyon cihazı Sera Ultra 20 ile orta ölçekli seralarda etkili haşere mücadelesi. Hemen teklif isteyin. | Anahtar: sera dezenfeksiyon cihazı
+- [Entosis 20](https://www.duruulvteknoloji.com.tr/urunler/sera-tipi-ulv-ilaclama/entosis-20/) (ENT-20): 20 litre tanklı, tekerlekli kompakt sera ilaçlama cihazı Entosis 20 ile küçük-orta seralarda etkili mücadele. Teklif alın. | Anahtar: sera ilaçlama cihazı
+- [Sera Plus 20](https://www.duruulvteknoloji.com.tr/urunler/sera-tipi-ulv-ilaclama/sera-plus-20/) (SPL-20): 20 litre tanklı, hafif ve sabit montajlı sera ilaçlama sistemi Sera Plus 20 ile sürekli koruma sağlayın. Hemen teklif alın. | Anahtar: sera ilaçlama sistemi
+
+## Sırt Tipi ULV İlaçlama Makineleri
+
+Kategori: https://www.duruulvteknoloji.com.tr/urunler/sirt-tipi-ulv-ilaclama/
+
+- [Duru Sırt10](https://www.duruulvteknoloji.com.tr/urunler/sirt-tipi-ulv-ilaclama/duru-sirt10/) (SIRT-10): 10 litre tanklı, 6 kg hafifliğinde sırt tipi ilaçlama makinesi Duru Sırt10 ile tarım ve dezenfeksiyonda pratik çözüm. Teklif alın. | Anahtar: sırt tipi ilaçlama makinesi
+
+## El Tipi ULV İlaçlama Makineleri
+
+Kategori: https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/
+
+- [Duru HD5](https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/duru-hd5/) (HD-5): El tipi dezenfeksiyon cihazı Duru HD5 ile hastane, otel ve kapalı alanlarda etkili ULV ilaçlama. 5 L tank, hafif tasarım. Teklif alın. | Anahtar: el tipi dezenfeksiyon cihazı
+- [Duru HR5](https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/duru-hr5/) (HR-5): Hortum uzatmalı el tipi dezenfeksiyon cihazı Duru HR5 ile dar ve zor erişilen alanlara kolay ilaçlama. Hemen teklif isteyin. | Anahtar: el tipi dezenfeksiyon cihazı
+- [Duru Max5](https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/duru-max5/) (MAX-5): Taşıma sehpalı, yüksek motor gücüne sahip el tipi ilaçlama makinesi Duru Max5 ile etkili dezenfeksiyon. Hemen teklif isteyin. | Anahtar: el tipi ilaçlama makinesi
+- [Duru Plus](https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/duru-plus/) (PLUS): 3 litre tanklı, 3,3 kg en hafif el tipi sisleme cihazı Duru Plus ile pratik dezenfeksiyon ve ilaçlama. Hemen teklif alın. | Anahtar: el tipi sisleme cihazı
+- [Duru X20](https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/duru-x20/) (X-20): Çift başlıklı el tipi dezenfeksiyon makinesi Duru X20 ile fabrika ve depo alanlarında yüksek kapasiteli ULV uygulama. 20 L tank. Teklif alın. | Anahtar: el tipi dezenfeksiyon makinesi
+- [Duru X10](https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/duru-x10/) (X-10): 10 litre tanklı, tekerlekli el tipi dezenfeksiyon makinesi Duru X10 ile orta ölçekli alanlarda etkili ilaçlama. Teklif alın. | Anahtar: el tipi dezenfeksiyon makinesi
+- [Duru Max10](https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/duru-max10/) (MAX-10): 5 litre tanklı, tekerlekli taşınabilir dezenfeksiyon cihazı Duru Max10 ile pratik ve etkili ilaçlama. Hemen teklif isteyin. | Anahtar: tekerlekli dezenfeksiyon cihazı
+
+## Blog Yazıları
+
+- [ULV İlaçlama Nedir? Soğuk Sisleme ile Farkı Nelerdir?](https://www.duruulvteknoloji.com.tr/blog/ulv-ilaclama-nedir/): ULV ilaçlama nedir, nasıl çalışır ve soğuk sisleme ile farkları nelerdir? Duru ULV'nin 36 yıllık tecrübesiyle tüm detaylar bu yazıda.
+- [Mist Blower ile ULV Pulverizatör Arasındaki Fark Nedir?](https://www.duruulvteknoloji.com.tr/blog/mist-blower-ulv-pulverizator-farki/): Mist blower nedir, ULV pulverizatörden farkı ne? Araç üstü ilaçlama makinesi seçerken bilmeniz gereken tüm teknik farklar burada.
+- [Belediyeler İçin İlaçlama Ekipmanı Seçerken Nelere Dikkat Edilmeli?](https://www.duruulvteknoloji.com.tr/blog/belediye-ilaclama-ekipmani-secimi/): Belediye ilaçlama makinesi seçerken kapasite, sertifika ve yedek parça garantisi gibi kritik faktörler. Duru ULV'nin 36 yıllık tecrübesi.
+- [Belediye İlaçlaması Neden Bazı Bölgelerde Yetersiz Kalıyor?](https://www.duruulvteknoloji.com.tr/blog/belediye-ilaclama-neden-yetersiz/): Belediye ilaçlaması neden yetersiz kalıyor, sinek arabası gerçekten işe yarıyor mu? Teknik nedenler ve kaynakta mücadele çözümü.
+- [Sera Zararlılarına Karşı Geleneksel İlaçlama mı, ULV mi? Hangisi Daha Etkili?](https://www.duruulvteknoloji.com.tr/blog/sera-zararlilari-ulv-karsilastirma/): Sera zararlıları olan yaprak biti, trips ve beyaz sineğe karşı geleneksel ilaçlama mı ULV mi daha etkili? Çiftçi sağlığı açısından karşılaştırma.
+- [Sivrisinek ve Karasinek Mücadelesinde Doğru Mikron Çapı Neden Önemli?](https://www.duruulvteknoloji.com.tr/blog/sivrisinek-ilaclama-mikron-capi/): Sivrisinek ilaçlama ve karasinek mücadelesinde doğru mikron çapı seçimi neden kritik? ULV damlacık boyutu rehberi burada.
+- [36 Yıllık Tecrübe: Duru ULV'nin Hikayesi ve Sektördeki Yeri](https://www.duruulvteknoloji.com.tr/blog/duru-ulv-hikayesi/): Duru ULV Teknoloji Sistemleri'nin 1990'dan bu yana 36 yıllık üretim tecrübesi, sektördeki yeri ve üretici firma olmanın avantajları.
+- [ULV Cihazı Alırken Sorulması Gereken 7 Soru](https://www.duruulvteknoloji.com.tr/blog/ulv-cihazi-alirken-7-soru/): ULV cihazı alırken nelere dikkat edilmeli? Doğru seçim için satıcınıza sormanız gereken 7 kritik soru bu yazıda.
+- [Kamu Kurumları İçin ISO ve CE Sertifikasının Önemi: ULV Ekipmanlarında Nelere Bakılmalı?](https://www.duruulvteknoloji.com.tr/blog/kamu-alimlarinda-ce-iso-sertifikasi/): Kamu kurumları için ULV ekipmanı alımında CE, TSE ve ISO sertifikalarının önemi. İhale şartnamesi hazırlarken bilmeniz gerekenler.
+- [Yaz Sezonu Öncesi Belediyeler İçin İlaçlama Ekipmanı Hazırlık Rehberi](https://www.duruulvteknoloji.com.tr/blog/yaz-oncesi-belediye-ilaclama-hazirlik/): Yaz sezonu öncesi belediyeler için ilaçlama ekipmanı planlaması, bakım kontrol listesi ve tedarik zamanlaması rehberi.
+- [Sonbahar Döneminde Sera İçi Haşere Kontrolü Neden Kritik?](https://www.duruulvteknoloji.com.tr/blog/sonbahar-sera-hasere-kontrolu/): Sonbahar döneminde sera haşere kontrolü neden önemli? Kış öncesi sera ilaçlama planlaması ve zararlı popülasyonunu azaltma rehberi.
+- [Sinekle Mücadelede Pencere Sinekliği Yeterli mi?](https://www.duruulvteknoloji.com.tr/blog/sinekle-mucadele-pencere-sinekligi-yeterli-mi/): Pencere sinekliği sineği engeller ama yok etmez. Sivrisinek ilaçlama ile sineklik birlikte nasıl kullanılır? Kayseri için tam rehber.
+- [Sis Üfleme Makinesi (Mist Blower) Nedir? Kapsamlı Alım Rehberi](https://www.duruulvteknoloji.com.tr/blog/sis-ufleme-makinesi-mist-blower-nedir-rehber/): Geniş alan ilaçlamasında kullanılan sis üfleme makinesi (mist blower) ne işe yarar? Çalışma prensibi, Duru ve Entosis modelleri ve uzman tavsiyeleri bu rehberde.

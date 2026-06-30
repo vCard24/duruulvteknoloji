@@ -145,6 +145,56 @@ function webSiteSchemaJson() {
   });
 }
 
+/** FAQ cevaplarından markdown kalıntılarını temizle (schema plain text) */
+function faqPlainText(text) {
+  return String(text || '')
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function faqPageSchemaJson(faqs) {
+  if (!faqs || !faqs.length) return null;
+  return JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faqPlainText(f.a),
+      },
+    })),
+  });
+}
+
+/** Ürün/blog sayfasına FAQPage JSON-LD enjekte et veya güncelle */
+function injectFaqSchema(html, faqs) {
+  const schema = faqPageSchemaJson(faqs);
+  const faqRe =
+    /\s*<script type="application\/ld\+json">\{[^<]*"@type"\s*:\s*"FAQPage"[^<]*\}<\/script>/;
+  if (!schema) {
+    return html.replace(faqRe, '');
+  }
+  const tag = `\n  <script type="application/ld+json">${schema}</script>`;
+  if (faqRe.test(html)) {
+    return html.replace(faqRe, tag);
+  }
+  const productRe =
+    /(<script type="application\/ld\+json">\{[^<]*"@type"\s*:\s*"Product"[^<]*\}<\/script>)/;
+  if (productRe.test(html)) {
+    return html.replace(productRe, `$1${tag}`);
+  }
+  const blogRe =
+    /(<script type="application\/ld\+json">\{[^<]*"@type"\s*:\s*"BlogPosting"[^<]*\}<\/script>)/;
+  if (blogRe.test(html)) {
+    return html.replace(blogRe, `$1${tag}`);
+  }
+  return html.replace(/<\/head>/, `${tag}\n</head>`);
+}
+
 module.exports = {
   SITE_ORIGIN,
   SITE_NAME,
@@ -157,4 +207,7 @@ module.exports = {
   organizationSchemaJson,
   productSchemaJson,
   webSiteSchemaJson,
+  faqPlainText,
+  faqPageSchemaJson,
+  injectFaqSchema,
 };

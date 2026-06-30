@@ -6,6 +6,7 @@ const {
   renderSeoHead,
   productOgImageUrl,
   productSchemaJson,
+  faqPageSchemaJson,
 } = require('./seo-meta');
 
 const ROOT = path.join(__dirname, '..');
@@ -16,6 +17,10 @@ const imageManifest = fs.existsSync(IMG_MANIFEST_PATH)
   ? JSON.parse(fs.readFileSync(IMG_MANIFEST_PATH, 'utf8'))
   : {};
 const imageAlts = fs.existsSync(ALTS_PATH) ? JSON.parse(fs.readFileSync(ALTS_PATH, 'utf8')) : {};
+const PRODUCT_SEO_PATH = path.join(ROOT, 'assets/data/product-seo.json');
+const productSeo = fs.existsSync(PRODUCT_SEO_PATH)
+  ? JSON.parse(fs.readFileSync(PRODUCT_SEO_PATH, 'utf8'))
+  : {};
 
 function productImageAlt(slug, index) {
   const files = imageManifest[slug];
@@ -41,12 +46,18 @@ function hasProductImages(slug) {
   return productImageCount(slug) > 0;
 }
 
-const FAQS = [
+const FAQS_FALLBACK = [
   { q: 'ULV nedir, Pulverizatörden farkı nedir?', a: 'ULV (Ultra Low Volume), çok düşük hacimde ilacın 0–50 mikron arası damlalara parçalanarak havaya dağıtılması esasına dayanır. Klasik pulverizatöre göre çok daha az ilaçla, çok daha geniş bir alanı kaplar.' },
   { q: 'Hangi solüsyonlarla uyumludur?', a: 'sc, ec ve wp formülasyonlu profesyonel pestisit ve dezenfektanlarla uyumludur.' },
   { q: 'Garanti süresi ve servis ağı nasıl?', a: 'Tüm makineler fabrikadan 2 yıl garantili çıkar. Türkiye genelinde yetkili servis ağımız mevcuttur.' },
   { q: 'İhalelerde teknik şartname desteği veriyor musunuz?', a: 'Evet, kamu ihalelerinde teknik şartname yazımına destek sağlıyoruz. İletişim formundan veya WhatsApp üzerinden ulaşmanız yeterlidir.' },
 ];
+
+function getProductFaqs(slug) {
+  const entry = productSeo[slug];
+  if (entry && entry.faqs && entry.faqs.length) return entry.faqs;
+  return FAQS_FALLBACK;
+}
 
 /* emergent ProductDetail — lucide ikonları (Building2, Hospital, Sprout, Factory, ShieldCheck, Cog) */
 const USAGE_AREAS = [
@@ -246,7 +257,7 @@ function generateProductPage(product) {
     .map((row) => `<span class="chip"><span class="chip__key">${esc(row.ozellik)}:</span> ${esc(row.deger)}</span>`)
     .join('\n            ');
 
-  const faqHtml = FAQS.map(
+  const faqHtml = getProductFaqs(product.slug).map(
     (f) => `          <div class="accordion__item">
             <button type="button" class="accordion__trigger" aria-expanded="false">${esc(f.q)}<svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
             <div class="accordion__content">${esc(f.a)}</div>
@@ -301,6 +312,10 @@ function generateProductPage(product) {
     { metaDescription: pageDesc, imageManifest },
     canonicalRel
   );
+  const productFaqs = getProductFaqs(product.slug);
+  const faqSchemaTag = productFaqs.length
+    ? `\n  <script type="application/ld+json">${faqPageSchemaJson(productFaqs)}</script>`
+    : '';
 
   return `<!DOCTYPE html>
 <html lang="tr">
@@ -310,7 +325,7 @@ function generateProductPage(product) {
   <meta name="description" content="${esc(pageDesc)}">
   <title>${esc(pageTitle)}</title>
 ${seoBlock}
-  <script type="application/ld+json">${productSchema}</script>
+  <script type="application/ld+json">${productSchema}</script>${faqSchemaTag}
   <link rel="icon" href="${prefix}assets/img/duru-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="${prefix}assets/css/main.css">
   <link rel="stylesheet" href="${prefix}assets/css/components.css">

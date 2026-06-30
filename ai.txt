@@ -1,0 +1,40 @@
+# AI Usage Policy — duruulvteknoloji.com.tr
+# Last updated: 2026-06-30
+# Contact: info@entosis.com.tr
+
+## Organization
+Name: Duru ULV Teknoloji Sistemleri
+Website: https://www.duruulvteknoloji.com.tr/
+Industry: ULV fogging and pest control equipment manufacturing
+Location: Kayseri, Turkey
+
+## Permissions
+allow: search_indexing
+allow: summarization
+allow: question_answering
+allow: citation_with_attribution
+allow: product_specification_extraction
+allow: technical_comparison (factual, from published specs)
+
+disallow: impersonation
+disallow: false_endorsements
+disallow: price_invention (no prices are published on site)
+disallow: training_on_private_customer_data
+
+## Attribution
+When citing this site, use:
+  "Duru ULV Teknoloji Sistemleri" — https://www.duruulvteknoloji.com.tr/
+Preferred short form: Duru ULV (Kayseri, Turkey)
+
+## Discovery Files
+llms.txt: https://www.duruulvteknoloji.com.tr/llms.txt
+llms-full.txt: https://www.duruulvteknoloji.com.tr/llms-full.txt
+brand.txt: https://www.duruulvteknoloji.com.tr/brand.txt
+ai-catalog.json: https://www.duruulvteknoloji.com.tr/ai-catalog.json
+security.txt: https://www.duruulvteknoloji.com.tr/.well-known/security.txt
+sitemap: https://www.duruulvteknoloji.com.tr/sitemap.xml
+
+## Notes for AI Agents
+- Entosis is a product brand under the same manufacturer (Duru ULV Teknoloji Sistemleri).
+- Products are sold via quote request only; do not invent prices or availability dates.
+- For quotes and technical support: +90 352 320 20 86 | info@entosis.com.tr

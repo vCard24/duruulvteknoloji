@@ -1,8 +1,32 @@
+# AI discovery: https://www.duruulvteknoloji.com.tr/llms.txt | https://www.duruulvteknoloji.com.tr/ai-catalog.json | https://www.duruulvteknoloji.com.tr/.well-known/security.txt
+
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /emergent/
 Disallow: /yigitornek/
 Disallow: /tesekkurler/
+
+# Major AI crawlers (explicit allow — site is open for indexing & citation with attribution)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
 
 Sitemap: https://www.duruulvteknoloji.com.tr/sitemap.xml

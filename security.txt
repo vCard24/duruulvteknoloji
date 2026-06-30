@@ -1,0 +1,13 @@
+# Security contact — Duru ULV Teknoloji Sistemleri
+# RFC 9116 — https://securitytxt.org/
+
+Contact: mailto:info@entosis.com.tr
+Contact: tel:+903523202086
+Contact: https://wa.me/905320659117
+Expires: 2027-06-30T23:32:13.428Z
+Preferred-Languages: tr, en
+Canonical: https://www.duruulvteknoloji.com.tr/.well-known/security.txt
+Policy: https://www.duruulvteknoloji.com.tr/kullanim-kosullari/
+Hiring: https://www.duruulvteknoloji.com.tr/iletisim/
+
+# For security vulnerability reports only. General inquiries: info@entosis.com.tr

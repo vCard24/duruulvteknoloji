@@ -7,6 +7,7 @@ const {
   DEFAULT_OG_IMAGE,
   organizationSchemaJson,
 } = require('./seo-meta');
+const { kvkkHtml, gizlilikHtml, kullanimKosullariHtml } = require('./legal-content');
 
 const ROOT = path.join(__dirname, '..');
 const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'assets/data/urunler.json'), 'utf8'));
@@ -526,7 +527,7 @@ ${categoryCatalogCards}
   ),
 };
 
-function legalPage(title, intro, canonicalRel) {
+function legalPage(title, intro, canonicalRel, bodyHtml) {
   return shell(
     title,
     intro,
@@ -541,8 +542,7 @@ function legalPage(title, intro, canonicalRel) {
     <section class="section bg-muted">
       <div class="container container--text">
         <div class="legal-content">
-          <!-- YASAL METİN: buraya gelecek -->
-          <p>Bu sayfa placeholder olarak yayında. Tam metin sonradan eklenecektir. Sorularınız için <a href="mailto:${data.kurumsal_bilgiler.email}" style="color:var(--color-primary);font-weight:600">${esc(data.kurumsal_bilgiler.email)}</a> adresine yazabilirsiniz.</p>
+${bodyHtml}
         </div>
       </div>
     </section>
@@ -553,9 +553,25 @@ function legalPage(title, intro, canonicalRel) {
   );
 }
 
-pages['gizlilik-politikasi/index.html'] = legalPage('Gizlilik Politikası', 'Kişisel verilerinizin nasıl işlendiğine ilişkin politika metni.', 'gizlilik-politikasi/index.html');
-pages['kvkk/index.html'] = legalPage('KVKK Aydınlatma Metni', '6698 sayılı KVKK kapsamında aydınlatma metni.', 'kvkk/index.html');
-pages['kullanim-kosullari/index.html'] = legalPage('Kullanım Koşulları', 'duruulvteknoloji.com.tr web sitesi kullanım koşulları.', 'kullanim-kosullari/index.html');
+const k = data.kurumsal_bilgiler;
+pages['gizlilik-politikasi/index.html'] = legalPage(
+  'Gizlilik Politikası',
+  'Kişisel verilerinizin nasıl toplandığı, kullanıldığı ve korunduğuna ilişkin politika metni.',
+  'gizlilik-politikasi/index.html',
+  gizlilikHtml(k)
+);
+pages['kvkk/index.html'] = legalPage(
+  'KVKK Aydınlatma Metni',
+  '6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında veri sorumlusu aydınlatma metni.',
+  'kvkk/index.html',
+  kvkkHtml(k)
+);
+pages['kullanim-kosullari/index.html'] = legalPage(
+  'Kullanım Koşulları',
+  'duruulvteknoloji.com.tr web sitesinin kullanımına ilişkin şartlar ve sorumluluk sınırları.',
+  'kullanim-kosullari/index.html',
+  kullanimKosullariHtml(k)
+);
 
 Object.entries(pages).forEach(([rel, html]) => {
   writePage(path.join(ROOT, rel), html);

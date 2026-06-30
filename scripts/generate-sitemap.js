@@ -96,12 +96,36 @@ ${urlEntries}
 </urlset>
 `;
 
-const robots = `User-agent: *
+const robots = `# AI discovery: ${SITE_ORIGIN}/llms.txt | ${SITE_ORIGIN}/ai-catalog.json | ${SITE_ORIGIN}/.well-known/security.txt
+
+User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /emergent/
 Disallow: /yigitornek/
 Disallow: /tesekkurler/
+
+# Major AI crawlers (explicit allow — site is open for indexing & citation with attribution)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
 
 Sitemap: ${SITE_ORIGIN}/sitemap.xml
 `;
@@ -110,3 +134,5 @@ fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemap, 'utf8');
 fs.writeFileSync(path.join(ROOT, 'robots.txt'), robots, 'utf8');
 console.log(`sitemap.xml: ${pages.length} URL`);
 console.log('robots.txt yazıldı');
+
+require('./generate-ai-discovery').generateAiDiscovery();

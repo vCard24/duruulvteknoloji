@@ -12,6 +12,8 @@ const {
   blogCoverOgImageUrl,
   productOgImageUrl,
   productSchemaJson,
+  faqPageSchemaJson,
+  injectFaqSchema,
   SITE_ORIGIN,
 } = require('./seo-meta');
 
@@ -602,6 +604,8 @@ function updateProductPage(product, data) {
     );
   }
 
+  html = injectFaqSchema(html, data.faqs);
+
   fs.writeFileSync(pagePath, html, 'utf8');
   return true;
 }
@@ -939,7 +943,7 @@ ${seoBlock}
   <link rel="stylesheet" href="${prefix}assets/css/main.css">
   <link rel="stylesheet" href="${prefix}assets/css/components.css">
   <link rel="stylesheet" href="${prefix}assets/css/blog.css">
-  <script type="application/ld+json">${JSON.stringify(schema)}</script>
+  <script type="application/ld+json">${JSON.stringify(schema)}</script>${post.faqs.length ? `\n  <script type="application/ld+json">${faqPageSchemaJson(post.faqs)}</script>` : ''}
 </head>
 <body>
 
