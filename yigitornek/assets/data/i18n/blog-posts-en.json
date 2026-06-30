@@ -1,0 +1,72 @@
+{
+  "akilli-kilit-sistemleri-ve-celik-kapilar": {
+    "title": "Smart Lock Systems and Steel Doors",
+    "description": "What are smart locks? Fingerprint, PIN, card and app access. Installation on steel doors and security features.",
+    "excerpt": "What are smart locks? Fingerprint, PIN, card and app access. Installation on steel doors and security features.",
+    "category": "Security",
+    "heroLine1": "Smart Lock",
+    "heroLine2": "Systems & Steel Doors",
+    "heroLead": "Types of smart locks, their features and how they integrate with Yiğit Çelik Kapı doors.",
+    "breadcrumb": "Smart Locks"
+  },
+  "yangina-dayanikli-celik-kapilar": {
+    "title": "Fire-Rated Steel Doors",
+    "description": "EI 30–120 standards, mandatory use areas, testing and fire door pricing.",
+    "excerpt": "EI 30–120 standards, mandatory use areas, testing and fire door pricing.",
+    "category": "Fire Safety",
+    "heroLine1": "Fire-Rated",
+    "heroLine2": "Steel Doors",
+    "heroLead": "EI fire resistance ratings, testing and where fire doors are required.",
+    "breadcrumb": "Fire Doors"
+  },
+  "apartman-dis-kapisi-secim-rehberi": {
+    "title": "Apartment Entrance Door Guide: 8 Key Criteria",
+    "description": "How to choose an apartment entrance door? Owner decisions, pricing and installation.",
+    "excerpt": "How to choose an apartment entrance door? Owner decisions, pricing and installation.",
+    "category": "Buying Guide",
+    "heroLine1": "Apartment Entrance",
+    "heroLine2": "Door — 8 Criteria",
+    "heroLead": "Security, insulation and cost criteria for choosing a building entrance door.",
+    "breadcrumb": "Apartment Entrance Door"
+  },
+  "kapi-malzemeleri-rehberi": {
+    "title": "Door Materials Guide: Choosing the Right Option for Your Home",
+    "description": "Wood, steel, aluminium, PVC and fibreglass — pros and cons compared.",
+    "excerpt": "Compare common door materials to find the best fit for your home.",
+    "category": "Materials",
+    "heroLine1": "Door Materials",
+    "heroLine2": "Buying Guide",
+    "heroLead": "Pros and cons of wood, steel, aluminium, PVC and fibreglass doors.",
+    "breadcrumb": "Door Materials"
+  },
+  "kompozit-yuzeyli-celik-kapilar": {
+    "title": "Composite-Faced Steel Doors",
+    "description": "What is a composite door? Water resistance, sound insulation, durability and pricing.",
+    "excerpt": "Composite doors: security and aesthetics in one design.",
+    "category": "Products",
+    "heroLine1": "Composite-Faced",
+    "heroLine2": "Steel Doors",
+    "heroLead": "Steel doors with composite surfaces — insulation, durability and design.",
+    "breadcrumb": "Composite"
+  },
+  "lazerli-celik-kapilar": {
+    "title": "Laser-Cut Steel Doors",
+    "description": "Models, pricing and features — modern design and high security from Kayseri.",
+    "excerpt": "Laser-cut doors: contemporary design with strong security.",
+    "category": "Products",
+    "heroLine1": "Laser-Cut",
+    "heroLine2": "Steel Doors",
+    "heroLead": "Laser cutting technology combines modern design with high security.",
+    "breadcrumb": "Laser"
+  },
+  "villa-kapisi-secim-rehberi": {
+    "title": "Villa Door Guide: 7 Key Criteria",
+    "description": "Security, aesthetics, materials and installation — a guide to villa entrance doors.",
+    "excerpt": "7 criteria for choosing the right villa door.",
+    "category": "Buying Guide",
+    "heroLine1": "Villa Door",
+    "heroLine2": "7 Key Criteria",
+    "heroLead": "Security, aesthetics, materials and installation for villa entrance doors.",
+    "breadcrumb": "Villa Door"
+  }
+}

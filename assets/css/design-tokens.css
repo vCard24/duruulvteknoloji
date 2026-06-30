@@ -1,0 +1,37 @@
+/* DURU ULV — Design tokens (emergent referansından çıkarıldı) */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Brand palette */
+  --color-primary: #1F3D2B;
+  --color-primary-hover: #2B5239;
+  --color-accent: #3E8E5C;
+  --color-accent-light: #7FD89E;
+  --color-ink: #2B2E33;
+  --color-bg: #F3F4F5;
+  --color-error: #D63B2F;
+  --color-white: #ffffff;
+
+  /* Typography */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+
+  /* Spacing */
+  --container-max: 80rem; /* max-w-7xl */
+  --container-narrow: 64rem;
+  --container-text: 48rem;
+  --section-py: 5rem;
+  --section-py-lg: 6rem;
+
+  /* Borders & radius */
+  --radius-sm: 0.375rem;
+  --border-color: rgba(43, 46, 51, 0.1);
+  --border-color-strong: rgba(43, 46, 51, 0.15);
+
+  /* Transitions */
+  --transition-fast: 220ms ease;
+  --transition-base: 280ms cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  /* Shadows */
+  --shadow-card-hover: 0 12px 28px -16px rgba(31, 61, 43, 0.25);
+}

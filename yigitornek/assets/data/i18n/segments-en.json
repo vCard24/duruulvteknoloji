@@ -1,0 +1,25 @@
+{
+  "lang": "en",
+  "basePrefix": "en",
+  "siteUrl": "https://www.yigitcelikkapi.com.tr",
+  "note": "EN uses the same URL segments as TR under /en/",
+  "segments": {
+    "urunler": "urunler",
+    "urun": "urun",
+    "seri": "seri",
+    "blog": "blog",
+    "urun-karsilastirma": "urun-karsilastirma",
+    "hakkimizda": "hakkimizda",
+    "degerlerimiz": "degerlerimiz",
+    "misyon-vizyon": "misyon-vizyon",
+    "belgelerimiz": "belgelerimiz",
+    "kalite-politikamiz": "kalite-politikamiz",
+    "iletisim": "iletisim",
+    "fiyat-teklifi": "fiyat-teklifi",
+    "katalog": "katalog",
+    "kvkk": "kvkk",
+    "gizlilik-politikasi": "gizlilik-politikasi",
+    "kullanim-kosullari": "kullanim-kosullari",
+    "tesekkurler": "tesekkurler"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "kvkk": {
+    "trPath": "kvkk",
+    "enPath": "kvkk",
+    "title": "Personal Data Protection Notice (KVKK)",
+    "description": "Information under the Turkish Personal Data Protection Law",
+    "heroTitle": "Personal Data Protection Notice",
+    "heroLead": "Information under Turkish Law No. 6698 on the Protection of Personal Data",
+    "intro": "In accordance with Turkish Law No. 6698 on the Protection of Personal Data (KVKK — Turkey's personal data protection legislation), you can find our notice regarding the processing of your personal data below.",
+    "headings": {
+      "Giriş": "Introduction",
+      "Veri Toplama ve Kullanım Amacı": "Data Collection and Purpose of Use",
+      "Veri Saklama Süresi": "Data Retention Period",
+      "Çerezler (Cookies)": "Cookies",
+      "Yurt Dışına Veri Aktarımı": "Cross-Border Data Transfers",
+      "Kişisel Veri Sahibinin Hakları ve Başvuru": "Data Subject Rights and Applications",
+      "Başvuru Yöntemi ve İletişim": "How to Apply and Contact",
+      "Veri Sorumlusunun Kimliği": "Identity of the Data Controller"
+    }
+  },
+  "gizlilik-politikasi": {
+    "trPath": "gizlilik-politikasi",
+    "enPath": "gizlilik-politikasi",
+    "title": "Privacy Policy",
+    "description": "Protection of your personal data and privacy",
+    "heroTitle": "Privacy Policy",
+    "heroLead": "Protection of your personal data and privacy",
+    "intro": "At Yiğit Çelik Kapı, protecting the privacy and security of your personal data is one of our highest priorities. This privacy policy explains how your personal data is collected, processed and protected under Turkish Law No. 6698 on the Protection of Personal Data (KVKK).",
+    "headings": {
+      "Giriş": "Introduction",
+      "Veri Toplama ve Kullanım Amacı": "Data Collection and Purpose of Use",
+      "Veri Saklama Süresi": "Data Retention Period",
+      "Yurt Dışına Veri Aktarımı": "Cross-Border Data Transfers",
+      "Çerezler (Cookies)": "Cookies",
+      "Haklar ve Başvuru": "Rights and Applications",
+      "İletişim": "Contact",
+      "Veri Sorumlusu": "Data Controller"
+    }
+  },
+  "kullanim-kosullari": {
+    "trPath": "kullanim-kosullari",
+    "enPath": "kullanim-kosullari",
+    "title": "Terms of Use",
+    "description": "Terms and conditions for use of this website",
+    "heroTitle": "Terms of Use",
+    "heroLead": "Terms and conditions for use of this website",
+    "intro": "These terms of use apply to all visitors to https://yigitcelikkapi.com.tr/. Anyone who begins using the site is deemed to have accepted the conditions set out below.",
+    "headings": {
+      "Giriş": "Introduction",
+      "Hizmetin Kapsamı": "Scope of Service",
+      "Kullanıcı Yükümlülükleri": "User Obligations",
+      "Formların Kullanım Amacı": "Purpose of Form Use",
+      "Fikri Mülkiyet Hakları": "Intellectual Property Rights",
+      "Sorumluluk Sınırlamaları": "Limitation of Liability",
+      "Veri Toplama ve Gizlilik": "Data Collection and Privacy",
+      "Çerezler (Cookies)": "Cookies",
+      "Değişiklikler": "Changes",
+      "Uyuşmazlık Çözümü": "Dispute Resolution",
+      "İletişim": "Contact"
+    }
+  }
+}

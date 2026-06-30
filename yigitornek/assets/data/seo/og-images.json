@@ -1,0 +1,35 @@
+{
+  "site": "https://www.yigitcelikkapi.com.tr",
+  "siteName": "Yiğit Çelik Kapı",
+  "default": {
+    "image": "assets/img/yigit_celik_kapi-07-1200x700.webp",
+    "width": 1200,
+    "height": 700
+  },
+  "series": {
+    "luks-kabartma-seri": "assets/img/products/luks_kabartma_Seri-01.webp",
+    "luks-pvc-kabartma-seri": "assets/img/products/0d7665cbcd_luks_pvc_seri-03.webp",
+    "luks-pvc-seri": "assets/img/products/84b2c76892_luks_pvc_seri-08.webp",
+    "elit-laminoks-seri": "assets/img/products/elit_laminoks_seri-64.webp",
+    "luks-kompozit-seri": "assets/img/products/luks_kompozit_seri-70.webp",
+    "renkli-saruhan-seri": "assets/img/products/luks_kompozit_seri-85.webp",
+    "luks-saruhan-rustik": "assets/img/luks_saruhan_rustik_seri.webp",
+    "luks-ultralam-seri": "assets/img/products/luks_ultralamm_seri-147.webp",
+    "klasik-laminoks-seri": "assets/img/klasik_laminoks_seri.webp",
+    "sac-panel-seri": "assets/img/products/luks_kompozit_seri-78.webp",
+    "lazer-seri": "assets/img/products/8499eab486_lazer_seri.webp",
+    "profik-kasali-seri": "assets/img/products/luks_kompozit_seri-71.webp",
+    "thermo-ahsap-seri": "assets/img/products/elit_laminoks_seri-66.webp",
+    "granit-tas-yuzey": "assets/img/products/a5a25544ba_granit_tas_yuzey-222.webp",
+    "nitelikli-seri": "assets/img/products/luks_kompozit_seri-72.webp",
+    "bakir-seri": "assets/img/products/luks_kompozit_seri-73.webp",
+    "yangin-kapisi": "assets/img/products/luks_kompozit_seri-74.webp"
+  },
+  "pages": {
+    "index.html": "assets/img/yigit_celik_kapi-07-1200x700.webp",
+    "urunler/index.html": "assets/img/yigit_celik_kapi-04.webp",
+    "blog/index.html": "assets/img/yigit_celik_kapi-02.webp",
+    "fiyat-teklifi/index.html": "assets/img/yigit_celik_kapi-10.webp",
+    "hakkimizda/index.html": "assets/img/fabrika.png"
+  }
+}

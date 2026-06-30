@@ -1,0 +1,102 @@
+{
+  "theme": "LIGHT",
+  "archetype": "4",
+  "archetype_name": "Swiss & High-Contrast",
+  "reasoning": "The corporate B2B/B2G brand requires an authoritative, functional, and highly clear interface. It's a technical industrial domain, fitting Archetype 4 for sober, engineered precision, avoiding 'dopamine' startup tropes.",
+  "colors": {
+    "primary": "#1F3D2B",
+    "accent": "#3E8E5C",
+    "text_main": "#2B2E33",
+    "background_base": "#F3F4F5",
+    "surface": "#FFFFFF",
+    "error": "#D63B2F",
+    "border": "#2B2E33"
+  },
+  "typography": {
+    "headings": {
+      "family": "Space Grotesk",
+      "weights": ["400", "500", "700"],
+      "usage": "H1-H6, component titles"
+    },
+    "body": {
+      "family": "IBM Plex Sans",
+      "weights": ["400", "500", "600"],
+      "usage": "Paragraphs, labels, button text, data tables"
+    }
+  },
+  "spacing_and_layout": {
+    "scale": "Generous (2-3x normal). Focus on whitespace for a calm, uncrowded feel.",
+    "container": "Max-w-7xl mx-auto px-6 lg:px-8",
+    "grids": "Bento-style layouts for categories (grid-cols-1 md:grid-cols-2 lg:grid-cols-4), tabular logic for tech specs.",
+    "border_radius": "Strictly limited. Use sharp edges or max rounded-md (6px). NO full rounded pills for cards."
+  },
+  "surfaces_and_borders": {
+    "strategy": "Grid Borders / Linear Aesthetic",
+    "cards": "White surface (#FFFFFF) on Light Gray background (#F3F4F5). 1px border (#2B2E33 at 10% opacity: border-[#2B2E33]/10). No ambient drop shadows by default.",
+    "hover_state": "Slight lift (-translate-y-1) and subtle, sharp shadow (shadow-md).",
+    "form_elements": "Square or rounded-sm, 1px border, focus ring using Accent vivid green (#3E8E5C)."
+  },
+  "micro_interactions": {
+    "product_card_hover": "Transform: -translate-y-1, transition-transform duration-300 ease-out, shadow-md.",
+    "compare_add_transition": "Scale-in the 'Added' icon gracefully or a subtle border color shift to Accent (#3E8E5C).",
+    "whatsapp_pulse": "Continuous subtle ring expansion on the WhatsApp floating button (animate-pulse or custom ping ring).",
+    "general": "Avoid 'fade-in everything'. Use immediate responses or purposeful, localized transitions only."
+  },
+  "page_components": {
+    "header": "Sticky header. White background. Left: 'DURU ULV' logo (Space Grotesk, #1F3D2B). Middle: Nav links. Right: TR/EN/AR language switcher placeholder + 'Teklif Al' primary button.",
+    "hero": "Left: Bold messaging in Space Grotesk. Right: Large atmospheric background image (e.g., modern factory or greenhouse) with a dark green overlay or clean product image cutout. 'Teklif Al' and 'Ürünleri Keşfet' CTA buttons.",
+    "trust_band": "Horizontal scrolling or grid of certification badges (CE, TSE, ISO 45001, vb.) and '36+ Yıl Deneyim' metric. Muted gray colors to avoid noise.",
+    "product_grid": "4 categories with custom Phosphor icons (duotone or thin weight). Clean, geometric grid.",
+    "product_card": "White background, 1px border. Top half: large image area. Bottom half: Product Name (Space Grotesk), 1-line spec (IBM Plex Sans, #2B2E33/70). Action bar: 'İncele' (solid Accent green) and 'Karşılaştır' (outline).",
+    "product_detail": {
+      "gallery": "Main image + thumbnail strip below. White background for crisp cutout.",
+      "action_bar": "Sticky bottom or prominent right side: 'Teklif Al' (Primary) + 'Karşılaştır' (Secondary).",
+      "specs_table": "Two-column tabular layout for Özellik / Değer. Alternating row background (White / #F3F4F5).",
+      "usage_areas": "Icon grid (Belediye, Hastane, Sera, Çiftlik, Fabrika, Askeriye) using simple line icons.",
+      "faq": "Shadcn accordion styled with sharp corners."
+    },
+    "comparison_page": "Side-by-side table layout. Max 4 columns. Sticky headers with product images and 'Teklif Al' button per column. Actions: 'Tümünü Temizle', 'Yazdır'.",
+    "quote_form": "Minimalist, strictly validated. 'D63B2F' for error borders/text. KVKK checkbox. List of selected products embedded.",
+    "footer": "Dark green (#1F3D2B) background, white text. Grid layout for Links, Certifications, Legal."
+  },
+  "image_urls": {
+    "hero_backgrounds": [
+      {
+        "url": "https://images.unsplash.com/photo-1727870752423-4d51d5b500c7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZmFjdG9yeSUyMGV4dGVyaW9yfGVufDB8fHx8MTc4MjY0NDQ0MHww&ixlib=rb-4.1.0&q=85",
+        "description": "Industrial factory exterior for generic B2B/B2G trust background",
+        "category": "hero"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1524486361537-8ad15938e1a3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBncmVlbmhvdXNlJTIwYWdyaWN1bHR1cmV8ZW58MHx8fHwxNzgyNzY0MTQ3fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Modern greenhouse for agricultural sector usage area",
+        "category": "usage_areas"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1777269749032-d8d458ae594d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwyfHxob3NwaXRhbCUyMGNvcnJpZG9yJTIwY2xlYW58ZW58MHx8fHwxNzgyNzY0MTQ3fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Empty clean hospital corridor for medical/public sector usage area",
+        "category": "usage_areas"
+      }
+    ],
+    "products": [
+      {
+        "description": "NOTE: User provided 4 product images of Duru industrial spraying machines (green/yellow equipment on white background). Ensure white-background images blend perfectly into the #FFFFFF product cards."
+      }
+    ]
+  },
+  "anti_patterns": [
+    "NO prices displayed anywhere.",
+    "NO add-to-cart functionality.",
+    "NO purple-blue gradients or glossy glassmorphism.",
+    "NO rounded cards (keep radius <= 6px).",
+    "NO 'Inter' font.",
+    "NO red, yellow, or orange colors except for form validation errors (#D63B2F).",
+    "NO 'fade-in' cascade animations that make the site feel like a template."
+  ],
+  "technical_instructions": {
+    "framework": "React with Tailwind CSS and Shadcn UI.",
+    "styling": "Use raw Tailwind for layout containers. Customize Shadcn components (strip out excess rounding and default Vercel shadow, apply our 1px border rule).",
+    "icons": "Use @phosphor-icons/react (regular or light weight) for a technical feel.",
+    "testing": "All interactive elements (buttons, form inputs, toggles, accordion headers) MUST include a 'data-testid' attribute (e.g., data-testid='product-compare-btn').",
+    "file_extension": "JavaScript (.js/.jsx) only. No TypeScript (.ts/.tsx)."
+  }
+}

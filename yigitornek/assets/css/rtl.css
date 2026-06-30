@@ -1,0 +1,92 @@
+/**
+ * RTL (Arapça) düzen — html[dir="rtl"]
+ */
+html[dir="rtl"] {
+  direction: rtl;
+  overflow-x: clip;
+  max-width: 100%;
+}
+
+html[dir="rtl"] body {
+  text-align: right;
+  overflow-x: clip;
+  max-width: 100%;
+}
+
+html[dir="rtl"] .site-header,
+html[dir="rtl"] .main-content {
+  width: 100%;
+  max-width: 100%;
+}
+
+html[dir="rtl"] .site-nav__row,
+html[dir="rtl"] .nav-desktop,
+html[dir="rtl"] .nav-actions,
+html[dir="rtl"] .footer-cta__grid,
+html[dir="rtl"] .site-footer__grid,
+html[dir="rtl"] .form-grid,
+html[dir="rtl"] .breadcrumb-clean,
+html[dir="rtl"] .product-grid-clean {
+  direction: rtl;
+}
+
+html[dir="rtl"] .nav-mobile-tools {
+  margin-left: 0;
+  margin-right: 0;
+  margin-inline-start: auto;
+}
+
+html[dir="rtl"] .nav-chevron,
+html[dir="rtl"] .footer-cta__rule {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .hero__accent {
+  left: auto;
+  right: 0;
+}
+
+html[dir="rtl"] .values-carousel,
+html[dir="rtl"] .features-carousel {
+  max-width: 100%;
+}
+
+html[dir="rtl"] .values-carousel__track,
+html[dir="rtl"] .features-carousel__track {
+  padding-inline: 1.5rem;
+}
+
+html[dir="rtl"] .whatsapp-float {
+  left: auto;
+  right: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  html[dir="rtl"] .whatsapp-float {
+    right: 1rem;
+  }
+}
+
+html[dir="rtl"] .mega__inner {
+  direction: rtl;
+}
+
+html[dir="rtl"] .corporate-subnav__track {
+  direction: rtl;
+}
+
+html[dir="rtl"] input,
+html[dir="rtl"] textarea,
+html[dir="rtl"] select {
+  text-align: right;
+}
+
+html[dir="rtl"] .quote-products-slots,
+html[dir="rtl"] .catalog-breadcrumb {
+  direction: rtl;
+}
+
+html[dir="rtl"] .product-card__compare-wrap {
+  right: auto;
+  left: 10px;
+}

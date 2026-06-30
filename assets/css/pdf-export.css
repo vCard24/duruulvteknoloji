@@ -1,0 +1,318 @@
+/* Duru ULV — PDF export sheet (gizli A4 render alanı) */
+.pdf-sheet {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 794px;
+  background: #fff;
+  color: #2B2E33;
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.pdf-sheet.is-capturing {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10000;
+  overflow: visible;
+}
+
+.pdf-doc {
+  padding: 24px 28px 20px;
+}
+
+.pdf-doc__header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 14px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #1F3D2B;
+}
+
+.pdf-doc__logo {
+  flex: 0 0 auto;
+  width: 104px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.pdf-doc__logo-img {
+  display: block;
+  width: 104px;
+  height: 56px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.pdf-doc__header-main h1 {
+  margin: 0 0 4px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #1F3D2B;
+}
+
+.pdf-doc__date {
+  margin: 0;
+  font-size: 11px;
+  color: rgba(43, 46, 51, 0.65);
+}
+
+.pdf-block {
+  margin-bottom: 14px;
+  border: 1px solid rgba(43, 46, 51, 0.12);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pdf-block__head {
+  padding: 8px 14px;
+  background: #F3F4F5;
+  border-bottom: 1px solid rgba(43, 46, 51, 0.1);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #1F3D2B;
+}
+
+.pdf-block__body {
+  padding: 14px;
+}
+
+.pdf-products-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.pdf-products-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pdf-product-card--detail {
+  overflow: visible;
+}
+
+.pdf-product-card__summary {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 10px 12px 8px;
+  background: #fff;
+}
+
+.pdf-product-card__intro {
+  flex: 1;
+  min-width: 0;
+  padding-top: 2px;
+}
+
+.pdf-product-specs-table {
+  width: calc(100% - 24px);
+  margin: 0 12px 12px;
+  border-collapse: collapse;
+  font-size: 9px;
+  line-height: 1.45;
+}
+
+.pdf-product-specs-table th,
+.pdf-product-specs-table td {
+  border: 1px solid rgba(43, 46, 51, 0.12);
+  padding: 5px 8px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.pdf-product-specs-table th {
+  width: 38%;
+  background: #F3F4F5;
+  font-weight: 600;
+  color: #1F3D2B;
+}
+
+.pdf-product-specs-table td {
+  color: #2B2E33;
+}
+
+.pdf-product-specs-table tbody tr:nth-child(even) td,
+.pdf-product-specs-table tbody tr:nth-child(even) th {
+  background: #FAFBFC;
+}
+
+.pdf-product-card__no-specs {
+  margin: 0 12px 12px;
+  font-size: 10px;
+  color: rgba(43, 46, 51, 0.55);
+}
+
+.pdf-product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border: 1px solid rgba(43, 46, 51, 0.12);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  min-height: 100%;
+}
+
+.pdf-product-card__head {
+  padding: 6px 10px;
+  background: #EEF6F0;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #3E8E5C;
+}
+
+.pdf-product-card__media {
+  padding: 0;
+  min-height: 0;
+  flex: 0 0 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #fff;
+}
+
+.pdf-product-card__body {
+  padding: 0 10px 10px;
+  flex: 1;
+}
+
+.pdf-product-card__img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 120px;
+  max-height: 88px;
+  margin: 0 auto;
+  object-fit: contain;
+  border: 1px solid rgba(43, 46, 51, 0.1);
+  border-radius: 6px;
+  background: #F3F4F5;
+}
+
+.pdf-product-card__img-placeholder {
+  width: 120px;
+  height: 88px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: rgba(43, 46, 51, 0.45);
+  border: 1px dashed rgba(43, 46, 51, 0.2);
+  border-radius: 6px;
+  background: #F9FAFB;
+}
+
+.pdf-product-card__title {
+  margin: 0 0 4px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #1F3D2B;
+  line-height: 1.35;
+}
+
+.pdf-product-card__meta {
+  margin: 0;
+  font-size: 11px;
+  color: rgba(43, 46, 51, 0.65);
+}
+
+.pdf-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 16px;
+}
+
+.pdf-field__label {
+  display: block;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(43, 46, 51, 0.55);
+  margin-bottom: 2px;
+}
+
+.pdf-field__value {
+  font-size: 12px;
+  color: #2B2E33;
+}
+
+.pdf-compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px;
+}
+
+.pdf-compare-table th,
+.pdf-compare-table td {
+  border: 1px solid rgba(43, 46, 51, 0.12);
+  padding: 6px 8px;
+  vertical-align: top;
+}
+
+.pdf-compare-table thead th {
+  background: #1F3D2B;
+  color: #fff;
+  font-weight: 600;
+}
+
+.pdf-compare-table tbody th {
+  background: #F3F4F5;
+  text-align: left;
+  font-weight: 600;
+  width: 22%;
+}
+
+.pdf-compare-table__product-img {
+  width: auto;
+  height: auto;
+  max-width: 72px;
+  max-height: 48px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 4px;
+}
+
+.pdf-doc__footer {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(43, 46, 51, 0.1);
+  font-size: 10px;
+  color: rgba(43, 46, 51, 0.6);
+}
+
+.pdf-doc__footer strong {
+  color: #1F3D2B;
+}
+
+.btn-pdf-export {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-pdf-export:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}

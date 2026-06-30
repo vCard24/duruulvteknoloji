@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /de/
+
+Sitemap: https://www.yigitcelikkapi.com.tr/sitemap.xml

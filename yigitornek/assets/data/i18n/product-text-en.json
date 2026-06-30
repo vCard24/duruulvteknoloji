@@ -1,0 +1,990 @@
+{
+  "1": {
+    "name": "Classic White Model",
+    "summary": "Security door in white with gold ornamentation and classic architectural details. Superior durability paired with an elegant appearance."
+  },
+  "2": {
+    "name": "Classic Wood Model",
+    "summary": "Security door with rich dark wood surface, decorative frame, and classic architectural details. Delivers refined styling and high durability together."
+  },
+  "3": {
+    "name": "Modern Minimalist Interior Door",
+    "summary": "Modern interior door design in dark gray with vertical lines and geometric panels. Complements minimalist décor with a sleek, functional look."
+  },
+  "4": {
+    "name": "Modern Geometric Model YC 04",
+    "summary": "Modern steel door with a dark gray surface and vertical and diagonal line patterns. Gold details and a central silver door handle unite style and security."
+  },
+  "5": {
+    "name": "Luxury PVC Embossed",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "6": {
+    "name": "Modern Gold-Detail Model YC 06",
+    "summary": "Modern steel door with a matte beige surface, black frame, and gold metallic details. Long gold door handle and parallel decorative lines deliver refined styling with high-security features."
+  },
+  "7": {
+    "name": "Classic Model YC 07",
+    "summary": "Steel door with a dark surface distinguished by classic design details. Lion-head knocker, decorative handle, and elegant panels deliver refined styling alongside high-security features."
+  },
+  "8": {
+    "name": "Dark modern steel door with concentric rectangular pattern. Combines aesthetics and durability with decorative handle and security details.",
+    "summary": "Modern geometric model YC 08"
+  },
+  "9": {
+    "name": "Model YC 09",
+    "summary": "Modern steel door with a gray surface and symmetric rectangular pattern. Elegant handle and security features suited to residential and commercial use."
+  },
+  "10": {
+    "name": "Model YC 10",
+    "summary": "Modern steel door with geometric pattern in black lines on a gray surface. Delivers aesthetics and security together."
+  },
+  "11": {
+    "name": "Model YC 11",
+    "summary": "Steel door with a black surface and horizontal metal strips for a modern look. Combines security and contemporary design."
+  },
+  "607": {
+    "name": "Model YC 11",
+    "summary": "Steel door with a black surface and horizontal metal strips for a modern look. Combines security and contemporary design."
+  },
+  "608": {
+    "name": "Model YC 13",
+    "summary": "Modern steel door with a glossy black surface and vertical wood slats on the right side. Combines aesthetics and security."
+  },
+  "609": {
+    "name": "Model YC 14",
+    "summary": "Modern steel door combining a wood panel with a matte black surface. Distinguished by a long metallic handle and security details."
+  },
+  "610": {
+    "name": "Model YC 15",
+    "summary": "Steel door offering a modern design with horizontal wood panels on a black surface. Delivers aesthetics and security together."
+  },
+  "611": {
+    "name": "Model YC 16",
+    "summary": "Steel door offering a modern design with horizontal wood panels on a black surface. Delivers aesthetics and security together."
+  },
+  "612": {
+    "name": "Model YC 17",
+    "summary": "Modern steel door with curved wood pattern on a black surface. Combines refined design with security features."
+  },
+  "613": {
+    "name": "Model YC 18",
+    "summary": "Modern steel door with a wood surface, vertical metallic handle, and side panel detailing. Combines contemporary design with dependable security."
+  },
+  "614": {
+    "name": "Model YC 19",
+    "summary": "Modern steel door with wood geometric panel and metallic handle on a black surface. Delivers aesthetic contrast and security."
+  },
+  "615": {
+    "name": "Model YC 20",
+    "summary": "Modern steel door with a dark gray surface and vertical curved wood pattern. Stands out with refined styling and security features."
+  },
+  "616": {
+    "name": "Model YC 21",
+    "summary": "Dark modern steel door designed with two large diamond shapes. Stands out with a long metallic handle and security details."
+  },
+  "617": {
+    "name": "Model YC 22",
+    "summary": "Modern steel door with horizontal wood panel and metallic handle on a black surface. Unites aesthetic contrast and security."
+  },
+  "618": {
+    "name": "Model YC 23",
+    "summary": "Modern steel door with a glossy black surface and white horizontal panel at the center. Combines aesthetics and security."
+  },
+  "33": {
+    "name": "Model YC 24",
+    "summary": "Black steel door with diamond pattern, paired with modern entrance styling. Combines aesthetics and security."
+  },
+  "34": {
+    "name": "Model YC 25",
+    "summary": "Modern steel door with a dark gray surface and wood hexagonal pattern. Combines a striking three-dimensional look with security."
+  },
+  "35": {
+    "name": "Model YC 26",
+    "summary": "Modern steel door with a dark surface, vertical wood strip, and long metallic handle. Combines aesthetics and security."
+  },
+  "36": {
+    "name": "Model YC 27",
+    "summary": "Modern steel door with a dark green surface and concentric rectangular pattern. Stands out with refined styling and security features."
+  },
+  "37": {
+    "name": "Model YC 28",
+    "summary": "Modern steel door with a dark blue surface and horizontal metal lines. Combines aesthetics and security."
+  },
+  "38": {
+    "name": "Model YC 29",
+    "summary": "Modern steel door with geometric pattern in diagonal lines on a black surface. Combines aesthetics and security."
+  },
+  "39": {
+    "name": "Model YC 30",
+    "summary": "Modern steel door with a dark gray surface and geometric pattern in gold lines. Distinguished by a long gold handle and security features."
+  },
+  "40": {
+    "name": "Modern steel door with dark gray surface and vertical light gray stripes. Combines minimalist design with security features.",
+    "summary": "Minimalist model YC 31"
+  },
+  "41": {
+    "name": "Model YC 32",
+    "summary": "Modern steel door with a green surface, horizontal panels, and long metallic handle. Combines aesthetic appeal and security."
+  },
+  "42": {
+    "name": "Model YC 33",
+    "summary": "Modern steel door with a dark gray surface, horizontal black panel, and semicircular handle. Offers a minimalist, contemporary look."
+  },
+  "43": {
+    "name": "Model YC 34",
+    "summary": "Modern steel door with a beige surface, black circular detail, and long black handle. Delivers a geometric, refined appearance."
+  },
+  "44": {
+    "name": "Model YC 35",
+    "summary": "Modern steel door designed with matte black surface and wood panels. Distinguished by a long metallic handle and security details."
+  },
+  "45": {
+    "name": "Model YC 36",
+    "summary": "Modern steel door with a dark surface, horizontal lines, and long metallic handle. Combines aesthetics and security."
+  },
+  "46": {
+    "name": "Model YC 37",
+    "summary": "Modern steel door with a black surface and geometric pattern with gold details. Stands out with a long metallic handle and security features."
+  },
+  "47": {
+    "name": "Model YC 38",
+    "summary": "Modern steel door with a beige surface and concentric circular pattern. Black handle and security details for an elegant look."
+  },
+  "48": {
+    "name": "Model YC 39",
+    "summary": "Steel door with a modern design on a dark surface featuring curved white lines. Delivers aesthetics and security together."
+  },
+  "25": {
+    "name": "Model YC 40",
+    "summary": "Modern steel door with a dark gray surface, vertical gold stripe, and long gold handle. Combines aesthetics and security."
+  },
+  "26": {
+    "name": "Model YC 41",
+    "summary": "Modern steel door with a dark gray surface and geometric pattern in diagonal gold lines. Distinguished by a long handle and security details."
+  },
+  "619": {
+    "name": "Model YC 43",
+    "summary": "Modern steel door with a white surface and geometric pattern in gold lines. Stands out with a long gold handle and security features."
+  },
+  "620": {
+    "name": "Model YC 44",
+    "summary": "Steel door with a modern design pairing wood and black surfaces with curved black lines. Delivers aesthetics and security in one."
+  },
+  "621": {
+    "name": "Model YC 45",
+    "summary": "Modern steel door designed with black and white marble-pattern panels. Distinguished by geometric patterns and security features."
+  },
+  "622": {
+    "name": "Model YC 46",
+    "summary": "Modern steel door designed with light and dark wood panels. Black frame and decorative details for a polished aesthetic."
+  },
+  "623": {
+    "name": "Model YC 48",
+    "summary": "Modern steel door with a wood panel and gray lower section. Distinguished by a long metallic handle and robust security features."
+  },
+  "624": {
+    "name": "Model YC 50",
+    "summary": "Modern steel door designed with stone-pattern surface and curved metal handle. Blends industrial and natural aesthetics."
+  },
+  "625": {
+    "name": "Model YC 51",
+    "summary": "Modern steel door with a light surface and black hexagonal pattern. Three-dimensional cube detail that pairs style with security."
+  },
+  "626": {
+    "name": "Model YC 55",
+    "summary": "Modern steel door with a white surface and minimalist vertical black lines. Black glass panel for a sleek aesthetic."
+  },
+  "627": {
+    "name": "Model YC 57",
+    "summary": "Modern steel door with wavy pattern in dark and light panels. Combines aesthetic appeal with security features."
+  },
+  "628": {
+    "name": "Modern Steel Door with Hexagonal Honeycomb Pattern and Gray Details — YC-51",
+    "summary": "Geometric design where modern gray honeycomb (hexagonal) patterns meet a light wood base. A luxury apartment door with architectural depth and a custom hexagonal handle detail."
+  },
+  "629": {
+    "name": "Gray Steel Door with Vertical Stripes and Oak Combination — YC-52",
+    "summary": "Stepped design with interlocking vertical panels in anthracite gray and light oak. Matte black vertical handle and clean modern lines—a refined choice for apartment entrances."
+  },
+  "630": {
+    "name": "Steel Door with Oval Center Panel and Chevron Wood Pattern — YC-53",
+    "summary": "Light-toned base with a centrally placed oval form. Natural wood chevron cladding within the oval area—a synthesis of classic and modern."
+  },
+  "631": {
+    "name": "Minimal Wood-Look Steel Door with Triangular Handle — YC-54",
+    "summary": "Clean surface with a fully natural wood look (dark walnut/cherry). Minimalist, distinguished presence with a custom black triangular handle accessory that animates the design."
+  },
+  "632": {
+    "name": "Black and White Vertical-Line Contrast Steel Door — YC-55",
+    "summary": "White base with fine black vertical lines and a wide glossy black panel block on the right. A bold, modern model for lovers of high contrast."
+  },
+  "633": {
+    "name": "Luxury Walnut and White Steel Door with Wavy Pattern — YC-56",
+    "summary": "White and walnut wood surfaces separated by curved (wavy) black lines. An asymmetric design that adds movement and character to the entrance."
+  },
+  "634": {
+    "name": "Elit Laminoks",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "635": {
+    "name": "Modern Light Oak Steel Door with Black Stripes and Vertical Accessories — YC-58",
+    "summary": "Modern minimalism with asymmetric black vertical stripes on a light wood base and a long black handle. Elit Laminoks series with a scratch-resistant surface."
+  },
+  "636": {
+    "name": "Luxury Steel Door with Anthracite Geometric Pattern and Walnut Details — YC-59",
+    "summary": "Diagonal lines on black on the left, geometric-cut wood panels on the right. Custom two-tone design with silver vertical handle detail."
+  },
+  "637": {
+    "name": "Gray Stone-Texture Kompozit-Steel Door with Wood Details — YC-60",
+    "summary": "A blend of three textures: cream frame, dark gray textured center panel, and vertical wood panel on the right. Elite design completed with a modern silver handle."
+  },
+  "638": {
+    "name": "Modern Apartment Entry Door with Vertical Fluting in Gray and Black — YC-61",
+    "summary": "Dark anthracite left side with a light gray vertically lined panel body. Soft curved transition detail at the top and a flush black handle system."
+  },
+  "639": {
+    "name": "Modern Anthracite Steel Door with Chevron Pattern — YC-62",
+    "summary": "Entirely in dark gray tones with diagonal and chevron wood placement pattern for a substantial, distinguished presence. Includes a silver vertical pull-handle accessory."
+  },
+  "640": {
+    "name": "Steel Door with Vertical Wood Slats and Cream Combination — YC-63",
+    "summary": "Vertical wood slat look on the right, flat cream panel on the left. An oval curve at the top corner of the wood section adds refined visual interest."
+  },
+  "758": {
+    "name": "Luxury Door with Marble-Stone Look and Horizontal Wood Sections — YC-64",
+    "summary": "Light horizontal wood blocks set on a dark natural stone/marble texture. Integrated black handle system suited to modern architecture."
+  },
+  "759": {
+    "name": "Gray Steel Door with Glossy Glass Look and Vertical Wood Panels — YC-65",
+    "summary": "High-gloss gray glass-look finish combined with a vertical wood panel. Square black lock escutcheons for a minimalist, refined reflection."
+  },
+  "760": {
+    "name": "Three-Part Vertical Gray and Wood Apartment Steel Door — YC-66",
+    "summary": "Symmetric vertical panels: silver/gray wood texture on the sides, warm walnut wood block at the center. Balanced design completed with black square accessories."
+  },
+  "761": {
+    "name": "Full Wood-Look Steel Door with Wide Vertical Panels — YC-67",
+    "summary": "Three-part vertical panel design reflecting the warmth of natural wood. Fine black joint lines and a long black handle for timeless appeal."
+  },
+  "762": {
+    "name": "Luxury Gray Steel Door with Vertical Stripes and Diagonal Black Band — YC-68",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "763": {
+    "name": "All-Gray Modern Steel Door with Diagonal Handles and Vertical Lines — YC-69",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "764": {
+    "name": "Wood-Look Kompozit Panel Door — Model 70",
+    "summary": "Kompozit panel with wood-pattern surface — Model 70"
+  },
+  "765": {
+    "name": "Two-Tone Kompozit Panel Door — Model 71",
+    "summary": "Kompozit panel with two-tone white-gray pattern — Model 71"
+  },
+  "766": {
+    "name": "Minimalist Kompozit Panel Door — Model 72",
+    "summary": "Kompozit panel with black vertical stripe pattern — Model 72"
+  },
+  "767": {
+    "name": "Diagonal-Pattern Kompozit Door — Model 73",
+    "summary": "Kompozit panel with diagonal line pattern — Model 73"
+  },
+  "768": {
+    "name": "Horizontal Wood-Pattern Kompozit Door — YC 74",
+    "summary": "YC 74 Kompozit panel with horizontal wood-pattern stripes"
+  },
+  "769": {
+    "name": "Vertically Lined Kompozit Door — YC 75",
+    "summary": "YC 75 Kompozit panel with vertical line pattern"
+  },
+  "770": {
+    "name": "Geometric-Pattern Kompozit Door — Model 76",
+    "summary": "Kompozit panel with geometric beige-gray pattern — Model 76"
+  },
+  "771": {
+    "name": "Diagonal-Pattern Kompozit Door — Model 77",
+    "summary": "Kompozit panel with diagonal-pattern surface — Model 77"
+  },
+  "772": {
+    "name": "Wood-Look Kompozit Door — Model 78",
+    "summary": "Kompozit panel with wood-pattern horizontal stripes — Model 78"
+  },
+  "773": {
+    "name": "Minimalist Kompozit Panel Door — Model 79",
+    "summary": "Kompozit panel with black surface and white panel detail — Model 79"
+  },
+  "774": {
+    "name": "Geometric Glass-Panel Kompozit Door — YC 80",
+    "summary": "YC 80 Kompozit panel with diagonal-line glass insert"
+  },
+  "775": {
+    "name": "Kompozit Door with Vertical-Line Glass Panel — YC 81",
+    "summary": "YC 81 Kompozit panel with vertical-line glass panels"
+  },
+  "776": {
+    "name": "Double Glass-Panel Kompozit Door — YC 82",
+    "summary": "YC 82 Kompozit panel with dual side glass panels"
+  },
+  "777": {
+    "name": "Vertically Fluted Kompozit Door — YC 83",
+    "summary": "YC 83 Kompozit panel with vertical fluted pattern"
+  },
+  "778": {
+    "name": "Contrast-Panel Kompozit Door — YC 84",
+    "summary": "YC 84 Kompozit panel with white-gray contrast pattern"
+  },
+  "779": {
+    "name": "Elliptical-Line Kompozit Door — YC 85",
+    "summary": "YC 85 Kompozit panel with elliptical silver line pattern"
+  },
+  "780": {
+    "name": "Kompozit Panel and Glass Combination Door — YC 86",
+    "summary": "YC 86 Kompozit panel with wood-pattern look and side glass"
+  },
+  "781": {
+    "name": "Brown-Pattern Kompozit Door — Model 87",
+    "summary": "Kompozit panel with brown wood-pattern surface — Model 87"
+  },
+  "782": {
+    "name": "Kompozit Panel Door with Decorative Grille — YC 88",
+    "summary": "YC 88 Kompozit panel with decorative metal grille glass insert"
+  },
+  "783": {
+    "name": "Wood-Pattern Kompozit-Steel Combination Door — YC 89",
+    "summary": "YC 89 Kompozit panel with wood-pattern frame and black panel"
+  },
+  "784": {
+    "name": "Glossy White Kompozit Door — YC 90",
+    "summary": "YC 90 glossy white Kompozit panel with long black handle"
+  },
+  "785": {
+    "name": "Lamelli Kompozit Panel Door — YC 91",
+    "summary": "YC 91 Kompozit panel with vertical lamelli pattern"
+  },
+  "786": {
+    "name": "Kompozit",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "787": {
+    "name": "Dual-Panel Kompozit Door — Model 93",
+    "summary": "Double door with Kompozit wood-pattern panels — Model 93"
+  },
+  "788": {
+    "name": "Grid-Pattern Kompozit Door — Model 94",
+    "summary": "Kompozit panel with square grid-pattern surface — Model 94"
+  },
+  "789": {
+    "name": "Glass-Partition Kompozit Door — Model 95",
+    "summary": "Kompozit panel with vertical glass partition design — Model 95"
+  },
+  "790": {
+    "name": "Three-Panel Kompozit Door — YC 96",
+    "summary": "YC 96 Kompozit panel with three vertical panel pattern"
+  },
+  "791": {
+    "name": "Panel-Style Kompozit Door — YC 97",
+    "summary": "YC 97 Kompozit panel with diamond-form surface detail"
+  },
+  "792": {
+    "name": "Matte Black and Wood-Pattern Kompozit Door — YC 98",
+    "summary": "YC 98 Kompozit panel with matte black and horizontal wood pattern"
+  },
+  "793": {
+    "name": "Rich Wood-Pattern Kompozit Door — YC 99",
+    "summary": "YC 99 Kompozit panel with rich wood pattern and glass strip"
+  },
+  "12": {
+    "name": "Double Kompozit Door with Dark Glass Panel — YC 100",
+    "summary": "YC 100 double door with dark glass-panel Kompozit surface"
+  },
+  "13": {
+    "name": "Double Door Kompozit with Center Panel — YC 101",
+    "summary": "YC 101 double door with center wood-pattern Kompozit panel"
+  },
+  "14": {
+    "name": "Double Door Diagonal-Line Kompozit — YC 102",
+    "summary": "YC 102 double door with diagonal metallic-line Kompozit surface"
+  },
+  "15": {
+    "name": "Wood-Pattern Kompozit Door with Integrated Glass — YC 103",
+    "summary": "YC 103 Kompozit panel with wood pattern and vertical glass insert"
+  },
+  "16": {
+    "name": "Double Door Wood-Pattern Kompozit — YC 104",
+    "summary": "YC 104 double door with vertical glass and wood-pattern Kompozit panels"
+  },
+  "17": {
+    "name": "Modern Dual-Panel Kompozit Door — YC 105",
+    "summary": "YC 105 dual-panel Kompozit with vertical slat pattern"
+  },
+  "18": {
+    "name": "Double Kompozit Door with Diagonal Metal Accents — YC 109",
+    "summary": "YC 109 double door with diagonal metal-accent Kompozit surface"
+  },
+  "19": {
+    "name": "Kompozit",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "20": {
+    "name": "YC 105 Dual-Panel Kompozit with Vertical Slat Pattern",
+    "summary": "Kompozit pattern with vertical slat look on the left panel, flat surface and metal plates on the right; completed with wide glass side panels."
+  },
+  "21": {
+    "name": "YC 109 Double Door with Diagonal Metal-Accent Kompozit Surface",
+    "summary": "Diagonal metal accents and long vertical handles on a double door; a modern, dynamic double-entry design."
+  },
+  "22": {
+    "name": "YC 110 Kompozit Panel with Black and Marble-Look Contrast",
+    "summary": "Contrast of black Kompozit surface and marble-look white panel; luxury finish with gold details or plate inserts."
+  },
+  "23": {
+    "name": "Kompozit",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "24": {
+    "name": "YC 112 Kompozit Panel with Black Surface and Gold-Accent Insert",
+    "summary": "Black Kompozit surface with vertically gold-framed insert and long gold handle; a premium, luxury entrance design."
+  },
+  "647": {
+    "name": "Colorful Saruhan Series",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "648": {
+    "name": "Colorful Saruhan Series",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "649": {
+    "name": "Colorful Saruhan Series",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "650": {
+    "name": "Colorful Saruhan Series",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "651": {
+    "name": "Colorful Saruhan Series",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "652": {
+    "name": "Colorful Saruhan Series",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "653": {
+    "name": "Colorful Saruhan Series",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "654": {
+    "name": "Colorful Saruhan Series",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "655": {
+    "name": "Colorful Saruhan Series",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "656": {
+    "name": "Colorful Saruhan Series",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "657": {
+    "name": "Colorful Saruhan Series",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "658": {
+    "name": "Colorful Saruhan Series",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "659": {
+    "name": "Colorful Saruhan Series",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "660": {
+    "name": "Colorful Saruhan Series",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "661": {
+    "name": "Colorful Saruhan Series",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "662": {
+    "name": "Colorful Saruhan Series",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "663": {
+    "name": "Colorful Saruhan Series",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "641": {
+    "name": "Luxury Saruhan Rustik",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "642": {
+    "name": "Luxury Saruhan Rustik",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "643": {
+    "name": "Luxury Saruhan Rustik",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "644": {
+    "name": "Luxury Saruhan Rustik",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "645": {
+    "name": "Luxury Saruhan Rustik",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "646": {
+    "name": "Luxury Saruhan Rustik",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "794": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "795": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "796": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "797": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "798": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "799": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "800": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "801": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "802": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "803": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "804": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "805": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "664": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "665": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "666": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "667": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "668": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "669": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "670": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "671": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "672": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "673": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "674": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "675": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "676": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "49": {
+    "name": "Ultralam",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "678": {
+    "name": "Classic Laminoks",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "679": {
+    "name": "Classic Laminoks",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "680": {
+    "name": "Classic Laminoks",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "681": {
+    "name": "Classic Laminoks",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "682": {
+    "name": "Classic Laminoks",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "683": {
+    "name": "Classic Laminoks",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "684": {
+    "name": "Classic Laminoks",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "685": {
+    "name": "Classic Laminoks",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "686": {
+    "name": "Classic Laminoks",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "687": {
+    "name": "Classic Laminoks",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "688": {
+    "name": "Classic Laminoks",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "689": {
+    "name": "Classic Laminoks",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "690": {
+    "name": "Sheet Metal Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "691": {
+    "name": "Sheet Metal Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "692": {
+    "name": "Sheet Metal Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "693": {
+    "name": "Sheet Metal Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "694": {
+    "name": "Sheet Metal Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "695": {
+    "name": "Sheet Metal Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "696": {
+    "name": "Sheet Metal Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "697": {
+    "name": "Sheet Metal Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "698": {
+    "name": "Sheet Metal Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "699": {
+    "name": "Sheet Metal Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "700": {
+    "name": "Sheet Metal Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "701": {
+    "name": "Sheet Metal Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "702": {
+    "name": "Sheet Metal Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "703": {
+    "name": "Sheet Metal Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "704": {
+    "name": "Sheet Metal Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "705": {
+    "name": "Sheet Metal Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "706": {
+    "name": "Sheet Metal Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "707": {
+    "name": "Sheet Metal Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "708": {
+    "name": "Sheet Metal Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "709": {
+    "name": "Sheet Metal Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "710": {
+    "name": "Sheet Metal Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "711": {
+    "name": "Sheet Metal Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "712": {
+    "name": "Glass Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "713": {
+    "name": "Glass Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "714": {
+    "name": "Glass Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "715": {
+    "name": "Glass Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "716": {
+    "name": "Glass Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "717": {
+    "name": "Glass Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "718": {
+    "name": "Glass Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "719": {
+    "name": "Glass Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "720": {
+    "name": "Glass Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "721": {
+    "name": "Glass Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "722": {
+    "name": "Glass Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "723": {
+    "name": "Glass Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "724": {
+    "name": "Glass Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "27": {
+    "name": "Glass Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "28": {
+    "name": "Glass Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "725": {
+    "name": "Glass Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "726": {
+    "name": "Glass Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "727": {
+    "name": "Glass Panel",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "728": {
+    "name": "Profil Frame Model",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "729": {
+    "name": "Profil Frame Model",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "730": {
+    "name": "Profil Frame Model",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "731": {
+    "name": "Profil Frame Model",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "732": {
+    "name": "Solid Thermo Wood",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "733": {
+    "name": "Natural Wood / Black",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "734": {
+    "name": "Natural Wood / Anthracite",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "735": {
+    "name": "Natural Wood / Anthracite",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "736": {
+    "name": "Granite Stone Surface",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "737": {
+    "name": "Granite Stone Surface",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "738": {
+    "name": "Granite Stone Surface",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "739": {
+    "name": "Granite Stone Surface",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "740": {
+    "name": "Granite Stone Surface",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "741": {
+    "name": "Premium Manufacturing",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "742": {
+    "name": "Premium Manufacturing",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "743": {
+    "name": "Premium Manufacturing",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "744": {
+    "name": "Premium Manufacturing",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "745": {
+    "name": "Premium Manufacturing",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "746": {
+    "name": "Premium Manufacturing",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "747": {
+    "name": "Premium Manufacturing",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "748": {
+    "name": "Premium Manufacturing",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "749": {
+    "name": "Premium Manufacturing",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "750": {
+    "name": "Premium Manufacturing",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "751": {
+    "name": "Premium Manufacturing",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "752": {
+    "name": "Premium Manufacturing",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "753": {
+    "name": "Premium Manufacturing",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "754": {
+    "name": "Embossed Copper",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "755": {
+    "name": "Embossed Copper",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "756": {
+    "name": "Embossed Copper",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "757": {
+    "name": "Embossed Copper",
+    "summary": "• This model can be personalized with different color and frame options.\n• The same design becomes uniquely yours with different combinations."
+  },
+  "603": {
+    "name": "Emergency Exit Door (Fire Certified) – Available in All RAL Colors",
+    "summary": "Fire-rated certified emergency exit door; available in all RAL color options."
+  },
+  "604": {
+    "name": "Emergency Exit Door (Fire Certified) – Available in All RAL Colors",
+    "summary": "Fire-rated certified emergency exit door; available in all RAL color options."
+  },
+  "605": {
+    "name": "Emergency Exit Door (Fire Certified) – Available in All RAL Colors",
+    "summary": "Fire-rated certified emergency exit door; available in all RAL color options."
+  },
+  "606": {
+    "name": "Emergency Exit Door (Fire Certified) – Available in All RAL Colors",
+    "summary": "Fire-rated certified emergency exit door; available in all RAL color options."
+  }
+}

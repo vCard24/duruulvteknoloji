@@ -1,0 +1,62 @@
+{
+  "kvkk": {
+    "trPath": "kvkk",
+    "arPath": "حماية-البيانات",
+    "title": "إشعار حماية البيانات (KVKK)",
+    "description": "معلومات بموجب قانون حماية البيانات الشخصية التركي",
+    "heroTitle": "إشعار حماية البيانات",
+    "heroLead": "معلومات بموجب قانون حماية البيانات الشخصية رقم 6698",
+    "intro": "وفقاً لقانون حماية البيانات الشخصية رقم 6698، يمكنكم الاطلاع أدناه على إشعارنا بشأن معالجة بياناتكم الشخصية.",
+    "headings": {
+      "Giriş": "المقدمة",
+      "Veri Toplama ve Kullanım Amacı": "جمع البيانات والغرض من الاستخدام",
+      "Veri Saklama Süresi": "مدة الاحتفاظ بالبيانات",
+      "Çerezler (Cookies)": "ملفات تعريف الارتباط (Cookies)",
+      "Yurt Dışına Veri Aktarımı": "نقل البيانات إلى خارج البلاد",
+      "Kişisel Veri Sahibinin Hakları ve Başvuru": "حقوق صاحب البيانات والتقديم",
+      "Başvuru Yöntemi ve İletişim": "طريقة التقديم والتواصل",
+      "Veri Sorumlusunun Kimliği": "هوية مسؤول البيانات"
+    }
+  },
+  "gizlilik-politikasi": {
+    "trPath": "gizlilik-politikasi",
+    "arPath": "سياسة-الخصوصية",
+    "title": "سياسة الخصوصية",
+    "description": "حماية بياناتكم الشخصية وخصوصيتكم",
+    "heroTitle": "سياسة الخصوصية",
+    "heroLead": "حماية بياناتكم الشخصية وخصوصيتكم",
+    "intro": "في Yiğit Çelik Kapı نعتبر حماية خصوصية وأمان بياناتكم الشخصية من أهم أولوياتنا. توضّح سياسة الخصوصية هذه كيفية جمع بياناتكم ومعالجتها وحمايتها بموجب قانون حماية البيانات الشخصية رقم 6698.",
+    "headings": {
+      "Giriş": "المقدمة",
+      "Veri Toplama ve Kullanım Amacı": "جمع البيانات والغرض من الاستخدام",
+      "Veri Saklama Süresi": "مدة الاحتفاظ بالبيانات",
+      "Yurt Dışına Veri Aktarımı": "نقل البيانات إلى خارج البلاد",
+      "Çerezler (Cookies)": "ملفات تعريف الارتباط (Cookies)",
+      "Haklar ve Başvuru": "الحقوق والتقديم",
+      "İletişim": "اتصل بنا",
+      "Veri Sorumlusu": "مسؤول البيانات"
+    }
+  },
+  "kullanim-kosullari": {
+    "trPath": "kullanim-kosullari",
+    "arPath": "شروط-الاستخدام",
+    "title": "شروط الاستخدام",
+    "description": "شروط وأحكام استخدام الموقع الإلكتروني",
+    "heroTitle": "شروط الاستخدام",
+    "heroLead": "شروط وأحكام استخدام الموقع الإلكتروني",
+    "intro": "تسري شروط الاستخدام هذه على جميع زوار موقع https://yigitcelikkapi.com.tr/. يُعدّ كل من يبدأ استخدام الموقع موافقاً على الشروط المذكورة أدناه.",
+    "headings": {
+      "Giriş": "المقدمة",
+      "Hizmetin Kapsamı": "نطاق الخدمة",
+      "Kullanıcı Yükümlülükleri": "التزامات المستخدم",
+      "Formların Kullanım Amacı": "الغرض من استخدام النماذج",
+      "Fikri Mülkiyet Hakları": "حقوق الملكية الفكرية",
+      "Sorumluluk Sınırlamaları": "حدود المسؤولية",
+      "Veri Toplama ve Gizlilik": "جمع البيانات والخصوصية",
+      "Çerezler (Cookies)": "ملفات تعريف الارتباط (Cookies)",
+      "Değişiklikler": "التعديلات",
+      "Uyuşmazlık Çözümü": "حل النزاعات",
+      "İletişim": "اتصل بنا"
+    }
+  }
+}

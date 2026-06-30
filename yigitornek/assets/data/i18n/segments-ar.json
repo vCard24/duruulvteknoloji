@@ -1,0 +1,24 @@
+{
+  "lang": "ar",
+  "basePrefix": "ar",
+  "siteUrl": "https://www.yigitcelikkapi.com.tr",
+  "segments": {
+    "urunler": "المنتجات",
+    "urun": "منتج",
+    "seri": "السلسلة",
+    "blog": "المدونة",
+    "urun-karsilastirma": "مقارنة-المنتجات",
+    "hakkimizda": "من-نحن",
+    "degerlerimiz": "قيمنا",
+    "misyon-vizyon": "الرسالة-والرؤية",
+    "belgelerimiz": "الشهادات",
+    "kalite-politikamiz": "سياسة-الجودة",
+    "iletisim": "اتصل-بنا",
+    "fiyat-teklifi": "طلب-عرض-سعر",
+    "katalog": "كتالوجات",
+    "kvkk": "حماية-البيانات",
+    "gizlilik-politikasi": "سياسة-الخصوصية",
+    "kullanim-kosullari": "شروط-الاستخدام",
+    "tesekkurler": "شكرا-لكم"
+  }
+}

@@ -1,0 +1,1283 @@
+{
+  "pages": {
+    "index.html": "index.html",
+    "urunler/index.html": "المنتجات/index.html",
+    "urun/index.html": "منتج/index.html",
+    "seri/index.html": "السلسلة/index.html",
+    "blog/index.html": "المدونة/index.html",
+    "urun-karsilastirma/index.html": "مقارنة-المنتجات/index.html",
+    "hakkimizda/index.html": "من-نحن/index.html",
+    "degerlerimiz/index.html": "قيمنا/index.html",
+    "misyon-vizyon/index.html": "الرسالة-والرؤية/index.html",
+    "belgelerimiz/index.html": "الشهادات/index.html",
+    "kalite-politikamiz/index.html": "سياسة-الجودة/index.html",
+    "iletisim/index.html": "اتصل-بنا/index.html",
+    "fiyat-teklifi/index.html": "طلب-عرض-سعر/index.html",
+    "katalog/index.html": "كتالوجات/index.html",
+    "kvkk/index.html": "حماية-البيانات/index.html",
+    "gizlilik-politikasi/index.html": "سياسة-الخصوصية/index.html",
+    "kullanim-kosullari/index.html": "شروط-الاستخدام/index.html",
+    "tesekkurler/index.html": "شكرا-لكم/index.html",
+    "seri/luks-kabartma-seri/index.html": "السلسلة/سلسلة-النقش-الفاخر/index.html",
+    "seri/luks-pvc-kabartma-seri/index.html": "السلسلة/سلسلة-pvc-النقش-الفاخر/index.html",
+    "seri/luks-pvc-seri/index.html": "السلسلة/سلسلة-pvc-الفاخر/index.html",
+    "seri/elit-laminoks-seri/index.html": "السلسلة/سلسلة-اليت-لامينокс/index.html",
+    "seri/luks-kompozit-seri/index.html": "السلسلة/سلسلة-الكompozit-الفاخر/index.html",
+    "seri/renkli-saruhan-seri/index.html": "السلسلة/سلسلة-ساروهان-الملونة/index.html",
+    "seri/luks-saruhan-rustik/index.html": "السلسلة/سلسلة-سارuhan-الrustik/index.html",
+    "seri/luks-ultralam-seri/index.html": "السلسلة/سلسلة-ultralam-الفاخر/index.html",
+    "seri/klasik-laminoks-seri/index.html": "السلسلة/سلسلة-لامينокс-الكلاسيكي/index.html",
+    "seri/sac-panel-seri/index.html": "السلسلة/سلسلة-الpanel-المعدني/index.html",
+    "seri/lazer-seri/index.html": "السلسلة/سلسلة-الليزر/index.html",
+    "seri/profik-kasali-seri/index.html": "السلسلة/سلسلة-الإطار-المprofil/index.html",
+    "seri/thermo-ahsap-seri/index.html": "السلسلة/سلسلة-thermo-خشب/index.html",
+    "seri/granit-tas-yuzey/index.html": "السلسلة/سلسلة-سطح-الجرanit/index.html",
+    "seri/nitelikli-seri/index.html": "السلسلة/سلسلة-الجودة/index.html",
+    "seri/bakir-seri/index.html": "السلسلة/سلسلة-النحاس/index.html",
+    "seri/yangin-kapisi/index.html": "السلسلة/سلسلة-ابواب-الحريق/index.html",
+    "blog/akilli-kilit-sistemleri-ve-celik-kapilar/index.html": "المدونة/انظمة-الاقفال-الذكية-والابواب-الصلبة/index.html",
+    "blog/apartman-dis-kapisi-secim-rehberi/index.html": "المدونة/دليل-اختيار-باب-الشقة-الخارجي/index.html",
+    "blog/kapi-malzemeleri-rehberi/index.html": "المدونة/دليل-مواد-الابواب/index.html",
+    "blog/kompozit-yuzeyli-celik-kapilar/index.html": "المدونة/ابواب-الصلب-بحافة-كompozit/index.html",
+    "blog/lazerli-celik-kapilar/index.html": "المدونة/ابواب-الصلب-بالليزر/index.html",
+    "blog/villa-kapisi-secim-rehberi/index.html": "المدونة/دليل-اختيار-باب-الفilla/index.html",
+    "blog/yangina-dayanikli-celik-kapilar/index.html": "المدونة/ابواب-الصلب-المقاومة-للحريق/index.html",
+    "urun/yc-01-yigit-celik-kapi-klasik-beyaz-model/index.html": "منتج/yc-01/index.html",
+    "urun/yc-02-yigit-celik-kapi-ahsap-klasik-model/index.html": "منتج/yc-02/index.html",
+    "urun/yc-03-yigit-celik-kapi-modern-minimalist-ic-kapi/index.html": "منتج/yc-03/index.html",
+    "urun/yc-04-yigit-celik-kapi-modern-geometrik-model-yc-04/index.html": "منتج/yc-04/index.html",
+    "urun/yc-05-luks-pvc-kabartma-beyaz-siyah-ozel-kol-tasarimli/index.html": "منتج/yc-05/index.html",
+    "urun/yc-06-yigit-celik-kapi-modern-altin-detayli-model-yc-06/index.html": "منتج/yc-06/index.html",
+    "urun/yc-07-yigit-celik-kapi-klasik-model-yc-07/index.html": "منتج/yc-07/index.html",
+    "urun/yc-08-konsantrik-dikdortgen-desenli-modern-celik-kapi/index.html": "منتج/yc-08/index.html",
+    "urun/yc-09-yigit-celik-kapi-model-yc-09/index.html": "منتج/yc-09/index.html",
+    "urun/yc-10-yigit-celik-kapi-model-yc-10/index.html": "منتج/yc-10/index.html",
+    "urun/yc-100-koyu-cam-panel-cift-kompozit-kapi-modeli-yc-100/index.html": "منتج/yc-100/index.html",
+    "urun/yc-101-cift-kapi-kompozit-orta-panel-modeli-yc-101/index.html": "منتج/yc-101/index.html",
+    "urun/yc-102-cift-kapi-diagonal-cizgili-kompozit-modeli-yc-102/index.html": "منتج/yc-102/index.html",
+    "urun/yc-103-ahsap-desenli-kompozit-ve-cam-entegre-kapi-modeli-yc-103/index.html": "منتج/yc-103/index.html",
+    "urun/yc-104-cift-kapi-ahsap-desenli-kompozit-modeli-yc-104/index.html": "منتج/yc-104/index.html",
+    "urun/yc-105-cift-panelli-modern-kompozit-kapi-modeli-yc-105/index.html": "منتج/yc-105/index.html",
+    "urun/yc-106-diagonal-metal-aksanli-cift-kompozit-kapi-modeli-yc-106/index.html": "منتج/yc-106/index.html",
+    "urun/yc-107-kompozit-kapi-modeli-yc-107/index.html": "منتج/yc-107/index.html",
+    "urun/yc-108-cift-panel-kompozit-dikey-slat-desen-yc-108/index.html": "منتج/yc-108/index.html",
+    "urun/yc-109-diagonal-metal-aksanli-kompozit-yc-109/index.html": "منتج/yc-109/index.html",
+    "urun/yc-11-yigit-celik-kapi-model-yc-11/index.html": "منتج/yc-11/index.html",
+    "urun/yc-110-siyah-altin-kontrast-kompozit-kapi-yc-110/index.html": "منتج/yc-110/index.html",
+    "urun/yc-111-kompozit-kapi-modeli-yc-111/index.html": "منتج/yc-111/index.html",
+    "urun/yc-112-siyah-ve-altin-aksanli-kompozit-kapi-yc-112/index.html": "منتج/yc-112/index.html",
+    "urun/yc-113-renkli-saruhan-seri-antrasit-saruhan-yc-113/index.html": "منتج/yc-113/index.html",
+    "urun/yc-114-renkli-saruhan-seri-antrasit-saruhan-yc-114/index.html": "منتج/yc-114/index.html",
+    "urun/yc-115-renkli-saruhan-seri-antrasit-saruhan-yc-115/index.html": "منتج/yc-115/index.html",
+    "urun/yc-116-renkli-saruhan-seri-antrasit-saruhan-yc-116/index.html": "منتج/yc-116/index.html",
+    "urun/yc-117-renkli-saruhan-seri-antrasit-gri-mese-yc-117/index.html": "منتج/yc-117/index.html",
+    "urun/yc-118-renkli-saruhan-seri-antrasit-saruhan-yc-118/index.html": "منتج/yc-118/index.html",
+    "urun/yc-119-renkli-saruhan-seri-antrasit-saruhan-yc-119/index.html": "منتج/yc-119/index.html",
+    "urun/yc-12-yigit-celik-kapi-model-yc-12/index.html": "منتج/yc-12/index.html",
+    "urun/yc-120-renkli-saruhan-seri-antrasit-saruhan-yc-120/index.html": "منتج/yc-120/index.html",
+    "urun/yc-121-renkli-saruhan-seri-antrasit-saruhan-yc-121/index.html": "منتج/yc-121/index.html",
+    "urun/yc-122-renkli-saruhan-seri-antrasit-saruhan-yc-122/index.html": "منتج/yc-122/index.html",
+    "urun/yc-123-renkli-saruhan-seri-antrasit-gri-mese-yc-123/index.html": "منتج/yc-123/index.html",
+    "urun/yc-124-renkli-saruhan-seri-antrasit-saruhan-yc-124/index.html": "منتج/yc-124/index.html",
+    "urun/yc-125-renkli-saruhan-seri-gri-mese-siyah-yc-125/index.html": "منتج/yc-125/index.html",
+    "urun/yc-126-renkli-saruhan-seri-gri-mese-siyah-yc-126/index.html": "منتج/yc-126/index.html",
+    "urun/yc-127-renkli-saruhan-seri-gri-mese-antrasit-yc-127/index.html": "منتج/yc-127/index.html",
+    "urun/yc-128-renkli-saruhan-seri-gri-mese-antrasit-yc-128/index.html": "منتج/yc-128/index.html",
+    "urun/yc-129-renkli-saruhan-seri-gri-mese-antrasit-yc-129/index.html": "منتج/yc-129/index.html",
+    "urun/yc-13-yigit-celik-kapi-model-yc-13/index.html": "منتج/yc-13/index.html",
+    "urun/yc-130-luks-saruhan-rustik-gri-mese/index.html": "منتج/yc-130/index.html",
+    "urun/yc-131-luks-saruhan-rustik-saruhan/index.html": "منتج/yc-131/index.html",
+    "urun/yc-132-luks-saruhan-rustik-krem/index.html": "منتج/yc-132/index.html",
+    "urun/yc-133-luks-saruhan-rustik-gri-mese-model-133/index.html": "منتج/yc-133/index.html",
+    "urun/yc-134-luks-saruhan-rustik-saruhan-model-134/index.html": "منتج/yc-134/index.html",
+    "urun/yc-135-luks-saruhan-rustik-saruhan-model-135/index.html": "منتج/yc-135/index.html",
+    "urun/yc-14-yigit-celik-kapi-model-yc-14/index.html": "منتج/yc-14/index.html",
+    "urun/yc-148-ultralam-dijital-baski/index.html": "منتج/yc-148/index.html",
+    "urun/yc-149-ultralam-dijital-baski/index.html": "منتج/yc-149/index.html",
+    "urun/yc-15-yigit-celik-kapi-model-yc-15/index.html": "منتج/yc-15/index.html",
+    "urun/yc-150-ultralam-dijital-baski/index.html": "منتج/yc-150/index.html",
+    "urun/yc-151-ultralam-dijital-baski/index.html": "منتج/yc-151/index.html",
+    "urun/yc-152-ultralam-dijital-baski/index.html": "منتج/yc-152/index.html",
+    "urun/yc-153-ultralam-dijital-baski/index.html": "منتج/yc-153/index.html",
+    "urun/yc-154-ultralam-dijital-baski/index.html": "منتج/yc-154/index.html",
+    "urun/yc-155-ultralam-dijital-baski/index.html": "منتج/yc-155/index.html",
+    "urun/yc-156-ultralam-dijital-baski/index.html": "منتج/yc-156/index.html",
+    "urun/yc-157-ultralam-dijital-baski/index.html": "منتج/yc-157/index.html",
+    "urun/yc-158-ultralam-dijital-baski/index.html": "منتج/yc-158/index.html",
+    "urun/yc-159-ultralam-dijital-baski/index.html": "منتج/yc-159/index.html",
+    "urun/yc-16-yigit-celik-kapi-model-yc-16/index.html": "منتج/yc-16/index.html",
+    "urun/yc-160-ultralam-dijital-baski/index.html": "منتج/yc-160/index.html",
+    "urun/yc-162-klasik-laminoks-tanganika/index.html": "منتج/yc-162/index.html",
+    "urun/yc-163-klasik-laminoks-beyaz/index.html": "منتج/yc-163/index.html",
+    "urun/yc-164-klasik-laminoks-beyaz/index.html": "منتج/yc-164/index.html",
+    "urun/yc-165-klasik-laminoks-afrika-cevizi/index.html": "منتج/yc-165/index.html",
+    "urun/yc-166-klasik-laminoks-beyaz/index.html": "منتج/yc-166/index.html",
+    "urun/yc-167-klasik-laminoks-tanganika/index.html": "منتج/yc-167/index.html",
+    "urun/yc-168-klasik-laminoks-afrika-cevizi/index.html": "منتج/yc-168/index.html",
+    "urun/yc-169-klasik-laminoks-afrika-cevizi/index.html": "منتج/yc-169/index.html",
+    "urun/yc-17-yigit-celik-kapi-model-yc-17/index.html": "منتج/yc-17/index.html",
+    "urun/yc-170-klasik-laminoks-tanganika/index.html": "منتج/yc-170/index.html",
+    "urun/yc-171-klasik-laminoks-tanganika/index.html": "منتج/yc-171/index.html",
+    "urun/yc-172-klasik-laminoks-tanganika/index.html": "منتج/yc-172/index.html",
+    "urun/yc-173-klasik-laminoks-tanganika/index.html": "منتج/yc-173/index.html",
+    "urun/yc-174-sac-panel-siyah/index.html": "منتج/yc-174/index.html",
+    "urun/yc-175-sac-panel-yesil/index.html": "منتج/yc-175/index.html",
+    "urun/yc-176-sac-panel-kahverengi/index.html": "منتج/yc-176/index.html",
+    "urun/yc-177-sac-panel-yesil/index.html": "منتج/yc-177/index.html",
+    "urun/yc-178-sac-panel-siyah/index.html": "منتج/yc-178/index.html",
+    "urun/yc-179-sac-panel-antrasit/index.html": "منتج/yc-179/index.html",
+    "urun/yc-18-yigit-celik-kapi-model-yc-18/index.html": "منتج/yc-18/index.html",
+    "urun/yc-180-sac-panel-antrasit/index.html": "منتج/yc-180/index.html",
+    "urun/yc-181-sac-panel-antrasit/index.html": "منتج/yc-181/index.html",
+    "urun/yc-182-sac-panel-siyah/index.html": "منتج/yc-182/index.html",
+    "urun/yc-183-sac-panel-antrasit/index.html": "منتج/yc-183/index.html",
+    "urun/yc-184-sac-panel-siyah/index.html": "منتج/yc-184/index.html",
+    "urun/yc-185-sac-panel-antrasit/index.html": "منتج/yc-185/index.html",
+    "urun/yc-186-sac-panel-antrasit/index.html": "منتج/yc-186/index.html",
+    "urun/yc-187-sac-panel-acik-gri/index.html": "منتج/yc-187/index.html",
+    "urun/yc-188-sac-panel-beyaz/index.html": "منتج/yc-188/index.html",
+    "urun/yc-189-sac-panel-antrasit/index.html": "منتج/yc-189/index.html",
+    "urun/yc-19-yigit-celik-kapi-model-yc-19/index.html": "منتج/yc-19/index.html",
+    "urun/yc-190-sac-panel-tanganika/index.html": "منتج/yc-190/index.html",
+    "urun/yc-191-sac-panel-tanganika/index.html": "منتج/yc-191/index.html",
+    "urun/yc-192-sac-panel-tanganika/index.html": "منتج/yc-192/index.html",
+    "urun/yc-193-sac-panel-antrasit/index.html": "منتج/yc-193/index.html",
+    "urun/yc-194-sac-panel-tanganika/index.html": "منتج/yc-194/index.html",
+    "urun/yc-195-sac-panel-yesil/index.html": "منتج/yc-195/index.html",
+    "urun/yc-196-camli-panel-antrasit/index.html": "منتج/yc-196/index.html",
+    "urun/yc-197-camli-panel-antrasit/index.html": "منتج/yc-197/index.html",
+    "urun/yc-198-camli-panel-siyah/index.html": "منتج/yc-198/index.html",
+    "urun/yc-199-camli-panel-beyaz/index.html": "منتج/yc-199/index.html",
+    "urun/yc-20-yigit-celik-kapi-model-yc-20/index.html": "منتج/yc-20/index.html",
+    "urun/yc-200-camli-panel-antrasit/index.html": "منتج/yc-200/index.html",
+    "urun/yc-201-camli-panel-kahverengi/index.html": "منتج/yc-201/index.html",
+    "urun/yc-202-camli-panel-antrasit/index.html": "منتج/yc-202/index.html",
+    "urun/yc-203-camli-panel-antrasit/index.html": "منتج/yc-203/index.html",
+    "urun/yc-204-camli-panel-antrasit/index.html": "منتج/yc-204/index.html",
+    "urun/yc-205-camli-panel-antrasit/index.html": "منتج/yc-205/index.html",
+    "urun/yc-206-camli-panel-siyah-gold/index.html": "منتج/yc-206/index.html",
+    "urun/yc-207-camli-panel-beyat/index.html": "منتج/yc-207/index.html",
+    "urun/yc-208-camli-panel-saruhan-siyah/index.html": "منتج/yc-208/index.html",
+    "urun/yc-209-camli-panel-fume-siyah/index.html": "منتج/yc-209/index.html",
+    "urun/yc-21-yigit-celik-kapi-model-yc-21/index.html": "منتج/yc-21/index.html",
+    "urun/yc-210-lazer-kesim-celik-kapi-model-yc-210/index.html": "منتج/yc-210/index.html",
+    "urun/yc-211-camli-panel-kahverengi/index.html": "منتج/yc-211/index.html",
+    "urun/yc-212-camli-panel-antrasit/index.html": "منتج/yc-212/index.html",
+    "urun/yc-213-camli-panel-krem/index.html": "منتج/yc-213/index.html",
+    "urun/yc-214-profil-kasa-model-luca/index.html": "منتج/yc-214/index.html",
+    "urun/yc-215-profil-kasa-model-dogal-ahsap/index.html": "منتج/yc-215/index.html",
+    "urun/yc-216-profil-kasa-model-fume-mese/index.html": "منتج/yc-216/index.html",
+    "urun/yc-217-profil-kasa-model-antrasit-gri-kumas/index.html": "منتج/yc-217/index.html",
+    "urun/yc-218-masif-thermo-ahsap-dogal-ahsap-siyah/index.html": "منتج/yc-218/index.html",
+    "urun/yc-219-dogal-ahsap-siyah/index.html": "منتج/yc-219/index.html",
+    "urun/yc-22-yigit-celik-kapi-model-yc-22/index.html": "منتج/yc-22/index.html",
+    "urun/yc-220-dogal-ahsap-antrasit/index.html": "منتج/yc-220/index.html",
+    "urun/yc-221-dogal-ahsap-antrasit/index.html": "منتج/yc-221/index.html",
+    "urun/yc-222-granit-tas-yuzey-dogal-tas-deseni/index.html": "منتج/yc-222/index.html",
+    "urun/yc-223-granit-tas-yuzey-dogal-tas-deseni/index.html": "منتج/yc-223/index.html",
+    "urun/yc-224-granit-tas-yuzey-dogal-tas-deseni/index.html": "منتج/yc-224/index.html",
+    "urun/yc-225-granit-tas-yuzey-dogal-tas-deseni/index.html": "منتج/yc-225/index.html",
+    "urun/yc-226-granit-tas-yuzey-dogal-tas-deseni/index.html": "منتج/yc-226/index.html",
+    "urun/yc-227-nitelikli-uretim-dogal-tas-antrasit/index.html": "منتج/yc-227/index.html",
+    "urun/yc-228-nitelikli-uretim-siyah-gold/index.html": "منتج/yc-228/index.html",
+    "urun/yc-229-nitelikli-uretim-luca-acik-gri-antrasit/index.html": "منتج/yc-229/index.html",
+    "urun/yc-23-yigit-celik-kapi-model-yc-23/index.html": "منتج/yc-23/index.html",
+    "urun/yc-230-nitelikli-uretim-antrasit-acik-gri-luca/index.html": "منتج/yc-230/index.html",
+    "urun/yc-231-nitelikli-uretim-siyah-luca/index.html": "منتج/yc-231/index.html",
+    "urun/yc-232-nitelikli-uretim-siyah-saruhan/index.html": "منتج/yc-232/index.html",
+    "urun/yc-233-nitelikli-uretim-siyah-elma/index.html": "منتج/yc-233/index.html",
+    "urun/yc-234-nitelikli-uretim-lila/index.html": "منتج/yc-234/index.html",
+    "urun/yc-235-nitelikli-uretim-siyah-kumas/index.html": "منتج/yc-235/index.html",
+    "urun/yc-236-nitelikli-uretim-soft-mermer-gri/index.html": "منتج/yc-236/index.html",
+    "urun/yc-237-nitelikli-uretim-soft-antrasit/index.html": "منتج/yc-237/index.html",
+    "urun/yc-238-nitelikli-uretim-saruhan-antrasit/index.html": "منتج/yc-238/index.html",
+    "urun/yc-239-nitelikli-uretim-gri-antrasit/index.html": "منتج/yc-239/index.html",
+    "urun/yc-24-yigit-celik-kapi-model-yc-24/index.html": "منتج/yc-24/index.html",
+    "urun/yc-240-kabartma-bakir-bakir-baskili/index.html": "منتج/yc-240/index.html",
+    "urun/yc-241-kabartma-bakir-bakir-baskili/index.html": "منتج/yc-241/index.html",
+    "urun/yc-242-kabartma-bakir-bakir-baskili/index.html": "منتج/yc-242/index.html",
+    "urun/yc-243-kabartma-bakir-bakir-baskili/index.html": "منتج/yc-243/index.html",
+    "urun/yc-25-yigit-celik-kapi-model-yc-25/index.html": "منتج/yc-25/index.html",
+    "urun/yc-26-yigit-celik-kapi-model-yc-26/index.html": "منتج/yc-26/index.html",
+    "urun/yc-27-yigit-celik-kapi-model-yc-27/index.html": "منتج/yc-27/index.html",
+    "urun/yc-28-yigit-celik-kapi-model-yc-28/index.html": "منتج/yc-28/index.html",
+    "urun/yc-29-yigit-celik-kapi-model-yc-29/index.html": "منتج/yc-29/index.html",
+    "urun/yc-30-yigit-celik-kapi-model-yc-30/index.html": "منتج/yc-30/index.html",
+    "urun/yc-31-yigit-celik-kapi-model-yc-31/index.html": "منتج/yc-31/index.html",
+    "urun/yc-32-yigit-celik-kapi-model-yc-32/index.html": "منتج/yc-32/index.html",
+    "urun/yc-33-yigit-celik-kapi-model-yc-33/index.html": "منتج/yc-33/index.html",
+    "urun/yc-34-yigit-celik-kapi-model-yc-34/index.html": "منتج/yc-34/index.html",
+    "urun/yc-35-yigit-celik-kapi-model-yc-35/index.html": "منتج/yc-35/index.html",
+    "urun/yc-36-yigit-celik-kapi-model-yc-36/index.html": "منتج/yc-36/index.html",
+    "urun/yc-37-yigit-celik-kapi-model-yc-37/index.html": "منتج/yc-37/index.html",
+    "urun/yc-38-yigit-celik-kapi-model-yc-38/index.html": "منتج/yc-38/index.html",
+    "urun/yc-39-yigit-celik-kapi-model-yc-39/index.html": "منتج/yc-39/index.html",
+    "urun/yc-40-yigit-celik-kapi-model-yc-40/index.html": "منتج/yc-40/index.html",
+    "urun/yc-41-elit-laminoks-kapi-model-yc-41/index.html": "منتج/yc-41/index.html",
+    "urun/yc-42-elit-laminoks-kapi-model-yc-42/index.html": "منتج/yc-42/index.html",
+    "urun/yc-43-elit-laminoks-kapi-model-yc-43/index.html": "منتج/yc-43/index.html",
+    "urun/yc-44-elit-laminoks-kapi-model-yc-44/index.html": "منتج/yc-44/index.html",
+    "urun/yc-45-elit-laminoks-kapi-model-yc-45/index.html": "منتج/yc-45/index.html",
+    "urun/yc-46-elit-laminoks-kapi-model-yc-46/index.html": "منتج/yc-46/index.html",
+    "urun/yc-47-elit-laminoks-kapi-model-yc-47/index.html": "منتج/yc-47/index.html",
+    "urun/yc-48-elit-laminoks-kapi-model-yc-48/index.html": "منتج/yc-48/index.html",
+    "urun/yc-49-elit-laminoks-kapi-model-yc-49/index.html": "منتج/yc-49/index.html",
+    "urun/yc-50-elit-laminoks-kapi-model-yc-50/index.html": "منتج/yc-50/index.html",
+    "urun/yc-51-altigen-petek-desenli-ve-gri-detayli-modern-celik-kapi-yc-51/index.html": "منتج/yc-51/index.html",
+    "urun/yc-52-dikey-seritli-gri-ve-mese-renk-kombinasyonlu-celik-kapi-yc-52/index.html": "منتج/yc-52/index.html",
+    "urun/yc-53-oval-gobekli-ve-baliksirti-ahsap-desenli-celik-kapi-yc-53/index.html": "منتج/yc-53/index.html",
+    "urun/yc-54-ucgen-kulplu-minimal-ahsap-gorunumlu-celik-kapi-yc-54/index.html": "منتج/yc-54/index.html",
+    "urun/yc-55-siyah-beyaz-dikey-cizgili-kontrast-tasarim-celik-kapi-yc-55/index.html": "منتج/yc-55/index.html",
+    "urun/yc-56-dalgali-desenli-ceviz-ve-beyaz-luks-celik-kapi-yc-56/index.html": "منتج/yc-56/index.html",
+    "urun/yc-57-kod-yc-57-elit-laminoks-gri-kumas-siyah-kumas/index.html": "منتج/yc-57/index.html",
+    "urun/yc-58-siyah-seritli-ve-dikey-aksesuarli-acik-mese-rengi-modern-celik-kapi-yc-58/index.html": "منتج/yc-58/index.html",
+    "urun/yc-59-antrasit-geometrik-desenli-ve-ceviz-ahsap-detayli-luks-celik-kapi-yc-59/index.html": "منتج/yc-59/index.html",
+    "urun/yc-60-gri-tas-dokulu-ve-ahsap-detayli-kompozit-celik-kapi-modeli-yc-60/index.html": "منتج/yc-60/index.html",
+    "urun/yc-161-ultralam-dijital-baski/index.html": "منتج/yc-161/index.html",
+    "urun/yc-61-dikey-oluklu-gri-ve-siyah-detayli-modern-apartman-giris-kapisi-yc-61/index.html": "منتج/yc-61/index.html",
+    "urun/yc-62-koyu-antrasit-renkli-baliksirti-desenli-modern-celik-kapi-yc-62/index.html": "منتج/yc-62/index.html",
+    "urun/yc-63-dikey-ahsap-citali-ve-krem-renk-kombinasyonlu-celik-kapi-yc-63/index.html": "منتج/yc-63/index.html",
+    "urun/yn-01-acil-cikis-kapasi-yangin-sertifikali-tum-ral-renkleri-ile-uretilebilir/index.html": "منتج/yn-01/index.html",
+    "urun/yn-02-acil-cikis-kapasi-yangin-sertifikali-tum-ral-renkleri-ile-uretilebilir/index.html": "منتج/yn-02/index.html",
+    "urun/yn-03-acil-cikis-kapasi-yangin-sertifikali-tum-ral-renkleri-ile-uretilebilir/index.html": "منتج/yn-03/index.html",
+    "urun/yn-04-acil-cikis-kapasi-yangin-sertifikali-tum-ral-renkleri-ile-uretilebilir/index.html": "منتج/yn-04/index.html",
+    "urun/yc-64-mermer-tas-gorunumlu-ve-ahsap-yatay-parcal-luks-kap-yc-/index.html": "منتج/yc-64/index.html",
+    "urun/yc-65-parlak-cam-gorunumlu-gri-ve-ahsap-dikey-panelli-celik-k/index.html": "منتج/yc-65/index.html",
+    "urun/yc-66-gri-ve-ahsap-uc-parcal-dikey-tasarml-celik-daire-kaps-y/index.html": "منتج/yc-66/index.html",
+    "urun/yc-67-genis-dikey-panelli-tam-ahsap-gorunumlu-celik-kap-model/index.html": "منتج/yc-67/index.html",
+    "urun/yc-68-dikey-seritli-gri-ve-diyagonal-siyah-kusakl-luks-celik-/index.html": "منتج/yc-68/index.html",
+    "urun/yc-69-tamamen-gri-diyagonal-kulplu-ve-dikey-cizgili-modern-ce/index.html": "منتج/yc-69/index.html",
+    "urun/yc-70-ahsap-gorunumlu-kompozit-panel-kap-modeli-70/index.html": "منتج/yc-70/index.html",
+    "urun/yc-71-iki-renkli-kompozit-panel-kap-modeli-71/index.html": "منتج/yc-71/index.html",
+    "urun/yc-72-minimalist-kompozit-panel-kap-modeli-72/index.html": "منتج/yc-72/index.html",
+    "urun/yc-73-diagonal-desenli-kompozit-kap-modeli-73/index.html": "منتج/yc-73/index.html",
+    "urun/yc-74-yatay-ahsap-desenli-kompozit-kap-modeli-yc-74/index.html": "منتج/yc-74/index.html",
+    "urun/yc-75-dikey-cizgili-kompozit-kap-modeli-yc-75/index.html": "منتج/yc-75/index.html",
+    "urun/yc-76-geometrik-desenli-kompozit-kap-modeli-76/index.html": "منتج/yc-76/index.html",
+    "urun/yc-77-diagonal-desenli-kompozit-kap-modeli-77/index.html": "منتج/yc-77/index.html",
+    "urun/yc-78-ahsap-gorunumlu-kompozit-kap-modeli-78/index.html": "منتج/yc-78/index.html",
+    "urun/yc-79-minimalist-kompozit-panel-kap-modeli-79/index.html": "منتج/yc-79/index.html",
+    "urun/yc-80-geometrik-cam-panelli-kompozit-kap-modeli-yc-80/index.html": "منتج/yc-80/index.html",
+    "urun/yc-81-dikey-cizgili-cam-panelli-kompozit-kap-modeli-yc-81/index.html": "منتج/yc-81/index.html",
+    "urun/yc-82-cift-cam-panelli-kompozit-kap-modeli-yc-82/index.html": "منتج/yc-82/index.html",
+    "urun/yc-83-dikey-oluklu-kompozit-kap-modeli-yc-83/index.html": "منتج/yc-83/index.html",
+    "urun/yc-84-kontrast-panelli-kompozit-kap-modeli-yc-84/index.html": "منتج/yc-84/index.html",
+    "urun/yc-85-eliptik-cizgili-kompozit-kap-modeli-yc-85/index.html": "منتج/yc-85/index.html",
+    "urun/yc-86-kompozit-panel-ve-cam-kombinasyonlu-kap-modeli-yc-86/index.html": "منتج/yc-86/index.html",
+    "urun/yc-87-kahverengi-desenli-kompozit-kap-modeli-87/index.html": "منتج/yc-87/index.html",
+    "urun/yc-88-kompozit-panel-ve-dekoratif-izgaral-kap-modeli-yc-88/index.html": "منتج/yc-88/index.html",
+    "urun/yc-89-ahsap-desenli-kompozit-celik-kombinasyon-kap-modeli-yc-/index.html": "منتج/yc-89/index.html",
+    "urun/yc-90-parlak-beyaz-kompozit-kap-modeli-yc-90/index.html": "منتج/yc-90/index.html",
+    "urun/yc-91-lamelli-kompozit-panel-kap-modeli-yc-91/index.html": "منتج/yc-91/index.html",
+    "urun/yc-92-kompozit/index.html": "منتج/yc-92/index.html",
+    "urun/yc-93-cift-panelli-kompozit-kap-modeli-93/index.html": "منتج/yc-93/index.html",
+    "urun/yc-94-grid-desenli-kompozit-kap-modeli-94/index.html": "منتج/yc-94/index.html",
+    "urun/yc-95-cam-bolmeli-kompozit-kap-modeli-95/index.html": "منتج/yc-95/index.html",
+    "urun/yc-96-uc-panelli-kompozit-kap-modeli-yc-96/index.html": "منتج/yc-96/index.html",
+    "urun/yc-97-panel-stil-kompozit-kap-modeli-yc-97/index.html": "منتج/yc-97/index.html",
+    "urun/yc-98-mat-siyah-ve-ahsap-desenli-kompozit-kap-modeli-yc-98/index.html": "منتج/yc-98/index.html",
+    "urun/yc-99-zengin-ahsap-desenli-kompozit-kap-modeli-yc-99/index.html": "منتج/yc-99/index.html",
+    "urun/yc-136-ultralam/index.html": "منتج/yc-136/index.html",
+    "urun/yc-137-ultralam/index.html": "منتج/yc-137/index.html",
+    "urun/yc-138-ultralam/index.html": "منتج/yc-138/index.html",
+    "urun/yc-139-ultralam/index.html": "منتج/yc-139/index.html",
+    "urun/yc-140-ultralam/index.html": "منتج/yc-140/index.html",
+    "urun/yc-141-ultralam/index.html": "منتج/yc-141/index.html",
+    "urun/yc-142-ultralam/index.html": "منتج/yc-142/index.html",
+    "urun/yc-143-ultralam/index.html": "منتج/yc-143/index.html",
+    "urun/yc-144-ultralam/index.html": "منتج/yc-144/index.html",
+    "urun/yc-145-ultralam/index.html": "منتج/yc-145/index.html",
+    "urun/yc-146-ultralam/index.html": "منتج/yc-146/index.html",
+    "urun/yc-147-ultralam/index.html": "منتج/yc-147/index.html"
+  },
+  "products": {
+    "1": {
+      "tr": "urun/yc-01-yigit-celik-kapi-klasik-beyaz-model/index.html",
+      "ar": "منتج/yc-01/index.html"
+    },
+    "2": {
+      "tr": "urun/yc-02-yigit-celik-kapi-ahsap-klasik-model/index.html",
+      "ar": "منتج/yc-02/index.html"
+    },
+    "3": {
+      "tr": "urun/yc-03-yigit-celik-kapi-modern-minimalist-ic-kapi/index.html",
+      "ar": "منتج/yc-03/index.html"
+    },
+    "4": {
+      "tr": "urun/yc-04-yigit-celik-kapi-modern-geometrik-model-yc-04/index.html",
+      "ar": "منتج/yc-04/index.html"
+    },
+    "5": {
+      "tr": "urun/yc-05-luks-pvc-kabartma-beyaz-siyah-ozel-kol-tasarimli/index.html",
+      "ar": "منتج/yc-05/index.html"
+    },
+    "6": {
+      "tr": "urun/yc-06-yigit-celik-kapi-modern-altin-detayli-model-yc-06/index.html",
+      "ar": "منتج/yc-06/index.html"
+    },
+    "7": {
+      "tr": "urun/yc-07-yigit-celik-kapi-klasik-model-yc-07/index.html",
+      "ar": "منتج/yc-07/index.html"
+    },
+    "8": {
+      "tr": "urun/yc-08-konsantrik-dikdortgen-desenli-modern-celik-kapi/index.html",
+      "ar": "منتج/yc-08/index.html"
+    },
+    "9": {
+      "tr": "urun/yc-09-yigit-celik-kapi-model-yc-09/index.html",
+      "ar": "منتج/yc-09/index.html"
+    },
+    "10": {
+      "tr": "urun/yc-10-yigit-celik-kapi-model-yc-10/index.html",
+      "ar": "منتج/yc-10/index.html"
+    },
+    "12": {
+      "tr": "urun/yc-100-koyu-cam-panel-cift-kompozit-kapi-modeli-yc-100/index.html",
+      "ar": "منتج/yc-100/index.html"
+    },
+    "13": {
+      "tr": "urun/yc-101-cift-kapi-kompozit-orta-panel-modeli-yc-101/index.html",
+      "ar": "منتج/yc-101/index.html"
+    },
+    "14": {
+      "tr": "urun/yc-102-cift-kapi-diagonal-cizgili-kompozit-modeli-yc-102/index.html",
+      "ar": "منتج/yc-102/index.html"
+    },
+    "15": {
+      "tr": "urun/yc-103-ahsap-desenli-kompozit-ve-cam-entegre-kapi-modeli-yc-103/index.html",
+      "ar": "منتج/yc-103/index.html"
+    },
+    "16": {
+      "tr": "urun/yc-104-cift-kapi-ahsap-desenli-kompozit-modeli-yc-104/index.html",
+      "ar": "منتج/yc-104/index.html"
+    },
+    "17": {
+      "tr": "urun/yc-105-cift-panelli-modern-kompozit-kapi-modeli-yc-105/index.html",
+      "ar": "منتج/yc-105/index.html"
+    },
+    "18": {
+      "tr": "urun/yc-106-diagonal-metal-aksanli-cift-kompozit-kapi-modeli-yc-106/index.html",
+      "ar": "منتج/yc-106/index.html"
+    },
+    "19": {
+      "tr": "urun/yc-107-kompozit-kapi-modeli-yc-107/index.html",
+      "ar": "منتج/yc-107/index.html"
+    },
+    "20": {
+      "tr": "urun/yc-108-cift-panel-kompozit-dikey-slat-desen-yc-108/index.html",
+      "ar": "منتج/yc-108/index.html"
+    },
+    "21": {
+      "tr": "urun/yc-109-diagonal-metal-aksanli-kompozit-yc-109/index.html",
+      "ar": "منتج/yc-109/index.html"
+    },
+    "11": {
+      "tr": "urun/yc-11-yigit-celik-kapi-model-yc-11/index.html",
+      "ar": "منتج/yc-11/index.html"
+    },
+    "22": {
+      "tr": "urun/yc-110-siyah-altin-kontrast-kompozit-kapi-yc-110/index.html",
+      "ar": "منتج/yc-110/index.html"
+    },
+    "23": {
+      "tr": "urun/yc-111-kompozit-kapi-modeli-yc-111/index.html",
+      "ar": "منتج/yc-111/index.html"
+    },
+    "24": {
+      "tr": "urun/yc-112-siyah-ve-altin-aksanli-kompozit-kapi-yc-112/index.html",
+      "ar": "منتج/yc-112/index.html"
+    },
+    "647": {
+      "tr": "urun/yc-113-renkli-saruhan-seri-antrasit-saruhan-yc-113/index.html",
+      "ar": "منتج/yc-113/index.html"
+    },
+    "648": {
+      "tr": "urun/yc-114-renkli-saruhan-seri-antrasit-saruhan-yc-114/index.html",
+      "ar": "منتج/yc-114/index.html"
+    },
+    "649": {
+      "tr": "urun/yc-115-renkli-saruhan-seri-antrasit-saruhan-yc-115/index.html",
+      "ar": "منتج/yc-115/index.html"
+    },
+    "650": {
+      "tr": "urun/yc-116-renkli-saruhan-seri-antrasit-saruhan-yc-116/index.html",
+      "ar": "منتج/yc-116/index.html"
+    },
+    "651": {
+      "tr": "urun/yc-117-renkli-saruhan-seri-antrasit-gri-mese-yc-117/index.html",
+      "ar": "منتج/yc-117/index.html"
+    },
+    "652": {
+      "tr": "urun/yc-118-renkli-saruhan-seri-antrasit-saruhan-yc-118/index.html",
+      "ar": "منتج/yc-118/index.html"
+    },
+    "653": {
+      "tr": "urun/yc-119-renkli-saruhan-seri-antrasit-saruhan-yc-119/index.html",
+      "ar": "منتج/yc-119/index.html"
+    },
+    "607": {
+      "tr": "urun/yc-12-yigit-celik-kapi-model-yc-12/index.html",
+      "ar": "منتج/yc-12/index.html"
+    },
+    "654": {
+      "tr": "urun/yc-120-renkli-saruhan-seri-antrasit-saruhan-yc-120/index.html",
+      "ar": "منتج/yc-120/index.html"
+    },
+    "655": {
+      "tr": "urun/yc-121-renkli-saruhan-seri-antrasit-saruhan-yc-121/index.html",
+      "ar": "منتج/yc-121/index.html"
+    },
+    "656": {
+      "tr": "urun/yc-122-renkli-saruhan-seri-antrasit-saruhan-yc-122/index.html",
+      "ar": "منتج/yc-122/index.html"
+    },
+    "657": {
+      "tr": "urun/yc-123-renkli-saruhan-seri-antrasit-gri-mese-yc-123/index.html",
+      "ar": "منتج/yc-123/index.html"
+    },
+    "658": {
+      "tr": "urun/yc-124-renkli-saruhan-seri-antrasit-saruhan-yc-124/index.html",
+      "ar": "منتج/yc-124/index.html"
+    },
+    "659": {
+      "tr": "urun/yc-125-renkli-saruhan-seri-gri-mese-siyah-yc-125/index.html",
+      "ar": "منتج/yc-125/index.html"
+    },
+    "660": {
+      "tr": "urun/yc-126-renkli-saruhan-seri-gri-mese-siyah-yc-126/index.html",
+      "ar": "منتج/yc-126/index.html"
+    },
+    "661": {
+      "tr": "urun/yc-127-renkli-saruhan-seri-gri-mese-antrasit-yc-127/index.html",
+      "ar": "منتج/yc-127/index.html"
+    },
+    "662": {
+      "tr": "urun/yc-128-renkli-saruhan-seri-gri-mese-antrasit-yc-128/index.html",
+      "ar": "منتج/yc-128/index.html"
+    },
+    "663": {
+      "tr": "urun/yc-129-renkli-saruhan-seri-gri-mese-antrasit-yc-129/index.html",
+      "ar": "منتج/yc-129/index.html"
+    },
+    "608": {
+      "tr": "urun/yc-13-yigit-celik-kapi-model-yc-13/index.html",
+      "ar": "منتج/yc-13/index.html"
+    },
+    "641": {
+      "tr": "urun/yc-130-luks-saruhan-rustik-gri-mese/index.html",
+      "ar": "منتج/yc-130/index.html"
+    },
+    "642": {
+      "tr": "urun/yc-131-luks-saruhan-rustik-saruhan/index.html",
+      "ar": "منتج/yc-131/index.html"
+    },
+    "643": {
+      "tr": "urun/yc-132-luks-saruhan-rustik-krem/index.html",
+      "ar": "منتج/yc-132/index.html"
+    },
+    "644": {
+      "tr": "urun/yc-133-luks-saruhan-rustik-gri-mese-model-133/index.html",
+      "ar": "منتج/yc-133/index.html"
+    },
+    "645": {
+      "tr": "urun/yc-134-luks-saruhan-rustik-saruhan-model-134/index.html",
+      "ar": "منتج/yc-134/index.html"
+    },
+    "646": {
+      "tr": "urun/yc-135-luks-saruhan-rustik-saruhan-model-135/index.html",
+      "ar": "منتج/yc-135/index.html"
+    },
+    "609": {
+      "tr": "urun/yc-14-yigit-celik-kapi-model-yc-14/index.html",
+      "ar": "منتج/yc-14/index.html"
+    },
+    "664": {
+      "tr": "urun/yc-148-ultralam-dijital-baski/index.html",
+      "ar": "منتج/yc-148/index.html"
+    },
+    "665": {
+      "tr": "urun/yc-149-ultralam-dijital-baski/index.html",
+      "ar": "منتج/yc-149/index.html"
+    },
+    "610": {
+      "tr": "urun/yc-15-yigit-celik-kapi-model-yc-15/index.html",
+      "ar": "منتج/yc-15/index.html"
+    },
+    "666": {
+      "tr": "urun/yc-150-ultralam-dijital-baski/index.html",
+      "ar": "منتج/yc-150/index.html"
+    },
+    "667": {
+      "tr": "urun/yc-151-ultralam-dijital-baski/index.html",
+      "ar": "منتج/yc-151/index.html"
+    },
+    "668": {
+      "tr": "urun/yc-152-ultralam-dijital-baski/index.html",
+      "ar": "منتج/yc-152/index.html"
+    },
+    "669": {
+      "tr": "urun/yc-153-ultralam-dijital-baski/index.html",
+      "ar": "منتج/yc-153/index.html"
+    },
+    "670": {
+      "tr": "urun/yc-154-ultralam-dijital-baski/index.html",
+      "ar": "منتج/yc-154/index.html"
+    },
+    "671": {
+      "tr": "urun/yc-155-ultralam-dijital-baski/index.html",
+      "ar": "منتج/yc-155/index.html"
+    },
+    "672": {
+      "tr": "urun/yc-156-ultralam-dijital-baski/index.html",
+      "ar": "منتج/yc-156/index.html"
+    },
+    "673": {
+      "tr": "urun/yc-157-ultralam-dijital-baski/index.html",
+      "ar": "منتج/yc-157/index.html"
+    },
+    "674": {
+      "tr": "urun/yc-158-ultralam-dijital-baski/index.html",
+      "ar": "منتج/yc-158/index.html"
+    },
+    "675": {
+      "tr": "urun/yc-159-ultralam-dijital-baski/index.html",
+      "ar": "منتج/yc-159/index.html"
+    },
+    "611": {
+      "tr": "urun/yc-16-yigit-celik-kapi-model-yc-16/index.html",
+      "ar": "منتج/yc-16/index.html"
+    },
+    "676": {
+      "tr": "urun/yc-160-ultralam-dijital-baski/index.html",
+      "ar": "منتج/yc-160/index.html"
+    },
+    "678": {
+      "tr": "urun/yc-162-klasik-laminoks-tanganika/index.html",
+      "ar": "منتج/yc-162/index.html"
+    },
+    "679": {
+      "tr": "urun/yc-163-klasik-laminoks-beyaz/index.html",
+      "ar": "منتج/yc-163/index.html"
+    },
+    "680": {
+      "tr": "urun/yc-164-klasik-laminoks-beyaz/index.html",
+      "ar": "منتج/yc-164/index.html"
+    },
+    "681": {
+      "tr": "urun/yc-165-klasik-laminoks-afrika-cevizi/index.html",
+      "ar": "منتج/yc-165/index.html"
+    },
+    "682": {
+      "tr": "urun/yc-166-klasik-laminoks-beyaz/index.html",
+      "ar": "منتج/yc-166/index.html"
+    },
+    "683": {
+      "tr": "urun/yc-167-klasik-laminoks-tanganika/index.html",
+      "ar": "منتج/yc-167/index.html"
+    },
+    "684": {
+      "tr": "urun/yc-168-klasik-laminoks-afrika-cevizi/index.html",
+      "ar": "منتج/yc-168/index.html"
+    },
+    "685": {
+      "tr": "urun/yc-169-klasik-laminoks-afrika-cevizi/index.html",
+      "ar": "منتج/yc-169/index.html"
+    },
+    "612": {
+      "tr": "urun/yc-17-yigit-celik-kapi-model-yc-17/index.html",
+      "ar": "منتج/yc-17/index.html"
+    },
+    "686": {
+      "tr": "urun/yc-170-klasik-laminoks-tanganika/index.html",
+      "ar": "منتج/yc-170/index.html"
+    },
+    "687": {
+      "tr": "urun/yc-171-klasik-laminoks-tanganika/index.html",
+      "ar": "منتج/yc-171/index.html"
+    },
+    "688": {
+      "tr": "urun/yc-172-klasik-laminoks-tanganika/index.html",
+      "ar": "منتج/yc-172/index.html"
+    },
+    "689": {
+      "tr": "urun/yc-173-klasik-laminoks-tanganika/index.html",
+      "ar": "منتج/yc-173/index.html"
+    },
+    "690": {
+      "tr": "urun/yc-174-sac-panel-siyah/index.html",
+      "ar": "منتج/yc-174/index.html"
+    },
+    "691": {
+      "tr": "urun/yc-175-sac-panel-yesil/index.html",
+      "ar": "منتج/yc-175/index.html"
+    },
+    "692": {
+      "tr": "urun/yc-176-sac-panel-kahverengi/index.html",
+      "ar": "منتج/yc-176/index.html"
+    },
+    "693": {
+      "tr": "urun/yc-177-sac-panel-yesil/index.html",
+      "ar": "منتج/yc-177/index.html"
+    },
+    "694": {
+      "tr": "urun/yc-178-sac-panel-siyah/index.html",
+      "ar": "منتج/yc-178/index.html"
+    },
+    "695": {
+      "tr": "urun/yc-179-sac-panel-antrasit/index.html",
+      "ar": "منتج/yc-179/index.html"
+    },
+    "613": {
+      "tr": "urun/yc-18-yigit-celik-kapi-model-yc-18/index.html",
+      "ar": "منتج/yc-18/index.html"
+    },
+    "696": {
+      "tr": "urun/yc-180-sac-panel-antrasit/index.html",
+      "ar": "منتج/yc-180/index.html"
+    },
+    "697": {
+      "tr": "urun/yc-181-sac-panel-antrasit/index.html",
+      "ar": "منتج/yc-181/index.html"
+    },
+    "698": {
+      "tr": "urun/yc-182-sac-panel-siyah/index.html",
+      "ar": "منتج/yc-182/index.html"
+    },
+    "699": {
+      "tr": "urun/yc-183-sac-panel-antrasit/index.html",
+      "ar": "منتج/yc-183/index.html"
+    },
+    "700": {
+      "tr": "urun/yc-184-sac-panel-siyah/index.html",
+      "ar": "منتج/yc-184/index.html"
+    },
+    "701": {
+      "tr": "urun/yc-185-sac-panel-antrasit/index.html",
+      "ar": "منتج/yc-185/index.html"
+    },
+    "702": {
+      "tr": "urun/yc-186-sac-panel-antrasit/index.html",
+      "ar": "منتج/yc-186/index.html"
+    },
+    "703": {
+      "tr": "urun/yc-187-sac-panel-acik-gri/index.html",
+      "ar": "منتج/yc-187/index.html"
+    },
+    "704": {
+      "tr": "urun/yc-188-sac-panel-beyaz/index.html",
+      "ar": "منتج/yc-188/index.html"
+    },
+    "705": {
+      "tr": "urun/yc-189-sac-panel-antrasit/index.html",
+      "ar": "منتج/yc-189/index.html"
+    },
+    "614": {
+      "tr": "urun/yc-19-yigit-celik-kapi-model-yc-19/index.html",
+      "ar": "منتج/yc-19/index.html"
+    },
+    "706": {
+      "tr": "urun/yc-190-sac-panel-tanganika/index.html",
+      "ar": "منتج/yc-190/index.html"
+    },
+    "707": {
+      "tr": "urun/yc-191-sac-panel-tanganika/index.html",
+      "ar": "منتج/yc-191/index.html"
+    },
+    "708": {
+      "tr": "urun/yc-192-sac-panel-tanganika/index.html",
+      "ar": "منتج/yc-192/index.html"
+    },
+    "709": {
+      "tr": "urun/yc-193-sac-panel-antrasit/index.html",
+      "ar": "منتج/yc-193/index.html"
+    },
+    "710": {
+      "tr": "urun/yc-194-sac-panel-tanganika/index.html",
+      "ar": "منتج/yc-194/index.html"
+    },
+    "711": {
+      "tr": "urun/yc-195-sac-panel-yesil/index.html",
+      "ar": "منتج/yc-195/index.html"
+    },
+    "712": {
+      "tr": "urun/yc-196-camli-panel-antrasit/index.html",
+      "ar": "منتج/yc-196/index.html"
+    },
+    "713": {
+      "tr": "urun/yc-197-camli-panel-antrasit/index.html",
+      "ar": "منتج/yc-197/index.html"
+    },
+    "714": {
+      "tr": "urun/yc-198-camli-panel-siyah/index.html",
+      "ar": "منتج/yc-198/index.html"
+    },
+    "715": {
+      "tr": "urun/yc-199-camli-panel-beyaz/index.html",
+      "ar": "منتج/yc-199/index.html"
+    },
+    "615": {
+      "tr": "urun/yc-20-yigit-celik-kapi-model-yc-20/index.html",
+      "ar": "منتج/yc-20/index.html"
+    },
+    "716": {
+      "tr": "urun/yc-200-camli-panel-antrasit/index.html",
+      "ar": "منتج/yc-200/index.html"
+    },
+    "717": {
+      "tr": "urun/yc-201-camli-panel-kahverengi/index.html",
+      "ar": "منتج/yc-201/index.html"
+    },
+    "718": {
+      "tr": "urun/yc-202-camli-panel-antrasit/index.html",
+      "ar": "منتج/yc-202/index.html"
+    },
+    "719": {
+      "tr": "urun/yc-203-camli-panel-antrasit/index.html",
+      "ar": "منتج/yc-203/index.html"
+    },
+    "720": {
+      "tr": "urun/yc-204-camli-panel-antrasit/index.html",
+      "ar": "منتج/yc-204/index.html"
+    },
+    "721": {
+      "tr": "urun/yc-205-camli-panel-antrasit/index.html",
+      "ar": "منتج/yc-205/index.html"
+    },
+    "722": {
+      "tr": "urun/yc-206-camli-panel-siyah-gold/index.html",
+      "ar": "منتج/yc-206/index.html"
+    },
+    "723": {
+      "tr": "urun/yc-207-camli-panel-beyat/index.html",
+      "ar": "منتج/yc-207/index.html"
+    },
+    "724": {
+      "tr": "urun/yc-208-camli-panel-saruhan-siyah/index.html",
+      "ar": "منتج/yc-208/index.html"
+    },
+    "27": {
+      "tr": "urun/yc-209-camli-panel-fume-siyah/index.html",
+      "ar": "منتج/yc-209/index.html"
+    },
+    "616": {
+      "tr": "urun/yc-21-yigit-celik-kapi-model-yc-21/index.html",
+      "ar": "منتج/yc-21/index.html"
+    },
+    "28": {
+      "tr": "urun/yc-210-lazer-kesim-celik-kapi-model-yc-210/index.html",
+      "ar": "منتج/yc-210/index.html"
+    },
+    "725": {
+      "tr": "urun/yc-211-camli-panel-kahverengi/index.html",
+      "ar": "منتج/yc-211/index.html"
+    },
+    "726": {
+      "tr": "urun/yc-212-camli-panel-antrasit/index.html",
+      "ar": "منتج/yc-212/index.html"
+    },
+    "727": {
+      "tr": "urun/yc-213-camli-panel-krem/index.html",
+      "ar": "منتج/yc-213/index.html"
+    },
+    "728": {
+      "tr": "urun/yc-214-profil-kasa-model-luca/index.html",
+      "ar": "منتج/yc-214/index.html"
+    },
+    "729": {
+      "tr": "urun/yc-215-profil-kasa-model-dogal-ahsap/index.html",
+      "ar": "منتج/yc-215/index.html"
+    },
+    "730": {
+      "tr": "urun/yc-216-profil-kasa-model-fume-mese/index.html",
+      "ar": "منتج/yc-216/index.html"
+    },
+    "731": {
+      "tr": "urun/yc-217-profil-kasa-model-antrasit-gri-kumas/index.html",
+      "ar": "منتج/yc-217/index.html"
+    },
+    "732": {
+      "tr": "urun/yc-218-masif-thermo-ahsap-dogal-ahsap-siyah/index.html",
+      "ar": "منتج/yc-218/index.html"
+    },
+    "733": {
+      "tr": "urun/yc-219-dogal-ahsap-siyah/index.html",
+      "ar": "منتج/yc-219/index.html"
+    },
+    "617": {
+      "tr": "urun/yc-22-yigit-celik-kapi-model-yc-22/index.html",
+      "ar": "منتج/yc-22/index.html"
+    },
+    "734": {
+      "tr": "urun/yc-220-dogal-ahsap-antrasit/index.html",
+      "ar": "منتج/yc-220/index.html"
+    },
+    "735": {
+      "tr": "urun/yc-221-dogal-ahsap-antrasit/index.html",
+      "ar": "منتج/yc-221/index.html"
+    },
+    "736": {
+      "tr": "urun/yc-222-granit-tas-yuzey-dogal-tas-deseni/index.html",
+      "ar": "منتج/yc-222/index.html"
+    },
+    "737": {
+      "tr": "urun/yc-223-granit-tas-yuzey-dogal-tas-deseni/index.html",
+      "ar": "منتج/yc-223/index.html"
+    },
+    "738": {
+      "tr": "urun/yc-224-granit-tas-yuzey-dogal-tas-deseni/index.html",
+      "ar": "منتج/yc-224/index.html"
+    },
+    "739": {
+      "tr": "urun/yc-225-granit-tas-yuzey-dogal-tas-deseni/index.html",
+      "ar": "منتج/yc-225/index.html"
+    },
+    "740": {
+      "tr": "urun/yc-226-granit-tas-yuzey-dogal-tas-deseni/index.html",
+      "ar": "منتج/yc-226/index.html"
+    },
+    "741": {
+      "tr": "urun/yc-227-nitelikli-uretim-dogal-tas-antrasit/index.html",
+      "ar": "منتج/yc-227/index.html"
+    },
+    "742": {
+      "tr": "urun/yc-228-nitelikli-uretim-siyah-gold/index.html",
+      "ar": "منتج/yc-228/index.html"
+    },
+    "743": {
+      "tr": "urun/yc-229-nitelikli-uretim-luca-acik-gri-antrasit/index.html",
+      "ar": "منتج/yc-229/index.html"
+    },
+    "618": {
+      "tr": "urun/yc-23-yigit-celik-kapi-model-yc-23/index.html",
+      "ar": "منتج/yc-23/index.html"
+    },
+    "744": {
+      "tr": "urun/yc-230-nitelikli-uretim-antrasit-acik-gri-luca/index.html",
+      "ar": "منتج/yc-230/index.html"
+    },
+    "745": {
+      "tr": "urun/yc-231-nitelikli-uretim-siyah-luca/index.html",
+      "ar": "منتج/yc-231/index.html"
+    },
+    "746": {
+      "tr": "urun/yc-232-nitelikli-uretim-siyah-saruhan/index.html",
+      "ar": "منتج/yc-232/index.html"
+    },
+    "747": {
+      "tr": "urun/yc-233-nitelikli-uretim-siyah-elma/index.html",
+      "ar": "منتج/yc-233/index.html"
+    },
+    "748": {
+      "tr": "urun/yc-234-nitelikli-uretim-lila/index.html",
+      "ar": "منتج/yc-234/index.html"
+    },
+    "749": {
+      "tr": "urun/yc-235-nitelikli-uretim-siyah-kumas/index.html",
+      "ar": "منتج/yc-235/index.html"
+    },
+    "750": {
+      "tr": "urun/yc-236-nitelikli-uretim-soft-mermer-gri/index.html",
+      "ar": "منتج/yc-236/index.html"
+    },
+    "751": {
+      "tr": "urun/yc-237-nitelikli-uretim-soft-antrasit/index.html",
+      "ar": "منتج/yc-237/index.html"
+    },
+    "752": {
+      "tr": "urun/yc-238-nitelikli-uretim-saruhan-antrasit/index.html",
+      "ar": "منتج/yc-238/index.html"
+    },
+    "753": {
+      "tr": "urun/yc-239-nitelikli-uretim-gri-antrasit/index.html",
+      "ar": "منتج/yc-239/index.html"
+    },
+    "33": {
+      "tr": "urun/yc-24-yigit-celik-kapi-model-yc-24/index.html",
+      "ar": "منتج/yc-24/index.html"
+    },
+    "754": {
+      "tr": "urun/yc-240-kabartma-bakir-bakir-baskili/index.html",
+      "ar": "منتج/yc-240/index.html"
+    },
+    "755": {
+      "tr": "urun/yc-241-kabartma-bakir-bakir-baskili/index.html",
+      "ar": "منتج/yc-241/index.html"
+    },
+    "756": {
+      "tr": "urun/yc-242-kabartma-bakir-bakir-baskili/index.html",
+      "ar": "منتج/yc-242/index.html"
+    },
+    "757": {
+      "tr": "urun/yc-243-kabartma-bakir-bakir-baskili/index.html",
+      "ar": "منتج/yc-243/index.html"
+    },
+    "34": {
+      "tr": "urun/yc-25-yigit-celik-kapi-model-yc-25/index.html",
+      "ar": "منتج/yc-25/index.html"
+    },
+    "35": {
+      "tr": "urun/yc-26-yigit-celik-kapi-model-yc-26/index.html",
+      "ar": "منتج/yc-26/index.html"
+    },
+    "36": {
+      "tr": "urun/yc-27-yigit-celik-kapi-model-yc-27/index.html",
+      "ar": "منتج/yc-27/index.html"
+    },
+    "37": {
+      "tr": "urun/yc-28-yigit-celik-kapi-model-yc-28/index.html",
+      "ar": "منتج/yc-28/index.html"
+    },
+    "38": {
+      "tr": "urun/yc-29-yigit-celik-kapi-model-yc-29/index.html",
+      "ar": "منتج/yc-29/index.html"
+    },
+    "39": {
+      "tr": "urun/yc-30-yigit-celik-kapi-model-yc-30/index.html",
+      "ar": "منتج/yc-30/index.html"
+    },
+    "40": {
+      "tr": "urun/yc-31-yigit-celik-kapi-model-yc-31/index.html",
+      "ar": "منتج/yc-31/index.html"
+    },
+    "41": {
+      "tr": "urun/yc-32-yigit-celik-kapi-model-yc-32/index.html",
+      "ar": "منتج/yc-32/index.html"
+    },
+    "42": {
+      "tr": "urun/yc-33-yigit-celik-kapi-model-yc-33/index.html",
+      "ar": "منتج/yc-33/index.html"
+    },
+    "43": {
+      "tr": "urun/yc-34-yigit-celik-kapi-model-yc-34/index.html",
+      "ar": "منتج/yc-34/index.html"
+    },
+    "44": {
+      "tr": "urun/yc-35-yigit-celik-kapi-model-yc-35/index.html",
+      "ar": "منتج/yc-35/index.html"
+    },
+    "45": {
+      "tr": "urun/yc-36-yigit-celik-kapi-model-yc-36/index.html",
+      "ar": "منتج/yc-36/index.html"
+    },
+    "46": {
+      "tr": "urun/yc-37-yigit-celik-kapi-model-yc-37/index.html",
+      "ar": "منتج/yc-37/index.html"
+    },
+    "47": {
+      "tr": "urun/yc-38-yigit-celik-kapi-model-yc-38/index.html",
+      "ar": "منتج/yc-38/index.html"
+    },
+    "48": {
+      "tr": "urun/yc-39-yigit-celik-kapi-model-yc-39/index.html",
+      "ar": "منتج/yc-39/index.html"
+    },
+    "25": {
+      "tr": "urun/yc-40-yigit-celik-kapi-model-yc-40/index.html",
+      "ar": "منتج/yc-40/index.html"
+    },
+    "26": {
+      "tr": "urun/yc-41-elit-laminoks-kapi-model-yc-41/index.html",
+      "ar": "منتج/yc-41/index.html"
+    },
+    "619": {
+      "tr": "urun/yc-42-elit-laminoks-kapi-model-yc-42/index.html",
+      "ar": "منتج/yc-42/index.html"
+    },
+    "620": {
+      "tr": "urun/yc-43-elit-laminoks-kapi-model-yc-43/index.html",
+      "ar": "منتج/yc-43/index.html"
+    },
+    "621": {
+      "tr": "urun/yc-44-elit-laminoks-kapi-model-yc-44/index.html",
+      "ar": "منتج/yc-44/index.html"
+    },
+    "622": {
+      "tr": "urun/yc-45-elit-laminoks-kapi-model-yc-45/index.html",
+      "ar": "منتج/yc-45/index.html"
+    },
+    "623": {
+      "tr": "urun/yc-46-elit-laminoks-kapi-model-yc-46/index.html",
+      "ar": "منتج/yc-46/index.html"
+    },
+    "624": {
+      "tr": "urun/yc-47-elit-laminoks-kapi-model-yc-47/index.html",
+      "ar": "منتج/yc-47/index.html"
+    },
+    "625": {
+      "tr": "urun/yc-48-elit-laminoks-kapi-model-yc-48/index.html",
+      "ar": "منتج/yc-48/index.html"
+    },
+    "626": {
+      "tr": "urun/yc-49-elit-laminoks-kapi-model-yc-49/index.html",
+      "ar": "منتج/yc-49/index.html"
+    },
+    "627": {
+      "tr": "urun/yc-50-elit-laminoks-kapi-model-yc-50/index.html",
+      "ar": "منتج/yc-50/index.html"
+    },
+    "628": {
+      "tr": "urun/yc-51-altigen-petek-desenli-ve-gri-detayli-modern-celik-kapi-yc-51/index.html",
+      "ar": "منتج/yc-51/index.html"
+    },
+    "629": {
+      "tr": "urun/yc-52-dikey-seritli-gri-ve-mese-renk-kombinasyonlu-celik-kapi-yc-52/index.html",
+      "ar": "منتج/yc-52/index.html"
+    },
+    "630": {
+      "tr": "urun/yc-53-oval-gobekli-ve-baliksirti-ahsap-desenli-celik-kapi-yc-53/index.html",
+      "ar": "منتج/yc-53/index.html"
+    },
+    "631": {
+      "tr": "urun/yc-54-ucgen-kulplu-minimal-ahsap-gorunumlu-celik-kapi-yc-54/index.html",
+      "ar": "منتج/yc-54/index.html"
+    },
+    "632": {
+      "tr": "urun/yc-55-siyah-beyaz-dikey-cizgili-kontrast-tasarim-celik-kapi-yc-55/index.html",
+      "ar": "منتج/yc-55/index.html"
+    },
+    "633": {
+      "tr": "urun/yc-56-dalgali-desenli-ceviz-ve-beyaz-luks-celik-kapi-yc-56/index.html",
+      "ar": "منتج/yc-56/index.html"
+    },
+    "634": {
+      "tr": "urun/yc-57-kod-yc-57-elit-laminoks-gri-kumas-siyah-kumas/index.html",
+      "ar": "منتج/yc-57/index.html"
+    },
+    "635": {
+      "tr": "urun/yc-58-siyah-seritli-ve-dikey-aksesuarli-acik-mese-rengi-modern-celik-kapi-yc-58/index.html",
+      "ar": "منتج/yc-58/index.html"
+    },
+    "636": {
+      "tr": "urun/yc-59-antrasit-geometrik-desenli-ve-ceviz-ahsap-detayli-luks-celik-kapi-yc-59/index.html",
+      "ar": "منتج/yc-59/index.html"
+    },
+    "637": {
+      "tr": "urun/yc-60-gri-tas-dokulu-ve-ahsap-detayli-kompozit-celik-kapi-modeli-yc-60/index.html",
+      "ar": "منتج/yc-60/index.html"
+    },
+    "49": {
+      "tr": "urun/yc-161-ultralam-dijital-baski/index.html",
+      "ar": "منتج/yc-161/index.html"
+    },
+    "638": {
+      "tr": "urun/yc-61-dikey-oluklu-gri-ve-siyah-detayli-modern-apartman-giris-kapisi-yc-61/index.html",
+      "ar": "منتج/yc-61/index.html"
+    },
+    "639": {
+      "tr": "urun/yc-62-koyu-antrasit-renkli-baliksirti-desenli-modern-celik-kapi-yc-62/index.html",
+      "ar": "منتج/yc-62/index.html"
+    },
+    "640": {
+      "tr": "urun/yc-63-dikey-ahsap-citali-ve-krem-renk-kombinasyonlu-celik-kapi-yc-63/index.html",
+      "ar": "منتج/yc-63/index.html"
+    },
+    "603": {
+      "tr": "urun/yn-01-acil-cikis-kapasi-yangin-sertifikali-tum-ral-renkleri-ile-uretilebilir/index.html",
+      "ar": "منتج/yn-01/index.html"
+    },
+    "604": {
+      "tr": "urun/yn-02-acil-cikis-kapasi-yangin-sertifikali-tum-ral-renkleri-ile-uretilebilir/index.html",
+      "ar": "منتج/yn-02/index.html"
+    },
+    "605": {
+      "tr": "urun/yn-03-acil-cikis-kapasi-yangin-sertifikali-tum-ral-renkleri-ile-uretilebilir/index.html",
+      "ar": "منتج/yn-03/index.html"
+    },
+    "606": {
+      "tr": "urun/yn-04-acil-cikis-kapasi-yangin-sertifikali-tum-ral-renkleri-ile-uretilebilir/index.html",
+      "ar": "منتج/yn-04/index.html"
+    },
+    "758": {
+      "tr": "urun/yc-64-mermer-tas-gorunumlu-ve-ahsap-yatay-parcal-luks-kap-yc-/index.html",
+      "ar": "منتج/yc-64/index.html"
+    },
+    "759": {
+      "tr": "urun/yc-65-parlak-cam-gorunumlu-gri-ve-ahsap-dikey-panelli-celik-k/index.html",
+      "ar": "منتج/yc-65/index.html"
+    },
+    "760": {
+      "tr": "urun/yc-66-gri-ve-ahsap-uc-parcal-dikey-tasarml-celik-daire-kaps-y/index.html",
+      "ar": "منتج/yc-66/index.html"
+    },
+    "761": {
+      "tr": "urun/yc-67-genis-dikey-panelli-tam-ahsap-gorunumlu-celik-kap-model/index.html",
+      "ar": "منتج/yc-67/index.html"
+    },
+    "762": {
+      "tr": "urun/yc-68-dikey-seritli-gri-ve-diyagonal-siyah-kusakl-luks-celik-/index.html",
+      "ar": "منتج/yc-68/index.html"
+    },
+    "763": {
+      "tr": "urun/yc-69-tamamen-gri-diyagonal-kulplu-ve-dikey-cizgili-modern-ce/index.html",
+      "ar": "منتج/yc-69/index.html"
+    },
+    "764": {
+      "tr": "urun/yc-70-ahsap-gorunumlu-kompozit-panel-kap-modeli-70/index.html",
+      "ar": "منتج/yc-70/index.html"
+    },
+    "765": {
+      "tr": "urun/yc-71-iki-renkli-kompozit-panel-kap-modeli-71/index.html",
+      "ar": "منتج/yc-71/index.html"
+    },
+    "766": {
+      "tr": "urun/yc-72-minimalist-kompozit-panel-kap-modeli-72/index.html",
+      "ar": "منتج/yc-72/index.html"
+    },
+    "767": {
+      "tr": "urun/yc-73-diagonal-desenli-kompozit-kap-modeli-73/index.html",
+      "ar": "منتج/yc-73/index.html"
+    },
+    "768": {
+      "tr": "urun/yc-74-yatay-ahsap-desenli-kompozit-kap-modeli-yc-74/index.html",
+      "ar": "منتج/yc-74/index.html"
+    },
+    "769": {
+      "tr": "urun/yc-75-dikey-cizgili-kompozit-kap-modeli-yc-75/index.html",
+      "ar": "منتج/yc-75/index.html"
+    },
+    "770": {
+      "tr": "urun/yc-76-geometrik-desenli-kompozit-kap-modeli-76/index.html",
+      "ar": "منتج/yc-76/index.html"
+    },
+    "771": {
+      "tr": "urun/yc-77-diagonal-desenli-kompozit-kap-modeli-77/index.html",
+      "ar": "منتج/yc-77/index.html"
+    },
+    "772": {
+      "tr": "urun/yc-78-ahsap-gorunumlu-kompozit-kap-modeli-78/index.html",
+      "ar": "منتج/yc-78/index.html"
+    },
+    "773": {
+      "tr": "urun/yc-79-minimalist-kompozit-panel-kap-modeli-79/index.html",
+      "ar": "منتج/yc-79/index.html"
+    },
+    "774": {
+      "tr": "urun/yc-80-geometrik-cam-panelli-kompozit-kap-modeli-yc-80/index.html",
+      "ar": "منتج/yc-80/index.html"
+    },
+    "775": {
+      "tr": "urun/yc-81-dikey-cizgili-cam-panelli-kompozit-kap-modeli-yc-81/index.html",
+      "ar": "منتج/yc-81/index.html"
+    },
+    "776": {
+      "tr": "urun/yc-82-cift-cam-panelli-kompozit-kap-modeli-yc-82/index.html",
+      "ar": "منتج/yc-82/index.html"
+    },
+    "777": {
+      "tr": "urun/yc-83-dikey-oluklu-kompozit-kap-modeli-yc-83/index.html",
+      "ar": "منتج/yc-83/index.html"
+    },
+    "778": {
+      "tr": "urun/yc-84-kontrast-panelli-kompozit-kap-modeli-yc-84/index.html",
+      "ar": "منتج/yc-84/index.html"
+    },
+    "779": {
+      "tr": "urun/yc-85-eliptik-cizgili-kompozit-kap-modeli-yc-85/index.html",
+      "ar": "منتج/yc-85/index.html"
+    },
+    "780": {
+      "tr": "urun/yc-86-kompozit-panel-ve-cam-kombinasyonlu-kap-modeli-yc-86/index.html",
+      "ar": "منتج/yc-86/index.html"
+    },
+    "781": {
+      "tr": "urun/yc-87-kahverengi-desenli-kompozit-kap-modeli-87/index.html",
+      "ar": "منتج/yc-87/index.html"
+    },
+    "782": {
+      "tr": "urun/yc-88-kompozit-panel-ve-dekoratif-izgaral-kap-modeli-yc-88/index.html",
+      "ar": "منتج/yc-88/index.html"
+    },
+    "783": {
+      "tr": "urun/yc-89-ahsap-desenli-kompozit-celik-kombinasyon-kap-modeli-yc-/index.html",
+      "ar": "منتج/yc-89/index.html"
+    },
+    "784": {
+      "tr": "urun/yc-90-parlak-beyaz-kompozit-kap-modeli-yc-90/index.html",
+      "ar": "منتج/yc-90/index.html"
+    },
+    "785": {
+      "tr": "urun/yc-91-lamelli-kompozit-panel-kap-modeli-yc-91/index.html",
+      "ar": "منتج/yc-91/index.html"
+    },
+    "786": {
+      "tr": "urun/yc-92-kompozit/index.html",
+      "ar": "منتج/yc-92/index.html"
+    },
+    "787": {
+      "tr": "urun/yc-93-cift-panelli-kompozit-kap-modeli-93/index.html",
+      "ar": "منتج/yc-93/index.html"
+    },
+    "788": {
+      "tr": "urun/yc-94-grid-desenli-kompozit-kap-modeli-94/index.html",
+      "ar": "منتج/yc-94/index.html"
+    },
+    "789": {
+      "tr": "urun/yc-95-cam-bolmeli-kompozit-kap-modeli-95/index.html",
+      "ar": "منتج/yc-95/index.html"
+    },
+    "790": {
+      "tr": "urun/yc-96-uc-panelli-kompozit-kap-modeli-yc-96/index.html",
+      "ar": "منتج/yc-96/index.html"
+    },
+    "791": {
+      "tr": "urun/yc-97-panel-stil-kompozit-kap-modeli-yc-97/index.html",
+      "ar": "منتج/yc-97/index.html"
+    },
+    "792": {
+      "tr": "urun/yc-98-mat-siyah-ve-ahsap-desenli-kompozit-kap-modeli-yc-98/index.html",
+      "ar": "منتج/yc-98/index.html"
+    },
+    "793": {
+      "tr": "urun/yc-99-zengin-ahsap-desenli-kompozit-kap-modeli-yc-99/index.html",
+      "ar": "منتج/yc-99/index.html"
+    },
+    "794": {
+      "tr": "urun/yc-136-ultralam/index.html",
+      "ar": "منتج/yc-136/index.html"
+    },
+    "795": {
+      "tr": "urun/yc-137-ultralam/index.html",
+      "ar": "منتج/yc-137/index.html"
+    },
+    "796": {
+      "tr": "urun/yc-138-ultralam/index.html",
+      "ar": "منتج/yc-138/index.html"
+    },
+    "797": {
+      "tr": "urun/yc-139-ultralam/index.html",
+      "ar": "منتج/yc-139/index.html"
+    },
+    "798": {
+      "tr": "urun/yc-140-ultralam/index.html",
+      "ar": "منتج/yc-140/index.html"
+    },
+    "799": {
+      "tr": "urun/yc-141-ultralam/index.html",
+      "ar": "منتج/yc-141/index.html"
+    },
+    "800": {
+      "tr": "urun/yc-142-ultralam/index.html",
+      "ar": "منتج/yc-142/index.html"
+    },
+    "801": {
+      "tr": "urun/yc-143-ultralam/index.html",
+      "ar": "منتج/yc-143/index.html"
+    },
+    "802": {
+      "tr": "urun/yc-144-ultralam/index.html",
+      "ar": "منتج/yc-144/index.html"
+    },
+    "803": {
+      "tr": "urun/yc-145-ultralam/index.html",
+      "ar": "منتج/yc-145/index.html"
+    },
+    "804": {
+      "tr": "urun/yc-146-ultralam/index.html",
+      "ar": "منتج/yc-146/index.html"
+    },
+    "805": {
+      "tr": "urun/yc-147-ultralam/index.html",
+      "ar": "منتج/yc-147/index.html"
+    }
+  }
+}

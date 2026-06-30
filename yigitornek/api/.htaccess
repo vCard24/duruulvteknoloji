@@ -1,0 +1,30 @@
+<Files "config.php">
+    Require all denied
+</Files>
+<Files "config.example.php">
+    Require all denied
+</Files>
+<Files "mail-error.log">
+    Require all denied
+</Files>
+<Files "mail-smtp.php">
+    Require all denied
+</Files>
+<Files "quote-email-builder.php">
+    Require all denied
+</Files>
+
+RedirectMatch 403 (?i)^/api/outbox/
+
+# Form gönderim arşivi — web üzerinden erişilemez
+<IfModule mod_authz_core.c>
+    <Directory "outbox">
+        Require all denied
+    </Directory>
+</IfModule>
+<IfModule !mod_authz_core.c>
+    <Directory "outbox">
+        Order deny,allow
+        Deny from all
+    </Directory>
+</IfModule>

@@ -1,0 +1,24 @@
+# Ortam / gizli
+api/config.php
+api/mail-error.log
+api/outbox/
+.env
+.env.*
+
+# Bağımlılıklar
+node_modules/
+emergent/frontend/node_modules/
+
+# Önbellek / test
+emergent/.pytest_cache/
+emergent/.ruff_cache/
+emergent/test_reports/
+__pycache__/
+*.pyc
+
+# IDE / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log

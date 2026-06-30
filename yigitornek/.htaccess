@@ -1,0 +1,73 @@
+DirectoryIndex index.html
+Options -Indexes
+AddDefaultCharset UTF-8
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+</IfModule>
+
+# Statik asset önbelleği (?v= sürüm query ile birlikte)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 hour"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/pdf "access plus 1 month"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|webp|png|jpe?g|svg|woff2?|pdf)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(html)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # non-www → www (canonical tekilleştirme)
+  RewriteCond %{HTTP_HOST} !^www\. [NC]
+  RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+  # Eski WordPress URL'leri → statik sayfalar
+  RewriteRule ^kvkk-aydinlatma-metni/?$ kvkk/index.html [R=301,L]
+  RewriteRule ^hakkimizda/?$ hakkimizda/index.html [R=301,L]
+  RewriteRule ^degerlerimiz/?$ degerlerimiz/index.html [R=301,L]
+  RewriteRule ^misyon-vizyon/?$ misyon-vizyon/index.html [R=301,L]
+  RewriteRule ^belgelerimiz/?$ belgelerimiz/index.html [R=301,L]
+  RewriteRule ^kalite-politikamiz/?$ kalite-politikamiz/index.html [R=301,L]
+  RewriteRule ^fiyat-teklifi-al/?$ fiyat-teklifi/index.html [R=301,L]
+  RewriteRule ^tesekkurler/?$ tesekkurler/index.html [R=301,L]
+
+  # Hatalı dil yolları → EN/DE hazırlık ana sayfası
+  RewriteRule ^en/ar/.*$ /en/ [R=301,L]
+  RewriteRule ^de/ar/.*$ /de/ [R=301,L]
+
+  # Hatalı AR ürün URL'leri: /ar/urun/yc-70-uzun-slug/ → /ar/منتج/yc-70/
+  RewriteRule ^ar/urun/(yc|yn)-([0-9]+)(?:-[^/]*)?/?(?:index\.html)?$ /ar/%D9%85%D9%86%D8%AA%D8%AC/$1-$2/ [R=301,L,NE]
+  RewriteRule ^ar/urunler/?(?:index\.html)?$ /ar/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA/ [R=301,L,NE]
+  RewriteRule ^ar/urun-karsilastirma/?(?:index\.html)?$ /ar/%D9%85%D9%82%D8%A7%D8%B1%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA/ [R=301,L,NE]
+
+  # Hatalı AR teşekkür URL'si: /شكرا-لكم/ → /ar/شكرا-لكم/
+  RewriteRule ^%D8%B4%D9%83%D8%B1%D8%A7-%D9%84%D9%83%D9%85/?(?:index\.html)?$ /ar/%D8%B4%D9%83%D8%B1%D8%A7-%D9%84%D9%83%D9%85/ [R=301,L,NE]
+
+  # Eski AR katalog yazımı: /ar/كتalogات/ → /ar/كتالوجات/
+  RewriteRule ^ar/كتalogات/?(?:index\.html)?$ /ar/كتالوجات/ [R=301,L,NE]
+</IfModule>

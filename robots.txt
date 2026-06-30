@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /emergent/
+Disallow: /yigitornek/
+Disallow: /tesekkurler/
+
+Sitemap: https://www.duruulvteknoloji.com.tr/sitemap.xml

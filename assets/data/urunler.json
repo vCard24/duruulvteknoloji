@@ -1,0 +1,722 @@
+{
+  "kurumsal_bilgiler": {
+    "firma_adi": "Duru ULV Teknoloji Sistemleri",
+    "telefon": "+90 352 320 20 86",
+    "whatsapp": "905320659117",
+    "email": "info@entosis.com.tr",
+    "adres": {
+      "satir1": "Osman Kavuncu Mah. Emirhan Cad. No: 4/C",
+      "satir2": "Melikgazi / Kayseri / Türkiye"
+    },
+    "fiyat_politikasi": "Sitede hiçbir ürün için fiyat gösterilmez. Satış yalnızca teklif formu veya doğrudan iletişim yoluyla yapılır.",
+    "sertifikalar": [
+      "CE",
+      "TSE",
+      "ISO 9001",
+      "ISO 14001",
+      "ISO 45001",
+      "T.C. Gıda Tarım ve Hayvancılık Bakanlığı",
+      "T.C. Sanayi ve Teknoloji Bakanlığı"
+    ]
+  },
+  "kategoriler": [
+    {
+      "slug": "arac-uzeri-ilaclama",
+      "ad_tr": "Araç Üzeri ULV İlaçlama Makineleri",
+      "kisa_ad": "Araç Üzeri",
+      "aciklama_tr": "Pick-up ve kamyonet üzerine monte edilen yüksek kapasiteli mist blower ve ULV pulverizatörler. Belediye, kamu ve büyük arazi uygulamaları için tasarlandı.",
+      "ikon": "truck"
+    },
+    {
+      "slug": "sera-tipi-ulv-ilaclama",
+      "ad_tr": "Sera Tipi ULV İlaçlama Makineleri",
+      "kisa_ad": "Sera Tipi",
+      "aciklama_tr": "Kapalı sera ortamlarında düşük damla çapı ile etkili ilaçlama yapan elektrikli ULV makineleri. Tarım işletmeleri ve çiçekçilik için.",
+      "ikon": "flower"
+    },
+    {
+      "slug": "sirt-tipi-ulv-ilaclama",
+      "ad_tr": "Sırt Tipi ULV İlaçlama Makineleri",
+      "kisa_ad": "Sırt Tipi",
+      "aciklama_tr": "Operatörün sırtında taşıyabileceği, sahada hareket kabiliyeti yüksek profesyonel ULV cihazları.",
+      "ikon": "backpack"
+    },
+    {
+      "slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "El Tipi ULV İlaçlama Makineleri",
+      "kisa_ad": "El Tipi",
+      "aciklama_tr": "Hastane, otel, depo, fabrika gibi iç mekânlar için kompakt ve hafif el tipi ULV pulverizatörler.",
+      "ikon": "wrench"
+    }
+  ],
+  "urunler": [
+    {
+      "slug": "duru-mist-blower-15hp",
+      "kategori_slug": "arac-uzeri-ilaclama",
+      "ad_tr": "Duru Mist Blower 15HP (400L)",
+      "model_kodu": "DMB-15HP-400",
+      "kisa_aciklama_tr": "400 L tank, 15 HP motor, araç üzeri profesyonel mist blower",
+      "gorsel": "assets/img/products/duru-mist-blower-15hp-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "15 Hp Amerikan motor"
+        },
+        {
+          "ozellik": "Batarya",
+          "deger": "12 V DC – 60 Ah"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "400 litre"
+        },
+        {
+          "ozellik": "Püskürtme Sistemleri",
+          "deger": "Mist blower – ULV – Pulverizatör"
+        },
+        {
+          "ozellik": "Holder Hortum",
+          "deger": "30 metre"
+        },
+        {
+          "ozellik": "Pompa",
+          "deger": "14 litre / dakika, 150 bar"
+        },
+        {
+          "ozellik": "ULV Mikron",
+          "deger": "35"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "340 kg"
+        }
+      ]
+    },
+    {
+      "slug": "entosis-mist-blower-500l",
+      "kategori_slug": "arac-uzeri-ilaclama",
+      "ad_tr": "Entosis Mist Blower (500L)",
+      "model_kodu": "EMB-500",
+      "kisa_aciklama_tr": "500 L tank, joystick kumanda, 6+1 nozul, 35 mikron ULV",
+      "gorsel": "assets/img/products/entosis-mist-blower-500l-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "15 Hp – 18 hp Amerikan motor"
+        },
+        {
+          "ozellik": "Batarya",
+          "deger": "12 v DC – 60 Ah"
+        },
+        {
+          "ozellik": "MİST Başlık Hareketi",
+          "deger": "340 derece sağa ve sola, 210 derece yukarı ve aşağı"
+        },
+        {
+          "ozellik": "Kumanda",
+          "deger": "Joystick Hareketli"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "500 litre"
+        },
+        {
+          "ozellik": "İlaç Formülasyonu",
+          "deger": "sc – ec – wp"
+        },
+        {
+          "ozellik": "Pompa",
+          "deger": "14 litre / dakika, 150 bar"
+        },
+        {
+          "ozellik": "Püskürtme Sistemleri",
+          "deger": "Mist blower – ULV – Pulverizatör"
+        },
+        {
+          "ozellik": "Holder Hortum",
+          "deger": "30 metre (isteğe bağlı 50 metre)"
+        },
+        {
+          "ozellik": "Yakıt Deposu",
+          "deger": "30 litre"
+        },
+        {
+          "ozellik": "Nozul Sayısı",
+          "deger": "6+1 adet"
+        },
+        {
+          "ozellik": "Yakıt Tüketimi",
+          "deger": "4 litre"
+        },
+        {
+          "ozellik": "ULV Mikron",
+          "deger": "35"
+        },
+        {
+          "ozellik": "El Yıkama Tankı",
+          "deger": "15 litre"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "400 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 105 cm, Boy: 150 cm, Yükseklik: 170 cm"
+        }
+      ]
+    },
+    {
+      "slug": "duru-hd1800",
+      "kategori_slug": "arac-uzeri-ilaclama",
+      "ad_tr": "Duru HD1800",
+      "model_kodu": "HD-1800",
+      "kisa_aciklama_tr": "Endüstriyel tip yüksek kapasiteli araç üzeri ULV",
+      "gorsel": "assets/img/products/duru-hd1800-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "Endüstriyel benzinli motor"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "300 litre"
+        },
+        {
+          "ozellik": "Püskürtme",
+          "deger": "ULV – Mist blower"
+        },
+        {
+          "ozellik": "ULV Mikron",
+          "deger": "15 – 50"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "210 kg"
+        }
+      ]
+    },
+    {
+      "slug": "duru-hd75",
+      "kategori_slug": "arac-uzeri-ilaclama",
+      "ad_tr": "Duru HD75",
+      "model_kodu": "HD-75",
+      "kisa_aciklama_tr": "Orta ölçek belediye uygulamaları için araç üzeri ULV",
+      "gorsel": "assets/img/products/duru-hd75-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "Benzinli motor"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "200 litre"
+        },
+        {
+          "ozellik": "Püskürtme",
+          "deger": "ULV – Mist"
+        },
+        {
+          "ozellik": "ULV Mikron",
+          "deger": "15 – 49"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "180 kg"
+        }
+      ]
+    },
+    {
+      "slug": "duru-hd50",
+      "kategori_slug": "arac-uzeri-ilaclama",
+      "ad_tr": "Duru HD50",
+      "model_kodu": "HD-50",
+      "kisa_aciklama_tr": "Kompakt araç üzeri ULV – küçük filo & saha uygulamaları",
+      "gorsel": "assets/img/products/duru-hd50-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "Benzinli motor"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "150 litre"
+        },
+        {
+          "ozellik": "Püskürtme",
+          "deger": "ULV"
+        },
+        {
+          "ozellik": "ULV Mikron",
+          "deger": "15 – 49"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "140 kg"
+        }
+      ]
+    },
+    {
+      "slug": "entosis-50",
+      "kategori_slug": "sera-tipi-ulv-ilaclama",
+      "ad_tr": "Entosis 50",
+      "model_kodu": "ENT-50",
+      "kisa_aciklama_tr": "50 L tank, 4400 W, 7 dönüm kapasite, 0–49 mikron",
+      "gorsel": "assets/img/products/entosis-50-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "U.L.V Motor",
+          "deger": "2200 W × 2 = 4400 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "50 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Kapasite",
+          "deger": "Maksimum 7 dönüm"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 70 cm, Boy: 100 cm, Yükseklik: 170 cm"
+        }
+      ]
+    },
+    {
+      "slug": "sera-max-50",
+      "kategori_slug": "sera-tipi-ulv-ilaclama",
+      "ad_tr": "Sera Max 50",
+      "model_kodu": "SMX-50",
+      "kisa_aciklama_tr": "50 L tank, sera için yüksek kapasiteli ULV",
+      "gorsel": "assets/img/products/sera-max-50-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "4400 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "50 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Kapasite",
+          "deger": "Maksimum 7 dönüm"
+        }
+      ]
+    },
+    {
+      "slug": "sera-ultra-20",
+      "kategori_slug": "sera-tipi-ulv-ilaclama",
+      "ad_tr": "Sera Ultra 20",
+      "model_kodu": "SULTRA-20",
+      "kisa_aciklama_tr": "20 L tank, orta ölçek sera, ULV elektrikli",
+      "gorsel": "assets/img/products/sera-ultra-20-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "20 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Kapasite",
+          "deger": "Maksimum 3 dönüm"
+        }
+      ]
+    },
+    {
+      "slug": "entosis-20",
+      "kategori_slug": "sera-tipi-ulv-ilaclama",
+      "ad_tr": "Entosis 20",
+      "model_kodu": "ENT-20",
+      "kisa_aciklama_tr": "20 L tank, 2200 W, kompakt sera ULV",
+      "gorsel": "assets/img/products/entosis-20-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "20 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Kapasite",
+          "deger": "Maksimum 3 dönüm"
+        }
+      ]
+    },
+    {
+      "slug": "sera-plus-20",
+      "kategori_slug": "sera-tipi-ulv-ilaclama",
+      "ad_tr": "Sera Plus 20",
+      "model_kodu": "SPL-20",
+      "kisa_aciklama_tr": "20 L tank, sera ULV, dayanıklı şasi",
+      "gorsel": "assets/img/products/sera-plus-20-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "20 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Kapasite",
+          "deger": "Maksimum 3 dönüm"
+        }
+      ]
+    },
+    {
+      "slug": "duru-sirt10",
+      "kategori_slug": "sirt-tipi-ulv-ilaclama",
+      "ad_tr": "Duru Sırt10",
+      "model_kodu": "SIRT-10",
+      "kisa_aciklama_tr": "10 L tank, sırtta taşınabilir ULV, saha tipi",
+      "gorsel": "assets/img/products/duru-sirt10-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "Benzinli 2 zamanlı"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "10 litre"
+        },
+        {
+          "ozellik": "Yakıt Deposu",
+          "deger": "1.5 litre"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık (boş)",
+          "deger": "8 kg"
+        }
+      ]
+    },
+    {
+      "slug": "duru-hd5",
+      "kategori_slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "Duru HD5",
+      "model_kodu": "HD-5",
+      "kisa_aciklama_tr": "5 L tank, el tipi ULV, hafif yapı",
+      "gorsel": "assets/img/products/duru-hd5-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "1000 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "5 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "4.5 kg"
+        }
+      ]
+    },
+    {
+      "slug": "duru-hr5",
+      "kategori_slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "Duru HR5",
+      "model_kodu": "HR-5",
+      "kisa_aciklama_tr": "5 L tank, el tipi ULV, dayanıklı gövde",
+      "gorsel": "assets/img/products/duru-hr5-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "1100 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "5 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "4.8 kg"
+        }
+      ]
+    },
+    {
+      "slug": "duru-max5",
+      "kategori_slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "Duru Max5",
+      "model_kodu": "MAX-5",
+      "kisa_aciklama_tr": "5 L tank, yüksek motor gücü, el tipi ULV",
+      "gorsel": "assets/img/products/duru-max5-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "1500 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "5 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "5 kg"
+        }
+      ]
+    },
+    {
+      "slug": "duru-plus",
+      "kategori_slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "Duru Plus",
+      "model_kodu": "PLUS",
+      "kisa_aciklama_tr": "7 L tank, el tipi ULV, dengeli tutuş",
+      "gorsel": "assets/img/products/duru-plus-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "1500 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "7 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "6.5 kg"
+        }
+      ]
+    },
+    {
+      "slug": "duru-x20",
+      "kategori_slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "Duru X20",
+      "model_kodu": "X-20",
+      "kisa_aciklama_tr": "20 L tank, 4400 W, 0–49 mikron ULV",
+      "gorsel": "assets/img/products/duru-x20-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200w × 2: 4400 W, 220V AC, 50hz"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "20 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "12 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "46 cm × 60 cm × 68 cm"
+        }
+      ]
+    },
+    {
+      "slug": "duru-x10",
+      "kategori_slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "Duru X10",
+      "model_kodu": "X-10",
+      "kisa_aciklama_tr": "10 L tank, 2200 W, el tipi ULV",
+      "gorsel": "assets/img/products/duru-x10-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "10 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "8.5 kg"
+        }
+      ]
+    },
+    {
+      "slug": "duru-max10",
+      "kategori_slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "Duru Max10",
+      "model_kodu": "MAX-10",
+      "kisa_aciklama_tr": "10 L tank, yüksek güç el tipi ULV",
+      "gorsel": "assets/img/products/duru-max10-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2500 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "10 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "9 kg"
+        }
+      ]
+    }
+  ]
+}

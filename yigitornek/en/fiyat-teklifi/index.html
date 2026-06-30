@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Request a Quote | Yiğit Çelik Kapı</title>
+    <meta name="description" content="Request a quote for steel door models. Select series and product code, share your customisation preferences." />
+    <link rel="canonical" href="https://www.yigitcelikkapi.com.tr/en/fiyat-teklifi/" />
+    <link rel="alternate" hreflang="tr" href="https://www.yigitcelikkapi.com.tr/fiyat-teklifi-al/" />
+    <link rel="alternate" hreflang="en" href="https://www.yigitcelikkapi.com.tr/en/fiyat-teklifi/" />
+    <link rel="alternate" hreflang="ar" href="https://www.yigitcelikkapi.com.tr/ar/طلب-عرض-سعر/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.yigitcelikkapi.com.tr/fiyat-teklifi-al/" />
+    <!-- yck:og-meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Yiğit Çelik Kapı" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Request a Quote | Yiğit Çelik Kapı" />
+    <meta property="og:description" content="Request a quote for steel door models. Select series and product code, share your customisation preferences." />
+    <meta property="og:url" content="https://www.yigitcelikkapi.com.tr/en/fiyat-teklifi/" />
+    <meta property="og:image" content="https://www.yigitcelikkapi.com.tr/assets/img/yigit_celik_kapi-10.webp" />
+    <meta property="og:image:alt" content="Request a Quote" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Request a Quote | Yiğit Çelik Kapı" />
+    <meta name="twitter:description" content="Request a quote for steel door models. Select series and product code, share your customisation preferences." />
+    <meta name="twitter:image" content="https://www.yigitcelikkapi.com.tr/assets/img/yigit_celik_kapi-10.webp" />
+    <!-- /yck:og-meta -->    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      />
+    </noscript>
+
+
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="../../assets/css/quote-form.css" />
+  </head>
+  <body class="quote-page" data-root="../../">
+    <div id="header-root"></div>
+
+    <main class="main-content">
+      <header class="page-hero">
+        <div class="container">
+          <h1>Request a Quote</h1>
+          <p>Let us prepare your personalised quote — choose models, specify preferences, submit the form or download as PDF.</p>
+        </div>
+      </header>
+
+      <div class="page-body">
+        <div class="container quote-page__inner">
+          <div class="quote-page__layout">
+            <aside class="quote-aside" aria-label="Information">
+              <div class="quote-steps">
+                <h2 class="quote-steps__title">How does it work?</h2>
+                <ol class="quote-steps__list">
+                  <li class="quote-steps__item">
+                    <span class="quote-steps__num">1</span>
+                    <div>
+                      <strong>Choose products</strong>
+                      <p>Select up to 4 models by series and code; indicate opening direction.</p>
+                    </div>
+                  </li>
+                  <li class="quote-steps__item">
+                    <span class="quote-steps__num">2</span>
+                    <div>
+                      <strong>Enter your details</strong>
+                      <p>Enter your contact details and customisation preferences.</p>
+                    </div>
+                  </li>
+                  <li class="quote-steps__item">
+                    <span class="quote-steps__num">3</span>
+                    <div>
+                      <strong>Receive your quote</strong>
+                      <p>Our team will review your request and respond as soon as possible.</p>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div class="quote-callout">
+                <p>For urgent enquiries, you can call us.</p>
+                <a class="quote-callout__phone" href="tel:+903523115541">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  +90 352 311 55 41
+                </a>
+              </div>
+            </aside>
+
+            <div class="quote-form-card">
+              <h2 class="quote-form-card__title">Quote form</h2>
+
+              <div id="quote-compare-hint" class="quote-compare-hint" hidden></div>
+
+              <form
+                id="quote-form"
+                class="yigit-form quote-form"
+                method="post"
+                autocomplete="on"
+                data-quote-api="/api/send-quote.php"
+                novalidate
+              >
+                <p id="quote-submit-status" class="quote-submit-status" hidden role="status" aria-live="polite"></p>
+                <input type="hidden" name="_subject" value="Yiğit Çelik Kapı — Quote request form" />
+                <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+                <textarea id="quote-hidden-summary" name="Urun_Ozeti" class="form-honey" tabindex="-1" aria-hidden="true"></textarea>
+
+                <fieldset class="quote-form__section">
+                  <legend class="quote-form__section-title">Product details</legend>
+                  <p class="quote-products__lead">You can request a quote for up to 4 products at once.</p>
+                  <div id="quote-products-slots" class="quote-products-slots" aria-live="polite"></div>
+                  <div class="quote-products-toolbar">
+                    <button type="button" id="quote-add-product" class="quote-products-toolbar__btn quote-products-toolbar__btn--add">
+                      + Add product
+                    </button>
+                    <button type="button" id="quote-remove-product" class="quote-products-toolbar__btn quote-products-toolbar__btn--remove">
+                      − Remove product
+                    </button>
+                  </div>
+                </fieldset>
+
+                <fieldset class="quote-form__section">
+                  <legend class="quote-form__section-title">Contact details</legend>
+                  <div class="form-grid form-grid--2">
+                    <div class="form-field form-field--full" style="grid-column: 1 / -1">
+                      <label for="quote-name">Full name <span aria-hidden="true">*</span></label>
+                      <input id="quote-name" name="Ad_Soyad" type="text" required maxlength="120" autocomplete="name" />
+                    </div>
+                    <div class="form-field">
+                      <label for="quote-phone">Telefon <span aria-hidden="true">*</span></label>
+                      <input id="quote-phone" name="Telefon" type="tel" required maxlength="40" autocomplete="tel" placeholder="+90 5XX XXX XX XX" />
+                    </div>
+                    <div class="form-field">
+                      <label for="quote-email">E-posta <span aria-hidden="true">*</span></label>
+                      <input id="quote-email" name="email" type="email" required maxlength="120" autocomplete="email" />
+                    </div>
+                    <div class="form-field form-field--full" style="grid-column: 1 / -1">
+                      <label for="quote-company">Company name (optional)</label>
+                      <input id="quote-company" name="Firma" type="text" maxlength="120" autocomplete="organization" />
+                    </div>
+                    <div class="form-field">
+                      <label for="quote-country">Country <span aria-hidden="true">*</span></label>
+                      <select id="quote-country" name="Ulke" required></select>
+                    </div>
+                  </div>
+                  <div id="quote-location-tr" class="quote-location-tr form-grid form-grid--2">
+                    <div class="form-field">
+                      <label for="quote-province">Province <span aria-hidden="true">*</span></label>
+                      <select id="quote-province" name="Il">
+                        <option value="">Select province</option>
+                      </select>
+                    </div>
+                    <div class="form-field">
+                      <label for="quote-district">District <span aria-hidden="true">*</span></label>
+                      <select id="quote-district" name="Ilce">
+                        <option value="">Select district</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div id="quote-location-intl" class="quote-location-intl form-grid form-grid--2" hidden>
+                    <div class="form-field">
+                      <label for="quote-city">City <span aria-hidden="true">*</span></label>
+                      <select id="quote-city" name="Sehir"></select>
+                      <div id="quote-city-other-wrap" class="quote-form__city-other">
+                        <label class="sr-only" for="quote-city-other">City name</label>
+                        <input id="quote-city-other" name="Sehir_Diger" type="text" maxlength="80" placeholder="Enter city name" />
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="quote-form__section">
+                  <legend class="quote-form__section-title">Customisation</legend>
+                  <div class="form-field form-field--full">
+                    <label for="quote-message">Special requests / your message</label>
+                    <textarea id="quote-message" name="Mesaj" rows="4" maxlength="4000" placeholder="Project details, installation location, additional notes…"></textarea>
+                  </div>
+                  <div class="quote-form__custom-grid">
+                    <div class="form-field">
+                      <label for="quote-color">Colour</label>
+                      <input id="quote-color" name="Colour" type="text" maxlength="120" placeholder="Economy, Standard, Luxury, RAL code…" />
+                    </div>
+                    <div class="form-field">
+                      <label for="quote-pattern">Pattern</label>
+                      <input id="quote-pattern" name="Pattern" type="text" maxlength="120" placeholder="Wood pattern, digital print, embossing…" />
+                    </div>
+                    <div class="form-field">
+                      <label for="quote-size">Dimensions</label>
+                      <input id="quote-size" name="Olcu" type="text" maxlength="80" placeholder="90×210 cm, custom size…" />
+                    </div>
+                    <div class="form-field">
+                      <label for="quote-frame">Frame type</label>
+                      <input id="quote-frame" name="Kasa_Tipi" type="text" maxlength="120" placeholder="Standard, profile frame, custom architrave…" />
+                    </div>
+                    <div class="form-field">
+                      <label for="quote-panel">Panel type</label>
+                      <input id="quote-panel" name="Panel_Tipi" type="text" maxlength="120" placeholder="PVC, composite, laminox, glazed…" />
+                    </div>
+                    <div class="form-field">
+                      <label for="quote-handle">Handle</label>
+                      <input id="quote-handle" name="Handle" type="text" maxlength="120" placeholder="Economy, Standard, Luxury, Brand…" />
+                    </div>
+                    <div class="form-field">
+                      <label for="quote-lock">Lock</label>
+                      <input id="quote-lock" name="Lock" type="text" maxlength="120" placeholder="Standard, multi-point, smart lock…" />
+                    </div>
+                    <div class="form-field">
+                      <label for="quote-peephole">Door viewer</label>
+                      <input id="quote-peephole" name="Durbun" type="text" maxlength="120" placeholder="Standard, wide-angle, digital…" />
+                    </div>
+                    <div class="form-field">
+                      <label for="quote-hinge">Hinge</label>
+                      <input id="quote-hinge" name="Menteshe" type="text" maxlength="120" placeholder="Concealed hinge, pivot, standard…" />
+                    </div>
+                    <div class="form-field">
+                      <label for="quote-fire">Fire resistance</label>
+                      <input id="quote-fire" name="Yangin_Dayanimi" type="text" maxlength="120" placeholder="30 min, 60 min, 90 min, certified…" />
+                    </div>
+                  </div>
+                </fieldset>
+
+                <div id="quote-kvkk-wrap" class="form-check">
+                  <input id="quote-kvkk" name="KVKK_Onay" type="checkbox" value="Evet" required />
+                  <label for="quote-kvkk">
+                    I accept the processing of my personal data under the <a href="../kvkk/index.html" target="_blank" rel="noopener">Privacy Notice (KVKK)</a>. <span aria-hidden="true">*</span>
+                  </label>
+                </div>
+
+                <p class="form-hint">Fields marked * are required. Requests are usually reviewed within 24 hours.</p>
+
+                <div class="quote-form__actions">
+                  <button type="submit" class="btn-submit">Request quote →</button>
+                  <button type="button" id="quote-pdf-btn" class="btn-quote-pdf">Download PDF</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="quote-pdf-sheet" class="quote-pdf-sheet" aria-hidden="true"></div>
+
+    <div id="footer-root"></div>
+    <script src="../../assets/js/compare-utils.js?v=20260701" defer></script>
+    <script src="../../assets/js/products-data.js" defer></script>
+    <script src="../../assets/js/tr-il-ilce-data.js" defer></script>
+    <script src="../../assets/js/locations-data.js" defer></script>
+    <script src="../../assets/js/quote-pdf-logo.js" defer></script>
+    <script src="../../assets/js/vendor/html2canvas.min.js" defer></script>
+    <script src="../../assets/js/vendor/jspdf.umd.min.js" defer></script>
+    <script src="../../assets/js/main.js" defer></script>
+    <script src="../../assets/js/layout-chrome.js?v=20260705"></script>
+    <script src="../../assets/js/layout.js?v=20260704" defer></script>
+    <script src="../../assets/js/form-validate.js?v=20260630" defer></script>
+    <script src="../../assets/js/quote-form.js?v=20260704" defer></script>
+  </body>
+</html>
