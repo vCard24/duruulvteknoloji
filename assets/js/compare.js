@@ -427,7 +427,7 @@
           return '<th class="compare-table__head-cell">' +
             '<button type="button" class="compare-table__remove no-print" data-remove-slug="' + escHtml(p.slug) + '" aria-label="Listeden çıkar" title="Listeden çıkar">×</button>' +
             '<div class="compare-table__product-img"><img src="' + escHtml(imageUrl(p.slug)) + '" alt="' + escHtml(p.ad_tr) + '" loading="lazy"></div>' +
-            '<div style="font-size:0.625rem;text-transform:uppercase;letter-spacing:0.16em;color:rgba(43,46,51,0.55);font-weight:600">' + escHtml(p.model_kodu) + '</div>' +
+            '<div class="product-card__model">' + escHtml(p.model_kodu) + '</div>' +
             '<a href="' + escHtml(productUrl(p)) + '" style="font-family:var(--font-display);font-weight:600;color:var(--color-primary);text-decoration:none;display:block;margin-top:0.25rem">' + escHtml(p.ad_tr) + '</a>' +
             '</th>';
         }).join('');

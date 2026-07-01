@@ -135,7 +135,7 @@
   font-size: 0.625rem;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: rgba(43, 46, 51, 0.55);
+  color: var(--color-text-muted);
   font-weight: 600;
   margin-bottom: 0.25rem;
 }
@@ -246,6 +246,11 @@
   align-items: center;
   justify-content: space-between;
   font-size: 0.75rem;
+}
+
+.category-card__count {
+  color: var(--color-text-muted);
+  font-weight: 500;
 }
 
 /* Spec table */

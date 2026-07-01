@@ -29,6 +29,7 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Duru ULV Teknoloji Sistemleri","url":"https://www.duruulvteknoloji.com.tr/"}</script>
   <link rel="icon" href="assets/img/duru-icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/img/duru-icon.svg">
+  <link rel="preload" as="image" type="image/webp" href="assets/img/hero/duru-hero-480.webp" imagesrcset="assets/img/hero/duru-hero-480.webp 480w, assets/img/hero/duru-hero-720.webp 720w, assets/img/hero/duru-hero-960.webp 960w, assets/img/hero/duru-hero-1200.webp 1200w" imagesizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 600px" fetchpriority="high">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/components.css">
 </head>
@@ -114,11 +115,26 @@
 
         <div class="hero__visual">
           <div class="hero__image-wrap">
-            <img src="assets/img/hero/duru-hero.png" alt="Entosis Mist Blower — Duru ULV profesyonel ilaçlama sistemi" width="1200" height="800" fetchpriority="high">
-            <img src="assets/img/hero/36-yillik-tecrube.png" alt="36 yıllık tecrübe — 1990'dan bu güne" class="hero__experience-badge" width="200" height="200" loading="lazy">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="assets/img/hero/duru-hero-480.webp 480w, assets/img/hero/duru-hero-720.webp 720w, assets/img/hero/duru-hero-960.webp 960w, assets/img/hero/duru-hero-1200.webp 1200w"
+                sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 600px">
+              <img src="assets/img/hero/duru-hero.png" alt="Entosis Mist Blower — Duru ULV profesyonel ilaçlama sistemi" width="1200" height="800" fetchpriority="high" decoding="async">
+            </picture>
+            <img
+              src="assets/img/hero/36-yillik-tecrube-120.webp"
+              srcset="assets/img/hero/36-yillik-tecrube-120.webp 120w, assets/img/hero/36-yillik-tecrube-200.webp 200w"
+              sizes="140px"
+              alt="36 yıllık tecrübe — 1990'dan bu güne"
+              class="hero__experience-badge"
+              width="200"
+              height="200"
+              loading="lazy"
+              decoding="async">
           </div>
           <div class="hero__featured-card">
-            <div style="font-size:0.625rem;text-transform:uppercase;letter-spacing:0.18em;color:rgba(43,46,51,0.55);font-weight:600">Öne çıkan model</div>
+            <div class="text-label">Öne çıkan model</div>
             <div style="font-family:var(--font-display);font-weight:600;color:var(--color-primary);margin-top:0.25rem">Entosis Mist Blower 500L</div>
             <div style="font-size:0.75rem;color:rgba(43,46,51,0.65);margin-top:0.25rem">35 mikron ULV · 6+1 nozul</div>
           </div>
@@ -145,7 +161,7 @@
             <h3 class="category-card__title">Araç Üzeri</h3>
             <p class="category-card__desc">Pick-up ve kamyonet üzerine monte edilen yüksek kapasiteli mist blower ve ULV pulverizatörler.</p>
             <div class="category-card__footer">
-              <span style="color:rgba(43,46,51,0.55);font-weight:500">5 model</span>
+              <span class="category-card__count">5 model</span>
               <span style="color:var(--color-primary);font-weight:600">Keşfet →</span>
             </div>
           </a>
@@ -156,7 +172,7 @@
             <h3 class="category-card__title">Sera Tipi</h3>
             <p class="category-card__desc">Kapalı sera ortamlarında düşük damla çapı ile etkili ilaçlama yapan elektrikli ULV makineleri.</p>
             <div class="category-card__footer">
-              <span style="color:rgba(43,46,51,0.55);font-weight:500">5 model</span>
+              <span class="category-card__count">5 model</span>
               <span style="color:var(--color-primary);font-weight:600">Keşfet →</span>
             </div>
           </a>
@@ -167,7 +183,7 @@
             <h3 class="category-card__title">Sırt Tipi</h3>
             <p class="category-card__desc">Operatörün sırtında taşıyabileceği, sahada hareket kabiliyeti yüksek profesyonel ULV cihazları.</p>
             <div class="category-card__footer">
-              <span style="color:rgba(43,46,51,0.55);font-weight:500">1 model</span>
+              <span class="category-card__count">1 model</span>
               <span style="color:var(--color-primary);font-weight:600">Keşfet →</span>
             </div>
           </a>
@@ -178,7 +194,7 @@
             <h3 class="category-card__title">El Tipi</h3>
             <p class="category-card__desc">Hastane, otel, depo, fabrika gibi iç mekânlar için kompakt ve hafif el tipi ULV pulverizatörler.</p>
             <div class="category-card__footer">
-              <span style="color:rgba(43,46,51,0.55);font-weight:500">7 model</span>
+              <span class="category-card__count">7 model</span>
               <span style="color:var(--color-primary);font-weight:600">Keşfet →</span>
             </div>
           </a>

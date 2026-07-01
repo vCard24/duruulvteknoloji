@@ -66,11 +66,28 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-weight: 600;
-  color: var(--color-accent);
+  color: var(--color-primary-hover);
   margin-bottom: 0.75rem;
 }
 
 .eyebrow--dark { color: var(--color-accent-light); }
+
+.eyebrow--muted {
+  color: var(--color-text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.text-label {
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
 
 .section-title {
   font-size: clamp(1.875rem, 4vw, 2.25rem);
@@ -543,6 +560,13 @@ a {
   overflow: hidden;
 }
 
+.hero__image-wrap picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__image-wrap picture img,
 .hero__image-wrap > img:not(.hero__experience-badge) {
   width: 100%;
   height: 100%;

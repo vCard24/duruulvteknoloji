@@ -1,0 +1,10 @@
+{
+  "name": "duruulvteknoloji-site",
+  "private": true,
+  "scripts": {
+    "optimize-hero": "node scripts/optimize-hero-images.js"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5"
+  }
+}

@@ -261,7 +261,7 @@ const pages = {
                 <a href="${P}urunler/index.html" class="btn btn--outline">Online Katalog</a>
                 <a href="${P}fiyat-teklifi/index.html" class="btn btn--outline">Teklif Al</a>
               </div>
-              <p style="margin-top:1rem;font-size:0.8125rem;color:rgba(43,46,51,0.55)">Duru ULV Ürün Kataloğu · 2026 · PDF</p>
+              <p class="text-muted" style="margin-top:1rem;font-size:0.8125rem">Duru ULV Ürün Kataloğu · 2026 · PDF</p>
             </div>
             <div class="catalog-hero-card">
               <div class="catalog-preview">

@@ -19,7 +19,7 @@ function renderCategoryCard(cat, opts) {
   const countHtml =
     count !== undefined
       ? `<div class="category-card__footer">
-              <span style="color:rgba(43,46,51,0.55);font-weight:500">${count} model</span>
+              <span class="category-card__count">${count} model</span>
               <span style="color:var(--color-primary);font-weight:600">Keşfet →</span>
             </div>`
       : `<div class="category-card__footer">

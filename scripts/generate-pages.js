@@ -292,7 +292,7 @@ ${header(prefix, product.slug)}
           <div class="action-bar">
             <div class="action-bar__header">
               <div>
-                <div class="eyebrow" style="color:rgba(43,46,51,0.55);margin-bottom:0.25rem">Talep edin</div>
+                <div class="eyebrow eyebrow--muted">Talep edin</div>
                 <div style="font-family:var(--font-display);font-weight:600;color:var(--color-primary)">Özel teklif &amp; teknik bilgi</div>
               </div>
               <div class="action-bar__note">Aynı iş günü dönüş</div>
