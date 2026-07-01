@@ -7,6 +7,8 @@ const path = require('path');
 const { blogIcon } = require('./blog-icons');
 const { buildRichLayout, applySectionIds, standardBlogCta } = require('./blog-rich-layout');
 const { siteHeader, siteFooter } = require('./site-layout');
+const { renderHeadAssets, renderBodyScripts } = require('./head-assets');
+const { buildSiteCss } = require('./build-css');
 const {
   renderSeoHead,
   injectSeoHead,
@@ -869,9 +871,7 @@ ${articleInner}
   <title>${esc(pageTitle)}</title>
 ${seoBlock}
   <link rel="icon" href="${prefix}assets/img/duru-icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="${prefix}assets/css/main.css">
-  <link rel="stylesheet" href="${prefix}assets/css/components.css">
-  <link rel="stylesheet" href="${prefix}assets/css/blog.css">
+${renderHeadAssets(prefix, { extraStylesheets: ['assets/css/blog.css'] })}
   <script type="application/ld+json">${JSON.stringify(schema)}</script>${post.faqs.length ? `\n  <script type="application/ld+json">${faqPageSchemaJson(post.faqs)}</script>` : ''}
 </head>
 <body>
@@ -885,8 +885,7 @@ ${faqSection}
 
 ${blogFooter(prefix, blogHref)}
 
-  <script src="${prefix}assets/js/compare.js"></script>
-  <script src="${prefix}assets/js/main.js"></script>
+${renderBodyScripts(prefix)}
 </body>
 </html>
 `;
@@ -934,9 +933,7 @@ ${blogCardMediaHtml(post.slug, prefix, postHref, cardAlt)}
   <title>Blog — Duru ULV</title>
 ${indexSeo}
   <link rel="icon" href="${prefix}assets/img/duru-icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="${prefix}assets/css/main.css">
-  <link rel="stylesheet" href="${prefix}assets/css/components.css">
-  <link rel="stylesheet" href="${prefix}assets/css/blog.css">
+${renderHeadAssets(prefix, { extraStylesheets: ['assets/css/blog.css'] })}
 </head>
 <body>
 
@@ -961,8 +958,7 @@ ${cards}
 
 ${blogFooter(prefix, blogHref)}
 
-  <script src="${prefix}assets/js/compare.js"></script>
-  <script src="${prefix}assets/js/main.js"></script>
+${renderBodyScripts(prefix)}
 </body>
 </html>
 `;
@@ -1039,6 +1035,8 @@ function walkHtml(dir, depth, fn) {
 
 // --- Main ---
 console.log('SEO içerik entegrasyonu başlıyor...\n');
+
+buildSiteCss();
 
 const productSeoData = {};
 let productUpdated = 0;

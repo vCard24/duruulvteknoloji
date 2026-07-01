@@ -2,6 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const { renderCategoryCard } = require('./category-icons');
 const { siteHeader, siteFooter } = require('./site-layout');
+const { renderHeadAssets, renderBodyScripts } = require('./head-assets');
+const { buildSiteCss } = require('./build-css');
 const {
   renderSeoHead,
   DEFAULT_OG_IMAGE,
@@ -51,17 +53,14 @@ function shell(title, description, body, extraScripts, extraHead, pageOpts) {
   <title>${esc(fullTitle)}</title>
 ${seoBlock}${schemaBlock}
   <link rel="icon" href="${P}assets/img/duru-icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="${P}assets/css/main.css">
-  <link rel="stylesheet" href="${P}assets/css/components.css">
-${extraHead || ''}
+${renderHeadAssets(P, { extraHead: extraHead || '' })}
 </head>
 <body>
 
 ${header()}
 ${body}
 ${footer()}
-  <script src="${P}assets/js/compare.js"></script>
-  <script src="${P}assets/js/main.js"></script>
+${renderBodyScripts(P)}
 ${extraScripts || ''}
 </body>
 </html>
@@ -498,5 +497,7 @@ Object.entries(pages).forEach(([rel, html]) => {
 fs.mkdirSync(path.join(ROOT, 'assets/docs'), { recursive: true });
 const pdfNote = path.join(ROOT, 'assets/docs/README.txt');
 fs.writeFileSync(pdfNote, 'Katalog PDF: duru-ulv-katalog-2026.pdf (Duru ULV Ürün Kataloğu 2026)\n', 'utf8');
+
+buildSiteCss();
 
 console.log('Generated', Object.keys(pages).length, 'site pages');

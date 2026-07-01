@@ -2,6 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const { renderCategoryCard } = require('./category-icons');
 const { siteHeader, siteFooter } = require('./site-layout');
+const { renderHeadAssets, renderBodyScripts } = require('./head-assets');
+const { buildSiteCss } = require('./build-css');
 const {
   renderSeoHead,
   productOgImageUrl,
@@ -250,8 +252,7 @@ function generateProductPage(product) {
 ${seoBlock}
   <script type="application/ld+json">${productSchema}</script>${faqSchemaTag}
   <link rel="icon" href="${prefix}assets/img/duru-icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="${prefix}assets/css/main.css">
-  <link rel="stylesheet" href="${prefix}assets/css/components.css">
+${renderHeadAssets(prefix)}
 </head>
 <body>
 
@@ -368,8 +369,7 @@ ${relatedHtml}
 
 ${footer(prefix)}
 
-  <script src="${prefix}assets/js/compare.js"></script>
-  <script src="${prefix}assets/js/main.js"></script>
+${renderBodyScripts(prefix)}
 </body>
 </html>
 `;
@@ -405,8 +405,7 @@ function generateCategoryPage(category) {
   <title>${esc(catTitle)}</title>
 ${seoBlock}
   <link rel="icon" href="${prefix}assets/img/duru-icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="${prefix}assets/css/main.css">
-  <link rel="stylesheet" href="${prefix}assets/css/components.css">
+${renderHeadAssets(prefix)}
 </head>
 <body>
 
@@ -459,8 +458,7 @@ ${cards}
 
 ${footer(prefix)}
 
-  <script src="${prefix}assets/js/compare.js"></script>
-  <script src="${prefix}assets/js/main.js"></script>
+${renderBodyScripts(prefix)}
 </body>
 </html>
 `;
@@ -520,8 +518,7 @@ function generateProductsIndex() {
   <title>${esc(listTitle)}</title>
 ${seoBlock}
   <link rel="icon" href="${prefix}assets/img/duru-icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="${prefix}assets/css/main.css">
-  <link rel="stylesheet" href="${prefix}assets/css/components.css">
+${renderHeadAssets(prefix)}
 </head>
 <body>
 
@@ -560,8 +557,7 @@ ${allCards}
 
 ${footer(prefix)}
 
-  <script src="${prefix}assets/js/compare.js"></script>
-  <script src="${prefix}assets/js/main.js"></script>
+${renderBodyScripts(prefix)}
 </body>
 </html>
 `;
@@ -585,6 +581,8 @@ for (const category of data.kategoriler) {
 }
 
 writeFile(path.join(ROOT, 'urunler', 'index.html'), generateProductsIndex());
+
+buildSiteCss();
 
 console.log(`Generated ${productCount} product pages`);
 console.log(`Generated ${data.kategoriler.length} category pages`);

@@ -2,7 +2,9 @@
   "name": "duruulvteknoloji-site",
   "private": true,
   "scripts": {
-    "optimize-hero": "node scripts/optimize-hero-images.js"
+    "build:css": "node scripts/build-css.js",
+    "optimize-hero": "node scripts/optimize-hero-images.js",
+    "build:pages": "node scripts/build-css.js && node scripts/generate-site-pages.js && node scripts/generate-pages.js && node scripts/integrate-seo-content.js"
   },
   "devDependencies": {
     "sharp": "^0.34.5"
