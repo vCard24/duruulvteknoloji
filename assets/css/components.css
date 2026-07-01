@@ -25,6 +25,32 @@
   background: var(--color-primary-hover);
 }
 
+.btn--secondary {
+  background: var(--color-white);
+  border-color: rgba(31, 61, 43, 0.22);
+  color: var(--color-primary);
+}
+
+.btn--secondary:hover {
+  background: rgba(31, 61, 43, 0.05);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+/* Koyu yeşil zemin üzerinde birincil buton (beyaz zemin) */
+.stats-band .btn--primary,
+.bg-primary .btn--primary {
+  background: var(--color-white);
+  color: var(--color-primary);
+  border-color: var(--color-white);
+}
+
+.stats-band .btn--primary:hover,
+.bg-primary .btn--primary:hover {
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--color-primary);
+}
+
 .btn--outline {
   background: transparent;
   border-color: rgba(43, 46, 51, 0.25);
@@ -286,6 +312,7 @@
   font-weight: 600;
   color: var(--color-primary);
   text-align: left;
+  overflow-wrap: anywhere;
 }
 
 .accordion__trigger:hover {
@@ -575,6 +602,7 @@ a.whatsapp-btn.wa-pulse {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.875rem;
+  min-width: 36rem;
 }
 
 .compare-table th,

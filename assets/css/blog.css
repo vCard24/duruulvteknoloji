@@ -919,6 +919,8 @@ a.blog-tag:hover {
   margin: 1rem 0 0;
   border-radius: 10px;
   overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   border: 1px solid rgba(31, 61, 43, 0.12);
 }
 
@@ -1038,6 +1040,12 @@ a.blog-tag:hover {
 
 .blog-vs-table-wrap {
   margin: 2rem 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.blog-vs-table {
+  min-width: 28rem;
 }
 
 .blog-vs-table__heading {
@@ -1244,4 +1252,33 @@ a.blog-tag:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 0.625rem;
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .blog-cta-bar--hero {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .blog-cta-bar__actions .btn {
+    flex: 1 1 calc(50% - 0.3125rem);
+    min-width: 9rem;
+  }
+
+  .blog-product-block__actions {
+    justify-content: stretch;
+  }
+
+  .blog-product-block__actions .btn {
+    flex: 1 1 calc(50% - 0.3125rem);
+    min-width: 9rem;
+  }
+
+  .blog-sidebar {
+    order: 2;
+  }
+
+  .blog-main {
+    order: 1;
+  }
 }

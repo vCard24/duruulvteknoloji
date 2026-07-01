@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { renderCategoryCard } = require('./category-icons');
-const { whatsappButton } = require('./whatsapp-button');
+const { siteHeader, siteFooter } = require('./site-layout');
 const {
   renderSeoHead,
   DEFAULT_OG_IMAGE,
@@ -69,93 +69,11 @@ ${extraScripts || ''}
 }
 
 function header() {
-  const k = data.kurumsal_bilgiler;
-  return `  <header class="site-header no-print">
-    <div class="container site-header__inner">
-      <a href="${P}index.html" class="site-logo">
-        <img src="${P}assets/img/duru-hd-logo.svg" alt="Duru ULV Teknoloji Sistemleri" class="site-logo__img" width="298" height="161">
-      </a>
-      <nav class="site-nav" aria-label="Ana menü">
-        <a href="${P}index.html" class="site-nav__link" data-nav-link>Anasayfa</a>
-        <a href="${P}urunler/index.html" class="site-nav__link" data-nav-link>Ürünler</a>
-        <a href="${P}katalog/index.html" class="site-nav__link" data-nav-link>Katalog</a>
-        <a href="${P}blog/index.html" class="site-nav__link" data-nav-link>Blog</a>
-        <a href="${P}urun-karsilastirma/index.html" class="site-nav__link" data-nav-link data-compare-nav>Karşılaştır <span class="site-nav__badge" data-compare-count style="display:none">0</span></a>
-        <a href="${P}hakkimizda/index.html" class="site-nav__link" data-nav-link>Hakkımızda</a>
-        <a href="${P}iletisim/index.html" class="site-nav__link" data-nav-link>İletişim</a>
-      </nav>
-      <div class="header-actions">
-        <button type="button" class="lang-switcher">TR ▾</button>
-        <a href="${P}fiyat-teklifi/index.html" class="btn btn--primary btn--sm header-cta">Teklif Al</a>
-        <button type="button" class="mobile-toggle" data-mobile-toggle aria-expanded="false" aria-label="Menü"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-      </div>
-    </div>
-    <div class="mobile-menu" data-mobile-menu>
-      <div class="container">
-        <a href="${P}index.html" class="mobile-menu__link">Anasayfa</a>
-        <a href="${P}urunler/index.html" class="mobile-menu__link">Ürünler</a>
-        <a href="${P}katalog/index.html" class="mobile-menu__link">Katalog</a>
-        <a href="${P}blog/index.html" class="mobile-menu__link">Blog</a>
-        <a href="${P}urun-karsilastirma/index.html" class="mobile-menu__link" data-compare-nav>Karşılaştır <span class="site-nav__badge" data-compare-count style="display:none">0</span></a>
-        <a href="${P}hakkimizda/index.html" class="mobile-menu__link">Hakkımızda</a>
-        <a href="${P}iletisim/index.html" class="mobile-menu__link">İletişim</a>
-        <a href="${P}fiyat-teklifi/index.html" class="btn btn--primary btn--block" style="margin-top:0.75rem">Teklif Al</a>
-      </div>
-    </div>
-  </header>`;
+  return siteHeader({ prefix: P });
 }
 
 function footer() {
-  const k = data.kurumsal_bilgiler;
-  const certBadges = k.sertifikalar.slice(0, 7).map((c) => `<span class="cert-badge">${esc(c)}</span>`).join('\n          ');
-  return `  <footer class="site-footer no-print">
-    <div class="container site-footer__inner">
-      <div class="site-footer__grid">
-        <div class="site-footer__brand">
-          <a href="${P}index.html" class="site-logo">
-            <img src="${P}assets/img/duru-hd-beyaz-logo.svg" alt="Duru ULV Teknoloji Sistemleri" class="site-logo__img site-logo__img--dark" width="298" height="161">
-          </a>
-          <p>1990'dan beri dezenfeksiyon, haşere kontrolü ve tarımsal ilaçlama için Ultra Low Volume (ULV) makineleri üreten Türkiye merkezli kurumsal bir mühendislik firmasıyız.</p>
-        </div>
-        <div>
-          <h4 class="site-footer__heading">Site</h4>
-          <ul class="site-footer__links">
-            <li><a href="${P}index.html">Anasayfa</a></li>
-            <li><a href="${P}urunler/index.html">Ürünler</a></li>
-            <li><a href="${P}katalog/index.html">Katalog</a></li>
-            <li><a href="${P}blog/index.html">Blog</a></li>
-            <li><a href="${P}urun-karsilastirma/index.html" data-compare-nav>Karşılaştır</a></li>
-            <li><a href="${P}hakkimizda/index.html">Hakkımızda</a></li>
-            <li><a href="${P}kalite-politikamiz/index.html">Kalite Politikamız</a></li>
-            <li><a href="${P}iletisim/index.html">İletişim</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="site-footer__heading">İletişim</h4>
-          <ul class="site-footer__contact">
-            <li><a href="tel:+903523202086">${esc(k.telefon)}</a></li>
-            <li><a href="https://wa.me/${k.whatsapp}" target="_blank" rel="noopener">WhatsApp: +90 532 065 91 17</a></li>
-            <li><a href="mailto:${k.email}">${esc(k.email)}</a></li>
-            <li>${esc(k.adres.satir1)}<br>${esc(k.adres.satir2)}</li>
-          </ul>
-        </div>
-      </div>
-      <div class="site-footer__certs">
-        <h4 class="site-footer__heading">Sertifikalar &amp; Onaylar</h4>
-        <div class="site-footer__cert-list">${certBadges}</div>
-      </div>
-      <div class="site-footer__bottom">
-        <div>© ${new Date().getFullYear()} Duru ULV Teknoloji Sistemleri. Tüm hakları saklıdır.</div>
-        <div class="site-footer__legal">
-          <a href="${P}gizlilik-politikasi/index.html">Gizlilik</a>
-          <a href="${P}kvkk/index.html">KVKK</a>
-          <a href="${P}kullanim-kosullari/index.html">Kullanım Koşulları</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-${whatsappButton(P, k.whatsapp)}`;
+  return siteFooter({ prefix: P });
 }
 
 function writePage(dir, html) {

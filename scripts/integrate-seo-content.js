@@ -6,6 +6,7 @@ const fs = require('fs');
 const path = require('path');
 const { blogIcon } = require('./blog-icons');
 const { buildRichLayout, applySectionIds, standardBlogCta } = require('./blog-rich-layout');
+const { siteHeader, siteFooter } = require('./site-layout');
 const {
   renderSeoHead,
   injectSeoHead,
@@ -679,83 +680,11 @@ function blogCardMediaHtml(slug, prefix, postHref, alt) {
 }
 
 function blogHeader(prefix, blogHref) {
-  return `  <header class="site-header no-print">
-    <div class="container site-header__inner">
-      <a href="${prefix}index.html" class="site-logo">
-        <img src="${prefix}assets/img/duru-hd-logo.svg" alt="Duru ULV Teknoloji Sistemleri" class="site-logo__img" width="298" height="161">
-      </a>
-      <nav class="site-nav" aria-label="Ana menü">
-        <a href="${prefix}index.html" class="site-nav__link" data-nav-link>Anasayfa</a>
-        <a href="${prefix}urunler/index.html" class="site-nav__link" data-nav-link>Ürünler</a>
-        <a href="${prefix}katalog/index.html" class="site-nav__link" data-nav-link>Katalog</a>
-        <a href="${blogHref}" class="site-nav__link" data-nav-link>Blog</a>
-        <a href="${prefix}urun-karsilastirma/index.html" class="site-nav__link" data-nav-link data-compare-nav>Karşılaştır <span class="site-nav__badge" data-compare-count style="display:none">0</span></a>
-        <a href="${prefix}hakkimizda/index.html" class="site-nav__link" data-nav-link>Hakkımızda</a>
-        <a href="${prefix}iletisim/index.html" class="site-nav__link" data-nav-link>İletişim</a>
-      </nav>
-      <div class="header-actions">
-        <button type="button" class="lang-switcher">TR ▾</button>
-        <a href="${prefix}fiyat-teklifi/index.html" class="btn btn--primary btn--sm header-cta">Teklif Al</a>
-        <button type="button" class="mobile-toggle" data-mobile-toggle aria-expanded="false" aria-label="Menü"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-      </div>
-    </div>
-    <div class="mobile-menu" data-mobile-menu>
-      <div class="container">
-        <a href="${prefix}index.html" class="mobile-menu__link">Anasayfa</a>
-        <a href="${prefix}urunler/index.html" class="mobile-menu__link">Ürünler</a>
-        <a href="${prefix}katalog/index.html" class="mobile-menu__link">Katalog</a>
-        <a href="${blogHref}" class="mobile-menu__link">Blog</a>
-        <a href="${prefix}urun-karsilastirma/index.html" class="mobile-menu__link" data-compare-nav>Karşılaştır <span class="site-nav__badge" data-compare-count style="display:none">0</span></a>
-        <a href="${prefix}fiyat-teklifi/index.html" class="btn btn--primary btn--block" style="margin-top:0.75rem">Teklif Al</a>
-      </div>
-    </div>
-  </header>`;
+  return siteHeader({ prefix, blogHref });
 }
 
 function blogFooter(prefix, blogHref) {
-  return `  <footer class="site-footer no-print">
-    <div class="container site-footer__inner">
-      <div class="site-footer__grid">
-        <div class="site-footer__brand">
-          <a href="${prefix}index.html" class="site-logo">
-            <img src="${prefix}assets/img/duru-hd-beyaz-logo.svg" alt="Duru ULV Teknoloji Sistemleri" class="site-logo__img site-logo__img--dark" width="298" height="161">
-          </a>
-          <p>1990'dan beri dezenfeksiyon, haşere kontrolü ve tarımsal ilaçlama için Ultra Low Volume (ULV) makineleri üreten Türkiye merkezli kurumsal bir mühendislik firmasıyız.</p>
-        </div>
-        <div>
-          <h4 class="site-footer__heading">Site</h4>
-          <ul class="site-footer__links">
-            <li><a href="${prefix}index.html">Anasayfa</a></li>
-            <li><a href="${prefix}urunler/index.html">Ürünler</a></li>
-            <li><a href="${blogHref}">Blog</a></li>
-            <li><a href="${prefix}katalog/index.html">Katalog</a></li>
-            <li><a href="${prefix}urun-karsilastirma/index.html" data-compare-nav>Karşılaştır</a></li>
-            <li><a href="${prefix}hakkimizda/index.html">Hakkımızda</a></li>
-            <li><a href="${prefix}iletisim/index.html">İletişim</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="site-footer__heading">İletişim</h4>
-          <ul class="site-footer__contact">
-            <li><a href="tel:+903523202086">${esc(k.telefon)}</a></li>
-            <li><a href="https://wa.me/${k.whatsapp}" target="_blank" rel="noopener">WhatsApp: +90 532 065 91 17</a></li>
-            <li><a href="mailto:${k.email}">${esc(k.email)}</a></li>
-            <li>${esc(k.adres.satir1)}<br>${esc(k.adres.satir2)}</li>
-          </ul>
-        </div>
-      </div>
-      <div class="site-footer__bottom">
-        <div>© ${new Date().getFullYear()} Duru ULV Teknoloji Sistemleri. Tüm hakları saklıdır.</div>
-        <div class="site-footer__legal">
-          <a href="${prefix}gizlilik-politikasi/index.html">Gizlilik</a>
-          <a href="${prefix}kvkk/index.html">KVKK</a>
-          <a href="${prefix}kullanim-kosullari/index.html">Kullanım Koşulları</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <a href="https://wa.me/${k.whatsapp}?text=Merhaba%2C%20Duru%20ULV%20%C3%BCr%C3%BCnleri%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." class="whatsapp-btn wa-pulse no-print" target="_blank" rel="noopener" aria-label="WhatsApp ile iletişime geç"><span class="whatsapp-btn__inner"><img src="${prefix}assets/img/whatsapp-icon.svg" alt="" width="28" height="28" class="whatsapp-btn__icon"></span></a>`;
+  return siteFooter({ prefix, blogHref });
 }
 
 function blogBylineHtml(post, prefix) {
@@ -1039,11 +968,34 @@ ${blogFooter(prefix, blogHref)}
 `;
 }
 
+function mobileMenuHasBlog(html) {
+  return /<div class="mobile-menu"[\s\S]*?class="mobile-menu__link"[^>]*>\s*Blog\s*<\/a>/.test(html);
+}
+
+function dedupeMobileMenuBlog(html) {
+  return html.replace(
+    /(<div class="mobile-menu" data-mobile-menu>[\s\S]*?)(<\/div>\s*\n\s*<\/header>)/,
+    function (_, menuInner, closing) {
+      var seen = false;
+      var cleaned = menuInner.replace(
+        /<a href="[^"]*" class="mobile-menu__link"[^>]*>\s*Blog\s*<\/a>\n?\s*/g,
+        function (m) {
+          if (seen) return '';
+          seen = true;
+          return m;
+        }
+      );
+      return cleaned + closing;
+    }
+  );
+}
+
 function patchNavInFile(filePath) {
   if (!fs.existsSync(filePath)) return;
   let html = fs.readFileSync(filePath, 'utf8');
   const blogHref = blogListHref(filePath);
   const hadBlog = /blog\/index\.html/.test(html);
+  const mobileHasBlog = mobileMenuHasBlog(html);
 
   if (!hadBlog) {
     const depth = navDepthFromRel(path.relative(ROOT, filePath).replace(/\\/g, '/'));
@@ -1054,10 +1006,12 @@ function patchNavInFile(filePath) {
       /(<a href="[^"]*katalog\/index\.html" class="site-nav__link"[^>]*>Katalog<\/a>)/,
       `$1\n        ${blogLink}`
     );
-    html = html.replace(
-      /(<a href="[^"]*katalog\/index\.html" class="mobile-menu__link">Katalog<\/a>)/,
-      `$1\n        <a href="${blogHref}" class="mobile-menu__link">Blog</a>`
-    );
+    if (!mobileHasBlog) {
+      html = html.replace(
+        /(<a href="[^"]*katalog\/index\.html" class="mobile-menu__link">Katalog<\/a>)/,
+        `$1\n        <a href="${blogHref}" class="mobile-menu__link">Blog</a>`
+      );
+    }
     html = html.replace(
       /(<li><a href="[^"]*katalog\/index\.html">Katalog<\/a><\/li>)/,
       `$1\n            <li><a href="${blogHref}">Blog</a></li>`
@@ -1066,12 +1020,7 @@ function patchNavInFile(filePath) {
     html = html.replace(/href="(?:\.\.\/)*blog\/index\.html"/g, `href="${blogHref}"`);
   }
 
-  if (path.relative(ROOT, filePath).replace(/\\/g, '/') === 'index.html' && !html.includes('mobile-menu__link">Blog')) {
-    html = html.replace(
-      /(<a href="katalog\/index\.html" class="mobile-menu__link"[^>]*>Katalog<\/a>)/,
-      `$1\n        <a href="blog/index.html" class="mobile-menu__link" data-nav-link>Blog</a>`
-    );
-  }
+  html = dedupeMobileMenuBlog(html);
 
   fs.writeFileSync(filePath, html, 'utf8');
 }
