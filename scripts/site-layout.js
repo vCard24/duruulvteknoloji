@@ -48,12 +48,12 @@ function siteHeader(options = {}) {
         <a href="${prefix}iletisim/index.html" class="site-nav__link" data-nav-link>İletişim</a>
       </nav>
       <div class="header-actions">
-        <button type="button" class="lang-switcher" aria-label="Dil seçici (yakında)">TR ▾</button>
+        <button type="button" class="lang-switcher" aria-label="Dil seçici (yakında)" hidden disabled>TR ▾</button>
         <a href="${quoteHref}" class="btn btn--primary btn--sm header-cta">Teklif Al</a>
-        <button type="button" class="mobile-toggle" data-mobile-toggle aria-expanded="false" aria-label="Menüyü aç/kapat">${MOBILE_TOGGLE_SVG}</button>
+        <button type="button" class="mobile-toggle" data-mobile-toggle aria-expanded="false" aria-controls="site-mobile-menu" aria-label="Menüyü aç/kapat">${MOBILE_TOGGLE_SVG}</button>
       </div>
     </div>
-    <div class="mobile-menu" data-mobile-menu>
+    <div class="mobile-menu" id="site-mobile-menu" data-mobile-menu>
       <div class="container">
         <a href="${prefix}index.html" class="mobile-menu__link" data-nav-link>Anasayfa</a>
         <a href="${productsHref}" class="mobile-menu__link" data-nav-link>Ürünler</a>

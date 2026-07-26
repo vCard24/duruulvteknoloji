@@ -490,6 +490,57 @@ pages['kullanim-kosullari/index.html'] = legalPage(
   kullanimKosullariHtml(k)
 );
 
+{
+  const R = '';
+  const notFoundTitle = 'Sayfa bulunamadı — Duru ULV';
+  const notFoundDesc =
+    'Aradığınız sayfa bulunamadı. Ana sayfa veya ürün kataloğuna dönebilirsiniz.';
+  const notFoundSeo = renderSeoHead({
+    title: notFoundTitle,
+    description: notFoundDesc,
+    canonicalPathRel: '404.html',
+    ogImage: DEFAULT_OG_IMAGE,
+    ogImageAlt: 'Sayfa bulunamadı',
+    ogType: 'website',
+    robots: 'noindex, follow',
+  });
+  pages['404.html'] = `<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="${esc(notFoundDesc)}">
+  <title>${esc(notFoundTitle)}</title>
+${notFoundSeo}
+  <link rel="icon" href="${R}assets/img/duru-icon.svg" type="image/svg+xml">
+${renderHeadAssets(R)}
+</head>
+<body>
+
+${siteHeader({ prefix: R })}
+  <main>
+    <section class="section bg-white border-y">
+      <div class="container container--text" style="text-align:center;padding-top:4rem;padding-bottom:4rem">
+        <div class="eyebrow">404</div>
+        <h1 class="section-title">Sayfa bulunamadı</h1>
+        <p style="margin:1rem auto 1.75rem;max-width:36rem;color:rgba(43,46,51,0.75);line-height:1.65">
+          Bağlantı hatalı olabilir veya sayfa kaldırılmış olabilir. Ana sayfadan veya ürün kataloğundan devam edebilirsiniz.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:center">
+          <a href="${R}index.html" class="btn btn--primary">Ana sayfa</a>
+          <a href="${R}urunler/index.html" class="btn btn--outline">Ürünler</a>
+          <a href="${R}iletisim/index.html" class="btn btn--outline">İletişim</a>
+        </div>
+      </div>
+    </section>
+  </main>
+${siteFooter({ prefix: R })}
+${renderBodyScripts(R)}
+</body>
+</html>
+`;
+}
+
 Object.entries(pages).forEach(([rel, html]) => {
   writePage(path.join(ROOT, rel), html);
 });

@@ -469,7 +469,7 @@ a.whatsapp-btn.wa-pulse {
   padding: 1rem;
 }
 
-.img-placeholder::after {
+.img-placeholder:not(.product-gallery__main)::after {
   content: 'ÜRÜN GÖRSELİ: buraya eklenecek';
 }
 
@@ -509,13 +509,21 @@ a.whatsapp-btn.wa-pulse {
 .form-textarea {
   width: 100%;
   padding: 0.75rem 1rem;
-  font-size: 0.875rem;
+  /* 16px minimum: iOS Safari focus zoom'unu engeller */
+  font-size: 1rem;
   font-family: inherit;
   border: 1px solid rgba(43, 46, 51, 0.2);
   border-radius: var(--radius-sm);
   background: var(--color-white);
   color: var(--color-ink);
   transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+@media (min-width: 768px) {
+  .form-input,
+  .form-textarea {
+    font-size: 0.875rem;
+  }
 }
 
 .form-input:focus,

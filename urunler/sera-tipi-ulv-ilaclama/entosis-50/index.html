@@ -51,12 +51,12 @@
         <a href="../../../iletisim/index.html" class="site-nav__link" data-nav-link>İletişim</a>
       </nav>
       <div class="header-actions">
-        <button type="button" class="lang-switcher" aria-label="Dil seçici (yakında)">TR ▾</button>
+        <button type="button" class="lang-switcher" aria-label="Dil seçici (yakında)" hidden disabled>TR ▾</button>
         <a href="../../../fiyat-teklifi/index.html?products=entosis-50" class="btn btn--primary btn--sm header-cta">Teklif Al</a>
-        <button type="button" class="mobile-toggle" data-mobile-toggle aria-expanded="false" aria-label="Menüyü aç/kapat"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        <button type="button" class="mobile-toggle" data-mobile-toggle aria-expanded="false" aria-controls="site-mobile-menu" aria-label="Menüyü aç/kapat"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
       </div>
     </div>
-    <div class="mobile-menu" data-mobile-menu>
+    <div class="mobile-menu" id="site-mobile-menu" data-mobile-menu>
       <div class="container">
         <a href="../../../index.html" class="mobile-menu__link" data-nav-link>Anasayfa</a>
         <a href="../../index.html" class="mobile-menu__link" data-nav-link>Ürünler</a>
@@ -147,13 +147,13 @@
       <div class="container container--text">
         <div class="eyebrow">Neden bu model</div>
         <h2 class="section-title" style="margin-bottom:1.5rem">Detaylı açıklama</h2>
-        <h2 class="section-title" style="font-size:clamp(1.125rem,2vw,1.375rem);margin-top:0;margin-bottom:0.75rem">Sera İlaçlama Makinesi Nedir?</h2>
+        <h3 class="section-title" style="font-size:clamp(1.125rem,2vw,1.375rem);margin-top:0;margin-bottom:0.75rem">Sera İlaçlama Makinesi Nedir?</h3>
 <p style="color:rgba(43,46,51,0.8);line-height:1.65;margin-bottom:1.25rem">Çiftçinin seranın içine girmeden, otomatik zamanlama ile çalışan bu <strong>sera ilaçlama makinesi</strong>, Duru ürün ailesinde <strong>Entosis 50</strong> model adıyla satılır. 2200 W × 2 = 4400 W toplam motor gücüyle çalışan cihaz, 50 litrelik ilaç tankı ve 0–49 mikron aralığındaki ayarlanabilir damlacık çapı sayesinde maksimum 7 dönüme kadar olan seraları tek seferde homojen biçimde ilaçlayabilir. Cihazın çalışma ve durdurma saatleri seranın ihtiyacına göre programlanabildiğinden, ilacın cilt teması ve solunum yoluyla maruziyeti tamamen ortadan kalkar.</p>
-<h2 class="section-title" style="font-size:clamp(1.125rem,2vw,1.375rem);margin-top:2rem;margin-bottom:0.75rem">Sera Dezenfeksiyon Cihazı Nerelerde Kullanılır?</h2>
+<h3 class="section-title" style="font-size:clamp(1.125rem,2vw,1.375rem);margin-top:2rem;margin-bottom:0.75rem">Sera Dezenfeksiyon Cihazı Nerelerde Kullanılır?</h3>
 <p style="color:rgba(43,46,51,0.8);line-height:1.65;margin-bottom:1.25rem">Geleneksel ilaçlama yöntemleri, çiftçileri saatlerce kapalı sera ortamında kimyasallara maruz bırakır; bu durumun kanser, KOAH ve astım gibi kritik hastalıklara yol açabildiği bilimsel bir gerçektir. Entosis 50 gibi sera tipi ULV cihazları, sebze ve çiçek seralarında, mantar üretim alanlarında ve fide yetiştiriciliği yapılan büyük ölçekli tesislerde kullanılır. İdeal mikron seviyesindeki damla çapı sayesinde ilaç, seranın tabanından tavanına kadar her noktaya eşit şekilde ulaşır; havada asılı kalan mikro zerrecikler, klasik püskürtme yöntemlerinin ulaşamadığı kör noktalara da nüfuz eder. Yapılan testlerde yaprak biti, trips, beyaz sinek larvası, pis kokulu böcek ve yaprak galeri sineği gibi sera zararlılarının uygun ilaç kullanımıyla etkisiz hale getirildiği kanıtlanmıştır. Domates, salatalık, biber gibi sebze seralarında olduğu kadar süs bitkisi ve kesme çiçek üretimi yapılan ticari seralarda da kullanılan bu sistem, ürün kalitesini ve pazarlanabilirliğini doğrudan etkileyen zararlı baskısını önemli ölçüde azaltır.</p>
-<h2 class="section-title" style="font-size:clamp(1.125rem,2vw,1.375rem);margin-top:2rem;margin-bottom:0.75rem">Teknik Üstünlükler: Neden Entosis 50?</h2>
+<h3 class="section-title" style="font-size:clamp(1.125rem,2vw,1.375rem);margin-top:2rem;margin-bottom:0.75rem">Teknik Üstünlükler: Neden Entosis 50?</h3>
 <p style="color:rgba(43,46,51,0.8);line-height:1.65;margin-bottom:1.25rem">Sıradan ilaçlama makineleri yalnızca bitki yüzeyine odaklanırken, Entosis 50 seranın tamamını kapsayan bir koruma sağlar. 4400 W'lık çift motor gücü, yüksek hava debisi üreterek ilacın geniş bir alana homojen şekilde dağılmasını sağlar. Otomatik zamanlama özelliği sayesinde hem işçilikten hem zamandan tasarruf edilir; çiftçi seraya girmeden, elverişsiz hava koşullarında bile ilaçlama yapabilir. 50 litrelik tank kapasitesi, geniş seraların tek dolumla taranmasına imkân tanırken, kompakt ölçüleri (En: 70 cm, Boy: 100 cm, Yükseklik: 170 cm) sera içinde manevra kabiliyeti sağlar. Cihaz sc, ec, wp formülasyonlu ilaçlarla uyumlu çalışır ve <a href="https://www.tarimorman.gov.tr/" target="_blank" rel="noopener" style="color:var(--color-primary);font-weight:600">T.C. Gıda Tarım ve Hayvancılık Bakanlığı'nın</a> talep ettiği resmi belgelere sahiptir.</p>
-<h2 class="section-title" style="font-size:clamp(1.125rem,2vw,1.375rem);margin-top:2rem;margin-bottom:0.75rem">Sera İlaçlama Makinesi Fiyatı ve Teklif Süreci</h2>
+<h3 class="section-title" style="font-size:clamp(1.125rem,2vw,1.375rem);margin-top:2rem;margin-bottom:0.75rem">Sera İlaçlama Makinesi Fiyatı ve Teklif Süreci</h3>
 <p style="color:rgba(43,46,51,0.8);line-height:1.65;margin-bottom:1.25rem">Entosis 50'nin fiyatı, sera büyüklüğünüze ve kullanım sıklığınıza göre değişebileceğinden sitemizde sabit bir fiyat listesi paylaşmıyoruz. <strong>&quot;Teklif Al&quot;</strong> formunu doldurarak ihtiyacınıza özel, güncel bir teklif talep edebilir; bu modeli diğer sera tipi ürünlerle (<a href="../../../urunler/sera-tipi-ulv-ilaclama/sera-max-50/index.html" style="color:var(--color-primary);font-weight:600">Sera Max 50</a> gibi) karşılaştırarak en uygun kapasiteyi seçebilirsiniz.</p>
       </div>
     </section>

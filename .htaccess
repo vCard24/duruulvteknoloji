@@ -1,6 +1,7 @@
 DirectoryIndex index.html
 Options -Indexes
 AddDefaultCharset UTF-8
+ErrorDocument 404 /404.html
 
 <IfModule mod_headers.c>
   Header set X-Content-Type-Options "nosniff"
@@ -38,6 +39,9 @@ AddDefaultCharset UTF-8
   # non-www → www (canonical ile uyumlu)
   RewriteCond %{HTTP_HOST} !^www\. [NC]
   RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+  # Eski / örnek dizinler — yayında erişilemez
+  RewriteRule ^(yigitornek|emergent)(/|$) - [F,L]
 
   # /path/index.html → /path/ (canonical ile uyumlu tek URL)
   RewriteCond %{THE_REQUEST} \s/+([^?\s]*/?)index\.html[\s?] [NC]

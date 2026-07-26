@@ -402,13 +402,14 @@ function sectionsToHtml(sections, linkPrefix, isBlog, imageOpts) {
 
   return sections
     .map((sec, i) => {
+      const hTag = isBlog ? 'h2' : 'h3';
       const h2Style = isBlog
         ? ''
         : ` style="font-size:clamp(1.125rem,2vw,1.375rem);margin-top:${i === 0 ? '0' : '2rem'};margin-bottom:0.75rem"`;
       const h2Class = isBlog ? '' : ' class="section-title"';
       const h2Id = isBlog && sec.id ? ` id="${esc(sec.id)}"` : '';
       let html =
-        `<h2${h2Id}${h2Class}${h2Style}>${esc(sec.heading)}</h2>\n` +
+        `<${hTag}${h2Id}${h2Class}${h2Style}>${esc(sec.heading)}</${hTag}>\n` +
         bodyToHtml(sec.body, linkPrefix);
 
       if (isBlog && slug && prefix) {
@@ -644,9 +645,9 @@ function blogCoverHtml(slug, prefix, alt) {
   const base = `${prefix}assets/img/blog/${slug}-cover`;
   return `<div class="blog-cover" data-blog-cover>
           <img src="${base}.webp" alt="${esc(alt)}" class="blog-cover__img" width="1200" height="675" loading="eager"
-            onerror="this.onerror=null;this.src='${base}.jpg';this.onerror=function(){this.parentElement.classList.add('is-empty');}">
+            onerror="this.onerror=null;this.parentElement.classList.add('is-empty');this.remove();">
           <div class="blog-cover__placeholder">
-            <span class="blog-cover__hint">Kapak görseli: assets/img/blog/${slug}-cover.webp veya .jpg</span>
+            <span class="blog-cover__hint">Kapak görseli: assets/img/blog/${slug}-cover.webp</span>
           </div>
         </div>`;
 }
@@ -680,10 +681,9 @@ function blogFooterImageHtml(slug, prefix) {
 function blogCardMediaHtml(slug, prefix, postHref, alt) {
   const file = blogAssetPath(slug, 'cover');
   const src = `${prefix}assets/img/blog/${file}`;
-  const base = `${prefix}assets/img/blog/${slug}-cover`;
   return `            <a href="${postHref}" class="blog-card__media" tabindex="-1" aria-hidden="true">
               <img src="${src}" alt="${esc(alt)}" class="blog-card__img" width="640" height="360" loading="lazy"
-                onerror="this.onerror=null;this.src='${base}.jpg';this.onerror=function(){this.parentElement.classList.add('is-empty');}">
+                onerror="this.onerror=null;this.parentElement.classList.add('is-empty');this.remove();">
               <div class="blog-card__placeholder">
                 <span>assets/img/blog/${slug}-cover.webp</span>
               </div>

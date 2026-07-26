@@ -4,7 +4,7 @@
 Contact: mailto:info@entosis.com.tr
 Contact: tel:+903523202086
 Contact: https://wa.me/905320659117
-Expires: 2027-07-26T13:29:44.798Z
+Expires: 2027-07-26T14:31:27.600Z
 Preferred-Languages: tr, en
 Canonical: https://www.duruulvteknoloji.com.tr/.well-known/security.txt
 Policy: https://www.duruulvteknoloji.com.tr/kullanim-kosullari/

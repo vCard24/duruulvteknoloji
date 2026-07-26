@@ -395,14 +395,27 @@
 
         if (countEl) countEl.textContent = String(products.length);
 
+        var SPEC_CANONICAL = {
+          'Tank': 'İlaç Tank Kapasitesi',
+          'Nem Çıkış Debisi': 'İlaç Çıkış Debisi',
+          'Nem Damla Çapı': 'İlaç Damla Çapı',
+          'Damla Çapı': 'İlaç Damla Çapı'
+        };
+
+        function canonSpec(key) {
+          return SPEC_CANONICAL[key] || key;
+        }
+
         var keys = [];
         var seen = {};
         products.forEach(function (p) {
           var rows = p.teknik_tablo || [];
           rows.forEach(function (row) {
-            if (row && row.ozellik && !seen[row.ozellik]) {
-              seen[row.ozellik] = true;
-              keys.push(row.ozellik);
+            if (!row || !row.ozellik) return;
+            var key = canonSpec(row.ozellik);
+            if (!seen[key]) {
+              seen[key] = true;
+              keys.push(key);
             }
           });
         });
@@ -418,7 +431,7 @@
         function getValue(product, key) {
           var rows = product.teknik_tablo || [];
           for (var i = 0; i < rows.length; i++) {
-            if (rows[i].ozellik === key) return rows[i].deger;
+            if (canonSpec(rows[i].ozellik) === key) return rows[i].deger;
           }
           return '—';
         }
@@ -426,7 +439,7 @@
         var headCells = products.map(function (p) {
           return '<th class="compare-table__head-cell">' +
             '<button type="button" class="compare-table__remove no-print" data-remove-slug="' + escHtml(p.slug) + '" aria-label="Listeden çıkar" title="Listeden çıkar">×</button>' +
-            '<div class="compare-table__product-img"><img src="' + escHtml(imageUrl(p.slug)) + '" alt="' + escHtml(p.ad_tr) + '" loading="lazy"></div>' +
+            '<div class="compare-table__product-img"><img src="' + escHtml(imageUrl(p.slug)) + '" alt="' + escHtml(p.ad_tr) + '" loading="lazy" onerror="this.style.display=\'none\'"></div>' +
             '<div class="product-card__model">' + escHtml(p.model_kodu) + '</div>' +
             '<a href="' + escHtml(productUrl(p)) + '" style="font-family:var(--font-display);font-weight:600;color:var(--color-primary);text-decoration:none;display:block;margin-top:0.25rem">' + escHtml(p.ad_tr) + '</a>' +
             '</th>';

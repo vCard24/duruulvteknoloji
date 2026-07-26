@@ -51,12 +51,12 @@
         <a href="../../../iletisim/index.html" class="site-nav__link" data-nav-link>İletişim</a>
       </nav>
       <div class="header-actions">
-        <button type="button" class="lang-switcher" aria-label="Dil seçici (yakında)">TR ▾</button>
+        <button type="button" class="lang-switcher" aria-label="Dil seçici (yakında)" hidden disabled>TR ▾</button>
         <a href="../../../fiyat-teklifi/index.html?products=duru-dmxl" class="btn btn--primary btn--sm header-cta">Teklif Al</a>
-        <button type="button" class="mobile-toggle" data-mobile-toggle aria-expanded="false" aria-label="Menüyü aç/kapat"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        <button type="button" class="mobile-toggle" data-mobile-toggle aria-expanded="false" aria-controls="site-mobile-menu" aria-label="Menüyü aç/kapat"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
       </div>
     </div>
-    <div class="mobile-menu" data-mobile-menu>
+    <div class="mobile-menu" id="site-mobile-menu" data-mobile-menu>
       <div class="container">
         <a href="../../../index.html" class="mobile-menu__link" data-nav-link>Anasayfa</a>
         <a href="../../index.html" class="mobile-menu__link" data-nav-link>Ürünler</a>
@@ -104,8 +104,8 @@
           <div class="product-info__chips">
             <span class="chip"><span class="chip__key">Motor:</span> 2200 W, 220V AC 50Hz</span>
             <span class="chip"><span class="chip__key">Tank:</span> Şamandıralı – sınırsız (şebeke bağlantılı)</span>
-            <span class="chip"><span class="chip__key">İlaç Çıkış Debisi:</span> 0–49 l/h</span>
-            <span class="chip"><span class="chip__key">İlaç Damla Çapı:</span> 0–49 mikron</span>
+            <span class="chip"><span class="chip__key">Nem Çıkış Debisi:</span> 0–49 l/h</span>
+            <span class="chip"><span class="chip__key">Nem Damla Çapı:</span> 0–49 mikron</span>
           </div>
 
           <div class="action-bar">
@@ -135,8 +135,8 @@
             <tbody>
               <tr><th scope="row">Motor</th><td>2200 W, 220V AC 50Hz</td></tr>
               <tr><th scope="row">Tank</th><td>Şamandıralı – sınırsız (şebeke bağlantılı)</td></tr>
-              <tr><th scope="row">İlaç Çıkış Debisi</th><td>0–49 l/h</td></tr>
-              <tr><th scope="row">İlaç Damla Çapı</th><td>0–49 mikron</td></tr>
+              <tr><th scope="row">Nem Çıkış Debisi</th><td>0–49 l/h</td></tr>
+              <tr><th scope="row">Nem Damla Çapı</th><td>0–49 mikron</td></tr>
               <tr><th scope="row">Solüsyon Tipleri</th><td>sc, ec, wp</td></tr>
               <tr><th scope="row">Başlık</th><td>Döner başlık</td></tr>
               <tr><th scope="row">Ağırlık</th><td>5.2 kg</td></tr>
@@ -151,13 +151,13 @@
       <div class="container container--text">
         <div class="eyebrow">Neden bu model</div>
         <h2 class="section-title" style="margin-bottom:1.5rem">Detaylı açıklama</h2>
-        <h2 class="section-title" style="font-size:clamp(1.125rem,2vw,1.375rem);margin-top:0;margin-bottom:0.75rem">ULV Nemlendirme Cihazı Nedir?</h2>
+        <h3 class="section-title" style="font-size:clamp(1.125rem,2vw,1.375rem);margin-top:0;margin-bottom:0.75rem">ULV Nemlendirme Cihazı Nedir?</h3>
 <p style="color:rgba(43,46,51,0.8);line-height:1.65;margin-bottom:1.25rem">2200 W motor gücüyle çalışan bu <strong>nemlendirme cihazı</strong>, Duru ürün ailesinde <strong>Duru DMXL</strong> model adıyla satılır. Döner başlığı ve ULV (Ultra Low Volume) soğuk sisleme tekniği sayesinde suyu 0–49 mikron aralığında mikroskobik zerreciklere ayırarak ortama doğadaki sis bulutu doğallığında yayar. Tek bir noktadan 25 m²'den 250 m²'ye kadar olan alanları homojen biçimde nemlendiren cihaz, şamandıralı yapısı sayesinde şebeke suyuna bağlanarak depo doldurma derdi olmadan kesintisiz çalışır.</p>
-<h2 class="section-title" style="font-size:clamp(1.125rem,2vw,1.375rem);margin-top:2rem;margin-bottom:0.75rem">Mantar Serası Nemlendirme Cihazı Nerelerde Kullanılır?</h2>
+<h3 class="section-title" style="font-size:clamp(1.125rem,2vw,1.375rem);margin-top:2rem;margin-bottom:0.75rem">Mantar Serası Nemlendirme Cihazı Nerelerde Kullanılır?</h3>
 <p style="color:rgba(43,46,51,0.8);line-height:1.65;margin-bottom:1.25rem">Duru DMXL, en yaygın olarak mantar üretim tesislerinde (mantarhanelerde) tercih edilir; mantarın sağlıklı gelişimi için gereken %70–90 bağıl nem aralığını doğal sis ortamında oluşturarak kompostun kurumasını önler ve verimli mantar çıkışını destekler. Bunun yanında soğuk hava depoları, peynir olgunlaştırma odaları, tekstil ve iplik tesisleri, matbaa ve kâğıt işleme alanları, elektronik üretim tesisleri ile klima ve hava şartlandırma sistemlerinde nem dengesinin korunmasında kullanılır. Döner başlık sisi geniş bir açıya dağıttığından, tek cihazla büyük hacimli ortamların dengeli nemlendirilmesi mümkün olur. İhtiyaç halinde aynı cihaz, uygun solüsyonla dezenfeksiyon ve haşere ilaçlama amacıyla da çalıştırılabilir.</p>
-<h2 class="section-title" style="font-size:clamp(1.125rem,2vw,1.375rem);margin-top:2rem;margin-bottom:0.75rem">Teknik Üstünlükler: Neden Duru DMXL?</h2>
+<h3 class="section-title" style="font-size:clamp(1.125rem,2vw,1.375rem);margin-top:2rem;margin-bottom:0.75rem">Teknik Üstünlükler: Neden Duru DMXL?</h3>
 <p style="color:rgba(43,46,51,0.8);line-height:1.65;margin-bottom:1.25rem">Türkiye'nin en uzun ULV com-polimer plastik başlığı, yüksek basınçla ince ve dengeli bir sis üretir; özel nozul yapısı sayesinde ortamı ıslatmadan nemlendirme yapar. Şamandıralı su kontrol ünitesi, eksilen suyu otomatik tamamlayarak operatör müdahalesi olmadan uzun çalışma süreleri sağlar. Cihazın özel filtrasyon sistemi, sudaki kireç ve bakterileri tutarak mantar odasını arındırılmış temiz suyla nemlendirir. Elektrostatik boyalı gövdesi paslanmaya karşı dayanıklıdır; metal olmayan başlık tasarımı elektrik kaçağı ve korozyon riskini ortadan kaldırır. Yalnızca 5,2 kg ağırlığındaki cihaz kolayca konumlandırılabilir ve CE belgelidir. Opsiyonel nem sensörü (higrostat) veya zaman saati eklenerek yarı ya da tam otomatik çalışma sağlanabilir.</p>
-<h2 class="section-title" style="font-size:clamp(1.125rem,2vw,1.375rem);margin-top:2rem;margin-bottom:0.75rem">ULV Nemlendirme Cihazı Fiyatı ve Teklif Süreci</h2>
+<h3 class="section-title" style="font-size:clamp(1.125rem,2vw,1.375rem);margin-top:2rem;margin-bottom:0.75rem">ULV Nemlendirme Cihazı Fiyatı ve Teklif Süreci</h3>
 <p style="color:rgba(43,46,51,0.8);line-height:1.65;margin-bottom:1.25rem">Duru DMXL'in fiyatı; ortam büyüklüğü, izolasyon durumu ve otomasyon ihtiyacınıza (higrostat veya zaman saati) göre değişebileceğinden sitemizde sabit bir fiyat yayınlamıyoruz. <strong>&quot;Teklif Al&quot;</strong> formunu doldurarak ihtiyacınıza özel bir teklif talep edebilir; bu modeli higrostatlı tam otomatik <a href="../../../urunler/nemlendirme-ulv/duru-mxl-hgs/index.html" style="color:var(--color-primary);font-weight:600">Duru MXL-HGS</a> ile karşılaştırarak işletmenize en uygun kurulumu belirleyebilirsiniz.</p>
       </div>
     </section>
