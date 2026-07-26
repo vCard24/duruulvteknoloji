@@ -823,28 +823,40 @@
       "kategori_slug": "nemlendirme-ulv",
       "ad_tr": "Duru MXL",
       "model_kodu": "MXL",
-      "kisa_aciklama_tr": "ULV nemlendirme, 1300 W, şamandıralı tank",
+      "kisa_aciklama_tr": "2200 W ULV nemlendirme, şamandıralı, portatif (25–100 m²)",
       "gorsel": "assets/img/products/duru-mxl-01.jpg",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
-          "deger": "1300 W, 220V AC"
+          "deger": "2200 W, 220V AC 50Hz"
         },
         {
           "ozellik": "Tank",
           "deger": "Şamandıralı – sınırsız (şebeke bağlantılı)"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "Nem Çıkış Debisi",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "Nem Damla Çapı",
           "deger": "0–49 mikron"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
-          "deger": "sc, ec, wp"
+          "ozellik": "Kaplama Alanı",
+          "deger": "Tek noktadan 25–100 m²"
+        },
+        {
+          "ozellik": "Gövde",
+          "deger": "20×20 profil şase, lazer kesim, elektrostatik boya"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "4.6 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 20 cm, Boy: 125 cm, Yükseklik: 45 cm"
         }
       ]
     },
@@ -853,12 +865,12 @@
       "kategori_slug": "nemlendirme-ulv",
       "ad_tr": "Duru MXL-HGS",
       "model_kodu": "MXL-HGS",
-      "kisa_aciklama_tr": "Higrostatlı ULV nemlendirme, 1300 W, şamandıralı",
+      "kisa_aciklama_tr": "Higrostatlı tam otomatik ULV nemlendirme, 2200 W, şamandıralı",
       "gorsel": "assets/img/products/duru-mxl-hgs-01.jpg",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
-          "deger": "1300 W, 220V AC"
+          "deger": "2200 W, 220V AC 50Hz"
         },
         {
           "ozellik": "Tank",
@@ -866,19 +878,27 @@
         },
         {
           "ozellik": "Kontrol",
-          "deger": "Higrostatlı nem kontrolü"
+          "deger": "Higrostatlı (nem sensörlü) tam otomatik"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "Nem Çıkış Debisi",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "Nem Damla Çapı",
           "deger": "0–49 mikron"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
-          "deger": "sc, ec, wp"
+          "ozellik": "Kaplama Alanı",
+          "deger": "Tek noktadan 25–100 m²"
+        },
+        {
+          "ozellik": "Gövde",
+          "deger": "20×20 profil şase, lazer kesim, elektrostatik boya"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "4.6 kg"
         }
       ]
     },
@@ -929,24 +949,36 @@
       "kategori_slug": "termal-sisleme",
       "ad_tr": "Termal El Tipi",
       "model_kodu": "TERMAL-EL",
-      "kisa_aciklama_tr": "32/38 hp, 16 L (8×2), termal el tipi / kanal / don önleme",
+      "kisa_aciklama_tr": "Benzinli termal el tipi; kanal ilaçlama, sıcak sisleme ve don önleme",
       "gorsel": "assets/img/products/termal-el-tipi-01.jpg",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
-          "deger": "32 / 38 hp"
+          "deger": "Benzinli Briggs"
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "8 × 2 = 16 litre"
+          "deger": "15–50 litre"
         },
         {
-          "ozellik": "Uygulama",
-          "deger": "Termal sisleme, kanal ilaçlama, don önleme"
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "15 bar"
+        },
+        {
+          "ozellik": "Püskürtme Hortumu",
+          "deger": "2.30 m esnek paslanmaz kanal aparatı"
+        },
+        {
+          "ozellik": "Solüsyon",
+          "deger": "Yağ bazlı termal solüsyon"
         },
         {
           "ozellik": "Damla Çapı",
           "deger": "~20 mikron (termal)"
+        },
+        {
+          "ozellik": "Uygulama",
+          "deger": "Kanal ilaçlama, açık alan sıcak sisleme, don önleme"
         }
       ]
     }

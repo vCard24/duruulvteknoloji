@@ -30,6 +30,7 @@ const PRODUCT_FILES = [
   '02-sera-tipi.md',
   '03-sirt-tipi.md',
   '04-el-tipi-kalan.md',
+  '05-nemlendirme-termal.md',
 ];
 
 const BLOG_FILES = [
@@ -1118,7 +1119,7 @@ walkHtml(ROOT, 0, (filePath) => {
 });
 
 console.log(`\nÖzet:`);
-console.log(`  Ürün güncellendi: ${productUpdated}/18`);
+  console.log(`  Ürün güncellendi: ${productUpdated}/${catalog.urunler.length}`);
 if (productMissing.length) {
   console.log(`  İçerik eksik ürünler: ${productMissing.join(', ')}`);
 }

@@ -1580,5 +1580,456 @@
         "a": "Duru ürünleri 2 yıl cihaz garantisi ve 10 yıl yedek parça garantisi ile satılır."
       }
     ]
+  },
+  "duru-dmxl": {
+    "product": {
+      "slug": "duru-dmxl",
+      "kategori_slug": "nemlendirme-ulv",
+      "ad_tr": "Duru DMXL",
+      "model_kodu": "DMXL",
+      "kisa_aciklama_tr": "Döner başlıklı ULV nemlendirme, şamandıralı tank",
+      "gorsel": "assets/img/products/duru-dmxl-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC 50Hz"
+        },
+        {
+          "ozellik": "Tank",
+          "deger": "Şamandıralı – sınırsız (şebeke bağlantılı)"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Başlık",
+          "deger": "Döner başlık"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "5.2 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 20 cm, Boy: 45 cm, Yükseklik: 57 cm"
+        }
+      ]
+    },
+    "meta": {
+      "metaDescription": "Döner başlıklı, şamandıralı ULV nemlendirme cihazı Duru DMXL ile mantarhane ve seralarda 25–250 m² homojen nem. Hemen teklif alın.",
+      "focusKeyword": "nemlendirme cihazı",
+      "additionalKeywords": "mantar serası nemlendirme, ulv nemlendirme makinesi, döner başlıklı nemlendirme, duru dmxl",
+      "imageAlt": "Döner başlıklı ULV nemlendirme cihazı - Duru DMXL",
+      "seoTitle": "Duru DMXL | Duru ULV"
+    },
+    "sections": [
+      {
+        "heading": "ULV Nemlendirme Cihazı Nedir?",
+        "body": "2200 W motor gücüyle çalışan bu **nemlendirme cihazı**, Duru ürün ailesinde **Duru DMXL**\nmodel adıyla satılır. Döner başlığı ve ULV (Ultra Low Volume) soğuk sisleme tekniği\nsayesinde suyu 0–49 mikron aralığında mikroskobik zerreciklere ayırarak ortama doğadaki\nsis bulutu doğallığında yayar. Tek bir noktadan 25 m²'den 250 m²'ye kadar olan alanları\nhomojen biçimde nemlendiren cihaz, şamandıralı yapısı sayesinde şebeke suyuna bağlanarak\ndepo doldurma derdi olmadan kesintisiz çalışır."
+      },
+      {
+        "heading": "Mantar Serası Nemlendirme Cihazı Nerelerde Kullanılır?",
+        "body": "Duru DMXL, en yaygın olarak mantar üretim tesislerinde (mantarhanelerde) tercih edilir;\nmantarın sağlıklı gelişimi için gereken %70–90 bağıl nem aralığını doğal sis ortamında\noluşturarak kompostun kurumasını önler ve verimli mantar çıkışını destekler. Bunun\nyanında soğuk hava depoları, peynir olgunlaştırma odaları, tekstil ve iplik tesisleri,\nmatbaa ve kâğıt işleme alanları, elektronik üretim tesisleri ile klima ve hava\nşartlandırma sistemlerinde nem dengesinin korunmasında kullanılır. Döner başlık sisi\ngeniş bir açıya dağıttığından, tek cihazla büyük hacimli ortamların dengeli\nnemlendirilmesi mümkün olur. İhtiyaç halinde aynı cihaz, uygun solüsyonla dezenfeksiyon\nve haşere ilaçlama amacıyla da çalıştırılabilir."
+      },
+      {
+        "heading": "Teknik Üstünlükler: Neden Duru DMXL?",
+        "body": "Türkiye'nin en uzun ULV com-polimer plastik başlığı, yüksek basınçla ince ve dengeli bir\nsis üretir; özel nozul yapısı sayesinde ortamı ıslatmadan nemlendirme yapar. Şamandıralı\nsu kontrol ünitesi, eksilen suyu otomatik tamamlayarak operatör müdahalesi olmadan uzun\nçalışma süreleri sağlar. Cihazın özel filtrasyon sistemi, sudaki kireç ve bakterileri\ntutarak mantar odasını arındırılmış temiz suyla nemlendirir. Elektrostatik boyalı gövdesi\npaslanmaya karşı dayanıklıdır; metal olmayan başlık tasarımı elektrik kaçağı ve\nkorozyon riskini ortadan kaldırır. Yalnızca 5,2 kg ağırlığındaki cihaz kolayca\nkonumlandırılabilir ve CE belgelidir. Opsiyonel nem sensörü (higrostat) veya zaman saati\neklenerek yarı ya da tam otomatik çalışma sağlanabilir."
+      },
+      {
+        "heading": "ULV Nemlendirme Cihazı Fiyatı ve Teklif Süreci",
+        "body": "Duru DMXL'in fiyatı; ortam büyüklüğü, izolasyon durumu ve otomasyon ihtiyacınıza (higrostat\nveya zaman saati) göre değişebileceğinden sitemizde sabit bir fiyat yayınlamıyoruz.\n**\"Teklif Al\"** formunu doldurarak ihtiyacınıza özel bir teklif talep edebilir; bu modeli\nhigrostatlı tam otomatik [Duru MXL-HGS](/urunler/nemlendirme-ulv/duru-mxl-hgs/) ile\nkarşılaştırarak işletmenize en uygun kurulumu belirleyebilirsiniz."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Duru DMXL kaç metrekarelik alanı nemlendirir?",
+        "a": "Tek bir noktadan 25 m²'den 250 m²'ye kadar olan alanları homojen şekilde nemlendirir; ortamın izolasyonuna göre bu değer değişebilir."
+      },
+      {
+        "q": "Cihazın deposuna sürekli su doldurmak gerekir mi?",
+        "a": "Hayır. Şamandıralı yapısı sayesinde çeşmeye bağlanan hortum üzerinden eksilen suyu otomatik olarak tamamlar."
+      },
+      {
+        "q": "Duru DMXL tam otomatik çalışabilir mi?",
+        "a": "Evet, opsiyonel nem sensörü (higrostat) veya zaman saati ile yarı ya da tam otomatik hale getirilebilir."
+      },
+      {
+        "q": "Nemlendirme sırasında ortam ıslanır mı?",
+        "a": "Hayır. ULV tekniği ve özel nozul, suyu çok ince zerreciklere böldüğü için yüzeyleri ıslatmadan havada asılı bir sis oluşturur."
+      },
+      {
+        "q": "Mantar dışında nerelerde kullanılır?",
+        "a": "Soğuk hava depoları, peynir olgunlaştırma odaları, tekstil, matbaa ve elektronik üretim tesisleri gibi nem dengesinin kritik olduğu ortamlarda kullanılır."
+      }
+    ]
+  },
+  "duru-mxl": {
+    "product": {
+      "slug": "duru-mxl",
+      "kategori_slug": "nemlendirme-ulv",
+      "ad_tr": "Duru MXL",
+      "model_kodu": "MXL",
+      "kisa_aciklama_tr": "2200 W ULV nemlendirme, şamandıralı, portatif (25–100 m²)",
+      "gorsel": "assets/img/products/duru-mxl-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC 50Hz"
+        },
+        {
+          "ozellik": "Tank",
+          "deger": "Şamandıralı – sınırsız (şebeke bağlantılı)"
+        },
+        {
+          "ozellik": "Nem Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Nem Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Kaplama Alanı",
+          "deger": "Tek noktadan 25–100 m²"
+        },
+        {
+          "ozellik": "Gövde",
+          "deger": "20×20 profil şase, lazer kesim, elektrostatik boya"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "4.6 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 20 cm, Boy: 125 cm, Yükseklik: 45 cm"
+        }
+      ]
+    },
+    "meta": {
+      "metaDescription": "2200 W ULV mantar serası nemlendirme cihazı Duru MXL ile 25–100 m² alanda şamandıralı, portatif ve ekonomik nem çözümü. Teklif alın.",
+      "focusKeyword": "mantar serası nemlendirme cihazı",
+      "additionalKeywords": "mantarhane nemlendirme, portatif ulv nemlendirme, şamandıralı nemlendirme cihazı, duru mxl",
+      "imageAlt": "Mantar serası ULV nemlendirme cihazı - Duru MXL",
+      "seoTitle": "Duru MXL | Duru ULV"
+    },
+    "sections": [
+      {
+        "heading": "Mantar Serası Nemlendirme Cihazı Nedir?",
+        "body": "2200 W ULV nem başlığıyla çalışan bu **mantar serası nemlendirme cihazı**, Duru ürün\nailesinde **Duru MXL** model adıyla satılır. Portatif yapısı ve tek noktadan 25–100 m²\nalanı homojen nemlendirebilme kapasitesiyle, küçük-orta ölçekli mantarhaneler ve sera\nodaları için ekonomik bir çözümdür. Şamandıralı nem kontrol ünitesi sayesinde şebeke\nsuyuna bağlanır ve depo doldurma ihtiyacı olmadan kesintisiz çalışır; ULV tekniğiyle\noluşturulan sis, ortamı ıslatmadan doğal bir nem dengesi kurar."
+      },
+      {
+        "heading": "Portatif Nemlendirme Cihazı Nerelerde Kullanılır?",
+        "body": "Duru MXL, özellikle mantar yetiştiriciliğinde mantarın ihtiyaç duyduğu yüksek nemi doğal\nsis bulutu formunda oluşturarak sağlıklı ve bol mantar çıkışını destekler; nem oranının\n%70–90 aralığında tutulması, kompostun kurumasını önleyerek verim kaybının önüne geçer.\nPortatif ve hafif gövdesi sayesinde tek bir mantarhane içinde farklı noktalara kolayca\ntaşınabilir. Ayrıca küçük seralar, fide üretim odaları, soğuk hava depoları ve nem\ngerektiren atölye ortamlarında da tercih edilir. Uygun solüsyonla, mevsimsel haşere\nbaskısına karşı dezenfeksiyon ve ilaçlama uygulamalarında da kullanılabilir."
+      },
+      {
+        "heading": "Teknik Üstünlükler: Neden Duru MXL?",
+        "body": "Uzun ULV com-polimer başlığı, güçlü basınçla ince ve homojen bir sis üretir. 20×20 profil\nşasesi lazer kesimle üretilmiş olup elektrostatik boyalıdır; bu yapı hem hafiflik hem de\npaslanmaya karşı uzun ömür sağlar. Yalnızca 4,6 kg ağırlığı ve dikey (En: 20 cm, Boy: 125\ncm, Yükseklik: 45 cm) tasarımı, dar mantarhane koridorlarında minimum yer kaplar.\nŞamandıralı su beslemesi kesintisiz çalışma sunarken, temiz hava kilidi ve özel nozul\nortamın ıslanmasını engeller. CE belgeli cihaz, metal olmayan başlığı sayesinde elektrik\nkaçağı ve korozyon riski taşımaz. İsteğe bağlı zaman saati veya nem sensörü ile otomatik\nçalıştırılabilir."
+      },
+      {
+        "heading": "Mantar Serası Nemlendirme Cihazı Fiyatı ve Teklif Süreci",
+        "body": "Duru MXL'in fiyatı, nemlendirilecek alanın büyüklüğüne ve otomasyon tercihinize göre\ndeğişebileceğinden sitemizde sabit fiyat paylaşmıyoruz. **\"Teklif Al\"** formuyla size özel\nteklif alabilir; daha geniş alanlar veya döner başlık ihtiyacı için\n[Duru DMXL](/urunler/nemlendirme-ulv/duru-dmxl/) modelini de karşılaştırabilirsiniz."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Duru MXL kaç metrekare nemlendirir?",
+        "a": "Tek noktadan 25–100 m² arası alanları homojen şekilde nemlendirir."
+      },
+      {
+        "q": "Cihaz portatif mi?",
+        "a": "Evet, hafif 20×20 profil şasesi ve 4,6 kg ağırlığı sayesinde mantarhane içinde kolayca taşınabilir."
+      },
+      {
+        "q": "Depoya sürekli su eklemem gerekir mi?",
+        "a": "Gerekmez; şamandıralı yapısı çeşmeden eksilen suyu otomatik tamamlar."
+      },
+      {
+        "q": "Duru MXL ile Duru DMXL arasındaki fark nedir?",
+        "a": "DMXL döner başlıklıdır ve 250 m²'ye kadar daha geniş alan kaplar; MXL ise portatif, ekonomik ve 25–100 m² alanlar için idealdir."
+      },
+      {
+        "q": "Cihaz mantar dışında kullanılır mı?",
+        "a": "Evet, küçük seralar, fide odaları ve nem gerektiren atölyelerde de kullanılabilir."
+      }
+    ]
+  },
+  "duru-mxl-hgs": {
+    "product": {
+      "slug": "duru-mxl-hgs",
+      "kategori_slug": "nemlendirme-ulv",
+      "ad_tr": "Duru MXL-HGS",
+      "model_kodu": "MXL-HGS",
+      "kisa_aciklama_tr": "Higrostatlı tam otomatik ULV nemlendirme, 2200 W, şamandıralı",
+      "gorsel": "assets/img/products/duru-mxl-hgs-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC 50Hz"
+        },
+        {
+          "ozellik": "Tank",
+          "deger": "Şamandıralı – sınırsız (şebeke bağlantılı)"
+        },
+        {
+          "ozellik": "Kontrol",
+          "deger": "Higrostatlı (nem sensörlü) tam otomatik"
+        },
+        {
+          "ozellik": "Nem Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Nem Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Kaplama Alanı",
+          "deger": "Tek noktadan 25–100 m²"
+        },
+        {
+          "ozellik": "Gövde",
+          "deger": "20×20 profil şase, lazer kesim, elektrostatik boya"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "4.6 kg"
+        }
+      ]
+    },
+    "meta": {
+      "metaDescription": "Higrostatlı, nem sensörlü tam otomatik ULV nemlendirme cihazı Duru MXL-HGS ile mantarhane ve seralarda kusursuz nem kontrolü. Teklif alın.",
+      "focusKeyword": "higrostatlı nemlendirme cihazı",
+      "additionalKeywords": "nem sensörlü nemlendirme, otomatik mantarhane nemlendirme, ulv nem kontrol cihazı, duru mxl-hgs",
+      "imageAlt": "Higrostatlı otomatik ULV nemlendirme cihazı - Duru MXL-HGS",
+      "seoTitle": "Duru MXL-HGS | Duru ULV"
+    },
+    "sections": [
+      {
+        "heading": "Higrostatlı Nemlendirme Cihazı Nedir?",
+        "body": "Nem sensörü (higrostat) ile tam otomatik çalışan bu **higrostatlı nemlendirme cihazı**,\nDuru ürün ailesinde **Duru MXL-HGS** model adıyla satılır. 2200 W ULV nem başlığı, ortamın\nbağıl nemini sürekli ölçer ve belirlenen değerin altına düştüğünde otomatik olarak devreye\ngirerek 0–49 mikron aralığında ince bir sis üretir. Şamandıralı su beslemesi ve\nhigrostat kontrolünün birleşimi sayesinde operatör müdahalesi neredeyse tamamen ortadan\nkalkar; cihaz istenen nem seviyesini kendi kendine korur."
+      },
+      {
+        "heading": "Otomatik Nem Kontrolü Nerelerde Kullanılır?",
+        "body": "Duru MXL-HGS, nem oranının dar bir bantta sabit tutulması gereken profesyonel ortamların\nilk tercihidir. Mantar üretim tesislerinde %70–90 nem aralığının kesintisiz korunması,\nmantar veriminin ve kalitesinin doğrudan belirleyicisidir; higrostatlı yapı bu dengeyi\ninsan hatası olmadan sürdürür. Aynı hassasiyet, soğuk hava depoları, peynir olgunlaştırma\nodaları, tekstil ve iplik üretim hatları, matbaa ve elektronik üretim tesisleri için de\nkritik önemdedir. Gece-gündüz fark etmeksizin sürekli çalışması gereken tesislerde,\notomatik nem kontrolü hem iş gücü tasarrufu hem de ürün kaybının azalması anlamına gelir."
+      },
+      {
+        "heading": "Teknik Üstünlükler: Neden Duru MXL-HGS?",
+        "body": "Higrostat, cihazı yalnızca ihtiyaç anında çalıştırarak su ve elektrik sarfiyatını en aza\nindirir; bu da uzun vadede işletme maliyetini düşürür. 25–100 m² kaplama alanı, tek\ncihazla orta ölçekli bir mantarhanenin dengeli nemlendirilmesine imkân tanır. 20×20 profil\nlazer kesim şase ve elektrostatik boya, nemli ortamlarda paslanmaya karşı dayanıklılık\nsağlar. Şamandıralı su beslemesi kesintisiz çalışmayı garanti ederken, özel nozul ortamı\nıslatmadan homojen sis üretir. 4,6 kg ağırlığındaki cihaz CE belgelidir ve metal olmayan\nbaşlığı sayesinde elektrik kaçağı riski taşımaz. Temiz su filtrasyonu, sistemin kireç ve\nbakteri birikiminden korunmasına yardımcı olur."
+      },
+      {
+        "heading": "Higrostatlı Nemlendirme Cihazı Fiyatı ve Teklif Süreci",
+        "body": "Duru MXL-HGS'nin fiyatı, ortam büyüklüğü ve otomasyon seviyesine göre belirlendiğinden\nsitemizde sabit fiyat listelemiyoruz. **\"Teklif Al\"** formuyla size özel bir teklif\nalabilir; manuel/portatif kullanım için [Duru MXL](/urunler/nemlendirme-ulv/duru-mxl/) ya\nda geniş alan için [Duru DMXL](/urunler/nemlendirme-ulv/duru-dmxl/) modelleriyle\nkarşılaştırabilirsiniz."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Higrostat ne işe yarar?",
+        "a": "Ortamın nemini sürekli ölçer; nem belirlenen değerin altına düşünce cihazı otomatik çalıştırır, hedefe ulaşınca durdurur."
+      },
+      {
+        "q": "Cihaz tam otomatik mi çalışır?",
+        "a": "Evet. Nem sensörü ve şamandıralı su beslemesi sayesinde operatör müdahalesi olmadan istenen nem seviyesini korur."
+      },
+      {
+        "q": "Duru MXL-HGS ile Duru MXL arasındaki fark nedir?",
+        "a": "MXL-HGS higrostatlıdır ve nemi otomatik kontrol eder; standart MXL manuel veya zaman saatiyle çalışır."
+      },
+      {
+        "q": "Kaç metrekarelik alan için uygundur?",
+        "a": "Tek noktadan 25–100 m² arası ortamlar için uygundur."
+      },
+      {
+        "q": "Su ve elektrik tüketimi yüksek mi?",
+        "a": "Higrostat yalnızca ihtiyaç anında çalıştığından su ve elektrik sarfiyatı standart sürekli çalışan sistemlere göre daha düşüktür."
+      }
+    ]
+  },
+  "duru-k100": {
+    "product": {
+      "slug": "duru-k100",
+      "kategori_slug": "termal-sisleme",
+      "ad_tr": "Duru K 100",
+      "model_kodu": "K-100",
+      "kisa_aciklama_tr": "15 hp Briggs, 20 L, termal kanalizasyon / don önleyici",
+      "gorsel": "assets/img/products/duru-k100-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "15 hp benzinli Briggs"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "20 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "15 bar"
+        },
+        {
+          "ozellik": "Püskürtme Hortumu",
+          "deger": "2.30 m esnek metal kanal aparatı"
+        },
+        {
+          "ozellik": "Yakıt Tüketimi (motor)",
+          "deger": "0,75–1 L/saat"
+        },
+        {
+          "ozellik": "İlaç Yakıt Tüketimi",
+          "deger": "10–20 L/saat (ayarlanabilir)"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "~20 mikron (termal)"
+        },
+        {
+          "ozellik": "Teker",
+          "deger": "2 frenli + 2 düz teker"
+        }
+      ]
+    },
+    "meta": {
+      "metaDescription": "15 HP Briggs motorlu termal kanalizasyon sisleme makinesi Duru K 100 ile larva, sivrisinek ve uçkun mücadelesinde profesyonel çözüm. Teklif alın.",
+      "focusKeyword": "kanalizasyon sisleme makinesi",
+      "additionalKeywords": "termal sisleme makinesi, sıcak sisleme cihazı, kanal ilaçlama makinesi, don önleyici sisleme, duru k 100",
+      "imageAlt": "Termal kanalizasyon sisleme makinesi - Duru K 100",
+      "seoTitle": "Duru K 100 | Duru ULV"
+    },
+    "sections": [
+      {
+        "heading": "Termal Kanalizasyon Sisleme Makinesi Nedir?",
+        "body": "15 HP benzinli Briggs motorla çalışan bu **kanalizasyon sisleme makinesi**, Duru ürün\nailesinde **Duru K 100** model adıyla satılır. Termal (sıcak sisleme) prensibiyle çalışan\ncihaz, ilaç ve yağ bazlı solüsyon karışımını yüksek ısıya maruz bırakarak yaklaşık 20\nmikron çapında yoğun bir sis üretir. 2.30 metrelik paslanmaz çelikten esnek kanal\naparatı sayesinde, sisin kanalizasyon hatları ve çöp konteynerleri gibi kapalı hacimlere\nderinlemesine ulaşması sağlanır."
+      },
+      {
+        "heading": "Kanal İlaçlama Makinesi Nerelerde Kullanılır?",
+        "body": "Duru K 100, öncelikle kanalizasyon hatlarında larva, sivrisinek, karasinek ve büyük\ncüsseli böceklerin (uçkun) kaynağında yok edilmesi için tasarlanmıştır. Esnek hortum\nbağlantısı çıkarıldığında cihaz açık alan sıcak sisleme uygulamasına dönüşür; bu sayede\noteller, eğlence parkları, golf sahaları, askeri alanlar, tatil köyleri, yeşil alanlar ve\normanlık bölgelerde geniş ölçekli haşere mücadelesi yapılabilir. Bataklık, atık su ve çöp\nyığın alanlarında koku giderici dezenfektan olarak da kullanılan cihaz, tarımsal alanlarda\nkışın seraların donmasını önlemek için antifriz/don önleyici olarak da çalıştırılabilir."
+      },
+      {
+        "heading": "Teknik Üstünlükler: Neden Duru K 100?",
+        "body": "20 mikronluk termal sis, havada uzun süre asılı kalır: cihazın ürettiği bir zerreciğin\nhava sirkülasyonu olmayan bir ortamda 10 metre yükseklikten yere düşmesi yaklaşık 14\ndakika sürer; kanalizasyon gibi hava akışı olan hacimlerde bu süre daha da uzayarak\nyüksek verimli, kalıcı bir biyosidal etki sağlar. 15 HP Briggs motor, dakikada yüksek\ndebili sis üretimini güvenilir biçimde besler; motor yakıt tüketimi 0,75–1 L/saat\ndüzeyindedir. 20 litrelik ilaç tankı ve 10–20 L/saat ayarlanabilir ilaç debisi, uzun saha\nçalışmalarına uygun kapasite sunar. 2 frenli + 2 düz tekerlekli ergonomik şase, cihazın\nsabitlenmesini ve saha içinde kolay taşınmasını sağlar. Paslanmaz çelik esnek hortum, dar\nve zorlu kanal geometrilerinde dahi güvenli kullanım imkânı verir."
+      },
+      {
+        "heading": "Kanalizasyon Sisleme Makinesi Fiyatı ve Teklif Süreci",
+        "body": "Duru K 100'ün fiyatı, kullanım amacınıza ve sipariş adedinize göre değişebileceğinden\nsitemizde sabit fiyat paylaşmıyoruz. **\"Teklif Al\"** formunu doldurarak ihtiyacınıza özel\nbir teklif alabilir; elde taşınabilir bir alternatif için\n[Termal El Tipi](/urunler/termal-sisleme/termal-el-tipi/) modelini de inceleyebilirsiniz."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Termal sisleme ile ULV soğuk sisleme arasındaki fark nedir?",
+        "a": "Termal sisleme, solüsyonu ısıyla buharlaştırarak yoğun görünür bir sis üretir ve kanal gibi kapalı hacimlerde üstündür; ULV ise elektrikle soğuk sis üretir. K 100 termal prensiple çalışır."
+      },
+      {
+        "q": "Duru K 100 hangi haşerelere karşı etkilidir?",
+        "a": "Özellikle larva, sivrisinek, karasinek ve büyük cüsseli uçkun türlerine karşı tasarlanmıştır."
+      },
+      {
+        "q": "Cihaz sadece kanalizasyonda mı kullanılır?",
+        "a": "Hayır. Hortum çıkarıldığında açık alan sıcak sisleme ve don önleme (antifriz) uygulaması da yapılabilir."
+      },
+      {
+        "q": "Hangi solüsyon kullanılır?",
+        "a": "Termal sisleme için yağ bazlı solüsyon karışımı kullanılır."
+      },
+      {
+        "q": "Motor ve yakıt tüketimi nedir?",
+        "a": "15 HP benzinli Briggs motorun yakıt tüketimi 0,75–1 L/saat, ilaç debisi ise 10–20 L/saat aralığında ayarlanabilir."
+      }
+    ]
+  },
+  "termal-el-tipi": {
+    "product": {
+      "slug": "termal-el-tipi",
+      "kategori_slug": "termal-sisleme",
+      "ad_tr": "Termal El Tipi",
+      "model_kodu": "TERMAL-EL",
+      "kisa_aciklama_tr": "Benzinli termal el tipi; kanal ilaçlama, sıcak sisleme ve don önleme",
+      "gorsel": "assets/img/products/termal-el-tipi-01.jpg",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "Benzinli Briggs"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "15–50 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "15 bar"
+        },
+        {
+          "ozellik": "Püskürtme Hortumu",
+          "deger": "2.30 m esnek paslanmaz kanal aparatı"
+        },
+        {
+          "ozellik": "Solüsyon",
+          "deger": "Yağ bazlı termal solüsyon"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "~20 mikron (termal)"
+        },
+        {
+          "ozellik": "Uygulama",
+          "deger": "Kanal ilaçlama, açık alan sıcak sisleme, don önleme"
+        }
+      ]
+    },
+    "meta": {
+      "metaDescription": "Benzinli termal el tipi cihaz; kanal ilaçlama, açık alan sıcak sisleme ve don önleme için 20 mikron yağ bazlı sis üretir. Teklif alın.",
+      "focusKeyword": "termal el tipi sisleme cihazı",
+      "additionalKeywords": "kanal ilaçlama makinesi, sıcak sisleme cihazı, don önleyici cihaz, termal fog makinesi",
+      "imageAlt": "Termal el tipi kanal ilaçlama ve sıcak sisleme cihazı",
+      "seoTitle": "Termal El Tipi | Duru ULV"
+    },
+    "sections": [
+      {
+        "heading": "Termal El Tipi Sisleme Cihazı Nedir?",
+        "body": "Benzinli Briggs motorla çalışan bu **termal el tipi sisleme cihazı**, kanal ilaçlama,\naçık alan sıcak sisleme ve don önleme uygulamaları için tasarlanmıştır. Cihaz, ilaç ve\nyağ bazlı solüsyon karışımını yüksek ısıya maruz bırakarak yaklaşık 20 mikron çapında\nyoğun bir sis üretir. 2.30 metrelik paslanmaz çelik esnek kanal aparatı, sisin\nkanalizasyon hatları ve çöp konteynerleri gibi kapalı hacimlere nüfuz etmesini sağlar;\nhortum çıkarıldığında ise cihaz açık alan termal sisleme moduna geçer."
+      },
+      {
+        "heading": "Termal El Tipi Cihaz Nerelerde Kullanılır?",
+        "body": "Kanalizasyonlar, oteller, eğlence parkları, golf sahaları, askeri alanlar, tatil kamp ve\nköyleri, yeşil alanlar ile ormanlık bölgelerde larva, sivrisinek ve büyük cüsseli\nböceklerle mücadelede kullanılır. Tarımsal ve kırsal alanlarda ahırlar, ağıllar, tavuk\nçiftlikleri ve seralarda bitki korumada tercih edilir; kışın seralarda donu önlemek için\nantifriz amaçlı da çalıştırılabilir. Bataklık, atık su ve çöp yığın alanlarında koku\ngiderici dezenfektan olarak kullanılabilen cihaz, elde taşınabilir yapısı sayesinde araç\nüstü sistemlerin ulaşamadığı dar ve zorlu noktalara erişim sağlar."
+      },
+      {
+        "heading": "Teknik Üstünlükler: Neden Termal El Tipi?",
+        "body": "Yaklaşık 20 mikronluk termal sis, havada uzun süre asılı kalarak hedef bölgede kalıcı bir\nbiyosidal etki oluşturur; hava sirkülasyonu olmayan ortamda bir zerreciğin 10 metreden\nyere düşmesi yaklaşık 14 dakika sürer. Elde taşınabilir tasarımı, operatörün araçtan\ninmeden dar geçitlerde ve zorlu arazide hızlı müdahale etmesine imkân tanır. 15 bar\nçıkış basıncı ve 15–50 litre solüsyon kapasitesi, farklı ölçekteki saha çalışmalarına\nuyum sağlar. Paslanmaz çelik esnek hortum, kanal geometrilerine kolay nüfuz sağlarken\nkorozyona karşı dayanıklıdır. Tek cihazla hem kanal ilaçlama, hem açık alan sıcak\nsisleme, hem de don önleme yapılabilmesi, ekipman yatırımını tek bir çözümde toplar."
+      },
+      {
+        "heading": "Termal El Tipi Cihaz Fiyatı ve Teklif Süreci",
+        "body": "Termal El Tipi cihazın fiyatı, kullanım amacınıza ve sipariş adedinize göre\ndeğişebileceğinden sitemizde sabit fiyat yayınlamıyoruz. **\"Teklif Al\"** formunu\ndoldurarak ihtiyacınıza özel bir teklif alabilir; tekerlekli ve daha yüksek kapasiteli\nbir alternatif için [Duru K 100](/urunler/termal-sisleme/duru-k100/) modelini de\ninceleyebilirsiniz."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Termal El Tipi cihaz hangi uygulamalar için uygundur?",
+        "a": "Kanal ilaçlama, açık alan sıcak sisleme ve don önleme (antifriz) uygulamaları için uygundur."
+      },
+      {
+        "q": "Cihaz don önleme için nasıl kullanılır?",
+        "a": "Kışın seralarda uygun antifriz solüsyonuyla çalıştırılarak bitkilerin ve ortamın donmasının önüne geçilir."
+      },
+      {
+        "q": "Hangi solüsyon kullanılır?",
+        "a": "Termal sisleme için yağ bazlı solüsyon karışımı kullanılır."
+      },
+      {
+        "q": "Duru K 100 ile arasındaki fark nedir?",
+        "a": "Termal El Tipi elde taşınabilir ve daha esnek kullanım sunar; K 100 ise tekerlekli şasesi ve 15 HP motoruyla daha yüksek kapasiteli sürekli saha çalışmaları için tasarlanmıştır."
+      },
+      {
+        "q": "Sisin etkisi ne kadar sürer?",
+        "a": "20 mikronluk zerrecikler havada uzun süre asılı kalarak kalıcı ve yüksek verimli bir biyosidal etki sağlar."
+      }
+    ]
   }
 }
