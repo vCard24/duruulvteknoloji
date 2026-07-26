@@ -382,6 +382,32 @@ function generateCategoryPage(category) {
     .map((p) => productCardFixed(p, prefix, '', `${prefix}urun-karsilastirma/index.html`))
     .join('\n');
 
+  // Nemlendirme: mantarhane/sera odaklı — sera kategori sayfasında da kart göster
+  let relatedSection = '';
+  if (category.slug === 'sera-tipi-ulv-ilaclama') {
+    const humidity = data.urunler.filter((p) => p.kategori_slug === 'nemlendirme-ulv');
+    if (humidity.length) {
+      const relatedCards = humidity
+        .map((p) => productCardFixed(p, prefix, '../nemlendirme-ulv/', `${prefix}urun-karsilastirma/index.html`))
+        .join('\n');
+      relatedSection = `
+    <section class="section bg-muted border-y">
+      <div class="container">
+        <div class="section-header-row">
+          <div>
+            <div class="eyebrow">İlgili ürünler</div>
+            <h2 class="section-title">Sera &amp; mantarhane için nemlendirme</h2>
+          </div>
+          <a href="../nemlendirme-ulv/index.html" class="link-arrow">Tüm nemlendirme modelleri →</a>
+        </div>
+        <div class="grid-3">
+${relatedCards}
+        </div>
+      </div>
+    </section>`;
+    }
+  }
+
   const catDesc = `${category.ad_tr} — Duru ULV ${products.length} model. ${category.aciklama_tr}`;
   const catTitle = `${category.kisa_ad} ULV Makineleri — Duru ULV`;
   const firstProduct = products[0];
@@ -437,7 +463,7 @@ ${cards}
         </div>
       </div>
     </section>
-
+${relatedSection}
     <section class="section bg-muted border-y">
       <div class="container container--narrow">
         <div class="cta-box">
@@ -498,8 +524,10 @@ function generateProductsIndex() {
     })
     .join('\n');
 
-  const listDesc =
-    'Duru ULV ürün kataloğu — 18 model, 4 kategori: araç üzeri, sera tipi, sırt tipi ve el tipi ULV ilaçlama makineleri.';
+  const productCount = data.urunler.length;
+  const categoryCount = data.kategoriler.length;
+  const catNames = data.kategoriler.map((c) => c.kisa_ad.toLowerCase()).join(', ');
+  const listDesc = `Duru ULV ürün kataloğu — ${productCount} model, ${categoryCount} kategori: ${catNames}.`;
   const listTitle = 'Ürünler — Duru ULV';
   const seoBlock = renderSeoHead({
     title: listTitle,
@@ -538,7 +566,7 @@ ${header(prefix)}
       <div class="container">
         <div style="margin-bottom:3rem">
           <div class="eyebrow">Ürün Kataloğu</div>
-          <h1 class="section-title">18 model · 4 kategori</h1>
+          <h1 class="section-title">${productCount} model · ${categoryCount} kategori</h1>
           <p style="max-width:36rem;margin-top:1rem;color:rgba(43,46,51,0.75);line-height:1.65">Belediye, kamu, tarım ve sanayi uygulamaları için profesyonel ULV ilaçlama makineleri. Fiyat yerine teklif alın — karşılaştırma yapın.</p>
         </div>
 

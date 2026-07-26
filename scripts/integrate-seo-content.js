@@ -559,10 +559,18 @@ function updateProductPage(product, data) {
   }
 
   const contentHtml = sectionsToHtml(data.sections, linkPrefix, false);
-  html = html.replace(
-    /<!-- GENİŞ AÇIKLAMA: buraya gelecek -->[\s\S]*?(?=\s*<\/div>\s*<\/section>\s*<section class="section bg-muted border-y">)/,
-    contentHtml.trimEnd()
-  );
+  // Placeholder (generate-pages) veya daha önce enjekte edilmiş gövdeyi güncelle
+  if (html.includes('<!-- GENİŞ AÇIKLAMA: buraya gelecek -->')) {
+    html = html.replace(
+      /<!-- GENİŞ AÇIKLAMA: buraya gelecek -->[\s\S]*?(?=\s*<\/div>\s*<\/section>\s*<section class="section bg-muted border-y">)/,
+      contentHtml.trimEnd()
+    );
+  } else {
+    html = html.replace(
+      /(<h2 class="section-title"[^>]*>Detaylı açıklama<\/h2>)[\s\S]*?(?=\s*<\/div>\s*<\/section>\s*<section class="section bg-muted border-y">)/,
+      `$1\n${contentHtml.trimEnd()}`
+    );
+  }
 
   if (data.faqs.length) {
     html = html.replace(

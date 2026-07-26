@@ -244,7 +244,7 @@ const pages = {
 
   'katalog/index.html': shell(
     'Ürün Kataloğu',
-    'Duru ULV ürün kataloğu — 18 model, 4 kategori. PDF indir veya online incele.',
+    'Duru ULV ürün kataloğu — 23 model, 6 kategori. PDF indir veya online incele.',
     `  <main>
     <section class="section section--lg bg-white border-y">
       <div class="container">
@@ -252,8 +252,8 @@ const pages = {
           <div style="display:grid;gap:2.5rem;align-items:center" class="grid-2">
             <div>
               <div class="eyebrow">Ürün Kataloğu</div>
-              <h1 class="section-title">18 model, tek referans doküman.</h1>
-              <p style="margin-top:1rem;color:rgba(43,46,51,0.75);line-height:1.65;max-width:32rem">Araç üzeri, sera tipi, sırt tipi ve el tipi ULV makinelerimizin teknik özelliklerini içeren <strong>2026 güncel kataloğumuzu</strong> indirebilir, tarayıcıda görüntüleyebilir veya online ürün sayfalarından inceleyebilirsiniz.</p>
+              <h1 class="section-title">23 model, tek referans doküman.</h1>
+              <p style="margin-top:1rem;color:rgba(43,46,51,0.75);line-height:1.65;max-width:32rem">Araç üzeri, sera, sırt, el tipi, nemlendirme ve termal sisleme makinelerimizin teknik özelliklerini içeren <strong>2026 güncel kataloğumuzu</strong> indirebilir, tarayıcıda görüntüleyebilir veya online ürün sayfalarından inceleyebilirsiniz.</p>
               <div style="margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:0.75rem">
                 <a href="${P}assets/docs/duru-ulv-katalog-2026.pdf" class="btn btn--primary" download="Duru-ULV-Katalog-2026.pdf">Kataloğu İndir (PDF)</a>
                 <a href="${P}assets/docs/duru-ulv-katalog-2026.pdf" class="btn btn--outline" target="_blank" rel="noopener">PDF'i Görüntüle</a>

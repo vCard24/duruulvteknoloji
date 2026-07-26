@@ -151,24 +151,24 @@ yapılabilir.
 ## 3. Kompakt El Tipi Sisleme Cihazı (Duru Plus)
 
 ```
-SEO Başlığı:        Kompakt El Tipi Sisleme Cihazı - En Hafif Model | Duru Plus
-Meta Açıklama:       3 litre tanklı, 3,3 kg en hafif el tipi sisleme cihazı Duru Plus ile pratik dezenfeksiyon ve ilaçlama. Hemen teklif alın.
+SEO Başlığı:        Kompakt El Tipi Sisleme Cihazı - 3" Mini | Duru Plus 3"
+Meta Açıklama:       3 litre tanklı, 1300 W, 3 inch (3") mini el tipi sisleme cihazı Duru Plus 3" ile pratik dezenfeksiyon. Hemen teklif alın.
 Odak Anahtar Kelime: el tipi sisleme cihazı
-Ek Anahtar Kelimeler: kompakt dezenfeksiyon makinesi, hafif ilaçlama cihazı, taşınabilir sisleme makinesi, duru plus
-Görsel alt metni:    El tipi sisleme cihazı - Duru Plus
+Ek Anahtar Kelimeler: kompakt dezenfeksiyon makinesi, 3 inch ulv, mini sisleme cihazı, duru plus 3
+Görsel alt metni:    El tipi sisleme cihazı - Duru Plus 3"
 ```
 
 ### Kompakt El Tipi Sisleme Cihazı Nedir?
 
 Duru ürün ailesinin en hafif ve kompakt modeli olan bu **el tipi sisleme cihazı**, **Duru
-Plus** model adıyla satılır. 1300 W motor gücüyle çalışan cihaz, 3 litrelik ilaç tankı ve
-0–49 mikron aralığındaki ayarlanabilir damlacık çapıyla küçük-orta ölçekli alanların
-hızlı dezenfeksiyonu için tasarlanmıştır. Sadece 3,30 kg ağırlığındaki cihaz, Duru'nun
-tüm el tipi ürünleri arasında en kolay taşınabilir olanıdır.
+Plus 3"** model adıyla satılır. 1300 W motor gücüyle çalışan cihaz, 3 litrelik ilaç tankı,
+3 inch (3") başlık ve 0–49 mikron aralığındaki ayarlanabilir damlacık çapıyla küçük-orta
+ölçekli alanların hızlı dezenfeksiyonu için tasarlanmıştır. Sadece 3,30 kg ağırlığındaki
+cihaz, Duru'nun tüm el tipi ürünleri arasında en kolay taşınabilir olanıdır.
 
 ### Kompakt Dezenfeksiyon Makinesi Nerelerde Kullanılır?
 
-Duru Plus, ev, küçük ofis, muayenehane, küçük işletme gibi nispeten daha küçük alanların
+Duru Plus 3", ev, küçük ofis, muayenehane, küçük işletme gibi nispeten daha küçük alanların
 hızlı ve pratik dezenfeksiyonu için idealdir. Hafifliği sayesinde sık seyahat eden
 teknik personel, mobil dezenfeksiyon hizmeti veren küçük işletmeler veya ev kullanıcıları
 için uygun bir seçenektir. Araç içi dezenfeksiyon, küçük perakende mağazaları, kuaför ve
@@ -285,7 +285,7 @@ tasarlanmıştır; hassas zeminlerde kullanılacaksa koruyucu paspas önerilir.
 
 ```
 SEO Başlığı:        Mavi Şasili Tekerlekli Dezenfeksiyon Cihazı | Duru Max10
-Meta Açıklama:       5 litre tanklı, tekerlekli taşınabilir dezenfeksiyon cihazı Duru Max10 ile pratik ve etkili ilaçlama. Hemen teklif isteyin.
+Meta Açıklama:       10 litre tanklı, tekerlekli taşınabilir dezenfeksiyon cihazı Duru Max10 ile pratik ve etkili ilaçlama. Hemen teklif isteyin.
 Odak Anahtar Kelime: tekerlekli dezenfeksiyon cihazı
 Ek Anahtar Kelimeler: el tipi ilaçlama makinesi, taşınabilir sisleme cihazı, elektrikli dezenfektan makinesi, duru max10
 Görsel alt metni:    Tekerlekli dezenfeksiyon cihazı - Duru Max10
@@ -295,8 +295,8 @@ Görsel alt metni:    Tekerlekli dezenfeksiyon cihazı - Duru Max10
 
 Mavi şasi üzerine monte edilmiş, tekerlekli taşıma yapısına sahip bu **dezenfeksiyon
 cihazı**, Duru ürün ailesinde **Duru Max10** model adıyla satılır. 2200 W motor gücüyle
-çalışan cihaz, 5 litrelik ilaç tankı ve 0–49 mikron aralığındaki ayarlanabilir damlacık
-çapıyla hem dezenfeksiyon hem de haşere ilaçlama uygulamalarında kullanılabilir. 5,2 kg
+çalışan cihaz, 10 litrelik ilaç tankı ve 0–49 mikron aralığındaki ayarlanabilir damlacık
+çapıyla hem dezenfeksiyon hem de haşere ilaçlama uygulamalarında kullanılabilir. 6,7 kg
 ağırlığındaki cihaz, tekerlekli şasesi sayesinde uzun süreli kullanımlarda operatöre
 ekstra rahatlık sağlar.
 
@@ -316,7 +316,7 @@ Tekerlekli şasesi, Duru Max10'u sürekli elde tutma gerektiren standart el tipi
 modellerden ayırarak operatör konforunu artırır. 0–49 mikron aralığındaki ayarlanabilir
 damlacık çapı, farklı uygulama senaryolarına göre esneklik sağlar. 2200 W'lık motor
 gücü, tutarlı bir hava debisi ve püskürtme performansı sunar. Kompakt ölçüleri (En: 20
-cm, Boy: 45 cm, Yükseklik: 57 cm) ve 5,2 kg ağırlığı, taşıma ve depolama açısından da
+cm, Boy: 45 cm, Yükseklik: 57 cm) ve 6,7 kg ağırlığı, taşıma ve depolama açısından da
 pratiktir. Cihaz sc, ec, wp formülasyonlu ürünlerle uyumludur ve Duru'nun 36 yıllık
 üretim tecrübesiyle geliştirilen dayanıklı gövde yapısına sahiptir; tüm Duru ürünlerinde
 olduğu gibi metal olmayan, elektrik kaçağı yapmayan özel başlığa sahiptir.
@@ -330,7 +330,7 @@ ile karşılaştırarak ihtiyacınıza en uygun modeli seçebilirsiniz.
 
 ### Sıkça Sorulan Sorular
 
-**Duru Max10'un tank kapasitesi nedir?** 5 litre olup orta ölçekli alanların düzenli
+**Duru Max10'un tank kapasitesi nedir?** 10 litre olup orta ölçekli alanların düzenli
 dezenfeksiyonu için yeterlidir.
 
 **Bu cihaz tekerlekli mi?** Evet, mavi şasi üzerine monte edilmiş tekerlekli yapısı

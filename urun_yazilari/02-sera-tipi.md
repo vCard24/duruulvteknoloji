@@ -84,7 +84,7 @@ ve 10 yıl yedek parça garantisi kapsamındadır.
 
 ```
 SEO Başlığı:        Yüksek Kapasiteli Sera İlaçlama Makinesi | Sera Max 50
-Meta Açıklama:       4 motorlu, 80 litre tanklı yüksek kapasiteli sera ilaçlama makinesi Sera Max 50 ile büyük seralarda etkin mücadele. Teklif alın.
+Meta Açıklama:       4 motorlu, 100 litre tanklı (25×4) yüksek kapasiteli sera ilaçlama makinesi Sera Max 50 ile büyük seralarda etkin mücadele. Teklif alın.
 Odak Anahtar Kelime: sera ilaçlama makinesi
 Ek Anahtar Kelimeler: büyük sera ilaçlama, sera dezenfeksiyon cihazı, tekerlekli sera makinesi, sera max 50
 Görsel alt metni:    Sera ilaçlama makinesi - Sera Max 50
@@ -93,7 +93,7 @@ Görsel alt metni:    Sera ilaçlama makinesi - Sera Max 50
 ### Yüksek Kapasiteli Sera İlaçlama Makinesi Nedir?
 
 4 ayrı motorla (2200 W × 4 = 8800 W) çalışan bu yüksek kapasiteli **sera ilaçlama
-makinesi**, Duru ürün ailesinde **Sera Max 50** model adıyla satılır. 80 litrelik geniş
+makinesi**, Duru ürün ailesinde **Sera Max 50** model adıyla satılır. 25 × 4 = 100 litrelik
 ilaç tankı ve 0–49 mikron aralığındaki ayarlanabilir damlacık çapıyla, standart sera tipi
 modellere göre çok daha büyük seraların tek seferde ilaçlanmasını mümkün kılar.
 Tekerlekli taşıma şasesi sayesinde sera içinde kolayca hareket ettirilebilir.
@@ -113,7 +113,7 @@ ilaçlama ihtiyaçlarını bu cihazla karşılayabilir.
 
 8800 W'lık toplam motor gücü, Duru'nun sera tipi ürün ailesi içinde en yüksek kapasiteli
 seçeneklerden birini oluşturur; bu güç, ilacın geniş bir alana hızlı ve homojen şekilde
-dağılmasını sağlar. 80 litrelik tank kapasitesi, sık dolum yapma ihtiyacını azaltarak
+dağılmasını sağlar. 100 litrelik (25 × 4) tank kapasitesi, sık dolum yapma ihtiyacını azaltarak
 büyük seralarda zaman ve işgücü tasarrufu sunar. 85 kg ağırlığındaki cihaz, tekerlekli
 şasesi sayesinde sera içindeki dar koridorlarda dahi rahatlıkla yönlendirilebilir.
 Kompakt ölçüleri (En: 84 cm, Boy: 126 cm, Yükseklik: 150 cm) sera yapılarına kolay
@@ -134,7 +134,7 @@ ile karşılaştırarak işletmenize en uygun kapasiteyi belirleyebilirsiniz.
 ### Sıkça Sorulan Sorular
 
 **Sera Max 50 ile Entosis 50 arasındaki fark nedir?** Sera Max 50, 4 motorlu yapısı ve
-80 litrelik tankıyla daha büyük seralar için tasarlanmış yüksek kapasiteli bir modeldir.
+100 litrelik (25 × 4) tankıyla daha büyük seralar için tasarlanmış yüksek kapasiteli bir modeldir.
 
 **Bu cihaz hangi büyüklükteki seralar için uygundur?** Geniş ölçekli ticari sera
 işletmeleri ve büyük üretim tesisleri için idealdir.
@@ -155,7 +155,7 @@ seralarda iki kişilik kullanım iş akışını hızlandırabilir.
 
 ```
 SEO Başlığı:        Orta Ölçekli Sera Dezenfeksiyon Cihazı | Sera Ultra 20
-Meta Açıklama:       40 litre tanklı sera dezenfeksiyon cihazı Sera Ultra 20 ile orta ölçekli seralarda etkili haşere mücadelesi. Hemen teklif isteyin.
+Meta Açıklama:       48 litre tanklı sera dezenfeksiyon cihazı Sera Ultra 20 ile orta ölçekli seralarda etkili haşere mücadelesi. Hemen teklif isteyin.
 Odak Anahtar Kelime: sera dezenfeksiyon cihazı
 Ek Anahtar Kelimeler: sera ilaçlama makinesi, mantar serası ilaçlama, sera zararlıları kontrolü, sera ultra 20
 Görsel alt metni:    Sera dezenfeksiyon cihazı - Sera Ultra 20
@@ -163,9 +163,9 @@ Görsel alt metni:    Sera dezenfeksiyon cihazı - Sera Ultra 20
 
 ### Sera Dezenfeksiyon Cihazı Nedir?
 
-Çift motorlu (2200 W × 2 = 4400 W) yapısıyla orta ölçekli seralar için tasarlanmış bu
+Çift motorlu (2000 W × 2 = 4000 W) yapısıyla orta ölçekli seralar için tasarlanmış bu
 **sera dezenfeksiyon cihazı**, Duru ürün ailesinde **Sera Ultra 20** model adıyla
-satılır. 40 litrelik ilaç tankı ve 0–49 mikron aralığındaki ayarlanabilir damlacık
+satılır. 48 litrelik ilaç tankı ve 0–49 mikron aralığındaki ayarlanabilir damlacık
 çapıyla, hem haşere ilaçlama hem de genel sera dezenfeksiyonu için kullanılabilir.
 
 ### Sera İlaçlama Makinesi Nerelerde Kullanılır?
@@ -184,7 +184,7 @@ yöntemi sunar.
 
 ### Teknik Üstünlükler: Neden Sera Ultra 20?
 
-4400 W'lık motor gücü, 40 litrelik tank kapasitesiyle dengeli bir performans sunar — bu
+4000 W'lık motor gücü, 48 litrelik tank kapasitesiyle dengeli bir performans sunar — bu
 da orta ölçekli seralar için ideal bir kapasite-mobilite dengesi anlamına gelir. 57 kg
 ağırlığındaki cihaz, Sera Max 50'ye göre daha hafif ve manevra kabiliyeti yüksektir.
 Kompakt ölçüleri (En: 84 cm, Boy: 110 cm, Yükseklik: 150 cm) dar sera koridorlarında dahi
@@ -206,7 +206,7 @@ ile karşılaştırarak en uygun seçeneği belirleyebilirsiniz.
 **Sera Ultra 20 hangi büyüklükteki seralar için uygundur?** Küçük-orta ölçekli sera
 işletmeleri ve bölmeli sera yapıları için idealdir.
 
-**Bu cihazın tank kapasitesi nedir?** 40 litre olup orta ölçekli alanların tek dolumla
+**Bu cihazın tank kapasitesi nedir?** 48 litre olup orta ölçekli alanların tek dolumla
 ilaçlanmasına imkân tanır.
 
 **Sera Ultra 20 ile hangi zararlılara karşı mücadele edilebilir?** Yaprak biti, trips,
@@ -303,7 +303,7 @@ Görsel alt metni:    Sera ilaçlama sistemi - Sera Plus 20
 ### Sabit Montajlı Sera İlaçlama Sistemi Nedir?
 
 Sera içine sabit şekilde monte edilerek sürekli koruma sağlayan bu **sera ilaçlama
-sistemi**, Duru ürün ailesinde **Sera Plus 20** model adıyla satılır. 2200 W × 2 = 4400 W
+sistemi**, Duru ürün ailesinde **Sera Plus 20** model adıyla satılır. 2800 W
 motor gücüyle çalışan cihaz, 20 litrelik ilaç tankı ve 0–49 mikron aralığındaki
 ayarlanabilir damlacık çapı sayesinde sera içinde otomatik ve düzenli ilaçlama
 uygulamaları yapılmasına imkân tanır.
@@ -325,7 +325,7 @@ oluşturur.
 
 ### Teknik Üstünlükler: Neden Sera Plus 20?
 
-4400 W'lık motor gücü ve 20 litrelik tank kapasitesi, sabit montajlı kullanım senaryosuna
+2800 W'lık motor gücü ve 20 litrelik tank kapasitesi, sabit montajlı kullanım senaryosuna
 uygun şekilde optimize edilmiştir. 13 kg ağırlığındaki cihaz, Duru'nun en hafif sera tipi
 modeli olup montaj ve bakım kolaylığı sağlar. Kompakt ölçüleri (En: 52 cm, Boy: 60 cm,
 Yükseklik: 68 cm) sera yapısının herhangi bir noktasına kolayca entegre edilebilir. Cihaz

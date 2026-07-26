@@ -198,8 +198,8 @@ sınırlı olduğu kırsal alanlarda da kesintisiz çalışma imkânı sunar.
 0–49 mikron aralığındaki ayarlanabilir damlacık çapı, uygulamanın hedef haşereye göre
 optimize edilmesine imkân tanır: sivrisinek mücadelesinde daha ince damlacıklar tercih
 edilirken, karasinek gibi daha iri haşerelere karşı damlacık boyutu büyütülebilir. 10
-kW'lık jeneratör gücü, cihazın uzun süreli kesintisiz çalışmasını garanti eder; 195 kg
-ağırlığındaki ve kompakt ölçülerdeki (En: 85 cm, Boy: 140 cm, Yükseklik: 120 cm) cihaz,
+kW'lık jeneratör gücü, cihazın uzun süreli kesintisiz çalışmasını garanti eder; 85 kg
+ağırlığındaki ve kompakt ölçülerdeki (En: 70 cm, Boy: 120 cm, Yükseklik: 110 cm) cihaz,
 araç üzerine montaj ve taşıma açısından da pratiktir. Tüm Duru ULV cihazlarında olduğu
 gibi HD75'te de metal olmayan, elektrik kaçağı riski taşımayan özel başlıklar kullanılır
 ve sc, ec, wp formülasyonlu ilaçlarla uyumlu çalışır. Cihaz, Dünya Sağlık Örgütü'nün
