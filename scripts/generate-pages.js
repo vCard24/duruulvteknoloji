@@ -11,6 +11,13 @@ const {
   faqPageSchemaJson,
 } = require('./seo-meta');
 
+const {
+  loadManifest,
+  resolveVariantFile,
+  availableWidths,
+  resolveThumb,
+} = require('./image-variants');
+
 const ROOT = path.join(__dirname, '..');
 const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'assets/data/urunler.json'), 'utf8'));
 const IMG_MANIFEST_PATH = path.join(ROOT, 'assets/data/product-images.json');
@@ -23,6 +30,7 @@ const PRODUCT_SEO_PATH = path.join(ROOT, 'assets/data/product-seo.json');
 const productSeo = fs.existsSync(PRODUCT_SEO_PATH)
   ? JSON.parse(fs.readFileSync(PRODUCT_SEO_PATH, 'utf8'))
   : {};
+const variantManifest = loadManifest();
 
 const PRODUCTS_IMG_DIR = path.join(ROOT, 'assets', 'img', 'products');
 const imageDimCache = new Map();
@@ -36,7 +44,13 @@ function productImageFileName(slug, index) {
 
 function productImageAlt(slug, index) {
   const fileName = productImageFileName(slug, index);
-  return imageAlts[fileName] || imageAlts[fileName.replace(/\.webp$/i, '-thumb.webp')] || '';
+  const stem = productStem(fileName);
+  return (
+    imageAlts[fileName] ||
+    imageAlts[`${stem}-thumb`] ||
+    imageAlts[resolveThumb(PRODUCTS_IMG_DIR, stem, variantManifest) || ''] ||
+    ''
+  );
 }
 
 function productImageSrc(slug, index, prefix) {
@@ -55,42 +69,50 @@ function productStem(fileName) {
   return String(fileName).replace(/\.webp$/i, '');
 }
 
-function productVariantExists(fileName) {
-  return fs.existsSync(path.join(PRODUCTS_IMG_DIR, fileName));
-}
-
 /** Mevcut genişlik varyantları + thumb; orijinal her zaman fallback. */
 function productVariantSet(fileName) {
   const stem = productStem(fileName);
-  const widths = [400, 640, 800, 1200].filter((w) => productVariantExists(`${stem}-${w}.webp`));
-  const thumb = productVariantExists(`${stem}-thumb.webp`) ? `${stem}-thumb.webp` : null;
-  return { stem, fileName, widths, thumb };
+  const widthList = [400, 640, 800, 1200];
+  const widths = availableWidths(PRODUCTS_IMG_DIR, stem, widthList, variantManifest);
+  const filesByWidth = {};
+  for (const w of widths) {
+    filesByWidth[w] = resolveVariantFile(PRODUCTS_IMG_DIR, `${stem}-${w}`, variantManifest);
+  }
+  const thumb = resolveThumb(PRODUCTS_IMG_DIR, stem, variantManifest);
+  return { stem, fileName, widths, filesByWidth, thumb };
 }
 
 function productPublicPath(fileName, prefix) {
   return `${prefix}assets/img/products/${fileName}`;
 }
 
-function productSrcset(fileName, prefix, widths) {
-  const stem = productStem(fileName);
-  return widths.map((w) => `${productPublicPath(`${stem}-${w}.webp`, prefix)} ${w}w`).join(', ');
+function productSrcset(fileName, prefix, widths, filesByWidth) {
+  return widths
+    .map((w) => {
+      const f = filesByWidth[w] || resolveVariantFile(PRODUCTS_IMG_DIR, `${productStem(fileName)}-${w}`, variantManifest);
+      return f ? `${productPublicPath(f, prefix)} ${w}w` : null;
+    })
+    .filter(Boolean)
+    .join(', ');
 }
 
-function productLargestFile(fileName, widths) {
+function productLargestFile(fileName, widths, filesByWidth) {
   if (widths.length) {
     const max = widths[widths.length - 1];
-    return `${productStem(fileName)}-${max}.webp`;
+    return filesByWidth[max] || fileName;
   }
   return fileName;
 }
 
-function productDisplayFile(fileName, preferredWidth, widths) {
-  if (widths.includes(preferredWidth)) {
-    return `${productStem(fileName)}-${preferredWidth}.webp`;
+function productDisplayFile(fileName, preferredWidth, widths, filesByWidth) {
+  if (widths.includes(preferredWidth) && filesByWidth[preferredWidth]) {
+    return filesByWidth[preferredWidth];
   }
   const under = widths.filter((w) => w <= preferredWidth);
-  if (under.length) return `${productStem(fileName)}-${under[under.length - 1]}.webp`;
-  if (widths.length) return `${productStem(fileName)}-${widths[0]}.webp`;
+  if (under.length && filesByWidth[under[under.length - 1]]) {
+    return filesByWidth[under[under.length - 1]];
+  }
+  if (widths.length && filesByWidth[widths[0]]) return filesByWidth[widths[0]];
   return fileName;
 }
 
@@ -217,11 +239,12 @@ function productCardFixed(p, assetPrefix, pagePrefix, comparePage) {
   const baseFile = productImageFileName(p.slug, 1);
   const variants = productVariantSet(baseFile);
   const cardWidths = variants.widths.filter((w) => w === 400 || w === 800);
-  const displayFile = productDisplayFile(baseFile, 400, cardWidths.length ? cardWidths : variants.widths);
+  const useWidths = cardWidths.length ? cardWidths : variants.widths;
+  const displayFile = productDisplayFile(baseFile, 400, useWidths, variants.filesByWidth);
   const img = productPublicPath(displayFile, assetPrefix);
-  const srcset = cardWidths.length
-    ? productSrcset(baseFile, assetPrefix, cardWidths)
-    : (variants.widths.length ? productSrcset(baseFile, assetPrefix, variants.widths) : '');
+  const srcset = useWidths.length
+    ? productSrcset(baseFile, assetPrefix, useWidths, variants.filesByWidth)
+    : '';
   const dims = scaledDims(displayFile, 400);
   const imageClass = hasProductImages(p.slug) ? 'product-card__image' : 'product-card__image img-placeholder';
   const imgTag = hasProductImages(p.slug)
@@ -271,11 +294,12 @@ function generateProductPage(product) {
           const baseFile = productImageFileName(p.slug, 1);
           const variants = productVariantSet(baseFile);
           const cardWidths = variants.widths.filter((w) => w === 400 || w === 800);
-          const displayFile = productDisplayFile(baseFile, 400, cardWidths.length ? cardWidths : variants.widths);
+          const useWidths = cardWidths.length ? cardWidths : variants.widths;
+          const displayFile = productDisplayFile(baseFile, 400, useWidths, variants.filesByWidth);
           const relImg = productPublicPath(displayFile, prefix);
-          const srcset = cardWidths.length
-            ? productSrcset(baseFile, prefix, cardWidths)
-            : (variants.widths.length ? productSrcset(baseFile, prefix, variants.widths) : '');
+          const srcset = useWidths.length
+            ? productSrcset(baseFile, prefix, useWidths, variants.filesByWidth)
+            : '';
           const dims = scaledDims(displayFile, 400);
           const relImageClass = hasProductImages(p.slug) ? 'product-card__image' : 'product-card__image img-placeholder';
           const relImgTag = hasProductImages(p.slug)
@@ -300,9 +324,15 @@ function generateProductPage(product) {
       const variants = productVariantSet(baseFile);
       const galleryWidths = variants.widths.filter((w) => w === 640 || w === 1200);
       const srcsetWidths = galleryWidths.length ? galleryWidths : variants.widths;
-      const fullFile = productLargestFile(baseFile, srcsetWidths.length ? srcsetWidths : variants.widths);
+      const fullFile = productLargestFile(
+        baseFile,
+        srcsetWidths.length ? srcsetWidths : variants.widths,
+        variants.filesByWidth
+      );
       const fullSrc = productPublicPath(fullFile, prefix);
-      const srcset = srcsetWidths.length ? productSrcset(baseFile, prefix, srcsetWidths) : '';
+      const srcset = srcsetWidths.length
+        ? productSrcset(baseFile, prefix, srcsetWidths, variants.filesByWidth)
+        : '';
       const thumbFile = variants.thumb || baseFile;
       const thumbSrc = productPublicPath(thumbFile, prefix);
       const alt = productImageAlt(product.slug, n) || `${product.ad_tr} — görsel ${n}`;
@@ -314,9 +344,16 @@ function generateProductPage(product) {
   const mainVariants = productVariantSet(mainBase);
   const mainGalleryWidths = mainVariants.widths.filter((w) => w === 640 || w === 1200);
   const mainSrcsetWidths = mainGalleryWidths.length ? mainGalleryWidths : mainVariants.widths;
-  const mainDisplayFile = productDisplayFile(mainBase, 640, mainSrcsetWidths.length ? mainSrcsetWidths : mainVariants.widths);
+  const mainDisplayFile = productDisplayFile(
+    mainBase,
+    640,
+    mainSrcsetWidths.length ? mainSrcsetWidths : mainVariants.widths,
+    mainVariants.filesByWidth
+  );
   const mainSrc = productPublicPath(mainDisplayFile, prefix);
-  const mainSrcset = mainSrcsetWidths.length ? productSrcset(mainBase, prefix, mainSrcsetWidths) : '';
+  const mainSrcset = mainSrcsetWidths.length
+    ? productSrcset(mainBase, prefix, mainSrcsetWidths, mainVariants.filesByWidth)
+    : '';
   const mainDims = scaledDims(mainDisplayFile, 640);
   const mainImageClass = hasProductImages(product.slug) ? 'product-gallery__main' : 'product-gallery__main img-placeholder';
   const mainAlt = productImageAlt(product.slug, 1) || product.ad_tr;
@@ -611,11 +648,12 @@ function generateProductsIndex() {
       const baseFile = productImageFileName(p.slug, 1);
       const variants = productVariantSet(baseFile);
       const cardWidths = variants.widths.filter((w) => w === 400 || w === 800);
-      const displayFile = productDisplayFile(baseFile, 400, cardWidths.length ? cardWidths : variants.widths);
+      const useWidths = cardWidths.length ? cardWidths : variants.widths;
+      const displayFile = productDisplayFile(baseFile, 400, useWidths, variants.filesByWidth);
       const img = productPublicPath(displayFile, prefix);
-      const srcset = cardWidths.length
-        ? productSrcset(baseFile, prefix, cardWidths)
-        : (variants.widths.length ? productSrcset(baseFile, prefix, variants.widths) : '');
+      const srcset = useWidths.length
+        ? productSrcset(baseFile, prefix, useWidths, variants.filesByWidth)
+        : '';
       const dims = scaledDims(displayFile, 400);
       const imageClass = hasProductImages(p.slug) ? 'product-card__image' : 'product-card__image img-placeholder';
       const imgTag = hasProductImages(p.slug)

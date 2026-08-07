@@ -1054,5 +1054,845 @@
   "termal-el-tipi-02.webp": {
     "width": 300,
     "height": 298
+  },
+  "duru-dmxl-01-400.0bc93049.webp": {
+    "width": 400,
+    "height": 371
+  },
+  "duru-dmxl-01-640.d03560b3.webp": {
+    "width": 640,
+    "height": 594
+  },
+  "duru-dmxl-01-800.af06bf36.webp": {
+    "width": 800,
+    "height": 743
+  },
+  "duru-dmxl-01-thumb.9d297df6.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hd1800-01-400.3e829d49.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hd1800-01-640.b1112087.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hd1800-01-800.4f0beb04.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hd1800-01-thumb.e03fad7a.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hd1800-02-400.fe12a971.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hd1800-02-640.cef026b6.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hd1800-02-800.0623f476.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hd1800-02-thumb.eff70de6.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hd1800-03-400.9c35d0cc.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hd1800-03-640.1c1c01e7.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hd1800-03-800.f2df050e.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hd1800-03-thumb.0bfc048d.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hd5-01-400.79a2007f.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hd5-01-640.3d26a199.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hd5-01-800.67fe0791.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hd5-01-thumb.8a167e52.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hd5-02-400.5187389e.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hd5-02-640.9cc1ff34.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hd5-02-800.fa7aa5b5.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hd5-02-thumb.0775f8a4.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hd5-03-400.02d43e68.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hd5-03-640.3439ac3b.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hd5-03-800.295b6575.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hd5-03-thumb.ab692641.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hd50-01-400.c8e2e197.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hd50-01-640.76cb093b.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hd50-01-800.b56a1dd2.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hd50-01-thumb.e0b03cd2.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hd50-02-400.019f7e26.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hd50-02-640.ab6ce464.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hd50-02-800.ba049e3c.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hd50-02-thumb.e240f5cf.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hd75-01-400.a9ee7bc0.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hd75-01-640.3c7bf6a8.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hd75-01-800.2760ad58.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hd75-01-thumb.f3a9b72e.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hd75-02-400.d2fc65d8.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hd75-02-640.7be187ab.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hd75-02-800.87d72574.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hd75-02-thumb.de0796f9.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hr5-01-400.f5f506e5.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hr5-01-640.a7be43dc.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hr5-01-800.b5932442.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hr5-01-thumb.5df85648.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hr5-02-400.9c893578.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hr5-02-640.dabdfe42.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hr5-02-800.be6a9206.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hr5-02-thumb.532da476.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-k100-01-400.07bc9a1f.webp": {
+    "width": 400,
+    "height": 267
+  },
+  "duru-k100-01-640.dc095b3a.webp": {
+    "width": 640,
+    "height": 427
+  },
+  "duru-k100-01-thumb.a69acce9.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-max10-01-400.4a6ab16d.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-max10-01-640.f6da8078.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-max10-01-800.c9a550a4.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-max10-01-thumb.f8055a30.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-max10-02-400.ec7a13dd.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-max10-02-640.26fc5004.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-max10-02-800.6c1b44fc.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-max10-02-thumb.3f51ef9d.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-max5-01-400.c0b2a49c.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-max5-01-640.e9138731.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-max5-01-800.b16f4885.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-max5-01-thumb.d58a07bb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-max5-02-400.17c789cb.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-max5-02-640.0b2fa513.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-max5-02-800.2c2e1740.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-max5-02-thumb.657fc68a.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-mist-blower-15hp-01-400.a4e682b4.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-mist-blower-15hp-01-640.e8998a39.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-mist-blower-15hp-01-800.8a8df42b.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-mist-blower-15hp-01-thumb.5f48703c.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-mist-blower-15hp-02-400.25827220.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-mist-blower-15hp-02-640.409446e1.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-mist-blower-15hp-02-800.39160380.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-mist-blower-15hp-02-thumb.738c0346.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-mist-blower-15hp-03-400.ba83b9e8.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-mist-blower-15hp-03-640.00170930.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-mist-blower-15hp-03-800.b592de67.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-mist-blower-15hp-03-thumb.793f17e2.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-mist-blower-15hp-04-400.73dd8c46.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-mist-blower-15hp-04-640.12500bb4.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-mist-blower-15hp-04-800.095eb9e0.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-mist-blower-15hp-04-thumb.b7f51501.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-mist-blower-15hp-05-400.f37b6bbd.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-mist-blower-15hp-05-640.c0095dde.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-mist-blower-15hp-05-800.f5b1f06a.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-mist-blower-15hp-05-thumb.55a841d8.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-mist-blower-15hp-06-400.fbdf7eb1.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-mist-blower-15hp-06-640.8dabeab9.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-mist-blower-15hp-06-800.f1756c1c.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-mist-blower-15hp-06-thumb.0e70b3a6.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-mxl-01-400.708c1f9f.webp": {
+    "width": 400,
+    "height": 431
+  },
+  "duru-mxl-01-640.9ab9ea1c.webp": {
+    "width": 640,
+    "height": 689
+  },
+  "duru-mxl-01-800.55f4a3d4.webp": {
+    "width": 800,
+    "height": 861
+  },
+  "duru-mxl-01-thumb.a1695052.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-mxl-hgs-01-400.f3437ae1.webp": {
+    "width": 400,
+    "height": 408
+  },
+  "duru-mxl-hgs-01-640.23072a2a.webp": {
+    "width": 640,
+    "height": 652
+  },
+  "duru-mxl-hgs-01-800.522c7100.webp": {
+    "width": 800,
+    "height": 815
+  },
+  "duru-mxl-hgs-01-thumb.1fdb5a6e.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-plus-01-400.24408cfa.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-plus-01-640.0d94f8f2.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-plus-01-800.7ce2bfe7.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-plus-01-thumb.360946af.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-sirt10-01-400.f2ff28b4.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-sirt10-01-640.686bebf7.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-sirt10-01-800.2d9c2462.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-sirt10-01-thumb.47c6b074.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-sirt10-02-400.404a08eb.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-sirt10-02-640.483a8f11.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-sirt10-02-800.02462651.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-sirt10-02-thumb.195514eb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-sirt10-03-400.a31795bd.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-sirt10-03-640.23075ad1.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-sirt10-03-800.30ec8a4b.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-sirt10-03-thumb.f48af19d.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-sirt10-04-400.30a26080.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-sirt10-04-640.35e60b1a.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-sirt10-04-800.44938554.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-sirt10-04-thumb.0019c12b.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-x10-01-400.15707074.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-x10-01-640.fea601c6.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-x10-01-800.37839806.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-x10-01-thumb.e195952e.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-x20-01-400.6d97cf4a.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-x20-01-640.7b95c490.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-x20-01-800.fb42b350.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-x20-01-thumb.563ca68c.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-x20-02-400.8e1408de.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-x20-02-640.ae58840b.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-x20-02-800.cd80726c.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-x20-02-thumb.29849575.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "entosis-20-01-400.e9ff564b.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "entosis-20-01-640.292e41db.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "entosis-20-01-800.bba88248.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "entosis-20-01-thumb.919c6880.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "entosis-20-02-400.bdad5a8f.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "entosis-20-02-640.7c6e975d.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "entosis-20-02-800.da385dce.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "entosis-20-02-thumb.cddc2b10.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "entosis-50-01-400.0485a107.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "entosis-50-01-640.116fdd51.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "entosis-50-01-800.2b96bddc.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "entosis-50-01-thumb.428b0da4.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "entosis-50-02-400.330b5dc4.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "entosis-50-02-640.9a1c0b76.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "entosis-50-02-800.2e3f51b1.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "entosis-50-02-thumb.34b92c33.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "entosis-mist-blower-500l-01-400.f1732e35.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "entosis-mist-blower-500l-01-640.3b3d8f6b.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "entosis-mist-blower-500l-01-800.4cdc323d.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "entosis-mist-blower-500l-01-thumb.c6ccaf4a.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "entosis-mist-blower-500l-02-400.3abf1169.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "entosis-mist-blower-500l-02-640.270ce090.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "entosis-mist-blower-500l-02-800.1a5d8f4e.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "entosis-mist-blower-500l-02-thumb.a441927d.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "entosis-mist-blower-500l-03-400.73ef7031.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "entosis-mist-blower-500l-03-640.9ad9a5ef.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "entosis-mist-blower-500l-03-800.d28689a3.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "entosis-mist-blower-500l-03-thumb.f6758a34.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "entosis-mist-blower-500l-04-400.bb94f953.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "entosis-mist-blower-500l-04-640.c1dd0532.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "entosis-mist-blower-500l-04-800.ebae6ec8.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "entosis-mist-blower-500l-04-thumb.a6b9ff3e.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "entosis-mist-blower-500l-05-400.f2aaf799.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "entosis-mist-blower-500l-05-640.439b23a3.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "entosis-mist-blower-500l-05-800.74b094b5.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "entosis-mist-blower-500l-05-thumb.ade32090.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "entosis-mist-blower-500l-06-400.7bd301b2.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "entosis-mist-blower-500l-06-640.c7f906f6.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "entosis-mist-blower-500l-06-800.7f9c6e58.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "entosis-mist-blower-500l-06-thumb.0f7e6c7f.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "sera-max-50-01-400.e4614c38.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "sera-max-50-01-640.c1b14be8.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "sera-max-50-01-800.a8f004d5.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "sera-max-50-01-thumb.844eb313.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "sera-max-50-02-400.147f4f24.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "sera-max-50-02-640.6a34e753.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "sera-max-50-02-800.125d1c41.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "sera-max-50-02-thumb.6f3b7561.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "sera-max-50-03-400.4818f822.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "sera-max-50-03-640.9038c883.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "sera-max-50-03-800.954b0d6e.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "sera-max-50-03-thumb.9be7b180.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "sera-plus-20-01-400.01261fc6.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "sera-plus-20-01-640.2e79e4b2.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "sera-plus-20-01-800.b5382a5a.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "sera-plus-20-01-thumb.45826441.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "sera-plus-20-02-400.65365dcd.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "sera-plus-20-02-640.d18ff6c6.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "sera-plus-20-02-800.f03be563.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "sera-plus-20-02-thumb.753fe90a.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "sera-plus-20-03-400.d6ceb3c1.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "sera-plus-20-03-640.ccee68ef.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "sera-plus-20-03-800.63ed955f.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "sera-plus-20-03-thumb.fc8ca36f.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "sera-ultra-20-01-400.0672df1d.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "sera-ultra-20-01-640.7775eab6.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "sera-ultra-20-01-800.07e36177.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "sera-ultra-20-01-thumb.82c75e9f.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "sera-ultra-20-02-400.d8234798.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "sera-ultra-20-02-640.8187dc5a.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "sera-ultra-20-02-800.c026a2b4.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "sera-ultra-20-02-thumb.1f28a97b.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "termal-el-tipi-01-400.a7685dca.webp": {
+    "width": 400,
+    "height": 362
+  },
+  "termal-el-tipi-01-thumb.e81a8356.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "termal-el-tipi-02-thumb.d1e05d91.webp": {
+    "width": 200,
+    "height": 200
   }
 }

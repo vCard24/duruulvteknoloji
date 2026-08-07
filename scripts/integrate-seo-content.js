@@ -19,10 +19,17 @@ const {
   injectFaqSchema,
   SITE_ORIGIN,
 } = require('./seo-meta');
+const {
+  loadManifest,
+  resolveVariantFile,
+  availableWidths,
+} = require('./image-variants');
 
 const ROOT = path.join(__dirname, '..');
 const CONTENT_DIR = path.join(ROOT, 'urun_yazilari');
 const DATA_DIR = path.join(ROOT, 'assets/data');
+const BLOG_IMG_DIR = path.join(ROOT, 'assets', 'img', 'blog');
+const variantManifest = loadManifest();
 
 const PRODUCT_FILES = [
   'urun-metinleri-1-parti.md',
@@ -650,15 +657,23 @@ function blogListHref(filePath) {
 }
 
 function blogCoverHtml(slug, prefix, alt) {
-  const dir = path.join(ROOT, 'assets', 'img', 'blog');
   const stem = `${slug}-cover`;
-  const widths = [720, 1200].filter((w) => fs.existsSync(path.join(dir, `${stem}-${w}.webp`)));
-  const fallbackExt = ['webp', 'png', 'jpg'].find((ext) => fs.existsSync(path.join(dir, `${stem}.${ext}`)));
+  const widths = availableWidths(BLOG_IMG_DIR, stem, [720, 1200], variantManifest);
+  const fallbackExt = ['webp', 'png', 'jpg'].find((ext) =>
+    fs.existsSync(path.join(BLOG_IMG_DIR, `${stem}.${ext}`))
+  );
+  const pick = (w) => resolveVariantFile(BLOG_IMG_DIR, `${stem}-${w}`, variantManifest);
   const srcFile = widths.includes(720)
-    ? `${stem}-720.webp`
-    : (widths.length ? `${stem}-${widths[0]}.webp` : `${stem}.${fallbackExt || 'webp'}`);
+    ? pick(720)
+    : (widths.length ? pick(widths[0]) : `${stem}.${fallbackExt || 'webp'}`);
   const src = `${prefix}assets/img/blog/${srcFile}`;
-  const srcset = widths.map((w) => `${prefix}assets/img/blog/${stem}-${w}.webp ${w}w`).join(', ');
+  const srcset = widths
+    .map((w) => {
+      const f = pick(w);
+      return f ? `${prefix}assets/img/blog/${f} ${w}w` : null;
+    })
+    .filter(Boolean)
+    .join(', ');
   return `<div class="blog-cover" data-blog-cover>
           <img src="${src}"${srcset ? ` srcset="${srcset}"` : ''} sizes="(max-width: 900px) 100vw, 720px" alt="${esc(alt)}" class="blog-cover__img" width="720" height="405" loading="eager" decoding="async"
             onerror="this.onerror=null;this.parentElement.classList.add('is-empty');this.remove();">
@@ -669,14 +684,20 @@ function blogCoverHtml(slug, prefix, alt) {
 }
 
 function blogFigureHtml(slug, suffix, prefix, alt, variant) {
-  const dir = path.join(ROOT, 'assets', 'img', 'blog');
   const stem = `${slug}-${suffix}`;
-  const widths = [720, 1200].filter((w) => fs.existsSync(path.join(dir, `${stem}-${w}.webp`)));
+  const widths = availableWidths(BLOG_IMG_DIR, stem, [720, 1200], variantManifest);
+  const pick = (w) => resolveVariantFile(BLOG_IMG_DIR, `${stem}-${w}`, variantManifest);
   const srcFile = widths.includes(720)
-    ? `${stem}-720.webp`
-    : (widths.length ? `${stem}-${widths[0]}.webp` : `${stem}.webp`);
+    ? pick(720)
+    : (widths.length ? pick(widths[0]) : `${stem}.webp`);
   const src = `${prefix}assets/img/blog/${srcFile}`;
-  const srcset = widths.map((w) => `${prefix}assets/img/blog/${stem}-${w}.webp ${w}w`).join(', ');
+  const srcset = widths
+    .map((w) => {
+      const f = pick(w);
+      return f ? `${prefix}assets/img/blog/${f} ${w}w` : null;
+    })
+    .filter(Boolean)
+    .join(', ');
   const mod = variant === 'detail' ? 'detail' : 'featured';
   return `<figure class="blog-figure blog-figure--${mod}">
           <div class="blog-figure__frame">
@@ -702,15 +723,21 @@ function blogFooterImageHtml(slug, prefix) {
 }
 
 function blogCardMediaHtml(slug, prefix, postHref, alt) {
-  const dir = path.join(ROOT, 'assets', 'img', 'blog');
   const stem = `${slug}-cover`;
-  const widths = [400, 800].filter((w) => fs.existsSync(path.join(dir, `${stem}-${w}.webp`)));
+  const widths = availableWidths(BLOG_IMG_DIR, stem, [400, 800], variantManifest);
+  const pick = (w) => resolveVariantFile(BLOG_IMG_DIR, `${stem}-${w}`, variantManifest);
   const file = blogAssetPath(slug, 'cover');
   const srcFile = widths.includes(400)
-    ? `${stem}-400.webp`
-    : (widths.length ? `${stem}-${widths[0]}.webp` : file);
+    ? pick(400)
+    : (widths.length ? pick(widths[0]) : file);
   const src = `${prefix}assets/img/blog/${srcFile}`;
-  const srcset = widths.map((w) => `${prefix}assets/img/blog/${stem}-${w}.webp ${w}w`).join(', ');
+  const srcset = widths
+    .map((w) => {
+      const f = pick(w);
+      return f ? `${prefix}assets/img/blog/${f} ${w}w` : null;
+    })
+    .filter(Boolean)
+    .join(', ');
   return `            <a href="${postHref}" class="blog-card__media" tabindex="-1" aria-hidden="true">
               <img src="${src}"${srcset ? ` srcset="${srcset}"` : ''} sizes="(max-width:767px) 100vw, (max-width:1024px) 50vw, 400px" alt="${esc(alt)}" class="blog-card__img" width="400" height="225" loading="lazy" decoding="async"
                 onerror="this.onerror=null;this.parentElement.classList.add('is-empty');this.remove();">
