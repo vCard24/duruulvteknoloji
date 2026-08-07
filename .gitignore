@@ -5,6 +5,9 @@ api/outbox/
 .env
 .env.*
 
+# Yerel kaynak görseller — repoya ve sunucuya gitmez
+sources/
+
 # Bağımlılıklar
 node_modules/
 emergent/frontend/node_modules/

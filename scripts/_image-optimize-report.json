@@ -1,0 +1,2377 @@
+{
+  "generatedAt": "2026-08-07T11:46:08.932Z",
+  "report": [
+    {
+      "file": "assets/img/products/duru-dmxl-01-400.webp",
+      "src": "assets/img/products/duru-dmxl-01.webp",
+      "width": 400,
+      "height": 371,
+      "kb": 6.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-dmxl-01-640.webp",
+      "src": "assets/img/products/duru-dmxl-01.webp",
+      "width": 640,
+      "height": 594,
+      "kb": 12.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-dmxl-01-800.webp",
+      "src": "assets/img/products/duru-dmxl-01.webp",
+      "width": 800,
+      "height": 743,
+      "kb": 15.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-dmxl-01-thumb.webp",
+      "src": "assets/img/products/duru-dmxl-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 3.2,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd1800-01-400.webp",
+      "src": "assets/img/products/duru-hd1800-01.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 20,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd1800-01-640.webp",
+      "src": "assets/img/products/duru-hd1800-01.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 37.7,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd1800-01-800.webp",
+      "src": "assets/img/products/duru-hd1800-01.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 49.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd1800-01-thumb.webp",
+      "src": "assets/img/products/duru-hd1800-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 7.7,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd1800-02-400.webp",
+      "src": "assets/img/products/duru-hd1800-02.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 14.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd1800-02-640.webp",
+      "src": "assets/img/products/duru-hd1800-02.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 28.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd1800-02-800.webp",
+      "src": "assets/img/products/duru-hd1800-02.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 37.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd1800-02-thumb.webp",
+      "src": "assets/img/products/duru-hd1800-02.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 5.7,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd1800-03-400.webp",
+      "src": "assets/img/products/duru-hd1800-03.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 9.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd1800-03-640.webp",
+      "src": "assets/img/products/duru-hd1800-03.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 21.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd1800-03-800.webp",
+      "src": "assets/img/products/duru-hd1800-03.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 30.2,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd1800-03-thumb.webp",
+      "src": "assets/img/products/duru-hd1800-03.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 4.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd5-01-400.webp",
+      "src": "assets/img/products/duru-hd5-01.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 10.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd5-01-640.webp",
+      "src": "assets/img/products/duru-hd5-01.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 19.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd5-01-800.webp",
+      "src": "assets/img/products/duru-hd5-01.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 25.6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd5-01-thumb.webp",
+      "src": "assets/img/products/duru-hd5-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 4.2,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd5-02-400.webp",
+      "src": "assets/img/products/duru-hd5-02.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 4.2,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd5-02-640.webp",
+      "src": "assets/img/products/duru-hd5-02.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 7.6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd5-02-800.webp",
+      "src": "assets/img/products/duru-hd5-02.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 9.6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd5-02-thumb.webp",
+      "src": "assets/img/products/duru-hd5-02.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 2,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd5-03-400.webp",
+      "src": "assets/img/products/duru-hd5-03.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 8.5,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd5-03-640.webp",
+      "src": "assets/img/products/duru-hd5-03.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 15.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd5-03-800.webp",
+      "src": "assets/img/products/duru-hd5-03.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 18.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd5-03-thumb.webp",
+      "src": "assets/img/products/duru-hd5-03.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd50-01-400.webp",
+      "src": "assets/img/products/duru-hd50-01.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 16.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd50-01-640.webp",
+      "src": "assets/img/products/duru-hd50-01.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 33.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd50-01-800.webp",
+      "src": "assets/img/products/duru-hd50-01.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 46.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd50-01-thumb.webp",
+      "src": "assets/img/products/duru-hd50-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 6.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd50-02-400.webp",
+      "src": "assets/img/products/duru-hd50-02.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 13.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd50-02-640.webp",
+      "src": "assets/img/products/duru-hd50-02.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 23.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd50-02-800.webp",
+      "src": "assets/img/products/duru-hd50-02.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 29.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd50-02-thumb.webp",
+      "src": "assets/img/products/duru-hd50-02.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 5.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd75-01-400.webp",
+      "src": "assets/img/products/duru-hd75-01.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 17.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd75-01-640.webp",
+      "src": "assets/img/products/duru-hd75-01.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 35.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd75-01-800.webp",
+      "src": "assets/img/products/duru-hd75-01.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 49.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd75-01-thumb.webp",
+      "src": "assets/img/products/duru-hd75-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 6.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd75-02-400.webp",
+      "src": "assets/img/products/duru-hd75-02.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 21.7,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd75-02-640.webp",
+      "src": "assets/img/products/duru-hd75-02.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 42.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd75-02-800.webp",
+      "src": "assets/img/products/duru-hd75-02.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 55.2,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hd75-02-thumb.webp",
+      "src": "assets/img/products/duru-hd75-02.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 7.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hr5-01-400.webp",
+      "src": "assets/img/products/duru-hr5-01.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 15.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hr5-01-640.webp",
+      "src": "assets/img/products/duru-hr5-01.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 29.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hr5-01-800.webp",
+      "src": "assets/img/products/duru-hr5-01.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 38.7,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hr5-01-thumb.webp",
+      "src": "assets/img/products/duru-hr5-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hr5-02-400.webp",
+      "src": "assets/img/products/duru-hr5-02.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 11.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hr5-02-640.webp",
+      "src": "assets/img/products/duru-hr5-02.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 22.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hr5-02-800.webp",
+      "src": "assets/img/products/duru-hr5-02.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 29.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-hr5-02-thumb.webp",
+      "src": "assets/img/products/duru-hr5-02.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 4.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-k100-01-400.webp",
+      "src": "assets/img/products/duru-k100-01.webp",
+      "width": 400,
+      "height": 267,
+      "kb": 10.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-k100-01-640.webp",
+      "src": "assets/img/products/duru-k100-01.webp",
+      "width": 640,
+      "height": 427,
+      "kb": 19.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-k100-01-thumb.webp",
+      "src": "assets/img/products/duru-k100-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 6.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-max10-01-400.webp",
+      "src": "assets/img/products/duru-max10-01.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 13.7,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-max10-01-640.webp",
+      "src": "assets/img/products/duru-max10-01.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 25.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-max10-01-800.webp",
+      "src": "assets/img/products/duru-max10-01.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 33.7,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-max10-01-thumb.webp",
+      "src": "assets/img/products/duru-max10-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 5.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-max10-02-400.webp",
+      "src": "assets/img/products/duru-max10-02.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 11.6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-max10-02-640.webp",
+      "src": "assets/img/products/duru-max10-02.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 21.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-max10-02-800.webp",
+      "src": "assets/img/products/duru-max10-02.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 27.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-max10-02-thumb.webp",
+      "src": "assets/img/products/duru-max10-02.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 4.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-max5-01-400.webp",
+      "src": "assets/img/products/duru-max5-01.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 16.7,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-max5-01-640.webp",
+      "src": "assets/img/products/duru-max5-01.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 31.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-max5-01-800.webp",
+      "src": "assets/img/products/duru-max5-01.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 42.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-max5-01-thumb.webp",
+      "src": "assets/img/products/duru-max5-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 6.7,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-max5-02-400.webp",
+      "src": "assets/img/products/duru-max5-02.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 11.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-max5-02-640.webp",
+      "src": "assets/img/products/duru-max5-02.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 20.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-max5-02-800.webp",
+      "src": "assets/img/products/duru-max5-02.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 27.6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-max5-02-thumb.webp",
+      "src": "assets/img/products/duru-max5-02.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 4.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-01-400.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-01.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 18.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-01-640.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-01.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 33.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-01-800.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-01.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 43.7,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-01-thumb.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 6.6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-02-400.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-02.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 10.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-02-640.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-02.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 21.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-02-800.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-02.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 27.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-02-thumb.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-02.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 4.2,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-03-400.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-03.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 11,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-03-640.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-03.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 23,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-03-800.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-03.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 32.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-03-thumb.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-03.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 4.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-04-400.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-04.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 12.2,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-04-640.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-04.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 24.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-04-800.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-04.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 31.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-04-thumb.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-04.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 5.2,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-05-400.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-05.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 13.5,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-05-640.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-05.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 25.5,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-05-800.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-05.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 31.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-05-thumb.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-05.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 5.6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-06-400.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-06.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 8.2,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-06-640.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-06.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 15,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-06-800.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-06.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 18.5,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mist-blower-15hp-06-thumb.webp",
+      "src": "assets/img/products/duru-mist-blower-15hp-06.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 3.7,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mxl-01-400.webp",
+      "src": "assets/img/products/duru-mxl-01.webp",
+      "width": 400,
+      "height": 431,
+      "kb": 11.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mxl-01-640.webp",
+      "src": "assets/img/products/duru-mxl-01.webp",
+      "width": 640,
+      "height": 689,
+      "kb": 23.7,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mxl-01-800.webp",
+      "src": "assets/img/products/duru-mxl-01.webp",
+      "width": 800,
+      "height": 861,
+      "kb": 32.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mxl-01-thumb.webp",
+      "src": "assets/img/products/duru-mxl-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 3.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mxl-hgs-01-400.webp",
+      "src": "assets/img/products/duru-mxl-hgs-01.webp",
+      "width": 400,
+      "height": 408,
+      "kb": 11.6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mxl-hgs-01-640.webp",
+      "src": "assets/img/products/duru-mxl-hgs-01.webp",
+      "width": 640,
+      "height": 652,
+      "kb": 23.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mxl-hgs-01-800.webp",
+      "src": "assets/img/products/duru-mxl-hgs-01.webp",
+      "width": 800,
+      "height": 815,
+      "kb": 33,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-mxl-hgs-01-thumb.webp",
+      "src": "assets/img/products/duru-mxl-hgs-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 4.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-plus-01-400.webp",
+      "src": "assets/img/products/duru-plus-01.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 10.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-plus-01-640.webp",
+      "src": "assets/img/products/duru-plus-01.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 20.6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-plus-01-800.webp",
+      "src": "assets/img/products/duru-plus-01.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 27.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-plus-01-thumb.webp",
+      "src": "assets/img/products/duru-plus-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 4.5,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-sirt10-01-400.webp",
+      "src": "assets/img/products/duru-sirt10-01.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 16.5,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-sirt10-01-640.webp",
+      "src": "assets/img/products/duru-sirt10-01.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 31.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-sirt10-01-800.webp",
+      "src": "assets/img/products/duru-sirt10-01.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 41.7,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-sirt10-01-thumb.webp",
+      "src": "assets/img/products/duru-sirt10-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 6.6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-sirt10-02-400.webp",
+      "src": "assets/img/products/duru-sirt10-02.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 15.5,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-sirt10-02-640.webp",
+      "src": "assets/img/products/duru-sirt10-02.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 30.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-sirt10-02-800.webp",
+      "src": "assets/img/products/duru-sirt10-02.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 39.5,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-sirt10-02-thumb.webp",
+      "src": "assets/img/products/duru-sirt10-02.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 6.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-sirt10-03-400.webp",
+      "src": "assets/img/products/duru-sirt10-03.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 13.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-sirt10-03-640.webp",
+      "src": "assets/img/products/duru-sirt10-03.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 24.7,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-sirt10-03-800.webp",
+      "src": "assets/img/products/duru-sirt10-03.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 32.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-sirt10-03-thumb.webp",
+      "src": "assets/img/products/duru-sirt10-03.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 5.2,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-sirt10-04-400.webp",
+      "src": "assets/img/products/duru-sirt10-04.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 24.2,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-sirt10-04-640.webp",
+      "src": "assets/img/products/duru-sirt10-04.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 43.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-sirt10-04-800.webp",
+      "src": "assets/img/products/duru-sirt10-04.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 55.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-sirt10-04-thumb.webp",
+      "src": "assets/img/products/duru-sirt10-04.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 7.5,
+      "quality": 72,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-x10-01-400.webp",
+      "src": "assets/img/products/duru-x10-01.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 15,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-x10-01-640.webp",
+      "src": "assets/img/products/duru-x10-01.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 27.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-x10-01-800.webp",
+      "src": "assets/img/products/duru-x10-01.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 36.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-x10-01-thumb.webp",
+      "src": "assets/img/products/duru-x10-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 5.5,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-x20-01-400.webp",
+      "src": "assets/img/products/duru-x20-01.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 17.7,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-x20-01-640.webp",
+      "src": "assets/img/products/duru-x20-01.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 33.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-x20-01-800.webp",
+      "src": "assets/img/products/duru-x20-01.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 44,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-x20-01-thumb.webp",
+      "src": "assets/img/products/duru-x20-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 6.6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-x20-02-400.webp",
+      "src": "assets/img/products/duru-x20-02.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 15.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-x20-02-640.webp",
+      "src": "assets/img/products/duru-x20-02.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 30,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-x20-02-800.webp",
+      "src": "assets/img/products/duru-x20-02.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 39.6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/duru-x20-02-thumb.webp",
+      "src": "assets/img/products/duru-x20-02.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 6.5,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-20-01-400.webp",
+      "src": "assets/img/products/entosis-20-01.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 17.5,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-20-01-640.webp",
+      "src": "assets/img/products/entosis-20-01.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 33.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-20-01-800.webp",
+      "src": "assets/img/products/entosis-20-01.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 45.2,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-20-01-thumb.webp",
+      "src": "assets/img/products/entosis-20-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 6.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-20-02-400.webp",
+      "src": "assets/img/products/entosis-20-02.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 8.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-20-02-640.webp",
+      "src": "assets/img/products/entosis-20-02.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 16.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-20-02-800.webp",
+      "src": "assets/img/products/entosis-20-02.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 21.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-20-02-thumb.webp",
+      "src": "assets/img/products/entosis-20-02.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 3.6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-50-01-400.webp",
+      "src": "assets/img/products/entosis-50-01.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 14.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-50-01-640.webp",
+      "src": "assets/img/products/entosis-50-01.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 28.7,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-50-01-800.webp",
+      "src": "assets/img/products/entosis-50-01.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 38.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-50-01-thumb.webp",
+      "src": "assets/img/products/entosis-50-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 5.5,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-50-02-400.webp",
+      "src": "assets/img/products/entosis-50-02.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 12.6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-50-02-640.webp",
+      "src": "assets/img/products/entosis-50-02.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 25.5,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-50-02-800.webp",
+      "src": "assets/img/products/entosis-50-02.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 34,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-50-02-thumb.webp",
+      "src": "assets/img/products/entosis-50-02.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 4.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-01-400.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-01.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 14.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-01-640.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-01.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 29.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-01-800.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-01.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 38.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-01-thumb.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 5.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-02-400.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-02.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 11.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-02-640.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-02.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 22.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-02-800.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-02.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 29.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-02-thumb.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-02.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 4.6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-03-400.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-03.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 9.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-03-640.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-03.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 20.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-03-800.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-03.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 28.2,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-03-thumb.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-03.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 4.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-04-400.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-04.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 12.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-04-640.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-04.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 22.7,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-04-800.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-04.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 28.6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-04-thumb.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-04.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 5.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-05-400.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-05.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 33.7,
+      "quality": 77,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-05-640.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-05.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 79.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-05-800.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-05.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 76.2,
+      "quality": 72,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-05-thumb.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-05.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 9.2,
+      "quality": 62,
+      "budgetOk": false
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-06-400.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-06.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 18.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-06-640.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-06.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 34.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-06-800.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-06.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 43.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-06-thumb.webp",
+      "src": "assets/img/products/entosis-mist-blower-500l-06.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 7.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-max-50-01-400.webp",
+      "src": "assets/img/products/sera-max-50-01.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 26.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-max-50-01-640.webp",
+      "src": "assets/img/products/sera-max-50-01.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 48.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-max-50-01-800.webp",
+      "src": "assets/img/products/sera-max-50-01.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 63.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-max-50-01-thumb.webp",
+      "src": "assets/img/products/sera-max-50-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 7.7,
+      "quality": 72,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-max-50-02-400.webp",
+      "src": "assets/img/products/sera-max-50-02.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 24.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-max-50-02-640.webp",
+      "src": "assets/img/products/sera-max-50-02.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 47.6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-max-50-02-800.webp",
+      "src": "assets/img/products/sera-max-50-02.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 64.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-max-50-02-thumb.webp",
+      "src": "assets/img/products/sera-max-50-02.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 7.3,
+      "quality": 72,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-max-50-03-400.webp",
+      "src": "assets/img/products/sera-max-50-03.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 41.1,
+      "quality": 62,
+      "budgetOk": false
+    },
+    {
+      "file": "assets/img/products/sera-max-50-03-640.webp",
+      "src": "assets/img/products/sera-max-50-03.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 109.6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-max-50-03-800.webp",
+      "src": "assets/img/products/sera-max-50-03.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 107.7,
+      "quality": 62,
+      "budgetOk": false
+    },
+    {
+      "file": "assets/img/products/sera-max-50-03-thumb.webp",
+      "src": "assets/img/products/sera-max-50-03.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 13.3,
+      "quality": 62,
+      "budgetOk": false
+    },
+    {
+      "file": "assets/img/products/sera-plus-20-01-400.webp",
+      "src": "assets/img/products/sera-plus-20-01.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 17,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-plus-20-01-640.webp",
+      "src": "assets/img/products/sera-plus-20-01.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 31.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-plus-20-01-800.webp",
+      "src": "assets/img/products/sera-plus-20-01.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 42.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-plus-20-01-thumb.webp",
+      "src": "assets/img/products/sera-plus-20-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 6.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-plus-20-02-400.webp",
+      "src": "assets/img/products/sera-plus-20-02.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 9.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-plus-20-02-640.webp",
+      "src": "assets/img/products/sera-plus-20-02.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 17,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-plus-20-02-800.webp",
+      "src": "assets/img/products/sera-plus-20-02.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 21.7,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-plus-20-02-thumb.webp",
+      "src": "assets/img/products/sera-plus-20-02.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 4.6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-plus-20-03-400.webp",
+      "src": "assets/img/products/sera-plus-20-03.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 7.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-plus-20-03-640.webp",
+      "src": "assets/img/products/sera-plus-20-03.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 13.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-plus-20-03-800.webp",
+      "src": "assets/img/products/sera-plus-20-03.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 16.6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-plus-20-03-thumb.webp",
+      "src": "assets/img/products/sera-plus-20-03.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 3.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-ultra-20-01-400.webp",
+      "src": "assets/img/products/sera-ultra-20-01.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 22.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-ultra-20-01-640.webp",
+      "src": "assets/img/products/sera-ultra-20-01.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 43.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-ultra-20-01-800.webp",
+      "src": "assets/img/products/sera-ultra-20-01.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 58.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-ultra-20-01-thumb.webp",
+      "src": "assets/img/products/sera-ultra-20-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 7.8,
+      "quality": 77,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-ultra-20-02-400.webp",
+      "src": "assets/img/products/sera-ultra-20-02.webp",
+      "width": 400,
+      "height": 400,
+      "kb": 22.5,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-ultra-20-02-640.webp",
+      "src": "assets/img/products/sera-ultra-20-02.webp",
+      "width": 640,
+      "height": 640,
+      "kb": 45.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-ultra-20-02-800.webp",
+      "src": "assets/img/products/sera-ultra-20-02.webp",
+      "width": 800,
+      "height": 800,
+      "kb": 59.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/sera-ultra-20-02-thumb.webp",
+      "src": "assets/img/products/sera-ultra-20-02.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 7.6,
+      "quality": 77,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/termal-el-tipi-01-400.webp",
+      "src": "assets/img/products/termal-el-tipi-01.webp",
+      "width": 400,
+      "height": 362,
+      "kb": 8.2,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/termal-el-tipi-01-thumb.webp",
+      "src": "assets/img/products/termal-el-tipi-01.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 3.6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/products/termal-el-tipi-02-thumb.webp",
+      "src": "assets/img/products/termal-el-tipi-02.webp",
+      "width": 200,
+      "height": 200,
+      "kb": 2.2,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/belediye-ilaclama-ekipmani-secimi-cover-400.webp",
+      "src": "assets/img/blog/belediye-ilaclama-ekipmani-secimi-cover.webp",
+      "width": 400,
+      "height": 223,
+      "kb": 29.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/belediye-ilaclama-ekipmani-secimi-cover-720.webp",
+      "src": "assets/img/blog/belediye-ilaclama-ekipmani-secimi-cover.webp",
+      "width": 720,
+      "height": 402,
+      "kb": 63.2,
+      "quality": 77,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/belediye-ilaclama-ekipmani-secimi-cover-800.webp",
+      "src": "assets/img/blog/belediye-ilaclama-ekipmani-secimi-cover.webp",
+      "width": 800,
+      "height": 447,
+      "kb": 73.3,
+      "quality": 77,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/belediye-ilaclama-ekipmani-secimi-cover-1200.webp",
+      "src": "assets/img/blog/belediye-ilaclama-ekipmani-secimi-cover.webp",
+      "width": 1200,
+      "height": 670,
+      "kb": 112.6,
+      "quality": 72,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/belediye-ilaclama-neden-yetersiz-cover-400.webp",
+      "src": "assets/img/blog/belediye-ilaclama-neden-yetersiz-cover.webp",
+      "width": 400,
+      "height": 223,
+      "kb": 18.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/belediye-ilaclama-neden-yetersiz-cover-720.webp",
+      "src": "assets/img/blog/belediye-ilaclama-neden-yetersiz-cover.webp",
+      "width": 720,
+      "height": 402,
+      "kb": 45.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/belediye-ilaclama-neden-yetersiz-cover-800.webp",
+      "src": "assets/img/blog/belediye-ilaclama-neden-yetersiz-cover.webp",
+      "width": 800,
+      "height": 447,
+      "kb": 52.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/belediye-ilaclama-neden-yetersiz-cover-1200.webp",
+      "src": "assets/img/blog/belediye-ilaclama-neden-yetersiz-cover.webp",
+      "width": 1200,
+      "height": 670,
+      "kb": 90.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/duru-ulv-hikayesi-cover-400.webp",
+      "src": "assets/img/blog/duru-ulv-hikayesi-cover.webp",
+      "width": 400,
+      "height": 223,
+      "kb": 28.5,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/duru-ulv-hikayesi-cover-720.webp",
+      "src": "assets/img/blog/duru-ulv-hikayesi-cover.webp",
+      "width": 720,
+      "height": 402,
+      "kb": 66.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/duru-ulv-hikayesi-cover-800.webp",
+      "src": "assets/img/blog/duru-ulv-hikayesi-cover.webp",
+      "width": 800,
+      "height": 447,
+      "kb": 78,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/duru-ulv-hikayesi-cover-1200.webp",
+      "src": "assets/img/blog/duru-ulv-hikayesi-cover.webp",
+      "width": 1200,
+      "height": 670,
+      "kb": 111.2,
+      "quality": 77,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/kamu-alimlarinda-ce-iso-sertifikasi-cover-400.webp",
+      "src": "assets/img/blog/kamu-alimlarinda-ce-iso-sertifikasi-cover.webp",
+      "width": 400,
+      "height": 223,
+      "kb": 21.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/kamu-alimlarinda-ce-iso-sertifikasi-cover-720.webp",
+      "src": "assets/img/blog/kamu-alimlarinda-ce-iso-sertifikasi-cover.webp",
+      "width": 720,
+      "height": 402,
+      "kb": 47.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/kamu-alimlarinda-ce-iso-sertifikasi-cover-800.webp",
+      "src": "assets/img/blog/kamu-alimlarinda-ce-iso-sertifikasi-cover.webp",
+      "width": 800,
+      "height": 447,
+      "kb": 54.2,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/kamu-alimlarinda-ce-iso-sertifikasi-cover-1200.webp",
+      "src": "assets/img/blog/kamu-alimlarinda-ce-iso-sertifikasi-cover.webp",
+      "width": 1200,
+      "height": 670,
+      "kb": 91.7,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/mist-blower-ulv-pulverizator-farki-cover-400.webp",
+      "src": "assets/img/blog/mist-blower-ulv-pulverizator-farki-cover.webp",
+      "width": 400,
+      "height": 223,
+      "kb": 25,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/mist-blower-ulv-pulverizator-farki-cover-720.webp",
+      "src": "assets/img/blog/mist-blower-ulv-pulverizator-farki-cover.webp",
+      "width": 720,
+      "height": 402,
+      "kb": 68.7,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/mist-blower-ulv-pulverizator-farki-cover-800.webp",
+      "src": "assets/img/blog/mist-blower-ulv-pulverizator-farki-cover.webp",
+      "width": 800,
+      "height": 447,
+      "kb": 67.7,
+      "quality": 77,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/mist-blower-ulv-pulverizator-farki-cover-1200.webp",
+      "src": "assets/img/blog/mist-blower-ulv-pulverizator-farki-cover.webp",
+      "width": 1200,
+      "height": 670,
+      "kb": 113.8,
+      "quality": 72,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/sera-zararlilari-ulv-karsilastirma-cover-400.webp",
+      "src": "assets/img/blog/sera-zararlilari-ulv-karsilastirma-cover.webp",
+      "width": 400,
+      "height": 223,
+      "kb": 31.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/sera-zararlilari-ulv-karsilastirma-cover-720.webp",
+      "src": "assets/img/blog/sera-zararlilari-ulv-karsilastirma-cover.webp",
+      "width": 720,
+      "height": 402,
+      "kb": 66.2,
+      "quality": 77,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/sera-zararlilari-ulv-karsilastirma-cover-800.webp",
+      "src": "assets/img/blog/sera-zararlilari-ulv-karsilastirma-cover.webp",
+      "width": 800,
+      "height": 447,
+      "kb": 75.6,
+      "quality": 77,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/sera-zararlilari-ulv-karsilastirma-cover-1200.webp",
+      "src": "assets/img/blog/sera-zararlilari-ulv-karsilastirma-cover.webp",
+      "width": 1200,
+      "height": 670,
+      "kb": 112.5,
+      "quality": 72,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/sinekle-mucadele-pencere-sinekligi-yeterli-mi-cover-400.webp",
+      "src": "assets/img/blog/sinekle-mucadele-pencere-sinekligi-yeterli-mi-cover.webp",
+      "width": 400,
+      "height": 223,
+      "kb": 22.8,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/sinekle-mucadele-pencere-sinekligi-yeterli-mi-cover-720.webp",
+      "src": "assets/img/blog/sinekle-mucadele-pencere-sinekligi-yeterli-mi-cover.webp",
+      "width": 720,
+      "height": 402,
+      "kb": 53.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/sinekle-mucadele-pencere-sinekligi-yeterli-mi-cover-800.webp",
+      "src": "assets/img/blog/sinekle-mucadele-pencere-sinekligi-yeterli-mi-cover.webp",
+      "width": 800,
+      "height": 447,
+      "kb": 62.4,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/sinekle-mucadele-pencere-sinekligi-yeterli-mi-cover-1200.webp",
+      "src": "assets/img/blog/sinekle-mucadele-pencere-sinekligi-yeterli-mi-cover.webp",
+      "width": 1200,
+      "height": 670,
+      "kb": 112.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/sis-ufleme-makinesi-mist-blower-nedir-rehber-cover-400.webp",
+      "src": "assets/img/blog/sis-ufleme-makinesi-mist-blower-nedir-rehber-cover.png",
+      "width": 400,
+      "height": 223,
+      "kb": 21.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/sis-ufleme-makinesi-mist-blower-nedir-rehber-cover-720.webp",
+      "src": "assets/img/blog/sis-ufleme-makinesi-mist-blower-nedir-rehber-cover.png",
+      "width": 720,
+      "height": 401,
+      "kb": 50.5,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/sis-ufleme-makinesi-mist-blower-nedir-rehber-cover-800.webp",
+      "src": "assets/img/blog/sis-ufleme-makinesi-mist-blower-nedir-rehber-cover.png",
+      "width": 800,
+      "height": 446,
+      "kb": 57.9,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/sivrisinek-ilaclama-mikron-capi-cover-400.webp",
+      "src": "assets/img/blog/sivrisinek-ilaclama-mikron-capi-cover.webp",
+      "width": 400,
+      "height": 223,
+      "kb": 26.5,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/sivrisinek-ilaclama-mikron-capi-cover-720.webp",
+      "src": "assets/img/blog/sivrisinek-ilaclama-mikron-capi-cover.webp",
+      "width": 720,
+      "height": 402,
+      "kb": 64.5,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/sivrisinek-ilaclama-mikron-capi-cover-800.webp",
+      "src": "assets/img/blog/sivrisinek-ilaclama-mikron-capi-cover.webp",
+      "width": 800,
+      "height": 447,
+      "kb": 74.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/sivrisinek-ilaclama-mikron-capi-cover-1200.webp",
+      "src": "assets/img/blog/sivrisinek-ilaclama-mikron-capi-cover.webp",
+      "width": 1200,
+      "height": 670,
+      "kb": 110,
+      "quality": 77,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/sonbahar-sera-hasere-kontrolu-cover-400.webp",
+      "src": "assets/img/blog/sonbahar-sera-hasere-kontrolu-cover.webp",
+      "width": 400,
+      "height": 223,
+      "kb": 30,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/sonbahar-sera-hasere-kontrolu-cover-720.webp",
+      "src": "assets/img/blog/sonbahar-sera-hasere-kontrolu-cover.webp",
+      "width": 720,
+      "height": 402,
+      "kb": 65.7,
+      "quality": 77,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/sonbahar-sera-hasere-kontrolu-cover-800.webp",
+      "src": "assets/img/blog/sonbahar-sera-hasere-kontrolu-cover.webp",
+      "width": 800,
+      "height": 447,
+      "kb": 75.7,
+      "quality": 77,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/sonbahar-sera-hasere-kontrolu-cover-1200.webp",
+      "src": "assets/img/blog/sonbahar-sera-hasere-kontrolu-cover.webp",
+      "width": 1200,
+      "height": 670,
+      "kb": 112.6,
+      "quality": 67,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/ulv-cihazi-alirken-7-soru-cover-400.webp",
+      "src": "assets/img/blog/ulv-cihazi-alirken-7-soru-cover.webp",
+      "width": 400,
+      "height": 223,
+      "kb": 21.2,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/ulv-cihazi-alirken-7-soru-cover-720.webp",
+      "src": "assets/img/blog/ulv-cihazi-alirken-7-soru-cover.webp",
+      "width": 720,
+      "height": 402,
+      "kb": 46.2,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/ulv-cihazi-alirken-7-soru-cover-800.webp",
+      "src": "assets/img/blog/ulv-cihazi-alirken-7-soru-cover.webp",
+      "width": 800,
+      "height": 447,
+      "kb": 53.3,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/ulv-cihazi-alirken-7-soru-cover-1200.webp",
+      "src": "assets/img/blog/ulv-cihazi-alirken-7-soru-cover.webp",
+      "width": 1200,
+      "height": 670,
+      "kb": 84.1,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/ulv-ilaclama-nedir-cover-400.webp",
+      "src": "assets/img/blog/ulv-ilaclama-nedir-cover.webp",
+      "width": 400,
+      "height": 548,
+      "kb": 42.1,
+      "quality": 62,
+      "budgetOk": false
+    },
+    {
+      "file": "assets/img/blog/yaz-oncesi-belediye-ilaclama-hazirlik-cover-400.webp",
+      "src": "assets/img/blog/yaz-oncesi-belediye-ilaclama-hazirlik-cover.webp",
+      "width": 400,
+      "height": 223,
+      "kb": 30.6,
+      "quality": 82,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/yaz-oncesi-belediye-ilaclama-hazirlik-cover-720.webp",
+      "src": "assets/img/blog/yaz-oncesi-belediye-ilaclama-hazirlik-cover.webp",
+      "width": 720,
+      "height": 402,
+      "kb": 65.3,
+      "quality": 77,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/yaz-oncesi-belediye-ilaclama-hazirlik-cover-800.webp",
+      "src": "assets/img/blog/yaz-oncesi-belediye-ilaclama-hazirlik-cover.webp",
+      "width": 800,
+      "height": 447,
+      "kb": 75.7,
+      "quality": 77,
+      "budgetOk": true
+    },
+    {
+      "file": "assets/img/blog/yaz-oncesi-belediye-ilaclama-hazirlik-cover-1200.webp",
+      "src": "assets/img/blog/yaz-oncesi-belediye-ilaclama-hazirlik-cover.webp",
+      "width": 1200,
+      "height": 670,
+      "kb": 115.3,
+      "quality": 67,
+      "budgetOk": true
+    }
+  ],
+  "budgetExceeded": [
+    {
+      "file": "assets/img/products/entosis-mist-blower-500l-05-thumb.webp",
+      "outKb": 9.2,
+      "maxKb": 8,
+      "quality": 62
+    },
+    {
+      "file": "assets/img/products/sera-max-50-03-400.webp",
+      "outKb": 41.1,
+      "maxKb": 35,
+      "quality": 62
+    },
+    {
+      "file": "assets/img/products/sera-max-50-03-800.webp",
+      "outKb": 107.7,
+      "maxKb": 80,
+      "quality": 62
+    },
+    {
+      "file": "assets/img/products/sera-max-50-03-thumb.webp",
+      "outKb": 13.3,
+      "maxKb": 8,
+      "quality": 62
+    },
+    {
+      "file": "assets/img/blog/ulv-ilaclama-nedir-cover-400.webp",
+      "outKb": 42.1,
+      "maxKb": 35,
+      "quality": 62
+    },
+    {
+      "file": "assets/img/hero/duru-hero-720.webp",
+      "outKb": 100.8,
+      "maxKb": 70,
+      "quality": "existing"
+    },
+    {
+      "file": "assets/img/hero/duru-hero-960.webp",
+      "outKb": 153.7,
+      "maxKb": 100,
+      "quality": "existing"
+    },
+    {
+      "file": "assets/img/hero/duru-hero-1200.webp",
+      "outKb": 184.9,
+      "maxKb": 120,
+      "quality": "existing"
+    }
+  ]
+}

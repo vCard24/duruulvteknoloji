@@ -6,7 +6,7 @@
       "ad_tr": "Duru HD50",
       "model_kodu": "HD-50",
       "kisa_aciklama_tr": "50 L tank, 3.5–5 kW 220V, araç üzeri kompakt ULV",
-      "gorsel": "assets/img/products/duru-hd50-01.jpg",
+      "gorsel": "assets/img/products/duru-hd50-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
@@ -85,7 +85,7 @@
       "ad_tr": "Duru HD5",
       "model_kodu": "HD-5",
       "kisa_aciklama_tr": "5 L tank, 2200 W, el tipi ULV",
-      "gorsel": "assets/img/products/duru-hd5-01.jpg",
+      "gorsel": "assets/img/products/duru-hd5-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
@@ -172,7 +172,7 @@
       "ad_tr": "Duru X20",
       "model_kodu": "X-20",
       "kisa_aciklama_tr": "20 L tank, 4000 W, oynar başlıklı el tipi ULV",
-      "gorsel": "assets/img/products/duru-x20-01.jpg",
+      "gorsel": "assets/img/products/duru-x20-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
@@ -263,7 +263,7 @@
       "ad_tr": "Duru Mist Blower 15HP (400L)",
       "model_kodu": "DMB-15HP-400",
       "kisa_aciklama_tr": "400 L tank, 15 HP motor, araç üzeri profesyonel mist blower",
-      "gorsel": "assets/img/products/duru-mist-blower-15hp-01.jpg",
+      "gorsel": "assets/img/products/duru-mist-blower-15hp-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
@@ -350,7 +350,7 @@
       "ad_tr": "Duru HD1800",
       "model_kodu": "HD-1800",
       "kisa_aciklama_tr": "100 L tank, 18 hp, araç üzeri ULV",
-      "gorsel": "assets/img/products/duru-hd1800-01.jpg",
+      "gorsel": "assets/img/products/duru-hd1800-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
@@ -425,7 +425,7 @@
       "ad_tr": "Duru HD75",
       "model_kodu": "HD-75",
       "kisa_aciklama_tr": "100 L tank, 10 kW 220V, araç üzeri ULV",
-      "gorsel": "assets/img/products/duru-hd75-01.jpg",
+      "gorsel": "assets/img/products/duru-hd75-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
@@ -512,7 +512,7 @@
       "ad_tr": "Entosis Mist Blower (500L)",
       "model_kodu": "EMB-500",
       "kisa_aciklama_tr": "500 L tank, joystick kumanda, 6+1 nozul, 35 mikron ULV",
-      "gorsel": "assets/img/products/entosis-mist-blower-500l-01.jpg",
+      "gorsel": "assets/img/products/entosis-mist-blower-500l-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
@@ -635,7 +635,7 @@
       "ad_tr": "Entosis 50",
       "model_kodu": "ENT-50",
       "kisa_aciklama_tr": "50 L tank, 4400 W, fanlı sera ULV",
-      "gorsel": "assets/img/products/entosis-50-01.jpg",
+      "gorsel": "assets/img/products/entosis-50-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "U.L.V Motor",
@@ -718,7 +718,7 @@
       "ad_tr": "Sera Max 50",
       "model_kodu": "SMX-50",
       "kisa_aciklama_tr": "100 L tank (25×4), 8800 W, 4 başlıklı fanlı sera ULV",
-      "gorsel": "assets/img/products/sera-max-50-01.jpg",
+      "gorsel": "assets/img/products/sera-max-50-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
@@ -813,7 +813,7 @@
       "ad_tr": "Sera Ultra 20",
       "model_kodu": "SULTRA-20",
       "kisa_aciklama_tr": "48 L tank, ~4000 W, fanlı sera ULV",
-      "gorsel": "assets/img/products/sera-ultra-20-01.jpg",
+      "gorsel": "assets/img/products/sera-ultra-20-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
@@ -904,7 +904,7 @@
       "ad_tr": "Entosis 20",
       "model_kodu": "ENT-20",
       "kisa_aciklama_tr": "20 L tank, 4400 W, 2 başlıklı fanlı sera ULV",
-      "gorsel": "assets/img/products/entosis-20-01.jpg",
+      "gorsel": "assets/img/products/entosis-20-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
@@ -991,7 +991,7 @@
       "ad_tr": "Sera Plus 20",
       "model_kodu": "SPL-20",
       "kisa_aciklama_tr": "20 L tank, 2800 W, sera ULV",
-      "gorsel": "assets/img/products/sera-plus-20-01.jpg",
+      "gorsel": "assets/img/products/sera-plus-20-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
@@ -1070,7 +1070,7 @@
       "ad_tr": "Duru SRT 10",
       "model_kodu": "SRT-10",
       "kisa_aciklama_tr": "10 L tank, 2200 W elektrik, sırt tipi ULV",
-      "gorsel": "assets/img/products/duru-sirt10-01.jpg",
+      "gorsel": "assets/img/products/duru-sirt10-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
@@ -1157,7 +1157,7 @@
       "ad_tr": "Duru HR5",
       "model_kodu": "HR-5",
       "kisa_aciklama_tr": "5 L tank, 2200 W, hortumlu el tipi ULV",
-      "gorsel": "assets/img/products/duru-hr5-01.jpg",
+      "gorsel": "assets/img/products/duru-hr5-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
@@ -1240,7 +1240,7 @@
       "ad_tr": "Duru Max5",
       "model_kodu": "MAX-5",
       "kisa_aciklama_tr": "5 L tank, 2200 W, oynar başlıklı el tipi ULV",
-      "gorsel": "assets/img/products/duru-max5-01.jpg",
+      "gorsel": "assets/img/products/duru-max5-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
@@ -1339,7 +1339,7 @@
       "ad_tr": "Duru Plus 3\"",
       "model_kodu": "PLUS-3\"",
       "kisa_aciklama_tr": "3 L tank, 1300 W, 3 inch mini el tipi ULV",
-      "gorsel": "assets/img/products/duru-plus-01.jpg",
+      "gorsel": "assets/img/products/duru-plus-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
@@ -1422,7 +1422,7 @@
       "ad_tr": "Duru X10",
       "model_kodu": "X-10",
       "kisa_aciklama_tr": "10 L tank, 2200 W, el tipi ULV",
-      "gorsel": "assets/img/products/duru-x10-01.jpg",
+      "gorsel": "assets/img/products/duru-x10-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
@@ -1501,7 +1501,7 @@
       "ad_tr": "Duru Max10",
       "model_kodu": "MAX-10",
       "kisa_aciklama_tr": "10 L tank, 2200 W, oynar başlıklı el tipi ULV",
-      "gorsel": "assets/img/products/duru-max10-01.jpg",
+      "gorsel": "assets/img/products/duru-max10-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "Motor",

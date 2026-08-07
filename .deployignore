@@ -1,0 +1,29 @@
+# Deploy exclude — FTP / rsync / DeployHQ / benzeri araçlar.
+# Hostinger Git deploy: sources/ zaten .gitignore'da; hPanel
+# "Exclude files" alanına da aynı kalıpları ekleyin.
+
+sources
+sources/**
+
+# Geliştirme / örnek / bağımlılık
+emergent
+emergent/**
+node_modules
+node_modules/**
+.git
+.git/**
+
+# Gizli / yerel
+.env
+.env.*
+api/config.php
+api/outbox
+api/outbox/**
+api/mail-error.log
+
+# Araç çıktıları / promptlar (yayına gerekmez)
+scripts/_image-optimize-report.json
+scripts/_validate-image-refs.js
+scripts/_compare-source-vs-webp.js
+perf-audit-report.md
+cursor-gorsel-optimizasyon-promptu.md

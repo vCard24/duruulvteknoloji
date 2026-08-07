@@ -1,0 +1,14 @@
+# Hostinger hPanel → Advanced → Git → Exclude files
+# (Her satır bir kalıp; UI alanına kopyalanabilir)
+
+sources/
+sources/**
+emergent/
+emergent/**
+node_modules/
+.git/
+.env
+.env.*
+api/config.php
+api/outbox/
+api/mail-error.log

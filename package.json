@@ -4,6 +4,7 @@
   "scripts": {
     "build:css": "node scripts/build-css.js",
     "optimize-hero": "node scripts/optimize-hero-images.js",
+    "optimize-images": "node scripts/optimize-responsive-images.js",
     "build:pages": "node scripts/build-css.js && node scripts/generate-site-pages.js && node scripts/generate-pages.js && node scripts/integrate-seo-content.js"
   },
   "devDependencies": {

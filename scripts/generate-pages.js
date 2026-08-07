@@ -24,20 +24,23 @@ const productSeo = fs.existsSync(PRODUCT_SEO_PATH)
   ? JSON.parse(fs.readFileSync(PRODUCT_SEO_PATH, 'utf8'))
   : {};
 
-function productImageAlt(slug, index) {
+const PRODUCTS_IMG_DIR = path.join(ROOT, 'assets', 'img', 'products');
+const imageDimCache = new Map();
+
+function productImageFileName(slug, index) {
   const files = imageManifest[slug];
-  const fileName = files && files[index - 1]
+  return files && files[index - 1]
     ? files[index - 1]
     : `${slug}-${String(index).padStart(2, '0')}.webp`;
-  return imageAlts[fileName] || '';
+}
+
+function productImageAlt(slug, index) {
+  const fileName = productImageFileName(slug, index);
+  return imageAlts[fileName] || imageAlts[fileName.replace(/\.webp$/i, '-thumb.webp')] || '';
 }
 
 function productImageSrc(slug, index, prefix) {
-  const files = imageManifest[slug];
-  const fileName = files && files[index - 1]
-    ? files[index - 1]
-    : `${slug}-${String(index).padStart(2, '0')}.webp`;
-  return `${prefix}assets/img/products/${fileName}`;
+  return `${prefix}assets/img/products/${productImageFileName(slug, index)}`;
 }
 
 function productImageCount(slug) {
@@ -46,6 +49,71 @@ function productImageCount(slug) {
 
 function hasProductImages(slug) {
   return productImageCount(slug) > 0;
+}
+
+function productStem(fileName) {
+  return String(fileName).replace(/\.webp$/i, '');
+}
+
+function productVariantExists(fileName) {
+  return fs.existsSync(path.join(PRODUCTS_IMG_DIR, fileName));
+}
+
+/** Mevcut genişlik varyantları + thumb; orijinal her zaman fallback. */
+function productVariantSet(fileName) {
+  const stem = productStem(fileName);
+  const widths = [400, 640, 800, 1200].filter((w) => productVariantExists(`${stem}-${w}.webp`));
+  const thumb = productVariantExists(`${stem}-thumb.webp`) ? `${stem}-thumb.webp` : null;
+  return { stem, fileName, widths, thumb };
+}
+
+function productPublicPath(fileName, prefix) {
+  return `${prefix}assets/img/products/${fileName}`;
+}
+
+function productSrcset(fileName, prefix, widths) {
+  const stem = productStem(fileName);
+  return widths.map((w) => `${productPublicPath(`${stem}-${w}.webp`, prefix)} ${w}w`).join(', ');
+}
+
+function productLargestFile(fileName, widths) {
+  if (widths.length) {
+    const max = widths[widths.length - 1];
+    return `${productStem(fileName)}-${max}.webp`;
+  }
+  return fileName;
+}
+
+function productDisplayFile(fileName, preferredWidth, widths) {
+  if (widths.includes(preferredWidth)) {
+    return `${productStem(fileName)}-${preferredWidth}.webp`;
+  }
+  const under = widths.filter((w) => w <= preferredWidth);
+  if (under.length) return `${productStem(fileName)}-${under[under.length - 1]}.webp`;
+  if (widths.length) return `${productStem(fileName)}-${widths[0]}.webp`;
+  return fileName;
+}
+
+const PRODUCT_DIMS_PATH = path.join(ROOT, 'assets', 'data', 'product-image-dims.json');
+const productDimsFile = fs.existsSync(PRODUCT_DIMS_PATH)
+  ? JSON.parse(fs.readFileSync(PRODUCT_DIMS_PATH, 'utf8'))
+  : {};
+
+function productImageDims(fileName) {
+  if (imageDimCache.has(fileName)) return imageDimCache.get(fileName);
+  const hit = productDimsFile[fileName];
+  const dims = hit
+    ? { width: hit.width, height: hit.height }
+    : { width: 1000, height: 1000 };
+  imageDimCache.set(fileName, dims);
+  return dims;
+}
+
+function scaledDims(fileName, displayWidth) {
+  const d = productImageDims(fileName);
+  const w = Math.min(displayWidth, d.width || displayWidth);
+  const h = d.width ? Math.round((d.height / d.width) * w) : displayWidth;
+  return { width: w, height: h || displayWidth };
 }
 
 const FAQS_FALLBACK = [
@@ -146,10 +214,18 @@ function productCard(p, linkPrefix, comparePage) {
 }
 
 function productCardFixed(p, assetPrefix, pagePrefix, comparePage) {
-  const img = productImageSrc(p.slug, 1, assetPrefix);
+  const baseFile = productImageFileName(p.slug, 1);
+  const variants = productVariantSet(baseFile);
+  const cardWidths = variants.widths.filter((w) => w === 400 || w === 800);
+  const displayFile = productDisplayFile(baseFile, 400, cardWidths.length ? cardWidths : variants.widths);
+  const img = productPublicPath(displayFile, assetPrefix);
+  const srcset = cardWidths.length
+    ? productSrcset(baseFile, assetPrefix, cardWidths)
+    : (variants.widths.length ? productSrcset(baseFile, assetPrefix, variants.widths) : '');
+  const dims = scaledDims(displayFile, 400);
   const imageClass = hasProductImages(p.slug) ? 'product-card__image' : 'product-card__image img-placeholder';
   const imgTag = hasProductImages(p.slug)
-    ? `<img src="${img}" alt="${esc(p.ad_tr)}" loading="lazy">`
+    ? `<img src="${img}"${srcset ? ` srcset="${srcset}"` : ''} sizes="(max-width:767px) 100vw, (max-width:1024px) 50vw, 390px" width="${dims.width}" height="${dims.height}" alt="${esc(p.ad_tr)}" loading="lazy" decoding="async">`
     : `<img src="${img}" alt="${esc(p.ad_tr)}" loading="lazy" style="display:none">`;
   return `          <article class="product-card lift-card">
             <a href="${pagePrefix}${p.slug}/index.html" class="${imageClass}">
@@ -192,10 +268,18 @@ function generateProductPage(product) {
   const relatedHtml = related.length
     ? related
         .map((p) => {
-          const relImg = productImageSrc(p.slug, 1, prefix);
+          const baseFile = productImageFileName(p.slug, 1);
+          const variants = productVariantSet(baseFile);
+          const cardWidths = variants.widths.filter((w) => w === 400 || w === 800);
+          const displayFile = productDisplayFile(baseFile, 400, cardWidths.length ? cardWidths : variants.widths);
+          const relImg = productPublicPath(displayFile, prefix);
+          const srcset = cardWidths.length
+            ? productSrcset(baseFile, prefix, cardWidths)
+            : (variants.widths.length ? productSrcset(baseFile, prefix, variants.widths) : '');
+          const dims = scaledDims(displayFile, 400);
           const relImageClass = hasProductImages(p.slug) ? 'product-card__image' : 'product-card__image img-placeholder';
           const relImgTag = hasProductImages(p.slug)
-            ? `<img src="${relImg}" alt="${esc(p.ad_tr)}" loading="lazy">`
+            ? `<img src="${relImg}"${srcset ? ` srcset="${srcset}"` : ''} sizes="(max-width:767px) 100vw, (max-width:1024px) 50vw, 390px" width="${dims.width}" height="${dims.height}" alt="${esc(p.ad_tr)}" loading="lazy" decoding="async">`
             : '';
           return `          <article class="product-card lift-card">
             <a href="../${p.slug}/index.html" class="${relImageClass}">${relImgTag}</a>
@@ -212,15 +296,35 @@ function generateProductPage(product) {
 
   const thumbs = Array.from({ length: imageCount }, (_, i) => i + 1)
     .map((n, i) => {
-      const src = productImageSrc(product.slug, n, prefix);
+      const baseFile = productImageFileName(product.slug, n);
+      const variants = productVariantSet(baseFile);
+      const galleryWidths = variants.widths.filter((w) => w === 640 || w === 1200);
+      const srcsetWidths = galleryWidths.length ? galleryWidths : variants.widths;
+      const fullFile = productLargestFile(baseFile, srcsetWidths.length ? srcsetWidths : variants.widths);
+      const fullSrc = productPublicPath(fullFile, prefix);
+      const srcset = srcsetWidths.length ? productSrcset(baseFile, prefix, srcsetWidths) : '';
+      const thumbFile = variants.thumb || baseFile;
+      const thumbSrc = productPublicPath(thumbFile, prefix);
       const alt = productImageAlt(product.slug, n) || `${product.ad_tr} — görsel ${n}`;
-      return `<button type="button" class="product-gallery__thumb${i === 0 ? ' is-active' : ''}" data-gallery-thumb data-src="${src}" data-alt="${esc(alt)}" aria-label="Görsel ${n}"><img src="${src}" alt="${esc(alt)}" loading="lazy"></button>`;
+      return `<button type="button" class="product-gallery__thumb${i === 0 ? ' is-active' : ''}" data-gallery-thumb data-src="${fullSrc}"${srcset ? ` data-srcset="${srcset}"` : ''} data-alt="${esc(alt)}" aria-label="Görsel ${n}"><img src="${thumbSrc}" width="90" height="90" alt="" loading="lazy" decoding="async"></button>`;
     })
     .join('\n            ');
 
+  const mainBase = productImageFileName(product.slug, 1);
+  const mainVariants = productVariantSet(mainBase);
+  const mainGalleryWidths = mainVariants.widths.filter((w) => w === 640 || w === 1200);
+  const mainSrcsetWidths = mainGalleryWidths.length ? mainGalleryWidths : mainVariants.widths;
+  const mainDisplayFile = productDisplayFile(mainBase, 640, mainSrcsetWidths.length ? mainSrcsetWidths : mainVariants.widths);
+  const mainSrc = productPublicPath(mainDisplayFile, prefix);
+  const mainSrcset = mainSrcsetWidths.length ? productSrcset(mainBase, prefix, mainSrcsetWidths) : '';
+  const mainDims = scaledDims(mainDisplayFile, 640);
   const mainImageClass = hasProductImages(product.slug) ? 'product-gallery__main' : 'product-gallery__main img-placeholder';
-  const mainSrc = productImageSrc(product.slug, 1, prefix);
   const mainAlt = productImageAlt(product.slug, 1) || product.ad_tr;
+  const mainSizes = '(max-width: 1024px) 100vw, 640px';
+  const preloadTag = hasProductImages(product.slug)
+    ? `  <link rel="preload" as="image" type="image/webp" href="${mainSrc}"${mainSrcset ? ` imagesrcset="${mainSrcset}"` : ''} imagesizes="${mainSizes}" fetchpriority="high">\n`
+    : '';
+  const ogDims = productImageDims(mainBase);
   const canonicalRel = `urunler/${product.kategori_slug}/${product.slug}/index.html`;
   const pageTitle = `${product.ad_tr} — Duru ULV`;
   const pageDesc = `${product.ad_tr} — ${product.kisa_aciklama_tr}. Duru ULV ${cat.kisa_ad} ilaçlama makinesi.`;
@@ -231,6 +335,8 @@ function generateProductPage(product) {
     ogType: 'product',
     ogImage: productOgImageUrl(product.slug, imageManifest),
     ogImageAlt: mainAlt,
+    ogImageWidth: ogDims.width || 1200,
+    ogImageHeight: ogDims.height || 630,
   });
   const productSchema = productSchemaJson(
     product,
@@ -252,7 +358,7 @@ function generateProductPage(product) {
 ${seoBlock}
   <script type="application/ld+json">${productSchema}</script>${faqSchemaTag}
   <link rel="icon" href="${prefix}assets/img/duru-icon.svg" type="image/svg+xml">
-${renderHeadAssets(prefix)}
+${preloadTag}${renderHeadAssets(prefix)}
 </head>
 <body>
 
@@ -274,7 +380,7 @@ ${header(prefix, product.slug)}
       <div class="container product-detail__grid">
         <div data-product-gallery>
           <div class="${mainImageClass}">
-            <img data-gallery-main src="${mainSrc}" alt="${esc(mainAlt)}">
+            <img data-gallery-main src="${mainSrc}"${mainSrcset ? ` srcset="${mainSrcset}"` : ''} sizes="${mainSizes}" width="${mainDims.width}" height="${mainDims.height}" fetchpriority="high" decoding="async" alt="${esc(mainAlt)}">
           </div>
           <div class="product-gallery__thumbs">
             ${thumbs}
@@ -502,10 +608,18 @@ function generateProductsIndex() {
   const allCards = data.urunler
     .map((p) => {
       const cat = getCategory(p.kategori_slug);
-      const img = productImageSrc(p.slug, 1, prefix);
+      const baseFile = productImageFileName(p.slug, 1);
+      const variants = productVariantSet(baseFile);
+      const cardWidths = variants.widths.filter((w) => w === 400 || w === 800);
+      const displayFile = productDisplayFile(baseFile, 400, cardWidths.length ? cardWidths : variants.widths);
+      const img = productPublicPath(displayFile, prefix);
+      const srcset = cardWidths.length
+        ? productSrcset(baseFile, prefix, cardWidths)
+        : (variants.widths.length ? productSrcset(baseFile, prefix, variants.widths) : '');
+      const dims = scaledDims(displayFile, 400);
       const imageClass = hasProductImages(p.slug) ? 'product-card__image' : 'product-card__image img-placeholder';
       const imgTag = hasProductImages(p.slug)
-        ? `<img src="${img}" alt="${esc(p.ad_tr)}" loading="lazy">`
+        ? `<img src="${img}"${srcset ? ` srcset="${srcset}"` : ''} sizes="(max-width:767px) 100vw, (max-width:1024px) 50vw, 390px" width="${dims.width}" height="${dims.height}" alt="${esc(p.ad_tr)}" loading="lazy" decoding="async">`
         : `<img src="${img}" alt="${esc(p.ad_tr)}" loading="lazy" style="display:none">`;
       return `          <article class="product-card lift-card">
             <a href="${p.kategori_slug}/${p.slug}/index.html" class="${imageClass}">

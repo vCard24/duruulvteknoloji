@@ -1,0 +1,1058 @@
+{
+  "duru-dmxl-01-400.webp": {
+    "width": 400,
+    "height": 371
+  },
+  "duru-dmxl-01-640.webp": {
+    "width": 640,
+    "height": 594
+  },
+  "duru-dmxl-01-800.webp": {
+    "width": 800,
+    "height": 743
+  },
+  "duru-dmxl-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-dmxl-01.webp": {
+    "width": 1024,
+    "height": 951
+  },
+  "duru-hd1800-01-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hd1800-01-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hd1800-01-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hd1800-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hd1800-01.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-hd1800-02-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hd1800-02-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hd1800-02-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hd1800-02-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hd1800-02.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-hd1800-03-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hd1800-03-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hd1800-03-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hd1800-03-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hd1800-03.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-hd5-01-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hd5-01-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hd5-01-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hd5-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hd5-01.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-hd5-02-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hd5-02-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hd5-02-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hd5-02-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hd5-02.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-hd5-03-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hd5-03-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hd5-03-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hd5-03-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hd5-03.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-hd50-01-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hd50-01-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hd50-01-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hd50-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hd50-01.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-hd50-02-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hd50-02-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hd50-02-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hd50-02-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hd50-02.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-hd75-01-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hd75-01-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hd75-01-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hd75-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hd75-01.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-hd75-02-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hd75-02-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hd75-02-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hd75-02-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hd75-02.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-hr5-01-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hr5-01-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hr5-01-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hr5-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hr5-01.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-hr5-02-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-hr5-02-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-hr5-02-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-hr5-02-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-hr5-02.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-k100-01-400.webp": {
+    "width": 400,
+    "height": 267
+  },
+  "duru-k100-01-640.webp": {
+    "width": 640,
+    "height": 427
+  },
+  "duru-k100-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-k100-01.webp": {
+    "width": 768,
+    "height": 512
+  },
+  "duru-max10-01-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-max10-01-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-max10-01-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-max10-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-max10-01.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-max10-02-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-max10-02-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-max10-02-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-max10-02-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-max10-02.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-max5-01-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-max5-01-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-max5-01-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-max5-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-max5-01.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-max5-02-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-max5-02-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-max5-02-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-max5-02-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-max5-02.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-mist-blower-15hp-01-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-mist-blower-15hp-01-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-mist-blower-15hp-01-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-mist-blower-15hp-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-mist-blower-15hp-01.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-mist-blower-15hp-02-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-mist-blower-15hp-02-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-mist-blower-15hp-02-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-mist-blower-15hp-02-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-mist-blower-15hp-02.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-mist-blower-15hp-03-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-mist-blower-15hp-03-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-mist-blower-15hp-03-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-mist-blower-15hp-03-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-mist-blower-15hp-03.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-mist-blower-15hp-04-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-mist-blower-15hp-04-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-mist-blower-15hp-04-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-mist-blower-15hp-04-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-mist-blower-15hp-04.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-mist-blower-15hp-05-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-mist-blower-15hp-05-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-mist-blower-15hp-05-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-mist-blower-15hp-05-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-mist-blower-15hp-05.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-mist-blower-15hp-06-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-mist-blower-15hp-06-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-mist-blower-15hp-06-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-mist-blower-15hp-06-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-mist-blower-15hp-06.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-mxl-01-400.webp": {
+    "width": 400,
+    "height": 431
+  },
+  "duru-mxl-01-640.webp": {
+    "width": 640,
+    "height": 689
+  },
+  "duru-mxl-01-800.webp": {
+    "width": 800,
+    "height": 861
+  },
+  "duru-mxl-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-mxl-01.webp": {
+    "width": 951,
+    "height": 1024
+  },
+  "duru-mxl-hgs-01-400.webp": {
+    "width": 400,
+    "height": 408
+  },
+  "duru-mxl-hgs-01-640.webp": {
+    "width": 640,
+    "height": 652
+  },
+  "duru-mxl-hgs-01-800.webp": {
+    "width": 800,
+    "height": 815
+  },
+  "duru-mxl-hgs-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-mxl-hgs-01.webp": {
+    "width": 1005,
+    "height": 1024
+  },
+  "duru-plus-01-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-plus-01-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-plus-01-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-plus-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-plus-01.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-sirt10-01-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-sirt10-01-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-sirt10-01-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-sirt10-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-sirt10-01.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-sirt10-02-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-sirt10-02-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-sirt10-02-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-sirt10-02-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-sirt10-02.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-sirt10-03-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-sirt10-03-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-sirt10-03-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-sirt10-03-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-sirt10-03.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-sirt10-04-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-sirt10-04-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-sirt10-04-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-sirt10-04-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-sirt10-04.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-x10-01-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-x10-01-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-x10-01-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-x10-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-x10-01.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-x20-01-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-x20-01-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-x20-01-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-x20-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-x20-01.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "duru-x20-02-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "duru-x20-02-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "duru-x20-02-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "duru-x20-02-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "duru-x20-02.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "entosis-20-01-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "entosis-20-01-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "entosis-20-01-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "entosis-20-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "entosis-20-01.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "entosis-20-02-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "entosis-20-02-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "entosis-20-02-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "entosis-20-02-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "entosis-20-02.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "entosis-50-01-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "entosis-50-01-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "entosis-50-01-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "entosis-50-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "entosis-50-01.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "entosis-50-02-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "entosis-50-02-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "entosis-50-02-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "entosis-50-02-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "entosis-50-02.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "entosis-mist-blower-500l-01-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "entosis-mist-blower-500l-01-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "entosis-mist-blower-500l-01-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "entosis-mist-blower-500l-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "entosis-mist-blower-500l-01.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "entosis-mist-blower-500l-02-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "entosis-mist-blower-500l-02-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "entosis-mist-blower-500l-02-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "entosis-mist-blower-500l-02-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "entosis-mist-blower-500l-02.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "entosis-mist-blower-500l-03-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "entosis-mist-blower-500l-03-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "entosis-mist-blower-500l-03-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "entosis-mist-blower-500l-03-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "entosis-mist-blower-500l-03.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "entosis-mist-blower-500l-04-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "entosis-mist-blower-500l-04-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "entosis-mist-blower-500l-04-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "entosis-mist-blower-500l-04-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "entosis-mist-blower-500l-04.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "entosis-mist-blower-500l-05-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "entosis-mist-blower-500l-05-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "entosis-mist-blower-500l-05-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "entosis-mist-blower-500l-05-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "entosis-mist-blower-500l-05.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "entosis-mist-blower-500l-06-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "entosis-mist-blower-500l-06-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "entosis-mist-blower-500l-06-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "entosis-mist-blower-500l-06-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "entosis-mist-blower-500l-06.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "sera-max-50-01-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "sera-max-50-01-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "sera-max-50-01-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "sera-max-50-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "sera-max-50-01.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "sera-max-50-02-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "sera-max-50-02-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "sera-max-50-02-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "sera-max-50-02-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "sera-max-50-02.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "sera-max-50-03-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "sera-max-50-03-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "sera-max-50-03-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "sera-max-50-03-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "sera-max-50-03.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "sera-plus-20-01-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "sera-plus-20-01-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "sera-plus-20-01-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "sera-plus-20-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "sera-plus-20-01.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "sera-plus-20-02-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "sera-plus-20-02-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "sera-plus-20-02-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "sera-plus-20-02-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "sera-plus-20-02.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "sera-plus-20-03-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "sera-plus-20-03-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "sera-plus-20-03-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "sera-plus-20-03-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "sera-plus-20-03.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "sera-ultra-20-01-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "sera-ultra-20-01-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "sera-ultra-20-01-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "sera-ultra-20-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "sera-ultra-20-01.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "sera-ultra-20-02-400.webp": {
+    "width": 400,
+    "height": 400
+  },
+  "sera-ultra-20-02-640.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "sera-ultra-20-02-800.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "sera-ultra-20-02-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "sera-ultra-20-02.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "termal-el-tipi-01-400.webp": {
+    "width": 400,
+    "height": 362
+  },
+  "termal-el-tipi-01-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "termal-el-tipi-01.webp": {
+    "width": 547,
+    "height": 495
+  },
+  "termal-el-tipi-02-thumb.webp": {
+    "width": 200,
+    "height": 200
+  },
+  "termal-el-tipi-02.webp": {
+    "width": 300,
+    "height": 298
+  }
+}

@@ -589,6 +589,12 @@ function updateProductPage(product, data) {
   const imageManifest = JSON.parse(
     fs.readFileSync(path.join(DATA_DIR, 'product-images.json'), 'utf8')
   );
+  const dimsMap = fs.existsSync(path.join(DATA_DIR, 'product-image-dims.json'))
+    ? JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'product-image-dims.json'), 'utf8'))
+    : {};
+  const ogFile =
+    (imageManifest[product.slug] && imageManifest[product.slug][0]) || `${product.slug}-01.webp`;
+  const ogDims = dimsMap[ogFile] || {};
   const seoBlock = renderSeoHead({
     title,
     description: data.meta.metaDescription,
@@ -596,6 +602,8 @@ function updateProductPage(product, data) {
     ogType: 'product',
     ogImage: productOgImageUrl(product.slug, imageManifest),
     ogImageAlt: data.meta.imageAlt || product.ad_tr,
+    ogImageWidth: ogDims.width || 1200,
+    ogImageHeight: ogDims.height || 630,
     keywords: keywords || undefined,
   });
   html = injectSeoHead(html, seoBlock);
@@ -642,9 +650,17 @@ function blogListHref(filePath) {
 }
 
 function blogCoverHtml(slug, prefix, alt) {
-  const base = `${prefix}assets/img/blog/${slug}-cover`;
+  const dir = path.join(ROOT, 'assets', 'img', 'blog');
+  const stem = `${slug}-cover`;
+  const widths = [720, 1200].filter((w) => fs.existsSync(path.join(dir, `${stem}-${w}.webp`)));
+  const fallbackExt = ['webp', 'png', 'jpg'].find((ext) => fs.existsSync(path.join(dir, `${stem}.${ext}`)));
+  const srcFile = widths.includes(720)
+    ? `${stem}-720.webp`
+    : (widths.length ? `${stem}-${widths[0]}.webp` : `${stem}.${fallbackExt || 'webp'}`);
+  const src = `${prefix}assets/img/blog/${srcFile}`;
+  const srcset = widths.map((w) => `${prefix}assets/img/blog/${stem}-${w}.webp ${w}w`).join(', ');
   return `<div class="blog-cover" data-blog-cover>
-          <img src="${base}.webp" alt="${esc(alt)}" class="blog-cover__img" width="1200" height="675" loading="eager"
+          <img src="${src}"${srcset ? ` srcset="${srcset}"` : ''} sizes="(max-width: 900px) 100vw, 720px" alt="${esc(alt)}" class="blog-cover__img" width="720" height="405" loading="eager" decoding="async"
             onerror="this.onerror=null;this.parentElement.classList.add('is-empty');this.remove();">
           <div class="blog-cover__placeholder">
             <span class="blog-cover__hint">Kapak görseli: assets/img/blog/${slug}-cover.webp</span>
@@ -653,11 +669,18 @@ function blogCoverHtml(slug, prefix, alt) {
 }
 
 function blogFigureHtml(slug, suffix, prefix, alt, variant) {
-  const src = `${prefix}assets/img/blog/${slug}-${suffix}.webp`;
+  const dir = path.join(ROOT, 'assets', 'img', 'blog');
+  const stem = `${slug}-${suffix}`;
+  const widths = [720, 1200].filter((w) => fs.existsSync(path.join(dir, `${stem}-${w}.webp`)));
+  const srcFile = widths.includes(720)
+    ? `${stem}-720.webp`
+    : (widths.length ? `${stem}-${widths[0]}.webp` : `${stem}.webp`);
+  const src = `${prefix}assets/img/blog/${srcFile}`;
+  const srcset = widths.map((w) => `${prefix}assets/img/blog/${stem}-${w}.webp ${w}w`).join(', ');
   const mod = variant === 'detail' ? 'detail' : 'featured';
   return `<figure class="blog-figure blog-figure--${mod}">
           <div class="blog-figure__frame">
-            <img src="${src}" alt="${esc(alt)}" class="blog-figure__img" width="960" height="540" loading="lazy">
+            <img src="${src}"${srcset ? ` srcset="${srcset}"` : ''} sizes="(max-width: 900px) 100vw, 720px" alt="${esc(alt)}" class="blog-figure__img" width="720" height="405" loading="lazy" decoding="async">
           </div>
           <figcaption class="blog-figure__caption">${esc(alt)}</figcaption>
         </figure>`;
@@ -679,10 +702,17 @@ function blogFooterImageHtml(slug, prefix) {
 }
 
 function blogCardMediaHtml(slug, prefix, postHref, alt) {
+  const dir = path.join(ROOT, 'assets', 'img', 'blog');
+  const stem = `${slug}-cover`;
+  const widths = [400, 800].filter((w) => fs.existsSync(path.join(dir, `${stem}-${w}.webp`)));
   const file = blogAssetPath(slug, 'cover');
-  const src = `${prefix}assets/img/blog/${file}`;
+  const srcFile = widths.includes(400)
+    ? `${stem}-400.webp`
+    : (widths.length ? `${stem}-${widths[0]}.webp` : file);
+  const src = `${prefix}assets/img/blog/${srcFile}`;
+  const srcset = widths.map((w) => `${prefix}assets/img/blog/${stem}-${w}.webp ${w}w`).join(', ');
   return `            <a href="${postHref}" class="blog-card__media" tabindex="-1" aria-hidden="true">
-              <img src="${src}" alt="${esc(alt)}" class="blog-card__img" width="640" height="360" loading="lazy"
+              <img src="${src}"${srcset ? ` srcset="${srcset}"` : ''} sizes="(max-width:767px) 100vw, (max-width:1024px) 50vw, 400px" alt="${esc(alt)}" class="blog-card__img" width="400" height="225" loading="lazy" decoding="async"
                 onerror="this.onerror=null;this.parentElement.classList.add('is-empty');this.remove();">
               <div class="blog-card__placeholder">
                 <span>assets/img/blog/${slug}-cover.webp</span>

@@ -131,6 +131,12 @@
         if (mainImg && lbItems[lbIndex]) {
           mainImg.src = lbItems[lbIndex].src;
           mainImg.alt = lbItems[lbIndex].alt;
+          var syncThumb = thumbs[lbIndex];
+          if (syncThumb && syncThumb.dataset.srcset) {
+            mainImg.srcset = syncThumb.dataset.srcset;
+          } else if (mainImg) {
+            mainImg.removeAttribute('srcset');
+          }
         }
         lbGallery.dataset.galleryIndex = String(lbIndex);
       }
@@ -170,6 +176,11 @@
         var thumb = thumbs[index];
         if (!thumb || !mainImg) return;
         mainImg.src = thumb.dataset.src || mainImg.src;
+        if (thumb.dataset.srcset) {
+          mainImg.srcset = thumb.dataset.srcset;
+        } else {
+          mainImg.removeAttribute('srcset');
+        }
         mainImg.alt = thumb.dataset.alt || mainImg.alt;
         gallery.dataset.galleryIndex = String(index);
       }
