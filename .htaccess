@@ -62,11 +62,10 @@ ErrorDocument 404 /404.html
     Header set Cache-Control "public, max-age=0, s-maxage=600, stale-while-revalidate=86400"
   </FilesMatch>
 
-  # CSS / JS — hash'siz dosya adları (site.css, main.js, compare.js...)
-  # immutable YOK, bir yıl YOK. Dosya adlarını hash'lersen
-  # 31536000 + immutable'a çıkarabilirsin.
+  # CSS / JS — içerik hash'li (site.a3f9….css, main.7b4e….js).
+  # Hash'siz dosya kalmamalı; aksi halde immutable bir yıl bayat servis eder.
   <FilesMatch "\.(css|js)$">
-    Header set Cache-Control "public, max-age=604800"
+    Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
 
   # Görseller — varyantlar artık içerik hash'li, immutable güvenli.

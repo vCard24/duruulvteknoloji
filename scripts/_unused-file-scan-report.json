@@ -1,0 +1,359 @@
+{
+  "scanned": 506,
+  "A_count": 448,
+  "B_count": 33,
+  "C_count": 25,
+  "C_bytes": 262424,
+  "B": [
+    {
+      "path": ".deployignore",
+      "bytes": 610,
+      "mtime": "2026-08-07",
+      "why": "repo/deploy tooling"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 369,
+      "mtime": "2026-08-07",
+      "why": "repo/deploy tooling"
+    },
+    {
+      "path": ".htaccess",
+      "bytes": 5981,
+      "mtime": "2026-08-07",
+      "why": "repo/deploy tooling"
+    },
+    {
+      "path": "api/.htaccess",
+      "bytes": 347,
+      "mtime": "2026-06-30",
+      "why": "api/ backend"
+    },
+    {
+      "path": "api/config.example.php",
+      "bytes": 923,
+      "mtime": "2026-06-30",
+      "why": "api/ backend"
+    },
+    {
+      "path": "api/config.local-gmail.example.php",
+      "bytes": 850,
+      "mtime": "2026-06-30",
+      "why": "api/ backend"
+    },
+    {
+      "path": "api/config.php",
+      "bytes": 792,
+      "mtime": "2026-06-30",
+      "why": "api/ backend"
+    },
+    {
+      "path": "api/mail-error.log",
+      "bytes": 133,
+      "mtime": "2026-06-30",
+      "why": "api/ backend"
+    },
+    {
+      "path": "api/mail-smtp.php",
+      "bytes": 5035,
+      "mtime": "2026-06-30",
+      "why": "api/ backend"
+    },
+    {
+      "path": "api/outbox/.gitkeep",
+      "bytes": 2,
+      "mtime": "2026-06-30",
+      "why": "api/ backend"
+    },
+    {
+      "path": "api/outbox/failed-2026-06-30-080240.html",
+      "bytes": 3907,
+      "mtime": "2026-06-30",
+      "why": "api/ backend"
+    },
+    {
+      "path": "api/outbox/quote-2026-06-30-080319-Test.html",
+      "bytes": 3907,
+      "mtime": "2026-06-30",
+      "why": "api/ backend"
+    },
+    {
+      "path": "api/outbox/quote-2026-06-30-080328-Test.html",
+      "bytes": 3907,
+      "mtime": "2026-06-30",
+      "why": "api/ backend"
+    },
+    {
+      "path": "api/outbox/quote-2026-06-30-084826-mostar-bas-m.html",
+      "bytes": 13829,
+      "mtime": "2026-06-30",
+      "why": "api/ backend"
+    },
+    {
+      "path": "api/outbox/quote-2026-06-30-085242-mostar-bas-m.html",
+      "bytes": 10046,
+      "mtime": "2026-06-30",
+      "why": "api/ backend"
+    },
+    {
+      "path": "api/outbox/quote-2026-06-30-085508-mostar-bas-m.html",
+      "bytes": 12493,
+      "mtime": "2026-06-30",
+      "why": "api/ backend"
+    },
+    {
+      "path": "api/preview-quote-email.php",
+      "bytes": 2352,
+      "mtime": "2026-06-30",
+      "why": "api/ backend"
+    },
+    {
+      "path": "api/quote-email-builder.php",
+      "bytes": 14276,
+      "mtime": "2026-06-30",
+      "why": "api/ backend"
+    },
+    {
+      "path": "googled0d43f15a40df6d8.html",
+      "bytes": 53,
+      "mtime": "2026-07-01",
+      "why": "Google Search Console doğrulama dosyası"
+    },
+    {
+      "path": "hostinger-exclude.txt",
+      "bytes": 233,
+      "mtime": "2026-08-07",
+      "why": "repo/deploy tooling"
+    },
+    {
+      "path": "package.json",
+      "bytes": 659,
+      "mtime": "2026-08-07",
+      "why": "repo/deploy tooling"
+    },
+    {
+      "path": "scripts/_compare-source-vs-webp.js",
+      "bytes": 6288,
+      "mtime": "2026-08-07",
+      "why": "scripts/ build tooling"
+    },
+    {
+      "path": "scripts/_smoke-gallery-pdf.js",
+      "bytes": 1806,
+      "mtime": "2026-08-07",
+      "why": "scripts/ build tooling"
+    },
+    {
+      "path": "scripts/_unused-file-scan-check.js",
+      "bytes": 2051,
+      "mtime": "2026-08-07",
+      "why": "scripts/ build tooling"
+    },
+    {
+      "path": "scripts/_unused-file-scan-report.json",
+      "bytes": 9277,
+      "mtime": "2026-08-07",
+      "why": "scripts/ build tooling"
+    },
+    {
+      "path": "scripts/_unused-file-scan.js",
+      "bytes": 11946,
+      "mtime": "2026-08-07",
+      "why": "scripts/ build tooling"
+    },
+    {
+      "path": "scripts/_validate-image-refs.js",
+      "bytes": 2580,
+      "mtime": "2026-08-07",
+      "why": "scripts/ build tooling"
+    },
+    {
+      "path": "scripts/apply-duruhd-specs.js",
+      "bytes": 14557,
+      "mtime": "2026-07-26",
+      "why": "scripts/ build tooling"
+    },
+    {
+      "path": "scripts/apply-product-image-alts.js",
+      "bytes": 6129,
+      "mtime": "2026-06-30",
+      "why": "scripts/ build tooling"
+    },
+    {
+      "path": "scripts/audit-nav-footer.js",
+      "bytes": 4996,
+      "mtime": "2026-06-30",
+      "why": "scripts/ build tooling"
+    },
+    {
+      "path": "scripts/check-internal-links.js",
+      "bytes": 2326,
+      "mtime": "2026-06-30",
+      "why": "scripts/ build tooling"
+    },
+    {
+      "path": "scripts/import-blog-images.js",
+      "bytes": 4779,
+      "mtime": "2026-06-30",
+      "why": "scripts/ build tooling"
+    },
+    {
+      "path": "scripts/import-product-images.js",
+      "bytes": 5069,
+      "mtime": "2026-06-30",
+      "why": "scripts/ build tooling"
+    }
+  ],
+  "C": [
+    {
+      "path": "assets/data/product-image-dims.json",
+      "bytes": 37004,
+      "mtime": "2026-08-07",
+      "why": "data JSON; doğrudan HTML href’i olmayabilir ama build kullanıyor olabilir — B’ye alınmalı mı kontrol"
+    },
+    {
+      "path": "assets/img/blog/.gitkeep",
+      "bytes": 2,
+      "mtime": "2026-06-30",
+      "why": "statik taramada hiçbir HTML/CSS/JS/JSON/sitemap/robots/llms referansı bulunamadı"
+    },
+    {
+      "path": "assets/js/compare-page.js",
+      "bytes": 346,
+      "mtime": "2026-06-30",
+      "why": "statik taramada hiçbir HTML/CSS/JS/JSON/sitemap/robots/llms referansı bulunamadı"
+    },
+    {
+      "path": "CURSOR_TALIMATLARI.md",
+      "bytes": 11059,
+      "mtime": "2026-06-29",
+      "why": "içerik/talimat markdown; runtime siteye bağlı değil; dokümantasyon / audit / yerel not"
+    },
+    {
+      "path": "cursor-gorsel-optimizasyon-promptu.md",
+      "bytes": 6594,
+      "mtime": "2026-08-07",
+      "why": "içerik/talimat markdown; runtime siteye bağlı değil"
+    },
+    {
+      "path": "GORSEL_ALT_METINLERI.md",
+      "bytes": 5123,
+      "mtime": "2026-06-30",
+      "why": "içerik/talimat markdown; runtime siteye bağlı değil"
+    },
+    {
+      "path": "perf-audit-report.md",
+      "bytes": 17041,
+      "mtime": "2026-08-07",
+      "why": "içerik/talimat markdown; runtime siteye bağlı değil; dokümantasyon / audit / yerel not"
+    },
+    {
+      "path": "README.md",
+      "bytes": 538,
+      "mtime": "2026-06-30",
+      "why": "içerik/talimat markdown; runtime siteye bağlı değil"
+    },
+    {
+      "path": "start-local.bat",
+      "bytes": 518,
+      "mtime": "2026-06-30",
+      "why": "statik taramada hiçbir HTML/CSS/JS/JSON/sitemap/robots/llms referansı bulunamadı"
+    },
+    {
+      "path": "urun_yazilari/01-arac-uzeri-kalan.md",
+      "bytes": 19964,
+      "mtime": "2026-07-26",
+      "why": "içerik/talimat markdown; runtime siteye bağlı değil"
+    },
+    {
+      "path": "urun_yazilari/01-faz1-temel-egitici.md",
+      "bytes": 18508,
+      "mtime": "2026-06-30",
+      "why": "içerik/talimat markdown; runtime siteye bağlı değil"
+    },
+    {
+      "path": "urun_yazilari/02-faz2-sorun-cozum.md",
+      "bytes": 8217,
+      "mtime": "2026-06-30",
+      "why": "içerik/talimat markdown; runtime siteye bağlı değil"
+    },
+    {
+      "path": "urun_yazilari/02-sera-tipi.md",
+      "bytes": 21051,
+      "mtime": "2026-07-26",
+      "why": "içerik/talimat markdown; runtime siteye bağlı değil"
+    },
+    {
+      "path": "urun_yazilari/03-faz3-kurumsal-otorite.md",
+      "bytes": 11186,
+      "mtime": "2026-06-30",
+      "why": "içerik/talimat markdown; runtime siteye bağlı değil"
+    },
+    {
+      "path": "urun_yazilari/03-sirt-tipi.md",
+      "bytes": 4553,
+      "mtime": "2026-07-26",
+      "why": "içerik/talimat markdown; runtime siteye bağlı değil"
+    },
+    {
+      "path": "urun_yazilari/04-el-tipi-kalan.md",
+      "bytes": 19473,
+      "mtime": "2026-07-26",
+      "why": "içerik/talimat markdown; runtime siteye bağlı değil"
+    },
+    {
+      "path": "urun_yazilari/04-faz4-mevsimsel.md",
+      "bytes": 7711,
+      "mtime": "2026-06-30",
+      "why": "içerik/talimat markdown; runtime siteye bağlı değil"
+    },
+    {
+      "path": "urun_yazilari/05-isbirligi-kayseri-sineklik.md",
+      "bytes": 4967,
+      "mtime": "2026-06-30",
+      "why": "içerik/talimat markdown; runtime siteye bağlı değil"
+    },
+    {
+      "path": "urun_yazilari/05-nemlendirme-termal.md",
+      "bytes": 20490,
+      "mtime": "2026-07-26",
+      "why": "içerik/talimat markdown; runtime siteye bağlı değil"
+    },
+    {
+      "path": "urun_yazilari/06-sis-ufleme-makinesi-rehber.md",
+      "bytes": 1729,
+      "mtime": "2026-06-30",
+      "why": "içerik/talimat markdown; runtime siteye bağlı değil"
+    },
+    {
+      "path": "urun_yazilari/CURSOR_ICERIK_ENTEGRASYON_PROMPT.md",
+      "bytes": 9684,
+      "mtime": "2026-06-30",
+      "why": "içerik/talimat markdown; runtime siteye bağlı değil; dokümantasyon / audit / yerel not"
+    },
+    {
+      "path": "urun_yazilari/RANKMATH_STANDART.md",
+      "bytes": 3733,
+      "mtime": "2026-06-30",
+      "why": "içerik/talimat markdown; runtime siteye bağlı değil"
+    },
+    {
+      "path": "urun_yazilari/SEO_ICERIK_PLANI.md",
+      "bytes": 17324,
+      "mtime": "2026-06-30",
+      "why": "içerik/talimat markdown; runtime siteye bağlı değil"
+    },
+    {
+      "path": "urun_yazilari/urun-metinleri-1-parti.md",
+      "bytes": 15609,
+      "mtime": "2026-06-30",
+      "why": "içerik/talimat markdown; runtime siteye bağlı değil"
+    },
+    {
+      "path": "urunler_1.json",
+      "bytes": 0,
+      "mtime": "2026-06-29",
+      "why": "statik taramada hiçbir HTML/CSS/JS/JSON/sitemap/robots/llms referansı bulunamadı"
+    }
+  ]
+}

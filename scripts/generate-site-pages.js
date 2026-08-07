@@ -3,6 +3,7 @@ const path = require('path');
 const { renderCategoryCard } = require('./category-icons');
 const { siteHeader, siteFooter } = require('./site-layout');
 const { renderHeadAssets, renderBodyScripts } = require('./head-assets');
+const { assetHref } = require('./static-asset-hashes');
 const { buildSiteCss } = require('./build-css');
 const {
   renderSeoHead,
@@ -106,7 +107,7 @@ const categoryCatalogCards = data.kategoriler
 
 const pdfVendorScripts = `  <script src="${P}assets/js/vendor/html2canvas.min.js"></script>
   <script src="${P}assets/js/vendor/jspdf.umd.min.js"></script>
-  <script src="${P}assets/js/pdf-utils.js"></script>`;
+  <script src="${P}${assetHref('assets/js/pdf-utils.js')}"></script>`;
 
 const pages = {
   'urun-karsilastirma/index.html': shell(
@@ -133,9 +134,9 @@ const pages = {
     <script id="duru-urunler-embed" type="application/json">${jsonForScript({ urunler: data.urunler })}</script>
   </main>`,
     `${pdfVendorScripts}
-  <script src="${P}assets/js/compare-pdf.js"></script>`,
-    `  <link rel="stylesheet" href="${P}assets/css/pdf-export.css">
-  <link rel="stylesheet" href="${P}assets/css/compare-print.css">
+  <script src="${P}${assetHref('assets/js/compare-pdf.js')}"></script>`,
+    `  <link rel="stylesheet" href="${P}${assetHref('assets/css/pdf-export.css')}">
+  <link rel="stylesheet" href="${P}${assetHref('assets/css/compare-print.css')}">
 `,
     { canonical: 'urun-karsilastirma/index.html' }
   ),
@@ -209,9 +210,9 @@ const pages = {
     </section>
   </main>`,
     `${pdfVendorScripts}
-  <script src="${P}assets/js/quote-form.js"></script>
-  <script src="${P}assets/js/quote-pdf.js"></script>`,
-    `  <link rel="stylesheet" href="${P}assets/css/pdf-export.css">
+  <script src="${P}${assetHref('assets/js/quote-form.js')}"></script>
+  <script src="${P}${assetHref('assets/js/quote-pdf.js')}"></script>`,
+    `  <link rel="stylesheet" href="${P}${assetHref('assets/css/pdf-export.css')}">
 `,
     { canonical: 'fiyat-teklifi/index.html' }
   ),

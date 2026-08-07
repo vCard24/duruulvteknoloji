@@ -3,11 +3,13 @@
   "private": true,
   "scripts": {
     "build:css": "node scripts/build-css.js",
+    "hash:assets": "node scripts/hash-static-assets.js",
+    "validate:assets": "node scripts/_validate-static-hashes.js",
     "optimize-hero": "node scripts/optimize-hero-images.js",
     "optimize-images": "node scripts/optimize-responsive-images.js",
     "optimize-images:all": "node scripts/optimize-responsive-images.js && node scripts/optimize-hero-images.js",
     "validate:images": "node scripts/validate-image-variants.js",
-    "build:pages": "node scripts/build-css.js && node scripts/generate-site-pages.js && node scripts/generate-pages.js && node scripts/integrate-seo-content.js"
+    "build:pages": "node scripts/build-css.js && node scripts/hash-static-assets.js && node scripts/generate-site-pages.js && node scripts/generate-pages.js && node scripts/integrate-seo-content.js && node scripts/hash-static-assets.js"
   },
   "devDependencies": {
     "sharp": "^0.34.5"
