@@ -1,8 +1,34 @@
+# .htaccess — v3 (mevcut dosyanın YERİNE geçen tam sürüm)
+#
+# Bu bir "ekleme" değil, mevcut .htaccess'in yeniden yazılmış hâli.
+# Mevcut dosyadaki her şey korundu; sadece üç yer değişti:
+#
+#  1. mod_expires bloğu KALDIRILDI, yerine mod_headers geldi.
+#     Sebep: ExpiresByType text/html "access plus 0 seconds" satırı
+#     Cache-Control: max-age=0 yazıyor ve edge cache'i öldürüyor.
+#     İki mekanizma bir arada tutarsız davranır, biri seçilmeli.
+#
+#  2. Çift redirect TEK ADIMA indirildi.
+#     Eskiden: http://apex -> https://apex -> https://www  (iki 301)
+#     Şimdi:   http://apex -> https://www                  (tek 301)
+#
+#  3. css/js bir yıldan bir haftaya çekildi.
+#     Sebep: site.css ve main.js hash'siz. Bir yıl cache demek,
+#     CSS güncellediğinde mevcut ziyaretçilerin bir yıl eskisini
+#     görmesi demek. Görseller hash'li olduğu için onlar bir yıl kalıyor.
+#
+# KURULUM
+#   1. .htaccess.bak zaten var, dursun.
+#   2. Mevcut .htaccess'in içeriğini tamamen bununla değiştir.
+#   3. Kaydettikten sonra HEMEN ana sayfayı aç.
+#      500 / beyaz sayfa görürsen .htaccess.bak'ı geri koy.
+
 DirectoryIndex index.html
 Options -Indexes
 AddDefaultCharset UTF-8
 ErrorDocument 404 /404.html
 
+# --- Güvenlik başlıkları (değişmedi) ---
 <IfModule mod_headers.c>
   Header set X-Content-Type-Options "nosniff"
   Header set X-Frame-Options "SAMEORIGIN"
@@ -10,43 +36,110 @@ ErrorDocument 404 /404.html
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
 </IfModule>
 
+# --- MIME tipleri (değişmedi) ---
 <IfModule mod_mime.c>
   AddType image/webp .webp
   AddType text/plain .txt
   AddType application/json .json
 </IfModule>
 
-<IfModule mod_expires.c>
-  ExpiresActive On
-  ExpiresByType text/css "access plus 1 year"
-  ExpiresByType application/javascript "access plus 1 year"
-  ExpiresByType image/webp "access plus 1 year"
-  ExpiresByType image/png "access plus 1 year"
-  ExpiresByType image/jpeg "access plus 1 year"
-  ExpiresByType image/svg+xml "access plus 1 year"
-  ExpiresByType application/pdf "access plus 1 month"
-  ExpiresByType text/html "access plus 0 seconds"
+# ============================================================
+# CACHE — mod_expires yerine mod_headers
+# ============================================================
+# mod_expires KULLANILMIYOR. Aşağıdaki blok onun yerine geçiyor.
+# İkisini birlikte kullanma; mod_expires sessizce üzerine yazar.
+
+<IfModule mod_headers.c>
+
+  # HTML — ASIL KAZANÇ BURADA.
+  # Eskiden max-age=0 idi ve edge cache devre dışıydı
+  # (x-hcdn-cache-status: DYNAMIC), soğuk TTFB 1.5-2.4 sn.
+  # s-maxage edge'in 10 dk cachelemesini sağlar; browser yine
+  # her seferinde doğrular, yani içerik bayatlamaz.
+  # stale-while-revalidate: süre dolduğunda kullanıcı beklemez,
+  # eski kopya servis edilirken arka planda yenilenir.
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "public, max-age=0, s-maxage=600, stale-while-revalidate=86400"
+  </FilesMatch>
+
+  # CSS / JS — hash'siz dosya adları (site.css, main.js, compare.js...)
+  # immutable YOK, bir yıl YOK. Dosya adlarını hash'lersen
+  # 31536000 + immutable'a çıkarabilirsin.
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+
+  # Görseller — varyantlar artık içerik hash'li, immutable güvenli.
+  # DİKKAT: <slug>-01.webp dosyaları hash ALMADI (compare/quote
+  # sözleşmesi). Onlar da bu kurala giriyor; bir ürün fotoğrafını
+  # değiştirirsen CDN purge gerekir.
+  <FilesMatch "\.(webp|avif|png|jpe?g|gif|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # SVG ve fontlar — içerik pratikte hiç değişmez.
+  <FilesMatch "\.(svg|woff2|woff|ttf|otf)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # PDF — katalog dosyası. 30 gün.
+  <FilesMatch "\.pdf$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+
+  # JSON / txt — urunler.json, ai-catalog.json, llms.txt.
+  # Bunlar içerik verisi, sık değişebilir. 1 saat.
+  <FilesMatch "\.(json|txt)$">
+    Header set Cache-Control "public, max-age=3600"
+  </FilesMatch>
+
 </IfModule>
+
+# ============================================================
+# YÖNLENDİRMELER
+# ============================================================
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
 
-  # HTTP → HTTPS
-  RewriteCond %{HTTPS} !=on
-  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-
-  # non-www → www (canonical ile uyumlu)
+  # --- Tek adımda https://www ---
+  # http://apex, http://www ve https://apex -> hepsi TEK 301 ile
+  # https://www'ye. Eski iki kuralın yerine geçer.
+  RewriteCond %{HTTPS} !=on [OR]
   RewriteCond %{HTTP_HOST} !^www\. [NC]
-  RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+  RewriteRule ^(.*)$ https://www.duruulvteknoloji.com.tr/$1 [R=301,L]
 
-  # Eski / örnek / kaynak dizinler — yayında erişilemez
+  # --- Eski / örnek / kaynak dizinler (değişmedi) ---
   RewriteRule ^(yigitornek|emergent|sources)(/|$) - [F,L]
 
-  # /path/index.html → /path/ (canonical ile uyumlu tek URL)
+  # --- /path/index.html -> /path/ (değişmedi) ---
   RewriteCond %{THE_REQUEST} \s/+([^?\s]*/?)index\.html[\s?] [NC]
   RewriteRule ^ %1 [R=301,L]
 
-  # security.txt kök yolu → .well-known (RFC 9116)
+  # --- security.txt -> .well-known (değişmedi) ---
   RewriteRule ^security\.txt$ /.well-known/security.txt [R=301,L]
 </IfModule>
+
+# ============================================================
+# DOĞRULAMA — uyguladıktan sonra sırayla çalıştır
+# ============================================================
+#
+# a) Redirect tek adım mı? TEK bir "301" satırı görmelisin:
+#    curl -sIL http://duruulvteknoloji.com.tr/ | grep -Ei "HTTP/|location"
+#
+# b) HTML edge'de cacheleniyor mu?
+#    İki kez çalıştır: ilki MISS, ikincisi HIT dönmeli.
+#    curl -sI https://www.duruulvteknoloji.com.tr/ | grep -i "cache-control\|hcdn"
+#
+# c) TTFB düştü mü? (önceki: 1.5-2.4 sn)
+#    curl -o /dev/null -s -w "TTFB: %{time_starttransfer}s\n" https://www.duruulvteknoloji.com.tr/
+#
+# d) Alt sayfa da çalışıyor mu? (index.html yönlendirmesi bozulmadı mı)
+#    curl -sIL https://www.duruulvteknoloji.com.tr/urunler/index.html | grep -Ei "HTTP/|location"
+#
+# e) Engellenen dizinler 403 mü?
+#    curl -o /dev/null -s -w "%{http_code}\n" https://www.duruulvteknoloji.com.tr/sources/
+#
+# NOT: HTML artık 10 dk edge'de kalacak. Deploy sonrası değişikliğin
+# görünmesi 10 dk gecikebilir; acele ediyorsan hPanel'den purge et.

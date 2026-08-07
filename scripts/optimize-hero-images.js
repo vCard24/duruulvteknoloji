@@ -1,7 +1,8 @@
 /**
  * Hero WebP'leri kaynak dosyadan bütçeli + içerik-hash'li yeniden üretir.
  * Kaynak: sources/img/duru-hero-kaynak.webp (alfa #F3F4F5 üzerine düzleştirilir)
- * Çıktı: duru-hero-<w>.<hash8>.webp (1200 üretilmez)
+ * Rozet: sources/img/36-yillik-tecrube.png → 36-yillik-tecrube-<w>.<hash8>.webp
+ * Çıktı: duru-hero-<w>.<hash8>.webp (1200 / unhashed alias üretilmez)
  *
  * Kullanım: node scripts/optimize-hero-images.js
  */
@@ -17,6 +18,7 @@ const {
 const ROOT = path.join(__dirname, '..');
 const HERO_DIR = path.join(ROOT, 'assets', 'img', 'hero');
 const SRC = path.join(ROOT, 'sources', 'img', 'duru-hero-kaynak.webp');
+const BADGE_SRC = path.join(ROOT, 'sources', 'img', '36-yillik-tecrube.png');
 const FLATTEN_BG = '#F3F4F5';
 
 const TARGETS = [
@@ -63,7 +65,13 @@ async function main() {
   );
   console.log(`Düzleştirme: ${FLATTEN_BG} → opak WebP`);
 
-  for (const legacy of ['duru-hero-1200.webp', 'duru-hero.png']) {
+  for (const legacy of [
+    'duru-hero-1200.webp',
+    'duru-hero.png',
+    'duru-hero.webp',
+    '36-yillik-tecrube.webp',
+    '36-yillik-tecrube.png',
+  ]) {
     const p = path.join(HERO_DIR, legacy);
     if (fs.existsSync(p)) {
       fs.unlinkSync(p);
@@ -86,16 +94,10 @@ async function main() {
     results.push({ ...encoded, fileName: written.fileName });
   }
 
-  // Canonical unhashed fallback = 960 içeriği (compare dışı; img fallback değil)
-  const largest = results[results.length - 1];
-  fs.writeFileSync(path.join(HERO_DIR, 'duru-hero.webp'), largest.data);
-  console.log('  ✓ duru-hero.webp (960 içeriği, hash yok — yedek alias)');
-
-  const badgePng = path.join(HERO_DIR, '36-yillik-tecrube.png');
-  if (fs.existsSync(badgePng)) {
+  if (fs.existsSync(BADGE_SRC)) {
     console.log('Tecrübe rozeti…');
     for (const w of BADGE_SIZES) {
-      const { data, info } = await sharp(badgePng)
+      const { data, info } = await sharp(BADGE_SRC)
         .rotate()
         .resize({ width: w, withoutEnlargement: true })
         .webp({ quality: 82, effort: 4 })
@@ -105,12 +107,8 @@ async function main() {
       allRemoved.push(...written.removed);
       console.log(`  ✓ ${written.fileName} (${w}w) — ${(info.size / 1024).toFixed(1)} KiB`);
     }
-    await sharp(badgePng)
-      .rotate()
-      .resize({ width: 200, withoutEnlargement: true })
-      .webp({ quality: 82, effort: 4 })
-      .toFile(path.join(HERO_DIR, '36-yillik-tecrube.webp'));
-    console.log('  ✓ 36-yillik-tecrube.webp (hash yok — yedek alias)');
+  } else {
+    console.warn('Rozet kaynağı yok:', BADGE_SRC);
   }
 
   console.log(`\nSilinen eski varyantlar: ${allRemoved.length}`);

@@ -1,10 +1,12 @@
 /**
- * Hash'li görsel varyant doğrulaması + referans taraması.
+ * Hash'li görsel varyant + taban dosya doğrulaması / referans taraması.
  *
  * Kapsam (HTML): src, srcset, href, data-src, data-srcset, imagesrcset,
  *   og:image / twitter:image content
  * Kapsam (JSON): product-images, product-image-alts, urunler, product-seo,
  *   image-variants
+ * Kapsam (JS): assets/js içindeki string literal görsel yolları
+ * Disk: products/blog/hero altındaki tüm webp/png/jpg (hash'li + taban)
  *
  * node scripts/validate-image-variants.js
  */
@@ -28,9 +30,6 @@ const JSON_FILES = [
   'assets/data/image-variants.json',
 ];
 
-/** Hash'li veya eski unhashed genişlik/thumb varyantı */
-const VARIANT_RE =
-  /^[a-z0-9]+(?:-[a-z0-9]+)*-(?:\d+|thumb)(?:\.[a-f0-9]{8})?\.webp$/i;
 /** Ürün taban: slug-NN.webp — hash YOK */
 const BASE_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*-\d{2}\.webp$/i;
 /** Hash sızmış taban (yasak): slug-NN.hash.webp */
@@ -180,25 +179,37 @@ function collectJsonRefs() {
   return refs;
 }
 
-function listDiskVariants() {
+function collectJsRefs() {
+  const refs = [];
+  const jsDir = path.join(ROOT, 'assets', 'js');
+  if (!fs.existsSync(jsDir)) return refs;
+  // Tam yol veya dosya adı; '-01.webp' gibi sonek birleştirmelerini atla
+  const strRe =
+    /['"`]((?:[^'"`]*\/)?[a-z0-9][a-z0-9._-]*\.(?:webp|png|jpe?g|gif|svg|avif))['"`]/gi;
+  for (const name of fs.readdirSync(jsDir)) {
+    if (!name.endsWith('.js')) continue;
+    const file = path.join(jsDir, name);
+    const text = fs.readFileSync(file, 'utf8');
+    let m;
+    strRe.lastIndex = 0;
+    while ((m = strRe.exec(text))) {
+      const raw = m[1];
+      if (/^-\d{2}\.webp$/i.test(raw)) continue;
+      pushRef(refs, rel(file), raw, ROOT);
+    }
+  }
+  return refs;
+}
+
+/** Diskteki tüm raster'lar: hash'li varyant + taban (slug-NN) + yedek alias */
+function listDiskImages() {
   const files = [];
+  const rasterRe = /\.(webp|png|jpe?g)$/i;
   for (const dir of IMG_DIRS) {
     if (!fs.existsSync(dir)) continue;
     for (const name of fs.readdirSync(dir)) {
-      if (!name.endsWith('.webp')) continue;
-      // taban ürün görselleri varyant sayılmaz
-      if (BASE_RE.test(name) && !VARIANT_RE.test(name.replace(BASE_RE, ''))) {
-        // BASE_RE matches slug-01.webp; VARIANT has -400 or -thumb
-        // slug-01.webp matches BASE_RE; slug-01-400.hash.webp matches VARIANT
-      }
-      if (BASE_RE.test(name)) continue;
-      // hashed width/thumb OR unhashed width/thumb OR hero aliases without width?
-      if (VARIANT_RE.test(name)) {
-        files.push(path.join(dir, name));
-        continue;
-      }
-      // hero width hashed: duru-hero-480.hash.webp already VARIANT_RE
-      // Unhashed yedek alias'lar (duru-hero.webp vb.) yetim sayılmaz — bilerek tutulur
+      if (!rasterRe.test(name)) continue;
+      files.push(path.join(dir, name));
     }
   }
   return files;
@@ -240,7 +251,8 @@ function printTable(headers, rows) {
 function main() {
   const htmlRefs = collectHtmlRefs();
   const jsonRefs = collectJsonRefs();
-  const allRefs = [...htmlRefs, ...jsonRefs];
+  const jsRefs = collectJsRefs();
+  const allRefs = [...htmlRefs, ...jsonRefs, ...jsRefs];
 
   // Kırık yollar
   const broken = allRefs.filter((r) => !r.exists);
@@ -257,19 +269,23 @@ function main() {
   const referencedAbs = new Set(
     allRefs.filter((r) => r.exists).map((r) => path.normalize(r.abs))
   );
-  // Ayrıca string birleştirme sözleşmesi: products/<slug>-01.webp
+  // String birleştirme sözleşmesi: bilinen ürünlerin products/<slug>-NN.webp
+  const productsDir = path.join(ROOT, 'assets', 'img', 'products');
   const urunler = JSON.parse(
     fs.readFileSync(path.join(ROOT, 'assets/data/urunler.json'), 'utf8')
   );
-  for (const p of urunler.urunler) {
-    const abs = path.normalize(
-      path.join(ROOT, 'assets/img/products', `${p.slug}-01.webp`)
-    );
-    if (fs.existsSync(abs)) referencedAbs.add(abs);
+  const productSlugs = new Set(urunler.urunler.map((p) => p.slug));
+  if (fs.existsSync(productsDir)) {
+    for (const name of fs.readdirSync(productsDir)) {
+      if (!BASE_RE.test(name)) continue;
+      const slug = name.replace(/-\d{2}\.webp$/i, '');
+      if (!productSlugs.has(slug)) continue;
+      referencedAbs.add(path.normalize(path.join(productsDir, name)));
+    }
   }
 
-  const diskVariants = listDiskVariants();
-  const orphans = diskVariants.filter((f) => !referencedAbs.has(path.normalize(f)));
+  const diskImages = listDiskImages();
+  const orphans = diskImages.filter((f) => !referencedAbs.has(path.normalize(f)));
 
   const bases = listBaseProducts();
 
@@ -284,8 +300,10 @@ function main() {
     console.log('(yok)');
   }
 
-  console.log('\n=== 2) Yetim varyantlar (diskte var, referans yok) ===');
-  console.log(`Disk varyant: ${diskVariants.length} | Yetim: ${orphans.length}`);
+  console.log('\n=== 2) Yetim görseller (diskte var, referans yok) ===');
+  console.log(
+    `Disk raster (varyant+taban): ${diskImages.length} | Yetim: ${orphans.length}`
+  );
   if (orphans.length) {
     printTable(
       ['Dosya'],
