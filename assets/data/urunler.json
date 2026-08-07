@@ -782,7 +782,7 @@
       "ad_tr": "Duru DMXL",
       "model_kodu": "DMXL",
       "kisa_aciklama_tr": "Döner başlıklı ULV nemlendirme, şamandıralı tank",
-      "gorsel": "assets/img/products/duru-dmxl-01.jpg",
+      "gorsel": "assets/img/products/duru-dmxl-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
@@ -824,7 +824,7 @@
       "ad_tr": "Duru MXL",
       "model_kodu": "MXL",
       "kisa_aciklama_tr": "2200 W ULV nemlendirme, şamandıralı, portatif (25–100 m²)",
-      "gorsel": "assets/img/products/duru-mxl-01.jpg",
+      "gorsel": "assets/img/products/duru-mxl-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
@@ -866,7 +866,7 @@
       "ad_tr": "Duru MXL-HGS",
       "model_kodu": "MXL-HGS",
       "kisa_aciklama_tr": "Higrostatlı tam otomatik ULV nemlendirme, 2200 W, şamandıralı",
-      "gorsel": "assets/img/products/duru-mxl-hgs-01.jpg",
+      "gorsel": "assets/img/products/duru-mxl-hgs-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
@@ -908,7 +908,7 @@
       "ad_tr": "Duru K 100",
       "model_kodu": "K-100",
       "kisa_aciklama_tr": "15 hp Briggs, 20 L, termal kanalizasyon / don önleyici",
-      "gorsel": "assets/img/products/duru-k100-01.jpg",
+      "gorsel": "assets/img/products/duru-k100-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
@@ -950,7 +950,7 @@
       "ad_tr": "Termal El Tipi",
       "model_kodu": "TERMAL-EL",
       "kisa_aciklama_tr": "Benzinli termal el tipi; kanal ilaçlama, sıcak sisleme ve don önleme",
-      "gorsel": "assets/img/products/termal-el-tipi-01.jpg",
+      "gorsel": "assets/img/products/termal-el-tipi-01.webp",
       "teknik_tablo": [
         {
           "ozellik": "Motor",
