@@ -8,14 +8,13 @@ api/outbox/
 # Yerel kaynak görseller — repoya ve sunucuya gitmez
 sources/
 
+# Eski React prototip — silindi; yeniden oluşursa takip etme
+emergent/
+
 # Bağımlılıklar
 node_modules/
-emergent/frontend/node_modules/
 
 # Önbellek / test
-emergent/.pytest_cache/
-emergent/.ruff_cache/
-emergent/test_reports/
 __pycache__/
 *.pyc
 
