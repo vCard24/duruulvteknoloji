@@ -2040,6 +2040,7 @@ a.whatsapp-btn.wa-pulse {
 }
 
 .catalog-preview {
+  display: block;
   aspect-ratio: 3 / 4;
   background: var(--color-bg);
   border: 1px solid var(--border-color);
@@ -2047,12 +2048,14 @@ a.whatsapp-btn.wa-pulse {
   min-height: 20rem;
 }
 
-.catalog-preview iframe {
+.catalog-preview img {
   width: 100%;
   height: 100%;
   min-height: 20rem;
   border: 0;
   display: block;
+  object-fit: contain;
+  object-position: center;
 }
 
 .catalog-preview--fallback {

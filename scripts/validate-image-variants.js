@@ -20,6 +20,7 @@ const IMG_DIRS = [
   path.join(ROOT, 'assets', 'img', 'products'),
   path.join(ROOT, 'assets', 'img', 'blog'),
   path.join(ROOT, 'assets', 'img', 'hero'),
+  path.join(ROOT, 'assets', 'img', 'katalog'),
 ];
 
 const JSON_FILES = [
@@ -159,8 +160,8 @@ function collectJsonRefs() {
     }
     // image-variants logical keys map to filename values
     if (source.includes('image-variants')) {
-      // try products, blog, hero
-      for (const sub of ['products', 'blog', 'hero']) {
+      // try products, blog, hero, katalog
+      for (const sub of ['products', 'blog', 'hero', 'katalog']) {
         const p = path.join(ROOT, 'assets/img', sub, fileName);
         if (fs.existsSync(p)) return `assets/img/${sub}/${fileName}`;
       }
