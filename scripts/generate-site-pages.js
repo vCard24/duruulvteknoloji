@@ -4,7 +4,14 @@ const { renderCategoryCard } = require('./category-icons');
 const { siteHeader, siteFooter } = require('./site-layout');
 const { renderHeadAssets, renderBodyScripts } = require('./head-assets');
 const { assetHref } = require('./static-asset-hashes');
+const { loadManifest: loadImageManifest } = require('./image-variants');
 const { buildSiteCss } = require('./build-css');
+
+const imageVariants = loadImageManifest();
+const katalogKapak400 =
+  imageVariants['katalog-kapak-400'] || 'katalog-kapak-400.375dc383.webp';
+const katalogKapak800 =
+  imageVariants['katalog-kapak-800'] || 'katalog-kapak-800.c911e00b.webp';
 const {
   renderSeoHead,
   DEFAULT_OG_IMAGE,
@@ -264,9 +271,17 @@ const pages = {
               <p class="text-muted" style="margin-top:1rem;font-size:0.8125rem">Duru ULV Ürün Kataloğu · 2026 · PDF</p>
             </div>
             <div class="catalog-hero-card">
-              <div class="catalog-preview">
-                <iframe src="${P}assets/docs/duru-ulv-katalog-2026.pdf#view=FitH" title="Duru ULV Ürün Kataloğu 2026 önizleme" loading="lazy"></iframe>
-              </div>
+              <a href="${P}assets/docs/duru-ulv-katalog-2026.pdf"
+                 target="_blank" rel="noopener"
+                 class="catalog-preview"
+                 aria-label="Duru ULV Ürün Kataloğu 2026 PDF'ini yeni sekmede aç">
+                <img src="${P}assets/img/katalog/${katalogKapak400}"
+                     srcset="${P}assets/img/katalog/${katalogKapak400} 400w, ${P}assets/img/katalog/${katalogKapak800} 800w"
+                     sizes="(max-width: 767px) calc(100vw - 7rem), (max-width: 1023px) calc((100vw - 4.5rem) / 2 - 4rem), calc((min(100vw, 80rem) - 5.5rem) / 2 - 4rem)"
+                     width="400" height="565"
+                     alt="Duru ULV Ürün Kataloğu 2026 kapağı"
+                     loading="lazy" decoding="async">
+              </a>
             </div>
           </div>
         </div>
