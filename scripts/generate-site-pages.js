@@ -138,9 +138,11 @@ const pages = {
     </section>
     <div id="compare-app"></div>
     <div id="compare-pdf-sheet" class="pdf-sheet" aria-hidden="true"></div>
+    <div id="quote-pdf-sheet" class="pdf-sheet" aria-hidden="true"></div>
     <script id="duru-urunler-embed" type="application/json">${jsonForScript({ urunler: data.urunler })}</script>
   </main>`,
     `${pdfVendorScripts}
+  <script src="${P}${assetHref('assets/js/quote-pdf.js')}"></script>
   <script src="${P}${assetHref('assets/js/compare-pdf.js')}"></script>`,
     `  <link rel="stylesheet" href="${P}${assetHref('assets/css/pdf-export.css')}">
   <link rel="stylesheet" href="${P}${assetHref('assets/css/compare-print.css')}">

@@ -327,6 +327,26 @@
       if (e.target.closest('#compare-print')) {
         e.preventDefault();
         window.print();
+        return;
+      }
+
+      if (e.target.closest('#compare-pdf-btn')) {
+        e.preventDefault();
+        if (global.DuruComparePdf && global.DuruComparePdf.download) {
+          global.DuruComparePdf.download();
+        } else {
+          alert('Karşılaştırma PDF modülü yüklenemedi. Sayfayı yenileyip tekrar deneyin.');
+        }
+        return;
+      }
+
+      if (e.target.closest('#compare-quote-pdf-btn')) {
+        e.preventDefault();
+        if (global.DuruComparePdf && global.DuruComparePdf.downloadQuote) {
+          global.DuruComparePdf.downloadQuote();
+        } else {
+          alert('Teklif PDF modülü yüklenemedi. Sayfayı yenileyip tekrar deneyin.');
+        }
       }
     });
   }
@@ -468,9 +488,10 @@
           '      <div style="display:flex;flex-wrap:wrap;gap:0.75rem">' +
           '        <button type="button" class="btn btn--outline btn--sm" id="compare-clear-all">Tümünü temizle</button>' +
           '        <button type="button" class="btn btn--outline btn--sm" id="compare-print">Yazdır</button>' +
-          '        <button type="button" class="btn btn--outline btn--sm btn-pdf-export" id="compare-pdf-btn">PDF İndir</button>' +
+          '        <button type="button" class="btn btn--outline btn--sm btn-pdf-export" id="compare-pdf-btn">Karşılaştırma PDF</button>' +
+          '        <button type="button" class="btn btn--outline btn--sm btn-pdf-export" id="compare-quote-pdf-btn">Teklif PDF</button>' +
           '      </div>' +
-          '      <a href="' + escHtml(prefix + 'fiyat-teklifi/index.html?products=' + encodeURIComponent(slugs.join(','))) + '" class="btn btn--primary">Seçili ürünler için teklif al →</a>' +
+          '      <a href="' + escHtml(prefix + 'fiyat-teklifi/index.html?products=' + encodeURIComponent(slugs.join(',')) + '&kaynak=karsilastir') + '" class="btn btn--primary">Formdan teklif gönder →</a>' +
           '    </div>' +
           '    <div class="compare-table-wrap">' +
           '      <table class="compare-table">' +
@@ -485,6 +506,14 @@
 
         if (global.DuruComparePdf && global.DuruComparePdf.bind) {
           global.DuruComparePdf.bind(products, prefix);
+        } else {
+          var pdfBtn = document.getElementById('compare-pdf-btn');
+          var quoteBtn = document.getElementById('compare-quote-pdf-btn');
+          [pdfBtn, quoteBtn].forEach(function (btn) {
+            if (!btn) return;
+            btn.disabled = true;
+            btn.title = 'PDF modülü yüklenemedi';
+          });
         }
       })
       .catch(function () {

@@ -6,9 +6,16 @@
 
   var sheetId = 'quote-pdf-sheet';
 
-  function ensureSheet() {
-    var sheet = document.getElementById(sheetId);
-    if (!sheet) return null;
+  function ensureSheet(preferredId) {
+    var id = preferredId || sheetId;
+    var sheet = document.getElementById(id);
+    if (!sheet) {
+      sheet = document.createElement('div');
+      sheet.id = id;
+      sheet.className = 'pdf-sheet';
+      sheet.setAttribute('aria-hidden', 'true');
+      document.body.appendChild(sheet);
+    }
     return sheet;
   }
 
@@ -85,21 +92,23 @@
       '</article>';
   }
 
-  function buildSheet(data) {
+  function buildSheet(data, preferredSheetId) {
     var U = global.DuruPdfUtils;
-    var sheet = ensureSheet();
+    var sheet = ensureSheet(preferredSheetId);
     if (!U || !sheet) return null;
 
+    var products = data.products || [];
     var productsHtml = '';
-    if (data.products.length) {
+    if (products.length) {
       var prefix = global.DuruPdfUtils.sitePrefix();
-      productsHtml = '<div class="pdf-products-list">' + data.products.map(function (p, i) {
+      productsHtml = '<div class="pdf-products-list">' + products.map(function (p, i) {
         return buildProductCard(p, i, prefix, U);
       }).join('') + '</div>';
     } else {
       productsHtml = '<p style="margin:0;color:rgba(43,46,51,0.6)">Genel bilgi talebi (ürün seçilmedi)</p>';
     }
 
+    var hasContact = !!(data.name || data.phone || data.email || data.company || data.city);
     var contactHtml =
       '<div class="pdf-fields">' +
       '<div><span class="pdf-field__label">Ad Soyad</span><span class="pdf-field__value">' + U.esc(data.name || '—') + '</span></div>' +
@@ -113,15 +122,54 @@
       ? U.pdfBlock('Mesaj', '<p style="margin:0;line-height:1.6">' + U.esc(data.message) + '</p>')
       : '';
 
+    var draftBlock = !hasContact
+      ? U.pdfBlock(
+          'Not',
+          '<p style="margin:0;line-height:1.6">Bu belge taslak talep özetidir; bağlayıcı fiyat teklifi değildir. Resmi dönüş için sitedeki teklif formunu doldurup gönderin.</p>'
+        )
+      : '';
+
     sheet.innerHTML =
       '<div class="pdf-doc">' +
       U.pdfHeader('Fiyat Teklifi Talep Formu', 'Talep tarihi: ' + U.dateStr()) +
       U.pdfBlock('Seçilen ürünler', productsHtml) +
       U.pdfBlock('İletişim bilgileri', contactHtml) +
       messageBlock +
+      draftBlock +
       U.pdfFooter() +
       '</div>';
     return sheet;
+  }
+
+  function downloadPayload(data, opts) {
+    opts = opts || {};
+    if (!data) return Promise.reject(new Error('PDF verisi yok'));
+    if (!global.DuruPdfUtils) {
+      return Promise.reject(new Error('PDF kütüphaneleri yüklenemedi.'));
+    }
+
+    var btn = opts.buttonId ? document.getElementById(opts.buttonId) : null;
+    var idleLabel = opts.idleLabel || 'PDF İndir';
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = 'PDF hazırlanıyor…';
+    }
+
+    return global.DuruPdfUtils.ensureAssets()
+      .then(function () {
+        var sheet = buildSheet(data, opts.sheetId);
+        if (!sheet) throw new Error('PDF hazırlanamadı');
+        return global.DuruPdfUtils.downloadSheet(
+          sheet,
+          opts.fileName || 'duru-ulv-teklif-talebi.pdf'
+        );
+      })
+      .finally(function () {
+        if (btn) {
+          btn.disabled = false;
+          btn.textContent = idleLabel;
+        }
+      });
   }
 
   function download() {
@@ -133,30 +181,13 @@
       return;
     }
 
-    var btn = document.getElementById('quote-pdf-btn');
-    if (btn) {
-      btn.disabled = true;
-      btn.textContent = 'PDF hazırlanıyor…';
-    }
-
-    global.DuruPdfUtils.ensureAssets()
-      .then(function () {
-        var sheet = buildSheet(data);
-        if (!sheet) {
-          alert('PDF hazırlanamadı.');
-          return Promise.reject(new Error('sheet missing'));
-        }
-        return global.DuruPdfUtils.downloadSheet(sheet, 'duru-ulv-teklif-talebi.pdf');
-      })
-      .catch(function (err) {
-        alert(err.message || 'PDF oluşturulamadı.');
-      })
-      .finally(function () {
-        if (btn) {
-          btn.disabled = false;
-          btn.textContent = 'PDF İndir';
-        }
-      });
+    downloadPayload(data, {
+      buttonId: 'quote-pdf-btn',
+      idleLabel: 'PDF İndir',
+      fileName: 'duru-ulv-teklif-talebi.pdf'
+    }).catch(function (err) {
+      alert(err.message || 'PDF oluşturulamadı.');
+    });
   }
 
   function init() {
@@ -174,5 +205,8 @@
     init();
   }
 
-  global.DuruQuotePdf = { download: download };
+  global.DuruQuotePdf = {
+    download: download,
+    downloadPayload: downloadPayload
+  };
 })(window);

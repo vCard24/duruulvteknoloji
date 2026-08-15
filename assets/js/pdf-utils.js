@@ -353,7 +353,26 @@
       }
     }
 
-    pdf.save(fileName);
+    // pdf.save() async jest dışında Safari/Android'de sessizce engellenebilir;
+    // blob + <a download> daha güvenilir.
+    var blob = pdf.output('blob');
+    triggerDownload(blob, fileName);
+  }
+
+  function triggerDownload(blob, fileName) {
+    if (!blob) throw new Error('PDF oluşturulamadı (boş dosya).');
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = fileName || 'duru-ulv.pdf';
+    a.rel = 'noopener';
+    a.style.display = 'none';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function () {
+      URL.revokeObjectURL(url);
+      if (a.parentNode) a.parentNode.removeChild(a);
+    }, 2500);
   }
 
   function ensureAssets() {
