@@ -11,7 +11,16 @@ const {
   faqPageSchemaJson,
   hreflangTags,
 } = require('./seo-meta');
-const { localePaths, catalogFileName, translateSpecLabel } = require('./i18n');
+const {
+  localePaths,
+  catalogFileName,
+  translateSpecLabel,
+  productDisplayName,
+  productSummary,
+  categoryDisplayName,
+  categoryShortName,
+  categoryDescription,
+} = require('./i18n');
 const localeProductFaqs = require('./locale-product-faqs');
 
 /** TR sayfa yolu için hreflang alternate etiketleri (tr / en / ar / x-default) */
@@ -203,6 +212,28 @@ function getCategory(slug) {
   return data.kategoriler.find((k) => k.slug === slug);
 }
 
+function pName(p) {
+  return productDisplayName(p, loc.locale);
+}
+function pSum(p) {
+  return productSummary(p, loc.locale);
+}
+function cName(c) {
+  return categoryDisplayName(c, loc.locale);
+}
+function cShort(c) {
+  return categoryShortName(c, loc.locale);
+}
+function cDesc(c) {
+  return categoryDescription(c, loc.locale);
+}
+
+/** EN/AR: Türkçe görsel alt metinleri yerine ürün adını kullan. */
+function localeImageAlt(slug, index, product) {
+  if (loc.locale === 'tr') return productImageAlt(slug, index) || pName(product);
+  return `${pName(product)} — ${loc.ui.galleryImage} ${index}`;
+}
+
 function getRelated(product, limit = 3) {
   return data.urunler
     .filter((p) => p.kategori_slug === product.kategori_slug && p.slug !== product.slug)
@@ -250,12 +281,12 @@ function footer(prefix) {
 function productCard(p, linkPrefix, comparePage) {
   return `          <article class="product-card lift-card">
             <a href="${linkPrefix}${p.slug}/index.html" class="product-card__image img-placeholder">
-              <img src="${linkPrefix.replace(/\.\.\//g, (m, o) => m)}" style="display:none" alt="${esc(p.ad_tr)}" loading="lazy">
+              <img src="${linkPrefix.replace(/\.\.\//g, (m, o) => m)}" style="display:none" alt="${esc(pName(p))}" loading="lazy">
             </a>
             <div class="product-card__body">
               <span class="product-card__model">${esc(p.model_kodu)}</span>
-              <a href="${linkPrefix}${p.slug}/index.html" class="product-card__title">${esc(p.ad_tr)}</a>
-              <p class="product-card__summary">${esc(p.kisa_aciklama_tr)}</p>
+              <a href="${linkPrefix}${p.slug}/index.html" class="product-card__title">${esc(pName(p))}</a>
+              <p class="product-card__summary">${esc(pSum(p))}</p>
               <div class="product-card__actions">
                 <a href="${linkPrefix}${p.slug}/index.html" class="btn btn--primary btn--sm">İncele</a>
                 <button type="button" class="btn btn--outline btn--sm" data-compare-toggle="${p.slug}" data-compare-page="${comparePage}"><span data-compare-label>Karşılaştır</span></button>
@@ -278,16 +309,16 @@ function productCardFixed(p, assetPrefix, pagePrefix, comparePage) {
   const dims = scaledDims(displayFile, 400);
   const imageClass = hasProductImages(p.slug) ? 'product-card__image' : 'product-card__image img-placeholder';
   const imgTag = hasProductImages(p.slug)
-    ? `<img src="${img}"${srcset ? ` srcset="${srcset}"` : ''} sizes="(max-width:767px) 100vw, (max-width:1024px) 50vw, 390px" width="${dims.width}" height="${dims.height}" alt="${esc(p.ad_tr)}" loading="lazy" decoding="async">`
-    : `<img src="${img}" alt="${esc(p.ad_tr)}" loading="lazy" style="display:none">`;
+    ? `<img src="${img}"${srcset ? ` srcset="${srcset}"` : ''} sizes="(max-width:767px) 100vw, (max-width:1024px) 50vw, 390px" width="${dims.width}" height="${dims.height}" alt="${esc(pName(p))}" loading="lazy" decoding="async">`
+    : `<img src="${img}" alt="${esc(pName(p))}" loading="lazy" style="display:none">`;
   return `          <article class="product-card lift-card">
             <a href="${pagePrefix}${p.slug}/index.html" class="${imageClass}">
               ${imgTag}
             </a>
             <div class="product-card__body">
               <span class="product-card__model">${esc(p.model_kodu)}</span>
-              <a href="${pagePrefix}${p.slug}/index.html" class="product-card__title">${esc(p.ad_tr)}</a>
-              <p class="product-card__summary">${esc(p.kisa_aciklama_tr)}</p>
+              <a href="${pagePrefix}${p.slug}/index.html" class="product-card__title">${esc(pName(p))}</a>
+              <p class="product-card__summary">${esc(pSum(p))}</p>
               <div class="product-card__actions">
                 <a href="${pagePrefix}${p.slug}/index.html" class="btn btn--primary btn--sm">${esc(ui.view)}</a>
                 <button type="button" class="btn btn--outline btn--sm" data-compare-toggle="${p.slug}" data-compare-page="${comparePage}"><span data-compare-label>${esc(ui.compare)}</span></button>
@@ -341,14 +372,14 @@ function generateProductPage(product) {
           const relImageClass = hasProductImages(p.slug) ? 'product-card__image' : 'product-card__image img-placeholder';
           const relHref = loc.productHrefRelated(p);
           const relImgTag = hasProductImages(p.slug)
-            ? `<img src="${relImg}"${srcset ? ` srcset="${srcset}"` : ''} sizes="(max-width:767px) 100vw, (max-width:1024px) 50vw, 390px" width="${dims.width}" height="${dims.height}" alt="${esc(p.ad_tr)}" loading="lazy" decoding="async">`
+            ? `<img src="${relImg}"${srcset ? ` srcset="${srcset}"` : ''} sizes="(max-width:767px) 100vw, (max-width:1024px) 50vw, 390px" width="${dims.width}" height="${dims.height}" alt="${esc(pName(p))}" loading="lazy" decoding="async">`
             : '';
           return `          <article class="product-card lift-card">
             <a href="${relHref}" class="${relImageClass}">${relImgTag}</a>
             <div class="product-card__body">
               <span class="product-card__model">${esc(p.model_kodu)}</span>
-              <a href="${relHref}" class="product-card__title">${esc(p.ad_tr)}</a>
-              <p class="product-card__summary">${esc(p.kisa_aciklama_tr)}</p>
+              <a href="${relHref}" class="product-card__title">${esc(pName(p))}</a>
+              <p class="product-card__summary">${esc(pSum(p))}</p>
               <div class="product-card__actions"><a href="${relHref}" class="btn btn--primary btn--sm">${esc(ui.view)}</a></div>
             </div>
           </article>`;
@@ -373,7 +404,7 @@ function generateProductPage(product) {
         : '';
       const thumbFile = variants.thumb || baseFile;
       const thumbSrc = productPublicPath(thumbFile, prefix);
-      const alt = productImageAlt(product.slug, n) || `${product.ad_tr} — ${ui.galleryImage} ${n}`;
+      const alt = localeImageAlt(product.slug, n, product);
       return `<button type="button" class="product-gallery__thumb${i === 0 ? ' is-active' : ''}" data-gallery-thumb data-src="${fullSrc}"${srcset ? ` data-srcset="${srcset}"` : ''} data-alt="${esc(alt)}" aria-label="${esc(ui.galleryImage)} ${n}"><img src="${thumbSrc}" width="90" height="90" alt="" loading="lazy" decoding="async"></button>`;
     })
     .join('\n            ');
@@ -394,17 +425,17 @@ function generateProductPage(product) {
     : '';
   const mainDims = scaledDims(mainDisplayFile, 640);
   const mainImageClass = hasProductImages(product.slug) ? 'product-gallery__main' : 'product-gallery__main img-placeholder';
-  const mainAlt = productImageAlt(product.slug, 1) || product.ad_tr;
+  const mainAlt = localeImageAlt(product.slug, 1, product);
   const mainSizes = '(max-width: 1024px) 100vw, 640px';
   const preloadTag = hasProductImages(product.slug)
     ? `  <link rel="preload" as="image" type="image/webp" href="${mainSrc}"${mainSrcset ? ` imagesrcset="${mainSrcset}"` : ''} imagesizes="${mainSizes}" fetchpriority="high">\n`
     : '';
   const ogDims = productImageDims(mainBase);
   const canonicalRel = loc.canonicalProduct(product);
-  const pageTitle = product.meta_title || `${product.ad_tr} — ${ui.brandSuffix}`;
+  const pageTitle = product.meta_title || `${pName(product)} — ${ui.brandSuffix}`;
   const pageDesc =
     product.meta_desc ||
-    `${product.ad_tr} — ${product.kisa_aciklama_tr}. ${ui.brandSuffix} ${cat.kisa_ad}.`;
+    `${pName(product)} — ${pSum(product)}. ${ui.brandSuffix} ${cShort(cat)}.`;
   const seoBlock = renderSeoHead({
     title: pageTitle,
     description: pageDesc,
@@ -451,8 +482,8 @@ ${header(prefix, product.slug, loc.trProductRel(product))}
       <ol class="breadcrumb">
         <li><a href="${loc.homeHref(prefix)}">${esc(ui.home)}</a> ›</li>
         <li><a href="${productsListHref}">${esc(ui.products)}</a> ›</li>
-        <li><a href="${categoryHref}">${esc(cat.kisa_ad)}</a> ›</li>
-        <li><span class="breadcrumb__current">${esc(product.ad_tr)}</span></li>
+        <li><a href="${categoryHref}">${esc(cShort(cat))}</a> ›</li>
+        <li><span class="breadcrumb__current">${esc(pName(product))}</span></li>
       </ol>
     </div>
   </div>
@@ -470,9 +501,9 @@ ${header(prefix, product.slug, loc.trProductRel(product))}
         </div>
 
         <div class="product-info">
-          <div class="eyebrow">${esc(cat.kisa_ad)} · ${esc(ui.modelLabel)} ${esc(product.model_kodu)}</div>
-          <h1 class="product-info__title">${esc(product.ad_tr)}</h1>
-          <p class="product-info__summary">${esc(product.kisa_aciklama_tr)}</p>
+          <div class="eyebrow">${esc(cShort(cat))} · ${esc(ui.modelLabel)} ${esc(product.model_kodu)}</div>
+          <h1 class="product-info__title">${esc(pName(product))}</h1>
+          <p class="product-info__summary">${esc(pSum(product))}</p>
 
           <div class="product-info__chips">
             ${chipHtml}
@@ -499,7 +530,7 @@ ${header(prefix, product.slug, loc.trProductRel(product))}
     <section class="section bg-muted border-y">
       <div class="container container--narrow">
         <div class="eyebrow">${esc(ui.specsEyebrow)}</div>
-        <h2 class="section-title" style="margin-bottom:2rem">${esc(product.ad_tr)} — ${esc(ui.specsHeadingSuffix)}</h2>
+        <h2 class="section-title" style="margin-bottom:2rem">${esc(pName(product))} — ${esc(ui.specsHeadingSuffix)}</h2>
         <div class="spec-table-wrap">
           <table class="spec-table">
             <tbody>
@@ -515,7 +546,7 @@ ${specRows}
         <div class="eyebrow">${esc(ui.whyModel)}</div>
         <h2 class="section-title" style="margin-bottom:1.5rem">${esc(ui.productDetails)}</h2>
         <!-- GENİŞ AÇIKLAMA: buraya gelecek -->
-        <p style="color:rgba(43,46,51,0.8);line-height:1.65;margin-bottom:1.25rem">${esc(product.kisa_aciklama_tr)}. ${esc(ui.detailP1Suffix)}</p>
+        <p style="color:rgba(43,46,51,0.8);line-height:1.65;margin-bottom:1.25rem">${esc(pSum(product))}. ${esc(ui.detailP1Suffix)}</p>
         <p style="color:rgba(43,46,51,0.8);line-height:1.65">${esc(ui.detailP2)}</p>
       </div>
     </section>
@@ -602,8 +633,8 @@ ${relatedCards}
     }
   }
 
-  const catDesc = `${category.ad_tr} — ${ui.brandSuffix} ${products.length} ${ui.modelUnit}. ${category.aciklama_tr}`;
-  const catTitle = `${category.kisa_ad} — ${ui.brandSuffix}`;
+  const catDesc = `${cName(category)} — ${ui.brandSuffix} ${products.length} ${ui.modelUnit}. ${cDesc(category)}`;
+  const catTitle = `${cShort(category)} — ${ui.brandSuffix}`;
   const firstProduct = products[0];
   const catOg = firstProduct
     ? productOgImageUrl(firstProduct.slug, imageManifest)
@@ -614,7 +645,7 @@ ${relatedCards}
     canonicalPathRel: loc.canonicalCategory(category),
     hreflangSourceRel: loc.trCategoryRel(category),
     ogImage: catOg,
-    ogImageAlt: category.ad_tr,
+    ogImageAlt: cName(category),
     locale: ui.ogLocale,
   });
 
@@ -639,9 +670,9 @@ ${header(prefix, null, loc.trCategoryRel(category))}
         <div class="section-header-row">
           <div>
             <div class="eyebrow">Ürün Kategorisi</div>
-            <h1 class="section-title">${esc(category.ad_tr)}</h1>
+            <h1 class="section-title">${esc(cName(category))}</h1>
           </div>
-          <p>${esc(category.aciklama_tr)}</p>
+          <p>${esc(cDesc(category))}</p>
         </div>
         <p style="font-size:0.875rem;color:rgba(43,46,51,0.6);margin:-1.5rem 0 2rem">${products.length} model</p>
         <div class="grid-3">
@@ -655,12 +686,18 @@ ${relatedSection}
         <div class="cta-box">
           <div class="cta-box__grid">
             <div>
-              <h2 class="section-title" style="font-size:clamp(1.5rem,3vw,1.875rem)">${esc(category.kisa_ad)} modelleri için teklif alın</h2>
-              <p class="cta-box__text">Birden fazla modeli karşılaştırıp tek form ile özel teklif talep edebilirsiniz.</p>
+              <h2 class="section-title" style="font-size:clamp(1.5rem,3vw,1.875rem)">${
+                loc.locale === 'en'
+                  ? esc(`Request a quote for ${cShort(category)} models`)
+                  : loc.locale === 'ar'
+                    ? esc(`اطلب عرض سعر لطرازات ${cShort(category)}`)
+                    : esc(`${cShort(category)} modelleri için teklif alın`)
+              }</h2>
+              <p class="cta-box__text">${esc(ui.categoryQuoteLead)}</p>
             </div>
             <div class="cta-box__actions">
               <a href="${loc.quoteHref(prefix)}" class="btn btn--primary">${esc(ui.quoteArrow)}</a>
-              <a href="${prefix}${loc.locale === 'tr' ? '' : `${loc.locale}/`}iletisim/index.html" class="btn btn--outline">İletişim</a>
+              <a href="${loc.contactHref(prefix)}" class="btn btn--outline">${esc(ui.contact)}</a>
             </div>
           </div>
         </div>
@@ -702,16 +739,16 @@ function generateProductsIndex() {
       const imageClass = hasProductImages(p.slug) ? 'product-card__image' : 'product-card__image img-placeholder';
       const href = loc.productHrefFromIndex(p);
       const imgTag = hasProductImages(p.slug)
-        ? `<img src="${img}"${srcset ? ` srcset="${srcset}"` : ''} sizes="(max-width:767px) 100vw, (max-width:1024px) 50vw, 390px" width="${dims.width}" height="${dims.height}" alt="${esc(p.ad_tr)}" loading="lazy" decoding="async">`
-        : `<img src="${img}" alt="${esc(p.ad_tr)}" loading="lazy" style="display:none">`;
+        ? `<img src="${img}"${srcset ? ` srcset="${srcset}"` : ''} sizes="(max-width:767px) 100vw, (max-width:1024px) 50vw, 390px" width="${dims.width}" height="${dims.height}" alt="${esc(pName(p))}" loading="lazy" decoding="async">`
+        : `<img src="${img}" alt="${esc(pName(p))}" loading="lazy" style="display:none">`;
       return `          <article class="product-card lift-card">
             <a href="${href}" class="${imageClass}">
               ${imgTag}
             </a>
             <div class="product-card__body">
-              <span class="product-card__model">${esc(p.model_kodu)} · ${esc(cat.kisa_ad)}</span>
-              <a href="${href}" class="product-card__title">${esc(p.ad_tr)}</a>
-              <p class="product-card__summary">${esc(p.kisa_aciklama_tr)}</p>
+              <span class="product-card__model">${esc(p.model_kodu)} · ${esc(cShort(cat))}</span>
+              <a href="${href}" class="product-card__title">${esc(pName(p))}</a>
+              <p class="product-card__summary">${esc(pSum(p))}</p>
               <div class="product-card__actions">
                 <a href="${href}" class="btn btn--primary btn--sm">${esc(ui.view)}</a>
                 <button type="button" class="btn btn--outline btn--sm" data-compare-toggle="${p.slug}" data-compare-page="${loc.compareHref(prefix)}"><span data-compare-label>${esc(ui.compare)}</span></button>
@@ -723,7 +760,7 @@ function generateProductsIndex() {
 
   const productCount = data.urunler.length;
   const categoryCount = data.kategoriler.length;
-  const catNames = data.kategoriler.map((c) => c.kisa_ad.toLowerCase()).join(', ');
+  const catNames = data.kategoriler.map((c) => cShort(c).toLowerCase()).join(', ');
   const listDesc =
     loc.locale === 'tr'
       ? `Duru ULV ürün kataloğu — ${productCount} model, ${categoryCount} kategori: ${catNames}.`

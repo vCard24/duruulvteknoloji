@@ -21,6 +21,7 @@ const UI = {
     terms: 'Kullanım Koşulları',
     siteNav: 'Site',
     certificates: 'Sertifikalar & Onaylar',
+    categoryQuoteLead: 'Birden fazla modeli karşılaştırıp tek form ile özel teklif talep edebilirsiniz.',
     rights: 'Tüm hakları saklıdır.',
     navAria: 'Ana menü',
     menuToggle: 'Menüyü aç/kapat',
@@ -99,7 +100,9 @@ const UI = {
     kvkk: 'Privacy (KVKK)',
     terms: 'Terms of Use',
     siteNav: 'Site',
-    certificates: 'Certificates & Approvals',
+    certificates: 'Certifications & Approvals',
+    categoryQuoteLead:
+      'Compare multiple models and request a custom quote with a single form.',
     rights: 'All rights reserved.',
     navAria: 'Main menu',
     menuToggle: 'Open or close menu',
@@ -179,6 +182,7 @@ const UI = {
     terms: 'شروط الاستخدام',
     siteNav: 'الموقع',
     certificates: 'الشهادات والاعتمادات',
+    categoryQuoteLead: 'قارن عدة طرازات واطلب عرض سعر مخصص عبر نموذج واحد.',
     rights: 'جميع الحقوق محفوظة.',
     navAria: 'القائمة الرئيسية',
     menuToggle: 'فتح أو إغلاق القائمة',
@@ -426,4 +430,49 @@ function translateSpecLabel(label, locale) {
   return (map && map[label]) || label;
 }
 
-module.exports = { UI, catalogFileName, localePaths, translateSpecLabel, SPEC_LABELS };
+/**
+ * Locale kataloglarında metin alanları historically `ad_tr` / `kisa_aciklama_tr`
+ * key'leriyle tutulur (EN/AR JSON'da da). İsteğe bağlı `ad_en` / `ad_ar` varsa öncelenir.
+ */
+function productDisplayName(product, locale) {
+  if (locale === 'en') return product.ad_en || product.ad_tr || '';
+  if (locale === 'ar') return product.ad_ar || product.ad_tr || '';
+  return product.ad_tr || '';
+}
+
+function productSummary(product, locale) {
+  if (locale === 'en') return product.kisa_aciklama_en || product.kisa_aciklama_tr || '';
+  if (locale === 'ar') return product.kisa_aciklama_ar || product.kisa_aciklama_tr || '';
+  return product.kisa_aciklama_tr || '';
+}
+
+function categoryDisplayName(category, locale) {
+  if (locale === 'en') return category.ad_en || category.ad_tr || '';
+  if (locale === 'ar') return category.ad_ar || category.ad_tr || '';
+  return category.ad_tr || '';
+}
+
+function categoryShortName(category, locale) {
+  if (locale === 'en') return category.kisa_ad_en || category.kisa_ad || '';
+  if (locale === 'ar') return category.kisa_ad_ar || category.kisa_ad || '';
+  return category.kisa_ad || '';
+}
+
+function categoryDescription(category, locale) {
+  if (locale === 'en') return category.aciklama_en || category.aciklama_tr || '';
+  if (locale === 'ar') return category.aciklama_ar || category.aciklama_tr || '';
+  return category.aciklama_tr || '';
+}
+
+module.exports = {
+  UI,
+  catalogFileName,
+  localePaths,
+  translateSpecLabel,
+  SPEC_LABELS,
+  productDisplayName,
+  productSummary,
+  categoryDisplayName,
+  categoryShortName,
+  categoryDescription,
+};
