@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { renderCategoryCard } = require('./category-icons');
-const { siteHeader, siteFooter } = require('./site-layout');
+const { siteHeader, siteFooter, socialLinksHtml } = require('./site-layout');
 const { renderHeadAssets, renderBodyScripts } = require('./head-assets');
 const { assetHref } = require('./static-asset-hashes');
 const { loadManifest: loadImageManifest } = require('./image-variants');
@@ -464,6 +464,7 @@ ${categoryCatalogCards}
               <li><div><div class="contact-list__label">E-posta</div><div class="contact-list__value"><a href="mailto:${data.kurumsal_bilgiler.email}">${esc(data.kurumsal_bilgiler.email)}</a></div></div></li>
               <li><div><div class="contact-list__label">Adres</div><div class="contact-list__value" style="font-size:0.875rem;font-weight:400;color:rgba(43,46,51,0.8)">${esc(data.kurumsal_bilgiler.adres.satir1)}<br>${esc(data.kurumsal_bilgiler.adres.satir2)}</div></div></li>
               <li><div><div class="contact-list__label">Çalışma Saatleri</div><div class="contact-list__value" style="font-size:0.875rem;font-weight:400;color:rgba(43,46,51,0.8)">Pazartesi – Cumartesi: 08:30 – 18:00<br>Pazar: Kapalı</div></div></li>
+              <li><div><div class="contact-list__label">Sosyal medya</div><div class="contact-list__value">${socialLinksHtml({ modifier: 'contact' })}</div></div></li>
             </ul>
             <div style="margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:0.75rem">
               <a href="${P}fiyat-teklifi/index.html" class="btn btn--primary">Teklif Al →</a>

@@ -78,6 +78,8 @@ ${k.firma_adi}, 1990'dan bu yana Kayseri'de ULV ilaçlama ekipmanları tasarlar 
 - [Hakkımızda](${url('hakkimizda/')}): 36 yıllık üretim tecrübesi, sertifikalar
 - [Kalite Politikamız](${url('kalite-politikamiz/')}): CE, TSE, ISO 9001/14001/45001
 - [İletişim](${url('iletisim/')}): ${k.telefon}, ${k.email}
+- Instagram: ${k.sosyal && k.sosyal.instagram ? k.sosyal.instagram : ''}
+- Facebook: ${k.sosyal && k.sosyal.facebook ? k.sosyal.facebook : ''}
 - [Fiyat Teklifi](${url('fiyat-teklifi/')}): Kurumsal teklif talep formu
 
 ## Ürün Kategorileri
