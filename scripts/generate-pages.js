@@ -11,7 +11,7 @@ const {
   faqPageSchemaJson,
   hreflangTags,
 } = require('./seo-meta');
-const { localePaths, catalogFileName } = require('./i18n');
+const { localePaths, catalogFileName, translateSpecLabel } = require('./i18n');
 const localeProductFaqs = require('./locale-product-faqs');
 
 /** TR sayfa yolu için hreflang alternate etiketleri (tr / en / ar / x-default) */
@@ -218,13 +218,33 @@ function header(prefix, quoteProducts, trPathRel) {
     prefix,
     quoteHref,
     productsHref: loc.productsHref(prefix),
+    homeHref: loc.homeHref(prefix),
+    catalogHref: loc.catalogHref(prefix),
+    blogHref: loc.blogHref(prefix),
+    compareHref: loc.compareHref(prefix),
+    aboutHref: loc.aboutHref(prefix),
+    contactHref: loc.contactHref(prefix),
     locale: loc.locale,
     trPathRel: trPathRel || loc.trProductsIndexRel,
   });
 }
 
 function footer(prefix) {
-  return siteFooter({ prefix });
+  return siteFooter({
+    prefix,
+    locale: loc.locale,
+    homeHref: loc.homeHref(prefix),
+    productsHref: loc.productsHref(prefix),
+    catalogHref: loc.catalogHref(prefix),
+    blogHref: loc.blogHref(prefix),
+    compareHref: loc.compareHref(prefix),
+    aboutHref: loc.aboutHref(prefix),
+    qualityHref: loc.qualityHref(prefix),
+    contactHref: loc.contactHref(prefix),
+    privacyHref: loc.privacyHref(prefix),
+    kvkkHref: loc.kvkkHref(prefix),
+    termsHref: loc.termsHref(prefix),
+  });
 }
 
 function productCard(p, linkPrefix, comparePage) {
@@ -285,11 +305,17 @@ function generateProductPage(product) {
   const imageCount = productImageCount(product.slug) || 4;
 
   const specRows = product.teknik_tablo
-    .map((row) => `              <tr><th scope="row">${esc(row.ozellik)}</th><td>${esc(row.deger)}</td></tr>`)
+    .map((row) => {
+      const label = translateSpecLabel(row.ozellik, loc.locale);
+      return `              <tr><th scope="row">${esc(label)}</th><td>${esc(row.deger)}</td></tr>`;
+    })
     .join('\n');
 
   const chipHtml = chips
-    .map((row) => `<span class="chip"><span class="chip__key">${esc(row.ozellik)}:</span> ${esc(row.deger)}</span>`)
+    .map((row) => {
+      const label = translateSpecLabel(row.ozellik, loc.locale);
+      return `<span class="chip"><span class="chip__key">${esc(label)}:</span> ${esc(row.deger)}</span>`;
+    })
     .join('\n            ');
 
   const faqHtml = getProductFaqs(product).map(

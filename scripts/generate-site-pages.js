@@ -611,7 +611,6 @@ function writeLocaleSitePages(locale) {
   const catalog = JSON.parse(
     fs.readFileSync(path.join(ROOT, 'assets/data', catalogFileName(locale)), 'utf8')
   );
-  const prefix = '../../';
   const ui = loc.ui;
   const firma = catalog.kurumsal_bilgiler.firma_adi || 'Duru ULV';
 
@@ -676,6 +675,8 @@ function writeLocaleSitePages(locale) {
 
   corporate.forEach((page) => {
     const outRel = `${locale}/${page.rel}`;
+    const depth = outRel.split('/').length - 1;
+    const pagePrefix = '../'.repeat(depth);
     const seoBlock = renderSeoHead({
       title: page.title,
       description: page.description,
@@ -685,7 +686,7 @@ function writeLocaleSitePages(locale) {
       ogImageAlt: page.h1,
       locale: ui.ogLocale,
     });
-    const productsHref = loc.productsHref(prefix);
+    const productsHref = loc.productsHref(pagePrefix);
     const html = `<!DOCTYPE html>
 <html ${loc.htmlLangAttrs}>
 <head>
@@ -694,15 +695,21 @@ function writeLocaleSitePages(locale) {
   <meta name="description" content="${esc(page.description)}">
   <title>${esc(page.title)}</title>
 ${seoBlock}
-  <link rel="icon" href="${prefix}assets/img/duru-icon.svg" type="image/svg+xml">
-${renderHeadAssets(prefix, { extraStylesheets: loc.extraStylesheets })}
+  <link rel="icon" href="${pagePrefix}assets/img/duru-icon.svg" type="image/svg+xml">
+${renderHeadAssets(pagePrefix, { extraStylesheets: loc.extraStylesheets })}
 </head>
 <body>
 
 ${siteHeader({
-      prefix,
+      prefix: pagePrefix,
       productsHref,
-      quoteHref: loc.quoteHref(prefix),
+      quoteHref: loc.quoteHref(pagePrefix),
+      homeHref: loc.homeHref(pagePrefix),
+      catalogHref: loc.catalogHref(pagePrefix),
+      blogHref: loc.blogHref(pagePrefix),
+      compareHref: loc.compareHref(pagePrefix),
+      aboutHref: loc.aboutHref(pagePrefix),
+      contactHref: loc.contactHref(pagePrefix),
       locale,
       trPathRel: page.trRel,
     })}
@@ -717,8 +724,22 @@ ${siteHeader({
       </div>
     </section>
   </main>
-${siteFooter({ prefix })}
-${renderBodyScripts(prefix)}
+${siteFooter({
+      prefix: pagePrefix,
+      locale,
+      homeHref: loc.homeHref(pagePrefix),
+      productsHref,
+      catalogHref: loc.catalogHref(pagePrefix),
+      blogHref: loc.blogHref(pagePrefix),
+      compareHref: loc.compareHref(pagePrefix),
+      aboutHref: loc.aboutHref(pagePrefix),
+      qualityHref: loc.qualityHref(pagePrefix),
+      contactHref: loc.contactHref(pagePrefix),
+      privacyHref: loc.privacyHref(pagePrefix),
+      kvkkHref: loc.kvkkHref(pagePrefix),
+      termsHref: loc.termsHref(pagePrefix),
+    })}
+${renderBodyScripts(pagePrefix)}
 </body>
 </html>
 `;
