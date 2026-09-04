@@ -1664,8 +1664,8 @@ body.gallery-lightbox-open {
 }
 
 .sector-item__icon {
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 48px;
+  height: 48px;
   color: var(--color-primary);
 }
 

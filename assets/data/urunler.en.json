@@ -110,7 +110,25 @@
         }
       ],
       "meta_title": "Truck-Mounted Mist Blower | Duru 15HP",
-      "meta_desc": "Professional truck-mounted mist blower with 400L tank for municipal mosquito control. CE & ISO certified. Request a quote."
+      "meta_desc": "Professional truck-mounted mist blower with 400L tank for municipal mosquito control. CE & ISO certified. Request a quote.",
+      "faqs": [
+        {
+          "q": "Which vehicles can this vehicle-mounted misting machine be installed on?",
+          "a": "It is designed for mounting on a pick-up bed or light truck with a suitable platform/chassis."
+        },
+        {
+          "q": "What is the tank capacity of the Duru Mist Blower 15HP?",
+          "a": "400 litres, enabling long routes to be treated on a single fill."
+        },
+        {
+          "q": "Which pests is this unit effective against?",
+          "a": "It is used for flying insect control — especially mosquitoes and houseflies — and for spot larval treatments."
+        },
+        {
+          "q": "What is the warranty period?",
+          "a": "Duru products are sold with a 2-year device warranty and a 10-year spare-parts warranty."
+        }
+      ]
     },
     {
       "slug": "entosis-mist-blower-500l",
@@ -186,7 +204,29 @@
         }
       ],
       "meta_title": "Truck-Mounted Mist Blower | Entosis 500L",
-      "meta_desc": "Professional truck-mounted mist blower with 500L tank and joystick control for large-area spraying. Request a quote."
+      "meta_desc": "Professional truck-mounted mist blower with 500L tank and joystick control for large-area spraying. Request a quote.",
+      "faqs": [
+        {
+          "q": "What is the main difference between the Entosis Mist Blower 500L and the Duru Mist Blower 15HP?",
+          "a": "The Entosis model covers longer routes on a single fill with its 500-litre tank; the Duru Mist Blower 15HP offers a more compact alternative with a 400-litre tank and 340 kg weight."
+        },
+        {
+          "q": "How much area does the 500-litre tank cover?",
+          "a": "It depends on formulation, flow setting, and route length, but it enables metropolitan municipalities to complete a full shift program on a single fill."
+        },
+        {
+          "q": "How does the joystick control system work?",
+          "a": "From the vehicle cab, the operator aims the mist head 340° horizontally and 210° vertically with the joystick, reducing the need to stop and reorient frequently."
+        },
+        {
+          "q": "What is the hand-wash tank on the Entosis model for?",
+          "a": "The 15-litre hand-wash tank lets the operator clean their hands in the field after spraying and supports occupational safety standards."
+        },
+        {
+          "q": "What is the warranty period for the Entosis Mist Blower 500L?",
+          "a": "Like Duru products, it includes a 2-year device warranty and a 10-year spare-parts warranty."
+        }
+      ]
     },
     {
       "slug": "duru-hd1800",
@@ -218,7 +258,25 @@
         }
       ],
       "meta_title": "Truck-Mounted ULV Fogger | Duru HD1800",
-      "meta_desc": "Professional truck-mounted ULV fogger for municipal mosquito control and large-area spraying. CE certified. Request a quote."
+      "meta_desc": "Professional truck-mounted ULV fogger for municipal mosquito control and large-area spraying. CE certified. Request a quote.",
+      "faqs": [
+        {
+          "q": "How does the Duru HD1800 blower system work?",
+          "a": "Using Roots blower technology, it produces 10.6 m³ of airflow per minute to carry chemical particles across a wide area."
+        },
+        {
+          "q": "What nozzle options does this unit offer?",
+          "a": "Optional 4-3-2 nozzle configurations are available, enabling different application densities."
+        },
+        {
+          "q": "Which chemical formulations does the Duru HD1800 work with?",
+          "a": "It is compatible with SC, EC, and WP pesticide and disinfectant formulations."
+        },
+        {
+          "q": "Does the unit have a wash function?",
+          "a": "Yes. A separate “Wash On/Off” control makes system cleaning easy."
+        }
+      ]
     },
     {
       "slug": "duru-hd75",
@@ -262,7 +320,25 @@
         }
       ],
       "meta_title": "Truck-Mounted ULV Fogger | Duru HD75",
-      "meta_desc": "Professional truck-mounted ULV fogger built for municipal mosquito control teams. CE & ISO certified. Request a quote."
+      "meta_desc": "Professional truck-mounted ULV fogger built for municipal mosquito control teams. CE & ISO certified. Request a quote.",
+      "faqs": [
+        {
+          "q": "Can the Duru HD75 run independently of the vehicle engine?",
+          "a": "Yes. Its own 10 kW generator allows operation even when the vehicle engine is off."
+        },
+        {
+          "q": "What is the tank capacity of this unit?",
+          "a": "100 litres, enabling medium-to-large routes to be covered on a single fill."
+        },
+        {
+          "q": "What is the droplet diameter range of the Duru HD75?",
+          "a": "It is adjustable between 09–49 microns, so it can be optimized for different pest types."
+        },
+        {
+          "q": "How is the unit operated?",
+          "a": "It is started with the ignition key and activated via the controls; shutdown must follow a set order (chemical formulation first, then the ULV head)."
+        }
+      ]
     },
     {
       "slug": "duru-hd50",
@@ -298,7 +374,25 @@
         }
       ],
       "meta_title": "Truck-Mounted ULV Fogger | Duru HD50",
-      "meta_desc": "Professional truck-mounted ULV fogger with 50L tank for municipal mosquito control. CE & ISO certified. Request a quote."
+      "meta_desc": "Professional truck-mounted ULV fogger with 50L tank for municipal mosquito control. CE & ISO certified. Request a quote.",
+      "faqs": [
+        {
+          "q": "What is the chemical tank capacity of the Duru HD50?",
+          "a": "Its 50-litre tank provides sufficient capacity for medium-to-large open-area applications."
+        },
+        {
+          "q": "Which chemical formulations can be used with the Duru HD50?",
+          "a": "It is compatible with SC (suspension concentrate), EC (emulsifiable concentrate), and WP (wettable powder) formulations."
+        },
+        {
+          "q": "What warranty does the Duru HD50 include?",
+          "a": "Duru products are sold with a 2-year device warranty and a 10-year spare-parts warranty."
+        },
+        {
+          "q": "Which pests can be controlled with the Duru HD50?",
+          "a": "It is used primarily for flying insect control — especially mosquitoes and houseflies — and also for general area disinfection."
+        }
+      ]
     },
     {
       "slug": "entosis-50",
@@ -334,7 +428,29 @@
         }
       ],
       "meta_title": "Greenhouse ULV Fogger | Entosis 50",
-      "meta_desc": "Professional greenhouse ULV fogger for farms and floriculture crop protection. CE certified. Request a quote."
+      "meta_desc": "Professional greenhouse ULV fogger for farms and floriculture crop protection. CE certified. Request a quote.",
+      "faqs": [
+        {
+          "q": "Is greenhouse spraying without entering the house really possible with the Entosis 50?",
+          "a": "Yes. Start and stop times can be preset so spraying runs automatically without entering the greenhouse."
+        },
+        {
+          "q": "Which greenhouse pests is the Entosis 50 effective against?",
+          "a": "It is used against common greenhouse pests such as aphids, thrips, whitefly larvae, stink bugs, and leafminer flies."
+        },
+        {
+          "q": "How many dönüm of greenhouse can this unit cover?",
+          "a": "It is suitable for greenhouses up to 7 dönüm; for larger houses, see the Sera Max 50 model."
+        },
+        {
+          "q": "How does a greenhouse spraying machine protect farmer health?",
+          "a": "By eliminating skin contact and inhalation exposure to the chemical, it helps protect against risks such as cancer, COPD, and asthma."
+        },
+        {
+          "q": "What is the warranty period for the Entosis 50?",
+          "a": "Like other Duru products, it includes a 2-year device warranty and a 10-year spare-parts warranty."
+        }
+      ]
     },
     {
       "slug": "sera-max-50",
@@ -382,7 +498,29 @@
         }
       ],
       "meta_title": "Greenhouse ULV Fogger | Sera Max 50",
-      "meta_desc": "Professional greenhouse ULV fogger for intensive crop protection in enclosed houses. CE certified. Request a quote."
+      "meta_desc": "Professional greenhouse ULV fogger for intensive crop protection in enclosed houses. CE certified. Request a quote.",
+      "faqs": [
+        {
+          "q": "What is the difference between the Sera Max 50 and the Entosis 50?",
+          "a": "The Sera Max 50 is a higher-capacity model designed for larger greenhouses, with a 4-motor layout and a 100-litre (25 × 4) tank."
+        },
+        {
+          "q": "Which greenhouse sizes is this unit suitable for?",
+          "a": "It is ideal for large-scale commercial greenhouse operations and major production facilities."
+        },
+        {
+          "q": "How much does the Sera Max 50 weigh?",
+          "a": "It weighs 85 kg and can be moved easily thanks to its wheeled chassis."
+        },
+        {
+          "q": "Which chemical formulations is the unit compatible with?",
+          "a": "It works with all SC, EC, and WP formulations."
+        },
+        {
+          "q": "Is the Sera Max 50 used alone or with a helper?",
+          "a": "One operator is enough for moving and positioning given its size and power, but two-person use can speed workflow in very large greenhouses."
+        }
+      ]
     },
     {
       "slug": "sera-ultra-20",
@@ -426,7 +564,29 @@
         }
       ],
       "meta_title": "Greenhouse ULV Fogger | Sera Ultra 20",
-      "meta_desc": "Compact greenhouse ULV fogger with fine droplet control for protected crops. CE certified. Request a quote."
+      "meta_desc": "Compact greenhouse ULV fogger with fine droplet control for protected crops. CE certified. Request a quote.",
+      "faqs": [
+        {
+          "q": "Which greenhouse sizes is the Sera Ultra 20 suitable for?",
+          "a": "It is ideal for small-to-medium greenhouse operations and compartmentalized greenhouse structures."
+        },
+        {
+          "q": "What is the tank capacity of this unit?",
+          "a": "48 litres, enabling medium-scale areas to be treated on a single fill."
+        },
+        {
+          "q": "Which pests can be controlled with the Sera Ultra 20?",
+          "a": "It is effective against common greenhouse pests such as aphids, thrips, and whiteflies."
+        },
+        {
+          "q": "What are the warranty terms?",
+          "a": "Duru products are sold with a 2-year device warranty and a 10-year spare-parts warranty."
+        },
+        {
+          "q": "Is the Sera Ultra 20 safe against electrical leakage?",
+          "a": "Yes. Non-metallic special heads that do not leak current allow safe operation in humid environments such as greenhouses."
+        }
+      ]
     },
     {
       "slug": "entosis-20",
@@ -466,7 +626,29 @@
         }
       ],
       "meta_title": "Greenhouse ULV Fogger | Entosis 20",
-      "meta_desc": "Electric greenhouse ULV fogger for efficient coverage in mid-size houses. CE certified. Request a quote."
+      "meta_desc": "Electric greenhouse ULV fogger for efficient coverage in mid-size houses. CE certified. Request a quote.",
+      "faqs": [
+        {
+          "q": "Is the Entosis 20 sufficient for small greenhouses?",
+          "a": "Yes. Its 20-litre tank is enough for single-fill spraying of small-to-medium greenhouses."
+        },
+        {
+          "q": "How much does this unit weigh?",
+          "a": "It weighs 17 kg and is one of Duru’s lightest greenhouse-type models."
+        },
+        {
+          "q": "Does the Entosis 20 have wheels?",
+          "a": "Yes. Its wheeled design makes it easy to move inside the greenhouse."
+        },
+        {
+          "q": "Which pests can the unit be used against?",
+          "a": "It is effective against common greenhouse pests such as aphids, thrips, and whiteflies."
+        },
+        {
+          "q": "Is spare-parts support available for the Entosis 20?",
+          "a": "Yes. As with all Duru units, a 10-year spare-parts warranty and a technical support line are provided."
+        }
+      ]
     },
     {
       "slug": "sera-plus-20",
@@ -498,7 +680,29 @@
         }
       ],
       "meta_title": "Greenhouse ULV Fogger | Sera Plus 20",
-      "meta_desc": "Reliable greenhouse ULV fogger for routine pest and disease control indoors. CE certified. Request a quote."
+      "meta_desc": "Reliable greenhouse ULV fogger for routine pest and disease control indoors. CE certified. Request a quote.",
+      "faqs": [
+        {
+          "q": "Is the Sera Plus 20 wheeled or fixed?",
+          "a": "It is designed for fixed mounting and is permanently installed at a chosen point in the greenhouse."
+        },
+        {
+          "q": "Does this unit operate automatically?",
+          "a": "Yes. With automatic scheduling, it can run by itself at pre-set times."
+        },
+        {
+          "q": "How much does the Sera Plus 20 weigh?",
+          "a": "It weighs 13 kg and is Duru’s lightest greenhouse-type model."
+        },
+        {
+          "q": "Which types of greenhouses is this unit suitable for?",
+          "a": "It is ideal for commercial greenhouses and mushroom production facilities that need continuous, regular spraying."
+        },
+        {
+          "q": "Is installation of the Sera Plus 20 difficult?",
+          "a": "No. Its compact, light design makes mounting at a suitable greenhouse point relatively easy; contact after-sales technical support for detailed installation help."
+        }
+      ]
     },
     {
       "slug": "duru-sirt10",
@@ -538,7 +742,29 @@
         }
       ],
       "meta_title": "Backpack ULV Fogger | Duru SRT 10",
-      "meta_desc": "Professional backpack ULV fogger for mobile field mosquito control. CE & ISO certified. Request a quote."
+      "meta_desc": "Professional backpack ULV fogger for mobile field mosquito control. CE & ISO certified. Request a quote.",
+      "faqs": [
+        {
+          "q": "Where can the Duru SRT 10 be used?",
+          "a": "It can be used across a very wide range including agricultural fields, greenhouses, farms, factories, warehouses, schools, hospitals, and public transport vehicles."
+        },
+        {
+          "q": "How much does this unit weigh?",
+          "a": "It weighs 8 kg and can be carried comfortably with the shoulder strap."
+        },
+        {
+          "q": "What is the tank capacity of the Duru SRT 10?",
+          "a": "10 litres, enabling small-to-medium areas to be treated on a single fill."
+        },
+        {
+          "q": "What advantage does a backpack sprayer offer versus vehicle-mounted models?",
+          "a": "In narrow, uneven, or multi-level areas where vehicles cannot access, it gives the operator maximum mobility at a lower investment cost."
+        },
+        {
+          "q": "What are the warranty terms for the Duru SRT 10?",
+          "a": "Like other Duru products, it includes a 2-year device warranty and a 10-year spare-parts warranty."
+        }
+      ]
     },
     {
       "slug": "duru-hd5",
@@ -578,7 +804,29 @@
         }
       ],
       "meta_title": "ULV Disinfection Fogger | Duru HD5",
-      "meta_desc": "Professional ULV disinfection fogger for hospitals, hotels, and indoor spaces. CE & ISO certified. Request a quote."
+      "meta_desc": "Professional ULV disinfection fogger for hospitals, hotels, and indoor spaces. CE & ISO certified. Request a quote.",
+      "faqs": [
+        {
+          "q": "Can the Duru HD5 disinfect against viruses and bacteria?",
+          "a": "Yes. When operated at a low micron setting, it is used for broad surface and air disinfection."
+        },
+        {
+          "q": "How much does the Duru HD5 weigh?",
+          "a": "It weighs 4.2 kg and can be carried comfortably with one hand."
+        },
+        {
+          "q": "In which environments should the Duru HD5 not be used?",
+          "a": "Because the unit is electric, follow manufacturer instructions and general electrical safety rules when using it in enclosed areas with wet floors or standing water."
+        },
+        {
+          "q": "Is spare-parts support available for the Duru HD5?",
+          "a": "Yes. As with all Duru units, a 10-year spare-parts warranty and a technical support line are provided."
+        },
+        {
+          "q": "How many m² can be treated with the Duru HD5 in one day?",
+          "a": "Capacity varies with area layout and application intensity. Thanks to its compact design and fast refill, it is sufficient for single-pass disinfection of a medium-sized building (for example a school or office floor). For larger areas, consider higher-tank models such as Duru X10, X20, or Max10."
+        }
+      ]
     },
     {
       "slug": "duru-hr5",
@@ -614,7 +862,29 @@
         }
       ],
       "meta_title": "Handheld ULV Fogger | Duru HR5",
-      "meta_desc": "Compact handheld ULV fogger for precise indoor disinfection and pest control. CE certified. Request a quote."
+      "meta_desc": "Compact handheld ULV fogger for precise indoor disinfection and pest control. CE certified. Request a quote.",
+      "faqs": [
+        {
+          "q": "What is the difference between the Duru HR5 and the Duru HD5?",
+          "a": "The HR5 has a flexible hose extension for treating narrow or hard-to-reach areas; the HD5 uses a standard direct-spray design."
+        },
+        {
+          "q": "Where is this unit most advantageous?",
+          "a": "It is especially useful under furniture, between seats, and in tight corners that standard units cannot reach."
+        },
+        {
+          "q": "How much does the Duru HR5 weigh?",
+          "a": "It weighs 4.2 kg and can be carried comfortably with one hand."
+        },
+        {
+          "q": "What is the warranty period?",
+          "a": "Duru products are sold with a 2-year device warranty and a 10-year spare-parts warranty."
+        },
+        {
+          "q": "In which environments should the Duru HR5 be preferred?",
+          "a": "It is the preferred choice wherever a standard handheld unit cannot reach — for example behind furniture or in tight corners requiring spot treatment."
+        }
+      ]
     },
     {
       "slug": "duru-max5",
@@ -658,7 +928,37 @@
         }
       ],
       "meta_title": "ULV Disinfection Fogger | Duru Max5",
-      "meta_desc": "High-output ULV disinfection fogger for professional indoor hygiene teams. CE & ISO certified. Request a quote."
+      "meta_desc": "High-output ULV disinfection fogger for professional indoor hygiene teams. CE & ISO certified. Request a quote.",
+      "faqs": [
+        {
+          "q": "How does the Duru Max5 carrying stand work?",
+          "a": "The unit ships mounted on a stand, reducing the need to hold it by hand during long sessions."
+        },
+        {
+          "q": "What is the tank capacity of this unit?",
+          "a": "5 litres, enabling single-fill disinfection of small-to-medium areas."
+        },
+        {
+          "q": "Which environments can be disinfected with the Duru Max5?",
+          "a": "It can be used across a wide range including hospitals, hotels, offices, schools, restaurants, and food businesses."
+        },
+        {
+          "q": "What are the warranty terms?",
+          "a": "Duru products are sold with a 2-year device warranty and a 10-year spare-parts warranty."
+        },
+        {
+          "q": "How should I choose between the Duru Max10 and the Duru X10?",
+          "a": "If higher tank capacity (10 litres) and strong single-head spray are your priority, choose the X10; if you want a lighter, more compact model, prefer the Max10."
+        },
+        {
+          "q": "What is the purpose of the Duru Max10 blue chassis?",
+          "a": "The chassis makes wheeled transport easier and improves field visibility and durability."
+        },
+        {
+          "q": "Can the Duru Max5 treat different surfaces in sequence?",
+          "a": "Yes. With the carrying stand, the unit can be moved easily between points for consecutive applications."
+        }
+      ]
     },
     {
       "slug": "duru-plus",
@@ -694,7 +994,29 @@
         }
       ],
       "meta_title": "Handheld ULV Fogger | Duru Plus 3\"",
-      "meta_desc": "Handheld ULV fogger with wider throw for indoor disinfection programs. CE certified. Request a quote."
+      "meta_desc": "Handheld ULV fogger with wider throw for indoor disinfection programs. CE certified. Request a quote.",
+      "faqs": [
+        {
+          "q": "Is the Duru Plus the lightest Duru model?",
+          "a": "Yes. At 3.30 kg, it is the lightest among all Duru handheld products."
+        },
+        {
+          "q": "What is the tank capacity of this unit?",
+          "a": "3 litres, which is sufficient for small-to-medium areas."
+        },
+        {
+          "q": "Who is the Duru Plus suitable for?",
+          "a": "It is ideal for home users, small businesses, and technical staff providing mobile disinfection services."
+        },
+        {
+          "q": "What are the warranty terms?",
+          "a": "Duru products are sold with a 2-year device warranty and a 10-year spare-parts warranty."
+        },
+        {
+          "q": "Can the Duru Plus be used while travelling?",
+          "a": "Yes. Its compact size and light weight allow it to be carried in a vehicle boot, making it suitable for mobile disinfection services."
+        }
+      ]
     },
     {
       "slug": "duru-x20",
@@ -738,7 +1060,29 @@
         }
       ],
       "meta_title": "ULV Disinfection Fogger | Duru X20",
-      "meta_desc": "Professional ULV disinfection fogger for intensive indoor hygiene programs. CE certified. Request a quote."
+      "meta_desc": "Professional ULV disinfection fogger for intensive indoor hygiene programs. CE certified. Request a quote.",
+      "faqs": [
+        {
+          "q": "What is the difference between the Duru X20 and the Duru X10?",
+          "a": "The X20 has dual heads and a 20-litre tank, while the X10 has a single head and a 10-litre tank; the X20 is the higher-capacity option for larger areas."
+        },
+        {
+          "q": "How much does the Duru X20 weigh and how is it moved?",
+          "a": "It weighs 12 kg and can be moved easily on its wheeled chassis without hand-carrying."
+        },
+        {
+          "q": "For which areas is the Duru X20 capacity sufficient?",
+          "a": "With its 20-litre tank, it can cover the single-pass disinfection needs of medium-to-large factories, warehouses, and institutional buildings."
+        },
+        {
+          "q": "What are the warranty terms for the Duru X20?",
+          "a": "Like other Duru products, it includes a 2-year device warranty and a 10-year spare-parts warranty."
+        },
+        {
+          "q": "Can different chemical formulations be used at the same time in the Duru X20?",
+          "a": "No — the tank is single-compartment, so only one formulation is used per fill. If switching applications (for example disinfection and pest spraying), clean and refill the tank."
+        }
+      ]
     },
     {
       "slug": "duru-x10",
@@ -770,7 +1114,29 @@
         }
       ],
       "meta_title": "Handheld ULV Fogger | Duru X10",
-      "meta_desc": "Versatile handheld ULV fogger for daily facility disinfection teams. CE & ISO certified. Request a quote."
+      "meta_desc": "Versatile handheld ULV fogger for daily facility disinfection teams. CE & ISO certified. Request a quote.",
+      "faqs": [
+        {
+          "q": "What is the difference between the Duru X10 and the Duru X20?",
+          "a": "The X10 has a single head and a 10-litre tank, while the X20 has dual heads and a 20-litre tank."
+        },
+        {
+          "q": "How much does this unit weigh?",
+          "a": "It weighs 6.7 kg and can be moved easily on its wheeled chassis."
+        },
+        {
+          "q": "For which areas is the Duru X10 sufficient?",
+          "a": "It can meet the disinfection needs of medium-sized schools, hotels, warehouses, and factory areas."
+        },
+        {
+          "q": "What are the warranty terms?",
+          "a": "Like other Duru products, it includes a 2-year device warranty and a 10-year spare-parts warranty."
+        },
+        {
+          "q": "Does the Duru X10 leave marks on the floor?",
+          "a": "The wheels are designed for hard floors; on sensitive surfaces, use protective mats."
+        }
+      ]
     },
     {
       "slug": "duru-max10",
@@ -814,7 +1180,25 @@
         }
       ],
       "meta_title": "ULV Disinfection Fogger | Duru Max10",
-      "meta_desc": "Higher-capacity ULV disinfection fogger for larger indoor volumes. CE & ISO certified. Request a quote."
+      "meta_desc": "Higher-capacity ULV disinfection fogger for larger indoor volumes. CE & ISO certified. Request a quote.",
+      "faqs": [
+        {
+          "q": "What is the tank capacity of the Duru Max10?",
+          "a": "10 litres, sufficient for regular disinfection of medium-sized areas."
+        },
+        {
+          "q": "Does this unit have wheels?",
+          "a": "Yes. Its wheeled structure mounted on a blue chassis makes it easy to move."
+        },
+        {
+          "q": "Who is the Duru Max10 suitable for?",
+          "a": "It is ideal for the regular disinfection needs of schools, offices, and small-to-medium businesses."
+        },
+        {
+          "q": "What are the warranty terms?",
+          "a": "Duru products are sold with a 2-year device warranty and a 10-year spare-parts warranty."
+        }
+      ]
     },
     {
       "slug": "duru-dmxl",
@@ -858,7 +1242,29 @@
         }
       ],
       "meta_title": "ULV Humidification System | Duru DMXL",
-      "meta_desc": "Professional ULV humidification system for greenhouses and storage climate control. Request a quote."
+      "meta_desc": "Professional ULV humidification system for greenhouses and storage climate control. Request a quote.",
+      "faqs": [
+        {
+          "q": "How many square metres can the Duru DMXL humidify?",
+          "a": "From a single point it humidifies areas from 25 m² to 250 m² evenly; the value may vary with room insulation."
+        },
+        {
+          "q": "Does the reservoir need continuous manual refilling?",
+          "a": "No. With its float design, a hose connected to the tap automatically tops up water as the level drops."
+        },
+        {
+          "q": "Can the Duru DMXL run fully automatically?",
+          "a": "Yes. With an optional humidity sensor (hygrostat) or timer, it can operate semi- or fully automatically."
+        },
+        {
+          "q": "Does the room get wet during humidification?",
+          "a": "No. ULV technique and a special nozzle split water into very fine particles, forming airborne mist without wetting surfaces."
+        },
+        {
+          "q": "Where else is it used besides mushroom houses?",
+          "a": "It is used wherever humidity balance is critical — cold stores, cheese ripening rooms, textile, print, and electronics production facilities."
+        }
+      ]
     },
     {
       "slug": "duru-mxl",
@@ -902,7 +1308,29 @@
         }
       ],
       "meta_title": "ULV Humidification System | Duru MXL",
-      "meta_desc": "Float-controlled ULV humidification system for stable greenhouse humidity. Request a quote."
+      "meta_desc": "Float-controlled ULV humidification system for stable greenhouse humidity. Request a quote.",
+      "faqs": [
+        {
+          "q": "How many square metres does the Duru MXL humidify?",
+          "a": "From a single point it humidifies 25–100 m² evenly."
+        },
+        {
+          "q": "Is the unit portable?",
+          "a": "Yes. Its light 20×20 profile chassis and 4.6 kg weight make it easy to move inside a mushroom house."
+        },
+        {
+          "q": "Do I need to keep adding water to the reservoir?",
+          "a": "No. The float design automatically tops up water from the tap as the level drops."
+        },
+        {
+          "q": "What is the difference between the Duru MXL and the Duru DMXL?",
+          "a": "The DMXL has a rotating head and covers up to 250 m²; the MXL is portable, economical, and ideal for 25–100 m² areas."
+        },
+        {
+          "q": "Can the unit be used outside mushroom houses?",
+          "a": "Yes. It can also be used in small greenhouses, seedling rooms, and workshops that need humidity."
+        }
+      ]
     },
     {
       "slug": "duru-mxl-hgs",
@@ -946,7 +1374,29 @@
         }
       ],
       "meta_title": "ULV Humidification System | MXL-HGS",
-      "meta_desc": "Hygrostat-controlled ULV humidification system with rotating head options. Request a quote."
+      "meta_desc": "Hygrostat-controlled ULV humidification system with rotating head options. Request a quote.",
+      "faqs": [
+        {
+          "q": "What does the hygrostat do?",
+          "a": "It continuously measures room humidity; when humidity falls below the set value it starts the unit automatically, and stops it when the target is reached."
+        },
+        {
+          "q": "Does the unit run fully automatically?",
+          "a": "Yes. With the humidity sensor and float water feed, it maintains the desired humidity without operator intervention."
+        },
+        {
+          "q": "What is the difference between the Duru MXL-HGS and the Duru MXL?",
+          "a": "The MXL-HGS has a hygrostat and controls humidity automatically; the standard MXL runs manually or with a timer."
+        },
+        {
+          "q": "For how many square metres is it suitable?",
+          "a": "It is suitable for 25–100 m² spaces from a single point."
+        },
+        {
+          "q": "Is water and electricity consumption high?",
+          "a": "Because the hygrostat runs only when needed, water and electricity use is lower than continuously running systems."
+        }
+      ]
     },
     {
       "slug": "duru-k100",
@@ -990,7 +1440,29 @@
         }
       ],
       "meta_title": "Thermal Fogger | Duru K 100",
-      "meta_desc": "Professional thermal fogger for open areas, sewer treatment, and frost protection. Request a quote."
+      "meta_desc": "Professional thermal fogger for open areas, sewer treatment, and frost protection. Request a quote.",
+      "faqs": [
+        {
+          "q": "What is the difference between thermal fogging and ULV cold fogging?",
+          "a": "Thermal fogging vaporizes the solution with heat to produce dense visible fog and excels in enclosed volumes such as sewers; ULV produces cold fog electrically. The K 100 operates on the thermal principle."
+        },
+        {
+          "q": "Which pests is the Duru K 100 effective against?",
+          "a": "It is designed especially against larvae, mosquitoes, houseflies, and larger flying insect species."
+        },
+        {
+          "q": "Is the unit used only in sewers?",
+          "a": "No. With the hose removed, it can also be used for open-area hot fogging and frost protection (antifreeze) applications."
+        },
+        {
+          "q": "Which solution is used?",
+          "a": "An oil-based solution mixture is used for thermal fogging."
+        },
+        {
+          "q": "What are the motor and fuel consumption figures?",
+          "a": "The 15 HP petrol Briggs engine consumes 0.75–1 L/h of fuel; chemical flow is adjustable in the 10–20 L/h range."
+        }
+      ]
     },
     {
       "slug": "termal-el-tipi",
@@ -1030,7 +1502,29 @@
         }
       ],
       "meta_title": "Handheld Thermal Fogger | Duru ULV",
-      "meta_desc": "Portable thermal fogger for targeted outdoor and sewer applications. CE certified. Request a quote."
+      "meta_desc": "Portable thermal fogger for targeted outdoor and sewer applications. CE certified. Request a quote.",
+      "faqs": [
+        {
+          "q": "Which applications is the Thermal Handheld unit suitable for?",
+          "a": "It is suitable for sewer spraying, open-area hot fogging, and frost protection (antifreeze) applications."
+        },
+        {
+          "q": "How is the unit used for frost protection?",
+          "a": "In winter it is run in greenhouses with a suitable antifreeze solution to help prevent plants and the space from freezing."
+        },
+        {
+          "q": "Which solution is used?",
+          "a": "An oil-based solution mixture is used for thermal fogging."
+        },
+        {
+          "q": "What is the difference versus the Duru K 100?",
+          "a": "The Thermal Handheld is carried by hand and offers more flexible use; the K 100 is designed for higher-capacity continuous field work with its wheeled chassis and 15 HP engine."
+        },
+        {
+          "q": "How long does the fog remain effective?",
+          "a": "20-micron particles stay suspended in the air for a long time, delivering lasting, high-efficiency biocidal effect."
+        }
+      ]
     }
   ]
 }
