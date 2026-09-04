@@ -361,6 +361,18 @@ ${categoryCatalogCards}
       </div>
     </section>
 
+    <section class="section bg-white border-y">
+      <div class="container">
+        <figure class="facility-band">
+          <img class="facility-band__media" src="${P}assets/img/company/duru-fabrika-merkez.webp" alt="Duru ULV merkez üretim ve yönetim binası, Kayseri Melikgazi" width="646" height="510" loading="lazy" decoding="async">
+          <figcaption class="facility-band__caption">
+            <strong>Merkez üretim ve yönetim binası</strong>
+            <span>Osman Kavuncu Mah. · Melikgazi / Kayseri</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
     <section class="section bg-muted border-y">
       <div class="container">
         <div class="eyebrow">Değerlerimiz</div>
@@ -444,8 +456,11 @@ ${categoryCatalogCards}
             </div>
           </div>
           <div class="contact-card" style="padding:0;overflow:hidden">
-            <div class="map-embed">
-              <iframe title="Duru ULV konumu" src="https://www.google.com/maps?q=Osman+Kavuncu+Mah.+Emirhan+Cad.+No+4%2FC+Melikgazi+Kayseri&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <figure class="contact-facility">
+              <img src="${P}assets/img/company/duru-fabrika-merkez.webp" alt="Duru ULV merkez üretim ve yönetim binası, Kayseri Melikgazi" width="646" height="510" loading="lazy" decoding="async">
+            </figure>
+            <div class="map-embed map-embed--contact">
+              <iframe title="Duru ULV konumu — Google Haritalar" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.651405645858!2d35.453177276194104!3d38.72581165680977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152b11f8208e5599%3A0x806aa4394bb89c09!2sDuru%20ULV!5e0!3m2!1str!2str!4v1788554783103!5m2!1str!2str" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
             <div style="padding:1.5rem;border-top:1px solid var(--border-color)">
               <div style="font-family:var(--font-display);font-weight:600;color:var(--color-primary)">Üretim Tesisi &amp; Merkez Ofis</div>
