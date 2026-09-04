@@ -2039,14 +2039,17 @@ a.whatsapp-btn.wa-pulse {
   margin: 0;
   line-height: 0;
   background: #2a2f33;
+  text-align: center;
 }
 
 .contact-facility img {
   display: block;
-  width: 100%;
-  height: 15rem; /* ~240px — kart içinde haritayla dengeli */
-  object-fit: cover;
-  object-position: center 42%;
+  height: 150px;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: center;
 }
 
 .facility-band {
@@ -2058,10 +2061,12 @@ a.whatsapp-btn.wa-pulse {
 
 .facility-band__media {
   display: block;
-  width: 100%;
-  height: 18.75rem; /* 300px */
-  object-fit: cover;
-  object-position: center 40%;
+  height: 150px;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: center;
   background: #2a2f33;
 }
 
@@ -2086,12 +2091,9 @@ a.whatsapp-btn.wa-pulse {
 }
 
 @media (max-width: 767px) {
-  .contact-facility img {
-    height: 12.5rem;
-  }
-
+  .contact-facility img,
   .facility-band__media {
-    height: 14rem;
+    height: 150px;
   }
 }
 

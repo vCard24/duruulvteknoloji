@@ -222,6 +222,21 @@ const pages = {
   <script src="${P}${assetHref('assets/js/quote-form.js')}"></script>
   <script src="${P}${assetHref('assets/js/quote-pdf.js')}"></script>`,
     `  <link rel="stylesheet" href="${P}${assetHref('assets/css/pdf-export.css')}">
+  <script>
+  (function () {
+    var href = 'https://www.duruulvteknoloji.com.tr/fiyat-teklifi/';
+    var c = document.querySelector('link[rel="canonical"]');
+    if (c) c.setAttribute('href', href);
+    var products = new URLSearchParams(location.search).get('products');
+    if (products != null && String(products).trim() !== '') {
+      var m = document.createElement('meta');
+      m.setAttribute('name', 'robots');
+      m.setAttribute('content', 'noindex, follow');
+      m.setAttribute('data-quote-products-seo', '1');
+      document.head.appendChild(m);
+    }
+  })();
+  </script>
 `,
     { canonical: 'fiyat-teklifi/index.html' }
   ),

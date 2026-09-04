@@ -4,6 +4,38 @@
 (function () {
   'use strict';
 
+  var QUOTE_CANONICAL = 'https://www.duruulvteknoloji.com.tr/fiyat-teklifi/';
+
+  /** ?products= varyantları: canonical temiz URL; parametreli URL noindex */
+  function syncQuotePageSeo() {
+    var canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) {
+      canonical.setAttribute('href', QUOTE_CANONICAL);
+    } else {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      canonical.setAttribute('href', QUOTE_CANONICAL);
+      document.head.appendChild(canonical);
+    }
+
+    var productsParam = new URLSearchParams(window.location.search).get('products');
+    var hasProducts = productsParam != null && String(productsParam).trim() !== '';
+    var robots = document.querySelector('meta[name="robots"][data-quote-products-seo]');
+    if (hasProducts) {
+      if (!robots) {
+        robots = document.createElement('meta');
+        robots.setAttribute('name', 'robots');
+        robots.setAttribute('data-quote-products-seo', '1');
+        document.head.appendChild(robots);
+      }
+      robots.setAttribute('content', 'noindex, follow');
+    } else if (robots) {
+      robots.parentNode.removeChild(robots);
+    }
+  }
+
+  syncQuotePageSeo();
+
   var form = document.getElementById('quote-form');
   if (!form) return;
 
@@ -136,6 +168,7 @@
       url.searchParams.delete('products');
     }
     window.history.replaceState({}, '', url.pathname + url.search);
+    syncQuotePageSeo();
   }
 
   function showError(field, msg) {
