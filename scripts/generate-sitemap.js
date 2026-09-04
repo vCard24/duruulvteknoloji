@@ -1,9 +1,19 @@
 /**
  * robots.txt + sitemap.xml üretimi (Google Search Console / Bing Webmaster)
+ * hreflang: her TR URL için EN/AR alternate (xhtml:link)
  */
 const fs = require('fs');
 const path = require('path');
-const { SITE_ORIGIN, productOgImageUrl, blogCoverOgImageUrl } = require('./seo-meta');
+const {
+  SITE_ORIGIN,
+  productOgImageUrl,
+  blogCoverOgImageUrl,
+  alternateUrl,
+  shouldIncludeHreflang,
+  injectSeoHead,
+  renderSeoHead,
+  DEFAULT_OG_IMAGE,
+} = require('./seo-meta');
 
 const ROOT = path.join(__dirname, '..');
 const imageManifest = JSON.parse(
@@ -14,7 +24,17 @@ const blogPosts = fs.existsSync(path.join(ROOT, 'assets/data/blog-posts.json'))
   ? JSON.parse(fs.readFileSync(path.join(ROOT, 'assets/data/blog-posts.json'), 'utf8'))
   : [];
 
-const SKIP_DIRS = new Set(['api', 'emergent', 'yigitornek', 'node_modules', 'scripts', 'urun_yazilari']);
+const SKIP_DIRS = new Set([
+  'api',
+  'emergent',
+  'yigitornek',
+  'node_modules',
+  'scripts',
+  'urun_yazilari',
+  'en',
+  'ar',
+  'assets',
+]);
 const NOINDEX = new Set(['tesekkurler/index.html']);
 
 function toLoc(relPath) {
@@ -75,64 +95,85 @@ function priorityFor(rel) {
   return '0.5';
 }
 
-const pages = collectStaticPages();
-const urlEntries = pages
-  .map(({ rel, file }) => {
-    const loc = toLoc(rel);
-    const lastmod = lastModFromFile(file);
-    const priority = priorityFor(rel);
-    const img = imageForPage(rel);
-    const imageTag = img
-      ? `\n    <image:image>\n      <image:loc>${img}</image:loc>\n    </image:image>`
-      : '';
-    return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>${priority}</priority>${imageTag}\n  </url>`;
-  })
-  .join('\n');
+function xhtmlAlternates(trRel) {
+  if (!shouldIncludeHreflang(trRel)) return '';
+  const tr = alternateUrl(trRel, 'tr');
+  const en = alternateUrl(trRel, 'en');
+  const ar = alternateUrl(trRel, 'ar');
+  if (!tr || !en || !ar) return '';
+  return [
+    `    <xhtml:link rel="alternate" hreflang="tr" href="${tr}" />`,
+    `    <xhtml:link rel="alternate" hreflang="en" href="${en}" />`,
+    `    <xhtml:link rel="alternate" hreflang="ar" href="${ar}" />`,
+    `    <xhtml:link rel="alternate" hreflang="x-default" href="${tr}" />`,
+  ].join('\n');
+}
+
+function urlEntry(loc, lastmod, priority, imageTag, alternatesXml) {
+  const altBlock = alternatesXml ? `\n${alternatesXml}` : '';
+  return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>${priority}</priority>${imageTag}${altBlock}\n  </url>`;
+}
+
+/** Ana sayfa generate edilmez; hreflang'i SEO bloğuna enjekte et */
+function ensureIndexHreflang() {
+  const indexPath = path.join(ROOT, 'index.html');
+  if (!fs.existsSync(indexPath)) return;
+  let html = fs.readFileSync(indexPath, 'utf8');
+  if (html.includes('hreflang="x-default"')) return;
+
+  const titleMatch = html.match(/<title>([^<]*)<\/title>/i);
+  const descMatch = html.match(/<meta\s+name="description"\s+content="([^"]*)"/i);
+  const title = titleMatch ? titleMatch[1] : 'Duru ULV';
+  const description = descMatch ? descMatch[1] : '';
+  const seoBlock = renderSeoHead({
+    title,
+    description,
+    canonicalPathRel: 'index.html',
+    ogImage: DEFAULT_OG_IMAGE,
+    ogImageAlt: 'Duru ULV',
+  });
+  html = injectSeoHead(html, seoBlock);
+  fs.writeFileSync(indexPath, html, 'utf8');
+  console.log('  ✓ index.html hreflang eklendi');
+}
+
+const pages = collectStaticPages().filter((u) => shouldIncludeHreflang(u.rel));
+const urlBlocks = [];
+
+pages.forEach(({ rel, file }) => {
+  const lastmod = lastModFromFile(file);
+  const priority = priorityFor(rel);
+  const img = imageForPage(rel);
+  const imageTag = img
+    ? `\n    <image:image>\n      <image:loc>${img}</image:loc>\n    </image:image>`
+    : '';
+  const alts = xhtmlAlternates(rel);
+
+  const trLoc = toLoc(rel);
+  const enLoc = alternateUrl(rel, 'en');
+  const arLoc = alternateUrl(rel, 'ar');
+
+  urlBlocks.push(urlEntry(trLoc, lastmod, priority, imageTag, alts));
+  if (enLoc && enLoc !== trLoc) {
+    urlBlocks.push(urlEntry(enLoc, lastmod, priority, '', alts));
+  }
+  if (arLoc && arLoc !== trLoc) {
+    urlBlocks.push(urlEntry(arLoc, lastmod, priority, '', alts));
+  }
+});
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-${urlEntries}
+${urlBlocks.join('\n')}
 </urlset>
 `;
 
-const robots = `# AI discovery: ${SITE_ORIGIN}/llms.txt | ${SITE_ORIGIN}/ai-catalog.json | ${SITE_ORIGIN}/.well-known/security.txt
-
-User-agent: *
-Allow: /
-Disallow: /api/
-Disallow: /emergent/
-Disallow: /yigitornek/
-Disallow: /tesekkurler/
-
-# Major AI crawlers (explicit allow — site is open for indexing & citation with attribution)
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-Sitemap: ${SITE_ORIGIN}/sitemap.xml
-`;
+ensureIndexHreflang();
 
 fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemap, 'utf8');
-fs.writeFileSync(path.join(ROOT, 'robots.txt'), robots, 'utf8');
-console.log(`sitemap.xml: ${pages.length} URL`);
-console.log('robots.txt yazıldı');
+console.log(`sitemap.xml: ${urlBlocks.length} URL (${pages.length} TR × dil varyantı)`);
+console.log('robots.txt korundu (değiştirilmedi)');
 
 require('./generate-ai-discovery').generateAiDiscovery();

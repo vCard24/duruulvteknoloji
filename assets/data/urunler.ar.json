@@ -1,0 +1,1036 @@
+{
+  "kurumsal_bilgiler": {
+    "firma_adi": "دورو يو إل في لأنظمة التكنولوجيا",
+    "telefon": "+90 352 320 20 86",
+    "whatsapp": "905320659117",
+    "email": "info@entosis.com.tr",
+    "sosyal": {
+      "instagram": "https://www.instagram.com/duru_ulv_ltd_sti/",
+      "facebook": "https://www.facebook.com/duruilaclama"
+    },
+    "adres": {
+      "satir1": "Osman Kavuncu Mah. Emirhan Cad. No: 4/C",
+      "satir2": "Melikgazi / Kayseri / Türkiye"
+    },
+    "fiyat_politikasi": "لا تُعرض أسعار المنتجات على الموقع. يتم البيع عبر نموذج طلب عرض سعر أو التواصل المباشر فقط.",
+    "sertifikalar": [
+      "CE",
+      "TSE",
+      "ISO 9001",
+      "ISO 14001",
+      "ISO 45001",
+      "T.C. Gıda Tarım ve Hayvancılık Bakanlığı",
+      "T.C. Sanayi ve Teknoloji Bakanlığı"
+    ]
+  },
+  "kategoriler": [
+    {
+      "slug": "arac-uzeri-ilaclama",
+      "ad_tr": "أجهزة رش ULV المركبة على المركبات",
+      "kisa_ad": "مركب على السيارة",
+      "aciklama_tr": "أجهزة رش ULV ونفخ الضباب المركبة على السيارة لمكافحة البعوض في البلديات والمساحات الكبيرة.",
+      "ikon": "truck"
+    },
+    {
+      "slug": "sera-tipi-ulv-ilaclama",
+      "ad_tr": "أجهزة رش البيوت المحمية",
+      "kisa_ad": "رش البيوت المحمية",
+      "aciklama_tr": "أجهزة رش ULV كهربائية لرش البيوت المحمية بقطرات دقيقة للمزارع وزراعة الأزهار.",
+      "ikon": "flower"
+    },
+    {
+      "slug": "sirt-tipi-ulv-ilaclama",
+      "ad_tr": "أجهزة الرش المحمولة على الظهر",
+      "kisa_ad": "محمول على الظهر",
+      "aciklama_tr": "أجهزة رش ULV محمولة على الظهر للعمل الميداني المتنقل والمناطق صعبة الوصول.",
+      "ikon": "backpack"
+    },
+    {
+      "slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "أجهزة الرش المحمولة باليد",
+      "kisa_ad": "محمول باليد",
+      "aciklama_tr": "أجهزة رش ULV محمولة باليد للتعقيم الداخلي في المستشفيات والفنادق والمستودعات والمصانع.",
+      "ikon": "wrench"
+    },
+    {
+      "slug": "nemlendirme-ulv",
+      "ad_tr": "أنظمة الترطيب ULV",
+      "kisa_ad": "ترطيب",
+      "aciklama_tr": "أنظمة ترطيب ULV للبيوت المحمية ومزارع الفطر والمخازن.",
+      "ikon": "droplets"
+    },
+    {
+      "slug": "termal-sisleme",
+      "ad_tr": "أجهزة التضبيب الحراري ومكافحة الصقيع",
+      "kisa_ad": "حراري",
+      "aciklama_tr": "أجهزة تضبيب حراري للمناطق المفتوحة والمجاري ومكافحة الصقيع.",
+      "ikon": "flame"
+    }
+  ],
+  "urunler": [
+    {
+      "slug": "duru-mist-blower-15hp",
+      "kategori_slug": "arac-uzeri-ilaclama",
+      "ad_tr": "جهاز نفخ ضباب مركب على السيارة - Duru 15HP",
+      "model_kodu": "DMB-15HP-400",
+      "kisa_aciklama_tr": "جهاز نفخ ضباب مركب على السيارة بخزان 400 لتر لمكافحة البعوض في البلديات.",
+      "gorsel": "assets/img/products/duru-mist-blower-15hp-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "15 Hp Amerikan motor"
+        },
+        {
+          "ozellik": "Batarya",
+          "deger": "12 V DC – 60 Ah"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "400 litre"
+        },
+        {
+          "ozellik": "Püskürtme Sistemleri",
+          "deger": "Mist blower – ULV – Pulverizatör"
+        },
+        {
+          "ozellik": "Holder Hortum",
+          "deger": "30 metre"
+        },
+        {
+          "ozellik": "Pompa",
+          "deger": "14 litre / dakika, 150 bar"
+        },
+        {
+          "ozellik": "ULV Mikron",
+          "deger": "35"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "340 kg"
+        }
+      ],
+      "meta_title": "نفخ ضباب مركب على السيارة 15HP | Duru ULV",
+      "meta_desc": "جهاز نفخ ضباب مركب على السيارة لمكافحة البعوض في البلديات. معتمد CE وISO. طلب عرض سعر."
+    },
+    {
+      "slug": "entosis-mist-blower-500l",
+      "kategori_slug": "arac-uzeri-ilaclama",
+      "ad_tr": "جهاز نفخ ضباب مركب على السيارة - Entosis 500L",
+      "model_kodu": "EMB-500",
+      "kisa_aciklama_tr": "جهاز نفخ ضباب مركب على السيارة بسعة 500 لتر وتحكم جوستيك لمكافحة البعوض.",
+      "gorsel": "assets/img/products/entosis-mist-blower-500l-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "15 Hp – 18 hp Amerikan motor"
+        },
+        {
+          "ozellik": "Batarya",
+          "deger": "12 v DC – 60 Ah"
+        },
+        {
+          "ozellik": "MİST Başlık Hareketi",
+          "deger": "340 derece sağa ve sola, 210 derece yukarı ve aşağı"
+        },
+        {
+          "ozellik": "Kumanda",
+          "deger": "Joystick Hareketli"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "500 litre"
+        },
+        {
+          "ozellik": "İlaç Formülasyonu",
+          "deger": "sc – ec – wp"
+        },
+        {
+          "ozellik": "Pompa",
+          "deger": "14 litre / dakika, 150 bar"
+        },
+        {
+          "ozellik": "Püskürtme Sistemleri",
+          "deger": "Mist blower – ULV – Pulverizatör"
+        },
+        {
+          "ozellik": "Holder Hortum",
+          "deger": "30 metre (isteğe bağlı 50 metre)"
+        },
+        {
+          "ozellik": "Yakıt Deposu",
+          "deger": "30 litre"
+        },
+        {
+          "ozellik": "Nozul Sayısı",
+          "deger": "6+1 adet"
+        },
+        {
+          "ozellik": "Yakıt Tüketimi",
+          "deger": "4 litre"
+        },
+        {
+          "ozellik": "ULV Mikron",
+          "deger": "35"
+        },
+        {
+          "ozellik": "El Yıkama Tankı",
+          "deger": "15 litre"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "400 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 105 cm, Boy: 150 cm, Yükseklik: 170 cm"
+        }
+      ],
+      "meta_title": "نفخ ضباب مركب على السيارة 500L | Duru ULV",
+      "meta_desc": "جهاز نفخ ضباب مركب على السيارة بسعة عالية لمكافحة البعوض في البلديات. معتمد. طلب عرض سعر."
+    },
+    {
+      "slug": "duru-hd1800",
+      "kategori_slug": "arac-uzeri-ilaclama",
+      "ad_tr": "جهاز رش ULV مركب على السيارة - Duru HD1800",
+      "model_kodu": "HD-1800",
+      "kisa_aciklama_tr": "جهاز رش ULV مركب على السيارة عالي السعة لمكافحة البعوض الميدانية الشاقة.",
+      "gorsel": "assets/img/products/duru-hd1800-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "18 hp benzinli"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "100 litre"
+        },
+        {
+          "ozellik": "Püskürtme",
+          "deger": "ULV"
+        },
+        {
+          "ozellik": "ULV Mikron",
+          "deger": "0–49"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        }
+      ],
+      "meta_title": "رش ULV مركب على السيارة HD1800 | Duru ULV",
+      "meta_desc": "جهاز رش ULV مركب على السيارة لمكافحة البعوض في البلديات والمساحات الكبيرة. معتمد. طلب عرض سعر."
+    },
+    {
+      "slug": "duru-hd75",
+      "kategori_slug": "arac-uzeri-ilaclama",
+      "ad_tr": "جهاز رش ULV مركب على السيارة - Duru HD75",
+      "model_kodu": "HD-75",
+      "kisa_aciklama_tr": "جهاز رش ULV مركب على السيارة مدمج لمكافحة البعوض في البلديات.",
+      "gorsel": "assets/img/products/duru-hd75-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "10 kW, 220V 50Hz"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "100 litre (50 × 2)"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Kumanda",
+          "deger": "ULV motor, ilaç ve yanar döner lamba aç/kapa"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "85 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 70 cm, Boy: 120 cm, Yükseklik: 110 cm"
+        }
+      ],
+      "meta_title": "رش ULV مركب على السيارة HD75 | Duru ULV",
+      "meta_desc": "جهاز رش ULV مركب على السيارة لفرق البلديات في مكافحة البعوض. معتمد CE وISO. طلب عرض سعر."
+    },
+    {
+      "slug": "duru-hd50",
+      "kategori_slug": "arac-uzeri-ilaclama",
+      "ad_tr": "جهاز رش ULV مركب على السيارة - Duru HD50",
+      "model_kodu": "HD-50",
+      "kisa_aciklama_tr": "جهاز رش ULV مركب على السيارة موثوق لمسارات مكافحة البعوض اليومية في البلديات.",
+      "gorsel": "assets/img/products/duru-hd50-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "3.5–5 kW, 220V 50Hz"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "50 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Püskürtme",
+          "deger": "ULV"
+        }
+      ],
+      "meta_title": "رش ULV مركب على السيارة HD50 | Duru ULV",
+      "meta_desc": "جهاز رش ULV مركب على السيارة لمكافحة البعوض في البلديات. معتمد CE وISO. طلب عرض سعر."
+    },
+    {
+      "slug": "entosis-50",
+      "kategori_slug": "sera-tipi-ulv-ilaclama",
+      "ad_tr": "جهاز رش البيوت المحمية - Entosis 50",
+      "model_kodu": "ENT-50",
+      "kisa_aciklama_tr": "جهاز رش ULV كهربائي لرش البيوت المحمية بسعة 50 لتر.",
+      "gorsel": "assets/img/products/entosis-50-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "U.L.V Motor",
+          "deger": "2200 W × 2 = 4400 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "50 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Kapasite",
+          "deger": "Maksimum 6–7 dönüm"
+        }
+      ],
+      "meta_title": "رش البيوت المحمية Entosis 50 | Duru ULV",
+      "meta_desc": "جهاز رش البيوت المحمية للمزارع وحماية المحاصيل. معتمد CE. طلب عرض سعر."
+    },
+    {
+      "slug": "sera-max-50",
+      "kategori_slug": "sera-tipi-ulv-ilaclama",
+      "ad_tr": "جهاز رش البيوت المحمية - Sera Max 50",
+      "model_kodu": "SMX-50",
+      "kisa_aciklama_tr": "جهاز رش البيوت المحمية عالي الأداء بسعة 50 لتر للتطبيقات المكثفة.",
+      "gorsel": "assets/img/products/sera-max-50-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W × 4 = 8800 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "25 × 4 = 100 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Başlık",
+          "deger": "4 adet ULV başlık"
+        },
+        {
+          "ozellik": "Fan",
+          "deger": "4 × 30 cm (120 cm toplam)"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "85 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 84 cm, Boy: 126 cm, Yükseklik: 150 cm"
+        }
+      ],
+      "meta_title": "رش البيوت المحمية Sera Max 50 | Duru ULV",
+      "meta_desc": "جهاز رش البيوت المحمية لحماية المحاصيل داخل البيوت. معتمد CE. طلب عرض سعر."
+    },
+    {
+      "slug": "sera-ultra-20",
+      "kategori_slug": "sera-tipi-ulv-ilaclama",
+      "ad_tr": "جهاز رش البيوت المحمية - Sera Ultra 20",
+      "model_kodu": "SULTRA-20",
+      "kisa_aciklama_tr": "جهاز رش البيوت المحمية المدمج بقطرات فائقة الدقة.",
+      "gorsel": "assets/img/products/sera-ultra-20-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2000 W × 2 = 4000 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "48 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Başlık",
+          "deger": "2 adet ULV başlık"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "57 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 84 cm, Boy: 110 cm, Yükseklik: 150 cm"
+        }
+      ],
+      "meta_title": "رش البيوت المحمية Ultra 20 | Duru ULV",
+      "meta_desc": "جهاز رش البيوت المحمية بقطرات دقيقة للمزارع المحمية. معتمد CE. طلب عرض سعر."
+    },
+    {
+      "slug": "entosis-20",
+      "kategori_slug": "sera-tipi-ulv-ilaclama",
+      "ad_tr": "جهاز رش البيوت المحمية - Entosis 20",
+      "model_kodu": "ENT-20",
+      "kisa_aciklama_tr": "جهاز رش ULV كهربائي لرش البيوت المحمية متوسطة الحجم.",
+      "gorsel": "assets/img/products/entosis-20-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W × 2 = 4400 W, 220V 50Hz"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "20 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "17 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 52 cm, Boy: 70 cm, Yükseklik: 70 cm"
+        }
+      ],
+      "meta_title": "رش البيوت المحمية Entosis 20 | Duru ULV",
+      "meta_desc": "جهاز رش البيوت المحمية بكفاءة تغطية للمزارع متوسطة الحجم. معتمد. طلب عرض سعر."
+    },
+    {
+      "slug": "sera-plus-20",
+      "kategori_slug": "sera-tipi-ulv-ilaclama",
+      "ad_tr": "جهاز رش البيوت المحمية - Sera Plus 20",
+      "model_kodu": "SPL-20",
+      "kisa_aciklama_tr": "جهاز رش البيوت المحمية بسعة 20 لتر للحماية الروتينية للمحاصيل.",
+      "gorsel": "assets/img/products/sera-plus-20-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2800 W, 220V 50Hz"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "20 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        }
+      ],
+      "meta_title": "رش البيوت المحمية Plus 20 | Duru ULV",
+      "meta_desc": "جهاز رش البيوت المحمية للحماية الروتينية من الآفات. معتمد CE. طلب عرض سعر."
+    },
+    {
+      "slug": "duru-sirt10",
+      "kategori_slug": "sirt-tipi-ulv-ilaclama",
+      "ad_tr": "جهاز رش ULV محمول على الظهر - Duru SRT 10",
+      "model_kodu": "SRT-10",
+      "kisa_aciklama_tr": "جهاز رش ULV محمول على الظهر لمكافحة البعوض الميدانية المتنقلة.",
+      "gorsel": "assets/img/products/duru-sirt10-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "10 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "9–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık (boş)",
+          "deger": "8 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "40 × 50 × 48 cm"
+        }
+      ],
+      "meta_title": "رش ULV محمول على الظهر SRT10 | Duru ULV",
+      "meta_desc": "جهاز رش ULV محمول على الظهر لمكافحة البعوض في الميدان. معتمد CE وISO. طلب عرض سعر."
+    },
+    {
+      "slug": "duru-hd5",
+      "kategori_slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "جهاز رش ULV محمول باليد - Duru HD5",
+      "model_kodu": "HD-5",
+      "kisa_aciklama_tr": "جهاز التعقيم ULV محمول باليد للمستشفيات والفنادق والتعقيم الداخلي.",
+      "gorsel": "assets/img/products/duru-hd5-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC 50Hz"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "5 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "4.2 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 20 cm, Boy: 45 cm, Yükseklik: 45 cm"
+        }
+      ],
+      "meta_title": "جهاز التعقيم ULV محمول باليد HD5 | Duru ULV",
+      "meta_desc": "جهاز التعقيم ULV محمول باليد للمستشفيات والفنادق والمنشآت. معتمد CE وISO. طلب عرض سعر."
+    },
+    {
+      "slug": "duru-hr5",
+      "kategori_slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "جهاز رش ULV محمول باليد - Duru HR5",
+      "model_kodu": "HR-5",
+      "kisa_aciklama_tr": "جهاز رش ULV محمول باليد خفيف للتعقيم الداخلي الدقيق.",
+      "gorsel": "assets/img/products/duru-hr5-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC 50Hz"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "5 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Özellik",
+          "deger": "Hortumlu el tipi"
+        }
+      ],
+      "meta_title": "رش ULV محمول باليد HR5 | Duru ULV",
+      "meta_desc": "جهاز رش ULV محمول باليد للتعقيم ومكافحة الآفات الداخلية. معتمد CE. طلب عرض سعر."
+    },
+    {
+      "slug": "duru-max5",
+      "kategori_slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "جهاز رش ULV محمول باليد - Duru Max5",
+      "model_kodu": "MAX-5",
+      "kisa_aciklama_tr": "جهاز التعقيم ULV محمول باليد عالي الإنتاج لفرق النظافة المهنية.",
+      "gorsel": "assets/img/products/duru-max5-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC 50Hz"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "5 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "5.2 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 20 cm, Boy: 45 cm, Yükseklik: 57 cm"
+        },
+        {
+          "ozellik": "Başlık",
+          "deger": "Yukarı–aşağı oynar başlık"
+        }
+      ],
+      "meta_title": "جهاز التعقيم ULV محمول باليد Max5 | Duru ULV",
+      "meta_desc": "جهاز التعقيم ULV محمول باليد لفرق النظافة المهنية. معتمد CE وISO. طلب عرض سعر."
+    },
+    {
+      "slug": "duru-plus",
+      "kategori_slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "جهاز رش ULV محمول باليد - Duru Plus 3\"",
+      "model_kodu": "PLUS-3\"",
+      "kisa_aciklama_tr": "جهاز رش ULV محمول باليد بمروحة 3 إنش لتغطية تعقيم أوسع.",
+      "gorsel": "assets/img/products/duru-plus-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "1300 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "3 litre"
+        },
+        {
+          "ozellik": "Başlık / Nozul",
+          "deger": "3 inch (3\")"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        }
+      ],
+      "meta_title": "رش ULV محمول باليد Plus 3\" | Duru ULV",
+      "meta_desc": "جهاز رش ULV محمول باليد لتغطية تعقيم داخلية أوسع. معتمد CE. طلب عرض سعر."
+    },
+    {
+      "slug": "duru-x20",
+      "kategori_slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "جهاز رش ULV محمول باليد - Duru X20",
+      "model_kodu": "X-20",
+      "kisa_aciklama_tr": "جهاز التعقيم ULV محمول باليد لبرامج النظافة الداخلية المكثفة.",
+      "gorsel": "assets/img/products/duru-x20-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2000 W × 2 = 4000 W, 220V AC 50Hz"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "20 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "12 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "46 × 60 × 68 cm"
+        },
+        {
+          "ozellik": "Başlık",
+          "deger": "2 adet oynar başlık"
+        }
+      ],
+      "meta_title": "جهاز التعقيم ULV محمول باليد X20 | Duru ULV",
+      "meta_desc": "جهاز التعقيم ULV محمول باليد لبرامج النظافة المكثفة. معتمد CE. طلب عرض سعر."
+    },
+    {
+      "slug": "duru-x10",
+      "kategori_slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "جهاز رش ULV محمول باليد - Duru X10",
+      "model_kodu": "X-10",
+      "kisa_aciklama_tr": "جهاز رش ULV محمول باليد متعدد الاستخدامات للتعقيم اليومي في المنشآت.",
+      "gorsel": "assets/img/products/duru-x10-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "10 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        }
+      ],
+      "meta_title": "رش ULV محمول باليد X10 | Duru ULV",
+      "meta_desc": "جهاز رش ULV محمول باليد للتعقيم اليومي في المنشآت. معتمد CE وISO. طلب عرض سعر."
+    },
+    {
+      "slug": "duru-max10",
+      "kategori_slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "جهاز رش ULV محمول باليد - Duru Max10",
+      "model_kodu": "MAX-10",
+      "kisa_aciklama_tr": "جهاز التعقيم ULV محمول باليد بسعة أعلى للأحجام الداخلية الكبيرة.",
+      "gorsel": "assets/img/products/duru-max10-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC 50Hz"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "10 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "6.7 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 34 cm, Boy: 50 cm, Yükseklik: 60 cm"
+        },
+        {
+          "ozellik": "Başlık",
+          "deger": "Oynar başlık"
+        }
+      ],
+      "meta_title": "جهاز التعقيم ULV محمول باليد Max10 | Duru ULV",
+      "meta_desc": "جهاز التعقيم ULV محمول باليد للأحجام الداخلية الكبيرة. معتمد CE وISO. طلب عرض سعر."
+    },
+    {
+      "slug": "duru-dmxl",
+      "kategori_slug": "nemlendirme-ulv",
+      "ad_tr": "نظام ترطيب ULV - Duru DMXL",
+      "model_kodu": "DMXL",
+      "kisa_aciklama_tr": "نظام ترطيب ULV للبيوت المحمية ومزارع الفطر والمخازن.",
+      "gorsel": "assets/img/products/duru-dmxl-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC 50Hz"
+        },
+        {
+          "ozellik": "Tank",
+          "deger": "Şamandıralı – sınırsız (şebeke bağlantılı)"
+        },
+        {
+          "ozellik": "Nem Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Nem Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Başlık",
+          "deger": "Döner başlık"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "5.2 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 20 cm, Boy: 45 cm, Yükseklik: 57 cm"
+        }
+      ],
+      "meta_title": "نظام ترطيب ULV DMXL | Duru ULV",
+      "meta_desc": "نظام ترطيب ULV للبيوت المحمية والمخازن الزراعية. معتمد. طلب عرض سعر."
+    },
+    {
+      "slug": "duru-mxl",
+      "kategori_slug": "nemlendirme-ulv",
+      "ad_tr": "نظام ترطيب ULV - Duru MXL",
+      "model_kodu": "MXL",
+      "kisa_aciklama_tr": "نظام ترطيب ULV بتحكم عوامة لاستقرار مناخ البيوت المحمية.",
+      "gorsel": "assets/img/products/duru-mxl-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC 50Hz"
+        },
+        {
+          "ozellik": "Tank",
+          "deger": "Şamandıralı – sınırsız (şebeke bağlantılı)"
+        },
+        {
+          "ozellik": "Nem Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Nem Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Kaplama Alanı",
+          "deger": "Tek noktadan 25–100 m²"
+        },
+        {
+          "ozellik": "Gövde",
+          "deger": "20×20 profil şase, lazer kesim, elektrostatik boya"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "4.6 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 20 cm, Boy: 125 cm, Yükseklik: 45 cm"
+        }
+      ],
+      "meta_title": "نظام ترطيب ULV MXL | Duru ULV",
+      "meta_desc": "نظام ترطيب ULV بتحكم عوامة لرطوبة مستقرة في البيوت المحمية. طلب عرض سعر."
+    },
+    {
+      "slug": "duru-mxl-hgs",
+      "kategori_slug": "nemlendirme-ulv",
+      "ad_tr": "نظام ترطيب ULV - Duru MXL-HGS",
+      "model_kodu": "MXL-HGS",
+      "kisa_aciklama_tr": "نظام ترطيب ULV بتحكم هيجروستات ورأس دوّار.",
+      "gorsel": "assets/img/products/duru-mxl-hgs-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC 50Hz"
+        },
+        {
+          "ozellik": "Tank",
+          "deger": "Şamandıralı – sınırsız (şebeke bağlantılı)"
+        },
+        {
+          "ozellik": "Kontrol",
+          "deger": "Higrostatlı (nem sensörlü) tam otomatik"
+        },
+        {
+          "ozellik": "Nem Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Nem Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Kaplama Alanı",
+          "deger": "Tek noktadan 25–100 m²"
+        },
+        {
+          "ozellik": "Gövde",
+          "deger": "20×20 profil şase, lazer kesim, elektrostatik boya"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "4.6 kg"
+        }
+      ],
+      "meta_title": "نظام ترطيب ULV MXL-HGS | Duru ULV",
+      "meta_desc": "نظام ترطيب ULV بتحكم هيجروستات للبيوت المحمية. معتمد. طلب عرض سعر."
+    },
+    {
+      "slug": "duru-k100",
+      "kategori_slug": "termal-sisleme",
+      "ad_tr": "جهاز تضبيب حراري - Duru K 100",
+      "model_kodu": "K-100",
+      "kisa_aciklama_tr": "جهاز تضبيب حراري للمناطق المفتوحة والمجاري ومكافحة الصقيع.",
+      "gorsel": "assets/img/products/duru-k100-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "15 hp benzinli Briggs"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "20 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "15 bar"
+        },
+        {
+          "ozellik": "Püskürtme Hortumu",
+          "deger": "2.30 m esnek metal kanal aparatı"
+        },
+        {
+          "ozellik": "Yakıt Tüketimi (motor)",
+          "deger": "0,75–1 L/saat"
+        },
+        {
+          "ozellik": "İlaç Yakıt Tüketimi",
+          "deger": "10–20 L/saat (ayarlanabilir)"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "~20 mikron (termal)"
+        },
+        {
+          "ozellik": "Teker",
+          "deger": "2 frenli + 2 düz teker"
+        }
+      ],
+      "meta_title": "جهاز تضبيب حراري K100 | Duru ULV",
+      "meta_desc": "جهاز تضبيب حراري للمناطق المفتوحة والمجاري ومكافحة الصقيع. طلب عرض سعر."
+    },
+    {
+      "slug": "termal-el-tipi",
+      "kategori_slug": "termal-sisleme",
+      "ad_tr": "جهاز تضبيب حراري محمول باليد - Duru",
+      "model_kodu": "TERMAL-EL",
+      "kisa_aciklama_tr": "جهاز تضبيب حراري محمول باليد للتطبيقات الخارجية والمجاري المستهدفة.",
+      "gorsel": "assets/img/products/termal-el-tipi-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "Benzinli Briggs"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "15–50 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "15 bar"
+        },
+        {
+          "ozellik": "Püskürtme Hortumu",
+          "deger": "2.30 m esnek paslanmaz kanal aparatı"
+        },
+        {
+          "ozellik": "Solüsyon",
+          "deger": "Yağ bazlı termal solüsyon"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "~20 mikron (termal)"
+        },
+        {
+          "ozellik": "Uygulama",
+          "deger": "Kanal ilaçlama, açık alan sıcak sisleme, don önleme"
+        }
+      ],
+      "meta_title": "تضبيب حراري محمول باليد | Duru ULV",
+      "meta_desc": "جهاز تضبيب حراري محمول باليد للتطبيقات الخارجية والمجاري. معتمد. طلب عرض سعر."
+    }
+  ]
+}

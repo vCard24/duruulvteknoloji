@@ -4,6 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 const { whatsappButton } = require('./whatsapp-button');
+const { alternatePath } = require('./seo-meta');
 
 const ROOT = path.join(__dirname, '..');
 const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'assets/data/urunler.json'), 'utf8'));
@@ -22,6 +23,35 @@ function resolveProductsHref(prefix) {
   if (prefix === '../../') return '../index.html';
   if (prefix === '../') return 'index.html';
   return `${prefix}urunler/index.html`;
+}
+
+/** prefix + alternatePath → göreli index.html href */
+function localePageHref(prefix, trPathRel, locale) {
+  const p = alternatePath(trPathRel || 'index.html', locale);
+  if (p === null || p === '') return `${prefix}index.html`;
+  return `${prefix}${p}index.html`;
+}
+
+/** TR | EN | AR — aktif dil span, diğerleri link (SSG; alternatePath) */
+function langSwitcherHtml(options = {}) {
+  const prefix = options.prefix ?? '';
+  const current = options.locale || 'tr';
+  const trPathRel = options.trPathRel || 'index.html';
+  const langs = [
+    { code: 'tr', label: 'TR' },
+    { code: 'en', label: 'EN' },
+    { code: 'ar', label: 'AR' },
+  ];
+  const parts = langs.map((L, i) => {
+    const sep =
+      i > 0 ? '<span class="lang-switcher__sep" aria-hidden="true">|</span>' : '';
+    if (L.code === current) {
+      return `${sep}<span class="lang-switcher__current" aria-current="true">${L.label}</span>`;
+    }
+    const href = localePageHref(prefix, trPathRel, L.code);
+    return `${sep}<a class="lang-switcher__link" href="${esc(href)}" hreflang="${L.code}" lang="${L.code}">${L.label}</a>`;
+  });
+  return `<nav class="lang-switcher" aria-label="Language / Dil">${parts.join('')}</nav>`;
 }
 
 const MOBILE_TOGGLE_SVG =
@@ -57,6 +87,9 @@ function siteHeader(options = {}) {
   const productsHref = options.productsHref ?? `${prefix}urunler/index.html`;
   const quoteHref = options.quoteHref ?? `${prefix}fiyat-teklifi/index.html`;
   const blogHref = options.blogHref ?? `${prefix}blog/index.html`;
+  const locale = options.locale || 'tr';
+  const trPathRel = options.trPathRel || 'index.html';
+  const switcher = langSwitcherHtml({ prefix, locale, trPathRel });
 
   return `  <header class="site-header no-print">
     <div class="container site-header__inner">
@@ -73,13 +106,14 @@ function siteHeader(options = {}) {
         <a href="${prefix}iletisim/index.html" class="site-nav__link" data-nav-link>İletişim</a>
       </nav>
       <div class="header-actions">
-        <button type="button" class="lang-switcher" aria-label="Dil seçici (yakında)" hidden disabled>TR ▾</button>
+        ${switcher}
         <a href="${quoteHref}" class="btn btn--primary btn--sm header-cta">Teklif Al</a>
         <button type="button" class="mobile-toggle" data-mobile-toggle aria-expanded="false" aria-controls="site-mobile-menu" aria-label="Menüyü aç/kapat">${MOBILE_TOGGLE_SVG}</button>
       </div>
     </div>
     <div class="mobile-menu" id="site-mobile-menu" data-mobile-menu>
       <div class="container">
+        <div class="mobile-menu__lang">${switcher}</div>
         <a href="${prefix}index.html" class="mobile-menu__link" data-nav-link>Anasayfa</a>
         <a href="${productsHref}" class="mobile-menu__link" data-nav-link>Ürünler</a>
         <a href="${prefix}katalog/index.html" class="mobile-menu__link" data-nav-link>Katalog</a>
@@ -156,6 +190,8 @@ module.exports = {
   siteHeader,
   siteFooter,
   socialLinksHtml,
+  langSwitcherHtml,
+  localePageHref,
   resolveProductsHref,
   esc,
   kurumsal: k,

@@ -18,6 +18,7 @@ const HASH_TARGETS = [
   'assets/css/blog.css',
   'assets/css/pdf-export.css',
   'assets/css/compare-print.css',
+  'assets/css/rtl.css',
   'assets/js/main.js',
   'assets/js/compare.js',
   'assets/js/pdf-utils.js',

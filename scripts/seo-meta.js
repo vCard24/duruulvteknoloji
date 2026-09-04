@@ -23,6 +23,62 @@ function canonicalUrl(relPath) {
   return p ? `${SITE_ORIGIN}/${p}` : `${SITE_ORIGIN}/`;
 }
 
+/**
+ * TR göreli yol → dil yolu (trailing slash, leading slash yok).
+ * urunler → products; blog ve diğerleri aynı path altında /en|ar/.
+ */
+function alternatePath(trPathRel, locale) {
+  let p = String(trPathRel || '').replace(/\\/g, '/').replace(/^\//, '');
+  if (/404\.html$/i.test(p)) return null;
+
+  p = p.replace(/index\.html$/, '');
+  if (p && !p.endsWith('/')) p += '/';
+
+  if (locale === 'tr') return p;
+
+  const prefix = `${locale}/`;
+
+  if (p === 'urunler/') return `${prefix}products/`;
+
+  const productPage = p.match(/^urunler\/([^/]+)\/([^/]+)\/$/);
+  if (productPage) return `${prefix}products/${productPage[2]}/`;
+
+  const categoryPage = p.match(/^urunler\/([^/]+)\/$/);
+  if (categoryPage) return `${prefix}products/${categoryPage[1]}/`;
+
+  return `${prefix}${p}`;
+}
+
+function alternateUrl(trPathRel, locale) {
+  const p = alternatePath(trPathRel, locale);
+  if (p === null) return null;
+  return p ? `${SITE_ORIGIN}/${p}` : `${SITE_ORIGIN}/`;
+}
+
+function shouldIncludeHreflang(trPathRel, robots) {
+  if (robots && /noindex/i.test(String(robots))) return false;
+  if (/404\.html$/i.test(String(trPathRel || ''))) return false;
+  if (/(^|\/)tesekkurler(\/|$)/i.test(String(trPathRel || ''))) return false;
+  return true;
+}
+
+/**
+ * TR sayfa yolu için hreflang link seti (tr / en / ar / x-default).
+ * Canonical sayfanın dilinden bağımsız — alternatifler her dilde aynı üçlü+x-default.
+ */
+function hreflangTags(trPathRel) {
+  const tr = alternateUrl(trPathRel, 'tr');
+  const en = alternateUrl(trPathRel, 'en');
+  const ar = alternateUrl(trPathRel, 'ar');
+  if (!tr || !en || !ar) return '';
+  return [
+    `  <link rel="alternate" hreflang="tr" href="${escAttr(tr)}" />`,
+    `  <link rel="alternate" hreflang="en" href="${escAttr(en)}" />`,
+    `  <link rel="alternate" hreflang="ar" href="${escAttr(ar)}" />`,
+    `  <link rel="alternate" hreflang="x-default" href="${escAttr(tr)}" />`,
+  ].join('\n');
+}
+
 function productOgImageUrl(slug, manifest) {
   const files = manifest && manifest[slug];
   const file = files && files[0] ? files[0] : `${slug}-01.webp`;
@@ -44,6 +100,7 @@ function renderSeoHead({
   title,
   description,
   canonicalPathRel,
+  hreflangSourceRel,
   ogType = 'website',
   ogImage,
   ogImageAlt,
@@ -56,9 +113,17 @@ function renderSeoHead({
   const canonical = canonicalUrl(canonicalPathRel);
   const image = ogImage || DEFAULT_OG_IMAGE;
   const imageAlt = ogImageAlt || title;
+  const hlSource = hreflangSourceRel || canonicalPathRel;
 
   let block = `  <!-- duru:seo-meta -->
-  <link rel="canonical" href="${escAttr(canonical)}">
+  <link rel="canonical" href="${escAttr(canonical)}">`;
+
+  if (shouldIncludeHreflang(hlSource, robots)) {
+    const hl = hreflangTags(hlSource);
+    if (hl) block += `\n${hl}`;
+  }
+
+  block += `
   <meta property="og:type" content="${escAttr(ogType)}">
   <meta property="og:site_name" content="${escAttr(SITE_NAME)}">
   <meta property="og:locale" content="${escAttr(locale)}">
@@ -206,6 +271,10 @@ module.exports = {
   SITE_NAME,
   DEFAULT_OG_IMAGE,
   canonicalUrl,
+  alternatePath,
+  alternateUrl,
+  shouldIncludeHreflang,
+  hreflangTags,
   productOgImageUrl,
   blogCoverOgImageUrl,
   renderSeoHead,

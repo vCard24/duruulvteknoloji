@@ -747,8 +747,13 @@ function blogCardMediaHtml(slug, prefix, postHref, alt) {
             </a>`;
 }
 
-function blogHeader(prefix, blogHref) {
-  return siteHeader({ prefix, blogHref });
+function blogHeader(prefix, blogHref, trPathRel) {
+  return siteHeader({
+    prefix,
+    blogHref,
+    locale: 'tr',
+    trPathRel: trPathRel || 'blog/index.html',
+  });
 }
 
 function blogFooter(prefix, blogHref) {
@@ -942,10 +947,7 @@ ${renderHeadAssets(prefix, { extraStylesheets: ['assets/css/blog.css'] })}
 </head>
 <body>
 
-${blogHeader(prefix, blogHref)}
-
-  <main>
-${mainContent}
+${blogHeader(prefix, blogHref, `blog/${post.slug}/index.html`)}
 ${faqSection}
   </main>
 
@@ -1003,7 +1005,7 @@ ${renderHeadAssets(prefix, { extraStylesheets: ['assets/css/blog.css'] })}
 </head>
 <body>
 
-${blogHeader(prefix, blogHref)}
+${blogHeader(prefix, blogHref, 'blog/index.html')}
 
   <main>
     <section class="blog-hero">
@@ -1091,7 +1093,7 @@ function walkHtml(dir, depth, fn) {
   if (!fs.existsSync(dir)) return;
   fs.readdirSync(dir, { withFileTypes: true }).forEach((entry) => {
     const full = path.join(dir, entry.name);
-    if (entry.isDirectory() && entry.name !== 'yigitornek' && entry.name !== 'emergent' && entry.name !== 'node_modules') {
+    if (entry.isDirectory() && entry.name !== 'yigitornek' && entry.name !== 'emergent' && entry.name !== 'node_modules' && entry.name !== 'en' && entry.name !== 'ar') {
       walkHtml(full, depth + 1, fn);
     } else if (entry.isFile() && entry.name === 'index.html') {
       fn(full, depth);

@@ -1,0 +1,72 @@
+/**
+ * RTL overrides for Arabic pages — load AFTER site.css.
+ * Does not modify main.css / site.css sources.
+ */
+html[dir='rtl'] {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir='rtl'] body {
+  text-align: right;
+}
+
+html[dir='rtl'] .site-header__inner,
+html[dir='rtl'] .header-actions,
+html[dir='rtl'] .site-nav,
+html[dir='rtl'] .breadcrumb,
+html[dir='rtl'] .product-card__actions,
+html[dir='rtl'] .cta-box__actions,
+html[dir='rtl'] .form-grid,
+html[dir='rtl'] .social-links {
+  flex-direction: row-reverse;
+}
+
+html[dir='rtl'] .site-footer__grid,
+html[dir='rtl'] .grid-2,
+html[dir='rtl'] .grid-3,
+html[dir='rtl'] .category-grid {
+  direction: rtl;
+}
+
+html[dir='rtl'] .breadcrumb {
+  justify-content: flex-start;
+}
+
+html[dir='rtl'] .breadcrumb li {
+  flex-direction: row-reverse;
+}
+
+html[dir='rtl'] .form-field,
+html[dir='rtl'] .form-input,
+html[dir='rtl'] .form-textarea,
+html[dir='rtl'] .form-label,
+html[dir='rtl'] .contact-list__label,
+html[dir='rtl'] .contact-list__value {
+  text-align: right;
+}
+
+html[dir='rtl'] .product-gallery__thumbs {
+  flex-direction: row-reverse;
+}
+
+html[dir='rtl'] .section-header-row {
+  flex-direction: row-reverse;
+}
+
+html[dir='rtl'] .site-footer__bottom,
+html[dir='rtl'] .site-footer__legal {
+  flex-direction: row-reverse;
+}
+
+html[dir='rtl'] .lang-switcher {
+  flex-direction: row-reverse;
+}
+
+html[dir='rtl'] .mobile-menu__lang {
+  justify-content: flex-start;
+}
+
+html[dir='rtl'] .chip {
+  flex-direction: row-reverse;
+}

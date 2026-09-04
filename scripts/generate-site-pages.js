@@ -16,12 +16,19 @@ const {
   renderSeoHead,
   DEFAULT_OG_IMAGE,
   organizationSchemaJson,
+  hreflangTags,
 } = require('./seo-meta');
+const { localePaths, catalogFileName } = require('./i18n');
 const { kvkkHtml, gizlilikHtml, kullanimKosullariHtml } = require('./legal-content');
 
 const ROOT = path.join(__dirname, '..');
 const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'assets/data/urunler.json'), 'utf8'));
 const P = '../';
+
+/** TR sayfa yolu için hreflang alternate etiketleri (tr / en / ar / x-default) */
+function hreflang(trPathRel) {
+  return hreflangTags(trPathRel);
+}
 
 function esc(s) {
   return String(s)
@@ -65,7 +72,7 @@ ${renderHeadAssets(P, { extraHead: extraHead || '' })}
 </head>
 <body>
 
-${header()}
+${header(canonicalRel)}
 ${body}
 ${footer()}
 ${renderBodyScripts(P)}
@@ -75,8 +82,12 @@ ${extraScripts || ''}
 `;
 }
 
-function header() {
-  return siteHeader({ prefix: P });
+function header(trPathRel) {
+  return siteHeader({
+    prefix: P,
+    locale: 'tr',
+    trPathRel: trPathRel || 'index.html',
+  });
 }
 
 function footer() {
@@ -566,7 +577,7 @@ ${renderHeadAssets(R)}
 </head>
 <body>
 
-${siteHeader({ prefix: R })}
+${siteHeader({ prefix: R, locale: 'tr', trPathRel: '404.html' })}
   <main>
     <section class="section bg-white border-y">
       <div class="container container--text" style="text-align:center;padding-top:4rem;padding-bottom:4rem">
@@ -594,10 +605,135 @@ Object.entries(pages).forEach(([rel, html]) => {
   writePage(path.join(ROOT, rel), html);
 });
 
+/** EN / AR kurumsal iskelet sayfaları (ürünler generate-pages.js’te) */
+function writeLocaleSitePages(locale) {
+  const loc = localePaths(locale);
+  const catalog = JSON.parse(
+    fs.readFileSync(path.join(ROOT, 'assets/data', catalogFileName(locale)), 'utf8')
+  );
+  const prefix = '../../';
+  const ui = loc.ui;
+  const firma = catalog.kurumsal_bilgiler.firma_adi || 'Duru ULV';
+
+  const corporate = [
+    {
+      rel: 'index.html',
+      trRel: 'index.html',
+      title: `${firma} — ${ui.brandSuffix}`,
+      description:
+        locale === 'en'
+          ? 'Professional ULV spraying systems for municipalities, public agencies, and industry. Turkish engineering since 1990.'
+          : 'أنظمة رش ULV احترافية للبلديات والجهات العامة والصناعة. هندسة تركية منذ 1990.',
+      h1: firma,
+      lead:
+        locale === 'en'
+          ? 'Professional ULV equipment for vector control, greenhouse, and industrial hygiene.'
+          : 'معدات ULV احترافية لمكافحة النواقل والبيوت المحمية والنظافة الصناعية.',
+    },
+    {
+      rel: 'hakkimizda/index.html',
+      trRel: 'hakkimizda/index.html',
+      title: `${ui.home === 'Home' ? 'About Us' : 'من نحن'} — ${ui.brandSuffix}`,
+      description:
+        locale === 'en'
+          ? 'About Duru ULV Technology Systems — 36 years of ULV manufacturing in Kayseri, Turkey.'
+          : 'عن دورو يو إل في — 36 عاماً من تصنيع أجهزة ULV في قيصري، تركيا.',
+      h1: locale === 'en' ? 'About Us' : 'من نحن',
+      lead:
+        locale === 'en'
+          ? 'We design and manufacture Ultra Low Volume machines for disinfection, pest control, and agriculture.'
+          : 'نصمم ونصنع أجهزة الحجم المنخفض جداً (ULV) للتطهير ومكافحة الآفات والزراعة.',
+    },
+    {
+      rel: 'iletisim/index.html',
+      trRel: 'iletisim/index.html',
+      title: `${locale === 'en' ? 'Contact' : 'اتصل بنا'} — ${ui.brandSuffix}`,
+      description:
+        locale === 'en'
+          ? 'Contact Duru ULV — phone, WhatsApp, email. Kayseri headquarters and production facility.'
+          : 'تواصل مع دورو يو إل في — هاتف، واتساب، بريد إلكتروني. المقر والإنتاج في قيصري.',
+      h1: locale === 'en' ? 'Contact us' : 'تواصل معنا',
+      lead:
+        locale === 'en'
+          ? 'Reach our team for tenders, technical specs, and after-sales support.'
+          : 'تواصل مع فريقنا للمناقصات والمواصفات الفنية والدعم بعد البيع.',
+    },
+    {
+      rel: 'fiyat-teklifi/index.html',
+      trRel: 'fiyat-teklifi/index.html',
+      title: `${ui.quote} — ${ui.brandSuffix}`,
+      description:
+        locale === 'en'
+          ? 'Request a custom quote for Duru ULV products. Same-business-day response.'
+          : 'اطلب عرض سعر مخصص لمنتجات دورو يو إل في. رد في نفس يوم العمل.',
+      h1: ui.quote,
+      lead:
+        locale === 'en'
+          ? 'Fill the form and our sales engineer will reply with a detailed technical offer.'
+          : 'املأ النموذج وسيتواصل معك مهندس المبيعات بعرض فني مفصل.',
+    },
+  ];
+
+  corporate.forEach((page) => {
+    const outRel = `${locale}/${page.rel}`;
+    const seoBlock = renderSeoHead({
+      title: page.title,
+      description: page.description,
+      canonicalPathRel: outRel,
+      hreflangSourceRel: page.trRel,
+      ogImage: DEFAULT_OG_IMAGE,
+      ogImageAlt: page.h1,
+      locale: ui.ogLocale,
+    });
+    const productsHref = loc.productsHref(prefix);
+    const html = `<!DOCTYPE html>
+<html ${loc.htmlLangAttrs}>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="${esc(page.description)}">
+  <title>${esc(page.title)}</title>
+${seoBlock}
+  <link rel="icon" href="${prefix}assets/img/duru-icon.svg" type="image/svg+xml">
+${renderHeadAssets(prefix, { extraStylesheets: loc.extraStylesheets })}
+</head>
+<body>
+
+${siteHeader({
+      prefix,
+      productsHref,
+      quoteHref: loc.quoteHref(prefix),
+      locale,
+      trPathRel: page.trRel,
+    })}
+  <main>
+    <section class="section bg-white border-y">
+      <div class="container container--text">
+        <h1 class="section-title">${esc(page.h1)}</h1>
+        <p style="margin-top:1rem;color:rgba(43,46,51,0.75);line-height:1.65">${esc(page.lead)}</p>
+        <p style="margin-top:1.5rem">
+          <a href="${productsHref}" class="btn btn--primary">${esc(ui.products)} →</a>
+        </p>
+      </div>
+    </section>
+  </main>
+${siteFooter({ prefix })}
+${renderBodyScripts(prefix)}
+</body>
+</html>
+`;
+    writePage(path.join(ROOT, outRel), html);
+  });
+  console.log(`[${locale}] corporate pages written`);
+}
+
+writeLocaleSitePages('en');
+writeLocaleSitePages('ar');
+
 fs.mkdirSync(path.join(ROOT, 'assets/docs'), { recursive: true });
 const pdfNote = path.join(ROOT, 'assets/docs/README.txt');
 fs.writeFileSync(pdfNote, 'Katalog PDF: duru-ulv-katalog-2026.pdf (Duru ULV Ürün Kataloğu 2026)\n', 'utf8');
 
 buildSiteCss();
 
-console.log('Generated', Object.keys(pages).length, 'site pages');
+console.log('Generated', Object.keys(pages).length, 'TR site pages (+ en/ar corporate)');

@@ -5,7 +5,7 @@
  */
 const fs = require('fs');
 const path = require('path');
-const { SITE_ORIGIN } = require('./seo-meta');
+const { SITE_ORIGIN, alternateUrl } = require('./seo-meta');
 
 const ROOT = path.join(__dirname, '..');
 const catalog = JSON.parse(fs.readFileSync(path.join(ROOT, 'assets/data/urunler.json'), 'utf8'));
@@ -22,6 +22,18 @@ const ORIGIN = SITE_ORIGIN;
 function url(rel) {
   const p = rel.replace(/^\//, '').replace(/index\.html$/, '');
   return p.endsWith('/') || !p ? `${ORIGIN}/${p}` : `${ORIGIN}/${p}/`;
+}
+
+function localeUrls(trRel) {
+  const tr = alternateUrl(trRel, 'tr') || url(trRel);
+  const en = alternateUrl(trRel, 'en');
+  const ar = alternateUrl(trRel, 'ar');
+  return { tr, en, ar };
+}
+
+function trEnArLine(label, trRel) {
+  const { tr, en, ar } = localeUrls(trRel);
+  return `- [${label}](${tr}) | [EN](${en}) | [AR](${ar})`;
 }
 
 function productsByCategory() {
@@ -49,22 +61,31 @@ function llmsTxt() {
     .map((slug) => catalog.urunler.find((p) => p.slug === slug))
     .filter(Boolean);
 
-  const blogLines = blogPosts.slice(0, 8).map((b) => {
-    const desc = (b.meta && b.meta.metaDescription) || b.title;
-    return `- [${b.title}](${url(`blog/${b.slug}/`)}): ${desc}`;
-  });
-
-  const catLines = Object.values(byCat).map(({ cat, products }) => {
-    const links = products
-      .map((p) => `[${p.ad_tr}](${url(`urunler/${p.kategori_slug}/${p.slug}/`)})`)
-      .join(', ');
-    return `- **${cat.ad_tr}** (${url(`urunler/${cat.slug}/`)}): ${cat.aciklama_tr} Modeller: ${links}`;
-  });
-
   const featuredLines = featuredProducts.map((p) => {
     const seo = productSeo[p.slug];
     const desc = (seo && seo.meta && seo.meta.metaDescription) || p.kisa_aciklama_tr;
-    return `- [${p.ad_tr}](${url(`urunler/${p.kategori_slug}/${p.slug}/`)}): ${desc}`;
+    const trRel = `urunler/${p.kategori_slug}/${p.slug}/index.html`;
+    const { tr, en, ar } = localeUrls(trRel);
+    return `- [${p.ad_tr}](${tr}) | [EN](${en}) | [AR](${ar}): ${desc}`;
+  });
+
+  const catLines = Object.values(byCat).map(({ cat, products }) => {
+    const catRel = `urunler/${cat.slug}/index.html`;
+    const { tr: catTr, en: catEn, ar: catAr } = localeUrls(catRel);
+    const links = products
+      .map((p) => {
+        const pr = `urunler/${p.kategori_slug}/${p.slug}/index.html`;
+        const u = localeUrls(pr);
+        return `[${p.ad_tr}](${u.tr}) ([EN](${u.en}) · [AR](${u.ar}))`;
+      })
+      .join(', ');
+    return `- **${cat.ad_tr}** (${catTr} | [EN](${catEn}) | [AR](${catAr})): ${cat.aciklama_tr} Modeller: ${links}`;
+  });
+
+  const blogLines = blogPosts.slice(0, 8).map((b) => {
+    const desc = (b.meta && b.meta.metaDescription) || b.title;
+    const { tr, en, ar } = localeUrls(`blog/${b.slug}/index.html`);
+    return `- [${b.title}](${tr}) | [EN](${en}) | [AR](${ar}): ${desc}`;
   });
 
   return `# ${k.firma_adi}
@@ -74,13 +95,18 @@ function llmsTxt() {
 ${k.firma_adi}, 1990'dan bu yana Kayseri'de ULV ilaçlama ekipmanları tasarlar ve üretir. **Entosis** markası aynı firmaya aittir. Ürünler CE, TSE ve ISO sertifikalıdır. Sitede fiyat gösterilmez; satış teklif formu veya doğrudan iletişimle yapılır.
 
 ## Kurumsal
-- [Ana Sayfa](${url('')}): ULV ilaçlama makineleri ve mist blower ürün gamı
-- [Hakkımızda](${url('hakkimizda/')}): 36 yıllık üretim tecrübesi, sertifikalar
-- [Kalite Politikamız](${url('kalite-politikamiz/')}): CE, TSE, ISO 9001/14001/45001
-- [İletişim](${url('iletisim/')}): ${k.telefon}, ${k.email}
+${trEnArLine('Ana Sayfa', 'index.html')}
+${trEnArLine('Hakkımızda', 'hakkimizda/index.html')}
+${trEnArLine('Kalite Politikamız', 'kalite-politikamiz/index.html')}
+${trEnArLine('İletişim', 'iletisim/index.html')}
 - Instagram: ${k.sosyal && k.sosyal.instagram ? k.sosyal.instagram : ''}
 - Facebook: ${k.sosyal && k.sosyal.facebook ? k.sosyal.facebook : ''}
-- [Fiyat Teklifi](${url('fiyat-teklifi/')}): Kurumsal teklif talep formu
+${trEnArLine('Fiyat Teklifi', 'fiyat-teklifi/index.html')}
+
+## Dil / Language / اللغة
+- Turkish (default): ${ORIGIN}/
+- English: ${ORIGIN}/en/
+- Arabic: ${ORIGIN}/ar/
 
 ## Ürün Kategorileri
 ${catLines.join('\n')}
@@ -90,12 +116,12 @@ ${featuredLines.join('\n')}
 
 ## Blog ve Rehber İçerikleri
 ${blogLines.join('\n')}
-- [Tüm blog yazıları](${url('blog/')})
+${trEnArLine('Tüm blog yazıları', 'blog/index.html')}
 
 ## Yasal ve Gizlilik
-- [KVKK Aydınlatma Metni](${url('kvkk/')})
-- [Gizlilik Politikası](${url('gizlilik-politikasi/')})
-- [Kullanım Koşulları](${url('kullanim-kosullari/')})
+${trEnArLine('KVKK Aydınlatma Metni', 'kvkk/index.html')}
+${trEnArLine('Gizlilik Politikası', 'gizlilik-politikasi/index.html')}
+${trEnArLine('Kullanım Koşulları', 'kullanim-kosullari/index.html')}
 
 ## AI ve Teknik Kaynaklar
 - [llms-full.txt](${ORIGIN}/llms-full.txt): Tüm ürün ve blog URL listesi (genişletilmiş harita)
@@ -116,37 +142,47 @@ function llmsFullTxt() {
   sections.push(`Bu dosya, AI ajanlarının sitedeki tüm önemli sayfaları bulması için genişletilmiş URL listesidir.\n`);
   sections.push(`Site kökü: ${ORIGIN}/\n`);
 
-  sections.push('## Statik Sayfalar\n');
+  sections.push('## Statik Sayfalar (TR | EN | AR)\n');
   [
-    ['Ana Sayfa', ''],
-    ['Ürünler', 'urunler/'],
-    ['Blog', 'blog/'],
-    ['Hakkımızda', 'hakkimizda/'],
-    ['İletişim', 'iletisim/'],
-    ['Fiyat Teklifi', 'fiyat-teklifi/'],
-    ['Kalite Politikası', 'kalite-politikamiz/'],
-    ['KVKK', 'kvkk/'],
-    ['Gizlilik', 'gizlilik-politikasi/'],
-    ['Kullanım Koşulları', 'kullanim-kosullari/'],
+    ['Ana Sayfa', 'index.html'],
+    ['Ürünler', 'urunler/index.html'],
+    ['Blog', 'blog/index.html'],
+    ['Hakkımızda', 'hakkimizda/index.html'],
+    ['İletişim', 'iletisim/index.html'],
+    ['Fiyat Teklifi', 'fiyat-teklifi/index.html'],
+    ['Kalite Politikası', 'kalite-politikamiz/index.html'],
+    ['KVKK', 'kvkk/index.html'],
+    ['Gizlilik', 'gizlilik-politikasi/index.html'],
+    ['Kullanım Koşulları', 'kullanim-kosullari/index.html'],
+    ['Katalog', 'katalog/index.html'],
+    ['Ürün Karşılaştırma', 'urun-karsilastirma/index.html'],
   ].forEach(([title, rel]) => {
-    sections.push(`- [${title}](${url(rel)})`);
+    sections.push(trEnArLine(title, rel));
   });
+
+  sections.push('\n## Dil kökleri\n');
+  sections.push(`- TR: ${ORIGIN}/`);
+  sections.push(`- EN: ${ORIGIN}/en/`);
+  sections.push(`- AR: ${ORIGIN}/ar/`);
 
   Object.values(byCat).forEach(({ cat, products }) => {
     sections.push(`\n## ${cat.ad_tr}\n`);
-    sections.push(`Kategori: ${url(`urunler/${cat.slug}/`)}\n`);
+    const catU = localeUrls(`urunler/${cat.slug}/index.html`);
+    sections.push(`Kategori: ${catU.tr} | EN: ${catU.en} | AR: ${catU.ar}\n`);
     products.forEach((p) => {
       const seo = productSeo[p.slug];
       const desc = (seo && seo.meta && seo.meta.metaDescription) || p.kisa_aciklama_tr;
       const kw = seo && seo.meta && seo.meta.focusKeyword ? ` | Anahtar: ${seo.meta.focusKeyword}` : '';
-      sections.push(`- [${p.ad_tr}](${url(`urunler/${p.kategori_slug}/${p.slug}/`)}) (${p.model_kodu}): ${desc}${kw}`);
+      const u = localeUrls(`urunler/${p.kategori_slug}/${p.slug}/index.html`);
+      sections.push(`- [${p.ad_tr}](${u.tr}) | [EN](${u.en}) | [AR](${u.ar}) (${p.model_kodu}): ${desc}${kw}`);
     });
   });
 
   sections.push('\n## Blog Yazıları\n');
   blogPosts.forEach((b) => {
     const desc = (b.meta && b.meta.metaDescription) || '';
-    sections.push(`- [${b.title}](${url(`blog/${b.slug}/`)}): ${desc}`);
+    const u = localeUrls(`blog/${b.slug}/index.html`);
+    sections.push(`- [${b.title}](${u.tr}) | [EN](${u.en}) | [AR](${u.ar}): ${desc}`);
   });
 
   return sections.join('\n') + '\n';
@@ -189,6 +225,12 @@ brand.txt: ${ORIGIN}/brand.txt
 ai-catalog.json: ${ORIGIN}/ai-catalog.json
 security.txt: ${ORIGIN}/.well-known/security.txt
 sitemap: ${ORIGIN}/sitemap.xml
+
+## Languages
+- tr (default): ${ORIGIN}/
+- en: ${ORIGIN}/en/
+- ar: ${ORIGIN}/ar/
+Product paths: /urunler/… (TR) ↔ /en/products/… ↔ /ar/products/…
 
 ## Notes for AI Agents
 - Entosis is a product brand under the same manufacturer (Duru ULV Teknoloji Sistemleri).

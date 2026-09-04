@@ -9,7 +9,14 @@ const {
   productOgImageUrl,
   productSchemaJson,
   faqPageSchemaJson,
+  hreflangTags,
 } = require('./seo-meta');
+const { localePaths, catalogFileName } = require('./i18n');
+
+/** TR sayfa yolu için hreflang alternate etiketleri (tr / en / ar / x-default) */
+function hreflang(trPathRel) {
+  return hreflangTags(trPathRel);
+}
 
 const {
   loadManifest,
@@ -19,7 +26,14 @@ const {
 } = require('./image-variants');
 
 const ROOT = path.join(__dirname, '..');
-const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'assets/data/urunler.json'), 'utf8'));
+
+function loadCatalog(locale) {
+  const file = path.join(ROOT, 'assets/data', catalogFileName(locale));
+  return JSON.parse(fs.readFileSync(file, 'utf8'));
+}
+
+let data = loadCatalog('tr');
+let loc = localePaths('tr');
 const IMG_MANIFEST_PATH = path.join(ROOT, 'assets/data/product-images.json');
 const ALTS_PATH = path.join(ROOT, 'assets/data/product-image-alts.json');
 const imageManifest = fs.existsSync(IMG_MANIFEST_PATH)
@@ -203,15 +217,18 @@ function getRelated(product, limit = 3) {
     .slice(0, limit);
 }
 
-function header(prefix, quoteProducts) {
+function header(prefix, quoteProducts, trPathRel) {
+  const quoteBase = loc.quoteHref(prefix).replace(/\?.*$/, '');
   const quoteHref = quoteProducts
-    ? `${prefix}fiyat-teklifi/index.html?products=${encodeURIComponent(quoteProducts)}`
-    : `${prefix}fiyat-teklifi/index.html`;
-  let productsHref = `${prefix}urunler/index.html`;
-  if (prefix === '../../../') productsHref = '../../index.html';
-  else if (prefix === '../../') productsHref = '../index.html';
-  else if (prefix === '../') productsHref = 'index.html';
-  return siteHeader({ prefix, quoteHref, productsHref });
+    ? `${quoteBase}?products=${encodeURIComponent(quoteProducts)}`
+    : quoteBase;
+  return siteHeader({
+    prefix,
+    quoteHref,
+    productsHref: loc.productsHref(prefix),
+    locale: loc.locale,
+    trPathRel: trPathRel || loc.trProductsIndexRel,
+  });
 }
 
 function footer(prefix) {
@@ -236,6 +253,7 @@ function productCard(p, linkPrefix, comparePage) {
 }
 
 function productCardFixed(p, assetPrefix, pagePrefix, comparePage) {
+  const ui = loc.ui;
   const baseFile = productImageFileName(p.slug, 1);
   const variants = productVariantSet(baseFile);
   const cardWidths = variants.widths.filter((w) => w === 400 || w === 800);
@@ -259,8 +277,8 @@ function productCardFixed(p, assetPrefix, pagePrefix, comparePage) {
               <a href="${pagePrefix}${p.slug}/index.html" class="product-card__title">${esc(p.ad_tr)}</a>
               <p class="product-card__summary">${esc(p.kisa_aciklama_tr)}</p>
               <div class="product-card__actions">
-                <a href="${pagePrefix}${p.slug}/index.html" class="btn btn--primary btn--sm">İncele</a>
-                <button type="button" class="btn btn--outline btn--sm" data-compare-toggle="${p.slug}" data-compare-page="${comparePage}"><span data-compare-label>Karşılaştır</span></button>
+                <a href="${pagePrefix}${p.slug}/index.html" class="btn btn--primary btn--sm">${esc(ui.view)}</a>
+                <button type="button" class="btn btn--outline btn--sm" data-compare-toggle="${p.slug}" data-compare-page="${comparePage}"><span data-compare-label>${esc(ui.compare)}</span></button>
               </div>
             </div>
           </article>`;
@@ -268,7 +286,8 @@ function productCardFixed(p, assetPrefix, pagePrefix, comparePage) {
 
 function generateProductPage(product) {
   const cat = getCategory(product.kategori_slug);
-  const prefix = '../../../';
+  const prefix = loc.productPrefix;
+  const ui = loc.ui;
   const related = getRelated(product);
   const chips = product.teknik_tablo.slice(0, 4);
   const imageCount = productImageCount(product.slug) || 4;
@@ -302,16 +321,17 @@ function generateProductPage(product) {
             : '';
           const dims = scaledDims(displayFile, 400);
           const relImageClass = hasProductImages(p.slug) ? 'product-card__image' : 'product-card__image img-placeholder';
+          const relHref = loc.productHrefRelated(p);
           const relImgTag = hasProductImages(p.slug)
             ? `<img src="${relImg}"${srcset ? ` srcset="${srcset}"` : ''} sizes="(max-width:767px) 100vw, (max-width:1024px) 50vw, 390px" width="${dims.width}" height="${dims.height}" alt="${esc(p.ad_tr)}" loading="lazy" decoding="async">`
             : '';
           return `          <article class="product-card lift-card">
-            <a href="../${p.slug}/index.html" class="${relImageClass}">${relImgTag}</a>
+            <a href="${relHref}" class="${relImageClass}">${relImgTag}</a>
             <div class="product-card__body">
               <span class="product-card__model">${esc(p.model_kodu)}</span>
-              <a href="../${p.slug}/index.html" class="product-card__title">${esc(p.ad_tr)}</a>
+              <a href="${relHref}" class="product-card__title">${esc(p.ad_tr)}</a>
               <p class="product-card__summary">${esc(p.kisa_aciklama_tr)}</p>
-              <div class="product-card__actions"><a href="../${p.slug}/index.html" class="btn btn--primary btn--sm">İncele</a></div>
+              <div class="product-card__actions"><a href="${relHref}" class="btn btn--primary btn--sm">${esc(ui.view)}</a></div>
             </div>
           </article>`;
         })
@@ -335,8 +355,8 @@ function generateProductPage(product) {
         : '';
       const thumbFile = variants.thumb || baseFile;
       const thumbSrc = productPublicPath(thumbFile, prefix);
-      const alt = productImageAlt(product.slug, n) || `${product.ad_tr} — görsel ${n}`;
-      return `<button type="button" class="product-gallery__thumb${i === 0 ? ' is-active' : ''}" data-gallery-thumb data-src="${fullSrc}"${srcset ? ` data-srcset="${srcset}"` : ''} data-alt="${esc(alt)}" aria-label="Görsel ${n}"><img src="${thumbSrc}" width="90" height="90" alt="" loading="lazy" decoding="async"></button>`;
+      const alt = productImageAlt(product.slug, n) || `${product.ad_tr} — ${ui.galleryImage} ${n}`;
+      return `<button type="button" class="product-gallery__thumb${i === 0 ? ' is-active' : ''}" data-gallery-thumb data-src="${fullSrc}"${srcset ? ` data-srcset="${srcset}"` : ''} data-alt="${esc(alt)}" aria-label="${esc(ui.galleryImage)} ${n}"><img src="${thumbSrc}" width="90" height="90" alt="" loading="lazy" decoding="async"></button>`;
     })
     .join('\n            ');
 
@@ -362,18 +382,22 @@ function generateProductPage(product) {
     ? `  <link rel="preload" as="image" type="image/webp" href="${mainSrc}"${mainSrcset ? ` imagesrcset="${mainSrcset}"` : ''} imagesizes="${mainSizes}" fetchpriority="high">\n`
     : '';
   const ogDims = productImageDims(mainBase);
-  const canonicalRel = `urunler/${product.kategori_slug}/${product.slug}/index.html`;
-  const pageTitle = `${product.ad_tr} — Duru ULV`;
-  const pageDesc = `${product.ad_tr} — ${product.kisa_aciklama_tr}. Duru ULV ${cat.kisa_ad} ilaçlama makinesi.`;
+  const canonicalRel = loc.canonicalProduct(product);
+  const pageTitle = product.meta_title || `${product.ad_tr} — ${ui.brandSuffix}`;
+  const pageDesc =
+    product.meta_desc ||
+    `${product.ad_tr} — ${product.kisa_aciklama_tr}. ${ui.brandSuffix} ${cat.kisa_ad}.`;
   const seoBlock = renderSeoHead({
     title: pageTitle,
     description: pageDesc,
     canonicalPathRel: canonicalRel,
+    hreflangSourceRel: loc.trProductRel(product),
     ogType: 'product',
     ogImage: productOgImageUrl(product.slug, imageManifest),
     ogImageAlt: mainAlt,
     ogImageWidth: ogDims.width || 1200,
     ogImageHeight: ogDims.height || 630,
+    locale: ui.ogLocale,
   });
   const productSchema = productSchemaJson(
     product,
@@ -385,8 +409,11 @@ function generateProductPage(product) {
     ? `\n  <script type="application/ld+json">${faqPageSchemaJson(productFaqs)}</script>`
     : '';
 
+  const productsListHref = loc.productsIndexHrefFromProduct();
+  const categoryHref = loc.categoryHrefFromProduct(cat);
+
   return `<!DOCTYPE html>
-<html lang="tr">
+<html ${loc.htmlLangAttrs}>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -395,18 +422,18 @@ function generateProductPage(product) {
 ${seoBlock}
   <script type="application/ld+json">${productSchema}</script>${faqSchemaTag}
   <link rel="icon" href="${prefix}assets/img/duru-icon.svg" type="image/svg+xml">
-${preloadTag}${renderHeadAssets(prefix)}
+${preloadTag}${renderHeadAssets(prefix, { extraStylesheets: loc.extraStylesheets })}
 </head>
 <body>
 
-${header(prefix, product.slug)}
+${header(prefix, product.slug, loc.trProductRel(product))}
 
   <div class="breadcrumb-bar">
     <div class="container">
       <ol class="breadcrumb">
-        <li><a href="${prefix}index.html">Anasayfa</a> ›</li>
-        <li><a href="../../index.html">Ürünler</a> ›</li>
-        <li><a href="../index.html">${esc(cat.kisa_ad)}</a> ›</li>
+        <li><a href="${loc.homeHref(prefix)}">${esc(ui.home)}</a> ›</li>
+        <li><a href="${productsListHref}">${esc(ui.products)}</a> ›</li>
+        <li><a href="${categoryHref}">${esc(cat.kisa_ad)}</a> ›</li>
         <li><span class="breadcrumb__current">${esc(product.ad_tr)}</span></li>
       </ol>
     </div>
@@ -499,8 +526,8 @@ ${
   relatedHtml
     ? `    <section class="section bg-muted border-y">
       <div class="container">
-        <div class="eyebrow">İlgili Ürünler</div>
-        <h2 class="section-title" style="margin-bottom:2rem">Aynı kategoride incelenebilecek modeller</h2>
+        <div class="eyebrow">${esc(ui.related)}</div>
+        <h2 class="section-title" style="margin-bottom:2rem">${esc(ui.related)}</h2>
         <div class="grid-3">
 ${relatedHtml}
         </div>
@@ -519,29 +546,35 @@ ${renderBodyScripts(prefix)}
 }
 
 function generateCategoryPage(category) {
-  const prefix = '../../';
+  const prefix = loc.categoryPrefix;
+  const ui = loc.ui;
   const products = data.urunler.filter((p) => p.kategori_slug === category.slug);
+  const cardPagePrefix = loc.locale === 'tr' ? '' : '../';
   const cards = products
-    .map((p) => productCardFixed(p, prefix, '', `${prefix}urun-karsilastirma/index.html`))
+    .map((p) => productCardFixed(p, prefix, cardPagePrefix, loc.compareHref(prefix)))
     .join('\n');
 
-  // Nemlendirme: mantarhane/sera odaklı — sera kategori sayfasında da kart göster
   let relatedSection = '';
   if (category.slug === 'sera-tipi-ulv-ilaclama') {
     const humidity = data.urunler.filter((p) => p.kategori_slug === 'nemlendirme-ulv');
     if (humidity.length) {
+      const humPrefix = loc.locale === 'tr' ? '../nemlendirme-ulv/' : '../';
       const relatedCards = humidity
-        .map((p) => productCardFixed(p, prefix, '../nemlendirme-ulv/', `${prefix}urun-karsilastirma/index.html`))
+        .map((p) => productCardFixed(p, prefix, humPrefix, loc.compareHref(prefix)))
         .join('\n');
+      const humIndex =
+        loc.locale === 'tr'
+          ? '../nemlendirme-ulv/index.html'
+          : '../nemlendirme-ulv/index.html';
       relatedSection = `
     <section class="section bg-muted border-y">
       <div class="container">
         <div class="section-header-row">
           <div>
-            <div class="eyebrow">İlgili ürünler</div>
-            <h2 class="section-title">Sera &amp; mantarhane için nemlendirme</h2>
+            <div class="eyebrow">${esc(ui.related)}</div>
+            <h2 class="section-title">${esc(ui.related)}</h2>
           </div>
-          <a href="../nemlendirme-ulv/index.html" class="link-arrow">Tüm nemlendirme modelleri →</a>
+          <a href="${humIndex}" class="link-arrow">${esc(ui.view)} →</a>
         </div>
         <div class="grid-3">
 ${relatedCards}
@@ -551,8 +584,8 @@ ${relatedCards}
     }
   }
 
-  const catDesc = `${category.ad_tr} — Duru ULV ${products.length} model. ${category.aciklama_tr}`;
-  const catTitle = `${category.kisa_ad} ULV Makineleri — Duru ULV`;
+  const catDesc = `${category.ad_tr} — ${ui.brandSuffix} ${products.length} ${ui.modelUnit}. ${category.aciklama_tr}`;
+  const catTitle = `${category.kisa_ad} — ${ui.brandSuffix}`;
   const firstProduct = products[0];
   const catOg = firstProduct
     ? productOgImageUrl(firstProduct.slug, imageManifest)
@@ -560,13 +593,15 @@ ${relatedCards}
   const seoBlock = renderSeoHead({
     title: catTitle,
     description: catDesc,
-    canonicalPathRel: `urunler/${category.slug}/index.html`,
+    canonicalPathRel: loc.canonicalCategory(category),
+    hreflangSourceRel: loc.trCategoryRel(category),
     ogImage: catOg,
     ogImageAlt: category.ad_tr,
+    locale: ui.ogLocale,
   });
 
   return `<!DOCTYPE html>
-<html lang="tr">
+<html ${loc.htmlLangAttrs}>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -574,21 +609,11 @@ ${relatedCards}
   <title>${esc(catTitle)}</title>
 ${seoBlock}
   <link rel="icon" href="${prefix}assets/img/duru-icon.svg" type="image/svg+xml">
-${renderHeadAssets(prefix)}
+${renderHeadAssets(prefix, { extraStylesheets: loc.extraStylesheets })}
 </head>
 <body>
 
-${header(prefix)}
-
-  <div class="breadcrumb-bar">
-    <div class="container">
-      <ol class="breadcrumb">
-        <li><a href="${prefix}index.html">Anasayfa</a> ›</li>
-        <li><a href="../index.html">Ürünler</a> ›</li>
-        <li><span class="breadcrumb__current">${esc(category.kisa_ad)}</span></li>
-      </ol>
-    </div>
-  </div>
+${header(prefix, null, loc.trCategoryRel(category))}
 
   <main>
     <section class="section section--lg bg-white">
@@ -634,7 +659,8 @@ ${renderBodyScripts(prefix)}
 }
 
 function generateProductsIndex() {
-  const prefix = '../';
+  const prefix = loc.productsIndexPrefix;
+  const ui = loc.ui;
   const categoryCards = data.kategoriler
     .map((cat) => {
       const count = data.urunler.filter((p) => p.kategori_slug === cat.slug).length;
@@ -656,20 +682,21 @@ function generateProductsIndex() {
         : '';
       const dims = scaledDims(displayFile, 400);
       const imageClass = hasProductImages(p.slug) ? 'product-card__image' : 'product-card__image img-placeholder';
+      const href = loc.productHrefFromIndex(p);
       const imgTag = hasProductImages(p.slug)
         ? `<img src="${img}"${srcset ? ` srcset="${srcset}"` : ''} sizes="(max-width:767px) 100vw, (max-width:1024px) 50vw, 390px" width="${dims.width}" height="${dims.height}" alt="${esc(p.ad_tr)}" loading="lazy" decoding="async">`
         : `<img src="${img}" alt="${esc(p.ad_tr)}" loading="lazy" style="display:none">`;
       return `          <article class="product-card lift-card">
-            <a href="${p.kategori_slug}/${p.slug}/index.html" class="${imageClass}">
+            <a href="${href}" class="${imageClass}">
               ${imgTag}
             </a>
             <div class="product-card__body">
               <span class="product-card__model">${esc(p.model_kodu)} · ${esc(cat.kisa_ad)}</span>
-              <a href="${p.kategori_slug}/${p.slug}/index.html" class="product-card__title">${esc(p.ad_tr)}</a>
+              <a href="${href}" class="product-card__title">${esc(p.ad_tr)}</a>
               <p class="product-card__summary">${esc(p.kisa_aciklama_tr)}</p>
               <div class="product-card__actions">
-                <a href="${p.kategori_slug}/${p.slug}/index.html" class="btn btn--primary btn--sm">İncele</a>
-                <button type="button" class="btn btn--outline btn--sm" data-compare-toggle="${p.slug}" data-compare-page="${prefix}urun-karsilastirma/index.html"><span data-compare-label>Karşılaştır</span></button>
+                <a href="${href}" class="btn btn--primary btn--sm">${esc(ui.view)}</a>
+                <button type="button" class="btn btn--outline btn--sm" data-compare-toggle="${p.slug}" data-compare-page="${loc.compareHref(prefix)}"><span data-compare-label>${esc(ui.compare)}</span></button>
               </div>
             </div>
           </article>`;
@@ -679,18 +706,23 @@ function generateProductsIndex() {
   const productCount = data.urunler.length;
   const categoryCount = data.kategoriler.length;
   const catNames = data.kategoriler.map((c) => c.kisa_ad.toLowerCase()).join(', ');
-  const listDesc = `Duru ULV ürün kataloğu — ${productCount} model, ${categoryCount} kategori: ${catNames}.`;
-  const listTitle = 'Ürünler — Duru ULV';
+  const listDesc =
+    loc.locale === 'tr'
+      ? `Duru ULV ürün kataloğu — ${productCount} model, ${categoryCount} kategori: ${catNames}.`
+      : `${ui.brandSuffix} product catalog — ${productCount} ${ui.modelUnit}, ${categoryCount} ${ui.categoryUnit}: ${catNames}.`;
+  const listTitle = `${ui.products} — ${ui.brandSuffix}`;
   const seoBlock = renderSeoHead({
     title: listTitle,
     description: listDesc,
-    canonicalPathRel: 'urunler/index.html',
+    canonicalPathRel: loc.canonicalProductsIndex,
+    hreflangSourceRel: loc.trProductsIndexRel,
     ogImage: productOgImageUrl('duru-hd50', imageManifest),
-    ogImageAlt: 'Duru ULV ürün kataloğu',
+    ogImageAlt: listTitle,
+    locale: ui.ogLocale,
   });
 
   return `<!DOCTYPE html>
-<html lang="tr">
+<html ${loc.htmlLangAttrs}>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -698,17 +730,17 @@ function generateProductsIndex() {
   <title>${esc(listTitle)}</title>
 ${seoBlock}
   <link rel="icon" href="${prefix}assets/img/duru-icon.svg" type="image/svg+xml">
-${renderHeadAssets(prefix)}
+${renderHeadAssets(prefix, { extraStylesheets: loc.extraStylesheets })}
 </head>
 <body>
 
-${header(prefix)}
+${header(prefix, null, loc.trProductsIndexRel)}
 
   <div class="breadcrumb-bar">
     <div class="container">
       <ol class="breadcrumb">
-        <li><a href="${prefix}index.html">Anasayfa</a> ›</li>
-        <li><span class="breadcrumb__current">Ürünler</span></li>
+        <li><a href="${loc.homeHref(prefix)}">${esc(ui.home)}</a> ›</li>
+        <li><span class="breadcrumb__current">${esc(ui.products)}</span></li>
       </ol>
     </div>
   </div>
@@ -717,17 +749,17 @@ ${header(prefix)}
     <section class="section section--lg bg-white">
       <div class="container">
         <div style="margin-bottom:3rem">
-          <div class="eyebrow">Ürün Kataloğu</div>
-          <h1 class="section-title">${productCount} model · ${categoryCount} kategori</h1>
-          <p style="max-width:36rem;margin-top:1rem;color:rgba(43,46,51,0.75);line-height:1.65">Belediye, kamu, tarım ve sanayi uygulamaları için profesyonel ULV ilaçlama makineleri. Fiyat yerine teklif alın — karşılaştırma yapın.</p>
+          <div class="eyebrow">${esc(ui.catalogEyebrow)}</div>
+          <h1 class="section-title">${productCount} ${esc(ui.modelUnit)} · ${categoryCount} ${esc(ui.categoryUnit)}</h1>
+          <p style="max-width:36rem;margin-top:1rem;color:rgba(43,46,51,0.75);line-height:1.65">${esc(ui.productsLead)}</p>
         </div>
 
-        <h2 class="section-title" style="font-size:1.5rem;margin-bottom:1.5rem">Kategoriler</h2>
+        <h2 class="section-title" style="font-size:1.5rem;margin-bottom:1.5rem">${esc(ui.categories)}</h2>
         <div class="category-grid" style="margin-bottom:4rem">
 ${categoryCards}
         </div>
 
-        <h2 class="section-title" style="font-size:1.5rem;margin-bottom:1.5rem">Tüm modeller</h2>
+        <h2 class="section-title" style="font-size:1.5rem;margin-bottom:1.5rem">${esc(ui.allModels)}</h2>
         <div class="grid-3">
 ${allCards}
         </div>
@@ -748,22 +780,21 @@ function writeFile(filePath, content) {
   fs.writeFileSync(filePath, content, 'utf8');
 }
 
-let productCount = 0;
-for (const product of data.urunler) {
-  const dir = path.join(ROOT, 'urunler', product.kategori_slug, product.slug, 'index.html');
-  writeFile(dir, generateProductPage(product));
-  productCount++;
-}
-
-for (const category of data.kategoriler) {
-  const dir = path.join(ROOT, 'urunler', category.slug, 'index.html');
-  writeFile(dir, generateCategoryPage(category));
-}
-
-writeFile(path.join(ROOT, 'urunler', 'index.html'), generateProductsIndex());
-
 buildSiteCss();
 
-console.log(`Generated ${productCount} product pages`);
-console.log(`Generated ${data.kategoriler.length} category pages`);
-console.log('Generated urunler/index.html');
+for (const locale of ['tr', 'en', 'ar']) {
+  data = loadCatalog(locale);
+  loc = localePaths(locale);
+  let n = 0;
+  for (const product of data.urunler) {
+    writeFile(path.join(ROOT, loc.productFile(product)), generateProductPage(product));
+    n += 1;
+  }
+  for (const category of data.kategoriler) {
+    writeFile(path.join(ROOT, loc.categoryFile(category)), generateCategoryPage(category));
+  }
+  writeFile(path.join(ROOT, loc.productsIndexFile), generateProductsIndex());
+  console.log(
+    `[${locale}] ${n} products, ${data.kategoriler.length} categories → ${loc.productsIndexFile}`
+  );
+}

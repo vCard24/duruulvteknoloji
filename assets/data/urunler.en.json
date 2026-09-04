@@ -1,0 +1,1036 @@
+{
+  "kurumsal_bilgiler": {
+    "firma_adi": "Duru ULV Technology Systems",
+    "telefon": "+90 352 320 20 86",
+    "whatsapp": "905320659117",
+    "email": "info@entosis.com.tr",
+    "sosyal": {
+      "instagram": "https://www.instagram.com/duru_ulv_ltd_sti/",
+      "facebook": "https://www.facebook.com/duruilaclama"
+    },
+    "adres": {
+      "satir1": "Osman Kavuncu Mah. Emirhan Cad. No: 4/C",
+      "satir2": "Melikgazi / Kayseri / Türkiye"
+    },
+    "fiyat_politikasi": "No product prices are shown on the website. Sales are handled only via quote form or direct contact.",
+    "sertifikalar": [
+      "CE",
+      "TSE",
+      "ISO 9001",
+      "ISO 14001",
+      "ISO 45001",
+      "T.C. Gıda Tarım ve Hayvancılık Bakanlığı",
+      "T.C. Sanayi ve Teknoloji Bakanlığı"
+    ]
+  },
+  "kategoriler": [
+    {
+      "slug": "arac-uzeri-ilaclama",
+      "ad_tr": "Truck-Mounted ULV Foggers",
+      "kisa_ad": "Truck-Mounted",
+      "aciklama_tr": "Professional truck-mounted ULV foggers and mist blowers for municipal mosquito control and large-area spraying. Built for pick-ups and light trucks.",
+      "ikon": "truck"
+    },
+    {
+      "slug": "sera-tipi-ulv-ilaclama",
+      "ad_tr": "Greenhouse ULV Foggers",
+      "kisa_ad": "Greenhouse",
+      "aciklama_tr": "Electric greenhouse ULV foggers for enclosed crop protection with fine droplet size. Ideal for farms and floriculture.",
+      "ikon": "flower"
+    },
+    {
+      "slug": "sirt-tipi-ulv-ilaclama",
+      "ad_tr": "Backpack ULV Foggers",
+      "kisa_ad": "Backpack",
+      "aciklama_tr": "Professional backpack ULV foggers for mobile field work and hard-to-reach outdoor areas.",
+      "ikon": "backpack"
+    },
+    {
+      "slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "Handheld ULV Foggers",
+      "kisa_ad": "Handheld",
+      "aciklama_tr": "Compact handheld ULV foggers for indoor disinfection, hospitals, hotels, warehouses, and factories.",
+      "ikon": "wrench"
+    },
+    {
+      "slug": "nemlendirme-ulv",
+      "ad_tr": "ULV Humidification Systems",
+      "kisa_ad": "Humidification",
+      "aciklama_tr": "ULV humidification systems for greenhouses, mushroom houses, and storage climate control.",
+      "ikon": "droplets"
+    },
+    {
+      "slug": "termal-sisleme",
+      "ad_tr": "Thermal Foggers & Frost Protection",
+      "kisa_ad": "Thermal",
+      "aciklama_tr": "Thermal foggers for open areas, sewers, and frost protection applications.",
+      "ikon": "flame"
+    }
+  ],
+  "urunler": [
+    {
+      "slug": "duru-mist-blower-15hp",
+      "kategori_slug": "arac-uzeri-ilaclama",
+      "ad_tr": "Truck-Mounted Mist Blower - Duru 15HP",
+      "model_kodu": "DMB-15HP-400",
+      "kisa_aciklama_tr": "Truck-mounted mist blower with 400L tank and 15 HP engine for municipal spraying.",
+      "gorsel": "assets/img/products/duru-mist-blower-15hp-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "15 Hp Amerikan motor"
+        },
+        {
+          "ozellik": "Batarya",
+          "deger": "12 V DC – 60 Ah"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "400 litre"
+        },
+        {
+          "ozellik": "Püskürtme Sistemleri",
+          "deger": "Mist blower – ULV – Pulverizatör"
+        },
+        {
+          "ozellik": "Holder Hortum",
+          "deger": "30 metre"
+        },
+        {
+          "ozellik": "Pompa",
+          "deger": "14 litre / dakika, 150 bar"
+        },
+        {
+          "ozellik": "ULV Mikron",
+          "deger": "35"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "340 kg"
+        }
+      ],
+      "meta_title": "Truck-Mounted Mist Blower | Duru 15HP",
+      "meta_desc": "Professional truck-mounted mist blower with 400L tank for municipal mosquito control. CE & ISO certified. Request a quote."
+    },
+    {
+      "slug": "entosis-mist-blower-500l",
+      "kategori_slug": "arac-uzeri-ilaclama",
+      "ad_tr": "Truck-Mounted Mist Blower - Entosis 500L",
+      "model_kodu": "EMB-500",
+      "kisa_aciklama_tr": "High-capacity truck-mounted mist blower with joystick control and 35-micron ULV.",
+      "gorsel": "assets/img/products/entosis-mist-blower-500l-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "15 Hp – 18 hp Amerikan motor"
+        },
+        {
+          "ozellik": "Batarya",
+          "deger": "12 v DC – 60 Ah"
+        },
+        {
+          "ozellik": "MİST Başlık Hareketi",
+          "deger": "340 derece sağa ve sola, 210 derece yukarı ve aşağı"
+        },
+        {
+          "ozellik": "Kumanda",
+          "deger": "Joystick Hareketli"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "500 litre"
+        },
+        {
+          "ozellik": "İlaç Formülasyonu",
+          "deger": "sc – ec – wp"
+        },
+        {
+          "ozellik": "Pompa",
+          "deger": "14 litre / dakika, 150 bar"
+        },
+        {
+          "ozellik": "Püskürtme Sistemleri",
+          "deger": "Mist blower – ULV – Pulverizatör"
+        },
+        {
+          "ozellik": "Holder Hortum",
+          "deger": "30 metre (isteğe bağlı 50 metre)"
+        },
+        {
+          "ozellik": "Yakıt Deposu",
+          "deger": "30 litre"
+        },
+        {
+          "ozellik": "Nozul Sayısı",
+          "deger": "6+1 adet"
+        },
+        {
+          "ozellik": "Yakıt Tüketimi",
+          "deger": "4 litre"
+        },
+        {
+          "ozellik": "ULV Mikron",
+          "deger": "35"
+        },
+        {
+          "ozellik": "El Yıkama Tankı",
+          "deger": "15 litre"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "400 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 105 cm, Boy: 150 cm, Yükseklik: 170 cm"
+        }
+      ],
+      "meta_title": "Truck-Mounted Mist Blower | Entosis 500L",
+      "meta_desc": "Professional truck-mounted mist blower with 500L tank and joystick control for large-area spraying. Request a quote."
+    },
+    {
+      "slug": "duru-hd1800",
+      "kategori_slug": "arac-uzeri-ilaclama",
+      "ad_tr": "Truck-Mounted ULV Fogger - Duru HD1800",
+      "model_kodu": "HD-1800",
+      "kisa_aciklama_tr": "High-capacity truck-mounted ULV fogger for demanding municipal and field operations.",
+      "gorsel": "assets/img/products/duru-hd1800-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "18 hp benzinli"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "100 litre"
+        },
+        {
+          "ozellik": "Püskürtme",
+          "deger": "ULV"
+        },
+        {
+          "ozellik": "ULV Mikron",
+          "deger": "0–49"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        }
+      ],
+      "meta_title": "Truck-Mounted ULV Fogger | Duru HD1800",
+      "meta_desc": "Professional truck-mounted ULV fogger for municipal mosquito control and large-area spraying. CE certified. Request a quote."
+    },
+    {
+      "slug": "duru-hd75",
+      "kategori_slug": "arac-uzeri-ilaclama",
+      "ad_tr": "Truck-Mounted ULV Fogger - Duru HD75",
+      "model_kodu": "HD-75",
+      "kisa_aciklama_tr": "Compact truck-mounted ULV fogger for municipal and industrial vector control.",
+      "gorsel": "assets/img/products/duru-hd75-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "10 kW, 220V 50Hz"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "100 litre (50 × 2)"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Kumanda",
+          "deger": "ULV motor, ilaç ve yanar döner lamba aç/kapa"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "85 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 70 cm, Boy: 120 cm, Yükseklik: 110 cm"
+        }
+      ],
+      "meta_title": "Truck-Mounted ULV Fogger | Duru HD75",
+      "meta_desc": "Professional truck-mounted ULV fogger built for municipal mosquito control teams. CE & ISO certified. Request a quote."
+    },
+    {
+      "slug": "duru-hd50",
+      "kategori_slug": "arac-uzeri-ilaclama",
+      "ad_tr": "Truck-Mounted ULV Fogger - Duru HD50",
+      "model_kodu": "HD-50",
+      "kisa_aciklama_tr": "Reliable truck-mounted ULV fogger for daily municipal mosquito control routes.",
+      "gorsel": "assets/img/products/duru-hd50-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "3.5–5 kW, 220V 50Hz"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "50 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Püskürtme",
+          "deger": "ULV"
+        }
+      ],
+      "meta_title": "Truck-Mounted ULV Fogger | Duru HD50",
+      "meta_desc": "Professional truck-mounted ULV fogger with 50L tank for municipal mosquito control. CE & ISO certified. Request a quote."
+    },
+    {
+      "slug": "entosis-50",
+      "kategori_slug": "sera-tipi-ulv-ilaclama",
+      "ad_tr": "Greenhouse ULV Fogger - Entosis 50",
+      "model_kodu": "ENT-50",
+      "kisa_aciklama_tr": "Electric greenhouse ULV fogger with 50L capacity for protected crop spraying.",
+      "gorsel": "assets/img/products/entosis-50-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "U.L.V Motor",
+          "deger": "2200 W × 2 = 4400 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "50 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Kapasite",
+          "deger": "Maksimum 6–7 dönüm"
+        }
+      ],
+      "meta_title": "Greenhouse ULV Fogger | Entosis 50",
+      "meta_desc": "Professional greenhouse ULV fogger for farms and floriculture crop protection. CE certified. Request a quote."
+    },
+    {
+      "slug": "sera-max-50",
+      "kategori_slug": "sera-tipi-ulv-ilaclama",
+      "ad_tr": "Greenhouse ULV Fogger - Sera Max 50",
+      "model_kodu": "SMX-50",
+      "kisa_aciklama_tr": "High-performance greenhouse ULV fogger with 50L tank for intensive indoor spraying.",
+      "gorsel": "assets/img/products/sera-max-50-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W × 4 = 8800 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "25 × 4 = 100 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Başlık",
+          "deger": "4 adet ULV başlık"
+        },
+        {
+          "ozellik": "Fan",
+          "deger": "4 × 30 cm (120 cm toplam)"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "85 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 84 cm, Boy: 126 cm, Yükseklik: 150 cm"
+        }
+      ],
+      "meta_title": "Greenhouse ULV Fogger | Sera Max 50",
+      "meta_desc": "Professional greenhouse ULV fogger for intensive crop protection in enclosed houses. CE certified. Request a quote."
+    },
+    {
+      "slug": "sera-ultra-20",
+      "kategori_slug": "sera-tipi-ulv-ilaclama",
+      "ad_tr": "Greenhouse ULV Fogger - Sera Ultra 20",
+      "model_kodu": "SULTRA-20",
+      "kisa_aciklama_tr": "Compact greenhouse ULV fogger with ultra-fine droplets for 20L programs.",
+      "gorsel": "assets/img/products/sera-ultra-20-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2000 W × 2 = 4000 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "48 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Başlık",
+          "deger": "2 adet ULV başlık"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "57 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 84 cm, Boy: 110 cm, Yükseklik: 150 cm"
+        }
+      ],
+      "meta_title": "Greenhouse ULV Fogger | Sera Ultra 20",
+      "meta_desc": "Compact greenhouse ULV fogger with fine droplet control for protected crops. CE certified. Request a quote."
+    },
+    {
+      "slug": "entosis-20",
+      "kategori_slug": "sera-tipi-ulv-ilaclama",
+      "ad_tr": "Greenhouse ULV Fogger - Entosis 20",
+      "model_kodu": "ENT-20",
+      "kisa_aciklama_tr": "Electric greenhouse ULV fogger for mid-size protected growing spaces.",
+      "gorsel": "assets/img/products/entosis-20-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W × 2 = 4400 W, 220V 50Hz"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "20 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "17 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 52 cm, Boy: 70 cm, Yükseklik: 70 cm"
+        }
+      ],
+      "meta_title": "Greenhouse ULV Fogger | Entosis 20",
+      "meta_desc": "Electric greenhouse ULV fogger for efficient coverage in mid-size houses. CE certified. Request a quote."
+    },
+    {
+      "slug": "sera-plus-20",
+      "kategori_slug": "sera-tipi-ulv-ilaclama",
+      "ad_tr": "Greenhouse ULV Fogger - Sera Plus 20",
+      "model_kodu": "SPL-20",
+      "kisa_aciklama_tr": "20L greenhouse ULV fogger for routine crop protection programs.",
+      "gorsel": "assets/img/products/sera-plus-20-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2800 W, 220V 50Hz"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "20 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        }
+      ],
+      "meta_title": "Greenhouse ULV Fogger | Sera Plus 20",
+      "meta_desc": "Reliable greenhouse ULV fogger for routine pest and disease control indoors. CE certified. Request a quote."
+    },
+    {
+      "slug": "duru-sirt10",
+      "kategori_slug": "sirt-tipi-ulv-ilaclama",
+      "ad_tr": "Backpack ULV Fogger - Duru SRT 10",
+      "model_kodu": "SRT-10",
+      "kisa_aciklama_tr": "Professional backpack ULV fogger for mobile outdoor and field spraying.",
+      "gorsel": "assets/img/products/duru-sirt10-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "10 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "9–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık (boş)",
+          "deger": "8 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "40 × 50 × 48 cm"
+        }
+      ],
+      "meta_title": "Backpack ULV Fogger | Duru SRT 10",
+      "meta_desc": "Professional backpack ULV fogger for mobile field mosquito control. CE & ISO certified. Request a quote."
+    },
+    {
+      "slug": "duru-hd5",
+      "kategori_slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "Handheld ULV Fogger - Duru HD5",
+      "model_kodu": "HD-5",
+      "kisa_aciklama_tr": "Handheld ULV disinfection fogger for hospitals, hotels, and indoor hygiene.",
+      "gorsel": "assets/img/products/duru-hd5-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC 50Hz"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "5 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "4.2 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 20 cm, Boy: 45 cm, Yükseklik: 45 cm"
+        }
+      ],
+      "meta_title": "ULV Disinfection Fogger | Duru HD5",
+      "meta_desc": "Professional ULV disinfection fogger for hospitals, hotels, and indoor spaces. CE & ISO certified. Request a quote."
+    },
+    {
+      "slug": "duru-hr5",
+      "kategori_slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "Handheld ULV Fogger - Duru HR5",
+      "model_kodu": "HR-5",
+      "kisa_aciklama_tr": "Lightweight handheld ULV fogger for precise indoor disinfection work.",
+      "gorsel": "assets/img/products/duru-hr5-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC 50Hz"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "5 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Özellik",
+          "deger": "Hortumlu el tipi"
+        }
+      ],
+      "meta_title": "Handheld ULV Fogger | Duru HR5",
+      "meta_desc": "Compact handheld ULV fogger for precise indoor disinfection and pest control. CE certified. Request a quote."
+    },
+    {
+      "slug": "duru-max5",
+      "kategori_slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "Handheld ULV Fogger - Duru Max5",
+      "model_kodu": "MAX-5",
+      "kisa_aciklama_tr": "High-output handheld ULV disinfection fogger for professional hygiene teams.",
+      "gorsel": "assets/img/products/duru-max5-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC 50Hz"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "5 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "5.2 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 20 cm, Boy: 45 cm, Yükseklik: 57 cm"
+        },
+        {
+          "ozellik": "Başlık",
+          "deger": "Yukarı–aşağı oynar başlık"
+        }
+      ],
+      "meta_title": "ULV Disinfection Fogger | Duru Max5",
+      "meta_desc": "High-output ULV disinfection fogger for professional indoor hygiene teams. CE & ISO certified. Request a quote."
+    },
+    {
+      "slug": "duru-plus",
+      "kategori_slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "Handheld ULV Fogger - Duru Plus 3\"",
+      "model_kodu": "PLUS-3\"",
+      "kisa_aciklama_tr": "Handheld ULV fogger with 3-inch fan for wider indoor disinfection coverage.",
+      "gorsel": "assets/img/products/duru-plus-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "1300 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "3 litre"
+        },
+        {
+          "ozellik": "Başlık / Nozul",
+          "deger": "3 inch (3\")"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        }
+      ],
+      "meta_title": "Handheld ULV Fogger | Duru Plus 3\"",
+      "meta_desc": "Handheld ULV fogger with wider throw for indoor disinfection programs. CE certified. Request a quote."
+    },
+    {
+      "slug": "duru-x20",
+      "kategori_slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "Handheld ULV Fogger - Duru X20",
+      "model_kodu": "X-20",
+      "kisa_aciklama_tr": "Handheld ULV disinfection fogger for intensive indoor hygiene programs.",
+      "gorsel": "assets/img/products/duru-x20-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2000 W × 2 = 4000 W, 220V AC 50Hz"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "20 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "12 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "46 × 60 × 68 cm"
+        },
+        {
+          "ozellik": "Başlık",
+          "deger": "2 adet oynar başlık"
+        }
+      ],
+      "meta_title": "ULV Disinfection Fogger | Duru X20",
+      "meta_desc": "Professional ULV disinfection fogger for intensive indoor hygiene programs. CE certified. Request a quote."
+    },
+    {
+      "slug": "duru-x10",
+      "kategori_slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "Handheld ULV Fogger - Duru X10",
+      "model_kodu": "X-10",
+      "kisa_aciklama_tr": "Versatile handheld ULV fogger for daily facility disinfection and pest control.",
+      "gorsel": "assets/img/products/duru-x10-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "10 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        }
+      ],
+      "meta_title": "Handheld ULV Fogger | Duru X10",
+      "meta_desc": "Versatile handheld ULV fogger for daily facility disinfection teams. CE & ISO certified. Request a quote."
+    },
+    {
+      "slug": "duru-max10",
+      "kategori_slug": "el-tipi-ulv-ilaclama",
+      "ad_tr": "Handheld ULV Fogger - Duru Max10",
+      "model_kodu": "MAX-10",
+      "kisa_aciklama_tr": "Higher-capacity handheld ULV disinfection fogger for larger indoor volumes.",
+      "gorsel": "assets/img/products/duru-max10-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC 50Hz"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "10 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "İlaç Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "6.7 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 34 cm, Boy: 50 cm, Yükseklik: 60 cm"
+        },
+        {
+          "ozellik": "Başlık",
+          "deger": "Oynar başlık"
+        }
+      ],
+      "meta_title": "ULV Disinfection Fogger | Duru Max10",
+      "meta_desc": "Higher-capacity ULV disinfection fogger for larger indoor volumes. CE & ISO certified. Request a quote."
+    },
+    {
+      "slug": "duru-dmxl",
+      "kategori_slug": "nemlendirme-ulv",
+      "ad_tr": "ULV Humidification System - Duru DMXL",
+      "model_kodu": "DMXL",
+      "kisa_aciklama_tr": "ULV humidification system for greenhouses, mushroom houses, and storage.",
+      "gorsel": "assets/img/products/duru-dmxl-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC 50Hz"
+        },
+        {
+          "ozellik": "Tank",
+          "deger": "Şamandıralı – sınırsız (şebeke bağlantılı)"
+        },
+        {
+          "ozellik": "Nem Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Nem Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Solüsyon Tipleri",
+          "deger": "sc, ec, wp"
+        },
+        {
+          "ozellik": "Başlık",
+          "deger": "Döner başlık"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "5.2 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 20 cm, Boy: 45 cm, Yükseklik: 57 cm"
+        }
+      ],
+      "meta_title": "ULV Humidification System | Duru DMXL",
+      "meta_desc": "Professional ULV humidification system for greenhouses and storage climate control. Request a quote."
+    },
+    {
+      "slug": "duru-mxl",
+      "kategori_slug": "nemlendirme-ulv",
+      "ad_tr": "ULV Humidification System - Duru MXL",
+      "model_kodu": "MXL",
+      "kisa_aciklama_tr": "Float-controlled ULV humidification for stable greenhouse climate control.",
+      "gorsel": "assets/img/products/duru-mxl-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC 50Hz"
+        },
+        {
+          "ozellik": "Tank",
+          "deger": "Şamandıralı – sınırsız (şebeke bağlantılı)"
+        },
+        {
+          "ozellik": "Nem Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Nem Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Kaplama Alanı",
+          "deger": "Tek noktadan 25–100 m²"
+        },
+        {
+          "ozellik": "Gövde",
+          "deger": "20×20 profil şase, lazer kesim, elektrostatik boya"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "4.6 kg"
+        },
+        {
+          "ozellik": "Ölçüler",
+          "deger": "En: 20 cm, Boy: 125 cm, Yükseklik: 45 cm"
+        }
+      ],
+      "meta_title": "ULV Humidification System | Duru MXL",
+      "meta_desc": "Float-controlled ULV humidification system for stable greenhouse humidity. Request a quote."
+    },
+    {
+      "slug": "duru-mxl-hgs",
+      "kategori_slug": "nemlendirme-ulv",
+      "ad_tr": "ULV Humidification System - Duru MXL-HGS",
+      "model_kodu": "MXL-HGS",
+      "kisa_aciklama_tr": "Hygrostat-controlled ULV humidification with rotating head options.",
+      "gorsel": "assets/img/products/duru-mxl-hgs-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "2200 W, 220V AC 50Hz"
+        },
+        {
+          "ozellik": "Tank",
+          "deger": "Şamandıralı – sınırsız (şebeke bağlantılı)"
+        },
+        {
+          "ozellik": "Kontrol",
+          "deger": "Higrostatlı (nem sensörlü) tam otomatik"
+        },
+        {
+          "ozellik": "Nem Çıkış Debisi",
+          "deger": "0–49 l/h"
+        },
+        {
+          "ozellik": "Nem Damla Çapı",
+          "deger": "0–49 mikron"
+        },
+        {
+          "ozellik": "Kaplama Alanı",
+          "deger": "Tek noktadan 25–100 m²"
+        },
+        {
+          "ozellik": "Gövde",
+          "deger": "20×20 profil şase, lazer kesim, elektrostatik boya"
+        },
+        {
+          "ozellik": "Ağırlık",
+          "deger": "4.6 kg"
+        }
+      ],
+      "meta_title": "ULV Humidification System | MXL-HGS",
+      "meta_desc": "Hygrostat-controlled ULV humidification system with rotating head options. Request a quote."
+    },
+    {
+      "slug": "duru-k100",
+      "kategori_slug": "termal-sisleme",
+      "ad_tr": "Thermal Fogger - Duru K 100",
+      "model_kodu": "K-100",
+      "kisa_aciklama_tr": "Thermal fogger for open areas, sewers, and frost protection applications.",
+      "gorsel": "assets/img/products/duru-k100-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "15 hp benzinli Briggs"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "20 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "15 bar"
+        },
+        {
+          "ozellik": "Püskürtme Hortumu",
+          "deger": "2.30 m esnek metal kanal aparatı"
+        },
+        {
+          "ozellik": "Yakıt Tüketimi (motor)",
+          "deger": "0,75–1 L/saat"
+        },
+        {
+          "ozellik": "İlaç Yakıt Tüketimi",
+          "deger": "10–20 L/saat (ayarlanabilir)"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "~20 mikron (termal)"
+        },
+        {
+          "ozellik": "Teker",
+          "deger": "2 frenli + 2 düz teker"
+        }
+      ],
+      "meta_title": "Thermal Fogger | Duru K 100",
+      "meta_desc": "Professional thermal fogger for open areas, sewer treatment, and frost protection. Request a quote."
+    },
+    {
+      "slug": "termal-el-tipi",
+      "kategori_slug": "termal-sisleme",
+      "ad_tr": "Handheld Thermal Fogger - Duru",
+      "model_kodu": "TERMAL-EL",
+      "kisa_aciklama_tr": "Portable thermal fogger for targeted outdoor and sewer fogging jobs.",
+      "gorsel": "assets/img/products/termal-el-tipi-01.webp",
+      "teknik_tablo": [
+        {
+          "ozellik": "Motor",
+          "deger": "Benzinli Briggs"
+        },
+        {
+          "ozellik": "İlaç Tank Kapasitesi",
+          "deger": "15–50 litre"
+        },
+        {
+          "ozellik": "İlaç Çıkış Debisi",
+          "deger": "15 bar"
+        },
+        {
+          "ozellik": "Püskürtme Hortumu",
+          "deger": "2.30 m esnek paslanmaz kanal aparatı"
+        },
+        {
+          "ozellik": "Solüsyon",
+          "deger": "Yağ bazlı termal solüsyon"
+        },
+        {
+          "ozellik": "Damla Çapı",
+          "deger": "~20 mikron (termal)"
+        },
+        {
+          "ozellik": "Uygulama",
+          "deger": "Kanal ilaçlama, açık alan sıcak sisleme, don önleme"
+        }
+      ],
+      "meta_title": "Handheld Thermal Fogger | Duru ULV",
+      "meta_desc": "Portable thermal fogger for targeted outdoor and sewer applications. CE certified. Request a quote."
+    }
+  ]
+}

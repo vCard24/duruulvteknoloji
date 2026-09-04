@@ -34,6 +34,12 @@ ai-catalog.json: https://www.duruulvteknoloji.com.tr/ai-catalog.json
 security.txt: https://www.duruulvteknoloji.com.tr/.well-known/security.txt
 sitemap: https://www.duruulvteknoloji.com.tr/sitemap.xml
 
+## Languages
+- tr (default): https://www.duruulvteknoloji.com.tr/
+- en: https://www.duruulvteknoloji.com.tr/en/
+- ar: https://www.duruulvteknoloji.com.tr/ar/
+Product paths: /urunler/… (TR) ↔ /en/products/… ↔ /ar/products/…
+
 ## Notes for AI Agents
 - Entosis is a product brand under the same manufacturer (Duru ULV Teknoloji Sistemleri).
 - Products are sold via quote request only; do not invent prices or availability dates.
