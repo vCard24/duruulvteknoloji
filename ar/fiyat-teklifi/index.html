@@ -34,6 +34,22 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"></noscript>
   <link rel="stylesheet" href="../../assets/css/rtl.5e8ccfc5.css">
+  <link rel="stylesheet" href="../../assets/css/pdf-export.78b5f4de.css">
+  <script>
+  (function () {
+    var href = 'https://www.duruulvteknoloji.com.tr/ar/fiyat-teklifi/';
+    var c = document.querySelector('link[rel="canonical"]');
+    if (c) c.setAttribute('href', href);
+    var products = new URLSearchParams(location.search).get('products');
+    if (products != null && String(products).trim() !== '') {
+      var m = document.createElement('meta');
+      m.setAttribute('name', 'robots');
+      m.setAttribute('content', 'noindex, follow');
+      m.setAttribute('data-quote-products-seo', '1');
+      document.head.appendChild(m);
+    }
+  })();
+  </script>
 </head>
 <body>
 
@@ -74,11 +90,65 @@
   <main>
     <section class="section bg-white border-y">
       <div class="container container--text">
-        <h1 class="section-title">طلب عرض سعر</h1>
-        <p style="margin-top:1rem;color:rgba(43,46,51,0.75);line-height:1.65">املأ النموذج وسيتواصل معك مهندس المبيعات بعرض فني مفصل.</p>
-        <p style="margin-top:1.5rem">
-          <a href="../../ar/products/index.html" class="btn btn--primary">المنتجات →</a>
-        </p>
+        <div class="eyebrow">طلب عرض سعر</div>
+        <h1 class="section-title">احصل على عرض مخصص لعملياتك.</h1>
+        <p style="margin-top:1rem;color:rgba(43,46,51,0.75);line-height:1.65">املأ النموذج. سيتواصل معك مهندس المبيعات في نفس يوم العمل بعرض فني مفصل وملاحظات حول قابلية التطبيق.</p>
+      </div>
+    </section>
+    <section class="section bg-muted">
+      <div class="container container--text">
+        <form id="quote-form" class="form-card" novalidate data-quote-api="/api/send-quote.php">
+          <input type="text" name="_honey" value="" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0">
+          <div style="margin-bottom:2rem">
+            <div class="form-label">المنتجات المحددة</div>
+            <div id="quote-products"></div>
+          </div>
+          <div class="form-grid">
+            <div class="form-field form-field--full">
+              <label class="form-label" for="full_name">الاسم الكامل *</label>
+              <input class="form-input" id="full_name" name="full_name" type="text" placeholder="اسمك الكامل" required>
+              <p class="form-error" data-error="full_name"></p>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="company">الشركة / المؤسسة</label>
+              <input class="form-input" id="company" name="company" type="text" placeholder="بلدية أو جهة أو اسم الشركة">
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="city">المدينة / الحي</label>
+              <input class="form-input" id="city" name="city" type="text" placeholder="مثال: قيصري / ملقكازي">
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="phone">الهاتف *</label>
+              <input class="form-input" id="phone" name="phone" type="tel" placeholder="+90 5XX XXX XX XX" required>
+              <p class="form-error" data-error="phone"></p>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="email">البريد الإلكتروني *</label>
+              <input class="form-input" id="email" name="email" type="email" placeholder="name@company.com" required>
+              <p class="form-error" data-error="email"></p>
+            </div>
+            <div class="form-field form-field--full">
+              <label class="form-label" for="message">الرسالة</label>
+              <textarea class="form-textarea" id="message" name="message" rows="5" placeholder="شارك تفاصيل مثل مجال التطبيق أو السعة أو الكمية أو معلومات المناقصة."></textarea>
+            </div>
+            <div class="form-field form-field--full">
+              <label class="form-checkbox">
+                <input type="checkbox" id="kvkk_accepted" name="kvkk_accepted">
+                <span>قرأت <a href="../../ar/kvkk/index.html" style="font-weight:600">نص إخلاء المسؤولية الخاص بـ KVKK</a> وأوافق على معالجة بياناتي الشخصية لأغراض التواصل.</span>
+              </label>
+              <p class="form-error" data-error="kvkk_accepted"></p>
+            </div>
+          </div>
+          <div style="margin-top:2rem;display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center">
+            <p style="font-size:0.75rem;color:rgba(43,46,51,0.6);margin:0">سنتواصل معك عند وصول طلبك إلينا.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:0.75rem">
+              <button type="button" id="quote-email-preview-btn" class="btn btn--outline btn--sm">معاينة البريد</button>
+              <button type="button" id="quote-pdf-btn" class="btn btn--outline btn-pdf-export">تحميل PDF</button>
+              <button type="submit" class="btn btn--primary">إرسال طلب العرض ←</button>
+            </div>
+          </div>
+        </form>
+        <div id="quote-pdf-sheet" class="pdf-sheet" aria-hidden="true"></div>
       </div>
     </section>
   </main>
@@ -139,5 +209,10 @@
   <a href="https://wa.me/905320659117?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%84%D9%80%20%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA%20Duru%20ULV." class="whatsapp-btn wa-pulse no-print" target="_blank" rel="noopener" aria-label="تواصل معنا عبر واتساب"><span class="whatsapp-btn__inner"><img src="../../assets/img/whatsapp-icon.svg" alt="" width="28" height="28" class="whatsapp-btn__icon"></span></a>
   <script src="../../assets/js/compare.157db2db.js" defer></script>
   <script src="../../assets/js/main.22706035.js" defer></script>
+  <script src="../../assets/js/vendor/html2canvas.min.js"></script>
+  <script src="../../assets/js/vendor/jspdf.umd.min.js"></script>
+  <script src="../../assets/js/pdf-utils.26dc622e.js"></script>
+  <script src="../../assets/js/quote-form.89be3e13.js"></script>
+  <script src="../../assets/js/quote-pdf.ef8aef95.js"></script>
 </body>
 </html>

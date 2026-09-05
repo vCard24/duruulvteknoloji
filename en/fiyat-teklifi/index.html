@@ -33,6 +33,22 @@
   <link rel="stylesheet" href="../../assets/css/site.742a0a29.css">
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"></noscript>
+  <link rel="stylesheet" href="../../assets/css/pdf-export.78b5f4de.css">
+  <script>
+  (function () {
+    var href = 'https://www.duruulvteknoloji.com.tr/en/fiyat-teklifi/';
+    var c = document.querySelector('link[rel="canonical"]');
+    if (c) c.setAttribute('href', href);
+    var products = new URLSearchParams(location.search).get('products');
+    if (products != null && String(products).trim() !== '') {
+      var m = document.createElement('meta');
+      m.setAttribute('name', 'robots');
+      m.setAttribute('content', 'noindex, follow');
+      m.setAttribute('data-quote-products-seo', '1');
+      document.head.appendChild(m);
+    }
+  })();
+  </script>
 </head>
 <body>
 
@@ -73,11 +89,65 @@
   <main>
     <section class="section bg-white border-y">
       <div class="container container--text">
-        <h1 class="section-title">Request a Quote</h1>
-        <p style="margin-top:1rem;color:rgba(43,46,51,0.75);line-height:1.65">Fill the form and our sales engineer will reply with a detailed technical offer.</p>
-        <p style="margin-top:1.5rem">
-          <a href="../../en/products/index.html" class="btn btn--primary">Products →</a>
-        </p>
+        <div class="eyebrow">Request a Quote</div>
+        <h1 class="section-title">Get a quote tailored to your operation.</h1>
+        <p style="margin-top:1rem;color:rgba(43,46,51,0.75);line-height:1.65">Fill out the form. Our sales engineer will reply the same business day with a detailed technical offer and applicability notes.</p>
+      </div>
+    </section>
+    <section class="section bg-muted">
+      <div class="container container--text">
+        <form id="quote-form" class="form-card" novalidate data-quote-api="/api/send-quote.php">
+          <input type="text" name="_honey" value="" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0">
+          <div style="margin-bottom:2rem">
+            <div class="form-label">Selected products</div>
+            <div id="quote-products"></div>
+          </div>
+          <div class="form-grid">
+            <div class="form-field form-field--full">
+              <label class="form-label" for="full_name">Full name *</label>
+              <input class="form-input" id="full_name" name="full_name" type="text" placeholder="Your full name" required>
+              <p class="form-error" data-error="full_name"></p>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="company">Company / Institution</label>
+              <input class="form-input" id="company" name="company" type="text" placeholder="Municipality, agency, or company name">
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="city">City / District</label>
+              <input class="form-input" id="city" name="city" type="text" placeholder="e.g. Kayseri / Melikgazi">
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="phone">Phone *</label>
+              <input class="form-input" id="phone" name="phone" type="tel" placeholder="+90 5XX XXX XX XX" required>
+              <p class="form-error" data-error="phone"></p>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="email">Email *</label>
+              <input class="form-input" id="email" name="email" type="email" placeholder="name@company.com" required>
+              <p class="form-error" data-error="email"></p>
+            </div>
+            <div class="form-field form-field--full">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-textarea" id="message" name="message" rows="5" placeholder="Share details such as application area, capacity, quantity, or tender information."></textarea>
+            </div>
+            <div class="form-field form-field--full">
+              <label class="form-checkbox">
+                <input type="checkbox" id="kvkk_accepted" name="kvkk_accepted">
+                <span>I have read the <a href="../../en/kvkk/index.html" style="font-weight:600">KVKK privacy notice</a> and consent to the processing of my personal data for contact purposes.</span>
+              </label>
+              <p class="form-error" data-error="kvkk_accepted"></p>
+            </div>
+          </div>
+          <div style="margin-top:2rem;display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center">
+            <p style="font-size:0.75rem;color:rgba(43,46,51,0.6);margin:0">We will get back to you once your request reaches us.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:0.75rem">
+              <button type="button" id="quote-email-preview-btn" class="btn btn--outline btn--sm">Email preview</button>
+              <button type="button" id="quote-pdf-btn" class="btn btn--outline btn-pdf-export">Download PDF</button>
+              <button type="submit" class="btn btn--primary">Submit quote request →</button>
+            </div>
+          </div>
+        </form>
+        <div id="quote-pdf-sheet" class="pdf-sheet" aria-hidden="true"></div>
       </div>
     </section>
   </main>
@@ -138,5 +208,10 @@
   <a href="https://wa.me/905320659117?text=Hello%2C%20I'd%20like%20to%20get%20a%20quote%20for%20Duru%20ULV%20products." class="whatsapp-btn wa-pulse no-print" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp"><span class="whatsapp-btn__inner"><img src="../../assets/img/whatsapp-icon.svg" alt="" width="28" height="28" class="whatsapp-btn__icon"></span></a>
   <script src="../../assets/js/compare.157db2db.js" defer></script>
   <script src="../../assets/js/main.22706035.js" defer></script>
+  <script src="../../assets/js/vendor/html2canvas.min.js"></script>
+  <script src="../../assets/js/vendor/jspdf.umd.min.js"></script>
+  <script src="../../assets/js/pdf-utils.26dc622e.js"></script>
+  <script src="../../assets/js/quote-form.89be3e13.js"></script>
+  <script src="../../assets/js/quote-pdf.ef8aef95.js"></script>
 </body>
 </html>
