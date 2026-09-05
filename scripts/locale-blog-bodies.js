@@ -40,15 +40,42 @@ const DATE_EN = {
   '2026-06-18': '18 June 2026',
   '2026-06-20': '20 June 2026',
   '2026-06-22': '22 June 2026',
-  '2026-06-25': '25 June 2026',
+  '2026-06-26': '26 June 2026',
   '2026-06-28': '28 June 2026',
   '2026-06-30': '30 June 2026',
+  '2026-07-02': '2 July 2026',
+};
+
+const DATE_AR = {
+  '2026-06-03': '3 حزيران/يونيو 2026',
+  '2026-06-05': '5 حزيران/يونيو 2026',
+  '2026-06-08': '8 حزيران/يونيو 2026',
+  '2026-06-10': '10 حزيران/يونيو 2026',
+  '2026-06-12': '12 حزيران/يونيو 2026',
+  '2026-06-15': '15 حزيران/يونيو 2026',
+  '2026-06-18': '18 حزيران/يونيو 2026',
+  '2026-06-20': '20 حزيران/يونيو 2026',
+  '2026-06-22': '22 حزيران/يونيو 2026',
+  '2026-06-26': '26 حزيران/يونيو 2026',
+  '2026-06-28': '28 حزيران/يونيو 2026',
+  '2026-06-30': '30 حزيران/يونيو 2026',
+  '2026-07-02': '2 تموز/يوليو 2026',
 };
 
 function dateLabel(locale, iso) {
   if (locale === 'en') return DATE_EN[iso] || 'June 2026';
-  const day = (iso || '').split('-')[2] || '';
-  return day ? `${parseInt(day, 10)} حزيران/يونيو 2026` : 'حزيران/يونيو 2026';
+  return DATE_AR[iso] || 'حزيران/يونيو 2026';
+}
+
+function readLabel(locale, readTr) {
+  if (locale === 'en') {
+    if (readTr && /12/.test(readTr)) return '8 min read';
+    if (readTr && /4|5|6|7|8|9|10|11/.test(readTr)) return '4 min read';
+    return '3 min read';
+  }
+  if (readTr && /12/.test(readTr)) return '٨ دقائق قراءة';
+  if (readTr && /4|5|6|7|8|9|10|11/.test(readTr)) return '٤ دقائق قراءة';
+  return '٣ دقائق قراءة';
 }
 
 function fallbackPara(locale, heading) {
@@ -93,11 +120,19 @@ function buildLocale(locale, m) {
         : 'إرشاد تقني من Duru ULV حول رش ULV الاحترافي.'),
     tag: c.tag || (locale === 'en' ? 'GUIDE' : 'دليل'),
     dateLabel: c.dateLabel || dateLabel(locale, m.datePublished),
-    readLabel: c.readLabel || (locale === 'en' ? '4 min read' : '٤ دقائق قراءة'),
+    readLabel: c.readLabel || readLabel(locale, m.readTr),
     sections,
     faqs,
     tags: [c.tag || 'ULV', 'Duru ULV'],
-    ...ui,
+    ctaHeading: c.ctaHeading || ui.ctaHeading,
+    ctaText: c.ctaText || ui.ctaText,
+    backLabel: ui.backLabel,
+    tocHeading: ui.tocHeading,
+    tagsHeading: ui.tagsHeading,
+    faqEyebrow: ui.faqEyebrow,
+    faqTitle: ui.faqTitle,
+    homeCrumb: ui.homeCrumb,
+    blogCrumb: ui.blogCrumb,
   };
 }
 
