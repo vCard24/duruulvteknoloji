@@ -434,33 +434,19 @@ ${cards}
 }
 
 function blogMain(locale, prefix) {
-  const trBlog = `${prefix}blog/`;
   const cards = BLOG_POSTS.map((post) => {
     const t = post[locale];
     const img = `${prefix}assets/img/blog/${BLOG_COVER[post.slug]}`;
-    const trHref = `${trBlog}${post.slug}/index.html`;
-    if (locale === 'en') {
-      return `          <article class="blog-card lift-card">
-            <a href="${trHref}" class="blog-card__media" tabindex="-1" aria-hidden="true">
-              <img src="${img}" alt="${esc(t.title)}" class="blog-card__img" width="400" height="225" loading="lazy" decoding="async">
-            </a>
-            <div class="blog-card__body">
-              <h2 class="blog-card__title"><a href="${trHref}">${esc(t.title)}</a></h2>
-              <p class="blog-card__excerpt">${esc(t.excerpt)}</p>
-              <p class="blog-card__meta" style="margin-top:0.75rem">Full article available in Turkish</p>
-              <a href="${trHref}" class="blog-card__link">Read in Turkish →</a>
-            </div>
-          </article>`;
-    }
+    const href = `${prefix}${locale}/blog/${post.slug}/index.html`;
+    const read = locale === 'en' ? 'Read article →' : 'اقرأ المقال ←';
     return `          <article class="blog-card lift-card">
-            <a href="${trHref}" class="blog-card__media" tabindex="-1" aria-hidden="true">
+            <a href="${href}" class="blog-card__media" tabindex="-1" aria-hidden="true">
               <img src="${img}" alt="${esc(t.title)}" class="blog-card__img" width="400" height="225" loading="lazy" decoding="async">
             </a>
             <div class="blog-card__body">
-              <h2 class="blog-card__title"><a href="${trHref}">${esc(t.title)}</a></h2>
+              <h2 class="blog-card__title"><a href="${href}">${esc(t.title)}</a></h2>
               <p class="blog-card__excerpt">${esc(t.excerpt)}</p>
-              <p class="blog-card__meta" style="margin-top:0.75rem">المقال الكامل متاح باللغة التركية</p>
-              <a href="${trHref}" class="blog-card__link">اقرأ بالتركية ←</a>
+              <a href="${href}" class="blog-card__link">${esc(read)}</a>
             </div>
           </article>`;
   }).join('\n');
