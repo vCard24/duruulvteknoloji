@@ -112,6 +112,12 @@ ErrorDocument 404 /404.html
   # --- Eski / örnek / kaynak dizinler (değişmedi) ---
   RewriteRule ^(yigitornek|emergent|sources)(/|$) - [F,L]
 
+  # --- EN/AR legacy /urunler → /products (flat product URLs) ---
+  # Do NOT rewrite TR /urunler/.
+  RewriteRule ^(en|ar)/urunler/([^/]+)/([^/]+)(/index\.html)?/?$ /$1/products/$3/ [R=301,L]
+  RewriteRule ^(en|ar)/urunler/([^/]+)(/index\.html)?/?$ /$1/products/$2/ [R=301,L]
+  RewriteRule ^(en|ar)/urunler(/index\.html)?/?$ /$1/products/ [R=301,L]
+
   # --- /path/index.html -> /path/ (değişmedi) ---
   RewriteCond %{THE_REQUEST} \s/+([^?\s]*/?)index\.html[\s?] [NC]
   RewriteRule ^ %1 [R=301,L]
