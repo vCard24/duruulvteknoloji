@@ -4,17 +4,43 @@
 (function () {
   'use strict';
 
-  var QUOTE_CANONICAL = 'https://www.duruulvteknoloji.com.tr/fiyat-teklifi/';
+  var QUOTE_CANONICAL_TR = 'https://www.duruulvteknoloji.com.tr/fiyat-teklifi/';
+
+  function getLocale() {
+    var lang = ((document.documentElement.getAttribute('lang') || '') + '').toLowerCase();
+    if (lang.indexOf('en') === 0) return 'en';
+    if (lang.indexOf('ar') === 0) return 'ar';
+    var path = window.location.pathname || '';
+    if (/(^|\/)en(\/|$)/i.test(path)) return 'en';
+    if (/(^|\/)ar(\/|$)/i.test(path)) return 'ar';
+    return '';
+  }
+
+  function msg(key, fallback) {
+    var el = document.getElementById('quote-form');
+    if (el) {
+      var v = el.getAttribute('data-msg-' + key);
+      if (v) return v;
+    }
+    return fallback;
+  }
+
+  function quoteCanonical() {
+    var loc = getLocale();
+    if (loc === 'en') return 'https://www.duruulvteknoloji.com.tr/en/fiyat-teklifi/';
+    if (loc === 'ar') return 'https://www.duruulvteknoloji.com.tr/ar/fiyat-teklifi/';
+    return QUOTE_CANONICAL_TR;
+  }
 
   /** ?products= varyantları: canonical temiz URL; parametreli URL noindex */
   function syncQuotePageSeo() {
     var canonical = document.querySelector('link[rel="canonical"]');
     if (canonical) {
-      canonical.setAttribute('href', QUOTE_CANONICAL);
+      canonical.setAttribute('href', quoteCanonical());
     } else {
       canonical = document.createElement('link');
       canonical.setAttribute('rel', 'canonical');
-      canonical.setAttribute('href', QUOTE_CANONICAL);
+      canonical.setAttribute('href', quoteCanonical());
       document.head.appendChild(canonical);
     }
 
@@ -62,11 +88,29 @@
   }
 
   function dataUrl() {
+    var loc = getLocale();
+    if (loc === 'en') return sitePrefix() + 'assets/data/urunler.en.json';
+    if (loc === 'ar') return sitePrefix() + 'assets/data/urunler.ar.json';
     return sitePrefix() + 'assets/data/urunler.json';
   }
 
   function thanksUrl() {
-    return new URL(sitePrefix() + 'tesekkurler/index.html', window.location.href).href;
+    var loc = getLocale();
+    var path = loc ? loc + '/tesekkurler/index.html' : 'tesekkurler/index.html';
+    return new URL(sitePrefix() + path, window.location.href).href;
+  }
+
+  function productsIndexUrl() {
+    var loc = getLocale();
+    if (loc) return sitePrefix() + loc + '/products/index.html';
+    return sitePrefix() + 'urunler/index.html';
+  }
+
+  function productDisplayName(p) {
+    var loc = getLocale();
+    if (loc === 'en' && p.ad_en) return p.ad_en;
+    if (loc === 'ar' && p.ad_ar) return p.ad_ar;
+    return p.ad_tr || p.ad_en || p.ad_ar || p.slug;
   }
 
   function apiUrl() {
@@ -136,9 +180,17 @@
     var products = selectedSlugs.map(findProduct).filter(Boolean);
 
     if (!products.length) {
+      var explore =
+        '<a href="' + esc(productsIndexUrl()) + '" style="color:var(--color-primary);font-weight:600">' +
+        esc(msg('explore', 'ürünleri keşfedin')) +
+        '</a>';
+      var emptyTpl = msg(
+        'empty-products',
+        'Henüz ürün seçilmedi. Genel bilgi talebi gönderebilir veya {explore}.'
+      );
       productsWrap.innerHTML =
         '<div style="font-size:0.875rem;color:rgba(43,46,51,0.65);border:1px dashed rgba(43,46,51,0.2);padding:1rem;background:var(--color-bg)">' +
-        'Henüz ürün seçilmedi. Genel bilgi talebi gönderebilir veya <a href="' + esc(sitePrefix() + 'urunler/index.html') + '" style="color:var(--color-primary);font-weight:600">ürünleri keşfedin</a>.' +
+        emptyTpl.replace('{explore}', explore) +
         '</div>';
       return;
     }
@@ -147,8 +199,8 @@
       var img = sitePrefix() + 'assets/img/products/' + p.slug + '-01.webp';
       return '<span class="product-tag product-tag--rich">' +
         '<img src="' + esc(img) + '" alt="" class="product-tag__img" width="40" height="32" loading="lazy">' +
-        '<span class="product-tag__text">' + esc(p.ad_tr) + '</span>' +
-        '<button type="button" data-remove-product="' + esc(p.slug) + '" aria-label="Kaldır">×</button></span>';
+        '<span class="product-tag__text">' + esc(productDisplayName(p)) + '</span>' +
+        '<button type="button" data-remove-product="' + esc(p.slug) + '" aria-label="' + esc(msg('remove', 'Kaldır')) + '">×</button></span>';
     }).join(' ');
 
     productsWrap.querySelectorAll('[data-remove-product]').forEach(function (btn) {
@@ -190,11 +242,11 @@
     var phone = form.phone.value.trim();
     var email = form.email.value.trim();
 
-    if (!name) { showError('full_name', 'Ad Soyad zorunludur.'); ok = false; }
-    if (!phone) { showError('phone', 'Telefon zorunludur.'); ok = false; }
-    if (!email) { showError('email', 'E-posta zorunludur.'); ok = false; }
-    else if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { showError('email', 'Geçerli bir e-posta giriniz.'); ok = false; }
-    if (!form.kvkk_accepted.checked) { showError('kvkk_accepted', 'KVKK onayı zorunludur.'); ok = false; }
+    if (!name) { showError('full_name', msg('err-name', 'Ad Soyad zorunludur.')); ok = false; }
+    if (!phone) { showError('phone', msg('err-phone', 'Telefon zorunludur.')); ok = false; }
+    if (!email) { showError('email', msg('err-email', 'E-posta zorunludur.')); ok = false; }
+    else if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { showError('email', msg('err-email-invalid', 'Geçerli bir e-posta giriniz.')); ok = false; }
+    if (!form.kvkk_accepted.checked) { showError('kvkk_accepted', msg('err-kvkk', 'KVKK onayı zorunludur.')); ok = false; }
     return ok;
   }
 
@@ -207,7 +259,7 @@
       });
       return {
         slug: p.slug,
-        name: p.ad_tr,
+        name: productDisplayName(p),
         model: p.model_kodu,
         category: categoryLabel(p.kategori_slug),
         categorySlug: p.kategori_slug,
@@ -248,7 +300,7 @@
   function previewEmail() {
     var endpoint = resolveApiEndpoint();
     if (!endpoint) {
-      showFormError('Önizleme için php -S 127.0.0.1:8080 ile siteyi açın.');
+      showFormError(msg('err-preview-local', 'Önizleme için php -S 127.0.0.1:8080 ile siteyi açın.'));
       return;
     }
 
@@ -258,7 +310,7 @@
 
     if (btn) {
       btn.disabled = true;
-      btn.textContent = 'Hazırlanıyor…';
+      btn.textContent = msg('busy-preview', 'Hazırlanıyor…');
     }
     hideFormError();
 
@@ -270,7 +322,7 @@
       .then(function (res) { return res.json(); })
       .then(function (json) {
         if (!json.ok || !json.html) {
-          throw new Error(json.error || 'Önizleme oluşturulamadı.');
+          throw new Error(json.error || msg('err-preview-fail', 'Önizleme oluşturulamadı.'));
         }
         if (json.saved) {
           window.open(new URL('api/outbox/' + json.saved, window.location.origin + '/').href, '_blank');
@@ -284,7 +336,7 @@
         }
       })
       .catch(function (err) {
-        showFormError(err.message || 'E-posta önizlemesi başarısız.');
+        showFormError(err.message || msg('err-preview', 'E-posta önizlemesi başarısız.'));
       })
       .finally(function () {
         if (btn) {
@@ -312,13 +364,13 @@
     var btnText = btn ? btn.textContent : '';
 
     if (!endpoint) {
-      showFormError('Form gönderimi için php -S 127.0.0.1:8080 ile siteyi açın.');
+      showFormError(msg('err-submit-local', 'Form gönderimi için php -S 127.0.0.1:8080 ile siteyi açın.'));
       return;
     }
 
     if (btn) {
       btn.disabled = true;
-      btn.textContent = 'Gönderiliyor…';
+      btn.textContent = msg('busy-submit', 'Gönderiliyor…');
     }
 
     var honey = form.querySelector('[name="_honey"]');
@@ -341,12 +393,12 @@
           try { json = JSON.parse(text); } catch (err) { /* */ }
           if (!json) {
             var hint = res.status === 501
-              ? ' Bu sunucu PHP çalıştırmıyor. Python yerine şu komutu kullanın: php -S localhost:8080'
+              ? msg('err-php', ' Bu sunucu PHP çalıştırmıyor. Python yerine şu komutu kullanın: php -S localhost:8080')
               : '';
-            throw new Error('Sunucu yanıtı okunamadı (HTTP ' + res.status + ').' + hint);
+            throw new Error(msg('err-http', 'Sunucu yanıtı okunamadı (HTTP ') + res.status + ').' + hint);
           }
           if (!res.ok || !json.ok) {
-            throw new Error(json.error || 'Gönderim başarısız.');
+            throw new Error(json.error || msg('err-send', 'Gönderim başarısız.'));
           }
           return json;
         });
@@ -362,7 +414,7 @@
         window.location.href = thanksUrl();
       })
       .catch(function (err) {
-        showFormError(err.message || 'Bir hata oluştu. Lütfen tekrar deneyin.');
+        showFormError(err.message || msg('err-generic', 'Bir hata oluştu. Lütfen tekrar deneyin.'));
         if (btn) {
           btn.disabled = false;
           btn.textContent = btnText;
@@ -386,7 +438,7 @@
       renderProducts();
     })
     .catch(function () {
-      if (productsWrap) productsWrap.innerHTML = '<p>Ürün listesi yüklenemedi.</p>';
+      if (productsWrap) productsWrap.innerHTML = '<p>' + msg('err-catalog', 'Ürün listesi yüklenemedi.') + '</p>';
     });
 
   function getPdfPayload() {
@@ -395,7 +447,7 @@
       if (!p) return null;
       return {
         slug: p.slug,
-        name: p.ad_tr,
+        name: productDisplayName(p),
         model: p.model_kodu,
         category: categoryLabel(p.kategori_slug),
         specs: (p.teknik_tablo || []).map(function (row) {
