@@ -78,6 +78,52 @@
       window.location.pathname.indexOf('urun-karsilastirma') !== -1;
   }
 
+  function getLocale() {
+    var lang = ((document.documentElement.getAttribute('lang') || '') + '').toLowerCase();
+    if (lang.indexOf('en') === 0) return 'en';
+    if (lang.indexOf('ar') === 0) return 'ar';
+    var path = window.location.pathname || '';
+    if (/(^|\/)en(\/|$)/i.test(path)) return 'en';
+    if (/(^|\/)ar(\/|$)/i.test(path)) return 'ar';
+    return '';
+  }
+
+  function msg(key, fallback) {
+    var root = document.getElementById('compare-app');
+    if (root) {
+      var v = root.getAttribute('data-msg-' + key);
+      if (v) return v;
+    }
+    return fallback;
+  }
+
+  function productDisplayName(p) {
+    var loc = getLocale();
+    if (loc === 'en' && p.ad_en) return p.ad_en;
+    if (loc === 'ar' && p.ad_ar) return p.ad_ar;
+    return p.ad_tr || p.ad_en || p.ad_ar || p.slug;
+  }
+
+  function productsIndexUrl(prefix) {
+    var loc = getLocale();
+    if (loc) return prefix + loc + '/products/index.html';
+    return prefix + 'urunler/index.html';
+  }
+
+  function productDetailUrl(prefix, p) {
+    var loc = getLocale();
+    if (loc) return prefix + loc + '/products/' + p.slug + '/index.html';
+    return prefix + 'urunler/' + p.kategori_slug + '/' + p.slug + '/index.html';
+  }
+
+  function quotePageUrl(prefix, query) {
+    var loc = getLocale();
+    var base = loc
+      ? prefix + loc + '/fiyat-teklifi/index.html'
+      : prefix + 'fiyat-teklifi/index.html';
+    return query ? base + '?' + query : base;
+  }
+
   function getSitePrefix() {
     var link = document.querySelector('link[href*="assets/"]');
     if (link) {
@@ -161,7 +207,7 @@
     var slugs = readStorage();
     if (slugs.indexOf(slug) !== -1) return slugs;
     if (slugs.length >= MAX) {
-      alert('Karşılaştırmaya en fazla 4 ürün eklenebilir.');
+      alert(msg('alert-max', 'Karşılaştırmaya en fazla 4 ürün eklenebilir.'));
       return slugs;
     }
     return writeStorage(slugs.concat(slug));
@@ -192,7 +238,8 @@
   }
 
   function resolveComparePath() {
-    return getSitePrefix() + 'urun-karsilastirma/index.html';
+    var loc = getLocale();
+    return getSitePrefix() + (loc ? loc + '/' : '') + 'urun-karsilastirma/index.html';
   }
 
   function resolveDataUrl() {
@@ -274,7 +321,7 @@
           removeSlug(slug);
         } else {
           if (slugs.length >= MAX) {
-            alert('Karşılaştırmaya en fazla 4 ürün eklenebilir.');
+            alert(msg('alert-max', 'Karşılaştırmaya en fazla 4 ürün eklenebilir.'));
             return;
           }
           addSlug(slug);
@@ -337,7 +384,7 @@
         if (global.DuruComparePdf && global.DuruComparePdf.download) {
           global.DuruComparePdf.download();
         } else {
-          alert('Karşılaştırma PDF modülü yüklenemedi. Sayfayı yenileyip tekrar deneyin.');
+          alert(msg('pdf-fail', 'Karşılaştırma PDF modülü yüklenemedi. Sayfayı yenileyip tekrar deneyin.'));
         }
         return;
       }
@@ -347,7 +394,7 @@
         if (global.DuruComparePdf && global.DuruComparePdf.downloadQuote) {
           global.DuruComparePdf.downloadQuote();
         } else {
-          alert('Teklif PDF modülü yüklenemedi. Sayfayı yenileyip tekrar deneyin.');
+          alert(msg('quote-pdf-fail', 'Teklif PDF modülü yüklenemedi. Sayfayı yenileyip tekrar deneyin.'));
         }
       }
     });
@@ -358,9 +405,9 @@
       '<div class="container container--narrow" style="padding:2rem 0">' +
       '<p style="color:rgba(43,46,51,0.75);line-height:1.65;margin-bottom:1rem">' + escHtml(message) + '</p>' +
       (slugs && slugs.length
-        ? '<p style="font-size:0.875rem;color:rgba(43,46,51,0.6)">Seçili slug: ' + escHtml(slugs.join(', ')) + '</p>'
+        ? '<p style="font-size:0.875rem;color:rgba(43,46,51,0.6)">' + escHtml(msg('err-slugs', 'Seçili slug:')) + ' ' + escHtml(slugs.join(', ')) + '</p>'
         : '') +
-      '<button type="button" class="btn btn--outline" id="compare-retry-clear" style="margin-top:1rem">Listeyi temizle</button>' +
+      '<button type="button" class="btn btn--outline" id="compare-retry-clear" style="margin-top:1rem">' + escHtml(msg('err-clear', 'Listeyi temizle')) + '</button>' +
       '</div>';
 
     var clearBtn = document.getElementById('compare-retry-clear');
@@ -387,9 +434,9 @@
         '  <div class="container container--narrow">' +
         '    <div class="empty-state">' +
         '      <div class="empty-state__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 3h5v5M4 20L21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg></div>' +
-        '      <h2 class="section-title" style="font-size:1.5rem;margin-bottom:0.75rem">Henüz ürün seçmediniz</h2>' +
-        '      <p style="color:rgba(43,46,51,0.7);max-width:28rem;margin:0 auto 2rem;line-height:1.65">Ürün sayfalarındaki <strong>Karşılaştır</strong> butonu ile listeye ekleyin (en fazla 4), ardından menüden <strong>Karşılaştır</strong> linkine tıklayın.</p>' +
-        '      <a href="' + escHtml(getSitePrefix() + 'urunler/index.html') + '" class="btn btn--primary">Ürünleri Keşfet →</a>' +
+        '      <h2 class="section-title" style="font-size:1.5rem;margin-bottom:0.75rem">' + escHtml(msg('empty-title', 'Henüz ürün seçmediniz')) + '</h2>' +
+        '      <p style="color:rgba(43,46,51,0.7);max-width:28rem;margin:0 auto 2rem;line-height:1.65">' + msg('empty-body', 'Ürün sayfalarındaki <strong>Karşılaştır</strong> butonu ile listeye ekleyin (en fazla 4), ardından menüden <strong>Karşılaştır</strong> linkine tıklayın.') + '</p>' +
+        '      <a href="' + escHtml(productsIndexUrl(getSitePrefix())) + '" class="btn btn--primary">' + escHtml(msg('empty-cta', 'Ürünleri Keşfet →')) + '</a>' +
         '    </div>' +
         '  </div>' +
         '</section>';
@@ -411,7 +458,7 @@
         });
 
         if (!products.length) {
-          showCompareError(root, 'Seçili ürünler bulunamadı. Listeyi temizleyip yeniden ekleyin.', slugs);
+          showCompareError(root, msg('err-not-found', 'Seçili ürünler bulunamadı. Listeyi temizleyip yeniden ekleyin.'), slugs);
           return;
         }
 
@@ -443,7 +490,7 @@
         });
 
         function productUrl(p) {
-          return prefix + 'urunler/' + p.kategori_slug + '/' + p.slug + '/index.html';
+          return productDetailUrl(prefix, p);
         }
 
         function imageUrl(slug) {
@@ -458,12 +505,14 @@
           return '—';
         }
 
+        var removeLabel = msg('remove', 'Listeden çıkar');
         var headCells = products.map(function (p) {
+          var name = productDisplayName(p);
           return '<th class="compare-table__head-cell">' +
-            '<button type="button" class="compare-table__remove no-print" data-remove-slug="' + escHtml(p.slug) + '" aria-label="Listeden çıkar" title="Listeden çıkar">×</button>' +
-            '<div class="compare-table__product-img"><img src="' + escHtml(imageUrl(p.slug)) + '" alt="' + escHtml(p.ad_tr) + '" loading="lazy" onerror="this.style.display=\'none\'"></div>' +
+            '<button type="button" class="compare-table__remove no-print" data-remove-slug="' + escHtml(p.slug) + '" aria-label="' + escHtml(removeLabel) + '" title="' + escHtml(removeLabel) + '">×</button>' +
+            '<div class="compare-table__product-img"><img src="' + escHtml(imageUrl(p.slug)) + '" alt="' + escHtml(name) + '" loading="lazy" onerror="this.style.display=\'none\'"></div>' +
             '<div class="product-card__model">' + escHtml(p.model_kodu) + '</div>' +
-            '<a href="' + escHtml(productUrl(p)) + '" style="font-family:var(--font-display);font-weight:600;color:var(--color-primary);text-decoration:none;display:block;margin-top:0.25rem">' + escHtml(p.ad_tr) + '</a>' +
+            '<a href="' + escHtml(productUrl(p)) + '" style="font-family:var(--font-display);font-weight:600;color:var(--color-primary);text-decoration:none;display:block;margin-top:0.25rem">' + escHtml(name) + '</a>' +
             '</th>';
         }).join('');
 
@@ -477,9 +526,9 @@
         var actionRow = products.map(function (p) {
           return '<td class="compare-table__actions no-print">' +
             '<div class="compare-table__actions-inner">' +
-            '<a href="' + escHtml(productUrl(p)) + '" class="btn btn--outline btn--sm">İncele</a>' +
-            '<a href="' + escHtml(prefix + 'fiyat-teklifi/index.html?products=' + encodeURIComponent(p.slug)) + '" class="btn btn--primary btn--sm">Teklif Al</a>' +
-            '<button type="button" class="btn btn--outline btn--sm compare-table__remove-btn" data-remove-slug="' + escHtml(p.slug) + '">Listeden çıkar</button>' +
+            '<a href="' + escHtml(productUrl(p)) + '" class="btn btn--outline btn--sm">' + escHtml(msg('inspect', 'İncele')) + '</a>' +
+            '<a href="' + escHtml(quotePageUrl(prefix, 'products=' + encodeURIComponent(p.slug))) + '" class="btn btn--primary btn--sm">' + escHtml(msg('get-quote', 'Teklif Al')) + '</a>' +
+            '<button type="button" class="btn btn--outline btn--sm compare-table__remove-btn" data-remove-slug="' + escHtml(p.slug) + '">' + escHtml(removeLabel) + '</button>' +
             '</div></td>';
         }).join('');
 
@@ -488,18 +537,18 @@
           '  <div class="container">' +
           '    <div class="no-print" style="display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:space-between;align-items:center;margin-bottom:1.5rem">' +
           '      <div style="display:flex;flex-wrap:wrap;gap:0.75rem">' +
-          '        <button type="button" class="btn btn--outline btn--sm" id="compare-clear-all">Tümünü temizle</button>' +
-          '        <button type="button" class="btn btn--outline btn--sm" id="compare-print">Yazdır</button>' +
-          '        <button type="button" class="btn btn--outline btn--sm btn-pdf-export" id="compare-pdf-btn">Karşılaştırma PDF</button>' +
-          '        <button type="button" class="btn btn--outline btn--sm btn-pdf-export" id="compare-quote-pdf-btn">Teklif PDF</button>' +
+          '        <button type="button" class="btn btn--outline btn--sm" id="compare-clear-all">' + escHtml(msg('clear', 'Tümünü temizle')) + '</button>' +
+          '        <button type="button" class="btn btn--outline btn--sm" id="compare-print">' + escHtml(msg('print', 'Yazdır')) + '</button>' +
+          '        <button type="button" class="btn btn--outline btn--sm btn-pdf-export" id="compare-pdf-btn">' + escHtml(msg('pdf', 'Karşılaştırma PDF')) + '</button>' +
+          '        <button type="button" class="btn btn--outline btn--sm btn-pdf-export" id="compare-quote-pdf-btn">' + escHtml(msg('quote-pdf', 'Teklif PDF')) + '</button>' +
           '      </div>' +
-          '      <a href="' + escHtml(prefix + 'fiyat-teklifi/index.html?products=' + encodeURIComponent(slugs.join(',')) + '&kaynak=karsilastir') + '" class="btn btn--primary">Formdan teklif gönder →</a>' +
+          '      <a href="' + escHtml(quotePageUrl(prefix, 'products=' + encodeURIComponent(slugs.join(',')) + '&kaynak=karsilastir')) + '" class="btn btn--primary">' + escHtml(msg('form-quote', 'Formdan teklif gönder →')) + '</a>' +
           '    </div>' +
           '    <div class="compare-table-wrap">' +
           '      <table class="compare-table">' +
-          '        <thead><tr><th>Özellik</th>' + headCells + '</tr></thead>' +
+          '        <thead><tr><th>' + escHtml(msg('feature', 'Özellik')) + '</th>' + headCells + '</tr></thead>' +
           '        <tbody>' + bodyRows +
-          '          <tr class="no-print"><th scope="row" style="background:var(--color-primary);color:white;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.16em">Aksiyon</th>' + actionRow + '</tr>' +
+          '          <tr class="no-print"><th scope="row" style="background:var(--color-primary);color:white;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.16em">' + escHtml(msg('action', 'Aksiyon')) + '</th>' + actionRow + '</tr>' +
           '        </tbody>' +
           '      </table>' +
           '    </div>' +
@@ -514,14 +563,14 @@
           [pdfBtn, quoteBtn].forEach(function (btn) {
             if (!btn) return;
             btn.disabled = true;
-            btn.title = 'PDF modülü yüklenemedi';
+            btn.title = msg('pdf-missing', 'PDF modülü yüklenemedi');
           });
         }
       })
       .catch(function () {
         showCompareError(
           root,
-          'Ürün verisi yüklenemedi. Sayfayı yenileyin veya siteyi bir web sunucusu üzerinden açın (python -m http.server 8080).',
+          msg('err-load', 'Ürün verisi yüklenemedi. Sayfayı yenileyin veya siteyi bir web sunucusu üzerinden açın (python -m http.server 8080).'),
           slugs
         );
       });

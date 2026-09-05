@@ -38,6 +38,13 @@
     return '—';
   }
 
+  function displayName(p) {
+    var lang = ((document.documentElement.getAttribute('lang') || '') + '').toLowerCase();
+    if (lang.indexOf('en') === 0 && p.ad_en) return p.ad_en;
+    if (lang.indexOf('ar') === 0 && p.ad_ar) return p.ad_ar;
+    return p.ad_tr || p.ad_en || p.ad_ar || p.slug;
+  }
+
   function buildSheet(products, prefix) {
     var U = global.DuruPdfUtils;
     if (!U) return null;
@@ -60,7 +67,7 @@
       return '<th style="text-align:center;min-width:90px">' +
         '<img class="pdf-compare-table__product-img" src="' + U.esc(img) + '" alt="">' +
         '<div style="font-size:9px;opacity:0.85">' + U.esc(p.model_kodu) + '</div>' +
-        '<div style="font-size:11px;font-weight:700">' + U.esc(p.ad_tr) + '</div></th>';
+        '<div style="font-size:11px;font-weight:700">' + U.esc(displayName(p)) + '</div></th>';
     }).join('');
 
     var bodyRows = keys.map(function (key) {
@@ -96,7 +103,7 @@
       products: (products || []).map(function (p) {
         return {
           slug: p.slug,
-          name: p.ad_tr,
+          name: displayName(p),
           model: p.model_kodu,
           category: p.kategori_slug || '',
           specs: (p.teknik_tablo || []).map(function (row) {
