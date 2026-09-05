@@ -211,7 +211,7 @@ function siteFooter(options = {}) {
     </div>
   </footer>
 
-${whatsappButton(prefix, k.whatsapp)}`;
+${whatsappButton(prefix, k.whatsapp, locale)}`;
 }
 
 module.exports = {

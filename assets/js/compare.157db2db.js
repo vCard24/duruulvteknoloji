@@ -257,7 +257,9 @@
         btn.setAttribute('aria-pressed', active ? 'true' : 'false');
         var label = btn.querySelector('[data-compare-label]');
         if (label) {
-          label.textContent = active ? 'Listede' : 'Karşılaştır';
+          label.textContent = active
+            ? (label.dataset.labelActive || 'Listede')
+            : (label.dataset.labelInactive || 'Karşılaştır');
         }
       }
 

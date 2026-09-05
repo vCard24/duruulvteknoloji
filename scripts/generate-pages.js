@@ -234,6 +234,16 @@ function localeImageAlt(slug, index, product) {
   return `${pName(product)} — ${loc.ui.galleryImage} ${index}`;
 }
 
+/** Compare toggle label — EN/AR get data-label-* for compare.js; TR relies on JS fallback. */
+function compareLabelSpan() {
+  const inactive = loc.ui.compare || 'Karşılaştır';
+  const active = loc.ui.compareInList || 'Listede';
+  if (loc.locale === 'tr') {
+    return `<span data-compare-label>${esc(inactive)}</span>`;
+  }
+  return `<span data-compare-label data-label-active="${esc(active)}" data-label-inactive="${esc(inactive)}">${esc(inactive)}</span>`;
+}
+
 function getRelated(product, limit = 3) {
   return data.urunler
     .filter((p) => p.kategori_slug === product.kategori_slug && p.slug !== product.slug)
@@ -321,7 +331,7 @@ function productCardFixed(p, assetPrefix, pagePrefix, comparePage) {
               <p class="product-card__summary">${esc(pSum(p))}</p>
               <div class="product-card__actions">
                 <a href="${pagePrefix}${p.slug}/index.html" class="btn btn--primary btn--sm">${esc(ui.view)}</a>
-                <button type="button" class="btn btn--outline btn--sm" data-compare-toggle="${p.slug}" data-compare-page="${comparePage}"><span data-compare-label>${esc(ui.compare)}</span></button>
+                <button type="button" class="btn btn--outline btn--sm" data-compare-toggle="${p.slug}" data-compare-page="${comparePage}">${compareLabelSpan()}</button>
               </div>
             </div>
           </article>`;
@@ -329,7 +339,7 @@ function productCardFixed(p, assetPrefix, pagePrefix, comparePage) {
 
 function generateProductPage(product) {
   const cat = getCategory(product.kategori_slug);
-  const prefix = loc.productPrefix;
+  const prefix = sitePrefixForRel(loc.productFile(product));
   const ui = loc.ui;
   const related = getRelated(product);
   const chips = product.teknik_tablo.slice(0, 4);
@@ -519,7 +529,7 @@ ${header(prefix, product.slug, loc.trProductRel(product))}
             </div>
             <div class="action-bar__actions">
               <a href="${loc.quoteHref(prefix)}?products=${encodeURIComponent(product.slug)}" class="btn btn--primary">${esc(ui.quoteArrow)}</a>
-              <button type="button" class="btn btn--outline" data-compare-toggle="${product.slug}" data-compare-page="${loc.compareHref(prefix)}"><span data-compare-label>${esc(ui.compare)}</span></button>
+              <button type="button" class="btn btn--outline" data-compare-toggle="${product.slug}" data-compare-page="${loc.compareHref(prefix)}">${compareLabelSpan()}</button>
             </div>
             <a href="https://wa.me/${data.kurumsal_bilgiler.whatsapp}" class="action-bar__wa" target="_blank" rel="noopener">${esc(ui.whatsappCta)}</a>
           </div>
@@ -595,7 +605,7 @@ ${renderBodyScripts(prefix)}
 }
 
 function generateCategoryPage(category) {
-  const prefix = loc.categoryPrefix;
+  const prefix = sitePrefixForRel(loc.categoryFile(category));
   const ui = loc.ui;
   const products = data.urunler.filter((p) => p.kategori_slug === category.slug);
   const cardPagePrefix = loc.locale === 'tr' ? '' : '../';
@@ -669,7 +679,7 @@ ${header(prefix, null, loc.trCategoryRel(category))}
       <div class="container">
         <div class="section-header-row">
           <div>
-            <div class="eyebrow">Ürün Kategorisi</div>
+            <div class="eyebrow">${esc(ui.categoryEyebrow)}</div>
             <h1 class="section-title">${esc(cName(category))}</h1>
           </div>
           <p>${esc(cDesc(category))}</p>
@@ -714,12 +724,21 @@ ${renderBodyScripts(prefix)}
 }
 
 function generateProductsIndex() {
-  const prefix = loc.productsIndexPrefix;
+  const prefix = sitePrefixForRel(loc.productsIndexFile);
   const ui = loc.ui;
   const categoryCards = data.kategoriler
     .map((cat) => {
       const count = data.urunler.filter((p) => p.kategori_slug === cat.slug).length;
-      return renderCategoryCard(cat, { linkPrefix: '', count, headingTag: 'h2', esc });
+      return renderCategoryCard(cat, {
+        linkPrefix: '',
+        count,
+        headingTag: 'h2',
+        esc,
+        exploreCta: ui.exploreCta,
+        modelUnit: ui.modelUnit,
+        title: cShort(cat),
+        desc: cDesc(cat),
+      });
     })
     .join('\n');
 
@@ -751,7 +770,7 @@ function generateProductsIndex() {
               <p class="product-card__summary">${esc(pSum(p))}</p>
               <div class="product-card__actions">
                 <a href="${href}" class="btn btn--primary btn--sm">${esc(ui.view)}</a>
-                <button type="button" class="btn btn--outline btn--sm" data-compare-toggle="${p.slug}" data-compare-page="${loc.compareHref(prefix)}"><span data-compare-label>${esc(ui.compare)}</span></button>
+                <button type="button" class="btn btn--outline btn--sm" data-compare-toggle="${p.slug}" data-compare-page="${loc.compareHref(prefix)}">${compareLabelSpan()}</button>
               </div>
             </div>
           </article>`;
@@ -833,6 +852,20 @@ ${renderBodyScripts(prefix)}
 function writeFile(filePath, content) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
   fs.writeFileSync(filePath, content, 'utf8');
+}
+
+/**
+ * Browser resolves relative URLs from the directory of a trailing-slash URL.
+ * en/products/slug/ → depth 3 → ../../../assets/... (not ../../ which lands on /en/assets).
+ */
+function sitePrefixForRel(relPath) {
+  const parts = String(relPath || '')
+    .replace(/\\/g, '/')
+    .split('/')
+    .filter(Boolean);
+  const depth =
+    parts.length && parts[parts.length - 1] === 'index.html' ? parts.length - 1 : parts.length;
+  return depth > 0 ? '../'.repeat(depth) : '';
 }
 
 buildSiteCss();

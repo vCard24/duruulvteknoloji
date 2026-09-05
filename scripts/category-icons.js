@@ -18,20 +18,25 @@ function renderCategoryCard(cat, opts) {
   const linkPrefix = opts.linkPrefix || '';
   const headingTag = opts.headingTag || 'h2';
   const count = opts.count;
+  const exploreCta = opts.exploreCta || 'Keşfet →';
+  const viewCta = opts.viewCta || 'İncele →';
+  const title = opts.title != null ? opts.title : cat.kisa_ad;
+  const desc = opts.desc != null ? opts.desc : cat.aciklama_tr;
+  const modelLabel = opts.modelUnit || 'model';
   const countHtml =
     count !== undefined
       ? `<div class="category-card__footer">
-              <span class="category-card__count">${count} model</span>
-              <span style="color:var(--color-primary);font-weight:600">Keşfet →</span>
+              <span class="category-card__count">${count} ${opts.esc(modelLabel)}</span>
+              <span style="color:var(--color-primary);font-weight:600">${opts.esc(exploreCta)}</span>
             </div>`
       : `<div class="category-card__footer">
-              <span style="color:var(--color-primary);font-weight:600">İncele →</span>
+              <span style="color:var(--color-primary);font-weight:600">${opts.esc(viewCta)}</span>
             </div>`;
 
   return `          <a href="${linkPrefix}${cat.slug}/index.html" class="category-card">
             ${categoryIconWrap(cat.slug)}
-            <${headingTag} class="category-card__title">${opts.esc(cat.kisa_ad)}</${headingTag}>
-            <p class="category-card__desc">${opts.esc(cat.aciklama_tr)}</p>
+            <${headingTag} class="category-card__title">${opts.esc(title)}</${headingTag}>
+            <p class="category-card__desc">${opts.esc(desc)}</p>
             ${countHtml}
           </a>`;
 }
