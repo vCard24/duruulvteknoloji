@@ -14,6 +14,75 @@
     'Damla Çapı': 'İlaç Damla Çapı'
   };
 
+  function getLocale() {
+    if (global.DuruPdfUtils && global.DuruPdfUtils.getLocale) {
+      return global.DuruPdfUtils.getLocale();
+    }
+    var lang = ((document.documentElement.getAttribute('lang') || '') + '').toLowerCase();
+    if (lang.indexOf('en') === 0) return 'en';
+    if (lang.indexOf('ar') === 0) return 'ar';
+    return 'tr';
+  }
+
+  var UI = {
+    tr: {
+      feature: 'Özellik',
+      title: 'Ürün Karşılaştırması',
+      modelsSuffix: ' model · ',
+      tableBlock: 'Teknik karşılaştırma tablosu',
+      draftMessage:
+        'Karşılaştırma listesinden oluşturulmuş taslak talep belgesi. Resmi teklif için formu doldurup gönderin.',
+      preparing: 'PDF hazırlanıyor…',
+      fail: 'PDF oluşturulamadı.',
+      needProduct: 'PDF için en az bir ürün seçin.',
+      libMissing: 'PDF kütüphaneleri yüklenemedi.',
+      comparePdf: 'Karşılaştırma PDF',
+      notReady: 'PDF hazırlanamadı',
+      needQuoteProduct: 'Teklif PDF için en az bir ürün seçin.',
+      quoteModuleMissing: 'Teklif PDF modülü yüklenemedi. Sayfayı yenileyip tekrar deneyin.',
+      quotePdf: 'Teklif PDF'
+    },
+    en: {
+      feature: 'Feature',
+      title: 'Product Comparison',
+      modelsSuffix: ' models · ',
+      tableBlock: 'Technical comparison table',
+      draftMessage:
+        'Draft request document generated from the comparison list. Please complete the form for an official quotation.',
+      preparing: 'Preparing PDF…',
+      fail: 'Could not create PDF.',
+      needProduct: 'Select at least one product for the PDF.',
+      libMissing: 'PDF libraries failed to load.',
+      comparePdf: 'Comparison PDF',
+      notReady: 'Could not prepare PDF',
+      needQuoteProduct: 'Select at least one product for the quote PDF.',
+      quoteModuleMissing: 'Quote PDF module failed to load. Refresh the page and try again.',
+      quotePdf: 'Quote PDF'
+    },
+    ar: {
+      feature: 'الميزة',
+      title: 'مقارنة المنتجات',
+      modelsSuffix: ' طراز · ',
+      tableBlock: 'جدول المقارنة الفنية',
+      draftMessage:
+        'وثيقة طلب مسودة أُنشئت من قائمة المقارنة. يرجى تعبئة النموذج للحصول على عرض رسمي.',
+      preparing: 'جارٍ إعداد PDF…',
+      fail: 'تعذر إنشاء PDF.',
+      needProduct: 'اختر منتجاً واحداً على الأقل لملف PDF.',
+      libMissing: 'تعذر تحميل مكتبات PDF.',
+      comparePdf: 'PDF المقارنة',
+      notReady: 'تعذر إعداد PDF',
+      needQuoteProduct: 'اختر منتجاً واحداً على الأقل لـ PDF العرض.',
+      quoteModuleMissing: 'تعذر تحميل وحدة PDF العرض. حدّث الصفحة وحاول مجدداً.',
+      quotePdf: 'PDF العرض'
+    }
+  };
+
+  function t(key) {
+    var loc = getLocale();
+    return (UI[loc] && UI[loc][key]) || UI.tr[key] || key;
+  }
+
   function canonSpec(key) {
     return SPEC_CANONICAL[key] || key;
   }
@@ -78,14 +147,14 @@
     }).join('');
 
     var tableHtml =
-      '<table class="pdf-compare-table"><thead><tr><th>Özellik</th>' + headCells +
+      '<table class="pdf-compare-table"><thead><tr><th>' + t('feature') + '</th>' + headCells +
       '</tr></thead><tbody>' + bodyRows + '</tbody></table>';
 
     var sheet = ensureSheet();
     sheet.innerHTML =
       '<div class="pdf-doc">' +
-      U.pdfHeader('Ürün Karşılaştırması', products.length + ' model · ' + U.dateStr()) +
-      U.pdfBlock('Teknik karşılaştırma tablosu', tableHtml) +
+      U.pdfHeader(t('title'), products.length + t('modelsSuffix') + U.dateStr()) +
+      U.pdfBlock(t('tableBlock'), tableHtml) +
       U.pdfFooter() +
       '</div>';
     return sheet;
@@ -98,8 +167,7 @@
       city: '',
       phone: '',
       email: '',
-      message:
-        'Karşılaştırma listesinden oluşturulmuş taslak talep belgesi. Resmi teklif için formu doldurup gönderin.',
+      message: t('draftMessage'),
       products: (products || []).map(function (p) {
         return {
           slug: p.slug,
@@ -116,19 +184,21 @@
 
   function withBusy(btnId, idleLabel, work) {
     var btn = document.getElementById(btnId);
+    var restore = idleLabel;
     if (btn) {
+      if (!restore) restore = btn.textContent;
       btn.disabled = true;
-      btn.textContent = 'PDF hazırlanıyor…';
+      btn.textContent = t('preparing');
     }
     return Promise.resolve()
       .then(work)
       .catch(function (err) {
-        alert((err && err.message) || 'PDF oluşturulamadı.');
+        alert((err && err.message) || t('fail'));
       })
       .finally(function () {
         if (btn) {
           btn.disabled = false;
-          btn.textContent = idleLabel;
+          btn.textContent = restore || t('comparePdf');
         }
       });
   }
@@ -137,17 +207,18 @@
     var list = products || ctx.products;
     var pfx = prefix || ctx.prefix || (global.DuruPdfUtils && global.DuruPdfUtils.sitePrefix());
     if (!list || !list.length) {
-      alert('PDF için en az bir ürün seçin.');
+      alert(t('needProduct'));
       return Promise.resolve();
     }
     if (!global.DuruPdfUtils) {
-      alert('PDF kütüphaneleri yüklenemedi.');
+      alert(t('libMissing'));
       return Promise.resolve();
     }
 
-    return withBusy('compare-pdf-btn', 'Karşılaştırma PDF', function () {
+    var btn = document.getElementById('compare-pdf-btn');
+    return withBusy('compare-pdf-btn', (btn && btn.textContent) || t('comparePdf'), function () {
       var sheet = buildSheet(list, pfx);
-      if (!sheet) throw new Error('PDF hazırlanamadı');
+      if (!sheet) throw new Error(t('notReady'));
       return global.DuruPdfUtils.downloadSheet(sheet, 'duru-ulv-karsilastirma.pdf');
     });
   }
@@ -155,15 +226,16 @@
   function downloadQuote(products, prefix) {
     var list = products || ctx.products;
     if (!list || !list.length) {
-      alert('Teklif PDF için en az bir ürün seçin.');
+      alert(t('needQuoteProduct'));
       return Promise.resolve();
     }
     if (!global.DuruQuotePdf || !global.DuruQuotePdf.downloadPayload) {
-      alert('Teklif PDF modülü yüklenemedi. Sayfayı yenileyip tekrar deneyin.');
+      alert(t('quoteModuleMissing'));
       return Promise.resolve();
     }
 
-    return withBusy('compare-quote-pdf-btn', 'Teklif PDF', function () {
+    var btn = document.getElementById('compare-quote-pdf-btn');
+    return withBusy('compare-quote-pdf-btn', (btn && btn.textContent) || t('quotePdf'), function () {
       return global.DuruQuotePdf.downloadPayload(mapToQuotePayload(list), {
         buttonId: null,
         fileName: 'duru-ulv-teklif-taslak.pdf'

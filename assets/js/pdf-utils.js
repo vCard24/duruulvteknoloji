@@ -39,6 +39,45 @@
     return lib.jsPDF || lib.default || null;
   }
 
+  function getLocale() {
+    var lang = ((document.documentElement.getAttribute('lang') || '') + '').toLowerCase();
+    if (lang.indexOf('en') === 0) return 'en';
+    if (lang.indexOf('ar') === 0) return 'ar';
+    return 'tr';
+  }
+
+  var UI = {
+    tr: {
+      datePrefix: 'Tarih: ',
+      footerNote: 'Bu belge bilgilendirme amaçlıdır; bağlayıcı teklif niteliği taşımaz.',
+      libMissing: 'PDF kütüphaneleri yüklenemedi.',
+      emptyFile: 'PDF oluşturulamadı (boş dosya).',
+      emptyOutput: 'PDF oluşturulamadı (boş çıktı).',
+      jspdfMissing: 'jsPDF yüklenemedi'
+    },
+    en: {
+      datePrefix: 'Date: ',
+      footerNote: 'This document is for information only and is not a binding quotation.',
+      libMissing: 'PDF libraries failed to load.',
+      emptyFile: 'Could not create PDF (empty file).',
+      emptyOutput: 'Could not create PDF (empty output).',
+      jspdfMissing: 'jsPDF failed to load'
+    },
+    ar: {
+      datePrefix: 'التاريخ: ',
+      footerNote: 'هذه الوثيقة لأغراض إعلامية فقط وليست عرض سعر ملزماً.',
+      libMissing: 'تعذر تحميل مكتبات PDF.',
+      emptyFile: 'تعذر إنشاء PDF (ملف فارغ).',
+      emptyOutput: 'تعذر إنشاء PDF (مخرجات فارغة).',
+      jspdfMissing: 'تعذر تحميل jsPDF'
+    }
+  };
+
+  function t(key) {
+    var loc = getLocale();
+    return (UI[loc] && UI[loc][key]) || UI.tr[key] || key;
+  }
+
   function dateStr() {
     var now = new Date();
     return ('0' + now.getDate()).slice(-2) + '.' +
@@ -57,7 +96,7 @@
       '</div>' +
       '<div class="pdf-doc__header-main">' +
       '<h1>' + esc(title) + '</h1>' +
-      '<p class="pdf-doc__date">' + esc(subtitle || ('Tarih: ' + dateStr())) + '</p>' +
+      '<p class="pdf-doc__date">' + esc(subtitle || (t('datePrefix') + dateStr())) + '</p>' +
       '</div></header>';
   }
 
@@ -65,7 +104,7 @@
     return '<footer class="pdf-doc__footer">' +
       '<p><strong>Duru ULV Teknoloji Sistemleri</strong><br>' +
       '+90 352 320 20 86 · info@entosis.com.tr · www.duruulvteknoloji.com.tr</p>' +
-      '<p style="margin-top:6px">Bu belge bilgilendirme amaçlıdır; bağlayıcı teklif niteliği taşımaz.</p>' +
+      '<p style="margin-top:6px">' + esc(t('footerNote')) + '</p>' +
       '</footer>';
   }
 
@@ -303,7 +342,7 @@
 
   function canvasToPdf(canvas, fileName) {
     var JsPDF = getJsPDF();
-    if (!JsPDF) throw new Error('jsPDF yüklenemedi');
+    if (!JsPDF) throw new Error(t('jspdfMissing'));
 
     var pdf = new JsPDF({ orientation: 'p', unit: 'mm', format: 'a4' });
     var pageW = pdf.internal.pageSize.getWidth();
@@ -360,7 +399,7 @@
   }
 
   function triggerDownload(blob, fileName) {
-    if (!blob) throw new Error('PDF oluşturulamadı (boş dosya).');
+    if (!blob) throw new Error(t('emptyFile'));
     var url = URL.createObjectURL(blob);
     var a = document.createElement('a');
     a.href = url;
@@ -383,7 +422,7 @@
     var h2c = getHtml2Canvas();
     var JsPDF = getJsPDF();
     if (!h2c || !JsPDF) {
-      return Promise.reject(new Error('PDF kütüphaneleri yüklenemedi.'));
+      return Promise.reject(new Error(t('libMissing')));
     }
 
     sheet.classList.add('is-capturing');
@@ -407,7 +446,7 @@
       .then(function () { return captureToCanvas(sheet, h2c); })
       .then(function (canvas) {
         if (!canvas || !canvas.width || !canvas.height) {
-          throw new Error('PDF oluşturulamadı (boş çıktı).');
+          throw new Error(t('emptyOutput'));
         }
         canvasToPdf(canvas, fileName);
       })
@@ -421,6 +460,8 @@
     sitePrefix: sitePrefix,
     logoUrl: logoUrl,
     dateStr: dateStr,
+    getLocale: getLocale,
+    t: t,
     pdfHeader: pdfHeader,
     pdfFooter: pdfFooter,
     pdfBlock: pdfBlock,
