@@ -152,6 +152,8 @@
       var label = spec.label || spec.ozellik || '';
       var value = spec.value || spec.deger || '';
       if (!label && !value) return '';
+      if (U.translateSpecLabel) label = U.translateSpecLabel(label);
+      if (U.translateSpecValue) value = U.translateSpecValue(value);
       return '<tr><th scope="row">' + U.esc(label) + '</th><td>' + U.esc(value) + '</td></tr>';
     }).join('');
 

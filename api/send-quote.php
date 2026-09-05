@@ -134,7 +134,7 @@ if ($devSaveOnly) {
     ]);
 }
 
-$subject = 'Duru ULV — Fiyat teklifi: ' . $subjectName;
+$subject = duru_quote_mail_subject($formData, $subjectName);
 $sent = duru_send_quote_mail($config, $to, $subject, $html, $email);
 
 if (!$sent) {

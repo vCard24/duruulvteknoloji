@@ -141,9 +141,12 @@
 
     var bodyRows = keys.map(function (key) {
       var cells = products.map(function (p) {
-        return '<td>' + U.esc(getValue(p, key)) + '</td>';
+        var val = getValue(p, key);
+        if (U.translateSpecValue) val = U.translateSpecValue(val);
+        return '<td>' + U.esc(val) + '</td>';
       }).join('');
-      return '<tr><th>' + U.esc(key) + '</th>' + cells + '</tr>';
+      var label = U.translateSpecLabel ? U.translateSpecLabel(key) : key;
+      return '<tr><th>' + U.esc(label) + '</th>' + cells + '</tr>';
     }).join('');
 
     var tableHtml =
@@ -175,7 +178,17 @@
           model: p.model_kodu,
           category: p.kategori_slug || '',
           specs: (p.teknik_tablo || []).map(function (row) {
-            return { label: row.ozellik, value: row.deger };
+            var label = row.ozellik;
+            var value = row.deger;
+            if (global.DuruPdfUtils) {
+              if (global.DuruPdfUtils.translateSpecLabel) {
+                label = global.DuruPdfUtils.translateSpecLabel(label);
+              }
+              if (global.DuruPdfUtils.translateSpecValue) {
+                value = global.DuruPdfUtils.translateSpecValue(value);
+              }
+            }
+            return { label: label, value: value };
           })
         };
       })

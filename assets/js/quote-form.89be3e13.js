@@ -250,13 +250,25 @@
     return ok;
   }
 
+  function localizeSpecRow(row) {
+    var label = row.ozellik || row.label || '';
+    var value = row.deger || row.value || '';
+    if (window.DuruPdfUtils) {
+      if (window.DuruPdfUtils.translateSpecLabel) {
+        label = window.DuruPdfUtils.translateSpecLabel(label);
+      }
+      if (window.DuruPdfUtils.translateSpecValue) {
+        value = window.DuruPdfUtils.translateSpecValue(value);
+      }
+    }
+    return { label: label, value: value };
+  }
+
   function serializeForApi() {
     var products = selectedSlugs.map(function (slug) {
       var p = findProduct(slug);
       if (!p) return null;
-      var specs = (p.teknik_tablo || []).slice(0, 4).map(function (row) {
-        return { label: row.ozellik, value: row.deger };
-      });
+      var specs = (p.teknik_tablo || []).slice(0, 4).map(localizeSpecRow);
       return {
         slug: p.slug,
         name: productDisplayName(p),
@@ -276,6 +288,7 @@
       city: form.city.value.trim(),
       message: form.message.value.trim(),
       kvkk: form.kvkk_accepted.checked,
+      locale: getLocale() || 'tr',
       products: products
     };
   }
@@ -450,9 +463,7 @@
         name: productDisplayName(p),
         model: p.model_kodu,
         category: categoryLabel(p.kategori_slug),
-        specs: (p.teknik_tablo || []).map(function (row) {
-          return { label: row.ozellik, value: row.deger };
-        })
+        specs: (p.teknik_tablo || []).map(localizeSpecRow)
       };
     }).filter(Boolean);
 

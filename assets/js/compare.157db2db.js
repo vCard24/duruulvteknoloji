@@ -505,6 +505,20 @@
           return '—';
         }
 
+        function displaySpecLabel(key) {
+          if (window.DuruPdfUtils && window.DuruPdfUtils.translateSpecLabel) {
+            return window.DuruPdfUtils.translateSpecLabel(key);
+          }
+          return key;
+        }
+
+        function displaySpecValue(val) {
+          if (val === '—' || !window.DuruPdfUtils || !window.DuruPdfUtils.translateSpecValue) {
+            return val;
+          }
+          return window.DuruPdfUtils.translateSpecValue(val);
+        }
+
         var removeLabel = msg('remove', 'Listeden çıkar');
         var headCells = products.map(function (p) {
           var name = productDisplayName(p);
@@ -518,9 +532,9 @@
 
         var bodyRows = keys.map(function (key) {
           var cells = products.map(function (p) {
-            return '<td>' + escHtml(getValue(p, key)) + '</td>';
+            return '<td>' + escHtml(displaySpecValue(getValue(p, key))) + '</td>';
           }).join('');
-          return '<tr><th scope="row">' + escHtml(key) + '</th>' + cells + '</tr>';
+          return '<tr><th scope="row">' + escHtml(displaySpecLabel(key)) + '</th>' + cells + '</tr>';
         }).join('');
 
         var actionRow = products.map(function (p) {

@@ -43,7 +43,149 @@
     var lang = ((document.documentElement.getAttribute('lang') || '') + '').toLowerCase();
     if (lang.indexOf('en') === 0) return 'en';
     if (lang.indexOf('ar') === 0) return 'ar';
+    var path = (global.location && global.location.pathname) || '';
+    if (/(^|\/)en(\/|$)/i.test(path)) return 'en';
+    if (/(^|\/)ar(\/|$)/i.test(path)) return 'ar';
     return 'tr';
+  }
+
+  /** TR teknik_tablo etiketleri → EN/AR (karşılaştırma + PDF + e-posta) */
+  var SPEC_LABELS = {
+    en: {
+      Motor: 'Motor',
+      'İlaç Tank Kapasitesi': 'Chemical Tank Capacity',
+      'İlaç Çıkış Debisi': 'Chemical Flow Rate',
+      'İlaç Damla Çapı': 'Chemical Droplet Size',
+      'Solüsyon Tipleri': 'Solution Types',
+      'Püskürtme': 'Spray',
+      'Ağırlık': 'Weight',
+      'Ağırlık (boş)': 'Weight (empty)',
+      'Ölçüler': 'Dimensions',
+      Batarya: 'Battery',
+      'Başlık': 'Nozzle',
+      'Başlık / Nozul': 'Head / Nozzle',
+      'Damla Çapı': 'Droplet Size',
+      'El Yıkama Tankı': 'Hand Wash Tank',
+      Fan: 'Fan',
+      'Gövde': 'Body',
+      'Holder Hortum': 'Holder Hose',
+      Kapasite: 'Capacity',
+      'Kaplama Alanı': 'Coverage Area',
+      Kontrol: 'Control',
+      Kumanda: 'Controls',
+      'MİST Başlık Hareketi': 'Mist Head Movement',
+      'Nem Damla Çapı': 'Humidity Droplet Size',
+      'Nem Çıkış Debisi': 'Humidity Flow Rate',
+      'Nozul Sayısı': 'Nozzle Count',
+      Pompa: 'Pump',
+      'Püskürtme Hortumu': 'Spray Hose',
+      'Püskürtme Sistemleri': 'Spray Systems',
+      'Solüsyon': 'Solution',
+      Tank: 'Tank',
+      Teker: 'Wheels',
+      'U.L.V Motor': 'ULV Motor',
+      'ULV Mikron': 'ULV Micron',
+      Uygulama: 'Application',
+      'Yakıt Deposu': 'Fuel Tank',
+      'Yakıt Tüketimi': 'Fuel Consumption',
+      'Yakıt Tüketimi (motor)': 'Fuel Consumption (engine)',
+      'Özellik': 'Feature',
+      'İlaç Formülasyonu': 'Chemical Formulation',
+      'İlaç Yakıt Tüketimi': 'Chemical Fuel Consumption'
+    },
+    ar: {
+      Motor: 'المحرك',
+      'İlaç Tank Kapasitesi': 'سعة خزان المبيد',
+      'İlaç Çıkış Debisi': 'معدل تدفق المبيد',
+      'İlaç Damla Çapı': 'قطر قطرة المبيد',
+      'Solüsyon Tipleri': 'أنواع المحاليل',
+      'Püskürtme': 'الرش',
+      'Ağırlık': 'الوزن',
+      'Ağırlık (boş)': 'الوزن (فارغ)',
+      'Ölçüler': 'الأبعاد',
+      Batarya: 'البطارية',
+      'Başlık': 'الفوهة',
+      'Başlık / Nozul': 'الرأس / الفوهة',
+      'Damla Çapı': 'قطر القطرة',
+      'El Yıkama Tankı': 'خزان غسل اليدين',
+      Fan: 'المروحة',
+      'Gövde': 'الهيكل',
+      'Holder Hortum': 'خرطوم الحامل',
+      Kapasite: 'السعة',
+      'Kaplama Alanı': 'مساحة التغطية',
+      Kontrol: 'التحكم',
+      Kumanda: 'لوحة التحكم',
+      'MİST Başlık Hareketi': 'حركة رأس الضباب',
+      'Nem Damla Çapı': 'قطر قطرة الترطيب',
+      'Nem Çıkış Debisi': 'معدل تدفق الترطيب',
+      'Nozul Sayısı': 'عدد الفوهات',
+      Pompa: 'المضخة',
+      'Püskürtme Hortumu': 'خرطوم الرش',
+      'Püskürtme Sistemleri': 'أنظمة الرش',
+      'Solüsyon': 'المحلول',
+      Tank: 'الخزان',
+      Teker: 'العجلات',
+      'U.L.V Motor': 'محرك ULV',
+      'ULV Mikron': 'ميكرون ULV',
+      Uygulama: 'التطبيق',
+      'Yakıt Deposu': 'خزان الوقود',
+      'Yakıt Tüketimi': 'استهلاك الوقود',
+      'Yakıt Tüketimi (motor)': 'استهلاك الوقود (المحرك)',
+      'Özellik': 'الميزة',
+      'İlaç Formülasyonu': 'تركيبة المبيد',
+      'İlaç Yakıt Tüketimi': 'استهلاك وقود المبيد'
+    }
+  };
+
+  var SPEC_VALUE_REPLACEMENTS = {
+    en: [
+      [/litre/gi, 'liter'],
+      [/mikron/gi, 'micron'],
+      [/\badet\b/gi, 'pcs'],
+      [/Yükseklik:/gi, 'H:'],
+      [/\bBoy:/gi, 'L:'],
+      [/\bEn:/gi, 'W:'],
+      [/benzinli/gi, 'gasoline'],
+      [/aç\/kapa/gi, 'on/off'],
+      [/jeneratörlü/gi, 'with generator'],
+      [/tekerlekli/gi, 'wheeled'],
+      [/döner/gi, 'rotating'],
+      [/hortum/gi, 'hose'],
+      [/şamandıralı/gi, 'float-controlled']
+    ],
+    ar: [
+      [/litre/gi, 'لتر'],
+      [/mikron/gi, 'ميكرون'],
+      [/\badet\b/gi, 'قطعة'],
+      [/Yükseklik:/gi, 'الارتفاع:'],
+      [/\bBoy:/gi, 'الطول:'],
+      [/\bEn:/gi, 'العرض:'],
+      [/benzinli/gi, 'بنزين'],
+      [/aç\/kapa/gi, 'تشغيل/إيقاف'],
+      [/jeneratörlü/gi, 'بمولد'],
+      [/tekerlekli/gi, 'بعجلات'],
+      [/döner/gi, 'دوار'],
+      [/hortum/gi, 'خرطوم'],
+      [/şamandıralı/gi, 'بمنظم عوامة']
+    ]
+  };
+
+  function translateSpecLabel(label, locale) {
+    var loc = locale || getLocale();
+    if (!label || loc === 'tr') return label || '';
+    var map = SPEC_LABELS[loc];
+    return (map && map[label]) || label;
+  }
+
+  function translateSpecValue(value, locale) {
+    var loc = locale || getLocale();
+    if (value == null || loc === 'tr') return value == null ? '' : String(value);
+    var out = String(value);
+    var pairs = SPEC_VALUE_REPLACEMENTS[loc] || [];
+    for (var i = 0; i < pairs.length; i++) {
+      out = out.replace(pairs[i][0], pairs[i][1]);
+    }
+    return out;
   }
 
   var UI = {
@@ -462,6 +604,8 @@
     dateStr: dateStr,
     getLocale: getLocale,
     t: t,
+    translateSpecLabel: translateSpecLabel,
+    translateSpecValue: translateSpecValue,
     pdfHeader: pdfHeader,
     pdfFooter: pdfFooter,
     pdfBlock: pdfBlock,

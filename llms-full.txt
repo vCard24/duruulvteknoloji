@@ -25,58 +25,127 @@ Site kökü: https://www.duruulvteknoloji.com.tr/
 - EN: https://www.duruulvteknoloji.com.tr/en/
 - AR: https://www.duruulvteknoloji.com.tr/ar/
 
-## Araç Üzeri ULV İlaçlama Makineleri
+## Araç Üzeri ULV İlaçlama Makineleri / Truck-Mounted ULV Foggers / أجهزة رش ULV المركبة على المركبات
 
-Kategori: https://www.duruulvteknoloji.com.tr/urunler/arac-uzeri-ilaclama/ | EN: https://www.duruulvteknoloji.com.tr/en/products/arac-uzeri-ilaclama/ | AR: https://www.duruulvteknoloji.com.tr/ar/products/arac-uzeri-ilaclama/
+Category: https://www.duruulvteknoloji.com.tr/urunler/arac-uzeri-ilaclama/ | EN: https://www.duruulvteknoloji.com.tr/en/products/arac-uzeri-ilaclama/ | AR: https://www.duruulvteknoloji.com.tr/ar/products/arac-uzeri-ilaclama/
 
-- [Duru Mist Blower 15HP (400L)](https://www.duruulvteknoloji.com.tr/urunler/arac-uzeri-ilaclama/duru-mist-blower-15hp/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/duru-mist-blower-15hp/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/duru-mist-blower-15hp/) (DMB-15HP-400): 400 litre tanklı araç üstü sisleme makinesi ile belediye ve tarım alanlarında etkili haşere mücadelesi. Hemen teklif alın. | Anahtar: araç üstü sisleme makinesi
-- [Entosis Mist Blower (500L)](https://www.duruulvteknoloji.com.tr/urunler/arac-uzeri-ilaclama/entosis-mist-blower-500l/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/entosis-mist-blower-500l/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/entosis-mist-blower-500l/) (EMB-500): 500 litre tanklı Entosis Mist Blower ile büyükşehir belediyeleri ve geniş tarım arazilerinde joystick kontrollü mist blower ilaçlama. Teklif alın. | Anahtar: araç üstü sisleme makinesi
-- [Duru HD1800](https://www.duruulvteknoloji.com.tr/urunler/arac-uzeri-ilaclama/duru-hd1800/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/duru-hd1800/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/duru-hd1800/) (HD-1800): 18 Hp motorlu araç üstü ULV ilaçlama makinesi Duru HD1800 ile geniş alanlarda hızlı sivrisinek mücadelesi. Şimdi teklif isteyin. | Anahtar: araç üstü ulv makinesi
-- [Duru HD75](https://www.duruulvteknoloji.com.tr/urunler/arac-uzeri-ilaclama/duru-hd75/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/duru-hd75/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/duru-hd75/) (HD-75): 10 kW jeneratörlü araç üstü ilaçlama makinesi Duru HD75 ile sivrisinek ve karasinek mücadelesinde güçlü performans. Teklif alın. | Anahtar: araç üstü ilaçlama makinesi
-- [Duru HD50](https://www.duruulvteknoloji.com.tr/urunler/arac-uzeri-ilaclama/duru-hd50/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/duru-hd50/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/duru-hd50/) (HD-50): Araç üstü sivrisinek ilaçlama makinesi Duru HD50 ile belediye ve açık alanlarda etkili ULV mücadelesi. 50 L tank, ayarlanabilir mikron. Teklif alın. | Anahtar: araç üstü ilaçlama makinesi
+- [Duru Mist Blower 15HP (400L)](https://www.duruulvteknoloji.com.tr/urunler/arac-uzeri-ilaclama/duru-mist-blower-15hp/) | [EN: Truck-Mounted Mist Blower - Duru 15HP](https://www.duruulvteknoloji.com.tr/en/products/duru-mist-blower-15hp/) | [AR: جهاز نفخ ضباب مركب على السيارة - Duru 15HP](https://www.duruulvteknoloji.com.tr/ar/products/duru-mist-blower-15hp/) (DMB-15HP-400)
+  - TR: 400 litre tanklı araç üstü sisleme makinesi ile belediye ve tarım alanlarında etkili haşere mücadelesi. Hemen teklif alın. | keyword: araç üstü sisleme makinesi
+  - EN: Truck-mounted mist blower with 400L tank and 15 HP engine for municipal spraying.
+  - AR: جهاز نفخ ضباب مركب على السيارة بخزان 400 لتر لمكافحة البعوض في البلديات.
+- [Entosis Mist Blower (500L)](https://www.duruulvteknoloji.com.tr/urunler/arac-uzeri-ilaclama/entosis-mist-blower-500l/) | [EN: Truck-Mounted Mist Blower - Entosis 500L](https://www.duruulvteknoloji.com.tr/en/products/entosis-mist-blower-500l/) | [AR: جهاز نفخ ضباب مركب على السيارة - Entosis 500L](https://www.duruulvteknoloji.com.tr/ar/products/entosis-mist-blower-500l/) (EMB-500)
+  - TR: 500 litre tanklı Entosis Mist Blower ile büyükşehir belediyeleri ve geniş tarım arazilerinde joystick kontrollü mist blower ilaçlama. Teklif alın. | keyword: araç üstü sisleme makinesi
+  - EN: High-capacity truck-mounted mist blower with joystick control and 35-micron ULV.
+  - AR: جهاز نفخ ضباب مركب على السيارة بسعة 500 لتر وتحكم جوستيك لمكافحة البعوض.
+- [Duru HD1800](https://www.duruulvteknoloji.com.tr/urunler/arac-uzeri-ilaclama/duru-hd1800/) | [EN: Truck-Mounted ULV Fogger - Duru HD1800](https://www.duruulvteknoloji.com.tr/en/products/duru-hd1800/) | [AR: جهاز رش ULV مركب على السيارة - Duru HD1800](https://www.duruulvteknoloji.com.tr/ar/products/duru-hd1800/) (HD-1800)
+  - TR: 18 Hp motorlu araç üstü ULV ilaçlama makinesi Duru HD1800 ile geniş alanlarda hızlı sivrisinek mücadelesi. Şimdi teklif isteyin. | keyword: araç üstü ulv makinesi
+  - EN: High-capacity truck-mounted ULV fogger for demanding municipal and field operations.
+  - AR: جهاز رش ULV مركب على السيارة عالي السعة لمكافحة البعوض الميدانية الشاقة.
+- [Duru HD75](https://www.duruulvteknoloji.com.tr/urunler/arac-uzeri-ilaclama/duru-hd75/) | [EN: Truck-Mounted ULV Fogger - Duru HD75](https://www.duruulvteknoloji.com.tr/en/products/duru-hd75/) | [AR: جهاز رش ULV مركب على السيارة - Duru HD75](https://www.duruulvteknoloji.com.tr/ar/products/duru-hd75/) (HD-75)
+  - TR: 10 kW jeneratörlü araç üstü ilaçlama makinesi Duru HD75 ile sivrisinek ve karasinek mücadelesinde güçlü performans. Teklif alın. | keyword: araç üstü ilaçlama makinesi
+  - EN: Compact truck-mounted ULV fogger for municipal and industrial vector control.
+  - AR: جهاز رش ULV مركب على السيارة مدمج لمكافحة البعوض في البلديات.
+- [Duru HD50](https://www.duruulvteknoloji.com.tr/urunler/arac-uzeri-ilaclama/duru-hd50/) | [EN: Truck-Mounted ULV Fogger - Duru HD50](https://www.duruulvteknoloji.com.tr/en/products/duru-hd50/) | [AR: جهاز رش ULV مركب على السيارة - Duru HD50](https://www.duruulvteknoloji.com.tr/ar/products/duru-hd50/) (HD-50)
+  - TR: Araç üstü sivrisinek ilaçlama makinesi Duru HD50 ile belediye ve açık alanlarda etkili ULV mücadelesi. 50 L tank, ayarlanabilir mikron. Teklif alın. | keyword: araç üstü ilaçlama makinesi
+  - EN: Reliable truck-mounted ULV fogger for daily municipal mosquito control routes.
+  - AR: جهاز رش ULV مركب على السيارة موثوق لمسارات مكافحة البعوض اليومية في البلديات.
 
-## Sera Tipi ULV İlaçlama Makineleri
+## Sera Tipi ULV İlaçlama Makineleri / Greenhouse ULV Foggers / أجهزة رش البيوت المحمية
 
-Kategori: https://www.duruulvteknoloji.com.tr/urunler/sera-tipi-ulv-ilaclama/ | EN: https://www.duruulvteknoloji.com.tr/en/products/sera-tipi-ulv-ilaclama/ | AR: https://www.duruulvteknoloji.com.tr/ar/products/sera-tipi-ulv-ilaclama/
+Category: https://www.duruulvteknoloji.com.tr/urunler/sera-tipi-ulv-ilaclama/ | EN: https://www.duruulvteknoloji.com.tr/en/products/sera-tipi-ulv-ilaclama/ | AR: https://www.duruulvteknoloji.com.tr/ar/products/sera-tipi-ulv-ilaclama/
 
-- [Entosis 50](https://www.duruulvteknoloji.com.tr/urunler/sera-tipi-ulv-ilaclama/entosis-50/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/entosis-50/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/entosis-50/) (ENT-50): Sera ilaçlama makinesi Entosis 50 ile seraya girmeden, 7 dönüme kadar homojen ilaçlama yapın. Sağlığınızı koruyun, teklif alın. | Anahtar: sera ilaçlama makinesi
-- [Sera Max 50](https://www.duruulvteknoloji.com.tr/urunler/sera-tipi-ulv-ilaclama/sera-max-50/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/sera-max-50/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/sera-max-50/) (SMX-50): 4 motorlu, 100 litre tanklı (25×4) yüksek kapasiteli sera ilaçlama makinesi Sera Max 50 ile büyük seralarda etkin mücadele. Teklif alın. | Anahtar: sera ilaçlama makinesi
-- [Sera Ultra 20](https://www.duruulvteknoloji.com.tr/urunler/sera-tipi-ulv-ilaclama/sera-ultra-20/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/sera-ultra-20/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/sera-ultra-20/) (SULTRA-20): 48 litre tanklı sera dezenfeksiyon cihazı Sera Ultra 20 ile orta ölçekli seralarda etkili haşere mücadelesi. Hemen teklif isteyin. | Anahtar: sera dezenfeksiyon cihazı
-- [Entosis 20](https://www.duruulvteknoloji.com.tr/urunler/sera-tipi-ulv-ilaclama/entosis-20/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/entosis-20/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/entosis-20/) (ENT-20): 20 litre tanklı, tekerlekli kompakt sera ilaçlama cihazı Entosis 20 ile küçük-orta seralarda etkili mücadele. Teklif alın. | Anahtar: sera ilaçlama cihazı
-- [Sera Plus 20](https://www.duruulvteknoloji.com.tr/urunler/sera-tipi-ulv-ilaclama/sera-plus-20/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/sera-plus-20/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/sera-plus-20/) (SPL-20): 20 litre tanklı, hafif ve sabit montajlı sera ilaçlama sistemi Sera Plus 20 ile sürekli koruma sağlayın. Hemen teklif alın. | Anahtar: sera ilaçlama sistemi
+- [Entosis 50](https://www.duruulvteknoloji.com.tr/urunler/sera-tipi-ulv-ilaclama/entosis-50/) | [EN: Greenhouse ULV Fogger - Entosis 50](https://www.duruulvteknoloji.com.tr/en/products/entosis-50/) | [AR: جهاز رش البيوت المحمية - Entosis 50](https://www.duruulvteknoloji.com.tr/ar/products/entosis-50/) (ENT-50)
+  - TR: Sera ilaçlama makinesi Entosis 50 ile seraya girmeden, 7 dönüme kadar homojen ilaçlama yapın. Sağlığınızı koruyun, teklif alın. | keyword: sera ilaçlama makinesi
+  - EN: Electric greenhouse ULV fogger with 50L capacity for protected crop spraying.
+  - AR: جهاز رش ULV كهربائي لرش البيوت المحمية بسعة 50 لتر.
+- [Sera Max 50](https://www.duruulvteknoloji.com.tr/urunler/sera-tipi-ulv-ilaclama/sera-max-50/) | [EN: Greenhouse ULV Fogger - Sera Max 50](https://www.duruulvteknoloji.com.tr/en/products/sera-max-50/) | [AR: جهاز رش البيوت المحمية - Sera Max 50](https://www.duruulvteknoloji.com.tr/ar/products/sera-max-50/) (SMX-50)
+  - TR: 4 motorlu, 100 litre tanklı (25×4) yüksek kapasiteli sera ilaçlama makinesi Sera Max 50 ile büyük seralarda etkin mücadele. Teklif alın. | keyword: sera ilaçlama makinesi
+  - EN: High-performance greenhouse ULV fogger with 50L tank for intensive indoor spraying.
+  - AR: جهاز رش البيوت المحمية عالي الأداء بسعة 50 لتر للتطبيقات المكثفة.
+- [Sera Ultra 20](https://www.duruulvteknoloji.com.tr/urunler/sera-tipi-ulv-ilaclama/sera-ultra-20/) | [EN: Greenhouse ULV Fogger - Sera Ultra 20](https://www.duruulvteknoloji.com.tr/en/products/sera-ultra-20/) | [AR: جهاز رش البيوت المحمية - Sera Ultra 20](https://www.duruulvteknoloji.com.tr/ar/products/sera-ultra-20/) (SULTRA-20)
+  - TR: 48 litre tanklı sera dezenfeksiyon cihazı Sera Ultra 20 ile orta ölçekli seralarda etkili haşere mücadelesi. Hemen teklif isteyin. | keyword: sera dezenfeksiyon cihazı
+  - EN: Compact greenhouse ULV fogger with ultra-fine droplets for 20L programs.
+  - AR: جهاز رش البيوت المحمية المدمج بقطرات فائقة الدقة.
+- [Entosis 20](https://www.duruulvteknoloji.com.tr/urunler/sera-tipi-ulv-ilaclama/entosis-20/) | [EN: Greenhouse ULV Fogger - Entosis 20](https://www.duruulvteknoloji.com.tr/en/products/entosis-20/) | [AR: جهاز رش البيوت المحمية - Entosis 20](https://www.duruulvteknoloji.com.tr/ar/products/entosis-20/) (ENT-20)
+  - TR: 20 litre tanklı, tekerlekli kompakt sera ilaçlama cihazı Entosis 20 ile küçük-orta seralarda etkili mücadele. Teklif alın. | keyword: sera ilaçlama cihazı
+  - EN: Electric greenhouse ULV fogger for mid-size protected growing spaces.
+  - AR: جهاز رش ULV كهربائي لرش البيوت المحمية متوسطة الحجم.
+- [Sera Plus 20](https://www.duruulvteknoloji.com.tr/urunler/sera-tipi-ulv-ilaclama/sera-plus-20/) | [EN: Greenhouse ULV Fogger - Sera Plus 20](https://www.duruulvteknoloji.com.tr/en/products/sera-plus-20/) | [AR: جهاز رش البيوت المحمية - Sera Plus 20](https://www.duruulvteknoloji.com.tr/ar/products/sera-plus-20/) (SPL-20)
+  - TR: 20 litre tanklı, hafif ve sabit montajlı sera ilaçlama sistemi Sera Plus 20 ile sürekli koruma sağlayın. Hemen teklif alın. | keyword: sera ilaçlama sistemi
+  - EN: 20L greenhouse ULV fogger for routine crop protection programs.
+  - AR: جهاز رش البيوت المحمية بسعة 20 لتر للحماية الروتينية للمحاصيل.
 
-## Sırt Tipi ULV İlaçlama Makineleri
+## Sırt Tipi ULV İlaçlama Makineleri / Backpack ULV Foggers / أجهزة الرش المحمولة على الظهر
 
-Kategori: https://www.duruulvteknoloji.com.tr/urunler/sirt-tipi-ulv-ilaclama/ | EN: https://www.duruulvteknoloji.com.tr/en/products/sirt-tipi-ulv-ilaclama/ | AR: https://www.duruulvteknoloji.com.tr/ar/products/sirt-tipi-ulv-ilaclama/
+Category: https://www.duruulvteknoloji.com.tr/urunler/sirt-tipi-ulv-ilaclama/ | EN: https://www.duruulvteknoloji.com.tr/en/products/sirt-tipi-ulv-ilaclama/ | AR: https://www.duruulvteknoloji.com.tr/ar/products/sirt-tipi-ulv-ilaclama/
 
-- [Duru SRT 10](https://www.duruulvteknoloji.com.tr/urunler/sirt-tipi-ulv-ilaclama/duru-sirt10/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/duru-sirt10/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/duru-sirt10/) (SRT-10): 10 litre tanklı, 8 kg hafifliğinde sırt tipi ilaçlama makinesi Duru SRT 10 ile tarım ve dezenfeksiyonda pratik çözüm. Teklif alın. | Anahtar: sırt tipi ilaçlama makinesi
+- [Duru SRT 10](https://www.duruulvteknoloji.com.tr/urunler/sirt-tipi-ulv-ilaclama/duru-sirt10/) | [EN: Backpack ULV Fogger - Duru SRT 10](https://www.duruulvteknoloji.com.tr/en/products/duru-sirt10/) | [AR: جهاز رش ULV محمول على الظهر - Duru SRT 10](https://www.duruulvteknoloji.com.tr/ar/products/duru-sirt10/) (SRT-10)
+  - TR: 10 litre tanklı, 8 kg hafifliğinde sırt tipi ilaçlama makinesi Duru SRT 10 ile tarım ve dezenfeksiyonda pratik çözüm. Teklif alın. | keyword: sırt tipi ilaçlama makinesi
+  - EN: Professional backpack ULV fogger for mobile outdoor and field spraying.
+  - AR: جهاز رش ULV محمول على الظهر لمكافحة البعوض الميدانية المتنقلة.
 
-## El Tipi ULV İlaçlama Makineleri
+## El Tipi ULV İlaçlama Makineleri / Handheld ULV Foggers / أجهزة الرش المحمولة باليد
 
-Kategori: https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/ | EN: https://www.duruulvteknoloji.com.tr/en/products/el-tipi-ulv-ilaclama/ | AR: https://www.duruulvteknoloji.com.tr/ar/products/el-tipi-ulv-ilaclama/
+Category: https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/ | EN: https://www.duruulvteknoloji.com.tr/en/products/el-tipi-ulv-ilaclama/ | AR: https://www.duruulvteknoloji.com.tr/ar/products/el-tipi-ulv-ilaclama/
 
-- [Duru HD5](https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/duru-hd5/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/duru-hd5/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/duru-hd5/) (HD-5): El tipi dezenfeksiyon cihazı Duru HD5 ile hastane, otel ve kapalı alanlarda etkili ULV ilaçlama. 5 L tank, hafif tasarım. Teklif alın. | Anahtar: el tipi dezenfeksiyon cihazı
-- [Duru HR5](https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/duru-hr5/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/duru-hr5/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/duru-hr5/) (HR-5): Hortum uzatmalı el tipi dezenfeksiyon cihazı Duru HR5 ile dar ve zor erişilen alanlara kolay ilaçlama. Hemen teklif isteyin. | Anahtar: el tipi dezenfeksiyon cihazı
-- [Duru Max5](https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/duru-max5/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/duru-max5/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/duru-max5/) (MAX-5): Taşıma sehpalı, yüksek motor gücüne sahip el tipi ilaçlama makinesi Duru Max5 ile etkili dezenfeksiyon. Hemen teklif isteyin. | Anahtar: el tipi ilaçlama makinesi
-- [Duru Plus 3"](https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/duru-plus/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/duru-plus/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/duru-plus/) (PLUS-3"): 3 litre tanklı, 1300 W, 3 inch (3") mini el tipi sisleme cihazı Duru Plus 3" ile pratik dezenfeksiyon. Hemen teklif alın. | Anahtar: el tipi sisleme cihazı
-- [Duru X20](https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/duru-x20/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/duru-x20/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/duru-x20/) (X-20): Çift başlıklı el tipi dezenfeksiyon makinesi Duru X20 ile fabrika ve depo alanlarında yüksek kapasiteli ULV uygulama. 20 L tank. Teklif alın. | Anahtar: el tipi dezenfeksiyon makinesi
-- [Duru X10](https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/duru-x10/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/duru-x10/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/duru-x10/) (X-10): 10 litre tanklı, tekerlekli el tipi dezenfeksiyon makinesi Duru X10 ile orta ölçekli alanlarda etkili ilaçlama. Teklif alın. | Anahtar: el tipi dezenfeksiyon makinesi
-- [Duru Max10](https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/duru-max10/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/duru-max10/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/duru-max10/) (MAX-10): 10 litre tanklı, tekerlekli taşınabilir dezenfeksiyon cihazı Duru Max10 ile pratik ve etkili ilaçlama. Hemen teklif isteyin. | Anahtar: tekerlekli dezenfeksiyon cihazı
+- [Duru HD5](https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/duru-hd5/) | [EN: Handheld ULV Fogger - Duru HD5](https://www.duruulvteknoloji.com.tr/en/products/duru-hd5/) | [AR: جهاز رش ULV محمول باليد - Duru HD5](https://www.duruulvteknoloji.com.tr/ar/products/duru-hd5/) (HD-5)
+  - TR: El tipi dezenfeksiyon cihazı Duru HD5 ile hastane, otel ve kapalı alanlarda etkili ULV ilaçlama. 5 L tank, hafif tasarım. Teklif alın. | keyword: el tipi dezenfeksiyon cihazı
+  - EN: Handheld ULV disinfection fogger for hospitals, hotels, and indoor hygiene.
+  - AR: جهاز التعقيم ULV محمول باليد للمستشفيات والفنادق والتعقيم الداخلي.
+- [Duru HR5](https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/duru-hr5/) | [EN: Handheld ULV Fogger - Duru HR5](https://www.duruulvteknoloji.com.tr/en/products/duru-hr5/) | [AR: جهاز رش ULV محمول باليد - Duru HR5](https://www.duruulvteknoloji.com.tr/ar/products/duru-hr5/) (HR-5)
+  - TR: Hortum uzatmalı el tipi dezenfeksiyon cihazı Duru HR5 ile dar ve zor erişilen alanlara kolay ilaçlama. Hemen teklif isteyin. | keyword: el tipi dezenfeksiyon cihazı
+  - EN: Lightweight handheld ULV fogger for precise indoor disinfection work.
+  - AR: جهاز رش ULV محمول باليد خفيف للتعقيم الداخلي الدقيق.
+- [Duru Max5](https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/duru-max5/) | [EN: Handheld ULV Fogger - Duru Max5](https://www.duruulvteknoloji.com.tr/en/products/duru-max5/) | [AR: جهاز رش ULV محمول باليد - Duru Max5](https://www.duruulvteknoloji.com.tr/ar/products/duru-max5/) (MAX-5)
+  - TR: Taşıma sehpalı, yüksek motor gücüne sahip el tipi ilaçlama makinesi Duru Max5 ile etkili dezenfeksiyon. Hemen teklif isteyin. | keyword: el tipi ilaçlama makinesi
+  - EN: High-output handheld ULV disinfection fogger for professional hygiene teams.
+  - AR: جهاز التعقيم ULV محمول باليد عالي الإنتاج لفرق النظافة المهنية.
+- [Duru Plus 3"](https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/duru-plus/) | [EN: Handheld ULV Fogger - Duru Plus 3"](https://www.duruulvteknoloji.com.tr/en/products/duru-plus/) | [AR: جهاز رش ULV محمول باليد - Duru Plus 3"](https://www.duruulvteknoloji.com.tr/ar/products/duru-plus/) (PLUS-3")
+  - TR: 3 litre tanklı, 1300 W, 3 inch (3") mini el tipi sisleme cihazı Duru Plus 3" ile pratik dezenfeksiyon. Hemen teklif alın. | keyword: el tipi sisleme cihazı
+  - EN: Handheld ULV fogger with 3-inch fan for wider indoor disinfection coverage.
+  - AR: جهاز رش ULV محمول باليد بمروحة 3 إنش لتغطية تعقيم أوسع.
+- [Duru X20](https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/duru-x20/) | [EN: Handheld ULV Fogger - Duru X20](https://www.duruulvteknoloji.com.tr/en/products/duru-x20/) | [AR: جهاز رش ULV محمول باليد - Duru X20](https://www.duruulvteknoloji.com.tr/ar/products/duru-x20/) (X-20)
+  - TR: Çift başlıklı el tipi dezenfeksiyon makinesi Duru X20 ile fabrika ve depo alanlarında yüksek kapasiteli ULV uygulama. 20 L tank. Teklif alın. | keyword: el tipi dezenfeksiyon makinesi
+  - EN: Handheld ULV disinfection fogger for intensive indoor hygiene programs.
+  - AR: جهاز التعقيم ULV محمول باليد لبرامج النظافة الداخلية المكثفة.
+- [Duru X10](https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/duru-x10/) | [EN: Handheld ULV Fogger - Duru X10](https://www.duruulvteknoloji.com.tr/en/products/duru-x10/) | [AR: جهاز رش ULV محمول باليد - Duru X10](https://www.duruulvteknoloji.com.tr/ar/products/duru-x10/) (X-10)
+  - TR: 10 litre tanklı, tekerlekli el tipi dezenfeksiyon makinesi Duru X10 ile orta ölçekli alanlarda etkili ilaçlama. Teklif alın. | keyword: el tipi dezenfeksiyon makinesi
+  - EN: Versatile handheld ULV fogger for daily facility disinfection and pest control.
+  - AR: جهاز رش ULV محمول باليد متعدد الاستخدامات للتعقيم اليومي في المنشآت.
+- [Duru Max10](https://www.duruulvteknoloji.com.tr/urunler/el-tipi-ulv-ilaclama/duru-max10/) | [EN: Handheld ULV Fogger - Duru Max10](https://www.duruulvteknoloji.com.tr/en/products/duru-max10/) | [AR: جهاز رش ULV محمول باليد - Duru Max10](https://www.duruulvteknoloji.com.tr/ar/products/duru-max10/) (MAX-10)
+  - TR: 10 litre tanklı, tekerlekli taşınabilir dezenfeksiyon cihazı Duru Max10 ile pratik ve etkili ilaçlama. Hemen teklif isteyin. | keyword: tekerlekli dezenfeksiyon cihazı
+  - EN: Higher-capacity handheld ULV disinfection fogger for larger indoor volumes.
+  - AR: جهاز التعقيم ULV محمول باليد بسعة أعلى للأحجام الداخلية الكبيرة.
 
-## Nemlendirme ULV Makineleri
+## Nemlendirme ULV Makineleri / ULV Humidification Systems / أنظمة الترطيب ULV
 
-Kategori: https://www.duruulvteknoloji.com.tr/urunler/nemlendirme-ulv/ | EN: https://www.duruulvteknoloji.com.tr/en/products/nemlendirme-ulv/ | AR: https://www.duruulvteknoloji.com.tr/ar/products/nemlendirme-ulv/
+Category: https://www.duruulvteknoloji.com.tr/urunler/nemlendirme-ulv/ | EN: https://www.duruulvteknoloji.com.tr/en/products/nemlendirme-ulv/ | AR: https://www.duruulvteknoloji.com.tr/ar/products/nemlendirme-ulv/
 
-- [Duru DMXL](https://www.duruulvteknoloji.com.tr/urunler/nemlendirme-ulv/duru-dmxl/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/duru-dmxl/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/duru-dmxl/) (DMXL): Döner başlıklı, şamandıralı ULV nemlendirme cihazı Duru DMXL ile mantarhane ve seralarda 25–250 m² homojen nem. Hemen teklif alın. | Anahtar: nemlendirme cihazı
-- [Duru MXL](https://www.duruulvteknoloji.com.tr/urunler/nemlendirme-ulv/duru-mxl/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/duru-mxl/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/duru-mxl/) (MXL): 2200 W ULV mantar serası nemlendirme cihazı Duru MXL ile 25–100 m² alanda şamandıralı, portatif ve ekonomik nem çözümü. Teklif alın. | Anahtar: mantar serası nemlendirme cihazı
-- [Duru MXL-HGS](https://www.duruulvteknoloji.com.tr/urunler/nemlendirme-ulv/duru-mxl-hgs/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/duru-mxl-hgs/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/duru-mxl-hgs/) (MXL-HGS): Higrostatlı, nem sensörlü tam otomatik ULV nemlendirme cihazı Duru MXL-HGS ile mantarhane ve seralarda kusursuz nem kontrolü. Teklif alın. | Anahtar: higrostatlı nemlendirme cihazı
+- [Duru DMXL](https://www.duruulvteknoloji.com.tr/urunler/nemlendirme-ulv/duru-dmxl/) | [EN: ULV Humidification System - Duru DMXL](https://www.duruulvteknoloji.com.tr/en/products/duru-dmxl/) | [AR: نظام ترطيب ULV - Duru DMXL](https://www.duruulvteknoloji.com.tr/ar/products/duru-dmxl/) (DMXL)
+  - TR: Döner başlıklı, şamandıralı ULV nemlendirme cihazı Duru DMXL ile mantarhane ve seralarda 25–250 m² homojen nem. Hemen teklif alın. | keyword: nemlendirme cihazı
+  - EN: ULV humidification system for greenhouses, mushroom houses, and storage.
+  - AR: نظام ترطيب ULV للبيوت المحمية ومزارع الفطر والمخازن.
+- [Duru MXL](https://www.duruulvteknoloji.com.tr/urunler/nemlendirme-ulv/duru-mxl/) | [EN: ULV Humidification System - Duru MXL](https://www.duruulvteknoloji.com.tr/en/products/duru-mxl/) | [AR: نظام ترطيب ULV - Duru MXL](https://www.duruulvteknoloji.com.tr/ar/products/duru-mxl/) (MXL)
+  - TR: 2200 W ULV mantar serası nemlendirme cihazı Duru MXL ile 25–100 m² alanda şamandıralı, portatif ve ekonomik nem çözümü. Teklif alın. | keyword: mantar serası nemlendirme cihazı
+  - EN: Float-controlled ULV humidification for stable greenhouse climate control.
+  - AR: نظام ترطيب ULV بتحكم عوامة لاستقرار مناخ البيوت المحمية.
+- [Duru MXL-HGS](https://www.duruulvteknoloji.com.tr/urunler/nemlendirme-ulv/duru-mxl-hgs/) | [EN: ULV Humidification System - Duru MXL-HGS](https://www.duruulvteknoloji.com.tr/en/products/duru-mxl-hgs/) | [AR: نظام ترطيب ULV - Duru MXL-HGS](https://www.duruulvteknoloji.com.tr/ar/products/duru-mxl-hgs/) (MXL-HGS)
+  - TR: Higrostatlı, nem sensörlü tam otomatik ULV nemlendirme cihazı Duru MXL-HGS ile mantarhane ve seralarda kusursuz nem kontrolü. Teklif alın. | keyword: higrostatlı nemlendirme cihazı
+  - EN: Hygrostat-controlled ULV humidification with rotating head options.
+  - AR: نظام ترطيب ULV بتحكم هيجروستات ورأس دوّار.
 
-## Termal Sisleme & Don Önleyici
+## Termal Sisleme & Don Önleyici / Thermal Foggers & Frost Protection / أجهزة التضبيب الحراري ومكافحة الصقيع
 
-Kategori: https://www.duruulvteknoloji.com.tr/urunler/termal-sisleme/ | EN: https://www.duruulvteknoloji.com.tr/en/products/termal-sisleme/ | AR: https://www.duruulvteknoloji.com.tr/ar/products/termal-sisleme/
+Category: https://www.duruulvteknoloji.com.tr/urunler/termal-sisleme/ | EN: https://www.duruulvteknoloji.com.tr/en/products/termal-sisleme/ | AR: https://www.duruulvteknoloji.com.tr/ar/products/termal-sisleme/
 
-- [Duru K 100](https://www.duruulvteknoloji.com.tr/urunler/termal-sisleme/duru-k100/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/duru-k100/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/duru-k100/) (K-100): 15 HP Briggs motorlu termal kanalizasyon sisleme makinesi Duru K 100 ile larva, sivrisinek ve uçkun mücadelesinde profesyonel çözüm. Teklif alın. | Anahtar: kanalizasyon sisleme makinesi
-- [Termal El Tipi](https://www.duruulvteknoloji.com.tr/urunler/termal-sisleme/termal-el-tipi/) | [EN](https://www.duruulvteknoloji.com.tr/en/products/termal-el-tipi/) | [AR](https://www.duruulvteknoloji.com.tr/ar/products/termal-el-tipi/) (TERMAL-EL): Benzinli termal el tipi cihaz; kanal ilaçlama, açık alan sıcak sisleme ve don önleme için 20 mikron yağ bazlı sis üretir. Teklif alın. | Anahtar: termal el tipi sisleme cihazı
+- [Duru K 100](https://www.duruulvteknoloji.com.tr/urunler/termal-sisleme/duru-k100/) | [EN: Thermal Fogger - Duru K 100](https://www.duruulvteknoloji.com.tr/en/products/duru-k100/) | [AR: جهاز تضبيب حراري - Duru K 100](https://www.duruulvteknoloji.com.tr/ar/products/duru-k100/) (K-100)
+  - TR: 15 HP Briggs motorlu termal kanalizasyon sisleme makinesi Duru K 100 ile larva, sivrisinek ve uçkun mücadelesinde profesyonel çözüm. Teklif alın. | keyword: kanalizasyon sisleme makinesi
+  - EN: Thermal fogger for open areas, sewers, and frost protection applications.
+  - AR: جهاز تضبيب حراري للمناطق المفتوحة والمجاري ومكافحة الصقيع.
+- [Termal El Tipi](https://www.duruulvteknoloji.com.tr/urunler/termal-sisleme/termal-el-tipi/) | [EN: Handheld Thermal Fogger - Duru](https://www.duruulvteknoloji.com.tr/en/products/termal-el-tipi/) | [AR: جهاز تضبيب حراري محمول باليد - Duru](https://www.duruulvteknoloji.com.tr/ar/products/termal-el-tipi/) (TERMAL-EL)
+  - TR: Benzinli termal el tipi cihaz; kanal ilaçlama, açık alan sıcak sisleme ve don önleme için 20 mikron yağ bazlı sis üretir. Teklif alın. | keyword: termal el tipi sisleme cihazı
+  - EN: Portable thermal fogger for targeted outdoor and sewer fogging jobs.
+  - AR: جهاز تضبيب حراري محمول باليد للتطبيقات الخارجية والمجاري المستهدفة.
 
 ## Blog Yazıları
 

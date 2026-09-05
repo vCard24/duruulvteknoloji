@@ -9,12 +9,25 @@ const { SITE_ORIGIN, alternateUrl } = require('./seo-meta');
 
 const ROOT = path.join(__dirname, '..');
 const catalog = JSON.parse(fs.readFileSync(path.join(ROOT, 'assets/data/urunler.json'), 'utf8'));
+const catalogEn = fs.existsSync(path.join(ROOT, 'assets/data/urunler.en.json'))
+  ? JSON.parse(fs.readFileSync(path.join(ROOT, 'assets/data/urunler.en.json'), 'utf8'))
+  : catalog;
+const catalogAr = fs.existsSync(path.join(ROOT, 'assets/data/urunler.ar.json'))
+  ? JSON.parse(fs.readFileSync(path.join(ROOT, 'assets/data/urunler.ar.json'), 'utf8'))
+  : catalog;
 const productSeo = fs.existsSync(path.join(ROOT, 'assets/data/product-seo.json'))
   ? JSON.parse(fs.readFileSync(path.join(ROOT, 'assets/data/product-seo.json'), 'utf8'))
   : {};
 const blogPosts = fs.existsSync(path.join(ROOT, 'assets/data/blog-posts.json'))
   ? JSON.parse(fs.readFileSync(path.join(ROOT, 'assets/data/blog-posts.json'), 'utf8'))
   : [];
+const localeBlogBlurbs = (() => {
+  try {
+    return require('./locale-blog-blurbs');
+  } catch (e) {
+    return {};
+  }
+})();
 
 const k = catalog.kurumsal_bilgiler;
 const ORIGIN = SITE_ORIGIN;
@@ -47,6 +60,14 @@ function productsByCategory() {
   return map;
 }
 
+function findLocaleProduct(slug, localeCatalog) {
+  return (localeCatalog.urunler || []).find((p) => p.slug === slug) || null;
+}
+
+function findLocaleCategory(slug, localeCatalog) {
+  return (localeCatalog.kategoriler || []).find((c) => c.slug === slug) || null;
+}
+
 function llmsTxt() {
   const byCat = productsByCategory();
   const featured = [
@@ -66,26 +87,47 @@ function llmsTxt() {
     const desc = (seo && seo.meta && seo.meta.metaDescription) || p.kisa_aciklama_tr;
     const trRel = `urunler/${p.kategori_slug}/${p.slug}/index.html`;
     const { tr, en, ar } = localeUrls(trRel);
-    return `- [${p.ad_tr}](${tr}) | [EN](${en}) | [AR](${ar}): ${desc}`;
+    const pen = findLocaleProduct(p.slug, catalogEn);
+    const par = findLocaleProduct(p.slug, catalogAr);
+    const enDesc = (pen && pen.kisa_aciklama_en) || desc;
+    const arDesc = (par && par.kisa_aciklama_ar) || desc;
+    const enName = (pen && pen.ad_en) || p.ad_en || p.ad_tr;
+    const arName = (par && par.ad_ar) || p.ad_ar || p.ad_tr;
+    return `- [${p.ad_tr}](${tr}) | [EN: ${enName}](${en}) | [AR: ${arName}](${ar})\n  - TR: ${desc}\n  - EN: ${enDesc}\n  - AR: ${arDesc}`;
   });
 
   const catLines = Object.values(byCat).map(({ cat, products }) => {
     const catRel = `urunler/${cat.slug}/index.html`;
     const { tr: catTr, en: catEn, ar: catAr } = localeUrls(catRel);
+    const cen = findLocaleCategory(cat.slug, catalogEn);
+    const car = findLocaleCategory(cat.slug, catalogAr);
     const links = products
       .map((p) => {
         const pr = `urunler/${p.kategori_slug}/${p.slug}/index.html`;
         const u = localeUrls(pr);
-        return `[${p.ad_tr}](${u.tr}) ([EN](${u.en}) · [AR](${u.ar}))`;
+        const pen = findLocaleProduct(p.slug, catalogEn);
+        const par = findLocaleProduct(p.slug, catalogAr);
+        const enName = (pen && pen.ad_en) || p.ad_en || p.ad_tr;
+        const arName = (par && par.ad_ar) || p.ad_ar || p.ad_tr;
+        return `[${p.ad_tr}](${u.tr}) ([EN: ${enName}](${u.en}) · [AR: ${arName}](${u.ar}))`;
       })
       .join(', ');
-    return `- **${cat.ad_tr}** (${catTr} | [EN](${catEn}) | [AR](${catAr})): ${cat.aciklama_tr} Modeller: ${links}`;
+    const enCat = (cen && cen.ad_en) || cat.ad_en || cat.ad_tr;
+    const arCat = (car && car.ad_ar) || cat.ad_ar || cat.ad_tr;
+    const enDesc = (cen && cen.aciklama_en) || cat.aciklama_tr;
+    const arDesc = (car && car.aciklama_ar) || cat.aciklama_tr;
+    return `- **${cat.ad_tr} / ${enCat} / ${arCat}**\n  - TR ${catTr}: ${cat.aciklama_tr}\n  - EN ${catEn}: ${enDesc}\n  - AR ${catAr}: ${arDesc}\n  - Models: ${links}`;
   });
 
   const blogLines = blogPosts.slice(0, 8).map((b) => {
     const desc = (b.meta && b.meta.metaDescription) || b.title;
     const { tr, en, ar } = localeUrls(`blog/${b.slug}/index.html`);
-    return `- [${b.title}](${tr}) | [EN](${en}) | [AR](${ar}): ${desc}`;
+    const blurb = localeBlogBlurbs[b.slug] || {};
+    const enTitle = (blurb.en && blurb.en.title) || b.title;
+    const arTitle = (blurb.ar && blurb.ar.title) || b.title;
+    const enDesc = (blurb.en && blurb.en.description) || desc;
+    const arDesc = (blurb.ar && blurb.ar.description) || desc;
+    return `- [${b.title}](${tr}) | [EN: ${enTitle}](${en}) | [AR: ${arTitle}](${ar})\n  - TR: ${desc}\n  - EN: ${enDesc}\n  - AR: ${arDesc}`;
   });
 
   return `# ${k.firma_adi}
@@ -94,43 +136,52 @@ function llmsTxt() {
 
 ${k.firma_adi}, 1990'dan bu yana Kayseri'de ULV ilaçlama ekipmanları tasarlar ve üretir. **Entosis** markası aynı firmaya aittir. Ürünler CE, TSE ve ISO sertifikalıdır. Sitede fiyat gösterilmez; satış teklif formu veya doğrudan iletişimle yapılır.
 
-## Kurumsal
-${trEnArLine('Ana Sayfa', 'index.html')}
-${trEnArLine('Hakkımızda', 'hakkimizda/index.html')}
-${trEnArLine('Kalite Politikamız', 'kalite-politikamiz/index.html')}
-${trEnArLine('İletişim', 'iletisim/index.html')}
+## English summary
+36-year ULV (Ultra Low Volume) fogging equipment manufacturer in Kayseri, Turkey. Vehicle-mounted, greenhouse, backpack, and handheld machines for municipal, agricultural, healthcare, and industrial vector control. **Entosis** is a brand of the same company. Certified CE / TSE / ISO. Prices are quote-only via the multilingual forms at ${ORIGIN}/en/fiyat-teklifi/ and ${ORIGIN}/ar/fiyat-teklifi/.
+
+## ملخص عربي
+مصنع معدات الرش بتقنية ULV منذ 36 عاماً في قيصري، تركيا. أجهزة مركبة على المركبات، صوب زراعية، ظهرية ويدوية لمكافحة النواقل. **Entosis** علامة تابعة لنفس الشركة. الشهادات: CE و TSE و ISO. الأسعار عبر طلب عرض فقط: ${ORIGIN}/ar/fiyat-teklifi/.
+
+## Kurumsal / Corporate / الشركة
+${trEnArLine('Ana Sayfa / Home / الرئيسية', 'index.html')}
+${trEnArLine('Hakkımızda / About / من نحن', 'hakkimizda/index.html')}
+${trEnArLine('Kalite Politikamız / Quality Policy / سياسة الجودة', 'kalite-politikamiz/index.html')}
+${trEnArLine('İletişim / Contact / اتصل بنا', 'iletisim/index.html')}
 - Instagram: ${k.sosyal && k.sosyal.instagram ? k.sosyal.instagram : ''}
 - Facebook: ${k.sosyal && k.sosyal.facebook ? k.sosyal.facebook : ''}
-${trEnArLine('Fiyat Teklifi', 'fiyat-teklifi/index.html')}
+${trEnArLine('Fiyat Teklifi / Quote / عرض السعر', 'fiyat-teklifi/index.html')}
+${trEnArLine('Katalog / Catalog / الكتالوج', 'katalog/index.html')}
+${trEnArLine('Ürün Karşılaştırma / Compare / مقارنة', 'urun-karsilastirma/index.html')}
 
 ## Dil / Language / اللغة
 - Turkish (default): ${ORIGIN}/
-- English: ${ORIGIN}/en/
-- Arabic: ${ORIGIN}/ar/
+- English: ${ORIGIN}/en/ — products under ${ORIGIN}/en/products/
+- Arabic: ${ORIGIN}/ar/ — products under ${ORIGIN}/ar/products/
+- Sitemap (TR+EN+AR with hreflang): ${ORIGIN}/sitemap.xml
 
-## Ürün Kategorileri
+## Ürün Kategorileri / Product Categories
 ${catLines.join('\n')}
 
-## Öne Çıkan Ürünler
+## Öne Çıkan Ürünler / Featured Products
 ${featuredLines.join('\n')}
 
-## Blog ve Rehber İçerikleri
+## Blog ve Rehber İçerikleri / Guides
 ${blogLines.join('\n')}
-${trEnArLine('Tüm blog yazıları', 'blog/index.html')}
+${trEnArLine('Tüm blog yazıları / All posts / كل المقالات', 'blog/index.html')}
 
-## Yasal ve Gizlilik
-${trEnArLine('KVKK Aydınlatma Metni', 'kvkk/index.html')}
-${trEnArLine('Gizlilik Politikası', 'gizlilik-politikasi/index.html')}
-${trEnArLine('Kullanım Koşulları', 'kullanim-kosullari/index.html')}
+## Yasal ve Gizlilik / Legal
+${trEnArLine('KVKK Aydınlatma Metni / Privacy Notice', 'kvkk/index.html')}
+${trEnArLine('Gizlilik Politikası / Privacy Policy', 'gizlilik-politikasi/index.html')}
+${trEnArLine('Kullanım Koşulları / Terms of Use', 'kullanim-kosullari/index.html')}
 
-## AI ve Teknik Kaynaklar
-- [llms-full.txt](${ORIGIN}/llms-full.txt): Tüm ürün ve blog URL listesi (genişletilmiş harita)
-- [ai.txt](${ORIGIN}/ai.txt): Yapay zeka kullanım ve atıf politikası
-- [brand.txt](${ORIGIN}/brand.txt): Marka adlandırma ve doğru referans kuralları
-- [ai-catalog.json](${ORIGIN}/ai-catalog.json): Agentic Resource Discovery — kaynak ve iletişim kataloğu
-- [security.txt](${ORIGIN}/.well-known/security.txt): Güvenlik açığı bildirimi (RFC 9116)
-- [sitemap.xml](${ORIGIN}/sitemap.xml): XML site haritası
-- [robots.txt](${ORIGIN}/robots.txt): Tarama kuralları
+## AI ve Teknik Kaynaklar / Discovery
+- [llms-full.txt](${ORIGIN}/llms-full.txt): Full product + blog URL map (TR|EN|AR)
+- [ai.txt](${ORIGIN}/ai.txt): AI usage and citation policy
+- [brand.txt](${ORIGIN}/brand.txt): Brand naming rules
+- [ai-catalog.json](${ORIGIN}/ai-catalog.json): Agentic Resource Discovery catalog
+- [security.txt](${ORIGIN}/.well-known/security.txt): Security vulnerability contact (RFC 9116)
+- [sitemap.xml](${ORIGIN}/sitemap.xml): XML sitemap with xhtml:hreflang alternates
+- [robots.txt](${ORIGIN}/robots.txt): Crawl rules
 `;
 }
 
@@ -166,15 +217,28 @@ function llmsFullTxt() {
   sections.push(`- AR: ${ORIGIN}/ar/`);
 
   Object.values(byCat).forEach(({ cat, products }) => {
-    sections.push(`\n## ${cat.ad_tr}\n`);
+    const cen = findLocaleCategory(cat.slug, catalogEn);
+    const car = findLocaleCategory(cat.slug, catalogAr);
+    const enCat = (cen && cen.ad_en) || cat.ad_en || cat.ad_tr;
+    const arCat = (car && car.ad_ar) || cat.ad_ar || cat.ad_tr;
+    sections.push(`\n## ${cat.ad_tr} / ${enCat} / ${arCat}\n`);
     const catU = localeUrls(`urunler/${cat.slug}/index.html`);
-    sections.push(`Kategori: ${catU.tr} | EN: ${catU.en} | AR: ${catU.ar}\n`);
+    sections.push(`Category: ${catU.tr} | EN: ${catU.en} | AR: ${catU.ar}\n`);
     products.forEach((p) => {
       const seo = productSeo[p.slug];
       const desc = (seo && seo.meta && seo.meta.metaDescription) || p.kisa_aciklama_tr;
-      const kw = seo && seo.meta && seo.meta.focusKeyword ? ` | Anahtar: ${seo.meta.focusKeyword}` : '';
+      const pen = findLocaleProduct(p.slug, catalogEn);
+      const par = findLocaleProduct(p.slug, catalogAr);
+      const enDesc = (pen && pen.kisa_aciklama_en) || desc;
+      const arDesc = (par && par.kisa_aciklama_ar) || desc;
+      const enName = (pen && pen.ad_en) || p.ad_en || p.ad_tr;
+      const arName = (par && par.ad_ar) || p.ad_ar || p.ad_tr;
+      const kw = seo && seo.meta && seo.meta.focusKeyword ? ` | keyword: ${seo.meta.focusKeyword}` : '';
       const u = localeUrls(`urunler/${p.kategori_slug}/${p.slug}/index.html`);
-      sections.push(`- [${p.ad_tr}](${u.tr}) | [EN](${u.en}) | [AR](${u.ar}) (${p.model_kodu}): ${desc}${kw}`);
+      sections.push(`- [${p.ad_tr}](${u.tr}) | [EN: ${enName}](${u.en}) | [AR: ${arName}](${u.ar}) (${p.model_kodu})`);
+      sections.push(`  - TR: ${desc}${kw}`);
+      sections.push(`  - EN: ${enDesc}`);
+      sections.push(`  - AR: ${arDesc}`);
     });
   });
 
