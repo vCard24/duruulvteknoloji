@@ -96,7 +96,7 @@
       "teknik_tablo": [
         {
           "ozellik": "Motor",
-          "deger": "15 Hp Amerikan motor"
+          "deger": "15 Hp محرك أمريكي"
         },
         {
           "ozellik": "Batarya",
@@ -104,11 +104,11 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "400 litre"
+          "deger": "400 لتر"
         },
         {
           "ozellik": "Püskürtme Sistemleri",
-          "deger": "Mist blower – ULV – Pulverizatör"
+          "deger": "Mist blower – ULV – رشاش"
         },
         {
           "ozellik": "Holder Hortum",
@@ -116,7 +116,7 @@
         },
         {
           "ozellik": "Pompa",
-          "deger": "14 litre / dakika, 150 bar"
+          "deger": "14 لتر / dakika, 150 bar"
         },
         {
           "ozellik": "ULV Mikron",
@@ -160,7 +160,7 @@
       "teknik_tablo": [
         {
           "ozellik": "Motor",
-          "deger": "15 Hp – 18 hp Amerikan motor"
+          "deger": "15 Hp – 18 hp محرك أمريكي"
         },
         {
           "ozellik": "Batarya",
@@ -168,15 +168,15 @@
         },
         {
           "ozellik": "MİST Başlık Hareketi",
-          "deger": "340 derece sağa ve sola, 210 derece yukarı ve aşağı"
+          "deger": "340 درجة يسار ويمين، 210 درجة أعلى وأسفل"
         },
         {
           "ozellik": "Kumanda",
-          "deger": "Joystick Hareketli"
+          "deger": "يتحكم به بالجويستيك"
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "500 litre"
+          "deger": "500 لتر"
         },
         {
           "ozellik": "İlaç Formülasyonu",
@@ -184,27 +184,27 @@
         },
         {
           "ozellik": "Pompa",
-          "deger": "14 litre / dakika, 150 bar"
+          "deger": "14 لتر / dakika, 150 bar"
         },
         {
           "ozellik": "Püskürtme Sistemleri",
-          "deger": "Mist blower – ULV – Pulverizatör"
+          "deger": "Mist blower – ULV – رشاش"
         },
         {
           "ozellik": "Holder Hortum",
-          "deger": "30 metre (isteğe bağlı 50 metre)"
+          "deger": "30 metre (اختياري 50 metre)"
         },
         {
           "ozellik": "Yakıt Deposu",
-          "deger": "30 litre"
+          "deger": "30 لتر"
         },
         {
           "ozellik": "Nozul Sayısı",
-          "deger": "6+1 adet"
+          "deger": "6+1 قطعة"
         },
         {
           "ozellik": "Yakıt Tüketimi",
-          "deger": "4 litre"
+          "deger": "4 لتر"
         },
         {
           "ozellik": "ULV Mikron",
@@ -212,7 +212,7 @@
         },
         {
           "ozellik": "El Yıkama Tankı",
-          "deger": "15 litre"
+          "deger": "15 لتر"
         },
         {
           "ozellik": "Ağırlık",
@@ -220,7 +220,7 @@
         },
         {
           "ozellik": "Ölçüler",
-          "deger": "En: 105 cm, Boy: 150 cm, Yükseklik: 170 cm"
+          "deger": "العرض: 105 cm, الطول: 150 cm, الارتفاع: 170 cm"
         }
       ],
       "meta_title": "نفخ ضباب مركب على السيارة 500L | Duru ULV",
@@ -260,11 +260,11 @@
       "teknik_tablo": [
         {
           "ozellik": "Motor",
-          "deger": "18 hp benzinli"
+          "deger": "18 hp بنزين"
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "100 litre"
+          "deger": "100 لتر"
         },
         {
           "ozellik": "Püskürtme",
@@ -316,7 +316,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "100 litre (50 × 2)"
+          "deger": "100 لتر (50 × 2)"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -324,7 +324,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 ميكرون"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -332,7 +332,7 @@
         },
         {
           "ozellik": "Kumanda",
-          "deger": "ULV motor, ilaç ve yanar döner lamba aç/kapa"
+          "deger": "محرك ULV، المبيد ومصباح دوار تشغيل/إيقاف"
         },
         {
           "ozellik": "Ağırlık",
@@ -340,7 +340,7 @@
         },
         {
           "ozellik": "Ölçüler",
-          "deger": "En: 70 cm, Boy: 120 cm, Yükseklik: 110 cm"
+          "deger": "العرض: 70 cm, الطول: 120 cm, الارتفاع: 110 cm"
         }
       ],
       "meta_title": "رش ULV مركب على السيارة HD75 | Duru ULV",
@@ -380,7 +380,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "50 litre"
+          "deger": "50 لتر"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -388,7 +388,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 ميكرون"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -436,7 +436,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "50 litre"
+          "deger": "50 لتر"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -444,7 +444,7 @@
         },
         {
           "ozellik": "Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 ميكرون"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -452,7 +452,7 @@
         },
         {
           "ozellik": "Kapasite",
-          "deger": "Maksimum 6–7 dönüm"
+          "deger": "الحد الأقصى 6–7 دونم"
         }
       ],
       "meta_title": "رش البيوت المحمية Entosis 50 | Duru ULV",
@@ -496,7 +496,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "25 × 4 = 100 litre"
+          "deger": "25 × 4 = 100 لتر"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -504,7 +504,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 ميكرون"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -512,7 +512,7 @@
         },
         {
           "ozellik": "Başlık",
-          "deger": "4 adet ULV başlık"
+          "deger": "4 فوهات ULV"
         },
         {
           "ozellik": "Fan",
@@ -524,7 +524,7 @@
         },
         {
           "ozellik": "Ölçüler",
-          "deger": "En: 84 cm, Boy: 126 cm, Yükseklik: 150 cm"
+          "deger": "العرض: 84 cm, الطول: 126 cm, الارتفاع: 150 cm"
         }
       ],
       "meta_title": "رش البيوت المحمية Sera Max 50 | Duru ULV",
@@ -568,7 +568,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "48 litre"
+          "deger": "48 لتر"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -576,7 +576,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 ميكرون"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -584,7 +584,7 @@
         },
         {
           "ozellik": "Başlık",
-          "deger": "2 adet ULV başlık"
+          "deger": "2 فوهة ULV"
         },
         {
           "ozellik": "Ağırlık",
@@ -592,7 +592,7 @@
         },
         {
           "ozellik": "Ölçüler",
-          "deger": "En: 84 cm, Boy: 110 cm, Yükseklik: 150 cm"
+          "deger": "العرض: 84 cm, الطول: 110 cm, الارتفاع: 150 cm"
         }
       ],
       "meta_title": "رش البيوت المحمية Ultra 20 | Duru ULV",
@@ -636,7 +636,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "20 litre"
+          "deger": "20 لتر"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -644,7 +644,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 ميكرون"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -656,7 +656,7 @@
         },
         {
           "ozellik": "Ölçüler",
-          "deger": "En: 52 cm, Boy: 70 cm, Yükseklik: 70 cm"
+          "deger": "العرض: 52 cm, الطول: 70 cm, الارتفاع: 70 cm"
         }
       ],
       "meta_title": "رش البيوت المحمية Entosis 20 | Duru ULV",
@@ -700,7 +700,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "20 litre"
+          "deger": "20 لتر"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -708,7 +708,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 ميكرون"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -756,7 +756,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "10 litre"
+          "deger": "10 لتر"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -764,7 +764,7 @@
         },
         {
           "ozellik": "Damla Çapı",
-          "deger": "9–49 mikron"
+          "deger": "9–49 ميكرون"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -820,7 +820,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "5 litre"
+          "deger": "5 لتر"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -828,7 +828,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 ميكرون"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -840,7 +840,7 @@
         },
         {
           "ozellik": "Ölçüler",
-          "deger": "En: 20 cm, Boy: 45 cm, Yükseklik: 45 cm"
+          "deger": "العرض: 20 cm, الطول: 45 cm, الارتفاع: 45 cm"
         }
       ],
       "meta_title": "جهاز التعقيم ULV محمول باليد HD5 | Duru ULV",
@@ -884,7 +884,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "5 litre"
+          "deger": "5 لتر"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -892,7 +892,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 ميكرون"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -900,7 +900,7 @@
         },
         {
           "ozellik": "Özellik",
-          "deger": "Hortumlu el tipi"
+          "deger": "يدوي بخرطوم"
         }
       ],
       "meta_title": "رش ULV محمول باليد HR5 | Duru ULV",
@@ -944,7 +944,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "5 litre"
+          "deger": "5 لتر"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -952,7 +952,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 ميكرون"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -964,11 +964,11 @@
         },
         {
           "ozellik": "Ölçüler",
-          "deger": "En: 20 cm, Boy: 45 cm, Yükseklik: 57 cm"
+          "deger": "العرض: 20 cm, الطول: 45 cm, الارتفاع: 57 cm"
         },
         {
           "ozellik": "Başlık",
-          "deger": "Yukarı–aşağı oynar başlık"
+          "deger": "رأس متحرك أعلى–أسفل"
         }
       ],
       "meta_title": "جهاز التعقيم ULV محمول باليد Max5 | Duru ULV",
@@ -1020,7 +1020,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "3 litre"
+          "deger": "3 لتر"
         },
         {
           "ozellik": "Başlık / Nozul",
@@ -1032,7 +1032,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 ميكرون"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -1080,7 +1080,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "20 litre"
+          "deger": "20 لتر"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -1088,7 +1088,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 ميكرون"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -1104,7 +1104,7 @@
         },
         {
           "ozellik": "Başlık",
-          "deger": "2 adet oynar başlık"
+          "deger": "2 فوهة متحركة"
         }
       ],
       "meta_title": "جهاز التعقيم ULV محمول باليد X20 | Duru ULV",
@@ -1148,7 +1148,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "10 litre"
+          "deger": "10 لتر"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -1156,7 +1156,7 @@
         },
         {
           "ozellik": "Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 ميكرون"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -1204,7 +1204,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "10 litre"
+          "deger": "10 لتر"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -1212,7 +1212,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 ميكرون"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -1224,11 +1224,11 @@
         },
         {
           "ozellik": "Ölçüler",
-          "deger": "En: 34 cm, Boy: 50 cm, Yükseklik: 60 cm"
+          "deger": "العرض: 34 cm, الطول: 50 cm, الارتفاع: 60 cm"
         },
         {
           "ozellik": "Başlık",
-          "deger": "Oynar başlık"
+          "deger": "رأس متحرك"
         }
       ],
       "meta_title": "جهاز التعقيم ULV محمول باليد Max10 | Duru ULV",
@@ -1268,7 +1268,7 @@
         },
         {
           "ozellik": "Tank",
-          "deger": "Şamandıralı – sınırsız (şebeke bağlantılı)"
+          "deger": "بمنظم عوامة – غير محدود (متصل بالشبكة)"
         },
         {
           "ozellik": "Nem Çıkış Debisi",
@@ -1276,7 +1276,7 @@
         },
         {
           "ozellik": "Nem Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 ميكرون"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -1284,7 +1284,7 @@
         },
         {
           "ozellik": "Başlık",
-          "deger": "Döner başlık"
+          "deger": "رأس دوار"
         },
         {
           "ozellik": "Ağırlık",
@@ -1292,7 +1292,7 @@
         },
         {
           "ozellik": "Ölçüler",
-          "deger": "En: 20 cm, Boy: 45 cm, Yükseklik: 57 cm"
+          "deger": "العرض: 20 cm, الطول: 45 cm, الارتفاع: 57 cm"
         }
       ],
       "meta_title": "نظام ترطيب ULV DMXL | Duru ULV",
@@ -1336,7 +1336,7 @@
         },
         {
           "ozellik": "Tank",
-          "deger": "Şamandıralı – sınırsız (şebeke bağlantılı)"
+          "deger": "بمنظم عوامة – غير محدود (متصل بالشبكة)"
         },
         {
           "ozellik": "Nem Çıkış Debisi",
@@ -1344,15 +1344,15 @@
         },
         {
           "ozellik": "Nem Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 ميكرون"
         },
         {
           "ozellik": "Kaplama Alanı",
-          "deger": "Tek noktadan 25–100 m²"
+          "deger": "25–100 م² من نقطة واحدة"
         },
         {
           "ozellik": "Gövde",
-          "deger": "20×20 profil şase, lazer kesim, elektrostatik boya"
+          "deger": "شاسيه بروفيل 20×20، قص ليزري، طلاء إلكتروستاتيكي"
         },
         {
           "ozellik": "Ağırlık",
@@ -1360,7 +1360,7 @@
         },
         {
           "ozellik": "Ölçüler",
-          "deger": "En: 20 cm, Boy: 125 cm, Yükseklik: 45 cm"
+          "deger": "العرض: 20 cm, الطول: 125 cm, الارتفاع: 45 cm"
         }
       ],
       "meta_title": "نظام ترطيب ULV MXL | Duru ULV",
@@ -1404,11 +1404,11 @@
         },
         {
           "ozellik": "Tank",
-          "deger": "Şamandıralı – sınırsız (şebeke bağlantılı)"
+          "deger": "بمنظم عوامة – غير محدود (متصل بالشبكة)"
         },
         {
           "ozellik": "Kontrol",
-          "deger": "Higrostatlı (nem sensörlü) tam otomatik"
+          "deger": "أوتوماتيكي بالكامل مع هيغروستات (مستشعر رطوبة)"
         },
         {
           "ozellik": "Nem Çıkış Debisi",
@@ -1416,15 +1416,15 @@
         },
         {
           "ozellik": "Nem Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 ميكرون"
         },
         {
           "ozellik": "Kaplama Alanı",
-          "deger": "Tek noktadan 25–100 m²"
+          "deger": "25–100 م² من نقطة واحدة"
         },
         {
           "ozellik": "Gövde",
-          "deger": "20×20 profil şase, lazer kesim, elektrostatik boya"
+          "deger": "شاسيه بروفيل 20×20، قص ليزري، طلاء إلكتروستاتيكي"
         },
         {
           "ozellik": "Ağırlık",
@@ -1468,11 +1468,11 @@
       "teknik_tablo": [
         {
           "ozellik": "Motor",
-          "deger": "15 hp benzinli Briggs"
+          "deger": "15 hp بنزين Briggs"
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "20 litre"
+          "deger": "20 لتر"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -1480,7 +1480,7 @@
         },
         {
           "ozellik": "Püskürtme Hortumu",
-          "deger": "2.30 m esnek metal kanal aparatı"
+          "deger": "ملحق قناة معدنية مرنة 2.30 م"
         },
         {
           "ozellik": "Yakıt Tüketimi (motor)",
@@ -1488,15 +1488,15 @@
         },
         {
           "ozellik": "İlaç Yakıt Tüketimi",
-          "deger": "10–20 L/saat (ayarlanabilir)"
+          "deger": "10–20 L/saat (قابل للتعديل)"
         },
         {
           "ozellik": "Damla Çapı",
-          "deger": "~20 mikron (termal)"
+          "deger": "~20 ميكرون (termal)"
         },
         {
           "ozellik": "Teker",
-          "deger": "2 frenli + 2 düz teker"
+          "deger": "2 عجلات بكبح + 2 حرة"
         }
       ],
       "meta_title": "جهاز تضبيب حراري K100 | Duru ULV",
@@ -1536,11 +1536,11 @@
       "teknik_tablo": [
         {
           "ozellik": "Motor",
-          "deger": "Benzinli Briggs"
+          "deger": "بنزين Briggs"
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "15–50 litre"
+          "deger": "15–50 لتر"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -1548,19 +1548,19 @@
         },
         {
           "ozellik": "Püskürtme Hortumu",
-          "deger": "2.30 m esnek paslanmaz kanal aparatı"
+          "deger": "ملحق قناة ستانلس مرنة 2.30 م"
         },
         {
           "ozellik": "Solüsyon",
-          "deger": "Yağ bazlı termal solüsyon"
+          "deger": "محلول حراري زيتي"
         },
         {
           "ozellik": "Damla Çapı",
-          "deger": "~20 mikron (termal)"
+          "deger": "~20 ميكرون (termal)"
         },
         {
           "ozellik": "Uygulama",
-          "deger": "Kanal ilaçlama, açık alan sıcak sisleme, don önleme"
+          "deger": "رش القنوات، ضباب حراري للمناطق المفتوحة، منع الصقيع"
         }
       ],
       "meta_title": "تضبيب حراري محمول باليد | Duru ULV",

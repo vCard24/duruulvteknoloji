@@ -49,6 +49,39 @@
 
   /* Ürün galerisi — hover önizleme + lightbox */
   (function initProductGalleries() {
+    function galleryLang() {
+      var lang = ((document.documentElement.getAttribute('lang') || document.documentElement.lang || 'tr') + '').toLowerCase();
+      if (lang.indexOf('en') === 0) return 'en';
+      if (lang.indexOf('ar') === 0) return 'ar';
+      return 'tr';
+    }
+
+    var ARIA = {
+      tr: {
+        image: 'Ürün görseli',
+        close: 'Kapat',
+        prev: 'Önceki görsel',
+        next: 'Sonraki görsel',
+        zoom: 'Görseli büyüt'
+      },
+      en: {
+        image: 'Product image',
+        close: 'Close',
+        prev: 'Previous image',
+        next: 'Next image',
+        zoom: 'Enlarge image'
+      },
+      ar: {
+        image: 'صورة المنتج',
+        close: 'إغلاق',
+        prev: 'الصورة السابقة',
+        next: 'الصورة التالية',
+        zoom: 'تكبير الصورة'
+      }
+    };
+
+    var aria = ARIA[galleryLang()] || ARIA.tr;
+
     var lightbox = document.getElementById('gallery-lightbox');
     if (!lightbox) {
       lightbox = document.createElement('div');
@@ -57,18 +90,18 @@
       lightbox.hidden = true;
       lightbox.innerHTML =
         '<div class="gallery-lightbox__backdrop" data-gallery-close></div>' +
-        '<div class="gallery-lightbox__dialog" role="dialog" aria-modal="true" aria-label="Ürün görseli">' +
-        '<button type="button" class="gallery-lightbox__close" data-gallery-close aria-label="Kapat">' +
+        '<div class="gallery-lightbox__dialog" role="dialog" aria-modal="true" aria-label="' + aria.image + '">' +
+        '<button type="button" class="gallery-lightbox__close" data-gallery-close aria-label="' + aria.close + '">' +
         '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>' +
         '</button>' +
-        '<button type="button" class="gallery-lightbox__nav gallery-lightbox__nav--prev" data-gallery-prev aria-label="Önceki görsel">' +
+        '<button type="button" class="gallery-lightbox__nav gallery-lightbox__nav--prev" data-gallery-prev aria-label="' + aria.prev + '">' +
         '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>' +
         '</button>' +
         '<figure class="gallery-lightbox__figure">' +
         '<img class="gallery-lightbox__img" src="" alt="">' +
         '<figcaption class="gallery-lightbox__caption"></figcaption>' +
         '</figure>' +
-        '<button type="button" class="gallery-lightbox__nav gallery-lightbox__nav--next" data-gallery-next aria-label="Sonraki görsel">' +
+        '<button type="button" class="gallery-lightbox__nav gallery-lightbox__nav--next" data-gallery-next aria-label="' + aria.next + '">' +
         '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>' +
         '</button>' +
         '<p class="gallery-lightbox__counter" aria-live="polite"></p>' +
@@ -220,7 +253,7 @@
       if (mainArea) {
         mainArea.setAttribute('role', 'button');
         mainArea.setAttribute('tabindex', '0');
-        mainArea.setAttribute('aria-label', 'Görseli büyüt');
+        mainArea.setAttribute('aria-label', aria.zoom);
         mainArea.addEventListener('click', openFromGallery);
         mainArea.addEventListener('keydown', function (e) {
           if (e.key === 'Enter' || e.key === ' ') {

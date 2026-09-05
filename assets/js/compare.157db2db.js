@@ -88,6 +88,17 @@
     return '';
   }
 
+  var MAX_COMPARE_MSG = {
+    tr: 'En fazla 4 ürün karşılaştırabilirsiniz.',
+    en: 'You can compare up to 4 products.',
+    ar: 'يمكنك مقارنة ما يصل إلى 4 منتجات.'
+  };
+
+  function maxCompareMessage() {
+    var loc = getLocale() || 'tr';
+    return MAX_COMPARE_MSG[loc] || MAX_COMPARE_MSG.tr;
+  }
+
   function msg(key, fallback) {
     var root = document.getElementById('compare-app');
     if (root) {
@@ -207,7 +218,7 @@
     var slugs = readStorage();
     if (slugs.indexOf(slug) !== -1) return slugs;
     if (slugs.length >= MAX) {
-      alert(msg('alert-max', 'Karşılaştırmaya en fazla 4 ürün eklenebilir.'));
+      alert(msg('alert-max', maxCompareMessage()));
       return slugs;
     }
     return writeStorage(slugs.concat(slug));
@@ -321,7 +332,7 @@
           removeSlug(slug);
         } else {
           if (slugs.length >= MAX) {
-            alert(msg('alert-max', 'Karşılaştırmaya en fazla 4 ürün eklenebilir.'));
+            alert(msg('alert-max', maxCompareMessage()));
             return;
           }
           addSlug(slug);

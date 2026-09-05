@@ -96,7 +96,7 @@
       "teknik_tablo": [
         {
           "ozellik": "Motor",
-          "deger": "15 Hp Amerikan motor"
+          "deger": "15 Hp American engine"
         },
         {
           "ozellik": "Batarya",
@@ -104,11 +104,11 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "400 litre"
+          "deger": "400 liter"
         },
         {
           "ozellik": "Püskürtme Sistemleri",
-          "deger": "Mist blower – ULV – Pulverizatör"
+          "deger": "Mist blower – ULV – Sprayer"
         },
         {
           "ozellik": "Holder Hortum",
@@ -116,7 +116,7 @@
         },
         {
           "ozellik": "Pompa",
-          "deger": "14 litre / dakika, 150 bar"
+          "deger": "14 liter / dakika, 150 bar"
         },
         {
           "ozellik": "ULV Mikron",
@@ -160,7 +160,7 @@
       "teknik_tablo": [
         {
           "ozellik": "Motor",
-          "deger": "15 Hp – 18 hp Amerikan motor"
+          "deger": "15 Hp – 18 hp American engine"
         },
         {
           "ozellik": "Batarya",
@@ -168,15 +168,15 @@
         },
         {
           "ozellik": "MİST Başlık Hareketi",
-          "deger": "340 derece sağa ve sola, 210 derece yukarı ve aşağı"
+          "deger": "340° left and right, 210° up and down"
         },
         {
           "ozellik": "Kumanda",
-          "deger": "Joystick Hareketli"
+          "deger": "Joystick-controlled"
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "500 litre"
+          "deger": "500 liter"
         },
         {
           "ozellik": "İlaç Formülasyonu",
@@ -184,27 +184,27 @@
         },
         {
           "ozellik": "Pompa",
-          "deger": "14 litre / dakika, 150 bar"
+          "deger": "14 liter / dakika, 150 bar"
         },
         {
           "ozellik": "Püskürtme Sistemleri",
-          "deger": "Mist blower – ULV – Pulverizatör"
+          "deger": "Mist blower – ULV – Sprayer"
         },
         {
           "ozellik": "Holder Hortum",
-          "deger": "30 metre (isteğe bağlı 50 metre)"
+          "deger": "30 metre (optional 50 metre)"
         },
         {
           "ozellik": "Yakıt Deposu",
-          "deger": "30 litre"
+          "deger": "30 liter"
         },
         {
           "ozellik": "Nozul Sayısı",
-          "deger": "6+1 adet"
+          "deger": "6+1 pcs"
         },
         {
           "ozellik": "Yakıt Tüketimi",
-          "deger": "4 litre"
+          "deger": "4 liter"
         },
         {
           "ozellik": "ULV Mikron",
@@ -212,7 +212,7 @@
         },
         {
           "ozellik": "El Yıkama Tankı",
-          "deger": "15 litre"
+          "deger": "15 liter"
         },
         {
           "ozellik": "Ağırlık",
@@ -220,7 +220,7 @@
         },
         {
           "ozellik": "Ölçüler",
-          "deger": "En: 105 cm, Boy: 150 cm, Yükseklik: 170 cm"
+          "deger": "W: 105 cm, L: 150 cm, H: 170 cm"
         }
       ],
       "meta_title": "Truck-Mounted Mist Blower | Entosis 500L",
@@ -260,11 +260,11 @@
       "teknik_tablo": [
         {
           "ozellik": "Motor",
-          "deger": "18 hp benzinli"
+          "deger": "18 hp gasoline"
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "100 litre"
+          "deger": "100 liter"
         },
         {
           "ozellik": "Püskürtme",
@@ -316,7 +316,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "100 litre (50 × 2)"
+          "deger": "100 liter (50 × 2)"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -324,7 +324,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 micron"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -332,7 +332,7 @@
         },
         {
           "ozellik": "Kumanda",
-          "deger": "ULV motor, ilaç ve yanar döner lamba aç/kapa"
+          "deger": "ULV motor, chemical and rotating lamp on/off"
         },
         {
           "ozellik": "Ağırlık",
@@ -340,7 +340,7 @@
         },
         {
           "ozellik": "Ölçüler",
-          "deger": "En: 70 cm, Boy: 120 cm, Yükseklik: 110 cm"
+          "deger": "W: 70 cm, L: 120 cm, H: 110 cm"
         }
       ],
       "meta_title": "Truck-Mounted ULV Fogger | Duru HD75",
@@ -380,7 +380,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "50 litre"
+          "deger": "50 liter"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -388,7 +388,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 micron"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -436,7 +436,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "50 litre"
+          "deger": "50 liter"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -444,7 +444,7 @@
         },
         {
           "ozellik": "Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 micron"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -452,7 +452,7 @@
         },
         {
           "ozellik": "Kapasite",
-          "deger": "Maksimum 6–7 dönüm"
+          "deger": "Maximum 6–7 decares (0.6–0.7 ha)"
         }
       ],
       "meta_title": "Greenhouse ULV Fogger | Entosis 50",
@@ -496,7 +496,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "25 × 4 = 100 litre"
+          "deger": "25 × 4 = 100 liter"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -504,7 +504,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 micron"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -512,7 +512,7 @@
         },
         {
           "ozellik": "Başlık",
-          "deger": "4 adet ULV başlık"
+          "deger": "4 ULV nozzles"
         },
         {
           "ozellik": "Fan",
@@ -524,7 +524,7 @@
         },
         {
           "ozellik": "Ölçüler",
-          "deger": "En: 84 cm, Boy: 126 cm, Yükseklik: 150 cm"
+          "deger": "W: 84 cm, L: 126 cm, H: 150 cm"
         }
       ],
       "meta_title": "Greenhouse ULV Fogger | Sera Max 50",
@@ -568,7 +568,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "48 litre"
+          "deger": "48 liter"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -576,7 +576,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 micron"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -584,7 +584,7 @@
         },
         {
           "ozellik": "Başlık",
-          "deger": "2 adet ULV başlık"
+          "deger": "2 ULV nozzles"
         },
         {
           "ozellik": "Ağırlık",
@@ -592,7 +592,7 @@
         },
         {
           "ozellik": "Ölçüler",
-          "deger": "En: 84 cm, Boy: 110 cm, Yükseklik: 150 cm"
+          "deger": "W: 84 cm, L: 110 cm, H: 150 cm"
         }
       ],
       "meta_title": "Greenhouse ULV Fogger | Sera Ultra 20",
@@ -636,7 +636,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "20 litre"
+          "deger": "20 liter"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -644,7 +644,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 micron"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -656,7 +656,7 @@
         },
         {
           "ozellik": "Ölçüler",
-          "deger": "En: 52 cm, Boy: 70 cm, Yükseklik: 70 cm"
+          "deger": "W: 52 cm, L: 70 cm, H: 70 cm"
         }
       ],
       "meta_title": "Greenhouse ULV Fogger | Entosis 20",
@@ -700,7 +700,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "20 litre"
+          "deger": "20 liter"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -708,7 +708,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 micron"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -756,7 +756,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "10 litre"
+          "deger": "10 liter"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -764,7 +764,7 @@
         },
         {
           "ozellik": "Damla Çapı",
-          "deger": "9–49 mikron"
+          "deger": "9–49 micron"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -820,7 +820,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "5 litre"
+          "deger": "5 liter"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -828,7 +828,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 micron"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -840,7 +840,7 @@
         },
         {
           "ozellik": "Ölçüler",
-          "deger": "En: 20 cm, Boy: 45 cm, Yükseklik: 45 cm"
+          "deger": "W: 20 cm, L: 45 cm, H: 45 cm"
         }
       ],
       "meta_title": "ULV Disinfection Fogger | Duru HD5",
@@ -884,7 +884,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "5 litre"
+          "deger": "5 liter"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -892,7 +892,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 micron"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -900,7 +900,7 @@
         },
         {
           "ozellik": "Özellik",
-          "deger": "Hortumlu el tipi"
+          "deger": "Handheld with hose"
         }
       ],
       "meta_title": "Handheld ULV Fogger | Duru HR5",
@@ -944,7 +944,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "5 litre"
+          "deger": "5 liter"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -952,7 +952,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 micron"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -964,11 +964,11 @@
         },
         {
           "ozellik": "Ölçüler",
-          "deger": "En: 20 cm, Boy: 45 cm, Yükseklik: 57 cm"
+          "deger": "W: 20 cm, L: 45 cm, H: 57 cm"
         },
         {
           "ozellik": "Başlık",
-          "deger": "Yukarı–aşağı oynar başlık"
+          "deger": "Up–down pivoting head"
         }
       ],
       "meta_title": "ULV Disinfection Fogger | Duru Max5",
@@ -1020,7 +1020,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "3 litre"
+          "deger": "3 liter"
         },
         {
           "ozellik": "Başlık / Nozul",
@@ -1032,7 +1032,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 micron"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -1080,7 +1080,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "20 litre"
+          "deger": "20 liter"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -1088,7 +1088,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 micron"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -1104,7 +1104,7 @@
         },
         {
           "ozellik": "Başlık",
-          "deger": "2 adet oynar başlık"
+          "deger": "2 pivoting nozzles"
         }
       ],
       "meta_title": "ULV Disinfection Fogger | Duru X20",
@@ -1148,7 +1148,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "10 litre"
+          "deger": "10 liter"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -1156,7 +1156,7 @@
         },
         {
           "ozellik": "Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 micron"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -1204,7 +1204,7 @@
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "10 litre"
+          "deger": "10 liter"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -1212,7 +1212,7 @@
         },
         {
           "ozellik": "İlaç Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 micron"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -1224,11 +1224,11 @@
         },
         {
           "ozellik": "Ölçüler",
-          "deger": "En: 34 cm, Boy: 50 cm, Yükseklik: 60 cm"
+          "deger": "W: 34 cm, L: 50 cm, H: 60 cm"
         },
         {
           "ozellik": "Başlık",
-          "deger": "Oynar başlık"
+          "deger": "Pivoting head"
         }
       ],
       "meta_title": "ULV Disinfection Fogger | Duru Max10",
@@ -1268,7 +1268,7 @@
         },
         {
           "ozellik": "Tank",
-          "deger": "Şamandıralı – sınırsız (şebeke bağlantılı)"
+          "deger": "Float-controlled – unlimited (mains-connected)"
         },
         {
           "ozellik": "Nem Çıkış Debisi",
@@ -1276,7 +1276,7 @@
         },
         {
           "ozellik": "Nem Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 micron"
         },
         {
           "ozellik": "Solüsyon Tipleri",
@@ -1284,7 +1284,7 @@
         },
         {
           "ozellik": "Başlık",
-          "deger": "Döner başlık"
+          "deger": "Rotating head"
         },
         {
           "ozellik": "Ağırlık",
@@ -1292,7 +1292,7 @@
         },
         {
           "ozellik": "Ölçüler",
-          "deger": "En: 20 cm, Boy: 45 cm, Yükseklik: 57 cm"
+          "deger": "W: 20 cm, L: 45 cm, H: 57 cm"
         }
       ],
       "meta_title": "ULV Humidification System | Duru DMXL",
@@ -1336,7 +1336,7 @@
         },
         {
           "ozellik": "Tank",
-          "deger": "Şamandıralı – sınırsız (şebeke bağlantılı)"
+          "deger": "Float-controlled – unlimited (mains-connected)"
         },
         {
           "ozellik": "Nem Çıkış Debisi",
@@ -1344,15 +1344,15 @@
         },
         {
           "ozellik": "Nem Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 micron"
         },
         {
           "ozellik": "Kaplama Alanı",
-          "deger": "Tek noktadan 25–100 m²"
+          "deger": "25–100 m² from a single point"
         },
         {
           "ozellik": "Gövde",
-          "deger": "20×20 profil şase, lazer kesim, elektrostatik boya"
+          "deger": "20×20 profile chassis, laser-cut, electrostatic paint"
         },
         {
           "ozellik": "Ağırlık",
@@ -1360,7 +1360,7 @@
         },
         {
           "ozellik": "Ölçüler",
-          "deger": "En: 20 cm, Boy: 125 cm, Yükseklik: 45 cm"
+          "deger": "W: 20 cm, L: 125 cm, H: 45 cm"
         }
       ],
       "meta_title": "ULV Humidification System | Duru MXL",
@@ -1404,11 +1404,11 @@
         },
         {
           "ozellik": "Tank",
-          "deger": "Şamandıralı – sınırsız (şebeke bağlantılı)"
+          "deger": "Float-controlled – unlimited (mains-connected)"
         },
         {
           "ozellik": "Kontrol",
-          "deger": "Higrostatlı (nem sensörlü) tam otomatik"
+          "deger": "Fully automatic with hygrostat (humidity sensor)"
         },
         {
           "ozellik": "Nem Çıkış Debisi",
@@ -1416,15 +1416,15 @@
         },
         {
           "ozellik": "Nem Damla Çapı",
-          "deger": "0–49 mikron"
+          "deger": "0–49 micron"
         },
         {
           "ozellik": "Kaplama Alanı",
-          "deger": "Tek noktadan 25–100 m²"
+          "deger": "25–100 m² from a single point"
         },
         {
           "ozellik": "Gövde",
-          "deger": "20×20 profil şase, lazer kesim, elektrostatik boya"
+          "deger": "20×20 profile chassis, laser-cut, electrostatic paint"
         },
         {
           "ozellik": "Ağırlık",
@@ -1468,11 +1468,11 @@
       "teknik_tablo": [
         {
           "ozellik": "Motor",
-          "deger": "15 hp benzinli Briggs"
+          "deger": "15 hp gasoline Briggs"
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "20 litre"
+          "deger": "20 liter"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -1480,7 +1480,7 @@
         },
         {
           "ozellik": "Püskürtme Hortumu",
-          "deger": "2.30 m esnek metal kanal aparatı"
+          "deger": "2.30 m flexible metal channel attachment"
         },
         {
           "ozellik": "Yakıt Tüketimi (motor)",
@@ -1488,15 +1488,15 @@
         },
         {
           "ozellik": "İlaç Yakıt Tüketimi",
-          "deger": "10–20 L/saat (ayarlanabilir)"
+          "deger": "10–20 L/saat (adjustable)"
         },
         {
           "ozellik": "Damla Çapı",
-          "deger": "~20 mikron (termal)"
+          "deger": "~20 micron (termal)"
         },
         {
           "ozellik": "Teker",
-          "deger": "2 frenli + 2 düz teker"
+          "deger": "2 braked + 2 free wheels"
         }
       ],
       "meta_title": "Thermal Fogger | Duru K 100",
@@ -1536,11 +1536,11 @@
       "teknik_tablo": [
         {
           "ozellik": "Motor",
-          "deger": "Benzinli Briggs"
+          "deger": "Gasoline Briggs"
         },
         {
           "ozellik": "İlaç Tank Kapasitesi",
-          "deger": "15–50 litre"
+          "deger": "15–50 liter"
         },
         {
           "ozellik": "İlaç Çıkış Debisi",
@@ -1548,19 +1548,19 @@
         },
         {
           "ozellik": "Püskürtme Hortumu",
-          "deger": "2.30 m esnek paslanmaz kanal aparatı"
+          "deger": "2.30 m flexible stainless channel attachment"
         },
         {
           "ozellik": "Solüsyon",
-          "deger": "Yağ bazlı termal solüsyon"
+          "deger": "Oil-based thermal solution"
         },
         {
           "ozellik": "Damla Çapı",
-          "deger": "~20 mikron (termal)"
+          "deger": "~20 micron (termal)"
         },
         {
           "ozellik": "Uygulama",
-          "deger": "Kanal ilaçlama, açık alan sıcak sisleme, don önleme"
+          "deger": "Channel spraying, outdoor thermal fogging, frost protection"
         }
       ],
       "meta_title": "Handheld Thermal Fogger | Duru ULV",
