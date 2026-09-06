@@ -95,35 +95,35 @@
       "gorsel": "assets/img/products/duru-mist-blower-15hp-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "Engine",
           "deger": "15 Hp American engine"
         },
         {
-          "ozellik": "Batarya",
+          "ozellik": "Battery",
           "deger": "12 V DC – 60 Ah"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "Chemical Tank Capacity",
           "deger": "400 liter"
         },
         {
-          "ozellik": "Püskürtme Sistemleri",
+          "ozellik": "Spray Systems",
           "deger": "Mist blower – ULV – Sprayer"
         },
         {
-          "ozellik": "Holder Hortum",
+          "ozellik": "Hose Reel",
           "deger": "30 metre"
         },
         {
-          "ozellik": "Pompa",
+          "ozellik": "Pump",
           "deger": "14 liter / dakika, 150 bar"
         },
         {
-          "ozellik": "ULV Mikron",
+          "ozellik": "ULV Micron",
           "deger": "35"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "Weight",
           "deger": "340 kg"
         }
       ],
@@ -159,67 +159,67 @@
       "gorsel": "assets/img/products/entosis-mist-blower-500l-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "Engine",
           "deger": "15 Hp – 18 hp American engine"
         },
         {
-          "ozellik": "Batarya",
+          "ozellik": "Battery",
           "deger": "12 v DC – 60 Ah"
         },
         {
-          "ozellik": "MİST Başlık Hareketi",
+          "ozellik": "Mist Head Movement",
           "deger": "340° left and right, 210° up and down"
         },
         {
-          "ozellik": "Kumanda",
+          "ozellik": "Controls",
           "deger": "Joystick-controlled"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "Chemical Tank Capacity",
           "deger": "500 liter"
         },
         {
-          "ozellik": "İlaç Formülasyonu",
+          "ozellik": "Chemical Formulation",
           "deger": "sc – ec – wp"
         },
         {
-          "ozellik": "Pompa",
+          "ozellik": "Pump",
           "deger": "14 liter / dakika, 150 bar"
         },
         {
-          "ozellik": "Püskürtme Sistemleri",
+          "ozellik": "Spray Systems",
           "deger": "Mist blower – ULV – Sprayer"
         },
         {
-          "ozellik": "Holder Hortum",
+          "ozellik": "Hose Reel",
           "deger": "30 metre (optional 50 metre)"
         },
         {
-          "ozellik": "Yakıt Deposu",
+          "ozellik": "Fuel Tank",
           "deger": "30 liter"
         },
         {
-          "ozellik": "Nozul Sayısı",
+          "ozellik": "Nozzle Count",
           "deger": "6+1 pcs"
         },
         {
-          "ozellik": "Yakıt Tüketimi",
+          "ozellik": "Fuel Consumption",
           "deger": "4 liter"
         },
         {
-          "ozellik": "ULV Mikron",
+          "ozellik": "ULV Micron",
           "deger": "35"
         },
         {
-          "ozellik": "El Yıkama Tankı",
+          "ozellik": "Hand Wash Tank",
           "deger": "15 liter"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "Weight",
           "deger": "400 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "Dimensions",
           "deger": "W: 105 cm, L: 150 cm, H: 170 cm"
         }
       ],
@@ -259,23 +259,23 @@
       "gorsel": "assets/img/products/duru-hd1800-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "Engine",
           "deger": "18 hp gasoline"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "Chemical Tank Capacity",
           "deger": "100 liter"
         },
         {
-          "ozellik": "Püskürtme",
+          "ozellik": "Spray Type",
           "deger": "ULV"
         },
         {
-          "ozellik": "ULV Mikron",
+          "ozellik": "ULV Micron",
           "deger": "0–49"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "Solution Types",
           "deger": "sc, ec, wp"
         }
       ],
@@ -311,35 +311,35 @@
       "gorsel": "assets/img/products/duru-hd75-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "Engine",
           "deger": "10 kW, 220V 50Hz"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "Chemical Tank Capacity",
           "deger": "100 liter (50 × 2)"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "Flow Rate",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "Droplet Size",
           "deger": "0–49 micron"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "Solution Types",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Kumanda",
+          "ozellik": "Controls",
           "deger": "ULV motor, chemical and rotating lamp on/off"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "Weight",
           "deger": "85 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "Dimensions",
           "deger": "W: 70 cm, L: 120 cm, H: 110 cm"
         }
       ],
@@ -375,27 +375,27 @@
       "gorsel": "assets/img/products/duru-hd50-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "Engine",
           "deger": "3.5–5 kW, 220V 50Hz"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "Chemical Tank Capacity",
           "deger": "50 liter"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "Flow Rate",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "Droplet Size",
           "deger": "0–49 micron"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "Solution Types",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Püskürtme",
+          "ozellik": "Spray Type",
           "deger": "ULV"
         }
       ],
@@ -431,27 +431,27 @@
       "gorsel": "assets/img/products/entosis-50-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "U.L.V Motor",
+          "ozellik": "ULV Engine",
           "deger": "2200 W × 2 = 4400 W, 220V AC"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "Chemical Tank Capacity",
           "deger": "50 liter"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "Flow Rate",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "Damla Çapı",
+          "ozellik": "Droplet Size",
           "deger": "0–49 micron"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "Solution Types",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Kapasite",
+          "ozellik": "Capacity",
           "deger": "Maximum 6–7 decares (0.6–0.7 ha)"
         }
       ],
@@ -491,27 +491,27 @@
       "gorsel": "assets/img/products/sera-max-50-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "Engine",
           "deger": "2200 W × 4 = 8800 W, 220V AC"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "Chemical Tank Capacity",
           "deger": "25 × 4 = 100 liter"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "Flow Rate",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "Droplet Size",
           "deger": "0–49 micron"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "Solution Types",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Başlık",
+          "ozellik": "Head",
           "deger": "4 ULV nozzles"
         },
         {
@@ -519,11 +519,11 @@
           "deger": "4 × 30 cm (120 cm toplam)"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "Weight",
           "deger": "85 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "Dimensions",
           "deger": "W: 84 cm, L: 126 cm, H: 150 cm"
         }
       ],
@@ -563,35 +563,35 @@
       "gorsel": "assets/img/products/sera-ultra-20-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "Engine",
           "deger": "2000 W × 2 = 4000 W, 220V AC"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "Chemical Tank Capacity",
           "deger": "48 liter"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "Flow Rate",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "Droplet Size",
           "deger": "0–49 micron"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "Solution Types",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Başlık",
+          "ozellik": "Head",
           "deger": "2 ULV nozzles"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "Weight",
           "deger": "57 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "Dimensions",
           "deger": "W: 84 cm, L: 110 cm, H: 150 cm"
         }
       ],
@@ -631,31 +631,31 @@
       "gorsel": "assets/img/products/entosis-20-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "Engine",
           "deger": "2200 W × 2 = 4400 W, 220V 50Hz"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "Chemical Tank Capacity",
           "deger": "20 liter"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "Flow Rate",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "Droplet Size",
           "deger": "0–49 micron"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "Solution Types",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "Weight",
           "deger": "17 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "Dimensions",
           "deger": "W: 52 cm, L: 70 cm, H: 70 cm"
         }
       ],
@@ -695,23 +695,23 @@
       "gorsel": "assets/img/products/sera-plus-20-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "Engine",
           "deger": "2800 W, 220V 50Hz"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "Chemical Tank Capacity",
           "deger": "20 liter"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "Flow Rate",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "Droplet Size",
           "deger": "0–49 micron"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "Solution Types",
           "deger": "sc, ec, wp"
         }
       ],
@@ -751,31 +751,31 @@
       "gorsel": "assets/img/products/duru-sirt10-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "Engine",
           "deger": "2200 W, 220V AC"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "Chemical Tank Capacity",
           "deger": "10 liter"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "Flow Rate",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "Damla Çapı",
+          "ozellik": "Droplet Size",
           "deger": "9–49 micron"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "Solution Types",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Ağırlık (boş)",
+          "ozellik": "Weight (empty)",
           "deger": "8 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "Dimensions",
           "deger": "40 × 50 × 48 cm"
         }
       ],
@@ -815,31 +815,31 @@
       "gorsel": "assets/img/products/duru-hd5-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "Engine",
           "deger": "2200 W, 220V AC 50Hz"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "Chemical Tank Capacity",
           "deger": "5 liter"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "Flow Rate",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "Droplet Size",
           "deger": "0–49 micron"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "Solution Types",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "Weight",
           "deger": "4.2 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "Dimensions",
           "deger": "W: 20 cm, L: 45 cm, H: 45 cm"
         }
       ],
@@ -879,27 +879,27 @@
       "gorsel": "assets/img/products/duru-hr5-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "Engine",
           "deger": "2200 W, 220V AC 50Hz"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "Chemical Tank Capacity",
           "deger": "5 liter"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "Flow Rate",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "Droplet Size",
           "deger": "0–49 micron"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "Solution Types",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Özellik",
+          "ozellik": "Feature",
           "deger": "Handheld with hose"
         }
       ],
@@ -939,35 +939,35 @@
       "gorsel": "assets/img/products/duru-max5-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "Engine",
           "deger": "2200 W, 220V AC 50Hz"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "Chemical Tank Capacity",
           "deger": "5 liter"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "Flow Rate",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "Droplet Size",
           "deger": "0–49 micron"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "Solution Types",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "Weight",
           "deger": "5.2 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "Dimensions",
           "deger": "W: 20 cm, L: 45 cm, H: 57 cm"
         },
         {
-          "ozellik": "Başlık",
+          "ozellik": "Head",
           "deger": "Up–down pivoting head"
         }
       ],
@@ -1015,27 +1015,27 @@
       "gorsel": "assets/img/products/duru-plus-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "Engine",
           "deger": "1300 W, 220V AC"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "Chemical Tank Capacity",
           "deger": "3 liter"
         },
         {
-          "ozellik": "Başlık / Nozul",
+          "ozellik": "Head / Nozzle",
           "deger": "3 inch (3\")"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "Flow Rate",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "Droplet Size",
           "deger": "0–49 micron"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "Solution Types",
           "deger": "sc, ec, wp"
         }
       ],
@@ -1075,35 +1075,35 @@
       "gorsel": "assets/img/products/duru-x20-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "Engine",
           "deger": "2000 W × 2 = 4000 W, 220V AC 50Hz"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "Chemical Tank Capacity",
           "deger": "20 liter"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "Flow Rate",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "Droplet Size",
           "deger": "0–49 micron"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "Solution Types",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "Weight",
           "deger": "12 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "Dimensions",
           "deger": "46 × 60 × 68 cm"
         },
         {
-          "ozellik": "Başlık",
+          "ozellik": "Head",
           "deger": "2 pivoting nozzles"
         }
       ],
@@ -1143,23 +1143,23 @@
       "gorsel": "assets/img/products/duru-x10-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "Engine",
           "deger": "2200 W, 220V AC"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "Chemical Tank Capacity",
           "deger": "10 liter"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "Flow Rate",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "Damla Çapı",
+          "ozellik": "Droplet Size",
           "deger": "0–49 micron"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "Solution Types",
           "deger": "sc, ec, wp"
         }
       ],
@@ -1199,35 +1199,35 @@
       "gorsel": "assets/img/products/duru-max10-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "Engine",
           "deger": "2200 W, 220V AC 50Hz"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "Chemical Tank Capacity",
           "deger": "10 liter"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "Flow Rate",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "Droplet Size",
           "deger": "0–49 micron"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "Solution Types",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "Weight",
           "deger": "6.7 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "Dimensions",
           "deger": "W: 34 cm, L: 50 cm, H: 60 cm"
         },
         {
-          "ozellik": "Başlık",
+          "ozellik": "Head",
           "deger": "Pivoting head"
         }
       ],
@@ -1263,7 +1263,7 @@
       "gorsel": "assets/img/products/duru-dmxl-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "Engine",
           "deger": "2200 W, 220V AC 50Hz"
         },
         {
@@ -1271,27 +1271,27 @@
           "deger": "Float-controlled – unlimited (mains-connected)"
         },
         {
-          "ozellik": "Nem Çıkış Debisi",
+          "ozellik": "Humidity Flow Rate",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "Nem Damla Çapı",
+          "ozellik": "Humidity Droplet Size",
           "deger": "0–49 micron"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "Solution Types",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Başlık",
+          "ozellik": "Head",
           "deger": "Rotating head"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "Weight",
           "deger": "5.2 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "Dimensions",
           "deger": "W: 20 cm, L: 45 cm, H: 57 cm"
         }
       ],
@@ -1331,7 +1331,7 @@
       "gorsel": "assets/img/products/duru-mxl-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "Engine",
           "deger": "2200 W, 220V AC 50Hz"
         },
         {
@@ -1339,27 +1339,27 @@
           "deger": "Float-controlled – unlimited (mains-connected)"
         },
         {
-          "ozellik": "Nem Çıkış Debisi",
+          "ozellik": "Humidity Flow Rate",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "Nem Damla Çapı",
+          "ozellik": "Humidity Droplet Size",
           "deger": "0–49 micron"
         },
         {
-          "ozellik": "Kaplama Alanı",
+          "ozellik": "Coverage Area",
           "deger": "25–100 m² from a single point"
         },
         {
-          "ozellik": "Gövde",
+          "ozellik": "Frame",
           "deger": "20×20 profile chassis, laser-cut, electrostatic paint"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "Weight",
           "deger": "4.6 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "Dimensions",
           "deger": "W: 20 cm, L: 125 cm, H: 45 cm"
         }
       ],
@@ -1399,7 +1399,7 @@
       "gorsel": "assets/img/products/duru-mxl-hgs-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "Engine",
           "deger": "2200 W, 220V AC 50Hz"
         },
         {
@@ -1407,27 +1407,27 @@
           "deger": "Float-controlled – unlimited (mains-connected)"
         },
         {
-          "ozellik": "Kontrol",
+          "ozellik": "Control",
           "deger": "Fully automatic with hygrostat (humidity sensor)"
         },
         {
-          "ozellik": "Nem Çıkış Debisi",
+          "ozellik": "Humidity Flow Rate",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "Nem Damla Çapı",
+          "ozellik": "Humidity Droplet Size",
           "deger": "0–49 micron"
         },
         {
-          "ozellik": "Kaplama Alanı",
+          "ozellik": "Coverage Area",
           "deger": "25–100 m² from a single point"
         },
         {
-          "ozellik": "Gövde",
+          "ozellik": "Frame",
           "deger": "20×20 profile chassis, laser-cut, electrostatic paint"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "Weight",
           "deger": "4.6 kg"
         }
       ],
@@ -1467,35 +1467,35 @@
       "gorsel": "assets/img/products/duru-k100-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "Engine",
           "deger": "15 hp gasoline Briggs"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "Chemical Tank Capacity",
           "deger": "20 liter"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "Flow Rate",
           "deger": "15 bar"
         },
         {
-          "ozellik": "Püskürtme Hortumu",
+          "ozellik": "Spray Hose",
           "deger": "2.30 m flexible metal channel attachment"
         },
         {
-          "ozellik": "Yakıt Tüketimi (motor)",
+          "ozellik": "Fuel Consumption (engine)",
           "deger": "0,75–1 L/saat"
         },
         {
-          "ozellik": "İlaç Yakıt Tüketimi",
+          "ozellik": "Chemical Fuel Consumption",
           "deger": "10–20 L/saat (adjustable)"
         },
         {
-          "ozellik": "Damla Çapı",
+          "ozellik": "Droplet Size",
           "deger": "~20 micron (termal)"
         },
         {
-          "ozellik": "Teker",
+          "ozellik": "Wheels",
           "deger": "2 braked + 2 free wheels"
         }
       ],
@@ -1535,31 +1535,31 @@
       "gorsel": "assets/img/products/termal-el-tipi-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "Engine",
           "deger": "Gasoline Briggs"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "Chemical Tank Capacity",
           "deger": "15–50 liter"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "Flow Rate",
           "deger": "15 bar"
         },
         {
-          "ozellik": "Püskürtme Hortumu",
+          "ozellik": "Spray Hose",
           "deger": "2.30 m flexible stainless channel attachment"
         },
         {
-          "ozellik": "Solüsyon",
+          "ozellik": "Solution",
           "deger": "Oil-based thermal solution"
         },
         {
-          "ozellik": "Damla Çapı",
+          "ozellik": "Droplet Size",
           "deger": "~20 micron (termal)"
         },
         {
-          "ozellik": "Uygulama",
+          "ozellik": "Application",
           "deger": "Channel spraying, outdoor thermal fogging, frost protection"
         }
       ],

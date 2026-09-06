@@ -95,35 +95,35 @@
       "gorsel": "assets/img/products/duru-mist-blower-15hp-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "المحرك",
           "deger": "15 Hp محرك أمريكي"
         },
         {
-          "ozellik": "Batarya",
+          "ozellik": "البطارية",
           "deger": "12 V DC – 60 Ah"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "سعة خزان الكيماويات",
           "deger": "400 لتر"
         },
         {
-          "ozellik": "Püskürtme Sistemleri",
+          "ozellik": "أنظمة الرش",
           "deger": "Mist blower – ULV – رشاش"
         },
         {
-          "ozellik": "Holder Hortum",
+          "ozellik": "بكرة الخرطوم",
           "deger": "30 metre"
         },
         {
-          "ozellik": "Pompa",
+          "ozellik": "المضخة",
           "deger": "14 لتر / dakika, 150 bar"
         },
         {
-          "ozellik": "ULV Mikron",
+          "ozellik": "ميكرون ULV",
           "deger": "35"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "الوزن",
           "deger": "340 kg"
         }
       ],
@@ -159,67 +159,67 @@
       "gorsel": "assets/img/products/entosis-mist-blower-500l-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "المحرك",
           "deger": "15 Hp – 18 hp محرك أمريكي"
         },
         {
-          "ozellik": "Batarya",
+          "ozellik": "البطارية",
           "deger": "12 v DC – 60 Ah"
         },
         {
-          "ozellik": "MİST Başlık Hareketi",
+          "ozellik": "حركة رأس الضباب",
           "deger": "340 درجة يسار ويمين، 210 درجة أعلى وأسفل"
         },
         {
-          "ozellik": "Kumanda",
+          "ozellik": "لوحة التحكم",
           "deger": "يتحكم به بالجويستيك"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "سعة خزان الكيماويات",
           "deger": "500 لتر"
         },
         {
-          "ozellik": "İlaç Formülasyonu",
+          "ozellik": "تركيبة المبيد",
           "deger": "sc – ec – wp"
         },
         {
-          "ozellik": "Pompa",
+          "ozellik": "المضخة",
           "deger": "14 لتر / dakika, 150 bar"
         },
         {
-          "ozellik": "Püskürtme Sistemleri",
+          "ozellik": "أنظمة الرش",
           "deger": "Mist blower – ULV – رشاش"
         },
         {
-          "ozellik": "Holder Hortum",
+          "ozellik": "بكرة الخرطوم",
           "deger": "30 metre (اختياري 50 metre)"
         },
         {
-          "ozellik": "Yakıt Deposu",
+          "ozellik": "خزان الوقود",
           "deger": "30 لتر"
         },
         {
-          "ozellik": "Nozul Sayısı",
+          "ozellik": "عدد الفوهات",
           "deger": "6+1 قطعة"
         },
         {
-          "ozellik": "Yakıt Tüketimi",
+          "ozellik": "استهلاك الوقود",
           "deger": "4 لتر"
         },
         {
-          "ozellik": "ULV Mikron",
+          "ozellik": "ميكرون ULV",
           "deger": "35"
         },
         {
-          "ozellik": "El Yıkama Tankı",
+          "ozellik": "خزان غسيل اليدين",
           "deger": "15 لتر"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "الوزن",
           "deger": "400 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "الأبعاد",
           "deger": "العرض: 105 cm, الطول: 150 cm, الارتفاع: 170 cm"
         }
       ],
@@ -259,23 +259,23 @@
       "gorsel": "assets/img/products/duru-hd1800-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "المحرك",
           "deger": "18 hp بنزين"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "سعة خزان الكيماويات",
           "deger": "100 لتر"
         },
         {
-          "ozellik": "Püskürtme",
+          "ozellik": "نوع الرش",
           "deger": "ULV"
         },
         {
-          "ozellik": "ULV Mikron",
+          "ozellik": "ميكرون ULV",
           "deger": "0–49"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "أنواع المحاليل",
           "deger": "sc, ec, wp"
         }
       ],
@@ -311,35 +311,35 @@
       "gorsel": "assets/img/products/duru-hd75-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "المحرك",
           "deger": "10 kW, 220V 50Hz"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "سعة خزان الكيماويات",
           "deger": "100 لتر (50 × 2)"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "معدل التدفق",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "حجم القطرة",
           "deger": "0–49 ميكرون"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "أنواع المحاليل",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Kumanda",
+          "ozellik": "لوحة التحكم",
           "deger": "محرك ULV، المبيد ومصباح دوار تشغيل/إيقاف"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "الوزن",
           "deger": "85 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "الأبعاد",
           "deger": "العرض: 70 cm, الطول: 120 cm, الارتفاع: 110 cm"
         }
       ],
@@ -375,27 +375,27 @@
       "gorsel": "assets/img/products/duru-hd50-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "المحرك",
           "deger": "3.5–5 kW, 220V 50Hz"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "سعة خزان الكيماويات",
           "deger": "50 لتر"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "معدل التدفق",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "حجم القطرة",
           "deger": "0–49 ميكرون"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "أنواع المحاليل",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Püskürtme",
+          "ozellik": "نوع الرش",
           "deger": "ULV"
         }
       ],
@@ -431,27 +431,27 @@
       "gorsel": "assets/img/products/entosis-50-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "U.L.V Motor",
+          "ozellik": "محرك ULV",
           "deger": "2200 W × 2 = 4400 W, 220V AC"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "سعة خزان الكيماويات",
           "deger": "50 لتر"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "معدل التدفق",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "Damla Çapı",
+          "ozellik": "حجم القطرة",
           "deger": "0–49 ميكرون"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "أنواع المحاليل",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Kapasite",
+          "ozellik": "السعة",
           "deger": "الحد الأقصى 6–7 دونم (0.1 هكتار)"
         }
       ],
@@ -491,39 +491,39 @@
       "gorsel": "assets/img/products/sera-max-50-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "المحرك",
           "deger": "2200 W × 4 = 8800 W, 220V AC"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "سعة خزان الكيماويات",
           "deger": "25 × 4 = 100 لتر"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "معدل التدفق",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "حجم القطرة",
           "deger": "0–49 ميكرون"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "أنواع المحاليل",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Başlık",
+          "ozellik": "الرأس",
           "deger": "4 فوهات ULV"
         },
         {
-          "ozellik": "Fan",
+          "ozellik": "المروحة",
           "deger": "4 × 30 cm (120 cm toplam)"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "الوزن",
           "deger": "85 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "الأبعاد",
           "deger": "العرض: 84 cm, الطول: 126 cm, الارتفاع: 150 cm"
         }
       ],
@@ -563,35 +563,35 @@
       "gorsel": "assets/img/products/sera-ultra-20-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "المحرك",
           "deger": "2000 W × 2 = 4000 W, 220V AC"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "سعة خزان الكيماويات",
           "deger": "48 لتر"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "معدل التدفق",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "حجم القطرة",
           "deger": "0–49 ميكرون"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "أنواع المحاليل",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Başlık",
+          "ozellik": "الرأس",
           "deger": "2 فوهة ULV"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "الوزن",
           "deger": "57 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "الأبعاد",
           "deger": "العرض: 84 cm, الطول: 110 cm, الارتفاع: 150 cm"
         }
       ],
@@ -631,31 +631,31 @@
       "gorsel": "assets/img/products/entosis-20-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "المحرك",
           "deger": "2200 W × 2 = 4400 W, 220V 50Hz"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "سعة خزان الكيماويات",
           "deger": "20 لتر"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "معدل التدفق",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "حجم القطرة",
           "deger": "0–49 ميكرون"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "أنواع المحاليل",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "الوزن",
           "deger": "17 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "الأبعاد",
           "deger": "العرض: 52 cm, الطول: 70 cm, الارتفاع: 70 cm"
         }
       ],
@@ -695,23 +695,23 @@
       "gorsel": "assets/img/products/sera-plus-20-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "المحرك",
           "deger": "2800 W, 220V 50Hz"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "سعة خزان الكيماويات",
           "deger": "20 لتر"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "معدل التدفق",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "حجم القطرة",
           "deger": "0–49 ميكرون"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "أنواع المحاليل",
           "deger": "sc, ec, wp"
         }
       ],
@@ -751,31 +751,31 @@
       "gorsel": "assets/img/products/duru-sirt10-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "المحرك",
           "deger": "2200 W, 220V AC"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "سعة خزان الكيماويات",
           "deger": "10 لتر"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "معدل التدفق",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "Damla Çapı",
+          "ozellik": "حجم القطرة",
           "deger": "9–49 ميكرون"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "أنواع المحاليل",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Ağırlık (boş)",
+          "ozellik": "الوزن (فارغ)",
           "deger": "8 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "الأبعاد",
           "deger": "40 × 50 × 48 cm"
         }
       ],
@@ -815,31 +815,31 @@
       "gorsel": "assets/img/products/duru-hd5-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "المحرك",
           "deger": "2200 W, 220V AC 50Hz"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "سعة خزان الكيماويات",
           "deger": "5 لتر"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "معدل التدفق",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "حجم القطرة",
           "deger": "0–49 ميكرون"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "أنواع المحاليل",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "الوزن",
           "deger": "4.2 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "الأبعاد",
           "deger": "العرض: 20 cm, الطول: 45 cm, الارتفاع: 45 cm"
         }
       ],
@@ -879,27 +879,27 @@
       "gorsel": "assets/img/products/duru-hr5-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "المحرك",
           "deger": "2200 W, 220V AC 50Hz"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "سعة خزان الكيماويات",
           "deger": "5 لتر"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "معدل التدفق",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "حجم القطرة",
           "deger": "0–49 ميكرون"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "أنواع المحاليل",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Özellik",
+          "ozellik": "الميزة",
           "deger": "يدوي بخرطوم"
         }
       ],
@@ -939,35 +939,35 @@
       "gorsel": "assets/img/products/duru-max5-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "المحرك",
           "deger": "2200 W, 220V AC 50Hz"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "سعة خزان الكيماويات",
           "deger": "5 لتر"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "معدل التدفق",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "حجم القطرة",
           "deger": "0–49 ميكرون"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "أنواع المحاليل",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "الوزن",
           "deger": "5.2 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "الأبعاد",
           "deger": "العرض: 20 cm, الطول: 45 cm, الارتفاع: 57 cm"
         },
         {
-          "ozellik": "Başlık",
+          "ozellik": "الرأس",
           "deger": "رأس متحرك أعلى–أسفل"
         }
       ],
@@ -1015,27 +1015,27 @@
       "gorsel": "assets/img/products/duru-plus-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "المحرك",
           "deger": "1300 W, 220V AC"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "سعة خزان الكيماويات",
           "deger": "3 لتر"
         },
         {
-          "ozellik": "Başlık / Nozul",
+          "ozellik": "الرأس / الفوهة",
           "deger": "3 inch (3\")"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "معدل التدفق",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "حجم القطرة",
           "deger": "0–49 ميكرون"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "أنواع المحاليل",
           "deger": "sc, ec, wp"
         }
       ],
@@ -1075,35 +1075,35 @@
       "gorsel": "assets/img/products/duru-x20-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "المحرك",
           "deger": "2000 W × 2 = 4000 W, 220V AC 50Hz"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "سعة خزان الكيماويات",
           "deger": "20 لتر"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "معدل التدفق",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "حجم القطرة",
           "deger": "0–49 ميكرون"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "أنواع المحاليل",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "الوزن",
           "deger": "12 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "الأبعاد",
           "deger": "46 × 60 × 68 cm"
         },
         {
-          "ozellik": "Başlık",
+          "ozellik": "الرأس",
           "deger": "2 فوهة متحركة"
         }
       ],
@@ -1143,23 +1143,23 @@
       "gorsel": "assets/img/products/duru-x10-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "المحرك",
           "deger": "2200 W, 220V AC"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "سعة خزان الكيماويات",
           "deger": "10 لتر"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "معدل التدفق",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "Damla Çapı",
+          "ozellik": "حجم القطرة",
           "deger": "0–49 ميكرون"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "أنواع المحاليل",
           "deger": "sc, ec, wp"
         }
       ],
@@ -1199,35 +1199,35 @@
       "gorsel": "assets/img/products/duru-max10-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "المحرك",
           "deger": "2200 W, 220V AC 50Hz"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "سعة خزان الكيماويات",
           "deger": "10 لتر"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "معدل التدفق",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "İlaç Damla Çapı",
+          "ozellik": "حجم القطرة",
           "deger": "0–49 ميكرون"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "أنواع المحاليل",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "الوزن",
           "deger": "6.7 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "الأبعاد",
           "deger": "العرض: 34 cm, الطول: 50 cm, الارتفاع: 60 cm"
         },
         {
-          "ozellik": "Başlık",
+          "ozellik": "الرأس",
           "deger": "رأس متحرك"
         }
       ],
@@ -1263,35 +1263,35 @@
       "gorsel": "assets/img/products/duru-dmxl-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "المحرك",
           "deger": "2200 W, 220V AC 50Hz"
         },
         {
-          "ozellik": "Tank",
+          "ozellik": "الخزان",
           "deger": "بمنظم عوامة – غير محدود (متصل بالشبكة)"
         },
         {
-          "ozellik": "Nem Çıkış Debisi",
+          "ozellik": "معدل تدفق الترطيب",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "Nem Damla Çapı",
+          "ozellik": "حجم قطرة الترطيب",
           "deger": "0–49 ميكرون"
         },
         {
-          "ozellik": "Solüsyon Tipleri",
+          "ozellik": "أنواع المحاليل",
           "deger": "sc, ec, wp"
         },
         {
-          "ozellik": "Başlık",
+          "ozellik": "الرأس",
           "deger": "رأس دوار"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "الوزن",
           "deger": "5.2 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "الأبعاد",
           "deger": "العرض: 20 cm, الطول: 45 cm, الارتفاع: 57 cm"
         }
       ],
@@ -1331,35 +1331,35 @@
       "gorsel": "assets/img/products/duru-mxl-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "المحرك",
           "deger": "2200 W, 220V AC 50Hz"
         },
         {
-          "ozellik": "Tank",
+          "ozellik": "الخزان",
           "deger": "بمنظم عوامة – غير محدود (متصل بالشبكة)"
         },
         {
-          "ozellik": "Nem Çıkış Debisi",
+          "ozellik": "معدل تدفق الترطيب",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "Nem Damla Çapı",
+          "ozellik": "حجم قطرة الترطيب",
           "deger": "0–49 ميكرون"
         },
         {
-          "ozellik": "Kaplama Alanı",
+          "ozellik": "مساحة التغطية",
           "deger": "25–100 م² من نقطة واحدة"
         },
         {
-          "ozellik": "Gövde",
+          "ozellik": "الهيكل",
           "deger": "شاسيه بروفيل 20×20، قص ليزري، طلاء إلكتروستاتيكي"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "الوزن",
           "deger": "4.6 kg"
         },
         {
-          "ozellik": "Ölçüler",
+          "ozellik": "الأبعاد",
           "deger": "العرض: 20 cm, الطول: 125 cm, الارتفاع: 45 cm"
         }
       ],
@@ -1399,35 +1399,35 @@
       "gorsel": "assets/img/products/duru-mxl-hgs-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "المحرك",
           "deger": "2200 W, 220V AC 50Hz"
         },
         {
-          "ozellik": "Tank",
+          "ozellik": "الخزان",
           "deger": "بمنظم عوامة – غير محدود (متصل بالشبكة)"
         },
         {
-          "ozellik": "Kontrol",
+          "ozellik": "التحكم",
           "deger": "أوتوماتيكي بالكامل مع هيغروستات (مستشعر رطوبة)"
         },
         {
-          "ozellik": "Nem Çıkış Debisi",
+          "ozellik": "معدل تدفق الترطيب",
           "deger": "0–49 l/h"
         },
         {
-          "ozellik": "Nem Damla Çapı",
+          "ozellik": "حجم قطرة الترطيب",
           "deger": "0–49 ميكرون"
         },
         {
-          "ozellik": "Kaplama Alanı",
+          "ozellik": "مساحة التغطية",
           "deger": "25–100 م² من نقطة واحدة"
         },
         {
-          "ozellik": "Gövde",
+          "ozellik": "الهيكل",
           "deger": "شاسيه بروفيل 20×20، قص ليزري، طلاء إلكتروستاتيكي"
         },
         {
-          "ozellik": "Ağırlık",
+          "ozellik": "الوزن",
           "deger": "4.6 kg"
         }
       ],
@@ -1467,35 +1467,35 @@
       "gorsel": "assets/img/products/duru-k100-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "المحرك",
           "deger": "15 hp بنزين Briggs"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "سعة خزان الكيماويات",
           "deger": "20 لتر"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "معدل التدفق",
           "deger": "15 bar"
         },
         {
-          "ozellik": "Püskürtme Hortumu",
+          "ozellik": "خرطوم الرش",
           "deger": "ملحق قناة معدنية مرنة 2.30 م"
         },
         {
-          "ozellik": "Yakıt Tüketimi (motor)",
+          "ozellik": "استهلاك الوقود (المحرك)",
           "deger": "0,75–1 L/saat"
         },
         {
-          "ozellik": "İlaç Yakıt Tüketimi",
+          "ozellik": "استهلاك وقود المبيد",
           "deger": "10–20 L/saat (قابل للتعديل)"
         },
         {
-          "ozellik": "Damla Çapı",
+          "ozellik": "حجم القطرة",
           "deger": "~20 ميكرون (termal)"
         },
         {
-          "ozellik": "Teker",
+          "ozellik": "العجلات",
           "deger": "2 عجلات بكبح + 2 حرة"
         }
       ],
@@ -1535,31 +1535,31 @@
       "gorsel": "assets/img/products/termal-el-tipi-01.webp",
       "teknik_tablo": [
         {
-          "ozellik": "Motor",
+          "ozellik": "المحرك",
           "deger": "بنزين Briggs"
         },
         {
-          "ozellik": "İlaç Tank Kapasitesi",
+          "ozellik": "سعة خزان الكيماويات",
           "deger": "15–50 لتر"
         },
         {
-          "ozellik": "İlaç Çıkış Debisi",
+          "ozellik": "معدل التدفق",
           "deger": "15 bar"
         },
         {
-          "ozellik": "Püskürtme Hortumu",
+          "ozellik": "خرطوم الرش",
           "deger": "ملحق قناة ستانلس مرنة 2.30 م"
         },
         {
-          "ozellik": "Solüsyon",
+          "ozellik": "المحلول",
           "deger": "محلول حراري زيتي"
         },
         {
-          "ozellik": "Damla Çapı",
+          "ozellik": "حجم القطرة",
           "deger": "~20 ميكرون (termal)"
         },
         {
-          "ozellik": "Uygulama",
+          "ozellik": "التطبيق",
           "deger": "رش القنوات، ضباب حراري للمناطق المفتوحة، منع الصقيع"
         }
       ],
