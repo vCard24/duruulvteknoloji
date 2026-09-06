@@ -70,3 +70,49 @@ html[dir='rtl'] .mobile-menu__lang {
 html[dir='rtl'] .chip {
   flex-direction: row-reverse;
 }
+
+/* WhatsApp FAB — trailing edge in RTL (visual start / left) */
+html[dir='rtl'] .whatsapp-btn,
+html[dir='rtl'] a.whatsapp-btn.wa-pulse {
+  right: auto;
+  left: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  html[dir='rtl'] .whatsapp-btn,
+  html[dir='rtl'] a.whatsapp-btn.wa-pulse {
+    left: 1.5rem;
+  }
+}
+
+/* Compare / blog tables sticky first column on the trailing side */
+html[dir='rtl'] .compare-table td:first-child,
+html[dir='rtl'] .compare-table th:first-child,
+html[dir='rtl'] .compare-table tbody th[scope='row'],
+html[dir='rtl'] .blog-vs-table td:first-child,
+html[dir='rtl'] .blog-vs-table th:first-child {
+  position: sticky;
+  right: 0;
+  left: auto;
+}
+
+html[dir='rtl'] .compare-table,
+html[dir='rtl'] .blog-vs-table {
+  text-align: right;
+}
+
+html[dir='rtl'] .compare-table td,
+html[dir='rtl'] .compare-table th {
+  border-left: none;
+  border-right: 1px solid var(--border-color, #e5e7eb);
+}
+
+html[dir='rtl'] .compare-table thead th:first-child,
+html[dir='rtl'] .compare-table tbody th {
+  border-right: none;
+}
+
+html[dir='rtl'] .compare-table__remove {
+  right: auto;
+  left: -0.25rem;
+}

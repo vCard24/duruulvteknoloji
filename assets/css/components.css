@@ -407,14 +407,14 @@ a.whatsapp-btn.wa-pulse {
   position: fixed;
   left: auto;
   right: 1.25rem;
-  bottom: 1.25rem;
+  bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px));
   z-index: 50;
 }
 
 @media (min-width: 640px) {
   a.whatsapp-btn.wa-pulse {
     right: 1.5rem;
-    bottom: 1.5rem;
+    bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px));
   }
 }
 
@@ -544,10 +544,12 @@ a.whatsapp-btn.wa-pulse {
   color: var(--color-error);
 }
 
-.form-checkbox {
+.form-checkbox,
+.form-checkbox-wrap {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.75rem;
+  min-height: 44px;
   cursor: pointer;
   font-size: 0.875rem;
   color: rgba(43, 46, 51, 0.8);
@@ -555,9 +557,10 @@ a.whatsapp-btn.wa-pulse {
 }
 
 .form-checkbox input {
-  margin-top: 0.125rem;
-  width: 1rem;
-  height: 1rem;
+  margin-top: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
   accent-color: var(--color-primary);
 }
 
@@ -609,6 +612,7 @@ a.whatsapp-btn.wa-pulse {
   background: var(--color-white);
   border: 1px solid var(--border-color-strong);
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .compare-table {
@@ -644,6 +648,20 @@ a.whatsapp-btn.wa-pulse {
   background: var(--color-white);
 }
 
+.compare-table td:first-child,
+.compare-table th:first-child,
+.compare-table tbody th[scope="row"] {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--color-white, #fff);
+}
+
+.compare-table thead th:first-child {
+  z-index: 2;
+  background: var(--color-primary);
+}
+
 .compare-table tbody tr:nth-child(even) td,
 .compare-table tbody tr:nth-child(even) th[scope="row"] {
   background: var(--color-bg);
@@ -665,12 +683,16 @@ a.whatsapp-btn.wa-pulse {
   display: block;
 }
 
-.compare-table__remove {
+.compare-table__remove,
+.compare-remove,
+[data-compare-remove] {
   position: absolute;
   top: -0.25rem;
   right: -0.25rem;
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  min-width: 44px;
+  min-height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;

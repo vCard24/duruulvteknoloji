@@ -1048,6 +1048,14 @@ a.blog-tag:hover {
   min-width: 28rem;
 }
 
+.blog-vs-table td:first-child,
+.blog-vs-table th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--color-white, #fff);
+}
+
 .blog-vs-table__heading {
   margin: 0 0 0.75rem;
   font-family: var(--font-display);
