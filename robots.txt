@@ -6,6 +6,8 @@ Disallow: /api/
 Disallow: /emergent/
 Disallow: /yigitornek/
 Disallow: /tesekkurler/
+Disallow: /en/tesekkurler/
+Disallow: /ar/tesekkurler/
 
 # Major AI crawlers (explicit allow — site is open for indexing & citation with attribution)
 User-agent: GPTBot
