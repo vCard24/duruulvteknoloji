@@ -290,15 +290,15 @@ function footer(prefix) {
 
 function productCard(p, linkPrefix, comparePage) {
   return `          <article class="product-card lift-card">
-            <a href="${linkPrefix}${p.slug}/index.html" class="product-card__image img-placeholder">
+            <a href="${linkPrefix}${p.slug}/" class="product-card__image img-placeholder">
               <img src="${linkPrefix.replace(/\.\.\//g, (m, o) => m)}" style="display:none" alt="${esc(pName(p))}" loading="lazy">
             </a>
             <div class="product-card__body">
               <span class="product-card__model">${esc(p.model_kodu)}</span>
-              <a href="${linkPrefix}${p.slug}/index.html" class="product-card__title">${esc(pName(p))}</a>
+              <a href="${linkPrefix}${p.slug}/" class="product-card__title">${esc(pName(p))}</a>
               <p class="product-card__summary">${esc(pSum(p))}</p>
               <div class="product-card__actions">
-                <a href="${linkPrefix}${p.slug}/index.html" class="btn btn--primary btn--sm">İncele</a>
+                <a href="${linkPrefix}${p.slug}/" class="btn btn--primary btn--sm">İncele</a>
                 <button type="button" class="btn btn--outline btn--sm" data-compare-toggle="${p.slug}" data-compare-page="${comparePage}"><span data-compare-label>Karşılaştır</span></button>
               </div>
             </div>
@@ -322,15 +322,15 @@ function productCardFixed(p, assetPrefix, pagePrefix, comparePage) {
     ? `<img src="${img}"${srcset ? ` srcset="${srcset}"` : ''} sizes="(max-width:767px) 100vw, (max-width:1024px) 50vw, 390px" width="${dims.width}" height="${dims.height}" alt="${esc(pName(p))}" loading="lazy" decoding="async">`
     : `<img src="${img}" alt="${esc(pName(p))}" loading="lazy" style="display:none">`;
   return `          <article class="product-card lift-card">
-            <a href="${pagePrefix}${p.slug}/index.html" class="${imageClass}">
+            <a href="${pagePrefix}${p.slug}/" class="${imageClass}">
               ${imgTag}
             </a>
             <div class="product-card__body">
               <span class="product-card__model">${esc(p.model_kodu)}</span>
-              <a href="${pagePrefix}${p.slug}/index.html" class="product-card__title">${esc(pName(p))}</a>
+              <a href="${pagePrefix}${p.slug}/" class="product-card__title">${esc(pName(p))}</a>
               <p class="product-card__summary">${esc(pSum(p))}</p>
               <div class="product-card__actions">
-                <a href="${pagePrefix}${p.slug}/index.html" class="btn btn--primary btn--sm">${esc(ui.view)}</a>
+                <a href="${pagePrefix}${p.slug}/" class="btn btn--primary btn--sm">${esc(ui.view)}</a>
                 <button type="button" class="btn btn--outline btn--sm" data-compare-toggle="${p.slug}" data-compare-page="${comparePage}">${compareLabelSpan()}</button>
               </div>
             </div>
@@ -623,8 +623,8 @@ function generateCategoryPage(category) {
         .join('\n');
       const humIndex =
         loc.locale === 'tr'
-          ? '../nemlendirme-ulv/index.html'
-          : '../nemlendirme-ulv/index.html';
+          ? '../nemlendirme-ulv/'
+          : '../nemlendirme-ulv/';
       relatedSection = `
     <section class="section bg-muted border-y">
       <div class="container">

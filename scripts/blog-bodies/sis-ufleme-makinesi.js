@@ -102,7 +102,7 @@ module.exports = function sisUflemeMakinesiBody(prefix, esc) {
 </div>
 
 <h2 id="modeller">Sahada Fark Yaratan Teknolojiler: Profesyonel Mist Blower Modelleri</h2>
-<p>Kullanıcıların yüksek performans, dayanıklılık ve kullanım kolaylığı beklentilerini karşılamak üzere tasarlanan <a href="${p}urunler/arac-uzeri-ilaclama/index.html">araç üstü profesyonel mist blower</a> modellerini detaylıca inceleyelim. Aşağıdaki her iki cihaz da pick-up veya kamyonet kasalarına kolayca entegre edilebilir; Mist Blower, ULV ve Pulverizatör özelliklerini tek bir kasada birleştirir.</p>
+<p>Kullanıcıların yüksek performans, dayanıklılık ve kullanım kolaylığı beklentilerini karşılamak üzere tasarlanan <a href="${p}urunler/arac-uzeri-ilaclama/">araç üstü profesyonel mist blower</a> modellerini detaylıca inceleyelim. Aşağıdaki her iki cihaz da pick-up veya kamyonet kasalarına kolayca entegre edilebilir; Mist Blower, ULV ve Pulverizatör özelliklerini tek bir kasada birleştirir.</p>
 
 <div class="blog-product-block" id="duru-15hp">
   <div class="blog-product-block__head">
@@ -114,7 +114,7 @@ module.exports = function sisUflemeMakinesiBody(prefix, esc) {
       <img src="${duruImg}" alt="Araç üstü sisleme makinesi - Duru Mist Blower 15HP pick-up kasasına monte edilmiş" class="blog-product-block__img" loading="lazy">
     </div>
     <div class="blog-product-block__copy">
-      <p>Kompakt yapısı, güçlü 15 HP Amerikan motoru ve 400 litrelik ideal tank kapasitesiyle <a href="${p}urunler/arac-uzeri-ilaclama/duru-mist-blower-15hp/index.html">Duru Mist Blower 15HP (400L)</a>, özellikle dar sokaklara sahip ilçeler, orta ölçekli belediyeler ve büyük tatil köyleri için biçilmiş kaftandır.</p>
+      <p>Kompakt yapısı, güçlü 15 HP Amerikan motoru ve 400 litrelik ideal tank kapasitesiyle <a href="${p}urunler/arac-uzeri-ilaclama/duru-mist-blower-15hp/">Duru Mist Blower 15HP (400L)</a>, özellikle dar sokaklara sahip ilçeler, orta ölçekli belediyeler ve büyük tatil köyleri için biçilmiş kaftandır.</p>
       <p>Cihazın en büyük avantajı, 3 farklı püskürtme sistemini (Mist blower – ULV – Pulverizatör) bünyesinde barındırmasıdır. 30 metrelik holder hortumu, aracın giremediği park içlerine, bina bodrumlarına veya çöp toplama alanlarına yaya olarak müdahale etme şansı tanır.</p>
     </div>
   </div>
@@ -139,8 +139,8 @@ module.exports = function sisUflemeMakinesiBody(prefix, esc) {
     <p>Eğer manevra kabiliyeti yüksek standart bir pick-up kullanacaksanız ve araç üzerindeki ağırlık dengesini korumak istiyorsanız, 340 kg boş ağırlığı ile bu cihaz en ergonomik ve güvenli çözümdür.</p>
   </div>
   <div class="blog-product-block__actions">
-    <a href="${p}urunler/arac-uzeri-ilaclama/duru-mist-blower-15hp/index.html" class="btn btn--secondary btn--sm">Ürün sayfası</a>
-    <a href="${p}fiyat-teklifi/index.html" class="btn btn--primary btn--sm">Teklif al ${i('chevronRight', 'blog-icon blog-icon--btn')}</a>
+    <a href="${p}urunler/arac-uzeri-ilaclama/duru-mist-blower-15hp/" class="btn btn--secondary btn--sm">Ürün sayfası</a>
+    <a href="${p}fiyat-teklifi/" class="btn btn--primary btn--sm">Teklif al ${i('chevronRight', 'blog-icon blog-icon--btn')}</a>
   </div>
 </div>
 
@@ -154,7 +154,7 @@ module.exports = function sisUflemeMakinesiBody(prefix, esc) {
       <img src="${entosisImg}" alt="Yüksek kapasiteli araç üstü sisleme makinesi - Entosis Mist Blower 500L" class="blog-product-block__img" loading="lazy">
     </div>
     <div class="blog-product-block__copy">
-      <p>Geniş bulvarlar, büyükşehir belediyelerinin sorumluluk alanları ve devasa tarım arazileri için tasarlanmış tam bir güç merkezidir. <a href="${p}urunler/arac-uzeri-ilaclama/entosis-mist-blower-500l/index.html">Entosis Mist Blower (500L)</a> modeli, 500 litrelik devasa tankı ve hayat kurtaran joystick kumanda paneli ile öne çıkar.</p>
+      <p>Geniş bulvarlar, büyükşehir belediyelerinin sorumluluk alanları ve devasa tarım arazileri için tasarlanmış tam bir güç merkezidir. <a href="${p}urunler/arac-uzeri-ilaclama/entosis-mist-blower-500l/">Entosis Mist Blower (500L)</a> modeli, 500 litrelik devasa tankı ve hayat kurtaran joystick kumanda paneli ile öne çıkar.</p>
       <p>Operatör, araç kabininden hiç çıkmadan elindeki joystick ile makinenin başlığını sağa-sola 340 derece, yukarı-aşağı 210 derece yönlendirebilir. 6+1 nozul sistemi, atılan ilacın mükemmel bir homojenlikle dağılmasını sağlar.</p>
     </div>
   </div>
@@ -183,8 +183,8 @@ module.exports = function sisUflemeMakinesiBody(prefix, esc) {
     <p>Maksimum ilaçlama kapasitesi ve minimum personel eforu hedefleniyorsa Entosis en iyi alternatiftir. Kabin içi joystick sistemi operatör güvenliğini sağlarken, 15 litrelik el yıkama tankı İSG standartlarını karşılar.</p>
   </div>
   <div class="blog-product-block__actions">
-    <a href="${p}urunler/arac-uzeri-ilaclama/entosis-mist-blower-500l/index.html" class="btn btn--secondary btn--sm">Ürün sayfası</a>
-    <a href="${p}fiyat-teklifi/index.html" class="btn btn--primary btn--sm">Teklif al ${i('chevronRight', 'blog-icon blog-icon--btn')}</a>
+    <a href="${p}urunler/arac-uzeri-ilaclama/entosis-mist-blower-500l/" class="btn btn--secondary btn--sm">Ürün sayfası</a>
+    <a href="${p}fiyat-teklifi/" class="btn btn--primary btn--sm">Teklif al ${i('chevronRight', 'blog-icon blog-icon--btn')}</a>
   </div>
 </div>
 
@@ -279,7 +279,7 @@ module.exports = function sisUflemeMakinesiBody(prefix, esc) {
 </ul>
 
 <h2 id="sonuc">Sonuç: Uzun Vadeli ve Kesin Çözüm İçin Harekete Geçin</h2>
-<p>Şehirlerde veya tarım alanlarında vektörlerle mücadele etmek tek seferlik bir işlem değil, doğru teknoloji ile sürdürülebilir bir strateji gerektirir. Güçlü Amerikan motorları, 35 mikron teknolojisi ve çok fonksiyonlu püskürtme sistemleri (Mist, ULV, Pülverizatör) ile <a href="${p}urunler/arac-uzeri-ilaclama/duru-mist-blower-15hp/index.html">Duru Mist Blower 15HP (400L)</a> ve <a href="${p}urunler/arac-uzeri-ilaclama/entosis-mist-blower-500l/index.html">Entosis Mist Blower (500L)</a> modelleri sahada en büyük güvenceniz olacaktır.</p>
+<p>Şehirlerde veya tarım alanlarında vektörlerle mücadele etmek tek seferlik bir işlem değil, doğru teknoloji ile sürdürülebilir bir strateji gerektirir. Güçlü Amerikan motorları, 35 mikron teknolojisi ve çok fonksiyonlu püskürtme sistemleri (Mist, ULV, Pülverizatör) ile <a href="${p}urunler/arac-uzeri-ilaclama/duru-mist-blower-15hp/">Duru Mist Blower 15HP (400L)</a> ve <a href="${p}urunler/arac-uzeri-ilaclama/entosis-mist-blower-500l/">Entosis Mist Blower (500L)</a> modelleri sahada en büyük güvenceniz olacaktır.</p>
 <p>Mevcut sorunlarınıza en uygun sis üfleme makinesi modelini belirlemek, detaylı teknik özellik karşılaştırması yapmak ve kurumunuza özel fiyat bilgisini öğrenmek için hemen üreticiyle iletişime geçebilir; iş sağlığı ve çevre standartlarına uygun, yıllarca sorunsuz kullanacağınız bir alım gerçekleştirebilirsiniz.</p>
 
 <div class="blog-cta-bar blog-cta-bar--hero">
@@ -288,8 +288,8 @@ module.exports = function sisUflemeMakinesiBody(prefix, esc) {
     <p class="blog-cta-bar__text">Duru Mist Blower 15HP ve Entosis Mist Blower 500L modellerini karşılaştırın; kurumunuza özel fiyat ve teknik destek için bizimle iletişime geçin.</p>
   </div>
   <div class="blog-cta-bar__actions">
-    <a href="${p}fiyat-teklifi/index.html" class="btn btn--white btn--sm">Teklif Al</a>
-    <a href="${p}urun-karsilastirma/index.html" class="btn btn--outline-white btn--sm">Modelleri Karşılaştır</a>
+    <a href="${p}fiyat-teklifi/" class="btn btn--white btn--sm">Teklif Al</a>
+    <a href="${p}urun-karsilastirma/" class="btn btn--outline-white btn--sm">Modelleri Karşılaştır</a>
   </div>
 </div>`;
 };

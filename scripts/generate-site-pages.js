@@ -211,7 +211,7 @@ const pages = {
             <div class="form-field form-field--full">
               <label class="form-checkbox">
                 <input type="checkbox" id="kvkk_accepted" name="kvkk_accepted">
-                <span><a href="${P}kvkk/index.html" style="font-weight:600">KVKK aydınlatma metnini</a> okudum, iletişim amacıyla kişisel verilerimin işlenmesine onay veriyorum.</span>
+                <span><a href="${P}kvkk/" style="font-weight:600">KVKK aydınlatma metnini</a> okudum, iletişim amacıyla kişisel verilerimin işlenmesine onay veriyorum.</span>
               </label>
               <p class="form-error" data-error="kvkk_accepted"></p>
             </div>
@@ -268,7 +268,7 @@ const pages = {
             <a href="tel:+903523202086" class="btn btn--outline">+90 352 320 20 86</a>
             <a href="https://wa.me/${data.kurumsal_bilgiler.whatsapp}" class="btn btn--primary" style="background:#25D366;border-color:#25D366" target="_blank" rel="noopener">WhatsApp</a>
           </div>
-          <a href="${P}index.html" class="link-arrow">Anasayfaya dön →</a>
+          <a href="${P}" class="link-arrow">Anasayfaya dön →</a>
         </div>
       </div>
     </section>
@@ -293,8 +293,8 @@ const pages = {
               <div style="margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:0.75rem">
                 <a href="${P}assets/docs/duru-ulv-katalog-2026.pdf" class="btn btn--primary" download="Duru-ULV-Katalog-2026.pdf">Kataloğu İndir (PDF)</a>
                 <a href="${P}assets/docs/duru-ulv-katalog-2026.pdf" class="btn btn--outline" target="_blank" rel="noopener">PDF'i Görüntüle</a>
-                <a href="${P}urunler/index.html" class="btn btn--outline">Online Katalog</a>
-                <a href="${P}fiyat-teklifi/index.html" class="btn btn--outline">Teklif Al</a>
+                <a href="${P}urunler/" class="btn btn--outline">Online Katalog</a>
+                <a href="${P}fiyat-teklifi/" class="btn btn--outline">Teklif Al</a>
               </div>
               <p class="text-muted" style="margin-top:1rem;font-size:0.8125rem">Duru ULV Ürün Kataloğu · 2026 · PDF</p>
             </div>
@@ -335,8 +335,8 @@ ${categoryCatalogCards}
               <p class="cta-box__text">Modelleri karşılaştırın, ihtiyacınıza uygun makineler için özel teklif isteyin.</p>
             </div>
             <div class="cta-box__actions">
-              <a href="${P}urun-karsilastirma/index.html" class="btn btn--outline" data-compare-nav>Karşılaştır</a>
-              <a href="${P}fiyat-teklifi/index.html" class="btn btn--primary">Teklif Al →</a>
+              <a href="${P}urun-karsilastirma/" class="btn btn--outline" data-compare-nav>Karşılaştır</a>
+              <a href="${P}fiyat-teklifi/" class="btn btn--primary">Teklif Al →</a>
             </div>
           </div>
         </div>
@@ -363,7 +363,7 @@ ${categoryCatalogCards}
               <p>Belediyelerin sivrisinek mücadelesinden büyük ölçekli serada biyolojik mücadeleye, hastanelerin dezenfeksiyonundan fabrikaların haşere kontrolüne kadar geniş bir kullanım yelpazesinde tercih edilen bir markayız.</p>
               <p>Üç kuşaktır süregelen üretim mirası, sahanın gerçek ihtiyaçlarına odaklanan bir mühendislik kültürü ve uzun ömürlü servis desteği — bunlar bizi rakiplerimizden ayıran üç temel ilkemizdir.</p>
             </div>
-            <a href="${P}fiyat-teklifi/index.html" class="btn btn--primary" style="margin-top:2rem">Teklif Al →</a>
+            <a href="${P}fiyat-teklifi/" class="btn btn--primary" style="margin-top:2rem">Teklif Al →</a>
           </div>
           <div class="stats-grid">
             <div class="stats-grid__item" style="background:white;border:1px solid var(--border-color)">
@@ -417,7 +417,7 @@ ${categoryCatalogCards}
         <div class="eyebrow">Sertifikalar</div>
         <h2 class="section-title" style="margin-bottom:2rem">Akredite onaylarımız</h2>
         <div class="cert-grid">${certGrid}</div>
-        <p style="margin-top:2rem"><a href="${P}kalite-politikamiz/index.html" class="link-arrow">Kalite politikamız →</a></p>
+        <p style="margin-top:2rem"><a href="${P}kalite-politikamiz/" class="link-arrow">Kalite politikamız →</a></p>
       </div>
     </section>
   </main>`,
@@ -478,7 +478,7 @@ ${categoryCatalogCards}
               <li><div><div class="contact-list__label">Sosyal medya</div><div class="contact-list__value">${socialLinksHtml({ modifier: 'contact' })}</div></div></li>
             </ul>
             <div style="margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:0.75rem">
-              <a href="${P}fiyat-teklifi/index.html" class="btn btn--primary">Teklif Al →</a>
+              <a href="${P}fiyat-teklifi/" class="btn btn--primary">Teklif Al →</a>
               <a href="https://wa.me/${data.kurumsal_bilgiler.whatsapp}" class="btn btn--outline" target="_blank" rel="noopener">WhatsApp ile yaz</a>
             </div>
           </div>
@@ -587,9 +587,9 @@ ${siteHeader({ prefix: R, locale: 'tr', trPathRel: '404.html' })}
           Bağlantı hatalı olabilir veya sayfa kaldırılmış olabilir. Ana sayfadan veya ürün kataloğundan devam edebilirsiniz.
         </p>
         <div style="display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:center">
-          <a href="${R}index.html" class="btn btn--primary">Ana sayfa</a>
-          <a href="${R}urunler/index.html" class="btn btn--outline">Ürünler</a>
-          <a href="${R}iletisim/index.html" class="btn btn--outline">İletişim</a>
+          <a href="${R}./" class="btn btn--primary">Ana sayfa</a>
+          <a href="${R}urunler/" class="btn btn--outline">Ürünler</a>
+          <a href="${R}iletisim/" class="btn btn--outline">İletişim</a>
         </div>
       </div>
     </section>

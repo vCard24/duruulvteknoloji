@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated": "2026-09-05",
+  "updated": "2026-09-09",
   "publisher": {
     "name": "Duru ULV Teknoloji Sistemleri",
     "url": "https://www.duruulvteknoloji.com.tr/",
@@ -35,7 +35,7 @@
       "type": "sitemap",
       "format": "application/xml",
       "url": "https://www.duruulvteknoloji.com.tr/sitemap.xml",
-      "description": "XML sitemap (162 URLs)"
+      "description": "XML sitemap (47 URLs)"
     }
   ],
   "services": [

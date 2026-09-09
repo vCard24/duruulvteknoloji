@@ -117,21 +117,21 @@
 
   function productsIndexUrl(prefix) {
     var loc = getLocale();
-    if (loc) return prefix + loc + '/products/index.html';
-    return prefix + 'urunler/index.html';
+    if (loc) return prefix + loc + '/products/';
+    return prefix + 'urunler/';
   }
 
   function productDetailUrl(prefix, p) {
     var loc = getLocale();
-    if (loc) return prefix + loc + '/products/' + p.slug + '/index.html';
-    return prefix + 'urunler/' + p.kategori_slug + '/' + p.slug + '/index.html';
+    if (loc) return prefix + loc + '/products/' + p.slug + '/';
+    return prefix + 'urunler/' + p.kategori_slug + '/' + p.slug + '/';
   }
 
   function quotePageUrl(prefix, query) {
     var loc = getLocale();
     var base = loc
-      ? prefix + loc + '/fiyat-teklifi/index.html'
-      : prefix + 'fiyat-teklifi/index.html';
+      ? prefix + loc + '/fiyat-teklifi/'
+      : prefix + 'fiyat-teklifi/';
     return query ? base + '?' + query : base;
   }
 
@@ -250,7 +250,7 @@
 
   function resolveComparePath() {
     var loc = getLocale();
-    return getSitePrefix() + (loc ? loc + '/' : '') + 'urun-karsilastirma/index.html';
+    return getSitePrefix() + (loc ? loc + '/' : '') + 'urun-karsilastirma/';
   }
 
   function resolveDataUrl() {

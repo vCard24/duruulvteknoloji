@@ -13,10 +13,10 @@ const BLOG_RICH_OVERRIDES = {
     lead:
       'Geniş alanlarda sivrisinek ve vektör mücadelesi için sis üfleme makinesi (mist blower) teknolojisinin çalışma prensibi, Duru ve Entosis model incelemeleri ve uzman alım kriterleri.',
     tags: [
-      { label: 'Sis Üfleme Makinesi', href: 'urunler/arac-uzeri-ilaclama/index.html' },
-      { label: 'Mist Blower', href: 'urunler/arac-uzeri-ilaclama/duru-mist-blower-15hp/index.html' },
-      { label: 'Araç Üstü İlaçlama', href: 'urunler/arac-uzeri-ilaclama/index.html' },
-      { label: 'Belediye İlaçlama', href: 'blog/belediye-ilaclama-ekipmani-secimi/index.html' },
+      { label: 'Sis Üfleme Makinesi', href: 'urunler/arac-uzeri-ilaclama/' },
+      { label: 'Mist Blower', href: 'urunler/arac-uzeri-ilaclama/duru-mist-blower-15hp/' },
+      { label: 'Araç Üstü İlaçlama', href: 'urunler/arac-uzeri-ilaclama/' },
+      { label: 'Belediye İlaçlama', href: 'blog/belediye-ilaclama-ekipmani-secimi/' },
     ],
     toc: [
       { id: 'nedir', label: 'Sis üfleme makinesi nedir?' },
@@ -50,16 +50,16 @@ const BLOG_CATEGORY_TAG = {
 
 /** Etiket metni → en alakalı iç sayfa */
 const TAG_LINK_RULES = [
-  { re: /sis\s*üfleme|mist\s*blower|araç\s*üstü|arac\s*ustu/, href: 'urunler/arac-uzeri-ilaclama/index.html' },
-  { re: /belediye|sokak\s*ilaç/, href: 'urunler/arac-uzeri-ilaclama/index.html' },
-  { re: /sera|serada|bitki/, href: 'urunler/sera-tipi-ulv-ilaclama/index.html' },
-  { re: /sırt|sirt\s*tipi/, href: 'urunler/sirt-tipi-ulv-ilaclama/index.html' },
-  { re: /el\s*tipi|taşınabilir|tasinabilir/, href: 'urunler/el-tipi-ulv-ilaclama/index.html' },
-  { re: /sivrisinek|karasinek|mikron/, href: 'blog/sivrisinek-ilaclama-mikron-capi/index.html' },
-  { re: /ulv|sisleme|sisleme|pulverizatör|pulverizator/, href: 'urunler/index.html' },
-  { re: /sertifika|ce|iso|ihale|kamu/, href: 'blog/kamu-alimlarinda-ce-iso-sertifikasi/index.html' },
-  { re: /sineklik|sinek/, href: 'blog/sinekle-mucadele-pencere-sinekligi-yeterli-mi/index.html' },
-  { re: /dezenfeksiyon|hastane/, href: 'urunler/el-tipi-ulv-ilaclama/index.html' },
+  { re: /sis\s*üfleme|mist\s*blower|araç\s*üstü|arac\s*ustu/, href: 'urunler/arac-uzeri-ilaclama/' },
+  { re: /belediye|sokak\s*ilaç/, href: 'urunler/arac-uzeri-ilaclama/' },
+  { re: /sera|serada|bitki/, href: 'urunler/sera-tipi-ulv-ilaclama/' },
+  { re: /sırt|sirt\s*tipi/, href: 'urunler/sirt-tipi-ulv-ilaclama/' },
+  { re: /el\s*tipi|taşınabilir|tasinabilir/, href: 'urunler/el-tipi-ulv-ilaclama/' },
+  { re: /sivrisinek|karasinek|mikron/, href: 'blog/sivrisinek-ilaclama-mikron-capi/' },
+  { re: /ulv|sisleme|sisleme|pulverizatör|pulverizator/, href: 'urunler/' },
+  { re: /sertifika|ce|iso|ihale|kamu/, href: 'blog/kamu-alimlarinda-ce-iso-sertifikasi/' },
+  { re: /sineklik|sinek/, href: 'blog/sinekle-mucadele-pencere-sinekligi-yeterli-mi/' },
+  { re: /dezenfeksiyon|hastane/, href: 'urunler/el-tipi-ulv-ilaclama/' },
 ];
 
 const RELATED_BLOG_BY_SLUG = {
@@ -106,14 +106,14 @@ function resolveTagHref(keyword, currentSlug) {
 
   if (RELATED_BLOG_BY_SLUG[key]) {
     const slug = RELATED_BLOG_BY_SLUG[key];
-    if (slug !== currentSlug) return `blog/${slug}/index.html`;
+    if (slug !== currentSlug) return `blog/${slug}/`;
   }
 
   for (const rule of TAG_LINK_RULES) {
     if (rule.re.test(keyword) || rule.re.test(key)) return rule.href;
   }
 
-  return 'blog/index.html';
+  return 'blog/';
 }
 
 function estimateReadMinutes(sections, faqs) {
@@ -199,8 +199,8 @@ function standardBlogCta(prefix) {
     <p class="blog-cta-bar__text">İhtiyacınıza uygun ilaçlama makinesini birlikte belirleyelim; teknik destek ve kurumsal fiyat bilgisi için bize ulaşın.</p>
   </div>
   <div class="blog-cta-bar__actions">
-    <a href="${prefix}fiyat-teklifi/index.html" class="btn btn--white btn--sm">Teklif Al</a>
-    <a href="${prefix}urunler/index.html" class="btn btn--outline-white btn--sm">Ürünleri İncele</a>
+    <a href="${prefix}fiyat-teklifi/" class="btn btn--white btn--sm">Teklif Al</a>
+    <a href="${prefix}urunler/" class="btn btn--outline-white btn--sm">Ürünleri İncele</a>
   </div>
 </div>`;
 }

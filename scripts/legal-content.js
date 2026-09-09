@@ -122,7 +122,7 @@ function gizlilikHtml(k) {
           <p>Veriler, işleme amacının gerektirdiği süre ve yasal saklama yükümlülükleri boyunca muhafaza edilir; ardından silinir veya anonimleştirilir.</p>
 
           <h2 style="font-family:var(--font-display);font-size:1.25rem;color:var(--color-primary);margin:2rem 0 0.75rem">6. Haklarınız</h2>
-          <p>KVKK kapsamındaki haklarınız için <a href="../kvkk/index.html" style="color:var(--color-primary);font-weight:600">KVKK Aydınlatma Metni</a> sayfamıza bakabilir veya ${mailLink(k.email)} adresine başvurabilirsiniz.</p>
+          <p>KVKK kapsamındaki haklarınız için <a href="../kvkk/" style="color:var(--color-primary);font-weight:600">KVKK Aydınlatma Metni</a> sayfamıza bakabilir veya ${mailLink(k.email)} adresine başvurabilirsiniz.</p>
 
           <h2 style="font-family:var(--font-display);font-size:1.25rem;color:var(--color-primary);margin:2rem 0 0.75rem">7. İletişim</h2>
           <p>Gizlilik ile ilgili sorularınız için: ${esc(k.firma_adi)}, ${esc(k.adres.satir1)}, ${esc(k.adres.satir2)} — ${mailLink(k.email)}</p>`;

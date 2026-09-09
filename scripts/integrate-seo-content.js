@@ -338,11 +338,13 @@ function parseSections(text) {
   return { sections, faqs };
 }
 
+/** Visible body/FAQ hrefs: keep clean directory URLs (no trailing index.html). */
 function convertInternalLink(href, linkPrefix) {
   if (/^https?:\/\//i.test(href)) return href;
   let p = href.replace(/^\//, '');
-  if (p.endsWith('/')) p += 'index.html';
-  else if (!/\.html$/i.test(p)) p += '/index.html';
+  if (p.endsWith('/index.html')) p = p.slice(0, -'index.html'.length);
+  else if (p === 'index.html') p = '';
+  else if (!/\.html$/i.test(p) && !p.endsWith('/')) p += '/';
   return linkPrefix + p;
 }
 
@@ -781,7 +783,7 @@ function blogRichBreadcrumb(prefix, blogHref, title) {
   return `  <div class="breadcrumb-bar">
     <div class="container">
       <ol class="breadcrumb">
-        <li><a href="${prefix}index.html">Anasayfa</a></li>
+        <li><a href="${prefix}">Anasayfa</a></li>
         <li><a href="${blogHref}">Blog</a></li>
         <li><span class="breadcrumb__current">${esc(title)}</span></li>
       </ol>
@@ -818,7 +820,7 @@ function blogRichSidebar(layout) {
   const tagItems = layout.tags
     .map((tag) => {
       const label = typeof tag === 'string' ? tag : tag.label;
-      const href = typeof tag === 'string' ? '../index.html' : tag.href;
+      const href = typeof tag === 'string' ? '../' : tag.href;
       return `          <a href="../../${href}" class="blog-tag">${esc(label)}</a>`;
     })
     .join('\n');
@@ -842,7 +844,7 @@ ${tagItems}
 function generateBlogPost(post) {
   const prefix = '../../';
   const linkPrefix = '../../';
-  const blogHref = '../index.html';
+  const blogHref = '../';
   const displayTitle = post.title.replace(/\s*\([^)]*\)\s*$/, '').replace(/^\d+\.\s*/, '');
   const pageTitle = post.meta.seoTitle.includes('Duru')
     ? post.meta.seoTitle
@@ -961,14 +963,14 @@ ${renderBodyScripts(prefix)}
 
 function generateBlogIndex(posts) {
   const prefix = '../';
-  const blogHref = 'index.html';
+  const blogHref = './';
   const cards = posts
     .sort((a, b) => a.num - b.num)
     .map((post) => {
       const excerpt = post.meta.metaDescription.slice(0, 140);
       const title = post.title.replace(/^\d+\.\s*/, '');
       const dateLabel = formatDateTr(getBlogDate(post.slug));
-      const postHref = `${post.slug}/index.html`;
+      const postHref = `${post.slug}/`;
       const cardAuthor = getBlogAuthor(post.slug).name;
       const cardAlt = getBlogCoverAlt(post.slug) || title;
       return `          <article class="blog-card lift-card">

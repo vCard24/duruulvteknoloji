@@ -96,14 +96,14 @@
 
   function thanksUrl() {
     var loc = getLocale();
-    var path = loc ? loc + '/tesekkurler/index.html' : 'tesekkurler/index.html';
+    var path = loc ? loc + '/tesekkurler/' : 'tesekkurler/';
     return new URL(sitePrefix() + path, window.location.href).href;
   }
 
   function productsIndexUrl() {
     var loc = getLocale();
-    if (loc) return sitePrefix() + loc + '/products/index.html';
-    return sitePrefix() + 'urunler/index.html';
+    if (loc) return sitePrefix() + loc + '/products/';
+    return sitePrefix() + 'urunler/';
   }
 
   function productDisplayName(p) {

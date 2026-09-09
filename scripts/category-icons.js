@@ -33,7 +33,7 @@ function renderCategoryCard(cat, opts) {
               <span style="color:var(--color-primary);font-weight:600">${opts.esc(viewCta)}</span>
             </div>`;
 
-  return `          <a href="${linkPrefix}${cat.slug}/index.html" class="category-card">
+  return `          <a href="${linkPrefix}${cat.slug}/" class="category-card">
             ${categoryIconWrap(cat.slug)}
             <${headingTag} class="category-card__title">${opts.esc(title)}</${headingTag}>
             <p class="category-card__desc">${opts.esc(desc)}</p>

@@ -19,24 +19,32 @@ function esc(s) {
     .replace(/"/g, '&quot;');
 }
 
-function resolveProductsHref(prefix) {
-  if (prefix === '../../../') return '../../index.html';
-  if (prefix === '../../') return '../index.html';
-  if (prefix === '../') return 'index.html';
-  return `${prefix}urunler/index.html`;
+/** Nav/footer relative href: drop trailing index.html (keep directory slash). Bare index.html → ./ */
+function stripTrailingIndexHtml(href) {
+  const s = String(href ?? '');
+  if (s === 'index.html') return './';
+  if (s.endsWith('/index.html')) return s.slice(0, -'index.html'.length);
+  return s;
 }
 
-/** prefix + alternatePath → göreli index.html href */
+function resolveProductsHref(prefix) {
+  if (prefix === '../../../') return stripTrailingIndexHtml('../../index.html');
+  if (prefix === '../../') return stripTrailingIndexHtml('../index.html');
+  if (prefix === '../') return stripTrailingIndexHtml('index.html');
+  return stripTrailingIndexHtml(`${prefix}urunler/index.html`);
+}
+
+/** prefix + alternatePath → göreli temiz URL (…/ veya ./) */
 function localePageHref(prefix, trPathRel, locale) {
   const p = alternatePath(trPathRel || 'index.html', locale);
-  if (p === null || p === '') return `${prefix}index.html`;
-  return `${prefix}${p}index.html`;
+  if (p === null || p === '') return stripTrailingIndexHtml(`${prefix}index.html`);
+  return stripTrailingIndexHtml(`${prefix}${p}index.html`);
 }
 
-/** Locale-aware site path (TR: root, EN/AR: /en|/ar prefix) */
+/** Locale-aware site path (TR: root, EN/AR: /en|/ar prefix); nav href'lerinde index.html yok */
 function localizedHref(prefix, locale, rel) {
-  if (!locale || locale === 'tr') return `${prefix}${rel}`;
-  return `${prefix}${locale}/${rel}`;
+  const raw = !locale || locale === 'tr' ? `${prefix}${rel}` : `${prefix}${locale}/${rel}`;
+  return stripTrailingIndexHtml(raw);
 }
 
 /** TR | EN | AR — aktif dil span, diğerleri link (SSG; alternatePath) */
@@ -94,14 +102,27 @@ function siteHeader(options = {}) {
   const prefix = options.prefix ?? '';
   const locale = options.locale || 'tr';
   const ui = UI[locale] || UI.tr;
-  const productsHref = options.productsHref ?? localizedHref(prefix, locale, locale === 'tr' ? 'urunler/index.html' : 'products/index.html');
-  const quoteHref = options.quoteHref ?? localizedHref(prefix, locale, 'fiyat-teklifi/index.html');
-  const homeHref = options.homeHref ?? localizedHref(prefix, locale, 'index.html');
-  const catalogHref = options.catalogHref ?? localizedHref(prefix, locale, 'katalog/index.html');
-  const blogHref = options.blogHref ?? localizedHref(prefix, locale, 'blog/index.html');
-  const compareHref = options.compareHref ?? localizedHref(prefix, locale, 'urun-karsilastirma/index.html');
-  const aboutHref = options.aboutHref ?? localizedHref(prefix, locale, 'hakkimizda/index.html');
-  const contactHref = options.contactHref ?? localizedHref(prefix, locale, 'iletisim/index.html');
+  // options.*Href may still carry …/index.html from i18n — strip at the nav boundary
+  const productsHref = stripTrailingIndexHtml(
+    options.productsHref ?? localizedHref(prefix, locale, locale === 'tr' ? 'urunler/index.html' : 'products/index.html')
+  );
+  const quoteHref = stripTrailingIndexHtml(
+    options.quoteHref ?? localizedHref(prefix, locale, 'fiyat-teklifi/index.html')
+  );
+  const homeHref = stripTrailingIndexHtml(options.homeHref ?? localizedHref(prefix, locale, 'index.html'));
+  const catalogHref = stripTrailingIndexHtml(
+    options.catalogHref ?? localizedHref(prefix, locale, 'katalog/index.html')
+  );
+  const blogHref = stripTrailingIndexHtml(options.blogHref ?? localizedHref(prefix, locale, 'blog/index.html'));
+  const compareHref = stripTrailingIndexHtml(
+    options.compareHref ?? localizedHref(prefix, locale, 'urun-karsilastirma/index.html')
+  );
+  const aboutHref = stripTrailingIndexHtml(
+    options.aboutHref ?? localizedHref(prefix, locale, 'hakkimizda/index.html')
+  );
+  const contactHref = stripTrailingIndexHtml(
+    options.contactHref ?? localizedHref(prefix, locale, 'iletisim/index.html')
+  );
   const trPathRel = options.trPathRel || 'index.html';
   const switcher = langSwitcherHtml({ prefix, locale, trPathRel });
 
@@ -145,19 +166,34 @@ function siteFooter(options = {}) {
   const prefix = options.prefix ?? '';
   const locale = options.locale || 'tr';
   const ui = UI[locale] || UI.tr;
-  const homeHref = options.homeHref ?? localizedHref(prefix, locale, 'index.html');
-  const productsHref =
+  const homeHref = stripTrailingIndexHtml(options.homeHref ?? localizedHref(prefix, locale, 'index.html'));
+  const productsHref = stripTrailingIndexHtml(
     options.productsHref ??
-    localizedHref(prefix, locale, locale === 'tr' ? 'urunler/index.html' : 'products/index.html');
-  const catalogHref = options.catalogHref ?? localizedHref(prefix, locale, 'katalog/index.html');
-  const blogHref = options.blogHref ?? localizedHref(prefix, locale, 'blog/index.html');
-  const compareHref = options.compareHref ?? localizedHref(prefix, locale, 'urun-karsilastirma/index.html');
-  const aboutHref = options.aboutHref ?? localizedHref(prefix, locale, 'hakkimizda/index.html');
-  const qualityHref = options.qualityHref ?? localizedHref(prefix, locale, 'kalite-politikamiz/index.html');
-  const contactHref = options.contactHref ?? localizedHref(prefix, locale, 'iletisim/index.html');
-  const privacyHref = options.privacyHref ?? localizedHref(prefix, locale, 'gizlilik-politikasi/index.html');
-  const kvkkHref = options.kvkkHref ?? localizedHref(prefix, locale, 'kvkk/index.html');
-  const termsHref = options.termsHref ?? localizedHref(prefix, locale, 'kullanim-kosullari/index.html');
+      localizedHref(prefix, locale, locale === 'tr' ? 'urunler/index.html' : 'products/index.html')
+  );
+  const catalogHref = stripTrailingIndexHtml(
+    options.catalogHref ?? localizedHref(prefix, locale, 'katalog/index.html')
+  );
+  const blogHref = stripTrailingIndexHtml(options.blogHref ?? localizedHref(prefix, locale, 'blog/index.html'));
+  const compareHref = stripTrailingIndexHtml(
+    options.compareHref ?? localizedHref(prefix, locale, 'urun-karsilastirma/index.html')
+  );
+  const aboutHref = stripTrailingIndexHtml(
+    options.aboutHref ?? localizedHref(prefix, locale, 'hakkimizda/index.html')
+  );
+  const qualityHref = stripTrailingIndexHtml(
+    options.qualityHref ?? localizedHref(prefix, locale, 'kalite-politikamiz/index.html')
+  );
+  const contactHref = stripTrailingIndexHtml(
+    options.contactHref ?? localizedHref(prefix, locale, 'iletisim/index.html')
+  );
+  const privacyHref = stripTrailingIndexHtml(
+    options.privacyHref ?? localizedHref(prefix, locale, 'gizlilik-politikasi/index.html')
+  );
+  const kvkkHref = stripTrailingIndexHtml(options.kvkkHref ?? localizedHref(prefix, locale, 'kvkk/index.html'));
+  const termsHref = stripTrailingIndexHtml(
+    options.termsHref ?? localizedHref(prefix, locale, 'kullanim-kosullari/index.html')
+  );
   const certBadges = k.sertifikalar
     .slice(0, 7)
     .map((c) => `<span class="cert-badge">${esc(c)}</span>`)
