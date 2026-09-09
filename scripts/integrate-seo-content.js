@@ -950,6 +950,8 @@ ${renderHeadAssets(prefix, { extraStylesheets: ['assets/css/blog.css'] })}
 <body>
 
 ${blogHeader(prefix, blogHref, `blog/${post.slug}/index.html`)}
+  <main>
+${mainContent}
 ${faqSection}
   </main>
 
