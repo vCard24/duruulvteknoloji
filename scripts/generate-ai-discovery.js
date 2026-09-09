@@ -149,6 +149,7 @@ ${trEnArLine('Kalite Politikamız / Quality Policy / سياسة الجودة', '
 ${trEnArLine('İletişim / Contact / اتصل بنا', 'iletisim/index.html')}
 - Instagram: ${k.sosyal && k.sosyal.instagram ? k.sosyal.instagram : ''}
 - Facebook: ${k.sosyal && k.sosyal.facebook ? k.sosyal.facebook : ''}
+- YouTube: ${k.sosyal && k.sosyal.youtube ? k.sosyal.youtube : ''}
 ${trEnArLine('Fiyat Teklifi / Quote / عرض السعر', 'fiyat-teklifi/index.html')}
 ${trEnArLine('Katalog / Catalog / الكتالوج', 'katalog/index.html')}
 ${trEnArLine('Ürün Karşılaştırma / Compare / مقارنة', 'urun-karsilastirma/index.html')}

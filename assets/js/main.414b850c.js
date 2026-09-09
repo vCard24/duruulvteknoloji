@@ -62,21 +62,24 @@
         close: 'Kapat',
         prev: 'Önceki görsel',
         next: 'Sonraki görsel',
-        zoom: 'Görseli büyüt'
+        zoom: 'Görseli büyüt',
+        play: 'Videoyu oynat'
       },
       en: {
         image: 'Product image',
         close: 'Close',
         prev: 'Previous image',
         next: 'Next image',
-        zoom: 'Enlarge image'
+        zoom: 'Enlarge image',
+        play: 'Play video'
       },
       ar: {
         image: 'صورة المنتج',
         close: 'إغلاق',
         prev: 'الصورة السابقة',
         next: 'الصورة التالية',
-        zoom: 'تكبير الصورة'
+        zoom: 'تكبير الصورة',
+        play: 'تشغيل الفيديو'
       }
     };
 
@@ -129,8 +132,8 @@
 
     function openLightbox(gallery, index) {
       lbGallery = gallery;
-      lbItems = Array.from(gallery.querySelectorAll('[data-gallery-thumb]')).map(function (t) {
-        return { src: t.dataset.src || '', alt: t.dataset.alt || '' };
+      lbItems = Array.from(gallery.querySelectorAll('[data-gallery-thumb]:not([data-gallery-video])')).map(function (t) {
+        return { src: t.dataset.src || '', alt: t.dataset.alt || '', srcset: t.dataset.srcset || '' };
       }).filter(function (i) { return i.src; });
       if (!lbItems.length) return;
       lbIndex = Math.max(0, Math.min(index, lbItems.length - 1));
@@ -156,22 +159,39 @@
       lbIndex = (lbIndex + delta + lbItems.length) % lbItems.length;
       renderLightbox();
       if (lbGallery) {
-        var thumbs = lbGallery.querySelectorAll('[data-gallery-thumb]');
+        var imageThumbs = Array.from(lbGallery.querySelectorAll('[data-gallery-thumb]:not([data-gallery-video])'));
+        var allThumbs = lbGallery.querySelectorAll('[data-gallery-thumb]');
         var mainImg = lbGallery.querySelector('[data-gallery-main]');
-        thumbs.forEach(function (t, i) {
-          t.classList.toggle('is-active', i === lbIndex);
+        var activeThumb = imageThumbs[lbIndex];
+        allThumbs.forEach(function (t) {
+          t.classList.toggle('is-active', t === activeThumb);
         });
         if (mainImg && lbItems[lbIndex]) {
+          mainImg.hidden = false;
           mainImg.src = lbItems[lbIndex].src;
           mainImg.alt = lbItems[lbIndex].alt;
-          var syncThumb = thumbs[lbIndex];
-          if (syncThumb && syncThumb.dataset.srcset) {
-            mainImg.srcset = syncThumb.dataset.srcset;
-          } else if (mainImg) {
+          if (lbItems[lbIndex].srcset) {
+            mainImg.srcset = lbItems[lbIndex].srcset;
+          } else {
             mainImg.removeAttribute('srcset');
           }
+          var videoHost = lbGallery.querySelector('[data-gallery-video-host]');
+          if (videoHost) {
+            videoHost.hidden = true;
+            videoHost.innerHTML = '';
+          }
+          var videoCue = lbGallery.querySelector('[data-gallery-video-cue]');
+          if (videoCue) videoCue.hidden = true;
+          var mainArea = lbGallery.querySelector('.product-gallery__main');
+          if (mainArea) {
+            mainArea.classList.remove('is-video', 'is-playing');
+            mainArea.setAttribute('aria-label', aria.zoom);
+          }
         }
-        lbGallery.dataset.galleryIndex = String(lbIndex);
+        if (activeThumb) {
+          var galleryIndex = Array.prototype.indexOf.call(allThumbs, activeThumb);
+          if (galleryIndex >= 0) lbGallery.dataset.galleryIndex = String(galleryIndex);
+        }
       }
     }
 
@@ -195,6 +215,8 @@
     document.querySelectorAll('[data-product-gallery]').forEach(function (gallery) {
       var mainImg = gallery.querySelector('[data-gallery-main]');
       var mainArea = gallery.querySelector('.product-gallery__main');
+      var videoHost = gallery.querySelector('[data-gallery-video-host]');
+      var videoCue = gallery.querySelector('[data-gallery-video-cue]');
       var thumbsWrap = gallery.querySelector('.product-gallery__thumbs');
       var thumbs = gallery.querySelectorAll('[data-gallery-thumb]');
       if (!mainImg || !thumbs.length) return;
@@ -205,9 +227,65 @@
       });
       gallery.dataset.galleryIndex = String(activeIndex);
 
+      function setVideoCue(show) {
+        if (!videoCue) return;
+        videoCue.hidden = !show;
+        if (show) {
+          var label = videoCue.querySelector('.product-gallery__video-cue-label');
+          if (label) label.textContent = aria.play;
+        }
+      }
+
+      function clearVideo() {
+        if (videoHost) {
+          videoHost.hidden = true;
+          videoHost.innerHTML = '';
+        }
+        if (mainArea) {
+          mainArea.classList.remove('is-video', 'is-playing');
+        }
+        setVideoCue(false);
+        mainImg.hidden = false;
+      }
+
+      function playVideo(thumb) {
+        var id = thumb && thumb.dataset.galleryVideo;
+        if (!id || !videoHost || !mainArea) return;
+        /* file:// açılışında YouTube embed Error 153 verir; geçerli HTTP(S) origin gerekir */
+        if (window.location.protocol === 'file:') {
+          window.open('https://www.youtube.com/watch?v=' + encodeURIComponent(id), '_blank', 'noopener,noreferrer');
+          return;
+        }
+        clearVideo();
+        mainImg.src = thumb.dataset.src || mainImg.src;
+        if (thumb.dataset.srcset) {
+          mainImg.srcset = thumb.dataset.srcset;
+        } else {
+          mainImg.removeAttribute('srcset');
+        }
+        mainImg.alt = thumb.dataset.alt || mainImg.alt;
+        mainImg.hidden = true;
+        mainArea.classList.add('is-video', 'is-playing');
+        mainArea.setAttribute('aria-label', aria.play);
+        videoHost.hidden = false;
+        var params = 'autoplay=1&rel=0&playsinline=1';
+        if (/^https?:$/i.test(window.location.protocol) && window.location.origin) {
+          params += '&origin=' + encodeURIComponent(window.location.origin);
+        }
+        videoHost.innerHTML =
+          '<iframe src="https://www.youtube.com/embed/' +
+          encodeURIComponent(id) +
+          '?' +
+          params +
+          '" title="' +
+          (thumb.dataset.alt || aria.play).replace(/"/g, '&quot;') +
+          '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>';
+      }
+
       function applyIndex(index) {
         var thumb = thumbs[index];
         if (!thumb || !mainImg) return;
+        clearVideo();
         mainImg.src = thumb.dataset.src || mainImg.src;
         if (thumb.dataset.srcset) {
           mainImg.srcset = thumb.dataset.srcset;
@@ -216,6 +294,16 @@
         }
         mainImg.alt = thumb.dataset.alt || mainImg.alt;
         gallery.dataset.galleryIndex = String(index);
+        if (mainArea) {
+          if (thumb.dataset.galleryVideo) {
+            mainArea.classList.add('is-video');
+            mainArea.setAttribute('aria-label', aria.play);
+            setVideoCue(true);
+          } else {
+            mainArea.setAttribute('aria-label', aria.zoom);
+            setVideoCue(false);
+          }
+        }
       }
 
       function setActive(index) {
@@ -247,7 +335,17 @@
       function openFromGallery() {
         var idx = parseInt(gallery.dataset.galleryIndex || '0', 10);
         if (Number.isNaN(idx)) idx = activeIndex;
-        openLightbox(gallery, idx);
+        var thumb = thumbs[idx];
+        if (thumb && thumb.dataset.galleryVideo) {
+          if (mainArea && mainArea.classList.contains('is-playing')) return;
+          playVideo(thumb);
+          return;
+        }
+        var imageThumbs = Array.prototype.filter.call(thumbs, function (t) {
+          return !t.dataset.galleryVideo;
+        });
+        var imageIdx = imageThumbs.indexOf(thumb);
+        openLightbox(gallery, imageIdx >= 0 ? imageIdx : 0);
       }
 
       if (mainArea) {

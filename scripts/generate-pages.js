@@ -45,9 +45,13 @@ function loadCatalog(locale) {
 let data = loadCatalog('tr');
 let loc = localePaths('tr');
 const IMG_MANIFEST_PATH = path.join(ROOT, 'assets/data/product-images.json');
+const VIDEO_MANIFEST_PATH = path.join(ROOT, 'assets/data/product-videos.json');
 const ALTS_PATH = path.join(ROOT, 'assets/data/product-image-alts.json');
 const imageManifest = fs.existsSync(IMG_MANIFEST_PATH)
   ? JSON.parse(fs.readFileSync(IMG_MANIFEST_PATH, 'utf8'))
+  : {};
+const productVideos = fs.existsSync(VIDEO_MANIFEST_PATH)
+  ? JSON.parse(fs.readFileSync(VIDEO_MANIFEST_PATH, 'utf8'))
   : {};
 const imageAlts = fs.existsSync(ALTS_PATH) ? JSON.parse(fs.readFileSync(ALTS_PATH, 'utf8')) : {};
 const PRODUCT_SEO_PATH = path.join(ROOT, 'assets/data/product-seo.json');
@@ -397,27 +401,54 @@ function generateProductPage(product) {
         .join('\n')
     : '';
 
-  const thumbs = Array.from({ length: imageCount }, (_, i) => i + 1)
-    .map((n, i) => {
-      const baseFile = productImageFileName(product.slug, n);
-      const variants = productVariantSet(baseFile);
-      const galleryWidths = variants.widths.filter((w) => w === 640 || w === 1200);
-      const srcsetWidths = galleryWidths.length ? galleryWidths : variants.widths;
-      const fullFile = productLargestFile(
-        baseFile,
-        srcsetWidths.length ? srcsetWidths : variants.widths,
-        variants.filesByWidth
-      );
-      const fullSrc = productPublicPath(fullFile, prefix);
-      const srcset = srcsetWidths.length
-        ? productSrcset(baseFile, prefix, srcsetWidths, variants.filesByWidth)
-        : '';
-      const thumbFile = variants.thumb || baseFile;
-      const thumbSrc = productPublicPath(thumbFile, prefix);
-      const alt = localeImageAlt(product.slug, n, product);
-      return `<button type="button" class="product-gallery__thumb${i === 0 ? ' is-active' : ''}" data-gallery-thumb data-src="${fullSrc}"${srcset ? ` data-srcset="${srcset}"` : ''} data-alt="${esc(alt)}" aria-label="${esc(ui.galleryImage)} ${n}"><img src="${thumbSrc}" width="90" height="90" alt="" loading="lazy" decoding="async"></button>`;
-    })
-    .join('\n            ');
+  const thumbParts = Array.from({ length: imageCount }, (_, i) => i + 1).map((n, i) => {
+    const baseFile = productImageFileName(product.slug, n);
+    const variants = productVariantSet(baseFile);
+    const galleryWidths = variants.widths.filter((w) => w === 640 || w === 1200);
+    const srcsetWidths = galleryWidths.length ? galleryWidths : variants.widths;
+    const fullFile = productLargestFile(
+      baseFile,
+      srcsetWidths.length ? srcsetWidths : variants.widths,
+      variants.filesByWidth
+    );
+    const fullSrc = productPublicPath(fullFile, prefix);
+    const srcset = srcsetWidths.length
+      ? productSrcset(baseFile, prefix, srcsetWidths, variants.filesByWidth)
+      : '';
+    const thumbFile = variants.thumb || baseFile;
+    const thumbSrc = productPublicPath(thumbFile, prefix);
+    const alt = localeImageAlt(product.slug, n, product);
+    return `<button type="button" class="product-gallery__thumb${i === 0 ? ' is-active' : ''}" data-gallery-thumb data-src="${fullSrc}"${srcset ? ` data-srcset="${srcset}"` : ''} data-alt="${esc(alt)}" aria-label="${esc(ui.galleryImage)} ${n}"><img src="${thumbSrc}" width="90" height="90" alt="" loading="lazy" decoding="async"></button>`;
+  });
+
+  const videoMeta = productVideos[product.slug];
+  if (videoMeta && videoMeta.youtubeId && thumbParts.length) {
+    const posterIndex = Math.min(
+      Math.max(Number(videoMeta.posterIndex) || 1, 1),
+      imageCount || 1
+    );
+    const posterFile = productImageFileName(product.slug, posterIndex);
+    const posterVariants = productVariantSet(posterFile);
+    const posterGalleryWidths = posterVariants.widths.filter((w) => w === 640 || w === 1200);
+    const posterSrcsetWidths = posterGalleryWidths.length ? posterGalleryWidths : posterVariants.widths;
+    const posterFullFile = productLargestFile(
+      posterFile,
+      posterSrcsetWidths.length ? posterSrcsetWidths : posterVariants.widths,
+      posterVariants.filesByWidth
+    );
+    const posterFullSrc = productPublicPath(posterFullFile, prefix);
+    const posterSrcset = posterSrcsetWidths.length
+      ? productSrcset(posterFile, prefix, posterSrcsetWidths, posterVariants.filesByWidth)
+      : '';
+    const posterThumbFile = posterVariants.thumb || posterFile;
+    const posterThumbSrc = productPublicPath(posterThumbFile, prefix);
+    const videoAlt = `${pName(product)} — ${ui.galleryVideo}`;
+    const videoThumb = `<button type="button" class="product-gallery__thumb product-gallery__thumb--video" data-gallery-thumb data-gallery-video="${esc(videoMeta.youtubeId)}" data-src="${posterFullSrc}"${posterSrcset ? ` data-srcset="${posterSrcset}"` : ''} data-alt="${esc(videoAlt)}" aria-label="${esc(ui.playVideo)}"><img src="${posterThumbSrc}" width="90" height="90" alt="" loading="lazy" decoding="async"><span class="product-gallery__play" aria-hidden="true"></span></button>`;
+    const insertAt = Math.min(Math.max(Number(videoMeta.insertAfter) || 1, 0), thumbParts.length);
+    thumbParts.splice(insertAt, 0, videoThumb);
+  }
+
+  const thumbs = thumbParts.join('\n            ');
 
   const mainBase = productImageFileName(product.slug, 1);
   const mainVariants = productVariantSet(mainBase);
@@ -504,6 +535,11 @@ ${header(prefix, product.slug, loc.trProductRel(product))}
         <div data-product-gallery>
           <div class="${mainImageClass}">
             <img data-gallery-main src="${mainSrc}"${mainSrcset ? ` srcset="${mainSrcset}"` : ''} sizes="${mainSizes}" width="${mainDims.width}" height="${mainDims.height}" fetchpriority="high" decoding="async" alt="${esc(mainAlt)}">
+            <div class="product-gallery__video-cue" data-gallery-video-cue hidden>
+              <span class="product-gallery__video-cue-btn" aria-hidden="true"></span>
+              <span class="product-gallery__video-cue-label">${esc(ui.playVideo)}</span>
+            </div>
+            <div class="product-gallery__video-host" data-gallery-video-host hidden></div>
           </div>
           <div class="product-gallery__thumbs">
             ${thumbs}

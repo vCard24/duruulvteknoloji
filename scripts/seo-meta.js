@@ -180,6 +180,7 @@ function organizationSchemaJson(kurumsal) {
       const links = [];
       if (k.sosyal && k.sosyal.instagram) links.push(k.sosyal.instagram);
       if (k.sosyal && k.sosyal.facebook) links.push(k.sosyal.facebook);
+      if (k.sosyal && k.sosyal.youtube) links.push(k.sosyal.youtube);
       if (k.whatsapp) links.push(`https://wa.me/${k.whatsapp}`);
       return links.length ? links : undefined;
     })(),
